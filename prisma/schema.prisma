@@ -1,0 +1,56 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum SubscriptionStatus {
+  none
+  active
+  past_due
+  canceled
+}
+
+model User {
+  id                   String              @id @default(cuid())
+  email                String              @unique
+  passwordHash         String?
+  createdAt            DateTime            @default(now())
+  updatedAt            DateTime            @updatedAt
+
+  stripeCustomerId     String?             @unique
+  stripeSubscriptionId String?             @unique
+  subscriptionStatus   SubscriptionStatus  @default(none)
+  currentPeriodEnd     DateTime?
+
+  activationTokens     ActivationToken[]
+  quizAttempts         QuizAttempt[]
+}
+
+// One-time link sent by email after a successful payment so the opositor
+// can set a password and finish creating their account.
+model ActivationToken {
+  id        String   @id @default(cuid())
+  token     String   @unique
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime @default(now())
+}
+
+// Lightweight record of quiz results per tema, used for "mis progresos".
+model QuizAttempt {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  temaSlug  String
+  score     Int
+  total     Int
+  createdAt DateTime @default(now())
+
+  @@index([userId, temaSlug])
+}
