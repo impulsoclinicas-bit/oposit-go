@@ -9,6 +9,8 @@ import { preguntas as tribunalConstitucional } from "./tribunal-constitucional";
 import { preguntas as defensorDelPueblo } from "./defensor-del-pueblo";
 import { preguntas as estadosAlarmaExcepcionSitio } from "./estados-alarma-excepcion-sitio";
 import { preguntas as fiscaliaEuropea } from "./fiscalia-europea";
+import { preguntas as estatutoBasicoEmpleadoPublico } from "./estatuto-basico-empleado-publico";
+import { preguntas as estructuraMinisterioInterior } from "./estructura-ministerio-interior";
 
 // Banco de preguntas por tema. Los temas que todavía no tienen batería
 // redactada simplemente no aparecen aquí: `getPreguntasByTema` devuelve un
@@ -24,6 +26,8 @@ const bancoPreguntas: Record<string, Pregunta[]> = {
   "defensor-del-pueblo": defensorDelPueblo,
   "estados-alarma-excepcion-sitio": estadosAlarmaExcepcionSitio,
   "fiscalia-europea": fiscaliaEuropea,
+  "estatuto-basico-empleado-publico": estatutoBasicoEmpleadoPublico,
+  "estructura-ministerio-interior": estructuraMinisterioInterior,
 };
 
 export function getPreguntasByTema(temaSlug: string): Pregunta[] {

@@ -168,6 +168,22 @@ export const temas: Tema[] = [
     descripcion:
       "Competencia de los Fiscales europeos delegados, control judicial y procedimiento de investigación de delitos que perjudican los intereses financieros de la UE.",
   },
+  {
+    slug: "estatuto-basico-empleado-publico",
+    numero: 26,
+    bloque: "juridico",
+    titulo: "El Estatuto Básico del Empleado Público",
+    descripcion:
+      "Clases de empleados públicos, acceso al empleo público, adquisición y pérdida de la condición de funcionario, situaciones administrativas y régimen de provisión de puestos.",
+  },
+  {
+    slug: "estructura-ministerio-interior",
+    numero: 27,
+    bloque: "juridico",
+    titulo: "Estructura orgánica básica del Ministerio del Interior",
+    descripcion:
+      "Secretaría de Estado de Seguridad, Dirección General de la Policía y de la Guardia Civil, y demás órganos superiores y directivos del Departamento.",
+  },
 
   // Bloque II — Social
   {

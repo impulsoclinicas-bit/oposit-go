@@ -1,0 +1,143 @@
+import type { Pregunta } from "@/lib/preguntas";
+
+export const preguntas: Pregunta[] = [
+  {
+    id: "emi-01",
+    enunciado: "¿Qué norma desarrolla actualmente la estructura orgánica básica del Ministerio del Interior?",
+    opciones: [
+      "El Real Decreto 734/2020, de 4 de agosto",
+      "El Real Decreto 207/2024, de 27 de febrero",
+      "La Ley Orgánica 2/1986, de 13 de marzo",
+      "El Real Decreto 1009/2023, de 5 de diciembre",
+    ],
+    correcta: 1,
+    explicacion: "El art. 1 se enmarca en el Real Decreto 207/2024, de 27 de febrero, que deroga expresamente el Real Decreto 734/2020 (disposición derogatoria única).",
+  },
+  {
+    id: "emi-02",
+    enunciado: "Según el artículo 1, ¿en cuántos órganos superiores y directivos se estructura el Ministerio del Interior?",
+    opciones: [
+      "Únicamente en la Secretaría de Estado de Seguridad y la Subsecretaría",
+      "En la Secretaría de Estado de Seguridad, la Secretaría General de Instituciones Penitenciarias, la Secretaría General de Protección Civil y Emergencias, y la Subsecretaría del Interior",
+      "En tres Direcciones Generales exclusivamente",
+      "En dos Secretarías de Estado",
+    ],
+    correcta: 1,
+    explicacion: "El art. 1.5 estructura el Ministerio en estos cuatro órganos superiores: Secretaría de Estado de Seguridad, Secretaría General de Instituciones Penitenciarias, Secretaría General de Protección Civil y Emergencias, y Subsecretaría del Interior.",
+  },
+  {
+    id: "emi-03",
+    enunciado: "¿Qué órganos directivos dependen de la Secretaría de Estado de Seguridad según el artículo 1.5.a)?",
+    opciones: [
+      "La Dirección General de la Policía y la Dirección General de Tráfico",
+      "La Dirección General de la Policía, la Dirección General de la Guardia Civil, la Dirección General de Relaciones Internacionales y Extranjería, y la Dirección General de Coordinación y Estudios",
+      "Solo la Dirección General de la Policía y la Dirección General de la Guardia Civil",
+      "La Dirección General de Política Interior y la Dirección General de Protección Internacional",
+    ],
+    correcta: 1,
+    explicacion: "El art. 1.5.a) enumera estos cuatro órganos directivos dependientes de la Secretaría de Estado de Seguridad.",
+  },
+  {
+    id: "emi-04",
+    enunciado: "Según el artículo 3, ¿qué rango administrativo tiene el titular de la Dirección General de la Policía?",
+    opciones: ["Rango de director general", "Rango de subsecretario", "Rango de secretario de Estado", "Rango de subdirector general"],
+    correcta: 1,
+    explicacion: "El art. 3.1 establece que el titular de la Dirección General de la Policía tiene rango de subsecretario y ejerce el mando directo de la Policía Nacional bajo la dependencia de la Secretaría de Estado de Seguridad.",
+  },
+  {
+    id: "emi-05",
+    enunciado: "¿Qué órgano, dependiente directamente del titular de la Dirección General de la Policía, se encarga del mantenimiento del orden público y la seguridad ciudadana, dirigiendo las unidades centrales y territoriales?",
+    opciones: [
+      "El Gabinete Técnico",
+      "La Dirección Adjunta Operativa",
+      "La Subdirección General de Logística e Innovación",
+      "La División de Cooperación Internacional",
+    ],
+    correcta: 1,
+    explicacion: "El art. 3.2.a) atribuye a la Dirección Adjunta Operativa la dirección, coordinación y supervisión de las unidades centrales, supraterritoriales y territoriales de la Policía Nacional.",
+  },
+  {
+    id: "emi-06",
+    enunciado: "Según el artículo 3.3, ¿qué Comisaría General se encarga de la investigación y persecución de infracciones supraterritoriales, especialmente drogas y delincuencia organizada?",
+    opciones: [
+      "La Comisaría General de Información",
+      "La Comisaría General de Seguridad Ciudadana",
+      "La Comisaría General de Policía Judicial",
+      "La Comisaría General de Policía Científica",
+    ],
+    correcta: 2,
+    explicacion: "El art. 3.3.b) atribuye a la Comisaría General de Policía Judicial la investigación y persecución de infracciones supraterritoriales relacionadas con drogas, delincuencia organizada, económica, financiera y tecnológica.",
+  },
+  {
+    id: "emi-07",
+    enunciado: "¿Qué órgano corresponde al control de entrada y salida del territorio nacional, y al régimen policial de extranjería, refugio y asilo, según el artículo 3.3?",
+    opciones: [
+      "La Comisaría General de Extranjería y Fronteras",
+      "La Comisaría General de Seguridad Ciudadana",
+      "La Dirección General de Relaciones Internacionales y Extranjería",
+      "La División de Cooperación Internacional",
+    ],
+    correcta: 0,
+    explicacion: "El art. 3.3.d) atribuye estas funciones a la Comisaría General de Extranjería y Fronteras.",
+  },
+  {
+    id: "emi-08",
+    enunciado: "Según el artículo 4, ¿bajo la dependencia de quién ejerce el titular de la Dirección General de la Guardia Civil el mando directo del Cuerpo?",
+    opciones: [
+      "Directamente del Consejo de Ministros",
+      "De la persona titular de la Secretaría de Estado de Seguridad",
+      "De la persona titular de la Subsecretaría del Interior",
+      "Del Ministerio de Defensa exclusivamente",
+    ],
+    correcta: 1,
+    explicacion: "El art. 4.1 establece que, bajo la dependencia de la persona titular de la Secretaría de Estado de Seguridad, el titular de la Dirección General de la Guardia Civil ejerce el mando directo del Cuerpo.",
+  },
+  {
+    id: "emi-09",
+    enunciado: "¿Qué órgano, con nivel orgánico de subdirección general, tiene encomendada la recepción, integración y análisis de la información estratégica en la lucha contra el crimen organizado y el terrorismo?",
+    opciones: [
+      "El CITCO (Centro de Inteligencia contra el Terrorismo y el Crimen Organizado)",
+      "La Oficina de Coordinación y Ciberseguridad (OCC)",
+      "El Centro Nacional de Protección de Infraestructuras Críticas (CNPIC)",
+      "La Inspección de Personal y Servicios de Seguridad",
+    ],
+    correcta: 0,
+    explicacion: "El art. 2.3 atribuye estas funciones al CITCO, dependiente de la persona titular de la Secretaría de Estado de Seguridad.",
+  },
+  {
+    id: "emi-10",
+    enunciado: "Según el artículo 9, ¿qué órganos directivos dependen de la Subsecretaría del Interior?",
+    opciones: [
+      "La Secretaría General Técnica, la Dirección General de Política Interior, la Dirección General de Tráfico, la Dirección General de Apoyo a Víctimas del Terrorismo y la Dirección General de Protección Internacional",
+      "Únicamente la Dirección General de la Policía y la Dirección General de la Guardia Civil",
+      "La Secretaría General de Instituciones Penitenciarias y la Secretaría General de Protección Civil y Emergencias",
+      "El CITCO y la Oficina de Coordinación y Ciberseguridad",
+    ],
+    correcta: 0,
+    explicacion: "El art. 9.5 enumera estos cinco órganos directivos dependientes de la Subsecretaría del Interior.",
+  },
+  {
+    id: "emi-11",
+    enunciado: "¿Qué Comisaría General presta los servicios de criminalística, identificación, analítica e investigación técnica, según el artículo 3.3?",
+    opciones: [
+      "La Comisaría General de Policía Científica",
+      "La Comisaría General de Información",
+      "La Comisaría General de Policía Judicial",
+      "La Comisaría General de Seguridad Ciudadana",
+    ],
+    correcta: 0,
+    explicacion: "El art. 3.3.e) atribuye estos servicios a la Comisaría General de Policía Científica.",
+  },
+  {
+    id: "emi-12",
+    enunciado: "Según el artículo 1.1, ¿qué materia NO corresponde al Ministerio del Interior entre las que se enumeran?",
+    opciones: [
+      "La seguridad ciudadana",
+      "El régimen de protección internacional, apatridia y protección de personas desplazadas",
+      "La política exterior y de relaciones diplomáticas con terceros países",
+      "La administración y régimen de las instituciones penitenciarias",
+    ],
+    correcta: 2,
+    explicacion: "El art. 1.1 no atribuye al Ministerio del Interior la política exterior general, que corresponde al Ministerio de Asuntos Exteriores; sí le atribuye seguridad ciudadana, protección internacional e instituciones penitenciarias.",
+  },
+];
