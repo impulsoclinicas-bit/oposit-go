@@ -184,6 +184,22 @@ export const temas: Tema[] = [
     descripcion:
       "Secretaría de Estado de Seguridad, Dirección General de la Policía y de la Guardia Civil, y demás órganos superiores y directivos del Departamento.",
   },
+  {
+    slug: "ley-regimen-juridico-sector-publico",
+    numero: 28,
+    bloque: "juridico",
+    titulo: "La Ley de Régimen Jurídico del Sector Público",
+    descripcion:
+      "Órganos administrativos y competencia, potestad sancionadora, responsabilidad patrimonial, y organización de la Administración General del Estado y su sector público institucional.",
+  },
+  {
+    slug: "ley-del-gobierno",
+    numero: 29,
+    bloque: "juridico",
+    titulo: "La Ley del Gobierno",
+    descripcion:
+      "Composición y órganos del Gobierno, estatuto de sus miembros, Gobierno en funciones, iniciativa legislativa y control del Gobierno.",
+  },
 
   // Bloque II — Social
   {
