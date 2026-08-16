@@ -6,6 +6,7 @@ import { esquema as estadosAlarmaExcepcionSitio } from "./estados-alarma-excepci
 import { esquema as fiscaliaEuropea } from "./fiscalia-europea";
 import { esquema as estatutoBasicoEmpleadoPublico } from "./estatuto-basico-empleado-publico";
 import { esquema as estructuraMinisterioInterior } from "./estructura-ministerio-interior";
+import { esquema as leyOrganicaFuerzasCuerposSeguridad } from "./ley-organica-fuerzas-cuerpos-seguridad";
 
 // Igual que con las preguntas: los temas sin entrada aquí muestran el aviso
 // de "próximamente disponible" en la página del tema.
@@ -17,6 +18,7 @@ const registroEsquemas: Record<string, Esquema> = {
   "fiscalia-europea": fiscaliaEuropea,
   "estatuto-basico-empleado-publico": estatutoBasicoEmpleadoPublico,
   "estructura-ministerio-interior": estructuraMinisterioInterior,
+  "ley-organica-fuerzas-cuerpos-seguridad": leyOrganicaFuerzasCuerposSeguridad,
 };
 
 export function getEsquemaByTema(temaSlug: string): Esquema | undefined {

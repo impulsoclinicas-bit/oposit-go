@@ -6,6 +6,7 @@ import { resumen as estadosAlarmaExcepcionSitio } from "./estados-alarma-excepci
 import { resumen as fiscaliaEuropea } from "./fiscalia-europea";
 import { resumen as estatutoBasicoEmpleadoPublico } from "./estatuto-basico-empleado-publico";
 import { resumen as estructuraMinisterioInterior } from "./estructura-ministerio-interior";
+import { resumen as leyOrganicaFuerzasCuerposSeguridad } from "./ley-organica-fuerzas-cuerpos-seguridad";
 
 const registroResumenes: Record<string, Resumen> = {
   "codigo-civil-persona-capacidad": codigoCivilPersonaCapacidad,
@@ -15,6 +16,7 @@ const registroResumenes: Record<string, Resumen> = {
   "fiscalia-europea": fiscaliaEuropea,
   "estatuto-basico-empleado-publico": estatutoBasicoEmpleadoPublico,
   "estructura-ministerio-interior": estructuraMinisterioInterior,
+  "ley-organica-fuerzas-cuerpos-seguridad": leyOrganicaFuerzasCuerposSeguridad,
 };
 
 export function getResumenByTema(temaSlug: string): Resumen | undefined {
