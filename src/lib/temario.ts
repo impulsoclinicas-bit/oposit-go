@@ -128,11 +128,51 @@ export const temas: Tema[] = [
     descripcion:
       "Concepto de delito, elementos del tipo, autoría y participación, y clasificación de las penas en el Código Penal.",
   },
+  {
+    slug: "codigo-civil-persona-capacidad",
+    numero: 11,
+    bloque: "juridico",
+    titulo: "Código Civil: la persona, la nacionalidad y la capacidad",
+    descripcion:
+      "Fuentes del derecho, nacionalidad española, vecindad civil, tutela y guarda de menores, mayoría de edad y medidas de apoyo a personas con discapacidad.",
+  },
+  {
+    slug: "tribunal-constitucional",
+    numero: 12,
+    bloque: "juridico",
+    titulo: "El Tribunal Constitucional",
+    descripcion:
+      "Composición, competencias, recurso de inconstitucionalidad, recurso de amparo y efectos de las sentencias.",
+  },
+  {
+    slug: "defensor-del-pueblo",
+    numero: 13,
+    bloque: "juridico",
+    titulo: "El Defensor del Pueblo",
+    descripcion:
+      "Elección, prerrogativas, tramitación de quejas y facultades del alto comisionado de las Cortes Generales.",
+  },
+  {
+    slug: "estados-alarma-excepcion-sitio",
+    numero: 14,
+    bloque: "juridico",
+    titulo: "Los estados de alarma, excepción y sitio",
+    descripcion:
+      "Supuestos, declaración, duración y efectos de cada uno de los tres estados excepcionales previstos en la Constitución.",
+  },
+  {
+    slug: "fiscalia-europea",
+    numero: 15,
+    bloque: "juridico",
+    titulo: "La Fiscalía Europea en España",
+    descripcion:
+      "Competencia de los Fiscales europeos delegados, control judicial y procedimiento de investigación de delitos que perjudican los intereses financieros de la UE.",
+  },
 
   // Bloque II — Social
   {
     slug: "igualdad-genero",
-    numero: 11,
+    numero: 16,
     bloque: "social",
     titulo: "Igualdad efectiva entre mujeres y hombres",
     descripcion:
@@ -140,7 +180,7 @@ export const temas: Tema[] = [
   },
   {
     slug: "violencia-genero",
-    numero: 12,
+    numero: 17,
     bloque: "social",
     titulo: "Violencia de género: marco legal y protocolos de actuación",
     descripcion:
@@ -148,7 +188,7 @@ export const temas: Tema[] = [
   },
   {
     slug: "extranjeria-inmigracion",
-    numero: 13,
+    numero: 18,
     bloque: "social",
     titulo: "Extranjería e inmigración",
     descripcion:
@@ -156,7 +196,7 @@ export const temas: Tema[] = [
   },
   {
     slug: "seguridad-vial",
-    numero: 14,
+    numero: 19,
     bloque: "social",
     titulo: "Seguridad vial: normativa básica de tráfico",
     descripcion:
@@ -164,7 +204,7 @@ export const temas: Tema[] = [
   },
   {
     slug: "actualidad-institucional",
-    numero: 15,
+    numero: 20,
     bloque: "social",
     titulo: "Actualidad institucional y organización del Estado autonómico",
     descripcion:
@@ -174,7 +214,7 @@ export const temas: Tema[] = [
   // Bloque III — Técnico-científico
   {
     slug: "informatica-basica",
-    numero: 16,
+    numero: 21,
     bloque: "tecnico-cientifico",
     titulo: "Informática básica y ofimática",
     descripcion:
@@ -182,7 +222,7 @@ export const temas: Tema[] = [
   },
   {
     slug: "actuacion-policial-basica",
-    numero: 17,
+    numero: 22,
     bloque: "tecnico-cientifico",
     titulo: "Actuación policial básica y atención a la ciudadanía",
     descripcion:
@@ -190,7 +230,7 @@ export const temas: Tema[] = [
   },
   {
     slug: "primeros-auxilios",
-    numero: 18,
+    numero: 23,
     bloque: "tecnico-cientifico",
     titulo: "Primeros auxilios aplicados a la actuación policial",
     descripcion:
@@ -198,7 +238,7 @@ export const temas: Tema[] = [
   },
   {
     slug: "criminalistica-basica",
-    numero: 19,
+    numero: 24,
     bloque: "tecnico-cientifico",
     titulo: "Nociones básicas de criminalística y policía científica",
     descripcion:
@@ -206,7 +246,7 @@ export const temas: Tema[] = [
   },
   {
     slug: "seguridad-privada-ciudadana",
-    numero: 20,
+    numero: 25,
     bloque: "tecnico-cientifico",
     titulo: "Seguridad ciudadana y seguridad privada",
     descripcion:

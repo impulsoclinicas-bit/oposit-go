@@ -5,6 +5,8 @@ import { Container } from "@/components/Container";
 import { QuizRunner } from "@/components/QuizRunner";
 import { getBloque, getTemaBySlug, temas } from "@/lib/temario";
 import { getPreguntasByTema } from "@/content/preguntas";
+import { getEsquemaByTema } from "@/content/esquemas";
+import { getResumenByTema } from "@/content/resumenes";
 import { requireActiveUser } from "@/lib/auth-helpers";
 
 export function generateStaticParams() {
@@ -39,6 +41,8 @@ export default async function TemaPage({
 
   const bloque = getBloque(tema.bloque);
   const preguntas = getPreguntasByTema(tema.slug);
+  const esquema = getEsquemaByTema(tema.slug);
+  const resumen = getResumenByTema(tema.slug);
 
   return (
     <>
@@ -55,17 +59,44 @@ export default async function TemaPage({
 
       <section className="py-12 sm:py-16">
         <Container className="grid gap-6 sm:grid-cols-2">
-          <div className="rounded-xl border border-dashed border-brand-300 bg-brand-50 p-6">
+          <div className="rounded-xl border border-brand-200 bg-white p-6 shadow-sm">
             <h2 className="font-bold text-brand-900">Esquema del tema</h2>
-            <p className="mt-2 text-sm text-brand-700">
-              Próximamente disponible.
-            </p>
+            {esquema ? (
+              <div className="mt-4 space-y-4">
+                {esquema.secciones.map((seccion) => (
+                  <div key={seccion.titulo}>
+                    <h3 className="text-sm font-semibold text-brand-800">
+                      {seccion.titulo}
+                    </h3>
+                    <ul className="mt-1 list-disc space-y-1 pl-5 text-sm text-brand-700">
+                      {seccion.puntos.map((punto, i) => (
+                        <li key={i}>{punto}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p className="mt-2 text-sm text-brand-700">
+                Próximamente disponible.
+              </p>
+            )}
           </div>
-          <div className="rounded-xl border border-dashed border-brand-300 bg-brand-50 p-6">
+          <div className="rounded-xl border border-brand-200 bg-white p-6 shadow-sm">
             <h2 className="font-bold text-brand-900">Resumen del tema</h2>
-            <p className="mt-2 text-sm text-brand-700">
-              Próximamente disponible.
-            </p>
+            {resumen ? (
+              <div className="mt-4 space-y-3">
+                {resumen.parrafos.map((parrafo, i) => (
+                  <p key={i} className="text-sm text-brand-700">
+                    {parrafo}
+                  </p>
+                ))}
+              </div>
+            ) : (
+              <p className="mt-2 text-sm text-brand-700">
+                Próximamente disponible.
+              </p>
+            )}
           </div>
         </Container>
       </section>

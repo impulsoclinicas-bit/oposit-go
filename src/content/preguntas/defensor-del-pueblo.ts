@@ -1,0 +1,123 @@
+import type { Pregunta } from "@/lib/preguntas";
+
+export const preguntas: Pregunta[] = [
+  {
+    id: "dp-01",
+    enunciado: "¿Qué Ley Orgánica regula al Defensor del Pueblo?",
+    opciones: ["Ley Orgánica 2/1979", "Ley Orgánica 3/1981", "Ley Orgánica 4/1981", "Ley Orgánica 9/2021"],
+    correcta: 1,
+    explicacion: "El Defensor del Pueblo se regula en la Ley Orgánica 3/1981, de 6 de abril.",
+  },
+  {
+    id: "dp-02",
+    enunciado: "¿Por cuánto tiempo es elegido el Defensor del Pueblo?",
+    opciones: ["3 años", "4 años", "5 años", "9 años"],
+    correcta: 2,
+    explicacion: "El art. 2.1 de la Ley Orgánica 3/1981 establece que el Defensor del Pueblo será elegido por las Cortes Generales para un período de cinco años.",
+  },
+  {
+    id: "dp-03",
+    enunciado: "¿Qué mayoría se requiere en el Congreso para elegir al Defensor del Pueblo en primera votación?",
+    opciones: ["Mayoría simple", "Mayoría absoluta", "Tres quintos", "Dos tercios"],
+    correcta: 2,
+    explicacion: "El art. 2.4 exige una votación favorable de las tres quintas partes de los miembros del Congreso, ratificada posteriormente por la misma mayoría en el Senado.",
+  },
+  {
+    id: "dp-04",
+    enunciado: "¿Cuántos Adjuntos auxilian al Defensor del Pueblo según el artículo 8?",
+    opciones: ["Uno", "Dos: un Adjunto Primero y un Adjunto Segundo", "Tres", "Ninguno, actúa en solitario"],
+    correcta: 1,
+    explicacion: "El art. 8.1 establece que el Defensor del Pueblo estará auxiliado por un Adjunto Primero y un Adjunto Segundo, que lo sustituirán por su orden.",
+  },
+  {
+    id: "dp-05",
+    enunciado: "¿En qué caso puede ser detenido el Defensor del Pueblo mientras ejerce su cargo?",
+    opciones: [
+      "Nunca puede ser detenido bajo ninguna circunstancia",
+      "Solo en caso de flagrante delito",
+      "Con autorización previa del Congreso en cualquier caso",
+      "Solo por delitos contra la seguridad del Estado",
+    ],
+    correcta: 1,
+    explicacion: "El art. 6.3 dispone que el Defensor del Pueblo no podrá ser detenido ni retenido sino en caso de flagrante delito.",
+  },
+  {
+    id: "dp-06",
+    enunciado: "¿A qué órgano judicial corresponde la inculpación, prisión, procesamiento y juicio del Defensor del Pueblo?",
+    opciones: [
+      "Al Tribunal Constitucional",
+      "A la Sala de lo Penal del Tribunal Supremo",
+      "A la Audiencia Nacional",
+      "A cualquier Juzgado de Instrucción",
+    ],
+    correcta: 1,
+    explicacion: "El art. 6.3 atribuye esta competencia exclusivamente a la Sala de lo Penal del Tribunal Supremo.",
+  },
+  {
+    id: "dp-07",
+    enunciado: "¿Puede una autoridad administrativa presentar una queja ante el Defensor del Pueblo sobre un asunto de su propia competencia?",
+    opciones: [
+      "Sí, sin restricciones",
+      "No, el artículo 10.3 se lo prohíbe expresamente",
+      "Solo si lo autoriza el Ministerio Fiscal",
+      "Solo las Comunidades Autónomas pueden hacerlo",
+    ],
+    correcta: 1,
+    explicacion: "El art. 10.3 establece que no podrá presentar quejas ante el Defensor del Pueblo ninguna autoridad administrativa en asuntos de su competencia.",
+  },
+  {
+    id: "dp-08",
+    enunciado: "¿Cuál es el plazo máximo para presentar una queja ante el Defensor del Pueblo desde que se conocieron los hechos?",
+    opciones: ["Tres meses", "Seis meses", "Un año", "Dos años"],
+    correcta: 2,
+    explicacion: "El art. 15.1 fija el plazo máximo en un año, contado desde el momento en que el interesado tuvo conocimiento de los hechos objeto de la queja.",
+  },
+  {
+    id: "dp-09",
+    enunciado: "¿Es necesaria la asistencia de abogado o procurador para presentar una queja ante el Defensor del Pueblo?",
+    opciones: [
+      "Sí, siempre es obligatorio",
+      "No, el procedimiento es gratuito y no exige abogado ni procurador",
+      "Solo en quejas de especial complejidad",
+      "Solo si la queja se presenta contra un Ministerio",
+    ],
+    correcta: 1,
+    explicacion: "El art. 15.2 establece que todas las actuaciones del Defensor del Pueblo son gratuitas para el interesado y no será preceptiva la asistencia de letrado ni de procurador.",
+  },
+  {
+    id: "dp-10",
+    enunciado: "¿Qué puede hacer el Defensor del Pueblo respecto a los actos de la Administración que considere lesivos, según el artículo 28?",
+    opciones: [
+      "Anularlos directamente",
+      "Modificarlos por sí mismo",
+      "Sugerir la modificación de los criterios utilizados para su producción, sin poder anularlos",
+      "Suspenderlos cautelarmente",
+    ],
+    correcta: 2,
+    explicacion: "El art. 28.1 aclara que el Defensor del Pueblo no es competente para modificar o anular los actos y resoluciones de la Administración, pero sí puede sugerir la modificación de los criterios utilizados.",
+  },
+  {
+    id: "dp-11",
+    enunciado: "¿Ante quién debe rendir cuentas anualmente el Defensor del Pueblo?",
+    opciones: [
+      "Ante el Gobierno",
+      "Ante las Cortes Generales, mediante un informe anual",
+      "Ante el Tribunal Constitucional",
+      "Ante el Consejo General del Poder Judicial",
+    ],
+    correcta: 1,
+    explicacion: "El art. 32.1 establece que el Defensor del Pueblo dará cuenta anualmente a las Cortes Generales de la gestión realizada mediante un informe.",
+  },
+  {
+    id: "dp-12",
+    enunciado: "¿Para qué recursos ante el Tribunal Constitucional está legitimado el Defensor del Pueblo según el artículo 29?",
+    opciones: [
+      "Solo para el recurso de amparo",
+      "Solo para el recurso de inconstitucionalidad",
+      "Para los recursos de inconstitucionalidad y de amparo",
+      "No tiene legitimación ante el Tribunal Constitucional",
+    ],
+    correcta: 2,
+    explicacion: "El art. 29 establece que el Defensor del Pueblo está legitimado para interponer los recursos de inconstitucionalidad y de amparo.",
+  },
+];
