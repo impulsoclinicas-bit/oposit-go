@@ -9,6 +9,7 @@ import { resumen as estructuraMinisterioInterior } from "./estructura-ministerio
 import { resumen as leyOrganicaFuerzasCuerposSeguridad } from "./ley-organica-fuerzas-cuerpos-seguridad";
 import { resumen as leyRegimenJuridicoSectorPublico } from "./ley-regimen-juridico-sector-publico";
 import { resumen as leyDelGobierno } from "./ley-del-gobierno";
+import { resumen as leyOrganicaPoliciaNacional } from "./ley-organica-policia-nacional";
 
 const registroResumenes: Record<string, Resumen> = {
   "codigo-civil-persona-capacidad": codigoCivilPersonaCapacidad,
@@ -21,6 +22,7 @@ const registroResumenes: Record<string, Resumen> = {
   "ley-organica-fuerzas-cuerpos-seguridad": leyOrganicaFuerzasCuerposSeguridad,
   "ley-regimen-juridico-sector-publico": leyRegimenJuridicoSectorPublico,
   "ley-del-gobierno": leyDelGobierno,
+  "ley-organica-policia-nacional": leyOrganicaPoliciaNacional,
 };
 
 export function getResumenByTema(temaSlug: string): Resumen | undefined {

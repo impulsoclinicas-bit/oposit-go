@@ -14,6 +14,7 @@ import { preguntas as estructuraMinisterioInterior } from "./estructura-minister
 import { preguntas as leyOrganicaFuerzasCuerposSeguridad } from "./ley-organica-fuerzas-cuerpos-seguridad";
 import { preguntas as leyRegimenJuridicoSectorPublico } from "./ley-regimen-juridico-sector-publico";
 import { preguntas as leyDelGobierno } from "./ley-del-gobierno";
+import { preguntas as leyOrganicaPoliciaNacional } from "./ley-organica-policia-nacional";
 
 // Banco de preguntas por tema. Los temas que todavía no tienen batería
 // redactada simplemente no aparecen aquí: `getPreguntasByTema` devuelve un
@@ -34,6 +35,7 @@ const bancoPreguntas: Record<string, Pregunta[]> = {
   "ley-organica-fuerzas-cuerpos-seguridad": leyOrganicaFuerzasCuerposSeguridad,
   "ley-regimen-juridico-sector-publico": leyRegimenJuridicoSectorPublico,
   "ley-del-gobierno": leyDelGobierno,
+  "ley-organica-policia-nacional": leyOrganicaPoliciaNacional,
 };
 
 export function getPreguntasByTema(temaSlug: string): Pregunta[] {
