@@ -15,6 +15,8 @@ export const siteConfig = {
 
 export const mainNav = [
   { href: "/", label: "Inicio" },
+  { href: "/convocatoria", label: "Convocatoria" },
+  { href: "/recursos", label: "Recursos gratis" },
   { href: "/temario", label: "Temario" },
   { href: "/simulacros", label: "Simulacros" },
   { href: "/precios", label: "Precios" },

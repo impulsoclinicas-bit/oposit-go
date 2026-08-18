@@ -109,6 +109,24 @@ export default function HomePage() {
         </Container>
       </section>
 
+      <section className="border-b border-brand-100 bg-white py-6">
+        <Container className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
+          <p className="text-sm text-brand-800">
+            <span className="font-semibold text-brand-900">
+              Convocatoria 2026 en curso:
+            </span>{" "}
+            2.704 plazas de Escala Básica. Primer ejercicio el 26 de
+            septiembre de 2026.
+          </p>
+          <Link
+            href="/convocatoria"
+            className="shrink-0 text-sm font-semibold text-brand-800 hover:text-brand-900"
+          >
+            Ver todos los detalles →
+          </Link>
+        </Container>
+      </section>
+
       <section className="py-16 sm:py-20">
         <Container>
           <h2 className="text-2xl font-bold text-brand-900 sm:text-3xl">
@@ -159,6 +177,24 @@ export default function HomePage() {
               Ver el temario completo →
             </Link>
           </div>
+        </Container>
+      </section>
+
+      <section className="py-16 sm:py-20">
+        <Container className="flex flex-col items-center gap-4 rounded-2xl border border-brand-200 bg-brand-50/60 px-6 py-10 text-center">
+          <h2 className="text-2xl font-bold text-brand-900 sm:text-3xl">
+            ¿Quieres probar antes de suscribirte?
+          </h2>
+          <p className="max-w-xl text-brand-700">
+            Haz un par de tests gratis, sin registrarte, y comprueba cómo
+            corregimos y explicamos cada pregunta al instante.
+          </p>
+          <Link
+            href="/recursos"
+            className="rounded-md bg-brand-900 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-brand-800"
+          >
+            Ir a los recursos gratuitos
+          </Link>
         </Container>
       </section>
 

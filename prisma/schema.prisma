@@ -28,6 +28,7 @@ model User {
 
   activationTokens     ActivationToken[]
   quizAttempts         QuizAttempt[]
+  studyPlan            StudyPlan?
 }
 
 // One-time link sent by email after a successful payment so the opositor
@@ -53,4 +54,19 @@ model QuizAttempt {
   createdAt DateTime @default(now())
 
   @@index([userId, temaSlug])
+}
+
+// Plan de estudio personalizado del alumno. Se regenera (no se acumula
+// historial) cada vez que cambia la fecha de examen o las horas semanales
+// disponibles; "semanas" guarda el desglose ya calculado para no tener que
+// recalcularlo en cada carga de /cuenta.
+model StudyPlan {
+  id           String   @id @default(cuid())
+  userId       String   @unique
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  examDate     DateTime?
+  hoursPerWeek Int
+  semanas      Json
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
 }
