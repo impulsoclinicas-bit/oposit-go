@@ -13,8 +13,10 @@ export const metadata: Metadata = {
 
 const incluye = [
   "Batería de preguntas tipo test de todos los temas",
+  "Pruebas psicotécnicas: series numéricas, series de letras, sinónimos/antónimos y analogías verbales",
   "Simulacro combinado cada 5 temas",
   "Esquemas y resúmenes de repaso (se van publicando por tema)",
+  "Plan de estudio personalizado según tu fecha de examen",
   "Corrección y explicación al instante en cada pregunta",
   "Acceso desde el móvil, tablet u ordenador",
   "Cancela cuando quieras, sin permanencia",
@@ -35,6 +37,11 @@ const faqItems = [
     question: "¿Qué pasa después de pagar?",
     answer:
       "Te enviamos un email al instante para que crees tu contraseña y accedas ya mismo a todo el contenido disponible.",
+  },
+  {
+    question: "¿Preparáis las pruebas físicas o la entrevista?",
+    answer:
+      "No. Oposit&go no es una academia: nos centramos en la parte que se prepara con test, esquemas y repaso (temario y psicotécnicos). No entrenamos las pruebas de aptitud física ni la prueba biográfica/entrevista.",
   },
 ];
 

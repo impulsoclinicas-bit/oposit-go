@@ -52,7 +52,12 @@ export default async function SimulacroPage({
 
       <section className="py-16 sm:py-20">
         <Container>
-          <QuizRunner temaSlug={simulacro.slug} preguntas={preguntas} />
+          <QuizRunner
+            temaSlug={simulacro.slug}
+            preguntas={preguntas}
+            volverHref="/simulacros"
+            volverLabel="Volver a simulacros"
+          />
         </Container>
       </section>
     </>

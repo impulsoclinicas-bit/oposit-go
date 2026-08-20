@@ -1,6 +1,7 @@
 import type { Pregunta } from "@/lib/preguntas";
 import { preguntas as constitucionEspanola1978 } from "@/content/preguntas/constitucion-espanola-1978";
 import { preguntas as leyOrganicaPoliciaNacional } from "@/content/preguntas/ley-organica-policia-nacional";
+import { preguntas as analogiasVerbales } from "@/content/psicotecnicos/analogias-verbales";
 
 export type RecursoGratis = {
   slug: string;
@@ -27,6 +28,13 @@ export const recursosGratis: RecursoGratis[] = [
     descripcion:
       "8 preguntas de muestra sobre la Ley Orgánica 9/2015, con corrección y explicación al instante.",
     preguntas: leyOrganicaPoliciaNacional.slice(0, 8),
+  },
+  {
+    slug: "psicotecnico-analogias-basico",
+    titulo: "Test gratis: psicotécnico de analogías verbales",
+    descripcion:
+      "Muestra de una de las pruebas psicotécnicas del examen: completa la relación entre palabras.",
+    preguntas: analogiasVerbales.slice(0, 6),
   },
 ];
 

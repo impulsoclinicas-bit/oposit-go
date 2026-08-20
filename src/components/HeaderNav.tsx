@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { signOut } from "next-auth/react";
 import { mainNav } from "@/lib/site";
+import { PoliceBadge } from "@/components/icons/PoliceBadge";
 
 export function HeaderNav({ email }: { email: string | null }) {
   const pathname = usePathname();
@@ -19,12 +20,15 @@ export function HeaderNav({ email }: { email: string | null }) {
           onClick={() => setOpen(false)}
         >
           <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent-500 text-brand-950">
-            O
+            <PoliceBadge className="h-6 w-6" />
           </span>
           Oposit&amp;go
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex" aria-label="Navegación principal">
+        <nav
+          className="hidden flex-wrap items-center gap-1 lg:flex"
+          aria-label="Navegación principal"
+        >
           {mainNav.map((item) => {
             const isActive =
               item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
@@ -32,19 +36,20 @@ export function HeaderNav({ email }: { email: string | null }) {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${
+                className={`whitespace-nowrap rounded-md px-2.5 py-2 text-sm font-medium transition-colors xl:px-3 ${
                   isActive
                     ? "bg-brand-900 text-white"
                     : "text-brand-100/80 hover:bg-brand-900 hover:text-white"
                 }`}
               >
+                {item.gated && <span aria-hidden="true">🔒 </span>}
                 {item.label}
               </Link>
             );
           })}
         </nav>
 
-        <div className="hidden items-center gap-2 md:flex">
+        <div className="hidden items-center gap-2 lg:flex">
           {email ? (
             <>
               <Link
@@ -81,7 +86,7 @@ export function HeaderNav({ email }: { email: string | null }) {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-md p-2 text-white md:hidden"
+          className="inline-flex items-center justify-center rounded-md p-2 text-white lg:hidden"
           aria-expanded={open}
           aria-label="Abrir menú de navegación"
           onClick={() => setOpen((v) => !v)}
@@ -104,7 +109,7 @@ export function HeaderNav({ email }: { email: string | null }) {
       </div>
 
       {open && (
-        <nav className="border-t border-brand-900 bg-brand-950 px-4 pb-4 md:hidden" aria-label="Navegación móvil">
+        <nav className="border-t border-brand-900 bg-brand-950 px-4 pb-4 lg:hidden" aria-label="Navegación móvil">
           <ul className="flex flex-col gap-1 pt-2">
             {mainNav.map((item) => (
               <li key={item.href}>
@@ -113,6 +118,7 @@ export function HeaderNav({ email }: { email: string | null }) {
                   className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-brand-900"
                   onClick={() => setOpen(false)}
                 >
+                  {item.gated && <span aria-hidden="true">🔒 </span>}
                   {item.label}
                 </Link>
               </li>

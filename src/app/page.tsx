@@ -4,9 +4,12 @@ import { Container } from "@/components/Container";
 import { CtaBand } from "@/components/CtaBand";
 import { FaqSection } from "@/components/FaqSection";
 import { JsonLd } from "@/components/JsonLd";
+import { PoliceBadge } from "@/components/icons/PoliceBadge";
 import { siteConfig } from "@/lib/site";
 import { bloques, temas } from "@/lib/temario";
 import { getSimulacros } from "@/lib/simulacros";
+import { getTotalPreguntasTemario } from "@/content/preguntas";
+import { getTotalPreguntasPsicotecnicos } from "@/content/psicotecnicos";
 
 export const metadata: Metadata = {
   title: `${siteConfig.tagline}`,
@@ -21,19 +24,19 @@ const beneficios = [
       "Test tipo examen para cada tema del temario, con corrección al instante y explicación de cada respuesta.",
   },
   {
+    titulo: "Pruebas psicotécnicas",
+    descripcion:
+      "Series numéricas, series de letras, sinónimos/antónimos y analogías verbales: la otra parte del primer ejercicio.",
+  },
+  {
     titulo: "Simulacro cada 5 temas",
     descripcion:
       "Combina preguntas de varios temas en un simulacro tipo test, igual que el examen real, para medir tu nivel por bloques.",
   },
   {
-    titulo: "Esquema y resumen por tema",
+    titulo: "Esquema, resumen y plan de estudio",
     descripcion:
-      "Contenido de repaso rápido para memorizar lo esencial de cada tema antes de hacer el test.",
-  },
-  {
-    titulo: "Contenido actualizado",
-    descripcion:
-      "Revisamos el temario cada convocatoria para que siempre estudies con la normativa vigente.",
+      "Repaso rápido por tema y un calendario semana a semana adaptado a tu fecha de examen.",
   },
 ];
 
@@ -41,7 +44,7 @@ const faqItems = [
   {
     question: "¿Qué incluye la suscripción mensual?",
     answer:
-      "Acceso completo a las baterías de preguntas de cada tema, los simulacros tipo test cada 5 temas y, progresivamente, los esquemas y resúmenes de cada tema. Todo desde el móvil o el ordenador.",
+      "Acceso completo a las baterías de preguntas de cada tema, las pruebas psicotécnicas, los simulacros tipo test cada 5 temas, los esquemas y resúmenes de cada tema, y un plan de estudio personalizado según tu fecha de examen. Todo desde el móvil o el ordenador.",
   },
   {
     question: "¿Puedo cancelar cuándo quiera?",
@@ -62,11 +65,13 @@ const faqItems = [
 
 export default function HomePage() {
   const simulacros = getSimulacros();
+  const totalPreguntas = getTotalPreguntasTemario() + getTotalPreguntasPsicotecnicos();
 
   return (
     <>
-      <section className="bg-gradient-to-br from-brand-950 via-brand-900 to-brand-800 py-20 text-white sm:py-28">
-        <Container className="grid gap-10 lg:grid-cols-[3fr_2fr] lg:items-center">
+      <section className="relative overflow-hidden bg-gradient-to-br from-brand-950 via-brand-900 to-brand-800 py-20 text-white sm:py-28">
+        <PoliceBadge className="pointer-events-none absolute -right-16 -top-16 h-96 w-96 text-white/5" />
+        <Container className="relative grid gap-10 lg:grid-cols-[3fr_2fr] lg:items-center">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wide text-accent-300">
               Oposición a Policía Nacional
@@ -75,9 +80,10 @@ export default function HomePage() {
               Prepara tu oposición a Policía Nacional con tests reales, tema a tema
             </h1>
             <p className="mt-5 max-w-xl text-lg text-brand-100">
-              Baterías de preguntas, simulacros cada 5 temas y (próximamente)
-              esquemas y resúmenes. Todo por una suscripción mensual de bajo
-              coste, sin permanencia.
+              Más de {totalPreguntas} preguntas tipo test, con el mismo
+              formato que el examen oficial: temario, psicotécnicos,
+              esquemas, resúmenes y simulacros. Todo por una suscripción
+              mensual de bajo coste, sin permanencia.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -87,10 +93,10 @@ export default function HomePage() {
                 Ver planes desde {siteConfig.precioMensualEur.toFixed(2)} €/mes
               </Link>
               <Link
-                href="/temario"
+                href="/recursos"
                 className="rounded-md border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
               >
-                Ver el temario completo
+                Probar gratis, sin registro
               </Link>
             </div>
           </div>
@@ -100,6 +106,7 @@ export default function HomePage() {
               De un vistazo
             </p>
             <ul className="mt-4 space-y-3 text-sm text-brand-100">
+              <li>✓ Más de {totalPreguntas} preguntas tipo test</li>
               <li>✓ {temas.length} temas organizados en {bloques.length} bloques</li>
               <li>✓ {simulacros.length} simulacros tipo test</li>
               <li>✓ Corrección y explicación al instante</li>
@@ -124,6 +131,53 @@ export default function HomePage() {
           >
             Ver todos los detalles →
           </Link>
+        </Container>
+      </section>
+
+      <section className="py-16 sm:py-20">
+        <Container>
+          <h2 className="text-2xl font-bold text-brand-900 sm:text-3xl">
+            Así funciona Oposit&amp;go
+          </h2>
+          <p className="mt-2 max-w-2xl text-brand-700">
+            Una parte es abierta para cualquier visitante; el contenido de
+            estudio en profundidad es para alumnos con suscripción.
+          </p>
+          <div className="mt-8 grid gap-6 lg:grid-cols-2">
+            <div className="rounded-xl border border-brand-200 bg-white p-6 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-wide text-brand-500">
+                Acceso libre · sin registro
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-brand-800">
+                <li>Información y noticias de la convocatoria en curso</li>
+                <li>Listado completo del temario (los títulos, no los tests)</li>
+                <li>Varios tests de muestra y un esquema de ejemplo</li>
+              </ul>
+              <Link
+                href="/recursos"
+                className="mt-4 inline-block text-sm font-semibold text-brand-800 hover:text-brand-900"
+              >
+                Ir a recursos gratuitos →
+              </Link>
+            </div>
+            <div className="rounded-xl border border-accent-300 bg-brand-950 p-6 text-white shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-wide text-accent-300">
+                🔒 Zona de alumnos · suscripción
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-brand-100">
+                <li>Batería completa de preguntas de cada tema</li>
+                <li>Pruebas psicotécnicas por categorías</li>
+                <li>Esquemas y resúmenes de repaso</li>
+                <li>Simulacros combinados y plan de estudio personalizado</li>
+              </ul>
+              <Link
+                href="/precios"
+                className="mt-4 inline-block text-sm font-semibold text-accent-300 hover:text-accent-200"
+              >
+                Ver planes →
+              </Link>
+            </div>
+          </div>
         </Container>
       </section>
 

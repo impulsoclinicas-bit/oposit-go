@@ -62,6 +62,33 @@ const fechas = [
   { hito: "Pruebas físicas", fecha: "Segunda quincena de octubre de 2026" },
 ];
 
+const noticias = [
+  {
+    fecha: "13 ago. 2026",
+    titulo: "Publicada la lista provisional de admitidos y excluidos",
+    resumen:
+      "La Dirección General de la Policía publicó en el BOE la relación de personas admitidas y excluidas a la Escala Básica. Quien figure como excluido tiene 10 días hábiles desde la publicación para subsanar su instancia.",
+  },
+  {
+    fecha: "12 ago. 2026",
+    titulo: "Consulta anticipada en el Portal del Aspirante",
+    resumen:
+      "Un día antes de la publicación oficial, ya se podía consultar de forma individualizada el estado de cada instancia en el Portal del Aspirante de la Policía Nacional.",
+  },
+  {
+    fecha: "31 jul. 2026",
+    titulo: "Cierre del plazo de solicitudes",
+    resumen:
+      "Terminó el plazo para presentar instancias, abierto desde el 13 de julio.",
+  },
+  {
+    fecha: "10 jul. 2026",
+    titulo: "Publicación de la convocatoria en el BOE",
+    resumen:
+      "Resolución de 7 de julio de 2026 de la Dirección General de la Policía: 2.704 plazas de Escala Básica y bajada del ratio de aptos por plaza a 1,75.",
+  },
+];
+
 export default function ConvocatoriaPage() {
   return (
     <>
@@ -110,6 +137,30 @@ export default function ConvocatoriaPage() {
               </div>
             ))}
           </div>
+        </Container>
+      </section>
+
+      <section className="py-12 sm:py-16">
+        <Container>
+          <h2 className="text-2xl font-bold text-brand-900">Últimas noticias</h2>
+          <p className="mt-1 max-w-2xl text-sm text-brand-700">
+            Hitos de esta convocatoria, de más reciente a más antiguo.
+          </p>
+          <ol className="mt-6 space-y-4 border-l-2 border-brand-200 pl-6">
+            {noticias.map((noticia) => (
+              <li key={noticia.titulo} className="relative">
+                <span
+                  aria-hidden="true"
+                  className="absolute -left-[29px] top-1.5 h-3 w-3 rounded-full border-2 border-white bg-accent-500"
+                />
+                <p className="text-xs font-semibold uppercase tracking-wide text-brand-500">
+                  {noticia.fecha}
+                </p>
+                <h3 className="mt-1 font-bold text-brand-900">{noticia.titulo}</h3>
+                <p className="mt-1 text-sm text-brand-700">{noticia.resumen}</p>
+              </li>
+            ))}
+          </ol>
         </Container>
       </section>
 
@@ -171,6 +222,40 @@ export default function ConvocatoriaPage() {
                 </ul>
               </div>
             ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="py-12 sm:py-16">
+        <Container>
+          <div className="rounded-xl border border-brand-200 bg-white p-6 shadow-sm">
+            <h2 className="font-bold text-brand-900">¿Qué preparamos en Oposit&amp;go?</h2>
+            <div className="mt-4 grid gap-6 sm:grid-cols-2">
+              <div>
+                <p className="text-sm font-semibold text-success-600">Sí lo cubrimos</p>
+                <ul className="mt-2 space-y-1.5 text-sm text-brand-700">
+                  <li>Temario tipo test (el cuestionario de 100 preguntas)</li>
+                  <li>
+                    Pruebas psicotécnicas (series numéricas, series de
+                    letras, sinónimos/antónimos y analogías verbales)
+                  </li>
+                  <li>Esquemas y resúmenes de repaso por tema</li>
+                  <li>Simulacros combinados igual que el examen real</li>
+                </ul>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-brand-500">No lo cubrimos</p>
+                <ul className="mt-2 space-y-1.5 text-sm text-brand-700">
+                  <li>Entrenamiento de las pruebas de aptitud física</li>
+                  <li>Preparación de la prueba biográfica (CIB) ni de la entrevista</li>
+                </ul>
+                <p className="mt-3 text-xs text-brand-500">
+                  No somos una academia presencial: nos centramos en la
+                  parte de estudio que se prepara con test, esquemas y
+                  repaso, que es donde más ayuda un recurso online.
+                </p>
+              </div>
+            </div>
           </div>
         </Container>
       </section>

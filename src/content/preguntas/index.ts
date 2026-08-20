@@ -41,3 +41,7 @@ const bancoPreguntas: Record<string, Pregunta[]> = {
 export function getPreguntasByTema(temaSlug: string): Pregunta[] {
   return bancoPreguntas[temaSlug] ?? [];
 }
+
+export function getTotalPreguntasTemario(): number {
+  return Object.values(bancoPreguntas).reduce((acc, p) => acc + p.length, 0);
+}

@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { Container } from "@/components/Container";
 import { Breadcrumbs, Crumb } from "@/components/Breadcrumbs";
+import { PoliceStripe } from "@/components/PoliceStripe";
 
 export function PageHero({
   eyebrow,
@@ -16,7 +17,7 @@ export function PageHero({
   children?: ReactNode;
 }) {
   return (
-    <section className="bg-gradient-to-br from-brand-950 via-brand-900 to-brand-800 py-14 text-white sm:py-20">
+    <section className="bg-gradient-to-br from-brand-950 via-brand-900 to-brand-800 pb-0 pt-14 text-white sm:pt-20">
       <Container>
         <Breadcrumbs items={breadcrumbs} />
         {eyebrow && (
@@ -34,6 +35,9 @@ export function PageHero({
         )}
         {children}
       </Container>
+      <div className="mt-10 sm:mt-14">
+        <PoliceStripe />
+      </div>
     </section>
   );
 }

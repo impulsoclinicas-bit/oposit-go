@@ -7,9 +7,13 @@ import type { Pregunta } from "@/lib/preguntas";
 export function QuizRunner({
   temaSlug,
   preguntas,
+  volverHref = "/temario",
+  volverLabel = "Volver al temario",
 }: {
   temaSlug: string;
   preguntas: Pregunta[];
+  volverHref?: string;
+  volverLabel?: string;
 }) {
   const [respuestas, setRespuestas] = useState<Record<string, number>>({});
   const [corregido, setCorregido] = useState(false);
@@ -174,10 +178,10 @@ export function QuizRunner({
       {corregido && (
         <div className="flex justify-center">
           <Link
-            href="/temario"
+            href={volverHref}
             className="text-sm font-semibold text-brand-700 hover:text-brand-900"
           >
-            ← Volver al temario
+            ← {volverLabel}
           </Link>
         </div>
       )}

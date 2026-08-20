@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { mainNav, siteConfig } from "@/lib/site";
+import { PoliceBadge } from "@/components/icons/PoliceBadge";
+import { PoliceStripe } from "@/components/PoliceStripe";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -10,7 +12,7 @@ export function Footer() {
         <div>
           <div className="flex items-center gap-2 text-lg font-bold text-white">
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-500 text-brand-950">
-              O
+              <PoliceBadge className="h-5 w-5" />
             </span>
             Oposit&amp;go
           </div>
@@ -94,6 +96,7 @@ export function Footer() {
         no está vinculado a la Dirección General de la Policía ni a ningún
         organismo oficial.
       </div>
+      <PoliceStripe />
     </footer>
   );
 }
