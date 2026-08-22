@@ -5,11 +5,13 @@ import { CtaBand } from "@/components/CtaBand";
 import { FaqSection } from "@/components/FaqSection";
 import { JsonLd } from "@/components/JsonLd";
 import { PoliceBadge } from "@/components/icons/PoliceBadge";
+import { PatrolCar } from "@/components/icons/PatrolCar";
 import { siteConfig } from "@/lib/site";
 import { bloques, temas } from "@/lib/temario";
 import { getSimulacros } from "@/lib/simulacros";
 import { getTotalPreguntasTemario } from "@/content/preguntas";
 import { getTotalPreguntasPsicotecnicos } from "@/content/psicotecnicos";
+import { noticias } from "@/lib/noticias";
 
 export const metadata: Metadata = {
   title: `${siteConfig.tagline}`,
@@ -70,20 +72,21 @@ export default function HomePage() {
   return (
     <>
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-950 via-brand-900 to-brand-800 py-20 text-white sm:py-28">
-        <PoliceBadge className="pointer-events-none absolute -right-16 -top-16 h-96 w-96 text-white/5" />
+        <PoliceBadge className="pointer-events-none absolute -right-16 -top-16 h-96 w-96 opacity-10" />
         <Container className="relative grid gap-10 lg:grid-cols-[3fr_2fr] lg:items-center">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wide text-accent-300">
-              Oposición a Policía Nacional
+              Toda la info de la convocatoria + preparación real
             </p>
             <h1 className="mt-3 max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl">
               Prepara tu oposición a Policía Nacional con tests reales, tema a tema
             </h1>
             <p className="mt-5 max-w-xl text-lg text-brand-100">
-              Más de {totalPreguntas} preguntas tipo test, con el mismo
-              formato que el examen oficial: temario, psicotécnicos,
-              esquemas, resúmenes y simulacros. Todo por una suscripción
-              mensual de bajo coste, sin permanencia.
+              Convocatoria, plazas y fechas siempre actualizadas, gratis y
+              sin registro. Y cuando quieras ir en serio: más de{" "}
+              {totalPreguntas} preguntas tipo test, psicotécnicos, esquemas,
+              resúmenes y simulacros por una suscripción mensual de bajo
+              coste, sin permanencia.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -102,7 +105,8 @@ export default function HomePage() {
           </div>
 
           <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur">
-            <p className="text-sm font-semibold uppercase tracking-wide text-accent-300">
+            <PatrolCar className="h-auto w-full max-w-[240px]" />
+            <p className="mt-4 text-sm font-semibold uppercase tracking-wide text-accent-300">
               De un vistazo
             </p>
             <ul className="mt-4 space-y-3 text-sm text-brand-100">
@@ -130,6 +134,42 @@ export default function HomePage() {
             className="shrink-0 text-sm font-semibold text-brand-800 hover:text-brand-900"
           >
             Ver todos los detalles →
+          </Link>
+        </Container>
+      </section>
+
+      <section className="py-16 sm:py-20">
+        <Container>
+          <div className="flex items-center justify-between gap-4">
+            <h2 className="text-2xl font-bold text-brand-900 sm:text-3xl">
+              Últimas noticias de la convocatoria
+            </h2>
+            <Link
+              href="/convocatoria"
+              className="hidden shrink-0 text-sm font-semibold text-brand-800 hover:text-brand-900 sm:block"
+            >
+              Ver todas →
+            </Link>
+          </div>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            {noticias.slice(0, 2).map((noticia) => (
+              <div
+                key={noticia.titulo}
+                className="rounded-xl border border-brand-200 bg-white p-6 shadow-sm"
+              >
+                <p className="text-xs font-semibold uppercase tracking-wide text-brand-500">
+                  {noticia.fecha}
+                </p>
+                <h3 className="mt-1 font-bold text-brand-900">{noticia.titulo}</h3>
+                <p className="mt-1 text-sm text-brand-700">{noticia.resumen}</p>
+              </div>
+            ))}
+          </div>
+          <Link
+            href="/convocatoria"
+            className="mt-6 inline-block text-sm font-semibold text-brand-800 hover:text-brand-900 sm:hidden"
+          >
+            Ver todas las noticias →
           </Link>
         </Container>
       </section>

@@ -19,9 +19,7 @@ export function HeaderNav({ email }: { email: string | null }) {
           className="flex items-center gap-2 text-lg font-bold tracking-tight text-white"
           onClick={() => setOpen(false)}
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent-500 text-brand-950">
-            <PoliceBadge className="h-6 w-6" />
-          </span>
+          <PoliceBadge className="h-10 w-10 shrink-0" />
           Oposit&amp;go
         </Link>
 

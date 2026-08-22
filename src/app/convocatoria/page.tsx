@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/Container";
 import { PageHero } from "@/components/PageHero";
 import { CtaBand } from "@/components/CtaBand";
+import { noticias } from "@/lib/noticias";
 
 export const metadata: Metadata = {
   title: "Convocatoria Policía Nacional 2026",
@@ -62,30 +63,31 @@ const fechas = [
   { hito: "Pruebas físicas", fecha: "Segunda quincena de octubre de 2026" },
 ];
 
-const noticias = [
+const evolucion = [
+  { anio: "2025", total: "2.764", libres: "2.211", reserva: "553" },
+  { anio: "2026", total: "2.704", libres: "2.163", reserva: "541" },
+];
+
+const preguntasFrecuentes = [
   {
-    fecha: "13 ago. 2026",
-    titulo: "Publicada la lista provisional de admitidos y excluidos",
-    resumen:
-      "La Dirección General de la Policía publicó en el BOE la relación de personas admitidas y excluidas a la Escala Básica. Quien figure como excluido tiene 10 días hábiles desde la publicación para subsanar su instancia.",
+    pregunta: "¿Qué es la Escala Básica?",
+    respuesta:
+      "Es la categoría de entrada al Cuerpo Nacional de Policía como Policía. Es la vía de acceso más numerosa (miles de plazas por convocatoria) y no exige titulación universitaria, solo el Graduado en ESO o equivalente.",
   },
   {
-    fecha: "12 ago. 2026",
-    titulo: "Consulta anticipada en el Portal del Aspirante",
-    resumen:
-      "Un día antes de la publicación oficial, ya se podía consultar de forma individualizada el estado de cada instancia en el Portal del Aspirante de la Policía Nacional.",
+    pregunta: "¿En qué se diferencia de la Escala Ejecutiva?",
+    respuesta:
+      "La Escala Ejecutiva (categoría de Inspector) exige título universitario y se convoca con muchas menos plazas. Ambas comparten convocatoria en el tiempo pero son procesos y exámenes distintos.",
   },
   {
-    fecha: "31 jul. 2026",
-    titulo: "Cierre del plazo de solicitudes",
-    resumen:
-      "Terminó el plazo para presentar instancias, abierto desde el 13 de julio.",
+    pregunta: "¿Cuánto tarda todo el proceso, de la solicitud al ingreso?",
+    respuesta:
+      "Suele ir de un año a año y medio: solicitud, exámenes de la fase de oposición, listas de aprobados, y después el curso selectivo en la Escuela Nacional de Policía (Ávila), que dura varios meses.",
   },
   {
-    fecha: "10 jul. 2026",
-    titulo: "Publicación de la convocatoria en el BOE",
-    resumen:
-      "Resolución de 7 de julio de 2026 de la Dirección General de la Policía: 2.704 plazas de Escala Básica y bajada del ratio de aptos por plaza a 1,75.",
+    pregunta: "¿Se puede volver a presentar si no se aprueba?",
+    respuesta:
+      "Sí. Al ser oposición libre (no hay límite de convocatorias), puedes volver a presentarte en la siguiente convocatoria si sigues cumpliendo los requisitos de edad y el resto de condiciones.",
   },
 ];
 
@@ -136,6 +138,42 @@ export default function ConvocatoriaPage() {
                 <p className="mt-1 text-sm text-brand-700">{d.label}</p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-10">
+            <h2 className="text-lg font-bold text-brand-900">
+              Evolución respecto a la convocatoria anterior
+            </h2>
+            <div className="mt-4 overflow-x-auto rounded-xl border border-brand-200 bg-white shadow-sm">
+              <table className="w-full min-w-[420px] text-left text-sm">
+                <thead>
+                  <tr className="border-b border-brand-100 text-xs uppercase tracking-wide text-brand-500">
+                    <th className="px-5 py-3">Convocatoria</th>
+                    <th className="px-5 py-3">Plazas totales</th>
+                    <th className="px-5 py-3">Turno libre</th>
+                    <th className="px-5 py-3">Reserva militares</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {evolucion.map((e, i) => (
+                    <tr
+                      key={e.anio}
+                      className={i !== evolucion.length - 1 ? "border-b border-brand-100" : ""}
+                    >
+                      <td className="px-5 py-3 font-semibold text-brand-900">{e.anio}</td>
+                      <td className="px-5 py-3 text-brand-700">{e.total}</td>
+                      <td className="px-5 py-3 text-brand-700">{e.libres}</td>
+                      <td className="px-5 py-3 text-brand-700">{e.reserva}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-2 text-xs text-brand-500">
+              La convocatoria 2026 sale con 60 plazas menos que la de 2025.
+              Las plazas de reserva para militares que queden sin cubrir se
+              suman a las de turno libre.
+            </p>
           </div>
         </Container>
       </section>
@@ -260,6 +298,23 @@ export default function ConvocatoriaPage() {
         </Container>
       </section>
 
+      <section className="py-12 sm:py-16">
+        <Container>
+          <h2 className="text-2xl font-bold text-brand-900">Preguntas frecuentes sobre la oposición</h2>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            {preguntasFrecuentes.map((p) => (
+              <div
+                key={p.pregunta}
+                className="rounded-xl border border-brand-200 bg-white p-5 shadow-sm"
+              >
+                <h3 className="font-bold text-brand-900">{p.pregunta}</h3>
+                <p className="mt-2 text-sm text-brand-700">{p.respuesta}</p>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
       <CtaBand
         title="El primer ejercicio es tipo test: prepáralo así"
         description="Practica con baterías de preguntas por tema, simulacros combinados y esquemas de repaso. Empieza gratis con los recursos de práctica."
@@ -273,13 +328,14 @@ export default function ConvocatoriaPage() {
         <Container>
           <p className="text-xs text-brand-500">
             Fuentes consultadas: BOE-A-2026-15055 (Resolución de 7 de julio de
-            2026, Dirección General de la Policía) y medios especializados en
-            oposiciones. Los datos de plazas, plazos y fechas corresponden a
-            la convocatoria publicada en julio de 2026;{" "}
+            2026, Dirección General de la Policía) y varios medios
+            especializados en oposiciones que reportan el mismo desglose de
+            plazas y fechas. Los datos de plazas, plazos y fechas
+            corresponden a la convocatoria publicada en julio de 2026;{" "}
             <Link href="/contacto" className="underline">
               avísanos
             </Link>{" "}
-            si detectas algo desactualizado.
+            si detectas algo desactualizado o inexacto.
           </p>
         </Container>
       </section>

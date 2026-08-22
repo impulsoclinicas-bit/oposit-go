@@ -11,9 +11,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-4 lg:px-8">
         <div>
           <div className="flex items-center gap-2 text-lg font-bold text-white">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-500 text-brand-950">
-              <PoliceBadge className="h-5 w-5" />
-            </span>
+            <PoliceBadge className="h-9 w-9 shrink-0" />
             Oposit&amp;go
           </div>
           <p className="mt-3 text-sm text-brand-200">
