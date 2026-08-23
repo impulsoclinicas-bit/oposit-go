@@ -42,6 +42,28 @@ const beneficios = [
   },
 ];
 
+const fechas = [
+  { hito: "Publicación en el BOE", fecha: "10 de julio de 2026" },
+  { hito: "Plazo de solicitudes", fecha: "13 a 31 de julio de 2026" },
+  { hito: "Primer ejercicio (conocimientos y psicotécnicos)", fecha: "26 de septiembre de 2026" },
+  { hito: "Pruebas físicas", fecha: "Segunda quincena de octubre de 2026" },
+];
+
+const fases = [
+  {
+    titulo: "Conocimientos",
+    detalle: "Cuestionario tipo test de 100 preguntas sobre el temario, a responder en 50 minutos.",
+  },
+  {
+    titulo: "Psicotécnicos y personalidad",
+    detalle: "Se hacen el mismo día que el examen de conocimientos: series, razonamiento, cuestionario de personalidad y prueba biográfica.",
+  },
+  {
+    titulo: "Aptitud física",
+    detalle: "Varias pruebas puntuadas de 0 a 10 (nota media mínima de 5; un 0 en cualquiera elimina). No las preparamos aquí.",
+  },
+];
+
 const faqItems = [
   {
     question: "¿Qué incluye la suscripción mensual?",
@@ -120,21 +142,60 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <section className="border-b border-brand-100 bg-white py-6">
-        <Container className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
-          <p className="text-sm text-brand-800">
-            <span className="font-semibold text-brand-900">
-              Convocatoria 2026 en curso:
-            </span>{" "}
-            2.704 plazas de Escala Básica. Primer ejercicio el 26 de
-            septiembre de 2026.
+      <section className="py-16 sm:py-20">
+        <Container>
+          <h2 className="text-2xl font-bold text-brand-900 sm:text-3xl">
+            La convocatoria, paso a paso
+          </h2>
+          <p className="mt-2 max-w-2xl text-brand-700">
+            2.704 plazas de Escala Básica convocadas en julio de 2026. Esto
+            es lo esencial del proceso; el resto de detalles y la
+            documentación oficial, en{" "}
+            <Link href="/convocatoria" className="underline">
+              la página de la convocatoria
+            </Link>
+            .
           </p>
-          <Link
-            href="/convocatoria"
-            className="shrink-0 text-sm font-semibold text-brand-800 hover:text-brand-900"
-          >
-            Ver todos los detalles →
-          </Link>
+
+          <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_1.4fr]">
+            <div className="overflow-x-auto rounded-xl border border-brand-200 bg-white shadow-sm">
+              <table className="w-full min-w-[320px] text-left text-sm">
+                <tbody>
+                  {fechas.map((f, i) => (
+                    <tr
+                      key={f.hito}
+                      className={i !== fechas.length - 1 ? "border-b border-brand-100" : ""}
+                    >
+                      <td className="px-5 py-3 font-semibold text-brand-900">{f.hito}</td>
+                      <td className="px-5 py-3 text-brand-700">{f.fecha}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            <div>
+              <h3 className="font-bold text-brand-900">La fase de oposición</h3>
+              <div className="mt-3 grid gap-3 sm:grid-cols-3">
+                {fases.map((fase) => (
+                  <div
+                    key={fase.titulo}
+                    className="rounded-xl border border-brand-200 bg-white p-4 shadow-sm"
+                  >
+                    <p className="font-semibold text-brand-900">{fase.titulo}</p>
+                    <p className="mt-1 text-xs text-brand-700">{fase.detalle}</p>
+                  </div>
+                ))}
+              </div>
+              <h3 className="mt-5 font-bold text-brand-900">Después de aprobar: la academia</h3>
+              <p className="mt-2 text-sm text-brand-700">
+                Quien aprueba la oposición hace un curso selectivo en la
+                Escuela Nacional de Policía (Ávila), de varios meses, y
+                después un periodo de prácticas en centros y dependencias
+                policiales antes de la incorporación definitiva.
+              </p>
+            </div>
+          </div>
         </Container>
       </section>
 
@@ -171,53 +232,6 @@ export default function HomePage() {
           >
             Ver todas las noticias →
           </Link>
-        </Container>
-      </section>
-
-      <section className="py-16 sm:py-20">
-        <Container>
-          <h2 className="text-2xl font-bold text-brand-900 sm:text-3xl">
-            Así funciona Oposit&amp;go
-          </h2>
-          <p className="mt-2 max-w-2xl text-brand-700">
-            Una parte es abierta para cualquier visitante; el contenido de
-            estudio en profundidad es para alumnos con suscripción.
-          </p>
-          <div className="mt-8 grid gap-6 lg:grid-cols-2">
-            <div className="rounded-xl border border-brand-200 bg-white p-6 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-wide text-brand-500">
-                Acceso libre · sin registro
-              </p>
-              <ul className="mt-4 space-y-2 text-sm text-brand-800">
-                <li>Información y noticias de la convocatoria en curso</li>
-                <li>Listado completo del temario (los títulos, no los tests)</li>
-                <li>Varios tests de muestra y un esquema de ejemplo</li>
-              </ul>
-              <Link
-                href="/recursos"
-                className="mt-4 inline-block text-sm font-semibold text-brand-800 hover:text-brand-900"
-              >
-                Ir a recursos gratuitos →
-              </Link>
-            </div>
-            <div className="rounded-xl border border-accent-300 bg-brand-950 p-6 text-white shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-wide text-accent-300">
-                🔒 Zona de alumnos · suscripción
-              </p>
-              <ul className="mt-4 space-y-2 text-sm text-brand-100">
-                <li>Batería completa de preguntas de cada tema</li>
-                <li>Pruebas psicotécnicas por categorías</li>
-                <li>Esquemas y resúmenes de repaso</li>
-                <li>Simulacros combinados y plan de estudio personalizado</li>
-              </ul>
-              <Link
-                href="/precios"
-                className="mt-4 inline-block text-sm font-semibold text-accent-300 hover:text-accent-200"
-              >
-                Ver planes →
-              </Link>
-            </div>
-          </div>
         </Container>
       </section>
 

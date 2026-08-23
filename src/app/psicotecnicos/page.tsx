@@ -19,8 +19,8 @@ export default async function PsicotecnicosPage() {
   return (
     <>
       <PageHero
-        eyebrow="Zona de alumnos"
-        title="Psicotécnicos"
+        eyebrow="Psicotécnicos"
+        title="Series, sinónimos y analogías"
         description="El primer ejercicio no es solo temario: también incluye pruebas psicotécnicas. Practica aquí la parte verbal y numérica."
         breadcrumbs={[
           { label: "Inicio", href: "/" },

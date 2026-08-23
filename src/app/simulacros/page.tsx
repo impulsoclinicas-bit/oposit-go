@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Container } from "@/components/Container";
 import { PageHero } from "@/components/PageHero";
-import { GatedBanner } from "@/components/GatedBanner";
+import Link from "next/link";
 import { getSimulacros } from "@/lib/simulacros";
 
 export const metadata: Metadata = {
@@ -28,16 +27,7 @@ export default function SimulacrosPage() {
       />
 
       <section className="py-16 sm:py-20">
-        <Container className="space-y-8">
-          <GatedBanner>
-            Los simulacros combinados son para alumnos. Puedes probar el
-            formato gratis en los tests de muestra de{" "}
-            <Link href="/recursos" className="font-semibold underline">
-              recursos gratuitos
-            </Link>
-            .
-          </GatedBanner>
-
+        <Container>
           <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {simulacros.map((simulacro) => (
               <li key={simulacro.slug}>
@@ -45,9 +35,7 @@ export default function SimulacrosPage() {
                   href={`/simulacros/${simulacro.slug}`}
                   className="block rounded-xl border border-brand-100 bg-white p-6 shadow-sm transition-colors hover:border-brand-400"
                 >
-                  <h2 className="font-bold text-brand-900">
-                    {simulacro.titulo} <span aria-hidden="true">🔒</span>
-                  </h2>
+                  <h2 className="font-bold text-brand-900">{simulacro.titulo}</h2>
                   <p className="mt-2 text-sm text-brand-700">
                     {simulacro.temas.length} temas combinados
                   </p>

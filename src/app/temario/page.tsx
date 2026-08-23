@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { PageHero } from "@/components/PageHero";
-import { GatedBanner } from "@/components/GatedBanner";
 import { bloques, getTemasByBloque } from "@/lib/temario";
 
 export const metadata: Metadata = {
@@ -27,11 +26,6 @@ export default function TemarioPage() {
 
       <section className="py-16 sm:py-20">
         <Container className="space-y-12">
-          <GatedBanner>
-            El listado de temas es público. Para hacer los tests, ver los
-            esquemas y los resúmenes de cada tema hace falta ser alumno.
-          </GatedBanner>
-
           {bloques.map((bloque) => {
             const temasBloque = getTemasByBloque(bloque.slug);
             return (
@@ -50,7 +44,7 @@ export default function TemarioPage() {
                         </span>
                         <span>
                           <span className="block font-semibold text-brand-900">
-                            {tema.titulo} <span aria-hidden="true">🔒</span>
+                            {tema.titulo}
                           </span>
                           <span className="mt-1 block text-xs text-brand-600">
                             {tema.descripcion}

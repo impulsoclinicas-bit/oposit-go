@@ -40,7 +40,6 @@ export function HeaderNav({ email }: { email: string | null }) {
                     : "text-brand-100/80 hover:bg-brand-900 hover:text-white"
                 }`}
               >
-                {item.gated && <span aria-hidden="true">🔒 </span>}
                 {item.label}
               </Link>
             );
@@ -116,7 +115,6 @@ export function HeaderNav({ email }: { email: string | null }) {
                   className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-brand-900"
                   onClick={() => setOpen(false)}
                 >
-                  {item.gated && <span aria-hidden="true">🔒 </span>}
                   {item.label}
                 </Link>
               </li>

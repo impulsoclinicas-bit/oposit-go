@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Container } from "@/components/Container";
 import { PageHero } from "@/components/PageHero";
 import { CtaBand } from "@/components/CtaBand";
 import { QuizRunner } from "@/components/QuizRunner";
 import { recursosGratis } from "@/lib/recursos-gratis";
-import { getTotalPreguntasTemario } from "@/content/preguntas";
-import { getTotalPreguntasPsicotecnicos } from "@/content/psicotecnicos";
+import { getEsquemaByTema } from "@/content/esquemas";
 
 export const metadata: Metadata = {
   title: "Recursos gratuitos",
@@ -15,18 +13,9 @@ export const metadata: Metadata = {
   alternates: { canonical: "/recursos" },
 };
 
-const fasesEsquema = [
-  {
-    titulo: "1. Oposición",
-    detalle: "Test de conocimientos + psicotécnicos, aptitud física, prueba biográfica",
-  },
-  { titulo: "2. Curso selectivo", detalle: "Escuela Nacional de Policía (Ávila)" },
-  { titulo: "3. Prácticas", detalle: "En centros y dependencias policiales" },
-];
+const esquemaEjemplo = getEsquemaByTema("ley-organica-policia-nacional")!;
 
 export default function RecursosPage() {
-  const totalPreguntas = getTotalPreguntasTemario() + getTotalPreguntasPsicotecnicos();
-
   return (
     <>
       <PageHero
@@ -41,41 +30,28 @@ export default function RecursosPage() {
 
       <section className="py-12 sm:py-16">
         <Container>
-          <div className="rounded-xl border border-brand-200 bg-brand-50/60 p-5 text-sm text-brand-800">
-            Esto es una muestra de lo que hay dentro. En la zona de alumnos
-            tienes más de {totalPreguntas} preguntas tipo test, con el mismo
-            formato que el examen oficial: batería completa de cada tema,
-            psicotécnicos, esquemas y resúmenes, y simulacros combinados —
-            todo por una suscripción mensual de bajo coste, sin permanencia.
-          </div>
-
-          <div className="mt-12">
+          <div>
             <h2 className="text-2xl font-bold text-brand-900">
-              Esquema de ejemplo: fases del proceso selectivo
+              Esquema de ejemplo: régimen de personal de la Policía Nacional
             </h2>
             <p className="mt-1 text-sm text-brand-700">
-              Así es un esquema de repaso: el resumen visual de un tema en
-              tres golpes de vista.{" "}
-              <Link href="/convocatoria" className="underline">
-                Más detalle en la página de la convocatoria
-              </Link>
-              .
+              Un fragmento real de uno de los esquemas de repaso del temario.
             </p>
-            <div className="mt-6 flex flex-col items-stretch gap-2 sm:flex-row sm:items-center">
-              {fasesEsquema.map((fase, i) => (
-                <div key={fase.titulo} className="flex flex-1 items-center gap-2">
-                  <div className="flex-1 rounded-xl border-2 border-brand-800 bg-white p-5 text-center shadow-sm">
-                    <p className="font-bold text-brand-900">{fase.titulo}</p>
-                    <p className="mt-1 text-xs text-brand-600">{fase.detalle}</p>
-                  </div>
-                  {i < fasesEsquema.length - 1 && (
-                    <span
-                      aria-hidden="true"
-                      className="hidden shrink-0 text-2xl text-accent-500 sm:block"
-                    >
-                      →
-                    </span>
-                  )}
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              {esquemaEjemplo.secciones.slice(0, 2).map((seccion) => (
+                <div
+                  key={seccion.titulo}
+                  className="rounded-xl border border-brand-200 bg-white p-5 shadow-sm"
+                >
+                  <h3 className="text-sm font-bold text-brand-900">{seccion.titulo}</h3>
+                  <ul className="mt-3 space-y-1.5 text-sm text-brand-700">
+                    {seccion.puntos.map((punto, i) => (
+                      <li key={i} className="flex gap-2">
+                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-500" aria-hidden="true" />
+                        {punto}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               ))}
             </div>

@@ -15,15 +15,13 @@ export const siteConfig = {
   precioMensualEur: 9.99,
 };
 
-// `gated: true` marca las secciones que solo puede usar un alumno con
-// suscripción activa; el resto es accesible para cualquier visitante.
 export const mainNav = [
-  { href: "/", label: "Inicio", gated: false },
-  { href: "/convocatoria", label: "Convocatoria", gated: false },
-  { href: "/recursos", label: "Recursos gratis", gated: false },
-  { href: "/temario", label: "Temario", gated: true },
-  { href: "/psicotecnicos", label: "Psicotécnicos", gated: true },
-  { href: "/simulacros", label: "Simulacros", gated: true },
-  { href: "/precios", label: "Precios", gated: false },
-  { href: "/contacto", label: "Contacto", gated: false },
+  { href: "/", label: "Inicio" },
+  { href: "/convocatoria", label: "Convocatoria" },
+  { href: "/recursos", label: "Recursos" },
+  { href: "/temario", label: "Temario" },
+  { href: "/psicotecnicos", label: "Psicotécnicos" },
+  { href: "/simulacros", label: "Simulacros" },
+  { href: "/precios", label: "Precios" },
+  { href: "/contacto", label: "Contacto" },
 ];
