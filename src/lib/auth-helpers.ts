@@ -5,6 +5,7 @@ import { prisma } from "@/lib/db";
 export type ActiveUser = {
   id: string;
   email: string;
+  subscriptionStartedAt: Date | null;
 };
 
 /**
@@ -18,11 +19,20 @@ export async function getActiveUser(): Promise<ActiveUser | null> {
 
   const user = await prisma.user.findUnique({
     where: { id: session.user.id },
-    select: { id: true, email: true, subscriptionStatus: true },
+    select: {
+      id: true,
+      email: true,
+      subscriptionStatus: true,
+      subscriptionStartedAt: true,
+    },
   });
   if (!user || user.subscriptionStatus !== "active") return null;
 
-  return { id: user.id, email: user.email };
+  return {
+    id: user.id,
+    email: user.email,
+    subscriptionStartedAt: user.subscriptionStartedAt,
+  };
 }
 
 export async function requireActiveUser(redirectTo: string): Promise<ActiveUser> {

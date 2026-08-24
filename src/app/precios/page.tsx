@@ -12,10 +12,9 @@ export const metadata: Metadata = {
 };
 
 const incluye = [
-  "Batería de preguntas tipo test de todos los temas",
+  "Batería de preguntas, esquema y resumen de cada tema del temario",
   "Pruebas psicotécnicas: series numéricas, series de letras, sinónimos/antónimos y analogías verbales",
-  "Simulacro combinado cada 5 temas",
-  "Esquemas y resúmenes de repaso (se van publicando por tema)",
+  "Simulacro cada 5 temas y simulacro completo, ambos con cronómetro",
   "Plan de estudio personalizado según tu fecha de examen",
   "Corrección y explicación al instante en cada pregunta",
   "Acceso desde el móvil, tablet u ordenador",
@@ -43,6 +42,11 @@ const faqItems = [
     answer:
       "No. Oposit&go no es una academia: nos centramos en la parte que se prepara con test, esquemas y repaso (temario y psicotécnicos). No entrenamos las pruebas de aptitud física ni la prueba biográfica/entrevista.",
   },
+  {
+    question: "¿Tengo acceso a todo el temario desde el primer día?",
+    answer:
+      "Tienes disponibles los 5 primeros temas y su simulacro nada más suscribirte. El resto se abre a razón de 5 temas (con su simulacro) cada mes, mientras las pruebas psicotécnicas y el simulacro completo están accesibles siempre. Es para poder ir asimilando bloque a bloque, no para limitar el acceso.",
+  },
 ];
 
 export default function PreciosPage() {
@@ -50,8 +54,8 @@ export default function PreciosPage() {
     <>
       <PageHero
         eyebrow="Precios"
-        title="Un único plan, todo incluido"
-        description="Sin letra pequeña: una suscripción mensual con acceso a todo el contenido disponible."
+        title="Un único plan, sin letra pequeña"
+        description="Una suscripción mensual. Los 5 primeros temas y su simulacro están disponibles desde el primer día; el resto se va abriendo 5 temas al mes."
         breadcrumbs={[
           { label: "Inicio", href: "/" },
           { label: "Precios", href: "/precios" },
@@ -97,8 +101,13 @@ export default function PreciosPage() {
               </li>
               <li>
                 <span className="font-semibold">3. Empieza a estudiar.</span>{" "}
-                Accede a todo el temario, las baterías de preguntas y los
-                simulacros.
+                Ya tienes disponibles los 5 primeros temas, sus tests,
+                esquemas y resúmenes, y su simulacro.
+              </li>
+              <li>
+                <span className="font-semibold">4. Cada mes, 5 temas más.</span>{" "}
+                El resto del temario se va abriendo automáticamente, sin que
+                tengas que hacer nada.
               </li>
             </ol>
           </div>

@@ -23,7 +23,12 @@ const beneficios = [
   {
     titulo: "Batería de preguntas por tema",
     descripcion:
-      "Test tipo examen para cada tema del temario, con corrección al instante y explicación de cada respuesta.",
+      "Test tipo examen para cada tema, con corrección al instante y explicación de cada respuesta. Cada intento mezcla preguntas y respuestas.",
+  },
+  {
+    titulo: "Esquema y resumen de cada tema",
+    descripcion:
+      "Por cada tema del temario: un esquema para repasar de un vistazo y un resumen para fijar lo esencial antes del test.",
   },
   {
     titulo: "Pruebas psicotécnicas",
@@ -31,14 +36,19 @@ const beneficios = [
       "Series numéricas, series de letras, sinónimos/antónimos y analogías verbales: la otra parte del primer ejercicio.",
   },
   {
-    titulo: "Simulacro cada 5 temas",
+    titulo: "Simulacros con cronómetro",
     descripcion:
-      "Combina preguntas de varios temas en un simulacro tipo test, igual que el examen real, para medir tu nivel por bloques.",
+      "Un simulacro cada 5 temas y un simulacro completo (hasta 100 preguntas), con el mismo cronómetro que el examen oficial.",
   },
   {
-    titulo: "Esquema, resumen y plan de estudio",
+    titulo: "Plan de estudio personalizado",
     descripcion:
-      "Repaso rápido por tema y un calendario semana a semana adaptado a tu fecha de examen.",
+      "Nos dices tu fecha de examen y tus horas disponibles, y te armamos un calendario semana a semana con el temario y los repasos.",
+  },
+  {
+    titulo: "Temario que se abre por bloques",
+    descripcion:
+      "5 temas nuevos (con su simulacro) cada mes, para que los vayas asentando en vez de agobiarte con todo de golpe.",
   },
 ];
 
@@ -60,7 +70,7 @@ const fases = [
   },
   {
     titulo: "Aptitud física",
-    detalle: "Varias pruebas puntuadas de 0 a 10 (nota media mínima de 5; un 0 en cualquiera elimina). No las preparamos aquí.",
+    detalle: "Circuito de agilidad, fuerza (dominadas o suspensión en barra) y resistencia (1.000 metros). Puntuación de 0 a 10, media mínima 5. No las preparamos aquí.",
   },
 ];
 
@@ -68,7 +78,7 @@ const faqItems = [
   {
     question: "¿Qué incluye la suscripción mensual?",
     answer:
-      "Acceso completo a las baterías de preguntas de cada tema, las pruebas psicotécnicas, los simulacros tipo test cada 5 temas, los esquemas y resúmenes de cada tema, y un plan de estudio personalizado según tu fecha de examen. Todo desde el móvil o el ordenador.",
+      "Las baterías de preguntas, esquemas y resúmenes de cada tema, las pruebas psicotécnicas, los simulacros con cronómetro (por bloques y completo) y un plan de estudio personalizado según tu fecha de examen. El temario se abre por bloques de 5 temas al mes, con su simulacro correspondiente, en vez de todo de golpe.",
   },
   {
     question: "¿Puedo cancelar cuándo quiera?",
@@ -84,6 +94,11 @@ const faqItems = [
     question: "¿El temario es el oficial de la convocatoria?",
     answer:
       "Trabajamos con el temario oficial de la Escala Básica de Policía Nacional y lo revisamos con cada convocatoria publicada en el BOE.",
+  },
+  {
+    question: "¿Por qué el temario se abre poco a poco y no entero desde el primer día?",
+    answer:
+      "Para que no te agobies con 29 temas a la vez. Al suscribirte tienes ya disponibles los 5 primeros temas y su simulacro; cada mes se abren 5 temas más con su simulacro correspondiente, mientras el simulacro completo va creciendo con todo lo que ya tienes desbloqueado.",
   },
 ];
 
@@ -240,7 +255,7 @@ export default function HomePage() {
           <h2 className="text-2xl font-bold text-brand-900 sm:text-3xl">
             Todo lo que necesitas para aprobar el test
           </h2>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {beneficios.map((b) => (
               <div
                 key={b.titulo}

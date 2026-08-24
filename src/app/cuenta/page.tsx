@@ -8,6 +8,8 @@ import { PlanEstudioForm } from "@/components/PlanEstudioForm";
 import { auth } from "@/auth";
 import { prisma } from "@/lib/db";
 import type { SemanaPlan } from "@/lib/plan-estudio";
+import { getNumeroTemasDesbloqueados, getFechaDesbloqueoTema } from "@/lib/desbloqueo";
+import { temas } from "@/lib/temario";
 
 export const metadata: Metadata = {
   title: "Mi cuenta",
@@ -35,8 +37,16 @@ export default async function CuentaPage() {
       subscriptionStatus: true,
       currentPeriodEnd: true,
       stripeCustomerId: true,
+      subscriptionStartedAt: true,
     },
   });
+
+  const temasDesbloqueados = getNumeroTemasDesbloqueados(user?.subscriptionStartedAt ?? null);
+  const siguienteTema = temas.find((t) => t.numero === temasDesbloqueados + 1);
+  const fechaSiguienteLote =
+    siguienteTema && user?.subscriptionStartedAt
+      ? getFechaDesbloqueoTema(siguienteTema.numero, user.subscriptionStartedAt)
+      : null;
 
   const intentos = await prisma.quizAttempt.findMany({
     where: { userId: session.user.id },
@@ -88,6 +98,27 @@ export default async function CuentaPage() {
                   user.currentPeriodEnd
                 )}
               </p>
+            )}
+            {user?.subscriptionStatus === "active" && (
+              <div className="mt-4 rounded-md bg-brand-50 p-3 text-sm text-brand-800">
+                <p>
+                  Temario desbloqueado:{" "}
+                  <span className="font-semibold">
+                    {temasDesbloqueados} de {temas.length} temas
+                  </span>
+                </p>
+                {siguienteTema && fechaSiguienteLote && (
+                  <p className="mt-1 text-xs text-brand-600">
+                    El siguiente lote (temas {siguienteTema.numero}-
+                    {Math.min(siguienteTema.numero + 4, temas.length)}) se
+                    abre el{" "}
+                    {new Intl.DateTimeFormat("es-ES", { dateStyle: "long" }).format(
+                      fechaSiguienteLote
+                    )}
+                    .
+                  </p>
+                )}
+              </div>
             )}
             <div className="mt-4">
               {user?.stripeCustomerId ? (

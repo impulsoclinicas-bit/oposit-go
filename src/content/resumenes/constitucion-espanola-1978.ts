@@ -1,0 +1,10 @@
+import type { Resumen } from "@/lib/temaContenido";
+
+export const resumen: Resumen = {
+  parrafos: [
+    "La Constitución Española fue aprobada por las Cortes constituyentes el 31 de octubre de 1978, ratificada en referéndum por el pueblo español el 6 de diciembre, sancionada por el Rey el 27 de diciembre y publicada en el BOE, entrando en vigor, el 29 de diciembre de 1978. Pone fin al proceso de transición iniciado tras la muerte de Franco y consolida a España como una democracia parlamentaria homologable a las de su entorno.",
+    "El texto consta de un preámbulo sin valor normativo directo, un título preliminar y diez títulos numerados (de la Corona a la reforma constitucional, pasando por los derechos fundamentales, las Cortes Generales, el Gobierno, el Poder Judicial, la organización territorial del Estado y el Tribunal Constitucional), además de disposiciones adicionales, transitorias, una derogatoria y una final, hasta sumar 169 artículos.",
+    "El título preliminar recoge los principios estructurales del Estado: España se constituye en un Estado social y democrático de Derecho que propugna como valores superiores la libertad, la justicia, la igualdad y el pluralismo político; la soberanía nacional reside en el pueblo español; la forma política del Estado es la Monarquía parlamentaria; se proclama la unidad de la nación española y, a la vez, el derecho a la autonomía de las nacionalidades y regiones que la integran; y se somete a todos los ciudadanos y poderes públicos a la Constitución y al resto del ordenamiento jurídico.",
+    "La reforma de la Constitución se regula en el título X y prevé dos procedimientos: uno ordinario (art. 167), con mayorías de tres quintos en cada Cámara, y otro agravado (art. 168), reservado a la revisión total del texto o a la de sus partes más protegidas —el título preliminar, los derechos fundamentales y las libertades públicas, o la Corona—, que exige mayoría de dos tercios, disolución de las Cortes, ratificación por las nuevas Cámaras y referéndum obligatorio.",
+  ],
+};

@@ -1,9 +1,15 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import type { Pregunta } from "@/lib/preguntas";
 import { shuffle, sample } from "@/lib/shuffle";
+
+function formatearTiempo(segundos: number): string {
+  const m = Math.floor(segundos / 60);
+  const s = segundos % 60;
+  return `${m}:${s.toString().padStart(2, "0")}`;
+}
 
 // Prepara una tanda de preguntas: si el banco es más grande que
 // `tamanoTest`, elige una muestra al azar; en cualquier caso, mezcla el
@@ -25,6 +31,7 @@ export function QuizRunner({
   temaSlug,
   preguntas,
   tamanoTest,
+  segundosPorPregunta,
   volverHref = "/temario",
   volverLabel = "Volver al temario",
 }: {
@@ -32,6 +39,8 @@ export function QuizRunner({
   preguntas: Pregunta[];
   /** Si el banco tiene más preguntas que esto, cada test toma una muestra al azar. */
   tamanoTest?: number;
+  /** Si se indica, se activa un cronómetro en cuenta atrás (como el examen oficial) que corrige el test automáticamente al llegar a cero. */
+  segundosPorPregunta?: number;
   volverHref?: string;
   volverLabel?: string;
 }) {
@@ -39,6 +48,8 @@ export function QuizRunner({
   const [respuestas, setRespuestas] = useState<Record<string, number>>({});
   const [corregido, setCorregido] = useState(false);
   const [guardando, setGuardando] = useState(false);
+  const tiempoTotal = segundosPorPregunta ? tanda.length * segundosPorPregunta : null;
+  const [segundosRestantes, setSegundosRestantes] = useState(tiempoTotal);
 
   const totalRespondidas = Object.keys(respuestas).length;
   const todasRespondidas = totalRespondidas === tanda.length;
@@ -77,10 +88,23 @@ export function QuizRunner({
   }
 
   function handleNuevoTest() {
-    setTanda(generarTanda(preguntas, tamanoTest));
+    const nuevaTanda = generarTanda(preguntas, tamanoTest);
+    setTanda(nuevaTanda);
     setRespuestas({});
     setCorregido(false);
+    setSegundosRestantes(segundosPorPregunta ? nuevaTanda.length * segundosPorPregunta : null);
   }
+
+  useEffect(() => {
+    if (segundosRestantes === null || corregido) return;
+    if (segundosRestantes <= 0) {
+      const id = setTimeout(() => handleCorregir(), 0);
+      return () => clearTimeout(id);
+    }
+    const id = setTimeout(() => setSegundosRestantes((s) => (s === null ? s : s - 1)), 1000);
+    return () => clearTimeout(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [segundosRestantes, corregido]);
 
   if (preguntas.length === 0) {
     return (
@@ -97,6 +121,19 @@ export function QuizRunner({
 
   return (
     <div className="space-y-6">
+      {!corregido && segundosRestantes !== null && (
+        <div
+          className={`sticky top-16 z-10 flex items-center justify-between rounded-xl border p-3 text-sm font-semibold shadow-md ${
+            segundosRestantes <= 60
+              ? "border-danger-500 bg-danger-500/10 text-danger-600"
+              : "border-brand-200 bg-white text-brand-900"
+          }`}
+        >
+          <span>⏱ Tiempo restante</span>
+          <span className="text-lg tabular-nums">{formatearTiempo(segundosRestantes)}</span>
+        </div>
+      )}
+
       {corregido && (
         <div className="sticky top-16 z-10 rounded-xl border border-brand-200 bg-white p-4 shadow-md">
           <div className="flex flex-wrap items-center justify-between gap-3">

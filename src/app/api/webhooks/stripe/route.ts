@@ -81,6 +81,7 @@ export async function POST(request: NextRequest) {
           stripeSubscriptionId: subscriptionId,
           subscriptionStatus: SubscriptionStatus.active,
           currentPeriodEnd,
+          subscriptionStartedAt: new Date(),
         },
       });
 

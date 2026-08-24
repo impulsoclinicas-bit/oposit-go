@@ -25,6 +25,10 @@ model User {
   stripeSubscriptionId String?             @unique
   subscriptionStatus   SubscriptionStatus  @default(none)
   currentPeriodEnd     DateTime?
+  // Fecha del primer alta de pago. Se fija una sola vez (no se toca en
+  // renovaciones ni reactivaciones) y es la que cuenta para el desbloqueo
+  // gradual de temas: 5 temas nuevos por cada mes transcurrido desde aquí.
+  subscriptionStartedAt DateTime?
 
   activationTokens     ActivationToken[]
   quizAttempts         QuizAttempt[]

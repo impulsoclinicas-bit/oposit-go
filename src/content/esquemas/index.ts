@@ -1,4 +1,9 @@
 import type { Esquema } from "@/lib/temaContenido";
+import { esquema as constitucionEspanola1978 } from "./constitucion-espanola-1978";
+import { esquema as derechosDeberesFundamentales } from "./derechos-deberes-fundamentales";
+import { esquema as laCorona } from "./la-corona";
+import { esquema as lasCortesGenerales } from "./las-cortes-generales";
+import { esquema as gobiernoAdministracion } from "./gobierno-administracion";
 import { esquema as codigoCivilPersonaCapacidad } from "./codigo-civil-persona-capacidad";
 import { esquema as tribunalConstitucional } from "./tribunal-constitucional";
 import { esquema as defensorDelPueblo } from "./defensor-del-pueblo";
@@ -14,6 +19,11 @@ import { esquema as leyOrganicaPoliciaNacional } from "./ley-organica-policia-na
 // Igual que con las preguntas: los temas sin entrada aquí muestran el aviso
 // de "próximamente disponible" en la página del tema.
 const registroEsquemas: Record<string, Esquema> = {
+  "constitucion-espanola-1978": constitucionEspanola1978,
+  "derechos-deberes-fundamentales": derechosDeberesFundamentales,
+  "la-corona": laCorona,
+  "las-cortes-generales": lasCortesGenerales,
+  "gobierno-administracion": gobiernoAdministracion,
   "codigo-civil-persona-capacidad": codigoCivilPersonaCapacidad,
   "tribunal-constitucional": tribunalConstitucional,
   "defensor-del-pueblo": defensorDelPueblo,
