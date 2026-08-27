@@ -77,16 +77,16 @@ Copia `.env.example` a `.env.local` y completa:
 - `src/content/preguntas/{slug}.ts` — batería de preguntas de cada tema
   (`src/content/preguntas/index.ts` las registra, concatenando varios
   bancos ya redactados cuando corresponden a un mismo tema real). De
-  momento están redactados con contenido real y funcional 7 temas del
-  bloque jurídico (temas 2, 3, 5, 6, 7, 8 y 9); el resto de temas aparecen
-  en el temario pero muestran "batería en preparación" hasta que se
-  redacten.
+  momento están redactados con contenido real y funcional 13 temas del
+  bloque jurídico (temas 1, 2, 3, 4, 5, 6, 7, 8, 9, 14, 16, 21 y 26); el
+  resto de temas aparecen en el temario pero muestran "batería en
+  preparación" hasta que se redacten.
 - `src/lib/simulacros.ts` — agrupa automáticamente los temas de 5 en 5 y
   construye el simulacro combinado con preguntas de cada tema del tramo;
   también expone el simulacro completo (`getPreguntasSimulacroCompleto`),
   que combina hasta 100 preguntas de todos los temas ya desbloqueados.
 - `src/content/esquemas/{slug}.ts` y `src/content/resumenes/{slug}.ts` —
-  esquema y resumen de cada tema (mismos 7 temas redactados por ahora);
+  esquema y resumen de cada tema (mismos 13 temas redactados por ahora);
   se pueden descargar en PDF desde `/api/temario/[slug]/pdf`
   (`src/lib/pdf/TemaPdfDocument.tsx`, con `@react-pdf/renderer`).
 - `src/lib/desbloqueo.ts` — el temario no se abre entero al suscribirse:
