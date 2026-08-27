@@ -1,5 +1,6 @@
 import { temas, Tema } from "@/lib/temario";
 import { getSimulacros } from "@/lib/simulacros";
+import { FECHA_EXAMEN_OFICIAL } from "@/lib/convocatoria";
 
 export type SemanaPlan = {
   numero: number;
@@ -8,6 +9,8 @@ export type SemanaPlan = {
   simulacroSlug?: string;
   simulacroTitulo?: string;
 };
+
+export type ObjetivoPlan = "convocatoria-actual" | "con-calma";
 
 export type PlanEstudio = {
   semanas: SemanaPlan[];
@@ -19,27 +22,25 @@ export type PlanEstudio = {
 
 const MIN_SEMANAS = 4;
 const MAX_SEMANAS = 52;
-const SEMANAS_POR_DEFECTO = 16;
+// Horizonte por defecto para quien prefiere prepararse con calma en vez de
+// apurar la convocatoria vigente.
+const SEMANAS_CON_CALMA = 24;
 
-export function semanasHastaExamen(examDateISO: string): number {
+function semanasHastaFecha(fecha: Date): number {
   const hoy = new Date();
-  const examen = new Date(examDateISO);
-  const dias = Math.ceil((examen.getTime() - hoy.getTime()) / (1000 * 60 * 60 * 24));
+  const dias = Math.ceil((fecha.getTime() - hoy.getTime()) / (1000 * 60 * 60 * 24));
   const semanas = Math.ceil(dias / 7);
   return Math.min(MAX_SEMANAS, Math.max(MIN_SEMANAS, semanas));
 }
 
 export function generarPlanEstudio(input: {
-  examDate?: string | null;
-  weeksAvailable?: number | null;
+  objetivo: ObjetivoPlan;
   hoursPerWeek: number;
 }): PlanEstudio {
-  const weeksAvailable = input.examDate
-    ? semanasHastaExamen(input.examDate)
-    : Math.min(
-        MAX_SEMANAS,
-        Math.max(MIN_SEMANAS, input.weeksAvailable ?? SEMANAS_POR_DEFECTO)
-      );
+  const usaConvocatoriaActual = input.objetivo === "convocatoria-actual";
+  const weeksAvailable = usaConvocatoriaActual
+    ? semanasHastaFecha(FECHA_EXAMEN_OFICIAL)
+    : SEMANAS_CON_CALMA;
 
   const temasOrdenados = [...temas].sort((a, b) => a.numero - b.numero);
   const simulacros = getSimulacros();
@@ -93,7 +94,7 @@ export function generarPlanEstudio(input: {
     semanas,
     weeksAvailable,
     hoursPerWeek: input.hoursPerWeek,
-    examDate: input.examDate ?? null,
+    examDate: usaConvocatoriaActual ? FECHA_EXAMEN_OFICIAL.toISOString() : null,
     generadoEn: new Date().toISOString(),
   };
 }

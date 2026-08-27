@@ -54,11 +54,10 @@ export default async function CategoriaPsicotecnicaPage({
 
       <section className="py-12 sm:py-16">
         <Container>
-          <h2 className="text-2xl font-bold text-brand-900">
-            {preguntas.length} preguntas
-          </h2>
+          <h2 className="text-2xl font-bold text-brand-900">Preguntas ilimitadas</h2>
           <p className="mt-1 text-sm text-brand-700">
-            Responde todas y pulsa &ldquo;Corregir test&rdquo; para ver tu resultado.
+            Responde todas y pulsa &ldquo;Corregir test&rdquo;. Al acabar,
+            tienes otro test nuevo disponible al momento.
           </p>
           <div className="mt-6">
             <QuizRunner

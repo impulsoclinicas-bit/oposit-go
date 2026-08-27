@@ -157,13 +157,11 @@ export default async function TemaPage({
 
       <section className="pb-16 sm:pb-24">
         <Container>
-          <h2 className="text-2xl font-bold text-brand-900">
-            Batería de preguntas ({preguntas.length} en el banco)
-          </h2>
+          <h2 className="text-2xl font-bold text-brand-900">Batería de preguntas ilimitada</h2>
           <p className="mt-1 text-sm text-brand-700">
-            Cada vez que entras se genera un test nuevo: preguntas y orden de
-            respuestas mezclados. Responde todas y pulsa &ldquo;Corregir
-            test&rdquo; para ver tu resultado.
+            Cada vez que entras se genera un test nuevo. En cuanto acabes
+            uno, ya tienes otro distinto esperándote. Responde todas y pulsa
+            &ldquo;Corregir test&rdquo; para ver tu resultado.
           </p>
           <div className="mt-6">
             <QuizRunner temaSlug={tema.slug} preguntas={preguntas} tamanoTest={15} />

@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Container } from "@/components/Container";
 import { PageHero } from "@/components/PageHero";
 import { categoriasPsicotecnicas } from "@/lib/psicotecnicos";
-import { getPreguntasByCategoriaPsicotecnica } from "@/content/psicotecnicos";
 import { requireActiveUser } from "@/lib/auth-helpers";
 
 export const metadata: Metadata = {
@@ -38,22 +37,19 @@ export default async function PsicotecnicosPage() {
           </div>
 
           <div className="mt-8 grid gap-6 sm:grid-cols-2">
-            {categoriasPsicotecnicas.map((categoria) => {
-              const total = getPreguntasByCategoriaPsicotecnica(categoria.slug).length;
-              return (
-                <Link
-                  key={categoria.slug}
-                  href={`/psicotecnicos/${categoria.slug}`}
-                  className="rounded-xl border border-brand-200 bg-white p-6 shadow-sm transition-colors hover:border-brand-400"
-                >
-                  <h2 className="font-bold text-brand-900">{categoria.titulo}</h2>
-                  <p className="mt-2 text-sm text-brand-700">{categoria.descripcion}</p>
-                  <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-brand-500">
-                    {total} preguntas
-                  </p>
-                </Link>
-              );
-            })}
+            {categoriasPsicotecnicas.map((categoria) => (
+              <Link
+                key={categoria.slug}
+                href={`/psicotecnicos/${categoria.slug}`}
+                className="rounded-xl border border-brand-200 bg-white p-6 shadow-sm transition-colors hover:border-brand-400"
+              >
+                <h2 className="font-bold text-brand-900">{categoria.titulo}</h2>
+                <p className="mt-2 text-sm text-brand-700">{categoria.descripcion}</p>
+                <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-brand-500">
+                  Preguntas ilimitadas
+                </p>
+              </Link>
+            ))}
           </div>
         </Container>
       </section>

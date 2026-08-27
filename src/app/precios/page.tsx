@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 };
 
 const incluye = [
-  "Batería de preguntas, esquema y resumen de cada tema del temario",
+  "Tests ilimitados: esquema, resumen y batería de preguntas de cada tema",
   "Pruebas psicotécnicas: series numéricas, series de letras, sinónimos/antónimos y analogías verbales",
   "Simulacro cada 5 temas y simulacro completo, ambos con cronómetro",
-  "Plan de estudio personalizado según tu fecha de examen",
+  "Plan de estudio personalizado a partir de un cuestionario al darte de alta",
   "Corrección y explicación al instante en cada pregunta",
   "Acceso desde el móvil, tablet u ordenador",
   "Cancela cuando quieras, sin permanencia",
@@ -100,12 +100,17 @@ export default function PreciosPage() {
                 Te llega un email al instante para crear tu contraseña.
               </li>
               <li>
-                <span className="font-semibold">3. Empieza a estudiar.</span>{" "}
+                <span className="font-semibold">3. Cuestionario de estudio.</span>{" "}
+                Un par de preguntas sobre cómo quieres prepararte, y te
+                armamos tu plan de estudio.
+              </li>
+              <li>
+                <span className="font-semibold">4. Empieza a estudiar.</span>{" "}
                 Ya tienes disponibles los 5 primeros temas, sus tests,
                 esquemas y resúmenes, y su simulacro.
               </li>
               <li>
-                <span className="font-semibold">4. Cada mes, 5 temas más.</span>{" "}
+                <span className="font-semibold">5. Cada mes, 5 temas más.</span>{" "}
                 El resto del temario se va abriendo automáticamente, sin que
                 tengas que hacer nada.
               </li>

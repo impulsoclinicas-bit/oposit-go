@@ -9,8 +9,6 @@ import { PatrolCar } from "@/components/icons/PatrolCar";
 import { siteConfig } from "@/lib/site";
 import { bloques, temas } from "@/lib/temario";
 import { getSimulacros } from "@/lib/simulacros";
-import { getTotalPreguntasTemario } from "@/content/preguntas";
-import { getTotalPreguntasPsicotecnicos } from "@/content/psicotecnicos";
 import { noticias } from "@/lib/noticias";
 
 export const metadata: Metadata = {
@@ -43,7 +41,7 @@ const beneficios = [
   {
     titulo: "Plan de estudio personalizado",
     descripcion:
-      "Nos dices tu fecha de examen y tus horas disponibles, y te armamos un calendario semana a semana con el temario y los repasos.",
+      "Un cuestionario rápido al darte de alta y te armamos un calendario semana a semana con el temario y los repasos, siempre encajado en la convocatoria vigente.",
   },
   {
     titulo: "Temario que se abre por bloques",
@@ -78,7 +76,7 @@ const faqItems = [
   {
     question: "¿Qué incluye la suscripción mensual?",
     answer:
-      "Las baterías de preguntas, esquemas y resúmenes de cada tema, las pruebas psicotécnicas, los simulacros con cronómetro (por bloques y completo) y un plan de estudio personalizado según tu fecha de examen. El temario se abre por bloques de 5 temas al mes, con su simulacro correspondiente, en vez de todo de golpe.",
+      "Tests ilimitados de cada tema, esquemas y resúmenes, pruebas psicotécnicas, simulacros con cronómetro (por bloques y completo) y un plan de estudio personalizado a partir del cuestionario que rellenas al darte de alta. El temario se abre por bloques de 5 temas al mes, con su simulacro correspondiente, en vez de todo de golpe.",
   },
   {
     question: "¿Puedo cancelar cuándo quiera?",
@@ -104,7 +102,6 @@ const faqItems = [
 
 export default function HomePage() {
   const simulacros = getSimulacros();
-  const totalPreguntas = getTotalPreguntasTemario() + getTotalPreguntasPsicotecnicos();
 
   return (
     <>
@@ -120,10 +117,9 @@ export default function HomePage() {
             </h1>
             <p className="mt-5 max-w-xl text-lg text-brand-100">
               Convocatoria, plazas y fechas siempre actualizadas, gratis y
-              sin registro. Y cuando quieras ir en serio: más de{" "}
-              {totalPreguntas} preguntas tipo test, psicotécnicos, esquemas,
-              resúmenes y simulacros por una suscripción mensual de bajo
-              coste, sin permanencia.
+              sin registro. Con la suscripción: tests ilimitados,
+              psicotécnicos, esquemas, resúmenes y simulacros, por un coste
+              mensual bajo y sin permanencia.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -147,7 +143,7 @@ export default function HomePage() {
               De un vistazo
             </p>
             <ul className="mt-4 space-y-3 text-sm text-brand-100">
-              <li>✓ Más de {totalPreguntas} preguntas tipo test</li>
+              <li>✓ Tests ilimitados, siempre hay uno nuevo disponible</li>
               <li>✓ {temas.length} temas organizados en {bloques.length} bloques</li>
               <li>✓ {simulacros.length} simulacros tipo test</li>
               <li>✓ Corrección y explicación al instante</li>

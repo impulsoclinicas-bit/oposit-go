@@ -81,6 +81,24 @@ export default async function CuentaPage() {
         ]}
       />
 
+      {semanas.length === 0 && (
+        <section className="py-16 sm:py-20">
+          <Container className="mx-auto max-w-xl rounded-2xl border border-accent-300 bg-white p-8 text-center shadow-sm">
+            <h2 className="text-xl font-bold text-brand-900">
+              Antes de nada, tu plan de estudio
+            </h2>
+            <p className="mt-2 text-sm text-brand-700">
+              Ya sabemos cuándo es la convocatoria vigente. Con este
+              cuestionario te armamos un calendario semana a semana con el
+              temario, los simulacros y el repaso final.
+            </p>
+            <div className="mt-6 text-left">
+              <PlanEstudioForm tienePlan={false} />
+            </div>
+          </Container>
+        </section>
+      )}
+
       <section className="py-16 sm:py-20">
         <Container className="grid gap-8 lg:grid-cols-2">
           <div className="rounded-xl border border-brand-200 bg-white p-6 shadow-sm">
@@ -163,28 +181,21 @@ export default async function CuentaPage() {
         </Container>
       </section>
 
+      {semanas.length > 0 && (
       <section className="pb-16 sm:pb-24">
         <Container className="grid gap-8 lg:grid-cols-[1fr_2fr]">
           <div className="rounded-xl border border-brand-200 bg-white p-6 shadow-sm lg:sticky lg:top-20 lg:self-start">
             <h2 className="font-bold text-brand-900">Tu plan de estudio</h2>
             <p className="mt-2 text-sm text-brand-700">
-              Dinos cuánto tiempo tienes y te repartimos el temario, los
-              simulacros y el repaso final semana a semana.
+              ¿Cambian tus horas disponibles? Vuelve a responder el
+              cuestionario y regeneramos el calendario.
             </p>
             <div className="mt-4">
-              <PlanEstudioForm tienePlan={semanas.length > 0} />
+              <PlanEstudioForm tienePlan />
             </div>
           </div>
 
           <div>
-            {semanas.length === 0 ? (
-              <div className="flex h-full min-h-[200px] items-center justify-center rounded-xl border border-dashed border-brand-300 bg-brand-50 p-8 text-center">
-                <p className="text-sm text-brand-700">
-                  Todavía no tienes un plan generado. Rellena el formulario
-                  para crear el tuyo.
-                </p>
-              </div>
-            ) : (
               <ol className="space-y-4">
                 {semanas.map((semana) => (
                   <li
@@ -251,10 +262,10 @@ export default async function CuentaPage() {
                   </li>
                 ))}
               </ol>
-            )}
           </div>
         </Container>
       </section>
+      )}
     </>
   );
 }

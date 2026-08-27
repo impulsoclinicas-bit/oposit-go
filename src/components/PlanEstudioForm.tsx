@@ -2,12 +2,11 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import type { ObjetivoPlan } from "@/lib/plan-estudio";
 
 export function PlanEstudioForm({ tienePlan }: { tienePlan: boolean }) {
   const router = useRouter();
-  const [modo, setModo] = useState<"fecha" | "semanas">("fecha");
-  const [examDate, setExamDate] = useState("");
-  const [weeksAvailable, setWeeksAvailable] = useState(16);
+  const [objetivo, setObjetivo] = useState<ObjetivoPlan>("convocatoria-actual");
   const [hoursPerWeek, setHoursPerWeek] = useState(6);
   const [enviando, setEnviando] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -20,11 +19,7 @@ export function PlanEstudioForm({ tienePlan }: { tienePlan: boolean }) {
       const res = await fetch("/api/plan-estudio", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          examDate: modo === "fecha" ? examDate : null,
-          weeksAvailable: modo === "semanas" ? weeksAvailable : null,
-          hoursPerWeek,
-        }),
+        body: JSON.stringify({ objetivo, hoursPerWeek }),
       });
       if (!res.ok) {
         const data = await res.json().catch(() => null);
@@ -40,56 +35,35 @@ export function PlanEstudioForm({ tienePlan }: { tienePlan: boolean }) {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      <div className="flex gap-2 text-sm">
-        <button
-          type="button"
-          onClick={() => setModo("fecha")}
-          className={`rounded-md px-3 py-1.5 font-medium ${
-            modo === "fecha"
-              ? "bg-brand-900 text-white"
-              : "bg-brand-50 text-brand-700 hover:bg-brand-100"
-          }`}
-        >
-          Tengo fecha de examen
-        </button>
-        <button
-          type="button"
-          onClick={() => setModo("semanas")}
-          className={`rounded-md px-3 py-1.5 font-medium ${
-            modo === "semanas"
-              ? "bg-brand-900 text-white"
-              : "bg-brand-50 text-brand-700 hover:bg-brand-100"
-          }`}
-        >
-          No tengo fecha todavía
-        </button>
+      <div>
+        <span className="block text-sm font-medium text-brand-800">
+          ¿Para cuándo te preparas?
+        </span>
+        <div className="mt-2 flex flex-col gap-2 text-sm">
+          <button
+            type="button"
+            onClick={() => setObjetivo("convocatoria-actual")}
+            className={`rounded-md px-3 py-2 text-left font-medium ${
+              objetivo === "convocatoria-actual"
+                ? "bg-brand-900 text-white"
+                : "bg-brand-50 text-brand-700 hover:bg-brand-100"
+            }`}
+          >
+            Voy a la convocatoria vigente
+          </button>
+          <button
+            type="button"
+            onClick={() => setObjetivo("con-calma")}
+            className={`rounded-md px-3 py-2 text-left font-medium ${
+              objetivo === "con-calma"
+                ? "bg-brand-900 text-white"
+                : "bg-brand-50 text-brand-700 hover:bg-brand-100"
+            }`}
+          >
+            Me preparo con calma para más adelante
+          </button>
+        </div>
       </div>
-
-      {modo === "fecha" ? (
-        <label className="block text-sm">
-          <span className="font-medium text-brand-800">Fecha del examen</span>
-          <input
-            type="date"
-            required
-            value={examDate}
-            onChange={(e) => setExamDate(e.target.value)}
-            className="mt-1 w-full rounded-md border border-brand-300 px-3 py-2 text-sm"
-          />
-        </label>
-      ) : (
-        <label className="block text-sm">
-          <span className="font-medium text-brand-800">Semanas de las que dispones</span>
-          <input
-            type="number"
-            min={4}
-            max={52}
-            required
-            value={weeksAvailable}
-            onChange={(e) => setWeeksAvailable(Number(e.target.value))}
-            className="mt-1 w-full rounded-md border border-brand-300 px-3 py-2 text-sm"
-          />
-        </label>
-      )}
 
       <label className="block text-sm">
         <span className="font-medium text-brand-800">Horas semanales que puedes dedicar</span>
