@@ -21,7 +21,7 @@ const datosClave = [
 
 const requisitos = [
   "Tener nacionalidad española.",
-  "Tener entre 18 y 30 años (el máximo se amplía en algunos supuestos, como ya ser funcionario de otro cuerpo policial).",
+  "Tener 18 años cumplidos. No hay límite máximo de edad fijo: el único tope es la edad de jubilación forzosa del Cuerpo Nacional de Policía (65 años, con subida progresiva prevista a 67).",
   "Estar en posesión del título de Graduado en ESO, Técnico de FP de grado medio o equivalente.",
   "No haber sido condenado por delito doloso ni separado del servicio de las Administraciones Públicas.",
   "Comprometerse a portar armas y, en su caso, a utilizarlas.",

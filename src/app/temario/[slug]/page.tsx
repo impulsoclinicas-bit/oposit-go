@@ -112,7 +112,18 @@ export default async function TemaPage({
       />
 
       <section className="py-12 sm:py-16">
-        <Container className="grid gap-6 sm:grid-cols-2">
+        <Container>
+          {(esquema || resumen) && (
+            <div className="mb-6 flex justify-end">
+              <a
+                href={`/api/temario/${tema.slug}/pdf`}
+                className="inline-flex items-center gap-2 rounded-md bg-brand-800 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-700"
+              >
+                ⬇ Descargar esquema y resumen en PDF
+              </a>
+            </div>
+          )}
+          <div className="grid gap-6 sm:grid-cols-2">
           <div className="rounded-xl border border-brand-200 bg-white p-6 shadow-sm">
             <h2 className="font-bold text-brand-900">Esquema del tema</h2>
             {esquema ? (
@@ -151,6 +162,7 @@ export default async function TemaPage({
                 Próximamente disponible.
               </p>
             )}
+          </div>
           </div>
         </Container>
       </section>

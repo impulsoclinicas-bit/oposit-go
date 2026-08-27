@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/recursos" },
 };
 
-const esquemaEjemplo = getEsquemaByTema("ley-organica-policia-nacional")!;
+const esquemaEjemplo = getEsquemaByTema("la-direccion-general-de-la-policia")!;
 
 export default function RecursosPage() {
   return (

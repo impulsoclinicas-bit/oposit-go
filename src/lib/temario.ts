@@ -1,11 +1,17 @@
 // Estructura del temario de Oposit&go para la oposición a Policía Nacional
-// (Escala Básica). Los bloques y el orden siguen el esquema clásico usado en
-// las últimas convocatorias (Jurídico / Social / Técnico-científico), pero
-// el listado exacto y numerado de temas debe cotejarse cada año con el temario
-// oficial publicado en el BOE de la convocatoria vigente antes de venderlo
-// como "temario oficial actualizado". Aquí ya están escritos como contenido
-// real y utilizable; añadir o reordenar temas es tan sencillo como editar
-// este array.
+// (Escala Básica, categoría Policía): 45 temas en 3 bloques (26 jurídico +
+// 11 social + 8 técnico-científico), que es la estructura real del temario
+// oficial de esta oposición.
+//
+// Aviso de fiabilidad: los títulos se han cotejado contra varias academias
+// independientes (no contra el BOE directamente, por restricciones de red
+// al escribir esto). El recuento total (45) y el corte por bloques
+// (26/11/8) están confirmados por coincidencia entre fuentes. La mayoría de
+// títulos del Bloque I (Jurídico) también, salvo los marcados con "⚠" en su
+// descripción, que solo se han visto en una fuente y conviene cotejar
+// contra el BOE de la convocatoria vigente antes de venderlos como
+// definitivos. Antes de lanzar el producto, hay que verificar el listado
+// completo contra el temario oficial publicado.
 
 export type Tema = {
   slug: string;
@@ -26,263 +32,354 @@ export const bloques: Bloque[] = [
     slug: "juridico",
     nombre: "Ciencias Jurídicas",
     descripcion:
-      "Constitución, derechos fundamentales, organización del Estado, Unión Europea y normativa penal y procesal básica.",
+      "Constitución, organización del Estado, Unión Europea, Policía Nacional, derecho penal y procesal, extranjería y seguridad ciudadana.",
   },
   {
     slug: "social",
     nombre: "Ciencias Sociales",
     descripcion:
-      "Igualdad, violencia de género, inmigración y extranjería, seguridad vial y actualidad institucional.",
+      "Derechos humanos, valores sociales, inmigración, seguridad, drogodependencias y lengua española.",
   },
   {
     slug: "tecnico-cientifico",
     nombre: "Materias Técnico-Científicas",
     descripcion:
-      "Informática, ofimática, actuación policial y conocimientos científico-técnicos aplicados a la seguridad.",
+      "Informática, ciberdelincuencia, armas de fuego, conducción de vehículos prioritarios y prevención de riesgos laborales.",
   },
 ];
 
 // Cada 5 temas se genera un simulacro tipo test que combina preguntas de
-// ese tramo (ver `simulacros.ts`).
+// ese tramo (ver `simulacros.ts`). Con 45 temas salen 9 simulacros por
+// bloques (el último de solo 5) más el simulacro completo.
 export const TEMAS_POR_SIMULACRO = 5;
 
 export const temas: Tema[] = [
-  // Bloque I — Jurídico
+  // ---------- Bloque I — Ciencias Jurídicas (1-26) ----------
   {
-    slug: "constitucion-espanola-1978",
+    slug: "el-derecho",
     numero: 1,
     bloque: "juridico",
-    titulo: "La Constitución Española de 1978: estructura y características",
-    descripcion:
-      "Antecedentes, proceso constituyente, estructura del texto, principios y valores superiores del ordenamiento.",
+    titulo: "El Derecho",
+    descripcion: "Concepto de Derecho, fuentes del ordenamiento jurídico y su aplicación.",
   },
   {
-    slug: "derechos-deberes-fundamentales",
+    slug: "la-constitucion-espanola-i",
     numero: 2,
     bloque: "juridico",
-    titulo: "Derechos y deberes fundamentales. Su garantía y suspensión",
+    titulo: "La Constitución Española (I)",
     descripcion:
-      "Título I de la Constitución: derechos fundamentales, garantías, el Defensor del Pueblo y los estados de alarma, excepción y sitio.",
+      "Proceso constituyente, estructura y principios de la Constitución, y organización institucional del Estado: la Corona, las Cortes Generales, el Gobierno, el Poder Judicial y el Tribunal Constitucional.",
   },
   {
-    slug: "la-corona",
+    slug: "la-constitucion-espanola-ii",
     numero: 3,
     bloque: "juridico",
-    titulo: "La Corona. Funciones constitucionales del Rey",
+    titulo: "La Constitución Española (II)",
     descripcion:
-      "Sucesión, regencia, tutela y las funciones que la Constitución atribuye a la Jefatura del Estado.",
+      "Título I: derechos y deberes fundamentales, sus garantías y su suspensión, y el Defensor del Pueblo.",
   },
   {
-    slug: "las-cortes-generales",
+    slug: "la-union-europea",
     numero: 4,
     bloque: "juridico",
-    titulo: "Las Cortes Generales: Congreso y Senado",
+    titulo: "La Unión Europea",
     descripcion:
-      "Composición, elección, funciones legislativas y de control, y el procedimiento de elaboración de las leyes.",
+      "Origen y evolución, derecho derivado, instituciones, cooperación policial internacional y el TEDH y el TJUE.",
   },
   {
-    slug: "gobierno-administracion",
+    slug: "organizacion-administracion-general-estado",
     numero: 5,
     bloque: "juridico",
-    titulo: "El Gobierno y la Administración. El Poder Judicial",
+    titulo: "La organización y funcionamiento de la Administración General del Estado",
     descripcion:
-      "Composición y funciones del Gobierno, relaciones con las Cortes, y organización del Poder Judicial y el CGPJ.",
+      "Principios de organización y funcionamiento, relaciones con la ciudadanía, órganos superiores y directivos, y el Gobierno: composición, organización y funciones.",
   },
   {
-    slug: "organizacion-territorial-estado",
+    slug: "los-funcionarios-publicos",
     numero: 6,
     bloque: "juridico",
-    titulo: "La organización territorial del Estado. Las Comunidades Autónomas",
-    descripcion:
-      "Principios de la organización territorial, Estatutos de Autonomía, competencias y la Administración Local.",
+    titulo: "Los funcionarios públicos",
+    descripcion: "Concepto y clases, y adquisición y pérdida de la condición de funcionario.",
   },
   {
-    slug: "union-europea",
+    slug: "el-ministerio-del-interior",
     numero: 7,
     bloque: "juridico",
-    titulo: "La Unión Europea: instituciones y funcionamiento",
+    titulo: "El Ministerio del Interior",
     descripcion:
-      "Origen y evolución de la UE, principales instituciones (Consejo, Comisión, Parlamento, Tribunal de Justicia) y derecho comunitario.",
+      "⚠ Estructura orgánica básica del Ministerio del Interior y la Secretaría de Estado de Seguridad.",
+  },
+  {
+    slug: "la-direccion-general-de-la-policia",
+    numero: 8,
+    bloque: "juridico",
+    titulo: "La Dirección General de la Policía",
+    descripcion:
+      "Estructura y funciones de la Dirección General de la Policía; régimen del personal, escalas y categorías del Cuerpo Nacional de Policía.",
   },
   {
     slug: "ley-organica-fuerzas-cuerpos-seguridad",
-    numero: 8,
-    bloque: "juridico",
-    titulo: "Ley Orgánica de Fuerzas y Cuerpos de Seguridad",
-    descripcion:
-      "Principios básicos de actuación, disposiciones estatutarias comunes y estructura de las FCS.",
-  },
-  {
-    slug: "ley-organica-policia-nacional",
     numero: 9,
     bloque: "juridico",
-    titulo: "Régimen del personal de la Policía Nacional",
-    descripcion:
-      "Estructura, escalas y categorías del Cuerpo Nacional de Policía, derechos y deberes del funcionario policial.",
+    titulo: "La Ley Orgánica 2/1986, de Fuerzas y Cuerpos de Seguridad",
+    descripcion: "Principios básicos de actuación y disposiciones estatutarias comunes de las FCS.",
   },
   {
-    slug: "introduccion-derecho-penal",
+    slug: "libre-circulacion-residencia-ciudadanos-ue",
     numero: 10,
     bloque: "juridico",
-    titulo: "Introducción al Derecho Penal: el delito y sus formas",
-    descripcion:
-      "Concepto de delito, elementos del tipo, autoría y participación, y clasificación de las penas en el Código Penal.",
+    titulo: "Entrada, libre circulación y residencia de ciudadanos de la UE y del EEE",
+    descripcion: "⚠ Régimen de entrada y residencia de ciudadanos comunitarios en España.",
   },
   {
-    slug: "codigo-civil-persona-capacidad",
+    slug: "infracciones-extranjeria-regimen-sancionador",
     numero: 11,
     bloque: "juridico",
-    titulo: "Código Civil: la persona, la nacionalidad y la capacidad",
-    descripcion:
-      "Fuentes del derecho, nacionalidad española, vecindad civil, tutela y guarda de menores, mayoría de edad y medidas de apoyo a personas con discapacidad.",
+    titulo: "Las infracciones en materia de extranjería y su régimen sancionador",
+    descripcion: "⚠ Régimen sancionador de la Ley Orgánica de Extranjería.",
   },
   {
-    slug: "tribunal-constitucional",
+    slug: "la-proteccion-internacional",
     numero: 12,
     bloque: "juridico",
-    titulo: "El Tribunal Constitucional",
-    descripcion:
-      "Composición, competencias, recurso de inconstitucionalidad, recurso de amparo y efectos de las sentencias.",
+    titulo: "La protección internacional",
+    descripcion: "⚠ Derecho de asilo y protección subsidiaria.",
   },
   {
-    slug: "defensor-del-pueblo",
+    slug: "seguridad-privada-disposiciones-generales",
     numero: 13,
     bloque: "juridico",
-    titulo: "El Defensor del Pueblo",
-    descripcion:
-      "Elección, prerrogativas, tramitación de quejas y facultades del alto comisionado de las Cortes Generales.",
+    titulo: "Disposiciones generales en materia de seguridad privada en España",
+    descripcion: "⚠ Marco legal de la seguridad privada y su coordinación con la seguridad pública.",
   },
   {
-    slug: "estados-alarma-excepcion-sitio",
+    slug: "ley-organica-proteccion-seguridad-ciudadana",
     numero: 14,
     bloque: "juridico",
-    titulo: "Los estados de alarma, excepción y sitio",
-    descripcion:
-      "Supuestos, declaración, duración y efectos de cada uno de los tres estados excepcionales previstos en la Constitución.",
+    titulo: "La Ley Orgánica 4/2015, de protección de la seguridad ciudadana",
+    descripcion: "⚠ Actuaciones de las FCS y régimen sancionador de la Ley de Seguridad Ciudadana.",
   },
   {
-    slug: "fiscalia-europea",
+    slug: "proteccion-infraestructuras-criticas",
     numero: 15,
     bloque: "juridico",
-    titulo: "La Fiscalía Europea en España",
-    descripcion:
-      "Competencia de los Fiscales europeos delegados, control judicial y procedimiento de investigación de delitos que perjudican los intereses financieros de la UE.",
+    titulo: "Medidas para la protección de infraestructuras críticas",
+    descripcion: "⚠ Sistema de protección de infraestructuras críticas.",
   },
   {
-    slug: "estatuto-basico-empleado-publico",
+    slug: "derecho-penal-parte-general",
+    numero: 16,
+    bloque: "juridico",
+    titulo: "Derecho Penal: Parte General",
+    descripcion: "El delito, la pena, autoría y participación, y clasificación de las penas.",
+  },
+  {
+    slug: "derecho-penal-parte-especial",
+    numero: 17,
+    bloque: "juridico",
+    titulo: "Derecho Penal: Parte Especial",
+    descripcion: "Delitos en particular del Código Penal.",
+  },
+  {
+    slug: "delitos-patrimonio-orden-socioeconomico",
+    numero: 18,
+    bloque: "juridico",
+    titulo: "Delitos contra el patrimonio y contra el orden socioeconómico",
+    descripcion: "Hurto, robo, estafa y demás delitos patrimoniales.",
+  },
+  {
+    slug: "delitos-contra-el-orden-publico",
+    numero: 19,
+    bloque: "juridico",
+    titulo: "Delitos contra el orden público",
+    descripcion: "Atentado, resistencia, desórdenes públicos y figuras afines.",
+  },
+  {
+    slug: "delitos-informaticos",
+    numero: 20,
+    bloque: "juridico",
+    titulo: "Delitos informáticos",
+    descripcion: "Delitos relacionados con las tecnologías de la información.",
+  },
+  {
+    slug: "derecho-procesal-penal",
+    numero: 21,
+    bloque: "juridico",
+    titulo: "Derecho Procesal Penal",
+    descripcion: "Detención, habeas corpus, Ministerio Fiscal y Policía Judicial.",
+  },
+  {
+    slug: "estatuto-victima-del-delito",
+    numero: 22,
+    bloque: "juridico",
+    titulo: "La Ley 4/2015, del Estatuto de la víctima del delito",
+    descripcion: "Derechos de las víctimas en el proceso penal.",
+  },
+  {
+    slug: "politicas-igualdad-violencia-genero",
+    numero: 23,
+    bloque: "juridico",
+    titulo: "Políticas de igualdad y contra la violencia de género",
+    descripcion:
+      "⚠ Ley Orgánica 3/2007 para la igualdad efectiva y Ley Orgánica 1/2004 de medidas de protección integral contra la violencia de género.",
+  },
+  {
+    slug: "introduccion-prevencion-riesgos-laborales",
+    numero: 24,
+    bloque: "juridico",
+    titulo: "Introducción a la Prevención de Riesgos Laborales",
+    descripcion: "⚠ Conceptos básicos de prevención de riesgos laborales.",
+  },
+  {
+    slug: "marco-normativo-prevencion-riesgos-laborales",
+    numero: 25,
+    bloque: "juridico",
+    titulo: "Marco normativo básico en prevención de riesgos laborales",
+    descripcion: "Ley 31/1995 y sus reglamentos de desarrollo.",
+  },
+  {
+    slug: "proteccion-datos-caracter-personal",
     numero: 26,
     bloque: "juridico",
-    titulo: "El Estatuto Básico del Empleado Público",
-    descripcion:
-      "Clases de empleados públicos, acceso al empleo público, adquisición y pérdida de la condición de funcionario, situaciones administrativas y régimen de provisión de puestos.",
+    titulo: "La protección de datos de carácter personal",
+    descripcion: "Ley Orgánica 3/2018 y Ley Orgánica 7/2021 de protección de datos.",
   },
+
+  // ---------- Bloque II — Ciencias Sociales (27-37) ----------
   {
-    slug: "estructura-ministerio-interior",
+    slug: "derechos-humanos",
     numero: 27,
-    bloque: "juridico",
-    titulo: "Estructura orgánica básica del Ministerio del Interior",
-    descripcion:
-      "Secretaría de Estado de Seguridad, Dirección General de la Policía y de la Guardia Civil, y demás órganos superiores y directivos del Departamento.",
+    bloque: "social",
+    titulo: "Derechos humanos",
+    descripcion: "Declaración Universal de los Derechos Humanos y sistemas de protección.",
   },
   {
-    slug: "ley-regimen-juridico-sector-publico",
+    slug: "globalizacion-antiglobalizacion",
     numero: 28,
-    bloque: "juridico",
-    titulo: "La Ley de Régimen Jurídico del Sector Público",
-    descripcion:
-      "Órganos administrativos y competencia, potestad sancionadora, responsabilidad patrimonial, y organización de la Administración General del Estado y su sector público institucional.",
+    bloque: "social",
+    titulo: "Globalización y antiglobalización",
+    descripcion: "Fenómeno de la globalización y sus movimientos críticos.",
   },
   {
-    slug: "ley-del-gobierno",
+    slug: "actitudes-valores-sociales",
     numero: 29,
-    bloque: "juridico",
-    titulo: "La Ley del Gobierno",
-    descripcion:
-      "Composición y órganos del Gobierno, estatuto de sus miembros, Gobierno en funciones, iniciativa legislativa y control del Gobierno.",
+    bloque: "social",
+    titulo: "Actitudes y valores sociales",
+    descripcion: "Formación de actitudes y valores en la sociedad actual.",
+  },
+  {
+    slug: "principios-eticos-sociedad-actual",
+    numero: 30,
+    bloque: "social",
+    titulo: "Principios éticos de la sociedad actual",
+    descripcion: "Ética social y deontología profesional.",
+  },
+  {
+    slug: "la-inmigracion",
+    numero: 31,
+    bloque: "social",
+    titulo: "La inmigración",
+    descripcion: "Fenómeno migratorio en España y su gestión social.",
+  },
+  {
+    slug: "concepto-geografia-humana",
+    numero: 32,
+    bloque: "social",
+    titulo: "Concepto de geografía humana",
+    descripcion: "Distribución de la población y el territorio.",
+  },
+  {
+    slug: "la-seguridad",
+    numero: 33,
+    bloque: "social",
+    titulo: "La seguridad",
+    descripcion: "Concepto de seguridad ciudadana en la sociedad actual.",
+  },
+  {
+    slug: "drogodependencias",
+    numero: 34,
+    bloque: "social",
+    titulo: "Drogodependencias",
+    descripcion: "Tipos de sustancias, efectos y estrategias de prevención.",
+  },
+  {
+    slug: "desarrollo-sostenible",
+    numero: 35,
+    bloque: "social",
+    titulo: "El desarrollo sostenible",
+    descripcion: "Concepto de desarrollo sostenible y sus objetivos.",
+  },
+  {
+    slug: "gramatica-lengua-espanola",
+    numero: 36,
+    bloque: "social",
+    titulo: "Gramática de la lengua española",
+    descripcion: "Morfología y sintaxis del español.",
+  },
+  {
+    slug: "ortografia-lengua-espanola",
+    numero: 37,
+    bloque: "social",
+    titulo: "Ortografía de la lengua española",
+    descripcion: "Normas ortográficas del español.",
   },
 
-  // Bloque II — Social
+  // ---------- Bloque III — Materias Técnico-Científicas (38-45) ----------
   {
-    slug: "igualdad-genero",
-    numero: 16,
-    bloque: "social",
-    titulo: "Igualdad efectiva entre mujeres y hombres",
-    descripcion:
-      "Principios de la Ley Orgánica de Igualdad, políticas públicas y actuación policial con perspectiva de género.",
-  },
-  {
-    slug: "violencia-genero",
-    numero: 17,
-    bloque: "social",
-    titulo: "Violencia de género: marco legal y protocolos de actuación",
-    descripcion:
-      "Ley Orgánica de medidas de protección integral, órdenes de protección y el sistema VioGén.",
-  },
-  {
-    slug: "extranjeria-inmigracion",
-    numero: 18,
-    bloque: "social",
-    titulo: "Extranjería e inmigración",
-    descripcion:
-      "Régimen general de entrada y permanencia de extranjeros, situaciones administrativas y competencias policiales.",
-  },
-  {
-    slug: "seguridad-vial",
-    numero: 19,
-    bloque: "social",
-    titulo: "Seguridad vial: normativa básica de tráfico",
-    descripcion:
-      "Ley sobre Tráfico y Seguridad Vial, señalización, infracciones y actuación en accidentes.",
-  },
-  {
-    slug: "actualidad-institucional",
-    numero: 20,
-    bloque: "social",
-    titulo: "Actualidad institucional y organización del Estado autonómico",
-    descripcion:
-      "Instituciones del Estado, actualidad política y administrativa relevante para la oposición.",
-  },
-
-  // Bloque III — Técnico-científico
-  {
-    slug: "informatica-basica",
-    numero: 21,
+    slug: "fundamentos-sistemas-operativos",
+    numero: 38,
     bloque: "tecnico-cientifico",
-    titulo: "Informática básica y ofimática",
-    descripcion:
-      "Fundamentos de hardware y software, redes, seguridad informática y manejo de herramientas ofimáticas.",
+    titulo: "Fundamentos de sistemas operativos",
+    descripcion: "Conceptos básicos de sistemas operativos.",
   },
   {
-    slug: "actuacion-policial-basica",
-    numero: 22,
+    slug: "redes-informaticas",
+    numero: 39,
     bloque: "tecnico-cientifico",
-    titulo: "Actuación policial básica y atención a la ciudadanía",
-    descripcion:
-      "Protocolos de identificación, detención, atestados y atención a víctimas.",
+    titulo: "Redes informáticas",
+    descripcion: "Fundamentos de redes y comunicaciones.",
   },
   {
-    slug: "primeros-auxilios",
-    numero: 23,
+    slug: "la-inteligencia",
+    numero: 40,
     bloque: "tecnico-cientifico",
-    titulo: "Primeros auxilios aplicados a la actuación policial",
-    descripcion:
-      "Soporte vital básico, actuación ante emergencias sanitarias frecuentes en el servicio policial.",
+    titulo: "Inteligencia",
+    descripcion: "Concepto y ciclo de inteligencia aplicado a la seguridad.",
   },
   {
-    slug: "criminalistica-basica",
-    numero: 24,
+    slug: "ciberdelincuencia-agentes-amenaza",
+    numero: 41,
     bloque: "tecnico-cientifico",
-    titulo: "Nociones básicas de criminalística y policía científica",
-    descripcion:
-      "Inspección ocular técnico-policial, cadena de custodia e introducción a la identificación.",
+    titulo: "Ciberdelincuencia y agentes de la amenaza",
+    descripcion: "Tipos de amenazas y actores en el ciberespacio.",
   },
   {
-    slug: "seguridad-privada-ciudadana",
-    numero: 25,
+    slug: "origen-armas-de-fuego",
+    numero: 42,
     bloque: "tecnico-cientifico",
-    titulo: "Seguridad ciudadana y seguridad privada",
-    descripcion:
-      "Ley de Seguridad Ciudadana, coordinación con seguridad privada y régimen sancionador.",
+    titulo: "Origen de las armas de fuego",
+    descripcion: "Historia y clasificación básica de las armas de fuego.",
+  },
+  {
+    slug: "el-vehiculo-prioritario",
+    numero: 43,
+    bloque: "tecnico-cientifico",
+    titulo: "El vehículo prioritario",
+    descripcion: "Concepto y régimen de circulación de los vehículos prioritarios.",
+  },
+  {
+    slug: "seguridad-conduccion-vehiculos-prioritarios",
+    numero: 44,
+    bloque: "tecnico-cientifico",
+    titulo: "La seguridad en la conducción de vehículos prioritarios",
+    descripcion: "Técnicas y normas de seguridad en la conducción prioritaria.",
+  },
+  {
+    slug: "prevencion-riesgos-laborales-seguridad-vial",
+    numero: 45,
+    bloque: "tecnico-cientifico",
+    titulo: "Prevención de riesgos laborales en seguridad vial",
+    descripcion: "Riesgos laborales asociados a la actuación en vía pública.",
   },
 ];
 

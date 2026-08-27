@@ -71,25 +71,35 @@ Copia `.env.example` a `.env.local` y completa:
 
 ## Contenido: temario y preguntas
 
-- `src/lib/temario.ts` — bloques y temas. Añadir un tema nuevo es añadir
-  una entrada al array `temas`.
+- `src/lib/temario.ts` — bloques y los 45 temas oficiales (26 jurídico +
+  11 social + 8 técnico-científico). Añadir un tema nuevo es añadir una
+  entrada al array `temas`.
 - `src/content/preguntas/{slug}.ts` — batería de preguntas de cada tema
-  (`src/content/preguntas/index.ts` las registra). De momento están
-  redactados los 5 primeros temas del bloque jurídico como ejemplo real y
-  funcional; el resto de temas aparecen en el temario pero muestran
-  "batería en preparación" hasta que se redacten.
+  (`src/content/preguntas/index.ts` las registra, concatenando varios
+  bancos ya redactados cuando corresponden a un mismo tema real). De
+  momento están redactados con contenido real y funcional 7 temas del
+  bloque jurídico (temas 2, 3, 5, 6, 7, 8 y 9); el resto de temas aparecen
+  en el temario pero muestran "batería en preparación" hasta que se
+  redacten.
 - `src/lib/simulacros.ts` — agrupa automáticamente los temas de 5 en 5 y
-  construye el simulacro combinado con preguntas de cada tema del tramo.
-- Los esquemas y resúmenes por tema (mencionados en el diseño del
-  producto) todavía no tienen contenido: las páginas de tema ya reservan
-  el hueco ("Próximamente disponible") para añadirlos sin tocar el resto.
+  construye el simulacro combinado con preguntas de cada tema del tramo;
+  también expone el simulacro completo (`getPreguntasSimulacroCompleto`),
+  que combina hasta 100 preguntas de todos los temas ya desbloqueados.
+- `src/content/esquemas/{slug}.ts` y `src/content/resumenes/{slug}.ts` —
+  esquema y resumen de cada tema (mismos 7 temas redactados por ahora);
+  se pueden descargar en PDF desde `/api/temario/[slug]/pdf`
+  (`src/lib/pdf/TemaPdfDocument.tsx`, con `@react-pdf/renderer`).
+- `src/lib/desbloqueo.ts` — el temario no se abre entero al suscribirse:
+  se desbloquea por lotes de 5 temas, uno al mes, acelerando el ritmo si
+  la convocatoria vigente (`src/lib/convocatoria.ts`) deja poco margen.
 
-**Importante sobre el temario:** el listado y numeración de temas de este
-repositorio sigue la estructura clásica de las oposiciones a Policía
-Nacional (bloques jurídico / social / técnico-científico), pero antes de
+**Importante sobre el temario:** el recuento (45 temas, 26/11/8 por
+bloque) y los títulos de los bloques II y III están cotejados entre varias
+academias independientes. Varios títulos del Bloque I (marcados con "⚠" en
+su descripción en `temario.ts`) solo se han visto en una fuente. Antes de
 vender el producto como "temario oficial de la convocatoria vigente" hay
-que cotejarlo con el temario exacto publicado en el BOE de la convocatoria
-en curso.
+que verificar el listado completo contra el temario exacto publicado en el
+BOE de la convocatoria en curso.
 
 ## Marca
 
