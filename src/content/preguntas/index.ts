@@ -14,6 +14,12 @@ import { preguntas as estatutoBasicoEmpleadoPublico } from "./estatuto-basico-em
 import { preguntas as estructuraMinisterioInterior } from "./estructura-ministerio-interior";
 import { preguntas as leyOrganicaPoliciaNacional } from "./ley-organica-policia-nacional";
 import { preguntas as leyOrganicaFuerzasCuerposSeguridad } from "./ley-organica-fuerzas-cuerpos-seguridad";
+import { preguntas as elDerecho } from "./el-derecho";
+import { preguntas as laUnionEuropea } from "./la-union-europea";
+import { preguntas as leyOrganicaProteccionSeguridadCiudadana } from "./ley-organica-proteccion-seguridad-ciudadana";
+import { preguntas as derechoPenalParteGeneral } from "./derecho-penal-parte-general";
+import { preguntas as derechoProcesalPenal } from "./derecho-procesal-penal";
+import { preguntas as proteccionDatosCaracterPersonal } from "./proteccion-datos-caracter-personal";
 
 // Banco de preguntas por tema. Los temas que todavía no tienen batería
 // redactada simplemente no aparecen aquí: `getPreguntasByTema` devuelve un
@@ -43,6 +49,12 @@ const bancoPreguntas: Record<string, Pregunta[]> = {
   "el-ministerio-del-interior": estructuraMinisterioInterior,
   "la-direccion-general-de-la-policia": leyOrganicaPoliciaNacional,
   "ley-organica-fuerzas-cuerpos-seguridad": leyOrganicaFuerzasCuerposSeguridad,
+  "el-derecho": elDerecho,
+  "la-union-europea": laUnionEuropea,
+  "ley-organica-proteccion-seguridad-ciudadana": leyOrganicaProteccionSeguridadCiudadana,
+  "derecho-penal-parte-general": derechoPenalParteGeneral,
+  "derecho-procesal-penal": derechoProcesalPenal,
+  "proteccion-datos-caracter-personal": proteccionDatosCaracterPersonal,
 };
 
 export function getPreguntasByTema(temaSlug: string): Pregunta[] {

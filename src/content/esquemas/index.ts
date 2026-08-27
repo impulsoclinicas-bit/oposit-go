@@ -14,6 +14,12 @@ import { esquema as estatutoBasicoEmpleadoPublico } from "./estatuto-basico-empl
 import { esquema as estructuraMinisterioInterior } from "./estructura-ministerio-interior";
 import { esquema as leyOrganicaPoliciaNacional } from "./ley-organica-policia-nacional";
 import { esquema as leyOrganicaFuerzasCuerposSeguridad } from "./ley-organica-fuerzas-cuerpos-seguridad";
+import { esquema as elDerecho } from "./el-derecho";
+import { esquema as laUnionEuropea } from "./la-union-europea";
+import { esquema as leyOrganicaProteccionSeguridadCiudadana } from "./ley-organica-proteccion-seguridad-ciudadana";
+import { esquema as derechoPenalParteGeneral } from "./derecho-penal-parte-general";
+import { esquema as derechoProcesalPenal } from "./derecho-procesal-penal";
+import { esquema as proteccionDatosCaracterPersonal } from "./proteccion-datos-caracter-personal";
 
 // Igual que con las preguntas: los temas sin entrada aquí muestran el aviso
 // de "próximamente disponible" en la página del tema. Ver el comentario en
@@ -41,6 +47,12 @@ const registroEsquemas: Record<string, Esquema> = {
   "el-ministerio-del-interior": estructuraMinisterioInterior,
   "la-direccion-general-de-la-policia": leyOrganicaPoliciaNacional,
   "ley-organica-fuerzas-cuerpos-seguridad": leyOrganicaFuerzasCuerposSeguridad,
+  "el-derecho": elDerecho,
+  "la-union-europea": laUnionEuropea,
+  "ley-organica-proteccion-seguridad-ciudadana": leyOrganicaProteccionSeguridadCiudadana,
+  "derecho-penal-parte-general": derechoPenalParteGeneral,
+  "derecho-procesal-penal": derechoProcesalPenal,
+  "proteccion-datos-caracter-personal": proteccionDatosCaracterPersonal,
 };
 
 export function getEsquemaByTema(temaSlug: string): Esquema | undefined {

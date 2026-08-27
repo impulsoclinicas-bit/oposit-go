@@ -14,6 +14,12 @@ import { resumen as estatutoBasicoEmpleadoPublico } from "./estatuto-basico-empl
 import { resumen as estructuraMinisterioInterior } from "./estructura-ministerio-interior";
 import { resumen as leyOrganicaPoliciaNacional } from "./ley-organica-policia-nacional";
 import { resumen as leyOrganicaFuerzasCuerposSeguridad } from "./ley-organica-fuerzas-cuerpos-seguridad";
+import { resumen as elDerecho } from "./el-derecho";
+import { resumen as laUnionEuropea } from "./la-union-europea";
+import { resumen as leyOrganicaProteccionSeguridadCiudadana } from "./ley-organica-proteccion-seguridad-ciudadana";
+import { resumen as derechoPenalParteGeneral } from "./derecho-penal-parte-general";
+import { resumen as derechoProcesalPenal } from "./derecho-procesal-penal";
+import { resumen as proteccionDatosCaracterPersonal } from "./proteccion-datos-caracter-personal";
 
 const registroResumenes: Record<string, Resumen> = {
   "la-constitucion-espanola-i": {
@@ -37,6 +43,12 @@ const registroResumenes: Record<string, Resumen> = {
   "el-ministerio-del-interior": estructuraMinisterioInterior,
   "la-direccion-general-de-la-policia": leyOrganicaPoliciaNacional,
   "ley-organica-fuerzas-cuerpos-seguridad": leyOrganicaFuerzasCuerposSeguridad,
+  "el-derecho": elDerecho,
+  "la-union-europea": laUnionEuropea,
+  "ley-organica-proteccion-seguridad-ciudadana": leyOrganicaProteccionSeguridadCiudadana,
+  "derecho-penal-parte-general": derechoPenalParteGeneral,
+  "derecho-procesal-penal": derechoProcesalPenal,
+  "proteccion-datos-caracter-personal": proteccionDatosCaracterPersonal,
 };
 
 export function getResumenByTema(temaSlug: string): Resumen | undefined {
