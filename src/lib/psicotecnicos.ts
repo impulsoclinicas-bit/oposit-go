@@ -40,3 +40,8 @@ export function getCategoriaPsicotecnica(
 ): CategoriaPsicotecnica | undefined {
   return categoriasPsicotecnicas.find((c) => c.slug === slug);
 }
+
+// Tamaño y cronómetro del simulacro psicotécnico completo (mezcla las
+// cuatro categorías, con contrarreloj, como el examen real).
+export const PREGUNTAS_SIMULACRO_PSICOTECNICO = 20;
+export const SEGUNDOS_POR_PREGUNTA_PSICOTECNICO = 40;

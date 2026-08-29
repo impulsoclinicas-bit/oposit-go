@@ -60,4 +60,63 @@ export const preguntas: Pregunta[] = [
     correcta: 1,
     explicacion: "Son las vocales en orden: A, E, I, O, U.",
   },
+  {
+    id: "psa-09",
+    enunciado: "E, H, K, N, ¿?",
+    opciones: ["P", "Q", "R", "O"],
+    correcta: 1,
+    explicacion: "Se avanza 3 letras cada vez: tras la N va la Q.",
+  },
+  {
+    id: "psa-10",
+    enunciado: "Z, Y, X, W, ¿?",
+    opciones: ["U", "V", "T", "S"],
+    correcta: 1,
+    explicacion: "La serie retrocede una letra cada vez: tras la W va la V.",
+  },
+  {
+    id: "psa-11",
+    enunciado: "A, D, H, M, ¿?",
+    opciones: ["Q", "R", "S", "T"],
+    correcta: 2,
+    explicacion:
+      "El salto aumenta cada vez (+3, +4, +5, +6): desde la M, avanzando 6 posiciones, se llega a la S.",
+  },
+  {
+    id: "psa-12",
+    enunciado: "B, E, H, K, N, ¿?",
+    opciones: ["O", "P", "Q", "R"],
+    correcta: 2,
+    explicacion: "Se avanza 3 letras cada vez: tras la N va la Q.",
+  },
+  {
+    id: "psa-13",
+    enunciado: "Y, W, U, S, ¿?",
+    opciones: ["P", "Q", "R", "O"],
+    correcta: 1,
+    explicacion: "La serie retrocede 2 letras cada vez: tras la S va la Q.",
+  },
+  {
+    id: "psa-14",
+    enunciado: "C, E, H, L, ¿?",
+    opciones: ["O", "P", "Q", "N"],
+    correcta: 2,
+    explicacion:
+      "El salto aumenta cada vez (+2, +3, +4, +5): desde la L, avanzando 5 posiciones, se llega a la Q.",
+  },
+  {
+    id: "psa-15",
+    enunciado: "A, C, F, J, ¿?",
+    opciones: ["M", "N", "O", "P"],
+    correcta: 2,
+    explicacion:
+      "El salto aumenta cada vez (+2, +3, +4, +5): desde la J, avanzando 5 posiciones, se llega a la O.",
+  },
+  {
+    id: "psa-16",
+    enunciado: "T, R, P, N, ¿?",
+    opciones: ["K", "L", "M", "J"],
+    correcta: 1,
+    explicacion: "La serie retrocede 2 letras cada vez: tras la N va la L.",
+  },
 ];

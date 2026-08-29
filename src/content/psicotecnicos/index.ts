@@ -18,3 +18,8 @@ export function getPreguntasByCategoriaPsicotecnica(slug: string): Pregunta[] {
 export function getTotalPreguntasPsicotecnicos(): number {
   return Object.values(bancoPsicotecnicos).reduce((acc, p) => acc + p.length, 0);
 }
+
+/** Simulacro psicotécnico completo: mezcla las cuatro categorías, como el examen real. */
+export function getPreguntasSimulacroPsicotecnico(): Pregunta[] {
+  return Object.values(bancoPsicotecnicos).flat();
+}

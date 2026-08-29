@@ -4,6 +4,8 @@ import { Container } from "@/components/Container";
 import { PageHero } from "@/components/PageHero";
 import { categoriasPsicotecnicas } from "@/lib/psicotecnicos";
 import { requireActiveUser } from "@/lib/auth-helpers";
+import { isRectaFinal } from "@/lib/convocatoria";
+import { RectaFinalBanner } from "@/components/RectaFinalBanner";
 
 export const metadata: Metadata = {
   title: "Psicotécnicos",
@@ -28,7 +30,9 @@ export default async function PsicotecnicosPage() {
       />
 
       <section className="py-12 sm:py-16">
-        <Container>
+        <Container className="space-y-6">
+          {isRectaFinal() && <RectaFinalBanner />}
+
           <div className="rounded-xl border border-brand-200 bg-brand-50/60 p-5 text-sm text-brand-800">
             El examen psicotécnico real también incluye ejercicios de
             figuras y matrices (razonamiento espacial). Aquí encontrarás la
@@ -36,7 +40,21 @@ export default async function PsicotecnicosPage() {
             práctica repetida.
           </div>
 
-          <div className="mt-8 grid gap-6 sm:grid-cols-2">
+          <Link
+            href="/psicotecnicos/completo"
+            className="block rounded-xl border-2 border-accent-400 bg-brand-950 p-6 text-white shadow-sm transition-colors hover:border-accent-300"
+          >
+            <p className="text-xs font-semibold uppercase tracking-wide text-accent-300">
+              Examen completo
+            </p>
+            <h2 className="mt-1 text-xl font-bold">Simulacro psicotécnico completo</h2>
+            <p className="mt-2 text-sm text-brand-100">
+              Mezcla las cuatro categorías en una sola tanda cronometrada,
+              igual que el día del examen.
+            </p>
+          </Link>
+
+          <div className="grid gap-6 sm:grid-cols-2">
             {categoriasPsicotecnicas.map((categoria) => (
               <Link
                 key={categoria.slug}

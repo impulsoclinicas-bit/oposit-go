@@ -5,6 +5,8 @@ import Link from "next/link";
 import { getSimulacros } from "@/lib/simulacros";
 import { getActiveUser } from "@/lib/auth-helpers";
 import { isSimulacroDesbloqueado, getFechaDesbloqueoSimulacro } from "@/lib/desbloqueo";
+import { isRectaFinal } from "@/lib/convocatoria";
+import { RectaFinalBanner } from "@/components/RectaFinalBanner";
 
 export const metadata: Metadata = {
   title: "Simulacros",
@@ -31,6 +33,8 @@ export default async function SimulacrosPage() {
 
       <section className="py-16 sm:py-20">
         <Container className="space-y-8">
+          {isRectaFinal() && <RectaFinalBanner />}
+
           <Link
             href="/simulacros/completo"
             className="block rounded-xl border-2 border-accent-400 bg-brand-950 p-6 text-white shadow-sm transition-colors hover:border-accent-300"

@@ -96,7 +96,7 @@ const faqItems = [
   {
     question: "¿Por qué el temario se abre poco a poco y no entero desde el primer día?",
     answer:
-      "Para que no te agobies con 29 temas a la vez. Al suscribirte tienes ya disponibles los 5 primeros temas y su simulacro; cada mes se abren 5 temas más con su simulacro correspondiente, mientras el simulacro completo va creciendo con todo lo que ya tienes desbloqueado.",
+      `Para que no te agobies con ${temas.length} temas a la vez. Al suscribirte tienes ya disponibles los 5 primeros temas y su simulacro; cada mes se abren 5 temas más con su simulacro correspondiente, mientras el simulacro completo va creciendo con todo lo que ya tienes desbloqueado.`,
   },
 ];
 
