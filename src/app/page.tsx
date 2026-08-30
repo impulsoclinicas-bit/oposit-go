@@ -312,7 +312,7 @@ export default function HomePage() {
             href="/recursos"
             className="rounded-md bg-brand-900 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-brand-800"
           >
-            Ir a los recursos gratuitos
+            Pruébanos gratis
           </Link>
         </Container>
       </section>

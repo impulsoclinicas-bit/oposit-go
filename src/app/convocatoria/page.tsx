@@ -205,7 +205,7 @@ export default function ConvocatoriaPage() {
       <CtaBand
         title="El primer ejercicio es tipo test: prepáralo así"
         description="Practica con baterías de preguntas por tema, simulacros combinados y esquemas de repaso. Empieza gratis con los recursos de práctica."
-        primaryLabel="Ver recursos gratuitos"
+        primaryLabel="Pruébanos gratis"
         primaryHref="/recursos"
         secondaryLabel="Ver el temario completo"
         secondaryHref="/temario"

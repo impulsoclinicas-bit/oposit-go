@@ -7,7 +7,7 @@ import { recursosGratis } from "@/lib/recursos-gratis";
 import { getEsquemaByTema } from "@/content/esquemas";
 
 export const metadata: Metadata = {
-  title: "Recursos gratuitos",
+  title: "Pruébanos",
   description:
     "Tests gratuitos tipo examen para practicar antes de la oposición a Policía Nacional, con corrección y explicación al instante. Sin registro.",
   alternates: { canonical: "/recursos" },
@@ -20,11 +20,11 @@ export default function RecursosPage() {
     <>
       <PageHero
         eyebrow="Gratis, sin registro"
-        title="Recursos gratuitos para opositores"
+        title="Pruébanos"
         description="Practica ya mismo con tests reales tipo examen. Responde, corrige y lee la explicación de cada pregunta, sin darte de alta ni pagar nada."
         breadcrumbs={[
           { label: "Inicio", href: "/" },
-          { label: "Recursos gratuitos", href: "/recursos" },
+          { label: "Pruébanos", href: "/recursos" },
         ]}
       />
 
@@ -67,7 +67,7 @@ export default function RecursosPage() {
                     temaSlug={recurso.slug}
                     preguntas={recurso.preguntas}
                     volverHref="/recursos"
-                    volverLabel="Volver a recursos gratuitos"
+                    volverLabel="Volver"
                   />
                 </div>
               </div>
