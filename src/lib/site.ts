@@ -13,6 +13,9 @@ export const siteConfig = {
   areaServed: "España",
   sameAs: [] as string[],
   precioMensualEur: 9.99,
+  // Pago único del pase de simulacros ilimitados (sin suscripción), válido
+  // hasta la fecha de la convocatoria vigente (ver FECHA_EXAMEN_OFICIAL).
+  precioPaseSimulacrosEur: 79.99,
 };
 
 export const mainNav = [

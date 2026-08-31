@@ -30,6 +30,13 @@ model User {
   // gradual de temas: 5 temas nuevos por cada mes transcurrido desde aquí.
   subscriptionStartedAt DateTime?
 
+  // Pago único (sin suscripción) que da acceso ilimitado al simulacro de
+  // temario completo y al simulacro psicotécnico completo, sin temario por
+  // temas ni esquemas/resúmenes. Válido hasta esta fecha (la fecha del
+  // examen en el momento de la compra); comprarlo de nuevo la actualiza a
+  // la convocatoria vigente en ese momento.
+  paseSimulacrosExpiraEn DateTime?
+
   activationTokens     ActivationToken[]
   quizAttempts         QuizAttempt[]
   studyPlan            StudyPlan?

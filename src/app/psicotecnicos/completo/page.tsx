@@ -7,7 +7,7 @@ import {
   SEGUNDOS_POR_PREGUNTA_PSICOTECNICO,
 } from "@/lib/psicotecnicos";
 import { getPreguntasSimulacroPsicotecnico } from "@/content/psicotecnicos";
-import { requireActiveUser } from "@/lib/auth-helpers";
+import { requireAccesoSimulacros } from "@/lib/auth-helpers";
 
 export const metadata: Metadata = {
   title: "Simulacro psicotécnico completo",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 };
 
 export default async function SimulacroPsicotecnicoCompletoPage() {
-  await requireActiveUser("/psicotecnicos/completo");
+  await requireAccesoSimulacros("/psicotecnicos/completo");
   const preguntas = getPreguntasSimulacroPsicotecnico();
 
   return (

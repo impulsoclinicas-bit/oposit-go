@@ -6,8 +6,9 @@ import {
   getPreguntasSimulacroCompleto,
   PREGUNTAS_SIMULACRO_COMPLETO,
 } from "@/lib/simulacros";
-import { requireActiveUser } from "@/lib/auth-helpers";
+import { requireAccesoSimulacros } from "@/lib/auth-helpers";
 import { getNumeroTemasDesbloqueados } from "@/lib/desbloqueo";
+import { temas } from "@/lib/temario";
 
 export const metadata: Metadata = {
   title: "Simulacro completo",
@@ -17,8 +18,12 @@ export const metadata: Metadata = {
 };
 
 export default async function SimulacroCompletoPage() {
-  const user = await requireActiveUser("/simulacros/completo");
-  const numeroTemasDesbloqueados = getNumeroTemasDesbloqueados(user.subscriptionStartedAt);
+  const user = await requireAccesoSimulacros("/simulacros/completo");
+  // Vía suscripción: solo los temas ya desbloqueados (desbloqueo progresivo).
+  // Vía pase de simulacros: todo el temario mezclado desde el primer día.
+  const numeroTemasDesbloqueados = user.viaSuscripcion
+    ? getNumeroTemasDesbloqueados(user.subscriptionStartedAt)
+    : temas.length;
   const preguntas = getPreguntasSimulacroCompleto(numeroTemasDesbloqueados);
 
   return (

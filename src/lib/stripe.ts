@@ -6,6 +6,12 @@ export function isStripeConfigured(): boolean {
   return Boolean(process.env.STRIPE_SECRET_KEY && process.env.STRIPE_PRICE_ID);
 }
 
+export function isStripeConfiguredPaseSimulacros(): boolean {
+  return Boolean(
+    process.env.STRIPE_SECRET_KEY && process.env.STRIPE_PRICE_ID_PASE_SIMULACROS
+  );
+}
+
 export function getStripe(): Stripe {
   if (!process.env.STRIPE_SECRET_KEY) {
     throw new Error("STRIPE_SECRET_KEY no está configurada.");

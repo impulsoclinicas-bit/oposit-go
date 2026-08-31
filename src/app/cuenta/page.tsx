@@ -10,6 +10,7 @@ import { prisma } from "@/lib/db";
 import type { SemanaPlan } from "@/lib/plan-estudio";
 import { getNumeroTemasDesbloqueados, getFechaDesbloqueoTema } from "@/lib/desbloqueo";
 import { temas } from "@/lib/temario";
+import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Mi cuenta",
@@ -38,8 +39,13 @@ export default async function CuentaPage() {
       currentPeriodEnd: true,
       stripeCustomerId: true,
       subscriptionStartedAt: true,
+      paseSimulacrosExpiraEn: true,
     },
   });
+
+  const paseActivo = Boolean(
+    user?.paseSimulacrosExpiraEn && user.paseSimulacrosExpiraEn > new Date()
+  );
 
   const temasDesbloqueados = getNumeroTemasDesbloqueados(user?.subscriptionStartedAt ?? null);
   const siguienteTema = temas.find((t) => t.numero === temasDesbloqueados + 1);
@@ -150,6 +156,51 @@ export default async function CuentaPage() {
                 </Link>
               )}
             </div>
+          </div>
+
+          <div className="rounded-xl border border-brand-200 bg-white p-6 shadow-sm">
+            <h2 className="font-bold text-brand-900">Pase de simulacros</h2>
+            <p className="mt-2 text-sm text-brand-700">
+              Estado:{" "}
+              <span className="font-semibold text-brand-900">
+                {paseActivo ? "Activo" : "Sin pase activo"}
+              </span>
+            </p>
+            {user?.paseSimulacrosExpiraEn && (
+              <p className="mt-1 text-sm text-brand-700">
+                {paseActivo ? "Válido hasta" : "Caducó el"}{" "}
+                {new Intl.DateTimeFormat("es-ES", { dateStyle: "long" }).format(
+                  user.paseSimulacrosExpiraEn
+                )}
+                .
+              </p>
+            )}
+            {paseActivo && (
+              <div className="mt-4 flex flex-wrap gap-2">
+                <Link
+                  href="/simulacros/completo"
+                  className="rounded-md bg-brand-900 px-3 py-2 text-xs font-semibold text-white hover:bg-brand-800"
+                >
+                  Simulacro de temario
+                </Link>
+                <Link
+                  href="/psicotecnicos/completo"
+                  className="rounded-md border border-brand-300 px-3 py-2 text-xs font-semibold text-brand-800 hover:bg-brand-50"
+                >
+                  Simulacro psicotécnico
+                </Link>
+              </div>
+            )}
+            {!paseActivo && (
+              <div className="mt-4">
+                <Link
+                  href="/precios"
+                  className="rounded-md bg-accent-500 px-4 py-2 text-sm font-semibold text-brand-950 hover:bg-accent-400"
+                >
+                  {siteConfig.precioPaseSimulacrosEur.toFixed(2)} € · Comprar el pase
+                </Link>
+              </div>
+            )}
           </div>
 
           <div className="rounded-xl border border-brand-200 bg-white p-6 shadow-sm">

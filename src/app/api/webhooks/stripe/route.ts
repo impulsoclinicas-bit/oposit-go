@@ -1,12 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 import { SubscriptionStatus } from "@prisma/client";
-import { getStripe, isStripeConfigured } from "@/lib/stripe";
+import { getStripe } from "@/lib/stripe";
 import { prisma } from "@/lib/db";
 import { isDbConfigured } from "@/lib/db";
 import { isEmailConfigured, sendActivationEmail } from "@/lib/email";
 import { generateToken } from "@/lib/tokens";
 import { siteConfig } from "@/lib/site";
+import { FECHA_EXAMEN_OFICIAL } from "@/lib/convocatoria";
 
 function mapStripeStatus(status: Stripe.Subscription.Status): SubscriptionStatus {
   switch (status) {
@@ -32,7 +33,7 @@ async function issueActivationLink(userId: string, email: string, origin: string
 }
 
 export async function POST(request: NextRequest) {
-  if (!isStripeConfigured() || !isDbConfigured()) {
+  if (!process.env.STRIPE_SECRET_KEY || !isDbConfigured()) {
     return NextResponse.json({ error: "No configurado" }, { status: 503 });
   }
 
@@ -57,6 +58,31 @@ export async function POST(request: NextRequest) {
   switch (event.type) {
     case "checkout.session.completed": {
       const session = event.data.object as Stripe.Checkout.Session;
+
+      if (session.mode === "payment" && session.metadata?.producto === "pase-simulacros") {
+        const email = session.customer_details?.email ?? session.customer_email;
+        const customerId = session.customer as string | null;
+        if (!email) break;
+
+        const user = await prisma.user.upsert({
+          where: { email: email.toLowerCase() },
+          update: {
+            stripeCustomerId: customerId ?? undefined,
+            paseSimulacrosExpiraEn: FECHA_EXAMEN_OFICIAL,
+          },
+          create: {
+            email: email.toLowerCase(),
+            stripeCustomerId: customerId,
+            paseSimulacrosExpiraEn: FECHA_EXAMEN_OFICIAL,
+          },
+        });
+
+        if (!user.passwordHash) {
+          await issueActivationLink(user.id, user.email, origin);
+        }
+        break;
+      }
+
       if (session.mode !== "subscription") break;
 
       const email = session.customer_details?.email ?? session.customer_email;

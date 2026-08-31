@@ -41,6 +41,18 @@ lo siguiente.
 5. Desde `/cuenta` puede abrir el portal de facturación de Stripe para
    gestionar o cancelar su suscripción en cualquier momento.
 
+Además de la suscripción mensual hay un segundo producto, el **pase de
+simulacros** (`/api/checkout-pase-simulacros`, `Stripe Checkout` en modo
+`payment` — pago único, no recurrente): da acceso ilimitado solo al
+simulacro de temario completo y al simulacro psicotécnico completo (sin
+temario por temas ni esquemas/resúmenes), válido desde la compra hasta
+`FECHA_EXAMEN_OFICIAL` (`src/lib/convocatoria.ts`). El webhook lo distingue
+por `session.mode === "payment"` y `session.metadata.producto ===
+"pase-simulacros"`, y guarda la fecha de caducidad en
+`User.paseSimulacrosExpiraEn`. El acceso a esas dos páginas lo comprueba
+`requireAccesoSimulacros` (`src/lib/auth-helpers.ts`), que admite tanto
+suscripción activa como pase vigente.
+
 ## Puesta en marcha (variables de entorno)
 
 Copia `.env.example` a `.env.local` y completa:
@@ -55,6 +67,10 @@ Copia `.env.example` a `.env.local` y completa:
 3. **Stripe** ([crear cuenta](https://dashboard.stripe.com/register)):
    - Crea un producto con un precio recurrente mensual y copia su ID en
      `STRIPE_PRICE_ID`.
+   - Crea un segundo producto con un precio **único** (no recurrente) para
+     el pase de simulacros y copia su ID en
+     `STRIPE_PRICE_ID_PASE_SIMULACROS`. Es opcional: sin él, ese producto
+     simplemente no está disponible (el resto del sitio funciona igual).
    - Copia la clave secreta en `STRIPE_SECRET_KEY`.
    - Configura el webhook (Developers → Webhooks → Add endpoint) apuntando
      a `https://tu-dominio/api/webhooks/stripe`, escuchando

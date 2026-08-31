@@ -2,7 +2,17 @@
 
 import { useState } from "react";
 
-export function BuyButton({ className }: { className?: string }) {
+export function BuyButton({
+  className,
+  endpoint = "/api/checkout",
+  label = "Suscribirme ahora",
+  loadingLabel = "Redirigiendo…",
+}: {
+  className?: string;
+  endpoint?: string;
+  label?: string;
+  loadingLabel?: string;
+}) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -10,7 +20,7 @@ export function BuyButton({ className }: { className?: string }) {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch("/api/checkout", { method: "POST" });
+      const res = await fetch(endpoint, { method: "POST" });
       const data = await res.json();
       if (!res.ok || !data.url) {
         setError(
@@ -38,7 +48,7 @@ export function BuyButton({ className }: { className?: string }) {
           "rounded-md bg-accent-500 px-6 py-3 text-sm font-semibold text-brand-950 shadow-sm transition-colors hover:bg-accent-400 disabled:cursor-wait disabled:opacity-70"
         }
       >
-        {loading ? "Redirigiendo…" : "Suscribirme ahora"}
+        {loading ? loadingLabel : label}
       </button>
       {error && (
         <p className="mt-2 text-sm text-danger-600">
