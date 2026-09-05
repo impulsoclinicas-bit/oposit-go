@@ -13,7 +13,7 @@ import { temas } from "@/lib/temario";
 export const metadata: Metadata = {
   title: "Simulacro completo",
   description:
-    "Examen completo tipo test, hasta 100 preguntas y 50 minutos, igual que el examen oficial de la Escala Básica.",
+    "Simulacro completo tipo test, hasta 100 preguntas en 50 minutos, en las condiciones del examen oficial de la Escala Básica.",
   alternates: { canonical: "/simulacros/completo" },
 };
 
@@ -30,8 +30,8 @@ export default async function SimulacroCompletoPage() {
     <>
       <PageHero
         eyebrow="Simulacro completo"
-        title="Examen completo, como el día del examen"
-        description={`Combina preguntas de todos los temas que ya tienes desbloqueados (hasta ${PREGUNTAS_SIMULACRO_COMPLETO} preguntas). A medida que se abran más temas, el simulacro completo crece con ellos.`}
+        title="Simulacro completo, en las condiciones del examen oficial"
+        description={`Combina preguntas de todos los temas ya desbloqueados, hasta un máximo de ${PREGUNTAS_SIMULACRO_COMPLETO}. A medida que se desbloqueen nuevos temas, el simulacro completo se amplía automáticamente.`}
         breadcrumbs={[
           { label: "Inicio", href: "/" },
           { label: "Simulacros", href: "/simulacros" },
@@ -42,8 +42,9 @@ export default async function SimulacroCompletoPage() {
       <section className="py-16 sm:py-20">
         <Container>
           <p className="mb-4 text-sm text-brand-700">
-            Cronómetro de 50 minutos para 100 preguntas, igual que el
-            examen oficial: al llegar a cero, el test se corrige solo.
+            Cronómetro de 50 minutos para 100 preguntas, en las mismas
+            condiciones que el examen oficial: al agotarse el tiempo, el
+            test se corrige automáticamente.
           </p>
           <QuizRunner
             temaSlug="simulacro-completo"

@@ -21,7 +21,7 @@ export default async function TemarioPage() {
       <PageHero
         eyebrow="Temario"
         title="Temario de la oposición a Policía Nacional"
-        description="Cada tema incluye batería de preguntas tipo test, esquema y resumen. El contenido se va abriendo por bloques, 5 temas cada mes."
+        description="Cada tema incluye batería de preguntas tipo test, esquema y resumen. El contenido se desbloquea por bloques de 5 temas al mes."
         breadcrumbs={[
           { label: "Inicio", href: "/" },
           { label: "Temario", href: "/temario" },

@@ -24,8 +24,8 @@ export default async function SimulacroPsicotecnicoCompletoPage() {
     <>
       <PageHero
         eyebrow="Simulacro psicotécnico completo"
-        title="Psicotécnico completo, contrarreloj"
-        description="Mezcla las cuatro categorías (series numéricas, series de letras, sinónimos y antónimos, y analogías verbales) en una sola tanda cronometrada, para practicar el ritmo del examen real."
+        title="Simulacro psicotécnico completo, contrarreloj"
+        description="Combina las cuatro categorías (series numéricas, series de letras, sinónimos y antónimos, y analogías verbales) en una única prueba cronometrada, para entrenar el ritmo del examen real."
         breadcrumbs={[
           { label: "Inicio", href: "/" },
           { label: "Psicotécnicos", href: "/psicotecnicos" },
@@ -37,9 +37,9 @@ export default async function SimulacroPsicotecnicoCompletoPage() {
         <Container>
           <p className="mb-4 text-sm text-brand-700">
             Cronómetro de {SEGUNDOS_POR_PREGUNTA_PSICOTECNICO} segundos por
-            pregunta: al llegar a cero, el test se corrige solo. Cada vez
-            que lo terminas, puedes generar otro al momento, con otra
-            combinación de preguntas.
+            pregunta: al agotarse el tiempo, el test se corrige
+            automáticamente. Al finalizar, puedes generar una nueva
+            combinación de preguntas de inmediato.
           </p>
           <QuizRunner
             temaSlug="psicotecnico-completo"

@@ -11,7 +11,7 @@ import { RectaFinalBanner } from "@/components/RectaFinalBanner";
 export const metadata: Metadata = {
   title: "Simulacros",
   description:
-    "Simulacros tipo test de la oposición a Policía Nacional, con cronómetro: cada 5 temas se combina un simulacro, y hay un simulacro completo tipo examen oficial.",
+    "Simulacros tipo test de la oposición a Policía Nacional, con cronómetro: un simulacro cada 5 temas y un simulacro completo en las condiciones del examen oficial.",
   alternates: { canonical: "/simulacros" },
 };
 
@@ -24,7 +24,7 @@ export default async function SimulacrosPage() {
       <PageHero
         eyebrow="Simulacros"
         title="Simulacros tipo test, con cronómetro"
-        description="Cada 5 temas se genera un simulacro que combina preguntas de todo el tramo, igual que en el examen real, con el mismo cronómetro (30 segundos por pregunta)."
+        description="Cada 5 temas se genera un simulacro que combina preguntas de todo el bloque, en las mismas condiciones que el examen real, con idéntico cronómetro (30 segundos por pregunta)."
         breadcrumbs={[
           { label: "Inicio", href: "/" },
           { label: "Simulacros", href: "/simulacros" },
@@ -44,8 +44,8 @@ export default async function SimulacrosPage() {
             </p>
             <h2 className="mt-1 text-xl font-bold">Simulacro completo</h2>
             <p className="mt-2 text-sm text-brand-100">
-              Hasta 100 preguntas y 50 minutos de cronómetro, igual que el
-              examen oficial. Combina todos los temas que ya tengas
+              Hasta 100 preguntas y 50 minutos de cronómetro, en las
+              condiciones del examen oficial. Combina todos los temas ya
               desbloqueados.
             </p>
           </Link>

@@ -104,8 +104,9 @@ export default async function SimulacroPage({
       <section className="py-16 sm:py-20">
         <Container>
           <p className="mb-4 text-sm text-brand-700">
-            Cronómetro activado, igual que en el examen oficial (30 segundos
-            por pregunta): al llegar a cero, el test se corrige solo.
+            Cronómetro activo, en las condiciones del examen oficial (30
+            segundos por pregunta): al agotarse el tiempo, el test se
+            corrige automáticamente.
           </p>
           <QuizRunner
             temaSlug={simulacro.slug}

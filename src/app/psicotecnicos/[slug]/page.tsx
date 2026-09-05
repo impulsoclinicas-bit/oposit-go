@@ -56,8 +56,9 @@ export default async function CategoriaPsicotecnicaPage({
         <Container>
           <h2 className="text-2xl font-bold text-brand-900">Preguntas ilimitadas</h2>
           <p className="mt-1 text-sm text-brand-700">
-            Responde todas y pulsa &ldquo;Corregir test&rdquo;. Al acabar,
-            tienes otro test nuevo disponible al momento.
+            Responde todas las preguntas y pulsa &ldquo;Corregir
+            test&rdquo; para ver tu resultado. Al finalizar, dispondrás de
+            un nuevo test generado automáticamente.
           </p>
           <div className="mt-6">
             <QuizRunner

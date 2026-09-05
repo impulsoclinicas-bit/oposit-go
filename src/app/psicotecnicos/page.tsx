@@ -49,8 +49,8 @@ export default async function PsicotecnicosPage() {
             </p>
             <h2 className="mt-1 text-xl font-bold">Simulacro psicotécnico completo</h2>
             <p className="mt-2 text-sm text-brand-100">
-              Mezcla las cuatro categorías en una sola tanda cronometrada,
-              igual que el día del examen.
+              Combina las cuatro categorías en una única prueba
+              cronometrada, en las condiciones del día del examen.
             </p>
           </Link>
 

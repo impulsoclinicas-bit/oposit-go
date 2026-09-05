@@ -13,63 +13,63 @@ export const metadata: Metadata = {
 
 const incluyeMensual = [
   "Tests ilimitados: esquema, resumen y batería de preguntas de cada tema",
-  "Pruebas psicotécnicas: series numéricas, series de letras, sinónimos/antónimos y analogías verbales",
-  "Simulacro cada 5 temas y simulacro completo, ambos con cronómetro",
-  "Plan de estudio personalizado a partir de un cuestionario al darte de alta",
+  "Pruebas psicotécnicas: series numéricas, series de letras, sinónimos y antónimos, y analogías verbales",
+  "Un simulacro cada 5 temas y un simulacro completo, ambos con cronómetro",
+  "Plan de estudio personalizado a partir de un breve cuestionario inicial",
   "Corrección y explicación al instante en cada pregunta",
-  "Acceso desde el móvil, tablet u ordenador",
-  "Cancela cuando quieras, sin permanencia",
+  "Acceso desde el móvil, la tableta o el ordenador",
+  "Sin permanencia: puedes cancelar en cualquier momento",
 ];
 
 const incluyePase = [
   "Simulacro de temario completo, con cronómetro, combinando los 45 temas desde el primer día",
   "Simulacro psicotécnico completo, con cronómetro, combinando las cuatro categorías",
-  "Corrección y explicación de cada pregunta al terminar cada simulacro",
-  "Cada simulacro se genera con una combinación distinta de preguntas: práctica realmente ilimitada",
-  "Válido hasta la fecha de la convocatoria vigente",
+  "Corrección y explicación de cada pregunta al finalizar cada simulacro",
+  "Cada simulacro se genera con una combinación distinta de preguntas: práctica sin límite",
+  "Válido desde la contratación hasta la fecha de la convocatoria vigente",
 ];
 
 const noIncluyePase = [
-  "Temario por temas (batería de preguntas, esquema ni resumen de cada tema)",
-  "PDF de esquemas y resúmenes",
-  "Simulacros por bloques de 5 temas ni categorías psicotécnicas por separado",
+  "Batería de preguntas, esquema o resumen de cada tema",
+  "Descarga en PDF de esquemas y resúmenes",
+  "Simulacros por bloques de 5 temas ni categorías psicotécnicas individuales",
 ];
 
 const faqItems = [
   {
     question: "¿Hay permanencia mínima en el plan mensual?",
     answer:
-      "No. Es una suscripción mensual que se renueva automáticamente. Puedes cancelarla cuando quieras desde tu cuenta y mantienes el acceso hasta que termine el periodo ya pagado.",
+      "No. Es una suscripción mensual de renovación automática. Puedes cancelarla en cualquier momento desde tu cuenta y conservas el acceso hasta el final del periodo ya abonado.",
   },
   {
     question: "¿En qué se diferencia el pase de simulacros del plan mensual?",
     answer:
-      "El plan mensual da acceso a todo: temario por temas, esquemas, resúmenes y simulacros, con el temario abriéndose poco a poco. El pase de simulacros es un pago único, sin temario por temas ni esquemas ni resúmenes: solo los dos simulacros completos (temario y psicotécnico), con todo el contenido disponible desde el primer día y sin límite de repeticiones, hasta la fecha del examen.",
+      "El plan mensual da acceso a la totalidad del contenido —temario por temas, esquemas, resúmenes y simulacros—, con el temario desbloqueándose de forma progresiva. El pase de simulacros es un pago único, sin temario por temas ni esquemas ni resúmenes: incluye únicamente los dos simulacros completos (de temario y psicotécnico), con acceso ilimitado desde el primer día hasta la fecha del examen.",
   },
   {
-    question: "¿Hasta cuándo dura el pase de simulacros?",
+    question: "¿Hasta cuándo tiene validez el pase de simulacros?",
     answer:
-      "Desde el momento en que lo contratas hasta la fecha oficial de la convocatoria vigente. Si compras un pase nuevo para una convocatoria posterior, la fecha se actualiza a esa nueva convocatoria.",
+      "Desde el momento de la compra hasta la fecha oficial de la convocatoria vigente. Si adquieres un nuevo pase para una convocatoria posterior, la validez se actualiza a esa nueva fecha.",
   },
   {
-    question: "¿Cómo se hace el pago?",
+    question: "¿Cómo se realiza el pago?",
     answer:
-      "El pago se procesa de forma segura con Stripe (tarjeta de crédito o débito). No almacenamos los datos de tu tarjeta.",
+      "El pago se procesa de forma segura a través de Stripe (tarjeta de crédito o débito). No almacenamos los datos de tu tarjeta.",
   },
   {
-    question: "¿Qué pasa después de pagar?",
+    question: "¿Qué ocurre después de pagar?",
     answer:
-      "Te enviamos un email al instante para que crees tu contraseña y accedas de inmediato a todo el contenido disponible.",
+      "Recibirás un correo electrónico inmediato para crear tu contraseña y acceder sin demora a todo el contenido disponible.",
   },
   {
     question: "¿Preparáis las pruebas físicas o la entrevista?",
     answer:
-      "No. Oposit&go no es una academia: nos centramos en la parte que se prepara con test, esquemas y repaso (temario y psicotécnicos). No entrenamos las pruebas de aptitud física ni la prueba biográfica/entrevista.",
+      "No. Oposit&go no es una academia: nos centramos en la parte que se prepara mediante test, esquemas y repaso (temario y psicotécnicos). No entrenamos la prueba de aptitud física ni la prueba biográfica o entrevista.",
   },
   {
     question: "¿Tengo acceso a todo el temario desde el primer día con el plan mensual?",
     answer:
-      "Tienes disponibles los 5 primeros temas y su simulacro nada más suscribirte. El resto se abre a razón de 5 temas (con su simulacro) cada mes, mientras las pruebas psicotécnicas y el simulacro completo están accesibles siempre. Es para poder ir asimilando bloque a bloque, no para limitar el acceso.",
+      "Dispones de los 5 primeros temas y su simulacro desde el momento de la suscripción. El resto se desbloquea a razón de 5 temas (con su simulacro correspondiente) cada mes, mientras las pruebas psicotécnicas y el simulacro completo están disponibles en todo momento. El objetivo es asimilar el contenido bloque a bloque, no restringir el acceso.",
   },
 ];
 
@@ -79,7 +79,7 @@ export default function PreciosPage() {
       <PageHero
         eyebrow="Precios"
         title="Dos formas de prepararte, sin letra pequeña"
-        description="El plan mensual, para trabajar el temario completo de forma progresiva. O el pase de simulacros, un pago único pensado para quien ya domina el temario y solo necesita entrenar el ritmo del examen."
+        description="El plan mensual, pensado para trabajar el temario completo de manera progresiva. El pase de simulacros, un pago único dirigido a quienes ya dominan el temario y solo necesitan entrenar el ritmo del examen."
         breadcrumbs={[
           { label: "Inicio", href: "/" },
           { label: "Precios", href: "/precios" },
@@ -108,7 +108,7 @@ export default function PreciosPage() {
               <BuyButton className="w-full rounded-md bg-accent-500 px-6 py-3 text-center text-sm font-semibold text-brand-950 shadow-sm transition-colors hover:bg-accent-400" />
             </div>
             <p className="mt-3 text-center text-xs text-brand-500">
-              Pago seguro con Stripe. Cancela cuando quieras.
+              Pago seguro con Stripe. Sin permanencia.
             </p>
           </div>
 
@@ -158,27 +158,28 @@ export default function PreciosPage() {
           <h2 className="font-bold text-brand-900">¿Cómo funciona el plan mensual?</h2>
           <ol className="space-y-3 text-sm text-brand-800">
             <li>
-              <span className="font-semibold">1. Suscríbete.</span> Pagas de
-              forma segura con tarjeta a través de Stripe.
+              <span className="font-semibold">1. Suscríbete.</span> Realiza
+              el pago de forma segura con tarjeta a través de Stripe.
             </li>
             <li>
               <span className="font-semibold">2. Activa tu cuenta.</span>{" "}
-              Te llega un email al instante para crear tu contraseña.
+              Recibirás un correo electrónico inmediato para crear tu
+              contraseña.
             </li>
             <li>
               <span className="font-semibold">3. Cuestionario de estudio.</span>{" "}
               Respondes unas breves preguntas sobre cómo quieres
-              prepararte y generamos tu plan de estudio.
+              prepararte y generamos tu plan de estudio personalizado.
             </li>
             <li>
               <span className="font-semibold">4. Empieza a estudiar.</span>{" "}
-              Ya tienes disponibles los 5 primeros temas, sus tests,
-              esquemas y resúmenes, y su simulacro.
+              Dispones de inmediato de los 5 primeros temas, sus tests,
+              esquemas y resúmenes, y su simulacro correspondiente.
             </li>
             <li>
               <span className="font-semibold">5. Cada mes, 5 temas más.</span>{" "}
-              El resto del temario se va abriendo automáticamente, sin que
-              tengas que hacer nada.
+              El resto del temario se desbloquea automáticamente, sin
+              ninguna acción por tu parte.
             </li>
           </ol>
         </Container>

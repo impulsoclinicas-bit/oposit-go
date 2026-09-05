@@ -132,7 +132,7 @@ export default function HomePage() {
                 href="/recursos"
                 className="rounded-md border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
               >
-                Probar gratis, sin registro
+                Prueba gratis, sin registro
               </Link>
             </div>
           </div>
@@ -147,7 +147,7 @@ export default function HomePage() {
               <li>✓ {temas.length} temas organizados en {bloques.length} bloques</li>
               <li>✓ {simulacros.length} simulacros tipo test</li>
               <li>✓ Corrección y explicación al instante</li>
-              <li>✓ Cancela cuando quieras, sin permanencia</li>
+              <li>✓ Sin permanencia: cancela cuando quieras</li>
             </ul>
           </div>
         </Container>
