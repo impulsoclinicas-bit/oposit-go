@@ -111,11 +111,18 @@ Copia `.env.example` a `.env.local` y completa:
 
 **Importante sobre el temario:** el recuento (45 temas, 26/11/8 por
 bloque) y los títulos de los bloques II y III están cotejados entre varias
-academias independientes. Varios títulos del Bloque I (marcados con "⚠" en
-su descripción en `temario.ts`) solo se han visto en una fuente. Antes de
-vender el producto como "temario oficial de la convocatoria vigente" hay
-que verificar el listado completo contra el temario exacto publicado en el
-BOE de la convocatoria en curso.
+academias independientes (no son normativa, así que no aparecen en un
+código del BOE). El Bloque I (Jurídico) está cotejado contra el código
+electrónico del BOE "Normativa para ingreso en la Policía Nacional,
+Escalas Básica y Ejecutiva" (recopilación oficial de toda la normativa
+vigente relevante para el ingreso), que además da el texto consolidado de
+cada ley usado para redactar esquemas, resúmenes y preguntas. Solo queda
+marcado con "⚠" en `temario.ts` el tema introductorio de prevención de
+riesgos laborales, por no corresponder a una ley concreta. Antes de vender
+el producto como "temario oficial de la convocatoria vigente" conviene de
+todos modos verificar el desglose exacto en temas contra el Anexo de la
+convocatoria en curso, ya que el código del BOE agrupa la normativa por
+materia pero no numera los temas uno a uno.
 
 ## Marca
 

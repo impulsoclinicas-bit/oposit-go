@@ -3,15 +3,23 @@
 // 11 social + 8 técnico-científico), que es la estructura real del temario
 // oficial de esta oposición.
 //
-// Aviso de fiabilidad: los títulos se han cotejado contra varias academias
-// independientes (no contra el BOE directamente, por restricciones de red
-// al escribir esto). El recuento total (45) y el corte por bloques
-// (26/11/8) están confirmados por coincidencia entre fuentes. La mayoría de
-// títulos del Bloque I (Jurídico) también, salvo los marcados con "⚠" en su
-// descripción, que solo se han visto en una fuente y conviene cotejar
-// contra el BOE de la convocatoria vigente antes de venderlos como
-// definitivos. Antes de lanzar el producto, hay que verificar el listado
-// completo contra el temario oficial publicado.
+// Aviso de fiabilidad: los títulos del Bloque I (Jurídico) están cotejados
+// contra el código electrónico del BOE "Normativa para ingreso en la
+// Policía Nacional, Escalas Básica y Ejecutiva", que agrupa por materia
+// toda la normativa vigente relevante para el ingreso. Ese documento
+// confirma el agrupamiento temático de prácticamente todo el Bloque I
+// (solo queda marcado con "⚠" el tema introductorio de prevención de
+// riesgos laborales, por no corresponder a una ley concreta) y además da el texto
+// consolidado de cada ley, que es la fuente que se usa para redactar
+// esquemas, resúmenes y preguntas con precisión. Ojo: ese código es una
+// recopilación de normativa, no el "Anexo" numerado de una convocatoria
+// concreta, así que el desglose exacto en temas (p. ej. si la
+// Constitución ocupa uno o dos temas) puede variar ligeramente entre
+// academias; se ha mantenido el criterio de división ya usado aquí salvo
+// que hubiera un motivo claro para cambiarlo. Los títulos de los Bloques
+// II (Social) y III (Técnico-Científico) siguen sin cotejar contra el BOE
+// (no son normativa, por lo que no aparecen en ese código) y se apoyan en
+// la coincidencia entre varias academias independientes.
 
 export type Tema = {
   slug: string;
@@ -107,7 +115,7 @@ export const temas: Tema[] = [
     bloque: "juridico",
     titulo: "El Ministerio del Interior",
     descripcion:
-      "⚠ Estructura orgánica básica del Ministerio del Interior y la Secretaría de Estado de Seguridad.",
+      "Estructura orgánica básica del Ministerio del Interior y la Secretaría de Estado de Seguridad.",
   },
   {
     slug: "la-direccion-general-de-la-policia",
@@ -129,42 +137,43 @@ export const temas: Tema[] = [
     numero: 10,
     bloque: "juridico",
     titulo: "Entrada, libre circulación y residencia de ciudadanos de la UE y del EEE",
-    descripcion: "⚠ Régimen de entrada y residencia de ciudadanos comunitarios en España.",
+    descripcion: "Régimen de entrada y residencia de ciudadanos comunitarios en España.",
   },
   {
     slug: "infracciones-extranjeria-regimen-sancionador",
     numero: 11,
     bloque: "juridico",
     titulo: "Las infracciones en materia de extranjería y su régimen sancionador",
-    descripcion: "⚠ Régimen sancionador de la Ley Orgánica de Extranjería.",
+    descripcion: "Régimen sancionador de la Ley Orgánica de Extranjería.",
   },
   {
     slug: "la-proteccion-internacional",
     numero: 12,
     bloque: "juridico",
     titulo: "La protección internacional",
-    descripcion: "⚠ Derecho de asilo y protección subsidiaria.",
+    descripcion: "Derecho de asilo y protección subsidiaria.",
   },
   {
     slug: "seguridad-privada-disposiciones-generales",
     numero: 13,
     bloque: "juridico",
     titulo: "Disposiciones generales en materia de seguridad privada en España",
-    descripcion: "⚠ Marco legal de la seguridad privada y su coordinación con la seguridad pública.",
+    descripcion: "Marco legal de la seguridad privada y su coordinación con la seguridad pública.",
   },
   {
     slug: "ley-organica-proteccion-seguridad-ciudadana",
     numero: 14,
     bloque: "juridico",
     titulo: "La Ley Orgánica 4/2015, de protección de la seguridad ciudadana",
-    descripcion: "⚠ Actuaciones de las FCS y régimen sancionador de la Ley de Seguridad Ciudadana.",
+    descripcion: "Actuaciones de las FCS y régimen sancionador de la Ley de Seguridad Ciudadana.",
   },
   {
     slug: "proteccion-infraestructuras-criticas",
     numero: 15,
     bloque: "juridico",
     titulo: "Medidas para la protección de infraestructuras críticas",
-    descripcion: "⚠ Sistema de protección de infraestructuras críticas.",
+    descripcion:
+      "Sistema de protección de infraestructuras críticas y Estrategia Nacional de Ciberseguridad.",
   },
   {
     slug: "derecho-penal-parte-general",
@@ -221,7 +230,7 @@ export const temas: Tema[] = [
     bloque: "juridico",
     titulo: "Políticas de igualdad y contra la violencia de género",
     descripcion:
-      "⚠ Ley Orgánica 3/2007 para la igualdad efectiva y Ley Orgánica 1/2004 de medidas de protección integral contra la violencia de género.",
+      "Ley Orgánica 1/2004 de medidas de protección integral contra la violencia de género, Ley Orgánica 3/2007 para la igualdad efectiva de mujeres y hombres, y Ley 4/2023 para la igualdad real y efectiva de las personas trans y para la garantía de los derechos de las personas LGTBI.",
   },
   {
     slug: "introduccion-prevencion-riesgos-laborales",
