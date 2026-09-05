@@ -13,13 +13,14 @@ export function RectaFinalBanner() {
   return (
     <div className="rounded-xl border-2 border-accent-400 bg-brand-950 p-5 text-white shadow-sm sm:p-6">
       <p className="text-xs font-semibold uppercase tracking-wide text-accent-300">
-        🔥 Recta final · {dias <= 0 ? "el examen es hoy" : `quedan ${dias} días para el examen`}
+        Recta final · {dias <= 0 ? "el examen es hoy" : `quedan ${dias} días para el examen`}
       </p>
       <p className="mt-2 text-sm text-brand-100">
-        Ya no toca ver contenido nuevo, sino coger ritmo de examen: haz
-        todos los simulacros oficiales que quieras, tanto de temario como
-        de psicotécnicos. Cada vez que terminas uno, tienes otro distinto
-        disponible al momento — no se acaban.
+        En esta fase ya no se trata de descubrir contenido nuevo, sino de
+        coger ritmo de examen: practica tantos simulacros oficiales como
+        necesites, de temario y de psicotécnicos. Cada simulacro se genera
+        de nuevo en cada intento, así que la práctica es realmente
+        ilimitada.
       </p>
       <div className="mt-4 flex flex-wrap gap-3">
         <Link

@@ -21,17 +21,17 @@ const beneficios = [
   {
     titulo: "Batería de preguntas por tema",
     descripcion:
-      "Test tipo examen para cada tema, con corrección al instante y explicación de cada respuesta. Cada intento mezcla preguntas y respuestas.",
+      "Test tipo examen para cada tema, con corrección al instante y explicación de cada respuesta. Cada intento combina las preguntas y sus opciones en un orden distinto.",
   },
   {
     titulo: "Esquema y resumen de cada tema",
     descripcion:
-      "Por cada tema del temario: un esquema para repasar de un vistazo y un resumen para fijar lo esencial antes del test.",
+      "Por cada tema del temario: un esquema para repasar de un vistazo y un resumen que fija lo esencial antes del test.",
   },
   {
     titulo: "Pruebas psicotécnicas",
     descripcion:
-      "Series numéricas, series de letras, sinónimos/antónimos y analogías verbales: la otra parte del primer ejercicio.",
+      "Series numéricas, series de letras, sinónimos y antónimos, y analogías verbales: la otra parte del primer ejercicio.",
   },
   {
     titulo: "Simulacros con cronómetro",
@@ -41,12 +41,12 @@ const beneficios = [
   {
     titulo: "Plan de estudio personalizado",
     descripcion:
-      "Un cuestionario rápido al darte de alta y te armamos un calendario semana a semana con el temario y los repasos, siempre encajado en la convocatoria vigente.",
+      "Respondes un breve cuestionario al darte de alta y generamos un calendario semana a semana con el temario y los repasos, ajustado a la convocatoria vigente.",
   },
   {
     titulo: "Temario que se abre por bloques",
     descripcion:
-      "5 temas nuevos (con su simulacro) cada mes, para que los vayas asentando en vez de agobiarte con todo de golpe.",
+      "5 temas nuevos cada mes, con su simulacro correspondiente, para asimilar el contenido de forma progresiva en lugar de afrontarlo todo de una vez.",
   },
 ];
 
@@ -76,7 +76,7 @@ const faqItems = [
   {
     question: "¿Qué incluye la suscripción mensual?",
     answer:
-      "Tests ilimitados de cada tema, esquemas y resúmenes, pruebas psicotécnicas, simulacros con cronómetro (por bloques y completo) y un plan de estudio personalizado a partir del cuestionario que rellenas al darte de alta. El temario se abre por bloques de 5 temas al mes, con su simulacro correspondiente, en vez de todo de golpe.",
+      "Tests ilimitados de cada tema, esquemas y resúmenes, pruebas psicotécnicas, simulacros con cronómetro (por bloques y completo) y un plan de estudio personalizado a partir del cuestionario que respondes al darte de alta. El temario se abre por bloques de 5 temas al mes, con su simulacro correspondiente, en lugar de estar disponible entero desde el primer día.",
   },
   {
     question: "¿Puedo cancelar cuándo quiera?",
@@ -96,7 +96,7 @@ const faqItems = [
   {
     question: "¿Por qué el temario se abre poco a poco y no entero desde el primer día?",
     answer:
-      `Para que no te agobies con ${temas.length} temas a la vez. Al suscribirte tienes ya disponibles los 5 primeros temas y su simulacro; cada mes se abren 5 temas más con su simulacro correspondiente, mientras el simulacro completo va creciendo con todo lo que ya tienes desbloqueado.`,
+      `Para favorecer un ritmo de estudio ordenado, en lugar de presentarte los ${temas.length} temas todos a la vez. Al suscribirte tienes ya disponibles los 5 primeros temas y su simulacro; cada mes se abren 5 temas más con su simulacro correspondiente, mientras el simulacro completo va creciendo con todo lo que ya tienes desbloqueado.`,
   },
 ];
 
@@ -110,16 +110,16 @@ export default function HomePage() {
         <Container className="relative grid gap-10 lg:grid-cols-[3fr_2fr] lg:items-center">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wide text-accent-300">
-              Toda la info de la convocatoria + preparación real
+              Información oficial de la convocatoria y preparación real
             </p>
             <h1 className="mt-3 max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl">
-              Prepara tu oposición a Policía Nacional con tests reales, tema a tema
+              Prepara la oposición a Policía Nacional con tests reales, tema a tema
             </h1>
             <p className="mt-5 max-w-xl text-lg text-brand-100">
-              Convocatoria, plazas y fechas siempre actualizadas, gratis y
-              sin registro. Con la suscripción: tests ilimitados,
-              psicotécnicos, esquemas, resúmenes y simulacros, por un coste
-              mensual bajo y sin permanencia.
+              Convocatoria, plazas y fechas siempre actualizadas: gratis y
+              sin registro. Con la suscripción, además: tests ilimitados,
+              pruebas psicotécnicas, esquemas, resúmenes y simulacros, con
+              una cuota mensual asequible y sin permanencia.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -143,7 +143,7 @@ export default function HomePage() {
               De un vistazo
             </p>
             <ul className="mt-4 space-y-3 text-sm text-brand-100">
-              <li>✓ Tests ilimitados, siempre hay uno nuevo disponible</li>
+              <li>✓ Tests ilimitados: cada intento genera una combinación nueva</li>
               <li>✓ {temas.length} temas organizados en {bloques.length} bloques</li>
               <li>✓ {simulacros.length} simulacros tipo test</li>
               <li>✓ Corrección y explicación al instante</li>
@@ -249,7 +249,7 @@ export default function HomePage() {
       <section className="py-16 sm:py-20">
         <Container>
           <h2 className="text-2xl font-bold text-brand-900 sm:text-3xl">
-            Todo lo que necesitas para aprobar el test
+            Todo lo que necesitas para preparar el examen
           </h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {beneficios.map((b) => (
@@ -305,7 +305,7 @@ export default function HomePage() {
             ¿Quieres probar antes de suscribirte?
           </h2>
           <p className="max-w-xl text-brand-700">
-            Haz un par de tests gratis, sin registrarte, y comprueba cómo
+            Prueba varios tests gratuitos, sin registro, y comprueba cómo
             corregimos y explicamos cada pregunta al instante.
           </p>
           <Link

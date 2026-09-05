@@ -22,10 +22,10 @@ const incluyeMensual = [
 ];
 
 const incluyePase = [
-  "Simulacro de temario completo ilimitado: los 45 temas mezclados, con cronómetro, desde el primer día",
-  "Simulacro psicotécnico completo ilimitado: las cuatro categorías mezcladas, con cronómetro",
+  "Simulacro de temario completo, con cronómetro, combinando los 45 temas desde el primer día",
+  "Simulacro psicotécnico completo, con cronómetro, combinando las cuatro categorías",
   "Corrección y explicación de cada pregunta al terminar cada simulacro",
-  "Cada test se genera al momento con una combinación distinta: no se acaban",
+  "Cada simulacro se genera con una combinación distinta de preguntas: práctica realmente ilimitada",
   "Válido hasta la fecha de la convocatoria vigente",
 ];
 
@@ -59,7 +59,7 @@ const faqItems = [
   {
     question: "¿Qué pasa después de pagar?",
     answer:
-      "Te enviamos un email al instante para que crees tu contraseña y accedas ya mismo a todo el contenido disponible.",
+      "Te enviamos un email al instante para que crees tu contraseña y accedas de inmediato a todo el contenido disponible.",
   },
   {
     question: "¿Preparáis las pruebas físicas o la entrevista?",
@@ -79,7 +79,7 @@ export default function PreciosPage() {
       <PageHero
         eyebrow="Precios"
         title="Dos formas de prepararte, sin letra pequeña"
-        description="El plan mensual, para llevar el temario entero paso a paso. O el pase de simulacros, un pago único para quien ya se sabe el temario y solo quiere coger ritmo de examen."
+        description="El plan mensual, para trabajar el temario completo de forma progresiva. O el pase de simulacros, un pago único pensado para quien ya domina el temario y solo necesita entrenar el ritmo del examen."
         breadcrumbs={[
           { label: "Inicio", href: "/" },
           { label: "Precios", href: "/precios" },
@@ -167,8 +167,8 @@ export default function PreciosPage() {
             </li>
             <li>
               <span className="font-semibold">3. Cuestionario de estudio.</span>{" "}
-              Un par de preguntas sobre cómo quieres prepararte, y te
-              armamos tu plan de estudio.
+              Respondes unas breves preguntas sobre cómo quieres
+              prepararte y generamos tu plan de estudio.
             </li>
             <li>
               <span className="font-semibold">4. Empieza a estudiar.</span>{" "}

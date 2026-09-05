@@ -22,7 +22,7 @@ export default async function PsicotecnicosPage() {
       <PageHero
         eyebrow="Psicotécnicos"
         title="Series, sinónimos y analogías"
-        description="El primer ejercicio no es solo temario: también incluye pruebas psicotécnicas. Practica aquí la parte verbal y numérica."
+        description="El primer ejercicio no se limita al temario: incluye también pruebas psicotécnicas. Practica aquí la parte verbal y numérica."
         breadcrumbs={[
           { label: "Inicio", href: "/" },
           { label: "Psicotécnicos", href: "/psicotecnicos" },

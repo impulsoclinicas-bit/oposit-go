@@ -91,11 +91,11 @@ export default async function CuentaPage() {
         <section className="py-16 sm:py-20">
           <Container className="mx-auto max-w-xl rounded-2xl border border-accent-300 bg-white p-8 text-center shadow-sm">
             <h2 className="text-xl font-bold text-brand-900">
-              Antes de nada, tu plan de estudio
+              Primero, tu plan de estudio
             </h2>
             <p className="mt-2 text-sm text-brand-700">
-              Ya sabemos cuándo es la convocatoria vigente. Con este
-              cuestionario te armamos un calendario semana a semana con el
+              Ya conocemos la fecha de la convocatoria vigente. Con este
+              cuestionario generamos un calendario semana a semana con el
               temario, los simulacros y el repaso final.
             </p>
             <div className="mt-6 text-left">

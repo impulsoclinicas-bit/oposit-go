@@ -72,8 +72,8 @@ export default async function TemaPage({
                 Este tema todavía no está disponible
               </p>
               <p className="mt-1 text-sm text-brand-700">
-                El contenido se abre por bloques, 5 temas al mes, para que
-                puedas ir asentando cada bloque antes de pasar al
+                El contenido se desbloquea por bloques de 5 temas al mes,
+                para consolidar cada bloque antes de avanzar al
                 siguiente.
                 {fecha && (
                   <>
@@ -171,9 +171,10 @@ export default async function TemaPage({
         <Container>
           <h2 className="text-2xl font-bold text-brand-900">Batería de preguntas ilimitada</h2>
           <p className="mt-1 text-sm text-brand-700">
-            Cada vez que entras se genera un test nuevo. En cuanto acabes
-            uno, ya tienes otro distinto esperándote. Responde todas y pulsa
-            &ldquo;Corregir test&rdquo; para ver tu resultado.
+            Cada test se genera de nuevo en cada intento: al terminar uno,
+            tienes otro distinto disponible al momento. Responde todas las
+            preguntas y pulsa &ldquo;Corregir test&rdquo; para ver tu
+            resultado.
           </p>
           <div className="mt-6">
             <QuizRunner temaSlug={tema.slug} preguntas={preguntas} tamanoTest={15} />

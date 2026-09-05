@@ -21,7 +21,7 @@ export default function RecursosPage() {
       <PageHero
         eyebrow="Gratis, sin registro"
         title="Pruébanos"
-        description="Practica ya mismo con tests reales tipo examen. Responde, corrige y lee la explicación de cada pregunta, sin darte de alta ni pagar nada."
+        description="Practica con tests reales tipo examen: responde, corrige y consulta la explicación de cada pregunta al instante, sin registro ni pago."
         breadcrumbs={[
           { label: "Inicio", href: "/" },
           { label: "Pruébanos", href: "/recursos" },
@@ -77,8 +77,8 @@ export default function RecursosPage() {
       </section>
 
       <CtaBand
-        title="¿Te ha servido? Hay mucho más dentro"
-        description="Batería completa de cada tema, psicotécnicos, esquemas, resúmenes y simulacros combinados. Suscripción mensual sin permanencia."
+        title="Esto es solo una muestra"
+        description="Batería completa de cada tema, pruebas psicotécnicas, esquemas, resúmenes y simulacros combinados. Suscripción mensual sin permanencia."
         primaryLabel="Ver planes"
         primaryHref="/precios"
         secondaryLabel="Ver el temario completo"
