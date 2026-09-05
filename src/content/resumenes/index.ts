@@ -25,6 +25,12 @@ import { resumen as proteccionInfraestructurasCriticas } from "./proteccion-infr
 import { resumen as libreCirculacionResidenciaCiudadanosUe } from "./libre-circulacion-residencia-ciudadanos-ue";
 import { resumen as infraccionesExtranjeriaRegimenSancionador } from "./infracciones-extranjeria-regimen-sancionador";
 import { resumen as laProteccionInternacional } from "./la-proteccion-internacional";
+import { resumen as derechoPenalParteEspecial } from "./derecho-penal-parte-especial";
+import { resumen as delitosPatrimonioOrdenSocioeconomico } from "./delitos-patrimonio-orden-socioeconomico";
+import { resumen as delitosContraElOrdenPublico } from "./delitos-contra-el-orden-publico";
+import { resumen as delitosInformaticos } from "./delitos-informaticos";
+import { resumen as estatutoVictimaDelDelito } from "./estatuto-victima-del-delito";
+import { resumen as politicasIgualdadViolenciaGenero } from "./politicas-igualdad-violencia-genero";
 
 const registroResumenes: Record<string, Resumen> = {
   "la-constitucion-espanola-i": {
@@ -60,6 +66,12 @@ const registroResumenes: Record<string, Resumen> = {
   "libre-circulacion-residencia-ciudadanos-ue": libreCirculacionResidenciaCiudadanosUe,
   "infracciones-extranjeria-regimen-sancionador": infraccionesExtranjeriaRegimenSancionador,
   "la-proteccion-internacional": laProteccionInternacional,
+  "derecho-penal-parte-especial": derechoPenalParteEspecial,
+  "delitos-patrimonio-orden-socioeconomico": delitosPatrimonioOrdenSocioeconomico,
+  "delitos-contra-el-orden-publico": delitosContraElOrdenPublico,
+  "delitos-informaticos": delitosInformaticos,
+  "estatuto-victima-del-delito": estatutoVictimaDelDelito,
+  "politicas-igualdad-violencia-genero": politicasIgualdadViolenciaGenero,
 };
 
 export function getResumenByTema(temaSlug: string): Resumen | undefined {

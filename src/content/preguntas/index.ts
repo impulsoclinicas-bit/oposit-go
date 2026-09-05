@@ -25,6 +25,12 @@ import { preguntas as proteccionInfraestructurasCriticas } from "./proteccion-in
 import { preguntas as libreCirculacionResidenciaCiudadanosUe } from "./libre-circulacion-residencia-ciudadanos-ue";
 import { preguntas as infraccionesExtranjeriaRegimenSancionador } from "./infracciones-extranjeria-regimen-sancionador";
 import { preguntas as laProteccionInternacional } from "./la-proteccion-internacional";
+import { preguntas as derechoPenalParteEspecial } from "./derecho-penal-parte-especial";
+import { preguntas as delitosPatrimonioOrdenSocioeconomico } from "./delitos-patrimonio-orden-socioeconomico";
+import { preguntas as delitosContraElOrdenPublico } from "./delitos-contra-el-orden-publico";
+import { preguntas as delitosInformaticos } from "./delitos-informaticos";
+import { preguntas as estatutoVictimaDelDelito } from "./estatuto-victima-del-delito";
+import { preguntas as politicasIgualdadViolenciaGenero } from "./politicas-igualdad-violencia-genero";
 
 // Banco de preguntas por tema. Los temas que todavía no tienen batería
 // redactada simplemente no aparecen aquí: `getPreguntasByTema` devuelve un
@@ -64,6 +70,12 @@ const bancoPreguntas: Record<string, Pregunta[]> = {
   "libre-circulacion-residencia-ciudadanos-ue": libreCirculacionResidenciaCiudadanosUe,
   "infracciones-extranjeria-regimen-sancionador": infraccionesExtranjeriaRegimenSancionador,
   "la-proteccion-internacional": laProteccionInternacional,
+  "derecho-penal-parte-especial": derechoPenalParteEspecial,
+  "delitos-patrimonio-orden-socioeconomico": delitosPatrimonioOrdenSocioeconomico,
+  "delitos-contra-el-orden-publico": delitosContraElOrdenPublico,
+  "delitos-informaticos": delitosInformaticos,
+  "estatuto-victima-del-delito": estatutoVictimaDelDelito,
+  "politicas-igualdad-violencia-genero": politicasIgualdadViolenciaGenero,
 };
 
 export function getPreguntasByTema(temaSlug: string): Pregunta[] {

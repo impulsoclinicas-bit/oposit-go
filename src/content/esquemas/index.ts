@@ -25,6 +25,12 @@ import { esquema as proteccionInfraestructurasCriticas } from "./proteccion-infr
 import { esquema as libreCirculacionResidenciaCiudadanosUe } from "./libre-circulacion-residencia-ciudadanos-ue";
 import { esquema as infraccionesExtranjeriaRegimenSancionador } from "./infracciones-extranjeria-regimen-sancionador";
 import { esquema as laProteccionInternacional } from "./la-proteccion-internacional";
+import { esquema as derechoPenalParteEspecial } from "./derecho-penal-parte-especial";
+import { esquema as delitosPatrimonioOrdenSocioeconomico } from "./delitos-patrimonio-orden-socioeconomico";
+import { esquema as delitosContraElOrdenPublico } from "./delitos-contra-el-orden-publico";
+import { esquema as delitosInformaticos } from "./delitos-informaticos";
+import { esquema as estatutoVictimaDelDelito } from "./estatuto-victima-del-delito";
+import { esquema as politicasIgualdadViolenciaGenero } from "./politicas-igualdad-violencia-genero";
 
 // Igual que con las preguntas: los temas sin entrada aquí muestran el aviso
 // de "próximamente disponible" en la página del tema. Ver el comentario en
@@ -64,6 +70,12 @@ const registroEsquemas: Record<string, Esquema> = {
   "libre-circulacion-residencia-ciudadanos-ue": libreCirculacionResidenciaCiudadanosUe,
   "infracciones-extranjeria-regimen-sancionador": infraccionesExtranjeriaRegimenSancionador,
   "la-proteccion-internacional": laProteccionInternacional,
+  "derecho-penal-parte-especial": derechoPenalParteEspecial,
+  "delitos-patrimonio-orden-socioeconomico": delitosPatrimonioOrdenSocioeconomico,
+  "delitos-contra-el-orden-publico": delitosContraElOrdenPublico,
+  "delitos-informaticos": delitosInformaticos,
+  "estatuto-victima-del-delito": estatutoVictimaDelDelito,
+  "politicas-igualdad-violencia-genero": politicasIgualdadViolenciaGenero,
 };
 
 export function getEsquemaByTema(temaSlug: string): Esquema | undefined {
