@@ -22,6 +22,9 @@ import { esquema as derechoProcesalPenal } from "./derecho-procesal-penal";
 import { esquema as proteccionDatosCaracterPersonal } from "./proteccion-datos-caracter-personal";
 import { esquema as seguridadPrivadaDisposicionesGenerales } from "./seguridad-privada-disposiciones-generales";
 import { esquema as proteccionInfraestructurasCriticas } from "./proteccion-infraestructuras-criticas";
+import { esquema as libreCirculacionResidenciaCiudadanosUe } from "./libre-circulacion-residencia-ciudadanos-ue";
+import { esquema as infraccionesExtranjeriaRegimenSancionador } from "./infracciones-extranjeria-regimen-sancionador";
+import { esquema as laProteccionInternacional } from "./la-proteccion-internacional";
 
 // Igual que con las preguntas: los temas sin entrada aquí muestran el aviso
 // de "próximamente disponible" en la página del tema. Ver el comentario en
@@ -58,6 +61,9 @@ const registroEsquemas: Record<string, Esquema> = {
   "proteccion-datos-caracter-personal": proteccionDatosCaracterPersonal,
   "seguridad-privada-disposiciones-generales": seguridadPrivadaDisposicionesGenerales,
   "proteccion-infraestructuras-criticas": proteccionInfraestructurasCriticas,
+  "libre-circulacion-residencia-ciudadanos-ue": libreCirculacionResidenciaCiudadanosUe,
+  "infracciones-extranjeria-regimen-sancionador": infraccionesExtranjeriaRegimenSancionador,
+  "la-proteccion-internacional": laProteccionInternacional,
 };
 
 export function getEsquemaByTema(temaSlug: string): Esquema | undefined {

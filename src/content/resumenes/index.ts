@@ -22,6 +22,9 @@ import { resumen as derechoProcesalPenal } from "./derecho-procesal-penal";
 import { resumen as proteccionDatosCaracterPersonal } from "./proteccion-datos-caracter-personal";
 import { resumen as seguridadPrivadaDisposicionesGenerales } from "./seguridad-privada-disposiciones-generales";
 import { resumen as proteccionInfraestructurasCriticas } from "./proteccion-infraestructuras-criticas";
+import { resumen as libreCirculacionResidenciaCiudadanosUe } from "./libre-circulacion-residencia-ciudadanos-ue";
+import { resumen as infraccionesExtranjeriaRegimenSancionador } from "./infracciones-extranjeria-regimen-sancionador";
+import { resumen as laProteccionInternacional } from "./la-proteccion-internacional";
 
 const registroResumenes: Record<string, Resumen> = {
   "la-constitucion-espanola-i": {
@@ -54,6 +57,9 @@ const registroResumenes: Record<string, Resumen> = {
   "proteccion-datos-caracter-personal": proteccionDatosCaracterPersonal,
   "seguridad-privada-disposiciones-generales": seguridadPrivadaDisposicionesGenerales,
   "proteccion-infraestructuras-criticas": proteccionInfraestructurasCriticas,
+  "libre-circulacion-residencia-ciudadanos-ue": libreCirculacionResidenciaCiudadanosUe,
+  "infracciones-extranjeria-regimen-sancionador": infraccionesExtranjeriaRegimenSancionador,
+  "la-proteccion-internacional": laProteccionInternacional,
 };
 
 export function getResumenByTema(temaSlug: string): Resumen | undefined {

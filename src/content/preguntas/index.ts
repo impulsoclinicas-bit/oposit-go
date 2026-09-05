@@ -22,6 +22,9 @@ import { preguntas as derechoProcesalPenal } from "./derecho-procesal-penal";
 import { preguntas as proteccionDatosCaracterPersonal } from "./proteccion-datos-caracter-personal";
 import { preguntas as seguridadPrivadaDisposicionesGenerales } from "./seguridad-privada-disposiciones-generales";
 import { preguntas as proteccionInfraestructurasCriticas } from "./proteccion-infraestructuras-criticas";
+import { preguntas as libreCirculacionResidenciaCiudadanosUe } from "./libre-circulacion-residencia-ciudadanos-ue";
+import { preguntas as infraccionesExtranjeriaRegimenSancionador } from "./infracciones-extranjeria-regimen-sancionador";
+import { preguntas as laProteccionInternacional } from "./la-proteccion-internacional";
 
 // Banco de preguntas por tema. Los temas que todavía no tienen batería
 // redactada simplemente no aparecen aquí: `getPreguntasByTema` devuelve un
@@ -58,6 +61,9 @@ const bancoPreguntas: Record<string, Pregunta[]> = {
   "proteccion-datos-caracter-personal": proteccionDatosCaracterPersonal,
   "seguridad-privada-disposiciones-generales": seguridadPrivadaDisposicionesGenerales,
   "proteccion-infraestructuras-criticas": proteccionInfraestructurasCriticas,
+  "libre-circulacion-residencia-ciudadanos-ue": libreCirculacionResidenciaCiudadanosUe,
+  "infracciones-extranjeria-regimen-sancionador": infraccionesExtranjeriaRegimenSancionador,
+  "la-proteccion-internacional": laProteccionInternacional,
 };
 
 export function getPreguntasByTema(temaSlug: string): Pregunta[] {
