@@ -20,6 +20,8 @@ import { resumen as leyOrganicaProteccionSeguridadCiudadana } from "./ley-organi
 import { resumen as derechoPenalParteGeneral } from "./derecho-penal-parte-general";
 import { resumen as derechoProcesalPenal } from "./derecho-procesal-penal";
 import { resumen as proteccionDatosCaracterPersonal } from "./proteccion-datos-caracter-personal";
+import { resumen as seguridadPrivadaDisposicionesGenerales } from "./seguridad-privada-disposiciones-generales";
+import { resumen as proteccionInfraestructurasCriticas } from "./proteccion-infraestructuras-criticas";
 
 const registroResumenes: Record<string, Resumen> = {
   "la-constitucion-espanola-i": {
@@ -30,7 +32,6 @@ const registroResumenes: Record<string, Resumen> = {
       ...gobiernoAdministracion.parrafos,
       ...tribunalConstitucional.parrafos,
       ...estadosAlarmaExcepcionSitio.parrafos,
-      ...fiscaliaEuropea.parrafos,
     ],
   },
   "la-constitucion-espanola-ii": {
@@ -44,11 +45,15 @@ const registroResumenes: Record<string, Resumen> = {
   "la-direccion-general-de-la-policia": leyOrganicaPoliciaNacional,
   "ley-organica-fuerzas-cuerpos-seguridad": leyOrganicaFuerzasCuerposSeguridad,
   "el-derecho": elDerecho,
-  "la-union-europea": laUnionEuropea,
+  "la-union-europea": {
+    parrafos: [...laUnionEuropea.parrafos, ...fiscaliaEuropea.parrafos],
+  },
   "ley-organica-proteccion-seguridad-ciudadana": leyOrganicaProteccionSeguridadCiudadana,
   "derecho-penal-parte-general": derechoPenalParteGeneral,
   "derecho-procesal-penal": derechoProcesalPenal,
   "proteccion-datos-caracter-personal": proteccionDatosCaracterPersonal,
+  "seguridad-privada-disposiciones-generales": seguridadPrivadaDisposicionesGenerales,
+  "proteccion-infraestructuras-criticas": proteccionInfraestructurasCriticas,
 };
 
 export function getResumenByTema(temaSlug: string): Resumen | undefined {

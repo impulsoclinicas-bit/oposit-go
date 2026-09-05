@@ -20,6 +20,8 @@ import { preguntas as leyOrganicaProteccionSeguridadCiudadana } from "./ley-orga
 import { preguntas as derechoPenalParteGeneral } from "./derecho-penal-parte-general";
 import { preguntas as derechoProcesalPenal } from "./derecho-procesal-penal";
 import { preguntas as proteccionDatosCaracterPersonal } from "./proteccion-datos-caracter-personal";
+import { preguntas as seguridadPrivadaDisposicionesGenerales } from "./seguridad-privada-disposiciones-generales";
+import { preguntas as proteccionInfraestructurasCriticas } from "./proteccion-infraestructuras-criticas";
 
 // Banco de preguntas por tema. Los temas que todavía no tienen batería
 // redactada simplemente no aparecen aquí: `getPreguntasByTema` devuelve un
@@ -38,7 +40,6 @@ const bancoPreguntas: Record<string, Pregunta[]> = {
     ...gobiernoAdministracion,
     ...tribunalConstitucional,
     ...estadosAlarmaExcepcionSitio,
-    ...fiscaliaEuropea,
   ],
   "la-constitucion-espanola-ii": [...derechosDeberesFundamentales, ...defensorDelPueblo],
   "organizacion-administracion-general-estado": [
@@ -50,11 +51,13 @@ const bancoPreguntas: Record<string, Pregunta[]> = {
   "la-direccion-general-de-la-policia": leyOrganicaPoliciaNacional,
   "ley-organica-fuerzas-cuerpos-seguridad": leyOrganicaFuerzasCuerposSeguridad,
   "el-derecho": elDerecho,
-  "la-union-europea": laUnionEuropea,
+  "la-union-europea": [...laUnionEuropea, ...fiscaliaEuropea],
   "ley-organica-proteccion-seguridad-ciudadana": leyOrganicaProteccionSeguridadCiudadana,
   "derecho-penal-parte-general": derechoPenalParteGeneral,
   "derecho-procesal-penal": derechoProcesalPenal,
   "proteccion-datos-caracter-personal": proteccionDatosCaracterPersonal,
+  "seguridad-privada-disposiciones-generales": seguridadPrivadaDisposicionesGenerales,
+  "proteccion-infraestructuras-criticas": proteccionInfraestructurasCriticas,
 };
 
 export function getPreguntasByTema(temaSlug: string): Pregunta[] {

@@ -92,7 +92,7 @@ export const temas: Tema[] = [
     bloque: "juridico",
     titulo: "La Unión Europea",
     descripcion:
-      "Origen y evolución, derecho derivado, instituciones, cooperación policial internacional y el TEDH y el TJUE.",
+      "Origen y evolución, derecho derivado, instituciones, el TJUE, y la cooperación policial y judicial internacional (Europol, Eurojust y la Fiscalía Europea, LO 9/2021).",
   },
   {
     slug: "organizacion-administracion-general-estado",
@@ -367,7 +367,8 @@ export const temas: Tema[] = [
     numero: 42,
     bloque: "tecnico-cientifico",
     titulo: "Origen de las armas de fuego",
-    descripcion: "Historia y clasificación básica de las armas de fuego.",
+    descripcion:
+      "Historia y clasificación básica de las armas de fuego, y su régimen legal según el Reglamento de Armas.",
   },
   {
     slug: "el-vehiculo-prioritario",

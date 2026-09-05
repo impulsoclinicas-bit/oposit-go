@@ -20,6 +20,8 @@ import { esquema as leyOrganicaProteccionSeguridadCiudadana } from "./ley-organi
 import { esquema as derechoPenalParteGeneral } from "./derecho-penal-parte-general";
 import { esquema as derechoProcesalPenal } from "./derecho-procesal-penal";
 import { esquema as proteccionDatosCaracterPersonal } from "./proteccion-datos-caracter-personal";
+import { esquema as seguridadPrivadaDisposicionesGenerales } from "./seguridad-privada-disposiciones-generales";
+import { esquema as proteccionInfraestructurasCriticas } from "./proteccion-infraestructuras-criticas";
 
 // Igual que con las preguntas: los temas sin entrada aquí muestran el aviso
 // de "próximamente disponible" en la página del tema. Ver el comentario en
@@ -34,7 +36,6 @@ const registroEsquemas: Record<string, Esquema> = {
       ...gobiernoAdministracion.secciones,
       ...tribunalConstitucional.secciones,
       ...estadosAlarmaExcepcionSitio.secciones,
-      ...fiscaliaEuropea.secciones,
     ],
   },
   "la-constitucion-espanola-ii": {
@@ -48,11 +49,15 @@ const registroEsquemas: Record<string, Esquema> = {
   "la-direccion-general-de-la-policia": leyOrganicaPoliciaNacional,
   "ley-organica-fuerzas-cuerpos-seguridad": leyOrganicaFuerzasCuerposSeguridad,
   "el-derecho": elDerecho,
-  "la-union-europea": laUnionEuropea,
+  "la-union-europea": {
+    secciones: [...laUnionEuropea.secciones, ...fiscaliaEuropea.secciones],
+  },
   "ley-organica-proteccion-seguridad-ciudadana": leyOrganicaProteccionSeguridadCiudadana,
   "derecho-penal-parte-general": derechoPenalParteGeneral,
   "derecho-procesal-penal": derechoProcesalPenal,
   "proteccion-datos-caracter-personal": proteccionDatosCaracterPersonal,
+  "seguridad-privada-disposiciones-generales": seguridadPrivadaDisposicionesGenerales,
+  "proteccion-infraestructuras-criticas": proteccionInfraestructurasCriticas,
 };
 
 export function getEsquemaByTema(temaSlug: string): Esquema | undefined {
