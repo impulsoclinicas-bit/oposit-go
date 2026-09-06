@@ -36,6 +36,17 @@ import { resumen as marcoNormativoPrevencionRiesgosLaborales } from "./marco-nor
 import { resumen as origenArmasDeFuego } from "./origen-armas-de-fuego";
 import { resumen as elVehiculoPrioritario } from "./el-vehiculo-prioritario";
 import { resumen as seguridadConduccionVehiculosPrioritarios } from "./seguridad-conduccion-vehiculos-prioritarios";
+import { resumen as derechosHumanos } from "./derechos-humanos";
+import { resumen as globalizacionAntiglobalizacion } from "./globalizacion-antiglobalizacion";
+import { resumen as actitudesValoresSociales } from "./actitudes-valores-sociales";
+import { resumen as principiosEticosSociedadActual } from "./principios-eticos-sociedad-actual";
+import { resumen as laInmigracion } from "./la-inmigracion";
+import { resumen as conceptoGeografiaHumana } from "./concepto-geografia-humana";
+import { resumen as laSeguridad } from "./la-seguridad";
+import { resumen as drogodependencias } from "./drogodependencias";
+import { resumen as desarrolloSostenible } from "./desarrollo-sostenible";
+import { resumen as gramaticaLenguaEspanola } from "./gramatica-lengua-espanola";
+import { resumen as ortografiaLenguaEspanola } from "./ortografia-lengua-espanola";
 
 const registroResumenes: Record<string, Resumen> = {
   "la-constitucion-espanola-i": {
@@ -82,6 +93,17 @@ const registroResumenes: Record<string, Resumen> = {
   "origen-armas-de-fuego": origenArmasDeFuego,
   "el-vehiculo-prioritario": elVehiculoPrioritario,
   "seguridad-conduccion-vehiculos-prioritarios": seguridadConduccionVehiculosPrioritarios,
+  "derechos-humanos": derechosHumanos,
+  "globalizacion-antiglobalizacion": globalizacionAntiglobalizacion,
+  "actitudes-valores-sociales": actitudesValoresSociales,
+  "principios-eticos-sociedad-actual": principiosEticosSociedadActual,
+  "la-inmigracion": laInmigracion,
+  "concepto-geografia-humana": conceptoGeografiaHumana,
+  "la-seguridad": laSeguridad,
+  "drogodependencias": drogodependencias,
+  "desarrollo-sostenible": desarrolloSostenible,
+  "gramatica-lengua-espanola": gramaticaLenguaEspanola,
+  "ortografia-lengua-espanola": ortografiaLenguaEspanola,
 };
 
 export function getResumenByTema(temaSlug: string): Resumen | undefined {

@@ -36,6 +36,17 @@ import { preguntas as marcoNormativoPrevencionRiesgosLaborales } from "./marco-n
 import { preguntas as origenArmasDeFuego } from "./origen-armas-de-fuego";
 import { preguntas as elVehiculoPrioritario } from "./el-vehiculo-prioritario";
 import { preguntas as seguridadConduccionVehiculosPrioritarios } from "./seguridad-conduccion-vehiculos-prioritarios";
+import { preguntas as derechosHumanos } from "./derechos-humanos";
+import { preguntas as globalizacionAntiglobalizacion } from "./globalizacion-antiglobalizacion";
+import { preguntas as actitudesValoresSociales } from "./actitudes-valores-sociales";
+import { preguntas as principiosEticosSociedadActual } from "./principios-eticos-sociedad-actual";
+import { preguntas as laInmigracion } from "./la-inmigracion";
+import { preguntas as conceptoGeografiaHumana } from "./concepto-geografia-humana";
+import { preguntas as laSeguridad } from "./la-seguridad";
+import { preguntas as drogodependencias } from "./drogodependencias";
+import { preguntas as desarrolloSostenible } from "./desarrollo-sostenible";
+import { preguntas as gramaticaLenguaEspanola } from "./gramatica-lengua-espanola";
+import { preguntas as ortografiaLenguaEspanola } from "./ortografia-lengua-espanola";
 
 // Banco de preguntas por tema. Los temas que todavía no tienen batería
 // redactada simplemente no aparecen aquí: `getPreguntasByTema` devuelve un
@@ -86,6 +97,17 @@ const bancoPreguntas: Record<string, Pregunta[]> = {
   "origen-armas-de-fuego": origenArmasDeFuego,
   "el-vehiculo-prioritario": elVehiculoPrioritario,
   "seguridad-conduccion-vehiculos-prioritarios": seguridadConduccionVehiculosPrioritarios,
+  "derechos-humanos": derechosHumanos,
+  "globalizacion-antiglobalizacion": globalizacionAntiglobalizacion,
+  "actitudes-valores-sociales": actitudesValoresSociales,
+  "principios-eticos-sociedad-actual": principiosEticosSociedadActual,
+  "la-inmigracion": laInmigracion,
+  "concepto-geografia-humana": conceptoGeografiaHumana,
+  "la-seguridad": laSeguridad,
+  "drogodependencias": drogodependencias,
+  "desarrollo-sostenible": desarrolloSostenible,
+  "gramatica-lengua-espanola": gramaticaLenguaEspanola,
+  "ortografia-lengua-espanola": ortografiaLenguaEspanola,
 };
 
 export function getPreguntasByTema(temaSlug: string): Pregunta[] {

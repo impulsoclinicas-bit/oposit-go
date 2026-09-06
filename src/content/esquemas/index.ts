@@ -36,6 +36,17 @@ import { esquema as marcoNormativoPrevencionRiesgosLaborales } from "./marco-nor
 import { esquema as origenArmasDeFuego } from "./origen-armas-de-fuego";
 import { esquema as elVehiculoPrioritario } from "./el-vehiculo-prioritario";
 import { esquema as seguridadConduccionVehiculosPrioritarios } from "./seguridad-conduccion-vehiculos-prioritarios";
+import { esquema as derechosHumanos } from "./derechos-humanos";
+import { esquema as globalizacionAntiglobalizacion } from "./globalizacion-antiglobalizacion";
+import { esquema as actitudesValoresSociales } from "./actitudes-valores-sociales";
+import { esquema as principiosEticosSociedadActual } from "./principios-eticos-sociedad-actual";
+import { esquema as laInmigracion } from "./la-inmigracion";
+import { esquema as conceptoGeografiaHumana } from "./concepto-geografia-humana";
+import { esquema as laSeguridad } from "./la-seguridad";
+import { esquema as drogodependencias } from "./drogodependencias";
+import { esquema as desarrolloSostenible } from "./desarrollo-sostenible";
+import { esquema as gramaticaLenguaEspanola } from "./gramatica-lengua-espanola";
+import { esquema as ortografiaLenguaEspanola } from "./ortografia-lengua-espanola";
 
 // Igual que con las preguntas: los temas sin entrada aquí muestran el aviso
 // de "próximamente disponible" en la página del tema. Ver el comentario en
@@ -86,6 +97,17 @@ const registroEsquemas: Record<string, Esquema> = {
   "origen-armas-de-fuego": origenArmasDeFuego,
   "el-vehiculo-prioritario": elVehiculoPrioritario,
   "seguridad-conduccion-vehiculos-prioritarios": seguridadConduccionVehiculosPrioritarios,
+  "derechos-humanos": derechosHumanos,
+  "globalizacion-antiglobalizacion": globalizacionAntiglobalizacion,
+  "actitudes-valores-sociales": actitudesValoresSociales,
+  "principios-eticos-sociedad-actual": principiosEticosSociedadActual,
+  "la-inmigracion": laInmigracion,
+  "concepto-geografia-humana": conceptoGeografiaHumana,
+  "la-seguridad": laSeguridad,
+  "drogodependencias": drogodependencias,
+  "desarrollo-sostenible": desarrolloSostenible,
+  "gramatica-lengua-espanola": gramaticaLenguaEspanola,
+  "ortografia-lengua-espanola": ortografiaLenguaEspanola,
 };
 
 export function getEsquemaByTema(temaSlug: string): Esquema | undefined {
