@@ -31,6 +31,11 @@ import { resumen as delitosContraElOrdenPublico } from "./delitos-contra-el-orde
 import { resumen as delitosInformaticos } from "./delitos-informaticos";
 import { resumen as estatutoVictimaDelDelito } from "./estatuto-victima-del-delito";
 import { resumen as politicasIgualdadViolenciaGenero } from "./politicas-igualdad-violencia-genero";
+import { resumen as introduccionPrevencionRiesgosLaborales } from "./introduccion-prevencion-riesgos-laborales";
+import { resumen as marcoNormativoPrevencionRiesgosLaborales } from "./marco-normativo-prevencion-riesgos-laborales";
+import { resumen as origenArmasDeFuego } from "./origen-armas-de-fuego";
+import { resumen as elVehiculoPrioritario } from "./el-vehiculo-prioritario";
+import { resumen as seguridadConduccionVehiculosPrioritarios } from "./seguridad-conduccion-vehiculos-prioritarios";
 
 const registroResumenes: Record<string, Resumen> = {
   "la-constitucion-espanola-i": {
@@ -72,6 +77,11 @@ const registroResumenes: Record<string, Resumen> = {
   "delitos-informaticos": delitosInformaticos,
   "estatuto-victima-del-delito": estatutoVictimaDelDelito,
   "politicas-igualdad-violencia-genero": politicasIgualdadViolenciaGenero,
+  "introduccion-prevencion-riesgos-laborales": introduccionPrevencionRiesgosLaborales,
+  "marco-normativo-prevencion-riesgos-laborales": marcoNormativoPrevencionRiesgosLaborales,
+  "origen-armas-de-fuego": origenArmasDeFuego,
+  "el-vehiculo-prioritario": elVehiculoPrioritario,
+  "seguridad-conduccion-vehiculos-prioritarios": seguridadConduccionVehiculosPrioritarios,
 };
 
 export function getResumenByTema(temaSlug: string): Resumen | undefined {

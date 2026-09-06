@@ -31,6 +31,11 @@ import { preguntas as delitosContraElOrdenPublico } from "./delitos-contra-el-or
 import { preguntas as delitosInformaticos } from "./delitos-informaticos";
 import { preguntas as estatutoVictimaDelDelito } from "./estatuto-victima-del-delito";
 import { preguntas as politicasIgualdadViolenciaGenero } from "./politicas-igualdad-violencia-genero";
+import { preguntas as introduccionPrevencionRiesgosLaborales } from "./introduccion-prevencion-riesgos-laborales";
+import { preguntas as marcoNormativoPrevencionRiesgosLaborales } from "./marco-normativo-prevencion-riesgos-laborales";
+import { preguntas as origenArmasDeFuego } from "./origen-armas-de-fuego";
+import { preguntas as elVehiculoPrioritario } from "./el-vehiculo-prioritario";
+import { preguntas as seguridadConduccionVehiculosPrioritarios } from "./seguridad-conduccion-vehiculos-prioritarios";
 
 // Banco de preguntas por tema. Los temas que todavía no tienen batería
 // redactada simplemente no aparecen aquí: `getPreguntasByTema` devuelve un
@@ -76,6 +81,11 @@ const bancoPreguntas: Record<string, Pregunta[]> = {
   "delitos-informaticos": delitosInformaticos,
   "estatuto-victima-del-delito": estatutoVictimaDelDelito,
   "politicas-igualdad-violencia-genero": politicasIgualdadViolenciaGenero,
+  "introduccion-prevencion-riesgos-laborales": introduccionPrevencionRiesgosLaborales,
+  "marco-normativo-prevencion-riesgos-laborales": marcoNormativoPrevencionRiesgosLaborales,
+  "origen-armas-de-fuego": origenArmasDeFuego,
+  "el-vehiculo-prioritario": elVehiculoPrioritario,
+  "seguridad-conduccion-vehiculos-prioritarios": seguridadConduccionVehiculosPrioritarios,
 };
 
 export function getPreguntasByTema(temaSlug: string): Pregunta[] {

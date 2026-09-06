@@ -31,6 +31,11 @@ import { esquema as delitosContraElOrdenPublico } from "./delitos-contra-el-orde
 import { esquema as delitosInformaticos } from "./delitos-informaticos";
 import { esquema as estatutoVictimaDelDelito } from "./estatuto-victima-del-delito";
 import { esquema as politicasIgualdadViolenciaGenero } from "./politicas-igualdad-violencia-genero";
+import { esquema as introduccionPrevencionRiesgosLaborales } from "./introduccion-prevencion-riesgos-laborales";
+import { esquema as marcoNormativoPrevencionRiesgosLaborales } from "./marco-normativo-prevencion-riesgos-laborales";
+import { esquema as origenArmasDeFuego } from "./origen-armas-de-fuego";
+import { esquema as elVehiculoPrioritario } from "./el-vehiculo-prioritario";
+import { esquema as seguridadConduccionVehiculosPrioritarios } from "./seguridad-conduccion-vehiculos-prioritarios";
 
 // Igual que con las preguntas: los temas sin entrada aquí muestran el aviso
 // de "próximamente disponible" en la página del tema. Ver el comentario en
@@ -76,6 +81,11 @@ const registroEsquemas: Record<string, Esquema> = {
   "delitos-informaticos": delitosInformaticos,
   "estatuto-victima-del-delito": estatutoVictimaDelDelito,
   "politicas-igualdad-violencia-genero": politicasIgualdadViolenciaGenero,
+  "introduccion-prevencion-riesgos-laborales": introduccionPrevencionRiesgosLaborales,
+  "marco-normativo-prevencion-riesgos-laborales": marcoNormativoPrevencionRiesgosLaborales,
+  "origen-armas-de-fuego": origenArmasDeFuego,
+  "el-vehiculo-prioritario": elVehiculoPrioritario,
+  "seguridad-conduccion-vehiculos-prioritarios": seguridadConduccionVehiculosPrioritarios,
 };
 
 export function getEsquemaByTema(temaSlug: string): Esquema | undefined {
