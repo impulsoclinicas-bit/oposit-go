@@ -47,6 +47,11 @@ import { resumen as drogodependencias } from "./drogodependencias";
 import { resumen as desarrolloSostenible } from "./desarrollo-sostenible";
 import { resumen as gramaticaLenguaEspanola } from "./gramatica-lengua-espanola";
 import { resumen as ortografiaLenguaEspanola } from "./ortografia-lengua-espanola";
+import { resumen as fundamentosSistemasOperativos } from "./fundamentos-sistemas-operativos";
+import { resumen as redesInformaticas } from "./redes-informaticas";
+import { resumen as laInteligencia } from "./la-inteligencia";
+import { resumen as ciberdelincuenciaAgentesAmenaza } from "./ciberdelincuencia-agentes-amenaza";
+import { resumen as prevencionRiesgosLaboralesSeguridadVial } from "./prevencion-riesgos-laborales-seguridad-vial";
 
 const registroResumenes: Record<string, Resumen> = {
   "la-constitucion-espanola-i": {
@@ -104,6 +109,11 @@ const registroResumenes: Record<string, Resumen> = {
   "desarrollo-sostenible": desarrolloSostenible,
   "gramatica-lengua-espanola": gramaticaLenguaEspanola,
   "ortografia-lengua-espanola": ortografiaLenguaEspanola,
+  "fundamentos-sistemas-operativos": fundamentosSistemasOperativos,
+  "redes-informaticas": redesInformaticas,
+  "la-inteligencia": laInteligencia,
+  "ciberdelincuencia-agentes-amenaza": ciberdelincuenciaAgentesAmenaza,
+  "prevencion-riesgos-laborales-seguridad-vial": prevencionRiesgosLaboralesSeguridadVial,
 };
 
 export function getResumenByTema(temaSlug: string): Resumen | undefined {

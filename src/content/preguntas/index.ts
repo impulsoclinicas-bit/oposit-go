@@ -47,6 +47,11 @@ import { preguntas as drogodependencias } from "./drogodependencias";
 import { preguntas as desarrolloSostenible } from "./desarrollo-sostenible";
 import { preguntas as gramaticaLenguaEspanola } from "./gramatica-lengua-espanola";
 import { preguntas as ortografiaLenguaEspanola } from "./ortografia-lengua-espanola";
+import { preguntas as fundamentosSistemasOperativos } from "./fundamentos-sistemas-operativos";
+import { preguntas as redesInformaticas } from "./redes-informaticas";
+import { preguntas as laInteligencia } from "./la-inteligencia";
+import { preguntas as ciberdelincuenciaAgentesAmenaza } from "./ciberdelincuencia-agentes-amenaza";
+import { preguntas as prevencionRiesgosLaboralesSeguridadVial } from "./prevencion-riesgos-laborales-seguridad-vial";
 
 // Banco de preguntas por tema. Los temas que todavía no tienen batería
 // redactada simplemente no aparecen aquí: `getPreguntasByTema` devuelve un
@@ -108,6 +113,11 @@ const bancoPreguntas: Record<string, Pregunta[]> = {
   "desarrollo-sostenible": desarrolloSostenible,
   "gramatica-lengua-espanola": gramaticaLenguaEspanola,
   "ortografia-lengua-espanola": ortografiaLenguaEspanola,
+  "fundamentos-sistemas-operativos": fundamentosSistemasOperativos,
+  "redes-informaticas": redesInformaticas,
+  "la-inteligencia": laInteligencia,
+  "ciberdelincuencia-agentes-amenaza": ciberdelincuenciaAgentesAmenaza,
+  "prevencion-riesgos-laborales-seguridad-vial": prevencionRiesgosLaboralesSeguridadVial,
 };
 
 export function getPreguntasByTema(temaSlug: string): Pregunta[] {

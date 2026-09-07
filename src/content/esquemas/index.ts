@@ -47,6 +47,11 @@ import { esquema as drogodependencias } from "./drogodependencias";
 import { esquema as desarrolloSostenible } from "./desarrollo-sostenible";
 import { esquema as gramaticaLenguaEspanola } from "./gramatica-lengua-espanola";
 import { esquema as ortografiaLenguaEspanola } from "./ortografia-lengua-espanola";
+import { esquema as fundamentosSistemasOperativos } from "./fundamentos-sistemas-operativos";
+import { esquema as redesInformaticas } from "./redes-informaticas";
+import { esquema as laInteligencia } from "./la-inteligencia";
+import { esquema as ciberdelincuenciaAgentesAmenaza } from "./ciberdelincuencia-agentes-amenaza";
+import { esquema as prevencionRiesgosLaboralesSeguridadVial } from "./prevencion-riesgos-laborales-seguridad-vial";
 
 // Igual que con las preguntas: los temas sin entrada aquí muestran el aviso
 // de "próximamente disponible" en la página del tema. Ver el comentario en
@@ -108,6 +113,11 @@ const registroEsquemas: Record<string, Esquema> = {
   "desarrollo-sostenible": desarrolloSostenible,
   "gramatica-lengua-espanola": gramaticaLenguaEspanola,
   "ortografia-lengua-espanola": ortografiaLenguaEspanola,
+  "fundamentos-sistemas-operativos": fundamentosSistemasOperativos,
+  "redes-informaticas": redesInformaticas,
+  "la-inteligencia": laInteligencia,
+  "ciberdelincuencia-agentes-amenaza": ciberdelincuenciaAgentesAmenaza,
+  "prevencion-riesgos-laborales-seguridad-vial": prevencionRiesgosLaboralesSeguridadVial,
 };
 
 export function getEsquemaByTema(temaSlug: string): Esquema | undefined {
