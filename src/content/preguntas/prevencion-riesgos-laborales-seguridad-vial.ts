@@ -105,4 +105,95 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "La prevención de riesgos laborales en seguridad vial no constituye un régimen jurídico autónomo, sino una aplicación específica, al contexto concreto de la actuación junto al tráfico rodado, de los principios generales ya estudiados en los temas dedicados a la Ley 31/1995 y a su desarrollo para el Cuerpo Nacional de Policía en el Real Decreto 2/2006: evaluación de riesgos, planificación de la actividad preventiva, formación específica y dotación de equipos de protección adecuados.",
   },
+  {
+    id: "prlsv-09",
+    enunciado: "Además del chaleco de alta visibilidad, ¿qué otros equipos de protección individual resultan relevantes en la actuación prolongada junto al tráfico?",
+    opciones: [
+      "Calzado antideslizante y resistente, protección frente a las inclemencias meteorológicas (impermeables, prendas de abrigo homologadas) y, en su caso, protección auditiva frente a la exposición prolongada al ruido del tráfico",
+      "Ningún equipo adicional resulta necesario más allá del chaleco reflectante",
+      "Únicamente guantes de látex, sin ninguna otra prenda de protección",
+      "Un casco de moto, incluso cuando el agente no circula en motocicleta",
+    ],
+    correcta: 0,
+    explicacion:
+      "Junto con las prendas de alta visibilidad, la actuación prolongada en vía pública puede requerir otros equipos de protección individual adaptados a los riesgos concretos de cada situación: calzado antideslizante y resistente, prendas de protección frente a las inclemencias meteorológicas debidamente homologadas, y en determinados casos protección auditiva ante una exposición prolongada al ruido del tráfico.",
+  },
+  {
+    id: "prlsv-10",
+    enunciado: "¿Qué recomienda la buena praxis preventiva respecto del reconocimiento previo del punto donde se va a actuar (por ejemplo, antes de establecer un control)?",
+    opciones: [
+      "Evaluar de antemano las características de la vía (visibilidad, curvas, pendiente, intensidad del tráfico) para elegir, cuando sea posible, un emplazamiento que minimice los riesgos antes de iniciar la actuación",
+      "No es necesario ningún reconocimiento previo, ya que el riesgo es siempre el mismo con independencia del lugar",
+      "Debe elegirse siempre el punto de menor visibilidad posible, para no ser advertido por los conductores",
+      "El reconocimiento previo solo es relevante en autopistas, nunca en vías urbanas",
+    ],
+    correcta: 0,
+    explicacion:
+      "Cuando la operativa lo permite, la buena praxis preventiva aconseja evaluar de antemano las características de la vía —visibilidad, presencia de curvas o pendientes, intensidad y velocidad del tráfico— para elegir un emplazamiento que minimice los riesgos antes de iniciar la actuación, en coherencia con el deber de evaluación de riesgos del puesto de trabajo que exige con carácter general el artículo 16 de la Ley 31/1995.",
+  },
+  {
+    id: "prlsv-11",
+    enunciado: "¿Qué precaución adicional se recomienda en la actuación en vía pública durante las horas nocturnas o de escasa visibilidad?",
+    opciones: [
+      "Reforzar la señalización luminosa (linternas, balizas destellantes) y extremar la distancia y el tiempo de anticipación con que se advierte a los conductores, dado que la percepción del riesgo por parte de estos disminuye con la oscuridad",
+      "Ninguna precaución adicional distinta de las empleadas durante el día",
+      "Suprimir cualquier tipo de señalización luminosa para no deslumbrar a los conductores",
+      "Actuar exclusivamente sin chaleco reflectante durante la noche, para pasar desapercibido",
+    ],
+    correcta: 0,
+    explicacion:
+      "Durante las horas nocturnas o en condiciones de escasa visibilidad, se recomienda reforzar la señalización luminosa —linternas, balizas destellantes, elementos reflectantes adicionales— y extremar la distancia y el tiempo de anticipación con que se advierte a los conductores, ya que la percepción del riesgo y el tiempo de reacción de estos disminuyen sensiblemente con la oscuridad.",
+  },
+  {
+    id: "prlsv-12",
+    enunciado: "¿Qué relevancia tiene la formación en primeros auxilios dentro de la prevención de riesgos laborales aplicada a la actuación en vía pública?",
+    opciones: [
+      "Permite al agente prestar una atención inicial adecuada tanto a terceros implicados en un accidente como, en su caso, a un compañero que pudiera resultar lesionado durante la propia actuación, mientras se espera la llegada de los servicios sanitarios",
+      "No tiene ninguna relevancia práctica para la seguridad del propio agente",
+      "Sustituye por completo a la intervención de los servicios sanitarios especializados",
+      "Solo resulta útil en accidentes de tráfico, nunca ante otro tipo de lesiones",
+    ],
+    correcta: 0,
+    explicacion:
+      "La formación en primeros auxilios permite al agente prestar una atención inicial adecuada tanto a las personas implicadas en un accidente de tráfico como, eventualmente, a un compañero que pudiera resultar lesionado durante la propia actuación, mientras se aguarda la llegada de los servicios sanitarios especializados, y constituye un elemento habitual dentro de los planes de formación preventiva de las unidades policiales.",
+  },
+  {
+    id: "prlsv-13",
+    enunciado: "¿Qué recomienda la buena praxis en cuanto a la coordinación con otros servicios de emergencia (bomberos, servicios sanitarios) que comparten un mismo punto de actuación en la vía pública?",
+    opciones: [
+      "Establecer una comunicación clara sobre el reparto de espacios y funciones, de modo que cada servicio pueda desarrollar su actividad con seguridad y sin interferir en la de los demás intervinientes",
+      "Actuar cada servicio de forma completamente independiente, sin ninguna comunicación entre ellos",
+      "Ceder siempre la coordinación exclusivamente al servicio sanitario, con independencia de las circunstancias",
+      "Evitar la presencia simultánea de distintos servicios de emergencia en un mismo punto, en cualquier circunstancia",
+    ],
+    correcta: 0,
+    explicacion:
+      "Cuando distintos servicios de emergencia —policía, bomberos, servicios sanitarios— coinciden en un mismo punto de actuación, la buena praxis preventiva recomienda establecer una comunicación clara sobre el reparto de espacios y funciones, de modo que cada servicio pueda desarrollar su actividad con seguridad, evitando interferencias que pudieran generar riesgos adicionales para cualquiera de los intervinientes.",
+  },
+  {
+    id: "prlsv-14",
+    enunciado: "¿Qué exige, con carácter general, el artículo 16 de la Ley 31/1995 respecto de la evaluación de los riesgos de un puesto de trabajo, aplicado a la actuación en vía pública?",
+    opciones: [
+      "Que se realice una evaluación inicial de los riesgos del puesto, teniendo en cuenta la naturaleza de la actividad, y que dicha evaluación se actualice cuando cambien las condiciones de trabajo o se hayan producido daños para la salud",
+      "Que la evaluación de riesgos se realice una única vez, sin posibilidad de actualizarla posteriormente",
+      "Que la evaluación de riesgos sea responsabilidad exclusiva de cada agente a título individual",
+      "Que no resulte necesaria ninguna evaluación cuando la actuación se realice al aire libre",
+    ],
+    correcta: 0,
+    explicacion:
+      "El artículo 16 de la Ley 31/1995, ya estudiado con carácter general en el tema dedicado al marco normativo de la prevención de riesgos laborales, exige realizar una evaluación inicial de los riesgos del puesto de trabajo, teniendo en cuenta la naturaleza de la actividad desarrollada, y actualizar dicha evaluación cuando cambien las condiciones de trabajo o se hayan producido daños para la salud, previsión plenamente aplicable a los puestos que implican actuación habitual en la vía pública junto al tráfico rodado.",
+  },
+  {
+    id: "prlsv-15",
+    enunciado: "¿Qué papel desempeñan los protocolos de actuación específicos ante accidentes que impliquen el transporte de mercancías peligrosas?",
+    opciones: [
+      "Establecen pautas concretas de acordonamiento, distancia de seguridad y coordinación con los servicios especializados, dado el riesgo adicional que estas sustancias suponen para la seguridad y la salud de quienes intervienen en el lugar del accidente",
+      "No existen protocolos específicos distintos de los aplicables a cualquier accidente de tráfico convencional",
+      "Su aplicación corresponde en exclusiva a las empresas transportistas, sin intervención policial",
+      "Solo resultan aplicables a los accidentes producidos en el ámbito portuario",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los accidentes que implican el transporte de mercancías peligrosas exigen protocolos de actuación específicos, que establecen pautas concretas sobre el acordonamiento del área, la distancia de seguridad que debe mantenerse y la coordinación con los servicios especializados (bomberos, protección civil), dado el riesgo adicional que estas sustancias —inflamables, tóxicas, corrosivas— suponen para la seguridad y la salud de quienes intervienen en el lugar del accidente.",
+  },
 ];

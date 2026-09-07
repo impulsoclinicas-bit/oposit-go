@@ -105,4 +105,95 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El kernel o núcleo es el componente central del sistema operativo, encargado de gestionar directamente los recursos del hardware —procesador, memoria y dispositivos— y de ofrecer los servicios básicos (gestión de procesos, comunicación, seguridad) sobre los que se construye el resto de funcionalidades del sistema.",
   },
+  {
+    id: "fso-09",
+    enunciado: "¿Qué es una «interrupción» (interrupt) en el funcionamiento de un sistema operativo?",
+    opciones: [
+      "Una señal que se genera cuando ocurre un evento que requiere la atención inmediata del procesador (por ejemplo, la pulsación de una tecla o la finalización de una operación de un dispositivo), suspendiendo temporalmente la ejecución en curso para atenderlo",
+      "Un tipo de virus informático que detiene por completo el sistema",
+      "Un sinónimo exacto de apagado del equipo",
+      "Un mensaje de error que aparece exclusivamente al instalar un programa",
+    ],
+    correcta: 0,
+    explicacion:
+      "Una interrupción es una señal generada por el hardware o el software cuando ocurre un evento que requiere la atención inmediata del procesador —como la pulsación de una tecla, la llegada de un paquete de red o la finalización de una operación de un dispositivo—, lo que hace que el sistema operativo suspenda temporalmente la ejecución en curso para atender dicho evento antes de reanudarla.",
+  },
+  {
+    id: "fso-10",
+    enunciado: "¿Qué estados puede atravesar un proceso a lo largo de su ciclo de vida en un sistema operativo multitarea?",
+    opciones: [
+      "Fundamentalmente los estados de ejecución (utilizando el procesador), listo (esperando a que se le asigne el procesador) y bloqueado (a la espera de un evento o recurso externo)",
+      "Únicamente los estados de encendido y apagado",
+      "Solo los estados de instalado y desinstalado",
+      "Exclusivamente los estados visible e invisible en la interfaz gráfica",
+    ],
+    correcta: 0,
+    explicacion:
+      "En un sistema operativo multitarea, un proceso puede encontrarse fundamentalmente en tres estados: en ejecución, cuando está utilizando activamente el procesador; listo, cuando está preparado para ejecutarse pero espera a que el planificador le asigne tiempo de procesador; y bloqueado, cuando está a la espera de que se complete una operación de entrada/salida o de que quede disponible otro recurso necesario.",
+  },
+  {
+    id: "fso-11",
+    enunciado: "¿Qué diferencia existe entre un «proceso» y un «hilo» (thread) de ejecución?",
+    opciones: [
+      "Un proceso es una instancia de un programa con su propio espacio de memoria independiente; un hilo es una unidad de ejecución más ligera dentro de un proceso, que comparte el espacio de memoria y otros recursos con los demás hilos del mismo proceso",
+      "Son términos completamente sinónimos sin ninguna diferencia técnica",
+      "Un hilo siempre requiere más memoria que un proceso completo",
+      "Un proceso solo puede tener un único hilo de ejecución en cualquier sistema operativo",
+    ],
+    correcta: 0,
+    explicacion:
+      "Un proceso es una instancia de un programa en ejecución con su propio espacio de memoria y recursos asignados de forma independiente, mientras que un hilo (thread) es una unidad de ejecución más ligera dentro de un proceso, que comparte el espacio de memoria y otros recursos con los demás hilos del mismo proceso, permitiendo la ejecución concurrente de varias tareas dentro de un mismo programa con menor sobrecarga que crear procesos independientes.",
+  },
+  {
+    id: "fso-12",
+    enunciado: "¿Qué es un «controlador de dispositivo» (driver) en un sistema operativo?",
+    opciones: [
+      "Un programa específico que permite al sistema operativo comunicarse y gestionar correctamente un dispositivo de hardware concreto, traduciendo las instrucciones genéricas del sistema a las particulares de dicho dispositivo",
+      "Un componente exclusivamente decorativo de la interfaz gráfica",
+      "Un sinónimo exacto de sistema de archivos",
+      "Un tipo de virus informático que ataca a los periféricos del equipo",
+    ],
+    correcta: 0,
+    explicacion:
+      "Un controlador de dispositivo o driver es un programa específico que permite al sistema operativo comunicarse correctamente con un dispositivo de hardware concreto (una impresora, una tarjeta gráfica, un periférico), traduciendo las instrucciones genéricas del sistema operativo a las órdenes particulares que dicho dispositivo es capaz de entender y ejecutar.",
+  },
+  {
+    id: "fso-13",
+    enunciado: "¿Qué caracteriza a un «sistema operativo en tiempo real»?",
+    opciones: [
+      "Un sistema diseñado para garantizar que determinadas tareas se completen dentro de un plazo de tiempo estrictamente determinado, siendo habitual en aplicaciones críticas como el control industrial o los sistemas embebidos",
+      "Un sistema que muestra siempre la hora y la fecha actuales en pantalla",
+      "Un sinónimo exacto de sistema operativo multiusuario",
+      "Un sistema que solo puede ejecutar un único programa a la vez, sin ninguna otra característica especial",
+    ],
+    correcta: 0,
+    explicacion:
+      "Un sistema operativo en tiempo real es aquel diseñado para garantizar que determinadas tareas críticas se completen dentro de un plazo de tiempo estrictamente determinado y predecible, siendo especialmente habitual en aplicaciones como el control de procesos industriales, los sistemas embebidos, la aviónica o los dispositivos médicos, donde un retraso en la respuesta puede tener consecuencias graves.",
+  },
+  {
+    id: "fso-14",
+    enunciado: "¿Qué son las «actualizaciones de seguridad» (parches) de un sistema operativo y por qué son relevantes?",
+    opciones: [
+      "Modificaciones publicadas periódicamente por el fabricante para corregir vulnerabilidades detectadas en el sistema, siendo fundamentales para reducir el riesgo de que dichas vulnerabilidades sean explotadas por atacantes",
+      "Programas exclusivamente destinados a mejorar el rendimiento gráfico del equipo, sin relación con la seguridad",
+      "Un sinónimo de copia de seguridad de los datos del usuario",
+      "Actualizaciones que solo afectan a la apariencia visual del sistema",
+    ],
+    correcta: 0,
+    explicacion:
+      "Las actualizaciones de seguridad o parches son modificaciones publicadas periódicamente por el fabricante del sistema operativo para corregir vulnerabilidades detectadas en él, resultando fundamentales para la seguridad informática, ya que muchas vulnerabilidades conocidas y no corregidas son aprovechadas por atacantes para comprometer sistemas que no han aplicado dichas actualizaciones.",
+  },
+  {
+    id: "fso-15",
+    enunciado: "¿Qué es la «virtualización» en el ámbito de los sistemas operativos?",
+    opciones: [
+      "Una tecnología que permite ejecutar uno o varios sistemas operativos (máquinas virtuales) de forma simultánea e independiente sobre un mismo equipo físico, compartiendo sus recursos de hardware",
+      "Un sinónimo exacto de memoria virtual",
+      "Un tipo de interfaz gráfica tridimensional",
+      "Una técnica exclusiva de los dispositivos móviles",
+    ],
+    correcta: 0,
+    explicacion:
+      "La virtualización es una tecnología que permite ejecutar uno o varios sistemas operativos, denominados máquinas virtuales, de forma simultánea e independiente sobre un mismo equipo físico, compartiendo de manera gestionada sus recursos de hardware (procesador, memoria, almacenamiento), lo que resulta especialmente útil para el aislamiento de entornos, las pruebas de software o la optimización del uso de servidores.",
+  },
 ];

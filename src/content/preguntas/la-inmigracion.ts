@@ -105,4 +105,95 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "Frontex es la Agencia Europea de la Guardia de Fronteras y Costas, creada para apoyar a los Estados miembros de la Unión Europea en la vigilancia y el control de las fronteras exteriores comunes, así como en la gestión coordinada de los flujos migratorios y la lucha contra la delincuencia transfronteriza.",
   },
+  {
+    id: "inm-09",
+    enunciado: "¿Qué es el ACNUR?",
+    opciones: [
+      "La Agencia de la ONU para los Refugiados (Alto Comisionado de las Naciones Unidas para los Refugiados), encargada de dirigir y coordinar la acción internacional para proteger a las personas refugiadas y desplazadas y buscar soluciones a su situación",
+      "Un tribunal internacional que juzga delitos de inmigración irregular",
+      "Un organismo exclusivamente español dependiente del Ministerio del Interior",
+      "Una organización empresarial de contratación de trabajadores extranjeros",
+    ],
+    correcta: 0,
+    explicacion:
+      "El ACNUR (Alto Comisionado de las Naciones Unidas para los Refugiados) es la agencia de la ONU encargada de dirigir y coordinar la acción internacional para proteger a las personas refugiadas y desplazadas en todo el mundo, y de buscar soluciones duraderas a su situación, ya sea mediante el retorno voluntario, la integración local o el reasentamiento en un tercer país.",
+  },
+  {
+    id: "inm-10",
+    enunciado: "¿Qué diferencia existe entre el tráfico ilícito de migrantes y la trata de seres humanos?",
+    opciones: [
+      "El tráfico ilícito de migrantes implica el traslado facilitado de una persona a través de una frontera con su consentimiento, a cambio de un beneficio económico, sin que exista necesariamente explotación posterior; la trata implica la captación, transporte o acogida de una persona mediante engaño, coacción o abuso, con fines de explotación",
+      "Son términos completamente sinónimos sin ninguna diferencia jurídica",
+      "El tráfico ilícito de migrantes siempre implica la existencia de esclavitud posterior",
+      "La trata de seres humanos solo puede producirse dentro de las fronteras de un mismo país",
+    ],
+    correcta: 0,
+    explicacion:
+      "El tráfico ilícito de migrantes consiste en facilitar, a cambio de un beneficio económico, el traslado irregular de una persona a través de una frontera, contando en principio con su consentimiento y sin que exista necesariamente una explotación posterior; la trata de seres humanos, en cambio, implica la captación, el transporte, el traslado o la acogida de una persona mediante engaño, coacción, abuso de una situación de vulnerabilidad u otros medios, con la finalidad de explotarla (sexual, laboral o de otro tipo), constituyendo una vulneración de derechos humanos independientemente de que exista o no cruce de fronteras.",
+  },
+  {
+    id: "inm-11",
+    enunciado: "¿Qué es la «reagrupación familiar» en materia de extranjería?",
+    opciones: [
+      "El derecho reconocido a las personas extranjeras residentes legalmente en un país a que determinados familiares (cónyuge, hijos, ascendientes) se reúnan con ellas en dicho país, cumpliendo los requisitos legalmente establecidos",
+      "Un procedimiento exclusivamente aplicable a menores no acompañados",
+      "Un sinónimo de expulsión conjunta de toda una unidad familiar",
+      "Un beneficio reconocido únicamente a los solicitantes de asilo, nunca a otros extranjeros residentes",
+    ],
+    correcta: 0,
+    explicacion:
+      "La reagrupación familiar es el derecho reconocido a las personas extranjeras que residen legalmente en un país a que determinados familiares —típicamente el cónyuge o pareja, los hijos menores o dependientes, y en ciertos casos los ascendientes— puedan reunirse con ellas en dicho país, siempre que se cumplan los requisitos de recursos económicos, vivienda adecuada y demás condiciones legalmente establecidas.",
+  },
+  {
+    id: "inm-12",
+    enunciado: "¿Qué son las «remesas» en el contexto de los procesos migratorios?",
+    opciones: [
+      "Las transferencias de dinero que las personas migrantes envían desde el país de destino a sus familiares en el país de origen, constituyendo una fuente relevante de ingresos para muchas economías en desarrollo",
+      "Un sinónimo de visado de residencia temporal",
+      "Un tipo de ayuda económica concedida exclusivamente por organismos internacionales a los países de origen",
+      "El conjunto de documentos necesarios para solicitar asilo",
+    ],
+    correcta: 0,
+    explicacion:
+      "Las remesas son las transferencias de dinero que las personas migrantes envían desde el país en el que residen y trabajan hacia sus familiares en el país de origen, constituyendo en muchos casos una fuente de ingresos muy relevante para las economías de origen, con un impacto directo en la reducción de la pobreza de los hogares receptores.",
+  },
+  {
+    id: "inm-13",
+    enunciado: "¿Qué es la «segunda generación» de inmigrantes?",
+    opciones: [
+      "Los hijos e hijas de personas inmigrantes que han nacido, o han sido criados desde muy temprana edad, en el país de acogida de sus progenitores",
+      "Un sinónimo de personas que han emigrado en dos ocasiones distintas",
+      "Un término exclusivamente aplicado a los solicitantes de asilo",
+      "Los inmigrantes que llevan más de veinte años residiendo en un país",
+    ],
+    correcta: 0,
+    explicacion:
+      "La «segunda generación» hace referencia a los hijos e hijas de personas inmigrantes que han nacido, o han sido criados desde muy temprana edad, en el país de acogida de sus progenitores, y cuyo proceso de integración social, cultural y de identidad plantea dinámicas específicas distintas de las de sus padres, la llamada «primera generación».",
+  },
+  {
+    id: "inm-14",
+    enunciado: "¿Qué es el «arraigo» en el ámbito de la normativa española de extranjería?",
+    opciones: [
+      "Una vía de regularización administrativa que permite a una persona extranjera en situación irregular obtener una autorización de residencia, acreditando su permanencia en España y determinadas circunstancias sociales, familiares o laborales",
+      "Un sinónimo exacto de nacionalidad española por residencia",
+      "Un requisito exigido únicamente a los solicitantes de asilo",
+      "Un procedimiento exclusivo para reagrupar a menores no acompañados",
+    ],
+    correcta: 0,
+    explicacion:
+      "El arraigo es una de las vías de regularización administrativa previstas en la normativa española de extranjería, que permite a una persona en situación irregular obtener una autorización de residencia acreditando su permanencia continuada en España y determinadas circunstancias sociales, familiares o laborales (arraigo social, familiar o laboral, entre otras modalidades), sin necesidad de salir del país para tramitar dicha autorización.",
+  },
+  {
+    id: "inm-15",
+    enunciado: "¿Qué se entiende por «interculturalidad» frente al mero «multiculturalismo»?",
+    opciones: [
+      "La interculturalidad enfatiza la interacción, el diálogo y el enriquecimiento mutuo entre distintas culturas dentro de una misma sociedad, mientras que el multiculturalismo se limita a reconocer la coexistencia de comunidades culturales diferenciadas, sin exigir necesariamente esa interacción activa",
+      "Son términos completamente sinónimos sin ninguna diferencia conceptual",
+      "La interculturalidad implica la imposición de una única cultura dominante sobre las demás",
+      "El multiculturalismo exige siempre la fusión completa de todas las culturas en una sola",
+    ],
+    correcta: 0,
+    explicacion:
+      "Frente al multiculturalismo, que se centra en el reconocimiento y la coexistencia de distintas comunidades culturales dentro de una misma sociedad, la interculturalidad enfatiza además la interacción, el diálogo y el enriquecimiento mutuo activo entre esas culturas, promoviendo espacios de encuentro y de construcción compartida en lugar de una simple yuxtaposición de comunidades separadas.",
+  },
 ];

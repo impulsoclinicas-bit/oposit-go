@@ -105,4 +105,95 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "La deslocalización consiste en el traslado, total o parcial, de las actividades productivas de una empresa desde su país de origen hacia otros países que ofrecen costes laborales, fiscales o regulatorios más ventajosos, siendo uno de los fenómenos más característicos —y más discutidos— de la globalización económica.",
   },
+  {
+    id: "ga-09",
+    enunciado: "¿Qué es una «empresa multinacional» o «transnacional»?",
+    opciones: [
+      "Una empresa que posee y controla instalaciones de producción o de prestación de servicios en más de un país, coordinando su actividad a escala internacional",
+      "Una empresa que únicamente exporta productos, sin ninguna presencia física en el extranjero",
+      "Un sinónimo exacto de organización no gubernamental",
+      "Una empresa de titularidad pública compartida por varios Estados",
+    ],
+    correcta: 0,
+    explicacion:
+      "Una empresa multinacional o transnacional es aquella que posee y controla instalaciones de producción, filiales o centros de prestación de servicios en más de un país, coordinando su estrategia y su actividad a escala internacional, y constituye uno de los actores centrales del proceso de globalización económica.",
+  },
+  {
+    id: "ga-10",
+    enunciado: "¿Qué son los «paraísos fiscales» y qué relación guardan con el debate sobre la globalización?",
+    opciones: [
+      "Territorios o jurisdicciones que ofrecen una tributación muy reducida o nula y un elevado grado de opacidad financiera, lo que facilita a personas y empresas eludir o minimizar el pago de impuestos en sus países de origen",
+      "Un sinónimo de zona franca destinada exclusivamente al comercio de bienes físicos",
+      "Territorios donde está prohibida cualquier actividad económica internacional",
+      "Un concepto sin ninguna relación con la globalización económica",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los paraísos fiscales son territorios o jurisdicciones que ofrecen una tributación muy reducida o nula, junto con un elevado grado de opacidad financiera y de secreto bancario, lo que facilita a personas físicas y empresas eludir o minimizar el pago de impuestos en sus países de origen; su existencia constituye uno de los aspectos más criticados del proceso de globalización financiera, al erosionar la recaudación fiscal de otros Estados.",
+  },
+  {
+    id: "ga-11",
+    enunciado: "¿Qué son el G7 y el G20 en el contexto de la gobernanza económica internacional?",
+    opciones: [
+      "Foros informales de cooperación económica y política que reúnen periódicamente a los líderes de un grupo de países con las economías más avanzadas (G7) o a las principales economías desarrolladas y emergentes del mundo (G20)",
+      "Organismos oficiales de Naciones Unidas con potestad normativa vinculante",
+      "Tratados internacionales de libre comercio con fuerza de ley",
+      "Un sinónimo exacto de la Organización Mundial del Comercio",
+    ],
+    correcta: 0,
+    explicacion:
+      "El G7 y el G20 son foros informales de cooperación económica y política que reúnen periódicamente a los líderes de un grupo de países: el G7 agrupa a un conjunto reducido de las economías avanzadas, mientras que el G20 incorpora además a las principales economías emergentes, y ambos foros discuten y coordinan, sin capacidad normativa vinculante propia, cuestiones de gobernanza económica global.",
+  },
+  {
+    id: "ga-12",
+    enunciado: "¿Qué es la «aldea global», concepto acuñado por el teórico de la comunicación Marshall McLuhan?",
+    opciones: [
+      "La idea de que los medios de comunicación electrónicos han reducido las distancias entre las distintas partes del mundo, generando una interconexión e interdependencia informativa y cultural comparable a la de una pequeña comunidad",
+      "Un sinónimo exacto de Naciones Unidas",
+      "Un tratado internacional sobre telecomunicaciones",
+      "Un concepto exclusivamente aplicable al comercio de materias primas",
+    ],
+    correcta: 0,
+    explicacion:
+      "La «aldea global» es un concepto acuñado por el teórico de la comunicación Marshall McLuhan en la década de 1960, que expresa la idea de que el desarrollo de los medios de comunicación electrónicos ha reducido drásticamente las distancias informativas y culturales entre las distintas partes del mundo, generando una interconexión e interdependencia comparable, en términos de inmediatez, a la de una pequeña comunidad o aldea.",
+  },
+  {
+    id: "ga-13",
+    enunciado: "¿Qué es un «tratado de libre comercio» (TLC)?",
+    opciones: [
+      "Un acuerdo internacional entre dos o más países por el que se comprometen a reducir o eliminar aranceles y otras barreras al comercio de bienes y servicios entre ellos",
+      "Un tratado que obliga a todos sus firmantes a adoptar la misma moneda",
+      "Un acuerdo exclusivamente militar sin ningún contenido económico",
+      "Un sinónimo exacto de unión aduanera",
+    ],
+    correcta: 0,
+    explicacion:
+      "Un tratado de libre comercio es un acuerdo internacional suscrito entre dos o más países por el que se comprometen a reducir o eliminar los aranceles y otras barreras al comercio de bienes y servicios entre ellos, facilitando así los intercambios comerciales y constituyendo uno de los principales instrumentos jurídicos del proceso de globalización económica.",
+  },
+  {
+    id: "ga-14",
+    enunciado: "¿Qué es la «glocalización»?",
+    opciones: [
+      "La adaptación de productos, servicios o estrategias globales a las particularidades culturales, sociales o de consumo de un mercado o comunidad local concretos",
+      "Un sinónimo exacto de deslocalización industrial",
+      "El proceso contrario a la globalización, que implica el aislamiento total de un territorio",
+      "Un concepto exclusivamente aplicado a la política exterior de los Estados",
+    ],
+    correcta: 0,
+    explicacion:
+      "La glocalización (término que combina «global» y «local») describe la adaptación de productos, servicios, estrategias empresariales o incluso políticas públicas de alcance global a las particularidades culturales, sociales o de consumo de un mercado o comunidad local concretos, reflejando que la globalización no implica necesariamente una homogeneización cultural absoluta.",
+  },
+  {
+    id: "ga-15",
+    enunciado: "¿Qué obra de la periodista y activista Naomi Klein, publicada en 1999, se considera una referencia del pensamiento crítico con la globalización corporativa?",
+    opciones: [
+      "«No Logo», que analiza críticamente el poder de las grandes marcas multinacionales y sus prácticas laborales y de márketing a escala global",
+      "«El Capital», de Karl Marx",
+      "«La riqueza de las naciones», de Adam Smith",
+      "«Los Objetivos de Desarrollo Sostenible: una guía práctica»",
+    ],
+    correcta: 0,
+    explicacion:
+      "«No Logo», publicada por la periodista y activista canadiense Naomi Klein en 1999, es una obra de referencia del pensamiento crítico con la globalización corporativa, que analiza el poder alcanzado por las grandes marcas multinacionales, sus estrategias de márketing y sus prácticas laborales en las cadenas de producción globalizadas, convirtiéndose en un texto influyente del movimiento antiglobalización o altermundista.",
+  },
 ];

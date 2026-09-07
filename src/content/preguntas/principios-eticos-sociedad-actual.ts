@@ -105,4 +105,95 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "Los códigos deontológicos complementan la regulación jurídica de una profesión estableciendo estándares de conducta más exigentes que los estrictamente legales, orientados a la excelencia profesional y al mantenimiento de la confianza social en la institución o colectivo profesional, si bien su incumplimiento no siempre lleva aparejada una sanción jurídica directa, a diferencia de la infracción de una norma legal.",
   },
+  {
+    id: "pesa-09",
+    enunciado: "¿Qué distinción propuso el sociólogo Max Weber entre la «ética de la convicción» y la «ética de la responsabilidad»?",
+    opciones: [
+      "La ética de la convicción valora la acción por la pureza de los principios que la inspiran, con independencia de sus consecuencias; la ética de la responsabilidad exige valorar y asumir las consecuencias previsibles de la propia acción antes de actuar",
+      "Son términos sinónimos sin ninguna diferencia conceptual",
+      "La ética de la responsabilidad rechaza cualquier consideración moral sobre la acción",
+      "La ética de la convicción se aplica exclusivamente al ámbito religioso",
+    ],
+    correcta: 0,
+    explicacion:
+      "Max Weber distinguió, en su obra sobre la política como vocación, entre la ética de la convicción, que valora la acción por la pureza y coherencia de los principios que la inspiran con independencia de sus consecuencias prácticas, y la ética de la responsabilidad, que exige a quien actúa —especialmente a quien ejerce funciones públicas— valorar y asumir las consecuencias previsibles de sus decisiones antes de llevarlas a cabo.",
+  },
+  {
+    id: "pesa-10",
+    enunciado: "¿Qué diferencia existe, en términos generales, entre el utilitarismo y el deontologismo kantiano como corrientes éticas?",
+    opciones: [
+      "El utilitarismo valora la moralidad de una acción en función de sus consecuencias, buscando maximizar el bienestar general; el deontologismo kantiano valora la acción en función de si respeta ciertos deberes o principios universales, con independencia de sus consecuencias",
+      "Son corrientes éticas idénticas, sin ninguna diferencia relevante",
+      "El deontologismo kantiano solo valora las consecuencias económicas de una acción",
+      "El utilitarismo rechaza cualquier consideración sobre el bienestar de las personas",
+    ],
+    correcta: 0,
+    explicacion:
+      "El utilitarismo, asociado a autores como Jeremy Bentham y John Stuart Mill, valora la moralidad de una acción en función de sus consecuencias, buscando maximizar el bienestar o la felicidad del mayor número de personas posible; el deontologismo kantiano, por el contrario, sostiene que la moralidad de una acción depende de si esta respeta ciertos deberes o principios universales (el «imperativo categórico» de Kant), con independencia de las consecuencias que de ella se deriven.",
+  },
+  {
+    id: "pesa-11",
+    enunciado: "¿Qué es un «conflicto de intereses» en el ejercicio de una función pública?",
+    opciones: [
+      "La situación en la que los intereses personales, económicos o familiares de quien ejerce una función pública pueden entrar en colisión con el interés general que debe perseguir en el ejercicio de dicha función, comprometiendo su imparcialidad",
+      "Un sinónimo de incompatibilidad horaria entre dos empleos",
+      "Un concepto exclusivamente aplicable a los cargos electos, sin relación con los funcionarios públicos",
+      "Una situación que nunca puede afectar a la validez de una decisión administrativa",
+    ],
+    correcta: 0,
+    explicacion:
+      "El conflicto de intereses se produce cuando los intereses personales, económicos o familiares de quien ejerce una función pública pueden entrar en colisión con el interés general que debe perseguir en el desempeño de dicha función, comprometiendo o pudiendo comprometer su imparcialidad y objetividad; su prevención constituye uno de los pilares de las políticas de integridad y buen gobierno en las Administraciones Públicas.",
+  },
+  {
+    id: "pesa-12",
+    enunciado: "¿Qué persigue la Ley 19/2013, de transparencia, acceso a la información pública y buen gobierno?",
+    opciones: [
+      "Ampliar y reforzar la transparencia de la actividad pública, reconocer y garantizar el acceso a la información de los ciudadanos, y establecer las obligaciones de buen gobierno que deben cumplir los responsables públicos",
+      "Regular exclusivamente el régimen retributivo de los altos cargos del Estado",
+      "Suprimir cualquier control sobre la actuación de las Administraciones Públicas",
+      "Regular únicamente el acceso a los archivos históricos anteriores a 1978",
+    ],
+    correcta: 0,
+    explicacion:
+      "La Ley 19/2013, de transparencia, acceso a la información pública y buen gobierno, tiene por objeto ampliar y reforzar la transparencia de la actividad pública, regular y garantizar el derecho de acceso de los ciudadanos a la información pública, y establecer las obligaciones de buen gobierno que deben cumplir los responsables públicos, así como las consecuencias derivadas de su incumplimiento.",
+  },
+  {
+    id: "pesa-13",
+    enunciado: "¿Por qué se considera el principio de proporcionalidad un principio ético-jurídico especialmente relevante en la actuación policial?",
+    opciones: [
+      "Porque exige que cualquier medida restrictiva de derechos (uso de la fuerza, detención) sea adecuada, necesaria y equilibrada respecto del fin legítimo perseguido, evitando excesos que serían tanto jurídicamente ilegítimos como éticamente reprochables",
+      "Porque permite a los agentes actuar sin ninguna limitación siempre que persigan un fin legítimo",
+      "Porque solo resulta aplicable en el ámbito del derecho penal, sin relación con la actuación policial",
+      "Porque excluye cualquier valoración sobre la gravedad de la situación a la que se responde",
+    ],
+    correcta: 0,
+    explicacion:
+      "El principio de proporcionalidad exige que cualquier medida restrictiva de derechos y libertades —el uso de la fuerza, una detención, una entrada y registro— resulte adecuada al fin legítimo perseguido, necesaria por no existir una alternativa menos lesiva igualmente eficaz, y equilibrada en sentido estricto, ponderando los bienes en conflicto; se trata de un principio a la vez jurídico y ético, cuya infracción no solo genera responsabilidad legal, sino que resulta éticamente reprochable en el ejercicio de la función policial.",
+  },
+  {
+    id: "pesa-14",
+    enunciado: "¿Qué papel desempeña la imparcialidad como principio ético frente a presiones externas en el ejercicio de funciones públicas?",
+    opciones: [
+      "Exige que la actuación de quien ejerce una función pública se guíe exclusivamente por criterios objetivos y el interés general, resistiendo presiones de tipo político, económico o personal que pudieran desviarla de dicho criterio",
+      "Permite ceder a cualquier presión externa siempre que provenga de una autoridad jerárquicamente superior",
+      "Solo resulta exigible en el ámbito judicial, sin aplicación a la función policial o administrativa",
+      "Es incompatible con el cumplimiento de las órdenes recibidas de un superior jerárquico",
+    ],
+    correcta: 0,
+    explicacion:
+      "La imparcialidad, como principio ético de la función pública, exige que quien la ejerce guíe su actuación exclusivamente por criterios objetivos y por el interés general, resistiendo presiones de tipo político, económico, mediático o personal que pudieran desviarla de dicho criterio; este principio no es incompatible con el debido cumplimiento de las órdenes de un superior jerárquico, siempre que estas se ajusten al ordenamiento jurídico.",
+  },
+  {
+    id: "pesa-15",
+    enunciado: "¿Qué relación existe entre la ética profesional y la llamada «cultura de la integridad» en las organizaciones públicas?",
+    opciones: [
+      "La cultura de la integridad busca interiorizar los principios éticos como parte de los valores compartidos de la organización, de modo que la conducta ética no dependa únicamente de sanciones externas, sino también de un compromiso interno asumido por sus miembros",
+      "Son conceptos completamente independientes, sin ninguna relación entre sí",
+      "La cultura de la integridad se limita exclusivamente a la existencia de un régimen sancionador disciplinario",
+      "La ética profesional queda excluida por completo cuando existe un código deontológico escrito",
+    ],
+    correcta: 0,
+    explicacion:
+      "La llamada cultura de la integridad busca que los principios éticos se interioricen como parte de los valores compartidos de una organización, de modo que la conducta ética de sus miembros no dependa exclusivamente de la existencia de sanciones externas o de controles disciplinarios, sino también de un compromiso interno asumido y reforzado a través de la formación, el ejemplo de los superiores y el reconocimiento de las buenas prácticas dentro de la propia organización.",
+  },
 ];

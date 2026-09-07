@@ -105,4 +105,95 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "Los dos puntos se emplean para anunciar una enumeración, una explicación, una consecuencia o una cita que desarrolla, resume o cierra la idea expresada antes de ellos; el punto y coma, por su parte, se utiliza para separar los elementos de una enumeración compleja que ya contienen comas internas, o para unir proposiciones relacionadas semánticamente entre sí sin necesidad de una conjunción explícita.",
   },
+  {
+    id: "ole-09",
+    enunciado: "Según la norma académica, ¿los monosílabos como «fue», «vio», «dio» o «fe» llevan tilde?",
+    opciones: [
+      "No, como regla general los monosílabos no llevan tilde, salvo que la lleven por razón de tilde diacrítica (como «sí», «tú» o «él»)",
+      "Sí, todos los monosílabos deben llevar tilde obligatoriamente",
+      "Solo los monosílabos que terminan en vocal deben llevar tilde",
+      "Únicamente si el monosílabo tiene más de tres letras",
+    ],
+    correcta: 0,
+    explicacion:
+      "Como regla general, los monosílabos no llevan tilde en español (por ejemplo, «fue», «vio», «dio», «fe», «vi», «fui»), ya que al tener una sola sílaba no existe riesgo de confusión sobre dónde recae el acento; la única excepción es la tilde diacrítica, que se aplica a ciertos monosílabos para distinguirlos de otra palabra idéntica en la escritura pero de distinta categoría gramatical, como «sí» (afirmación) frente a «si» (condicional), o «tú» (pronombre) frente a «tu» (posesivo).",
+  },
+  {
+    id: "ole-10",
+    enunciado: "¿Cuándo se escribe mayúscula inicial después de dos puntos?",
+    opciones: [
+      "Quiere haber varias reglas específicas, entre ellas al reproducir una cita textual, tras la fórmula de saludo de una carta, o al enunciar los elementos de una lista que se presentan en líneas independientes, pero no de forma general tras cualquier uso de los dos puntos",
+      "Siempre, sin excepción, cada vez que se emplean los dos puntos",
+      "Nunca se escribe mayúscula después de dos puntos, en ningún caso",
+      "Únicamente cuando los dos puntos preceden a un número",
+    ],
+    correcta: 0,
+    explicacion:
+      "La mayúscula tras los dos puntos no es automática, sino que se reserva para casos concretos: al reproducir una cita textual («Como dijo el autor: \"La libertad...\"»), tras la fórmula de saludo de una carta o correo («Estimados señores:\\nLes escribo...»), o al enumerar elementos que se presentan en líneas independientes; en el resto de casos (como al anunciar una enumeración dentro de la misma línea), lo habitual es continuar con minúscula.",
+  },
+  {
+    id: "ole-11",
+    enunciado: "¿Qué función cumple la diéresis en palabras como «pingüino» o «cigüeña»?",
+    opciones: [
+      "Indica que la «u» de las sílabas «gue», «gui» debe pronunciarse, ya que de otro modo dicha «u» sería muda",
+      "Indica que la sílaba correspondiente debe pronunciarse con mayor intensidad",
+      "Sustituye a la tilde en las palabras esdrújulas",
+      "Es un signo exclusivo de las lenguas cooficiales españolas, ajeno al castellano",
+    ],
+    correcta: 0,
+    explicacion:
+      "La diéresis (los dos puntos sobre la «u») indica que, en las sílabas «gue» y «gui», la «u» debe pronunciarse, ya que de otro modo sería muda (como ocurre en «guerra» o «guitarra»); así, «pingüino» se pronuncia con el sonido de la «u», a diferencia de palabras como «guiso», donde la «u» no suena.",
+  },
+  {
+    id: "ole-12",
+    enunciado: "Según la ortografía académica, ¿cuándo se escribe generalmente «x» y no «s» en palabras como «exhaustivo» o «extraordinario»?",
+    opciones: [
+      "En palabras que contienen los prefijos «ex-» (fuera de, más allá de) o «extra-» (fuera de, sumamente), entre otras reglas específicas del sistema ortográfico",
+      "La elección entre «x» y «s» es completamente libre y no responde a ninguna regla",
+      "Siempre que la palabra tenga más de cuatro sílabas",
+      "Únicamente en palabras de origen inglés incorporadas al español",
+    ],
+    correcta: 0,
+    explicacion:
+      "Entre las reglas relativas al uso de la «x», se escriben con esta letra las palabras que contienen los prefijos «ex-» (con el sentido de fuera de o más allá de, como en «exhaustivo» o «excarcelar») y «extra-» (fuera de, o con el sentido de sumamente, como en «extraordinario» o «extraterritorial»), entre otras reglas específicas que fija la ortografía académica para esta letra.",
+  },
+  {
+    id: "ole-13",
+    enunciado: "¿Qué recomienda la ortografía académica sobre el uso de comillas y cursiva para los extranjerismos no adaptados?",
+    opciones: [
+      "Se recomienda escribir en cursiva (o entrecomillados, si no se dispone de cursiva) los extranjerismos crudos que conservan su grafía y pronunciación originales y no se han adaptado al español",
+      "Los extranjerismos nunca deben distinguirse tipográficamente del resto del texto",
+      "Deben escribirse siempre en mayúsculas, sin excepción",
+      "Deben traducirse siempre al español, sin conservar en ningún caso la palabra extranjera",
+    ],
+    correcta: 0,
+    explicacion:
+      "La ortografía académica recomienda escribir en cursiva (o, en su defecto, entre comillas) los extranjerismos crudos, es decir, aquellos que conservan su grafía y pronunciación de origen sin haberse adaptado al español (como «software» o «marketing»), a diferencia de los extranjerismos ya adaptados (como «fútbol» o «champán»), que se escriben en redonda, como el resto de las palabras españolas.",
+  },
+  {
+    id: "ole-14",
+    enunciado: "¿Qué indica el uso de la coma antes de conjunciones adversativas como «pero», «sino» o «aunque»?",
+    opciones: [
+      "Se escribe habitualmente una coma inmediatamente antes de estas conjunciones cuando introducen una oración que contrapone o matiza lo expresado anteriormente",
+      "Está prohibido escribir una coma antes de cualquier conjunción en español",
+      "Solo se permite ante la conjunción «pero», nunca ante «sino» o «aunque»",
+      "Únicamente se aplica en textos literarios, nunca en textos administrativos o técnicos",
+    ],
+    correcta: 0,
+    explicacion:
+      "Como norma general de puntuación, se escribe una coma inmediatamente antes de las conjunciones adversativas «pero», «sino» (y su variante «sino que») y, en determinados usos, «aunque», cuando estas introducen una oración que contrapone, matiza o restringe lo expresado en la oración anterior (por ejemplo, «Estudió mucho, pero no aprobó el examen»).",
+  },
+  {
+    id: "ole-15",
+    enunciado: "¿Qué exige la norma académica sobre la puntuación al final de una pregunta o exclamación cuando esta no ocupa la totalidad del enunciado?",
+    opciones: [
+      "El signo de interrogación o exclamación de cierre marca por sí mismo el final de esa parte del enunciado, sin que sea necesario añadir además un punto justo después",
+      "Debe añadirse siempre un punto inmediatamente después del signo de cierre, sin excepción",
+      "Debe repetirse el signo de apertura después del de cierre",
+      "Los signos de interrogación y exclamación nunca pueden usarse dentro de un enunciado más amplio",
+    ],
+    correcta: 0,
+    explicacion:
+      "El signo de cierre de interrogación o de exclamación (¿…? / ¡…!) ya marca por sí mismo el final de esa secuencia, por lo que la ortografía académica indica que no debe añadirse un punto justo después de dicho signo; sí es posible, en cambio, continuar el enunciado con una coma u otro signo si la oración prosigue («¿Vienes?, porque ya nos vamos»).",
+  },
 ];

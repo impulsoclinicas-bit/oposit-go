@@ -105,4 +105,95 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El envejecimiento demográfico es el proceso por el cual aumenta el peso relativo de la población de mayor edad (habitualmente mayores de 65 años) sobre el conjunto de la población total de un territorio, como consecuencia principalmente del descenso de la tasa de natalidad y del incremento de la esperanza de vida.",
   },
+  {
+    id: "cgh-09",
+    enunciado: "¿Qué mide la «tasa de mortalidad» en demografía?",
+    opciones: [
+      "El número de defunciones registradas en un año por cada mil habitantes de una población",
+      "El número total de defunciones acumuladas en toda la historia de un territorio",
+      "El porcentaje de población mayor de 65 años sobre el total",
+      "La esperanza de vida media de una población",
+    ],
+    correcta: 0,
+    explicacion:
+      "La tasa de mortalidad es un indicador demográfico que expresa el número de defunciones registradas en un año por cada mil habitantes de una población, y constituye, junto con la tasa de natalidad, uno de los componentes básicos del crecimiento vegetativo.",
+  },
+  {
+    id: "cgh-10",
+    enunciado: "¿Qué es el «crecimiento vegetativo» o «crecimiento natural» de una población?",
+    opciones: [
+      "La diferencia entre la tasa de natalidad y la tasa de mortalidad de un territorio en un período determinado, sin tener en cuenta los movimientos migratorios",
+      "El crecimiento de la población debido exclusivamente a la inmigración",
+      "Un sinónimo de densidad de población",
+      "El crecimiento económico de un territorio medido en términos de PIB",
+    ],
+    correcta: 0,
+    explicacion:
+      "El crecimiento vegetativo o crecimiento natural es la diferencia entre la tasa de natalidad y la tasa de mortalidad de un territorio en un período determinado, reflejando el balance entre nacimientos y defunciones sin considerar los movimientos migratorios, que se incorporan al hablar de crecimiento real o total de la población.",
+  },
+  {
+    id: "cgh-11",
+    enunciado: "¿Qué es el «saldo migratorio»?",
+    opciones: [
+      "La diferencia entre el número de personas que entran (inmigración) y el número de personas que salen (emigración) de un territorio en un período determinado",
+      "Un sinónimo exacto de tasa de natalidad",
+      "El número total de solicitudes de asilo presentadas en un país",
+      "La diferencia entre exportaciones e importaciones de un país",
+    ],
+    correcta: 0,
+    explicacion:
+      "El saldo migratorio es la diferencia entre el número de personas que entran en un territorio (inmigración) y el número de personas que salen de él (emigración) durante un período determinado; un saldo migratorio positivo indica que las entradas superan a las salidas, y viceversa.",
+  },
+  {
+    id: "cgh-12",
+    enunciado: "¿Qué mide la «tasa de urbanización» de un territorio?",
+    opciones: [
+      "El porcentaje de la población total que reside en núcleos urbanos, frente a la que reside en núcleos rurales",
+      "El número de edificios construidos en un año en una ciudad",
+      "La superficie total ocupada por zonas urbanas en kilómetros cuadrados",
+      "El porcentaje de población que trabaja en el sector de la construcción",
+    ],
+    correcta: 0,
+    explicacion:
+      "La tasa de urbanización mide el porcentaje de la población total de un territorio que reside en núcleos urbanos, en contraposición a la que reside en núcleos rurales, siendo un indicador clave para analizar los procesos de concentración de la población característicos de las sociedades industrializadas y posindustriales.",
+  },
+  {
+    id: "cgh-13",
+    enunciado: "¿Qué se entiende por «área metropolitana»?",
+    opciones: [
+      "Un espacio urbano integrado por una ciudad central y los municipios de su entorno, funcionalmente interrelacionados por flujos de población, trabajo y servicios, aunque administrativamente sean independientes",
+      "Un sinónimo exacto de comunidad autónoma",
+      "Una zona exclusivamente rural sin ningún núcleo urbano relevante",
+      "Un término aplicable solo a capitales de Estado",
+    ],
+    correcta: 0,
+    explicacion:
+      "Un área metropolitana es un espacio urbano integrado por una ciudad central (o varias) y los municipios de su entorno, que mantienen entre sí una fuerte interrelación funcional en términos de movilidad de la población, mercado de trabajo y prestación de servicios, con independencia de que cada municipio conserve su propia administración local.",
+  },
+  {
+    id: "cgh-14",
+    enunciado: "¿Qué mide la «esperanza de vida al nacer»?",
+    opciones: [
+      "El número medio de años que se espera que viva una persona nacida en un año determinado, si se mantuvieran constantes las condiciones de mortalidad de ese momento",
+      "El número de años que ha vivido efectivamente la persona de mayor edad de un país",
+      "Un sinónimo de tasa de natalidad",
+      "El número de años que dura la vida laboral media de una persona",
+    ],
+    correcta: 0,
+    explicacion:
+      "La esperanza de vida al nacer es un indicador demográfico que expresa el número medio de años que se espera que viva una persona nacida en un año determinado, calculado a partir de las tasas de mortalidad por edad vigentes en ese momento, y constituye uno de los indicadores más utilizados para valorar el nivel de desarrollo y bienestar de una sociedad.",
+  },
+  {
+    id: "cgh-15",
+    enunciado: "¿Cómo se sitúa España en cuanto a densidad de población respecto de la media de la Unión Europea?",
+    opciones: [
+      "España presenta una densidad de población inferior a la media de la Unión Europea, con fuertes contrastes internos entre el litoral y las grandes áreas metropolitanas, muy densamente pobladas, y el interior peninsular, con densidades muy bajas",
+      "España tiene la densidad de población más alta de toda la Unión Europea",
+      "La densidad de población es exactamente igual en todo el territorio español",
+      "España no presenta ningún contraste territorial relevante en su distribución demográfica",
+    ],
+    correcta: 0,
+    explicacion:
+      "España presenta, en conjunto, una densidad de población inferior a la media de la Unión Europea, pero con fuertes contrastes internos: el litoral mediterráneo y atlántico y las grandes áreas metropolitanas, como Madrid o Barcelona, concentran densidades muy elevadas, mientras que amplias zonas del interior peninsular presentan densidades muy bajas, fenómeno vinculado al éxodo rural y a la llamada «España vaciada».",
+  },
 ];
