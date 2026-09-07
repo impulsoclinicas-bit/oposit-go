@@ -106,4 +106,64 @@ export const preguntas: Pregunta[] = [
     correcta: 1,
     explicacion: "El art. 2.2 remite, en todo lo no previsto, a la Ley de Enjuiciamiento Criminal, en particular a lo dispuesto para el procedimiento abreviado.",
   },
+  {
+    id: "fe-11",
+    enunciado: "¿Dónde tiene su sede la Fiscalía Europea creada por el Reglamento (UE) 2017/1939?",
+    opciones: ["Madrid", "Bruselas", "Luxemburgo", "Estrasburgo"],
+    correcta: 2,
+    explicacion:
+      "La Fiscalía Europea, creada por el Reglamento (UE) 2017/1939, tiene su sede central en Luxemburgo, sin perjuicio de que los Fiscales europeos delegados ejerzan sus funciones de forma descentralizada en cada Estado miembro participante (en España, con sede en Madrid, conforme al art. 16.1 de la LO 9/2021).",
+  },
+  {
+    id: "fe-12",
+    enunciado: "¿Participan todos los Estados miembros de la Unión Europea en la Fiscalía Europea?",
+    opciones: [
+      "Sí, su participación es obligatoria para todos los Estados miembros sin excepción",
+      "No, se constituyó mediante el mecanismo de cooperación reforzada y no todos los Estados miembros participan en ella",
+      "Solo participan los Estados fundadores originales de la Unión Europea",
+      "Únicamente participan los Estados de la eurozona",
+    ],
+    correcta: 1,
+    explicacion:
+      "La Fiscalía Europea se constituyó mediante el mecanismo de cooperación reforzada previsto en los Tratados de la Unión Europea, lo que permite que no todos los Estados miembros participen en ella; España sí forma parte de los Estados participantes, cuyo número ha ido incrementándose desde la puesta en marcha del organismo.",
+  },
+  {
+    id: "fe-13",
+    enunciado: "¿Qué es el Colegio de la Fiscalía Europea?",
+    opciones: [
+      "El órgano compuesto por el Fiscal Europeo Jefe y un Fiscal Europeo por cada Estado miembro participante, encargado de supervisar las actividades de la Fiscalía Europea y adoptar decisiones sobre cuestiones estratégicas y generales",
+      "Un órgano exclusivamente académico de formación de fiscales",
+      "Un sinónimo de los Fiscales europeos delegados destinados en cada Estado miembro",
+      "Un tribunal encargado de resolver los recursos contra las decisiones de los Fiscales europeos delegados",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Colegio de la Fiscalía Europea está compuesto por el Fiscal Europeo Jefe y un Fiscal Europeo por cada Estado miembro participante, y es el órgano encargado de supervisar las actividades generales de la institución, adoptar decisiones sobre cuestiones estratégicas y resolver cuestiones generales derivadas de casos concretos, sin perjuicio de que la dirección operativa de las investigaciones corresponda a las Salas Permanentes y a los Fiscales europeos delegados.",
+  },
+  {
+    id: "fe-14",
+    enunciado: "¿Se limita la competencia de la Fiscalía Europea exclusivamente a los delitos que perjudican directamente el presupuesto de la Unión Europea, o alcanza también a otros supuestos?",
+    opciones: [
+      "Alcanza también a los delitos graves de fraude transfronterizo del IVA que superen un umbral de perjuicio conjunto determinado, además de los delitos que perjudican los intereses financieros de la Unión en sentido estricto",
+      "Se limita en exclusiva a los delitos de corrupción cometidos por autoridades nacionales",
+      "Comprende cualquier delito cometido dentro del territorio de la Unión Europea, sin ninguna limitación",
+      "Se limita exclusivamente a delitos de blanqueo de capitales",
+    ],
+    correcta: 0,
+    explicacion:
+      "Además de los delitos que perjudican directamente los intereses financieros de la Unión Europea (fraude en subvenciones o contratación pública europea, entre otros), la competencia de la Fiscalía Europea alcanza también a los delitos graves de fraude transfronterizo del IVA que superen un umbral de perjuicio conjunto determinado, en la medida en que dicho fraude repercute igualmente en los recursos propios de la Unión.",
+  },
+  {
+    id: "fe-15",
+    enunciado: "¿Qué diferencia a la Fiscalía Europea de la Oficina Europea de Lucha contra el Fraude (OLAF)?",
+    opciones: [
+      "La Fiscalía Europea tiene competencias de investigación y ejercicio de la acción penal ante los tribunales nacionales; la OLAF realiza investigaciones administrativas, pero carece de potestad para instruir causas penales o ejercer la acusación",
+      "Son organismos completamente idénticos, con las mismas competencias y facultades",
+      "La OLAF tiene competencias penales más amplias que la Fiscalía Europea",
+      "La Fiscalía Europea sustituye por completo a la OLAF, que ha dejado de existir",
+    ],
+    correcta: 0,
+    explicacion:
+      "La Oficina Europea de Lucha contra el Fraude (OLAF) realiza investigaciones de naturaleza administrativa sobre fraudes que afectan a los intereses financieros de la Unión Europea, pero carece de potestad para instruir causas penales o ejercer la acusación ante los tribunales; la Fiscalía Europea, en cambio, tiene competencias propiamente penales, de investigación y de ejercicio de la acción penal ante los órganos judiciales nacionales, por lo que ambos organismos cooperan y se complementan sin ser equivalentes.",
+  },
 ];

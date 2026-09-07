@@ -131,4 +131,69 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 4.g) del RD 2/2006 añade, entre los principios de la acción preventiva adaptados a la función policial, estimular el interés de los funcionarios por la seguridad y la salud en el trabajo a través de adecuados mecanismos de formación e información.",
   },
+  {
+    id: "iprl-11",
+    enunciado: "Según el artículo 2.1 de la Ley 31/1995, ¿cuál es el objeto de esta norma?",
+    opciones: [
+      "Promover la seguridad y la salud de los trabajadores mediante la aplicación de medidas y el desarrollo de las actividades necesarias para la prevención de los riesgos derivados del trabajo",
+      "Regular exclusivamente el régimen retributivo de los trabajadores",
+      "Establecer el procedimiento de despido por causas objetivas",
+      "Regular únicamente la jornada laboral máxima",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 2.1 de la Ley 31/1995 establece que su objeto es promover la seguridad y la salud de los trabajadores mediante la aplicación de medidas y el desarrollo de las actividades necesarias para la prevención de los riesgos derivados del trabajo, regulando para ello las actuaciones a desarrollar por las Administraciones públicas, los empresarios, los trabajadores y sus organizaciones representativas.",
+  },
+  {
+    id: "iprl-12",
+    enunciado: "Según el artículo 3.2 de la Ley 31/1995, ¿en qué ámbitos de la función pública no resulta de aplicación esta ley, dando lugar a una normativa específica como el RD 2/2006?",
+    opciones: [
+      "Policía, seguridad y resguardo aduanero; servicios operativos de protección civil y peritaje forense en supuestos de grave riesgo o catástrofe; y Fuerzas Armadas y actividades militares de la Guardia Civil, en aquellas particularidades que lo impidan",
+      "En ningún ámbito, la Ley 31/1995 se aplica sin excepción a toda la función pública",
+      "Únicamente en el ámbito de la enseñanza pública",
+      "Solamente en el ámbito de la sanidad pública",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 3.2 excluye la aplicación directa de la Ley 31/1995, en aquellas particularidades que lo impidan, en el ámbito de las funciones públicas de policía, seguridad y resguardo aduanero, de los servicios operativos de protección civil y peritaje forense en supuestos de grave riesgo, catástrofe o calamidad pública, y de las Fuerzas Armadas y actividades militares de la Guardia Civil, si bien la propia Ley inspirará la normativa específica que se dicte para regular la protección de la seguridad y salud de quienes prestan servicios en dichas actividades, como ocurre con el RD 2/2006 para el CNP.",
+  },
+  {
+    id: "iprl-13",
+    enunciado: "¿Qué carácter atribuye el artículo 2.2 de la Ley 31/1995 a sus disposiciones de carácter laboral?",
+    opciones: [
+      "El de Derecho necesario mínimo indisponible, pudiendo ser mejoradas y desarrolladas en los convenios colectivos",
+      "El de normas meramente orientativas sin ningún carácter vinculante",
+      "El de disposiciones que solo pueden ser mejoradas mediante ley orgánica",
+      "El de normas de aplicación exclusivamente voluntaria para el empresario",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 2.2 atribuye a las disposiciones de carácter laboral contenidas en la Ley 31/1995 y en sus normas reglamentarias el carácter de Derecho necesario mínimo indisponible, lo que significa que constituyen un mínimo de protección que no puede rebajarse, si bien puede ser mejorado y desarrollado en los convenios colectivos.",
+  },
+  {
+    id: "iprl-14",
+    enunciado: "¿Qué es el Instituto Nacional de Seguridad e Higiene en el Trabajo, según el artículo 8 de la Ley 31/1995?",
+    opciones: [
+      "El órgano científico técnico especializado de la Administración General del Estado que analiza y estudia las condiciones de seguridad y salud en el trabajo, y promueve y apoya su mejora",
+      "Un sindicato de trabajadores especializado en seguridad laboral",
+      "Un organismo dependiente exclusivamente de las Comunidades Autónomas, sin ámbito estatal",
+      "Un tribunal encargado de resolver sanciones por infracciones en materia de prevención",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 8 define al Instituto Nacional de Seguridad e Higiene en el Trabajo como el órgano científico técnico especializado de la Administración General del Estado que tiene como misión el análisis y estudio de las condiciones de seguridad y salud en el trabajo, así como la promoción y apoyo a su mejora, prestando además asesoramiento técnico en la elaboración de normativa y colaborando con la Inspección de Trabajo y Seguridad Social.",
+  },
+  {
+    id: "iprl-15",
+    enunciado: "Según el artículo 9 de la Ley 31/1995, ¿a quién corresponde la función de vigilancia y control del cumplimiento de la normativa sobre prevención de riesgos laborales?",
+    opciones: [
+      "A la Inspección de Trabajo y Seguridad Social",
+      "Exclusivamente a los Delegados de Prevención de cada empresa",
+      "Únicamente a los Juzgados de lo Social",
+      "A cada empresario de forma autónoma, sin ningún control externo",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 9.1 atribuye a la Inspección de Trabajo y Seguridad Social la función de vigilancia y control del cumplimiento de la normativa sobre prevención de riesgos laborales, así como de las normas jurídico-técnicas que incidan en las condiciones de trabajo en materia de prevención, pudiendo proponer a la autoridad laboral competente la sanción correspondiente cuando compruebe una infracción.",
+  },
 ];

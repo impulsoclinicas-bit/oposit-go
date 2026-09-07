@@ -131,4 +131,69 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 197.3 castiga con prisión de dos a cinco años difundir, revelar o ceder a terceros los datos o hechos descubiertos, o las imágenes captadas, a que se refieren los apartados 1 y 2 del mismo artículo.",
   },
+  {
+    id: "dinf-11",
+    enunciado: "Según el artículo 197.6, ¿cómo se agravan las penas de los apartados 1 a 4 cuando los hechos se realizan con fines lucrativos?",
+    opciones: [
+      "Se imponen en su mitad superior; y si además afectan a datos especialmente sensibles del apartado 5, la pena será de prisión de cuatro a siete años",
+      "No existe ninguna agravación por la finalidad lucrativa",
+      "Se sustituye la pena de prisión por una multa proporcional al lucro obtenido",
+      "Solo se agravan si el lucro obtenido supera los 50.000 euros",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 197.6 dispone que, si los hechos se realizan con fines lucrativos, se impondrán las penas respectivamente previstas en los apartados 1 a 4 del artículo en su mitad superior, y si además afectan a los datos especialmente sensibles mencionados en el apartado 5, la pena será de prisión de cuatro a siete años.",
+  },
+  {
+    id: "dinf-12",
+    enunciado: "¿Qué castiga el artículo 197.7 (conocido popularmente como delito de \"sextorsión\" o difusión no consentida de imágenes íntimas)?",
+    opciones: [
+      "Difundir, revelar o ceder a terceros, sin autorización de la persona afectada, imágenes o grabaciones audiovisuales de ella obtenidas con su anuencia en un domicilio o lugar fuera del alcance de terceros, cuando ello menoscabe gravemente su intimidad personal",
+      "La simple grabación de imágenes en un lugar público con consentimiento del afectado",
+      "El almacenamiento privado de fotografías propias sin ninguna difusión",
+      "La publicación de imágenes tomadas en un acto público y abierto al general",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 197.7 castiga con prisión de tres meses a un año o multa de seis a doce meses a quien, sin autorización de la persona afectada, difunda, revele o ceda a terceros imágenes o grabaciones audiovisuales de ella obtenidas con su anuencia en un domicilio o en cualquier otro lugar fuera del alcance de la mirada de terceros, cuando la divulgación menoscabe gravemente su intimidad personal; la pena se agrava cuando los hechos los cometa el cónyuge o pareja, la víctima sea menor o persona con discapacidad, o exista finalidad lucrativa.",
+  },
+  {
+    id: "dinf-13",
+    enunciado: "¿Qué castiga el artículo 249.2 como actos preparatorios de la estafa informática?",
+    opciones: [
+      "Fabricar, importar, poseer, transportar, comerciar o facilitar a terceros dispositivos, instrumentos, datos o programas informáticos específicamente diseñados o adaptados para cometer las estafas del artículo 249.1",
+      "La simple posesión de un ordenador personal, sin ninguna otra circunstancia",
+      "El desarrollo de software antivirus legítimo",
+      "La comercialización de tarjetas de crédito por parte de las propias entidades bancarias",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 249.2 castiga con la misma pena que la estafa informática a quienes fabriquen, importen, obtengan, posean, transporten, comercien o de otro modo faciliten a terceros dispositivos, instrumentos, datos o programas informáticos, o cualquier otro medio diseñado o adaptado específicamente para la comisión de las estafas previstas en el apartado 1 del mismo artículo.",
+  },
+  {
+    id: "dinf-14",
+    enunciado: "¿Qué diferencia principal existe entre el delito del artículo 249.1.a (estafa informática) y el del artículo 264.1 (daños informáticos)?",
+    opciones: [
+      "La estafa informática exige ánimo de lucro y persigue una transferencia patrimonial no consentida en perjuicio de otro; los daños informáticos no exigen ánimo de lucro, sino la producción de un resultado grave de borrado, alteración o inutilización de datos o sistemas",
+      "Son exactamente el mismo delito, con dos numeraciones distintas en el Código Penal",
+      "Los daños informáticos exigen siempre ánimo de lucro, igual que la estafa",
+      "La estafa informática nunca puede cometerse mediante manipulación de datos, solo mediante engaño directo a la víctima",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 249.1.a exige ánimo de lucro y persigue lograr, mediante manipulación informática, una transferencia patrimonial no consentida en perjuicio de otro, protegiendo directamente el patrimonio; el art. 264.1, en cambio, no exige ánimo de lucro, sino que castiga la producción de un resultado grave consistente en borrar, dañar, alterar o hacer inaccesibles datos, programas o documentos electrónicos ajenos, protegiendo la integridad y disponibilidad de los sistemas de información como bien jurídico distinto del patrimonio.",
+  },
+  {
+    id: "dinf-15",
+    enunciado: "¿Qué elemento exige el artículo 264.1 para que el borrado o alteración de datos informáticos constituya delito, y no una mera incidencia técnica sin relevancia penal?",
+    opciones: [
+      "Que la conducta se realice sin autorización y de manera grave, y que el resultado producido sea también grave",
+      "Que el autor sea necesariamente un empleado de la empresa afectada",
+      "Que se produzca durante el horario laboral habitual de la víctima",
+      "Que el hecho se cometa utilizando exclusivamente un ordenador portátil",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 264.1 exige que la conducta —borrar, dañar, deteriorar, alterar, suprimir o hacer inaccesibles datos, programas o documentos electrónicos ajenos— se realice sin autorización y de manera grave, y que el resultado producido sea también grave, de modo que las incidencias técnicas menores o los borrados sin relevancia significativa quedan fuera del ámbito de este delito.",
+  },
 ];

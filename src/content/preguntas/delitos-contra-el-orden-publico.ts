@@ -131,4 +131,69 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 560 castiga con prisión de uno a cinco años a quienes causen daños que interrumpan, obstaculicen o destruyan líneas o instalaciones de telecomunicaciones, la correspondencia postal, vías férreas, o conducciones de agua, gas o electricidad para las poblaciones.",
   },
+  {
+    id: "dop-11",
+    enunciado: "Según el artículo 550.3, ¿cómo se agrava el atentado cuando la autoridad agredida es miembro del Gobierno, parlamentario o juez?",
+    opciones: [
+      "Se impone la pena de prisión de uno a seis años y multa de seis a doce meses",
+      "Se aplica exactamente la misma pena que si la víctima fuera un agente ordinario",
+      "El hecho queda despenalizado por tratarse de un alto cargo",
+      "Se sustituye la pena de prisión por una simple amonestación",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 550.3 agrava el atentado a la pena de prisión de uno a seis años y multa de seis a doce meses cuando la autoridad contra la que se atenta sea miembro del Gobierno, de los Consejos de Gobierno autonómicos, del Congreso, del Senado, de las Asambleas Legislativas autonómicas, de las Corporaciones locales, del CGPJ, magistrado del Tribunal Constitucional, juez, magistrado o miembro del Ministerio Fiscal.",
+  },
+  {
+    id: "dop-12",
+    enunciado: "¿Qué castiga el artículo 553 respecto de la provocación, la conspiración y la proposición para el atentado?",
+    opciones: [
+      "Se castigan con la pena inferior en uno o dos grados a la del delito correspondiente",
+      "Se castigan exactamente con la misma pena que el atentado consumado",
+      "Quedan impunes por tratarse de actos meramente preparatorios",
+      "Solo se castiga la conspiración, nunca la provocación ni la proposición",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 553 castiga la provocación, la conspiración y la proposición para cualquiera de los delitos de atentado con la pena inferior en uno o dos grados a la del delito correspondiente.",
+  },
+  {
+    id: "dop-13",
+    enunciado: "¿Qué castiga el artículo 557 bis respecto de la invasión u ocupación de locales?",
+    opciones: [
+      "Invadir u ocupar en grupo, contra la voluntad de su titular, el domicilio de una persona jurídica, un despacho, oficina, establecimiento o local, causando una perturbación relevante de la paz pública y de su actividad normal",
+      "El acceso autorizado a un local con permiso expreso de su titular",
+      "La ocupación individual, sin actuación en grupo, de cualquier tipo de inmueble",
+      "Solo la ocupación de viviendas particulares deshabitadas",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 557 bis castiga con prisión de tres a seis meses o multa de seis a doce meses a quienes, actuando en grupo, invadan u ocupen, contra la voluntad de su titular, el domicilio de una persona jurídica pública o privada, un despacho, oficina, establecimiento o local, aunque esté abierto al público, causando con ello una perturbación relevante de la paz pública y de su actividad normal.",
+  },
+  {
+    id: "dop-14",
+    enunciado: "¿Qué castiga el artículo 558 respecto de la perturbación del orden en actos públicos?",
+    opciones: [
+      "Perturbar gravemente el orden en la audiencia de un tribunal o juzgado, en actos públicos de cualquier autoridad, en colegio electoral, o con motivo de espectáculos deportivos o culturales",
+      "Cualquier manifestación pacífica autorizada por la autoridad competente",
+      "Únicamente la perturbación producida dentro de un centro penitenciario",
+      "El simple hecho de asistir a un juicio como público",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 558 castiga con prisión de tres a seis meses o multa de seis a doce meses a quienes perturben gravemente el orden en la audiencia de un tribunal o juzgado, en los actos públicos propios de cualquier autoridad o corporación, en colegio electoral, oficina o establecimiento público, centro docente o con motivo de espectáculos deportivos o culturales, pudiendo además imponerse la privación de acudir a lugares o eventos similares.",
+  },
+  {
+    id: "dop-15",
+    enunciado: "Según el artículo 556.2, ¿qué pena se impone por faltar al respeto y consideración debida a la autoridad en el ejercicio de sus funciones?",
+    opciones: [
+      "Multa de uno a tres meses",
+      "Prisión de uno a cuatro años",
+      "Prisión permanente revisable",
+      "No está tipificado como infracción penal",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 556.2 castiga con multa de uno a tres meses a quienes falten al respeto y consideración debida a la autoridad en el ejercicio de sus funciones, un tipo de menor gravedad frente a la resistencia o desobediencia grave del art. 556.1 y frente al atentado del art. 550.",
+  },
 ];

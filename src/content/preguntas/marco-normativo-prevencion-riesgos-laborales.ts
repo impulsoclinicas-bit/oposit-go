@@ -131,4 +131,69 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 19 del RD 2/2006 somete el sistema de prevención de riesgos a control periódico mediante auditorías y evaluaciones realizadas cada cinco años por la Inspección de Personal y Servicios de Seguridad de la Secretaría de Estado de Seguridad.",
   },
+  {
+    id: "mnprl-11",
+    enunciado: "¿Qué prohíbe el artículo 32 de la Ley 31/1995 a las Mutuas Colaboradoras con la Seguridad Social?",
+    opciones: [
+      "Desarrollar las funciones correspondientes a los servicios de prevención ajenos, o participar con cargo a su patrimonio histórico en el capital social de una sociedad mercantil cuyo objeto sea la actividad de prevención",
+      "Colaborar con la Seguridad Social en la gestión de las prestaciones por accidente de trabajo",
+      "Prestar asistencia sanitaria a los trabajadores accidentados",
+      "Financiar campañas de sensibilización sobre seguridad laboral",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 32 prohíbe a las Mutuas Colaboradoras con la Seguridad Social desarrollar las funciones propias de los servicios de prevención ajenos, así como participar con cargo a su patrimonio histórico en el capital social de una sociedad mercantil en cuyo objeto figure la actividad de prevención, evitando así conflictos de interés en la gestión de la prevención de riesgos laborales.",
+  },
+  {
+    id: "mnprl-12",
+    enunciado: "Según el artículo 32 bis, ¿en qué supuestos resulta necesaria la presencia de los recursos preventivos en el centro de trabajo?",
+    opciones: [
+      "Cuando los riesgos puedan agravarse por la concurrencia de operaciones diversas, cuando se realicen actividades reglamentariamente consideradas peligrosas, o cuando lo requiera la Inspección de Trabajo y Seguridad Social",
+      "En cualquier actividad laboral, sin excepción, de forma permanente",
+      "Únicamente en las empresas de más de 500 trabajadores",
+      "Nunca, la presencia de recursos preventivos es siempre facultativa y nunca obligatoria",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 32 bis exige la presencia en el centro de trabajo de los recursos preventivos cuando los riesgos puedan verse agravados o modificados por la concurrencia de operaciones diversas que se desarrollen sucesiva o simultáneamente, cuando se realicen actividades o procesos reglamentariamente considerados peligrosos o con riesgos especiales, o cuando dicha presencia sea requerida por la Inspección de Trabajo y Seguridad Social.",
+  },
+  {
+    id: "mnprl-13",
+    enunciado: "Según el artículo 33, ¿sobre qué decisiones debe el empresario consultar a los trabajadores con la debida antelación?",
+    opciones: [
+      "Entre otras, la planificación y organización del trabajo con incidencia en la seguridad y salud, la organización de las actividades de protección y prevención, la designación de los trabajadores encargados de las medidas de emergencia, y el proyecto de formación preventiva",
+      "Únicamente sobre el importe de las nóminas mensuales",
+      "Exclusivamente sobre la ubicación física de las oficinas",
+      "Sobre ninguna decisión, la consulta a los trabajadores no es obligatoria en ningún caso",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 33.1 obliga al empresario a consultar a los trabajadores, con la debida antelación, decisiones como la planificación y organización del trabajo y la introducción de nuevas tecnologías con incidencia en la seguridad y salud, la organización y desarrollo de las actividades de protección y prevención, la designación de los trabajadores encargados de las medidas de emergencia, y el proyecto y la organización de la formación en materia preventiva, entre otras cuestiones con efectos sustanciales sobre la seguridad y la salud.",
+  },
+  {
+    id: "mnprl-14",
+    enunciado: "¿Qué obligación impone el artículo 41 a los fabricantes, importadores y suministradores de maquinaria, equipos y productos de trabajo?",
+    opciones: [
+      "Asegurar que estos no constituyan una fuente de peligro para el trabajador cuando se instalen y utilicen en las condiciones recomendadas, y suministrar la información necesaria sobre su forma correcta de utilización y los riesgos que conllevan",
+      "Ninguna obligación específica distinta de la de cualquier otro vendedor de bienes de consumo",
+      "Únicamente responder civilmente ante el empresario, sin ninguna obligación de informar",
+      "Formar directamente a cada trabajador que vaya a utilizar el equipo",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 41 obliga a los fabricantes, importadores y suministradores de maquinaria, equipos, productos y útiles de trabajo a asegurar que estos no constituyan una fuente de peligro para el trabajador cuando se instalen y utilicen en las condiciones recomendadas, así como a suministrar la información que indique su forma correcta de utilización, las medidas preventivas adicionales y los riesgos laborales que conlleven su uso normal o su manipulación inadecuada.",
+  },
+  {
+    id: "mnprl-15",
+    enunciado: "Según el artículo 42.1, ¿qué tipos de responsabilidad puede generar el incumplimiento por los empresarios de sus obligaciones en materia de prevención de riesgos laborales?",
+    opciones: [
+      "Responsabilidades administrativas y, en su caso, responsabilidades penales y civiles por los daños y perjuicios derivados de dicho incumplimiento",
+      "Únicamente responsabilidad civil, nunca administrativa ni penal",
+      "Ninguna responsabilidad si el incumplimiento no ha causado ningún accidente",
+      "Solo responsabilidad penal, quedando excluida la vía administrativa",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 42.1 dispone que el incumplimiento por los empresarios de sus obligaciones en materia de prevención de riesgos laborales dará lugar a responsabilidades administrativas, así como, en su caso, a responsabilidades penales y a las civiles por los daños y perjuicios que puedan derivarse de dicho incumplimiento, siendo estas responsabilidades compatibles entre sí y con el recargo de prestaciones de la Seguridad Social.",
+  },
 ];

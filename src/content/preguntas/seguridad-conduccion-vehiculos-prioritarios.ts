@@ -131,4 +131,69 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "Concluido el servicio urgente, conviene restablecer un patrón de conducción normal cuanto antes, evitando prolongar el uso de señales especiales sin necesidad y siendo consciente de que la tensión acumulada durante la intervención puede persistir y afectar a la atención durante el trayecto de regreso.",
   },
+  {
+    id: "scvp-11",
+    enunciado: "¿Qué técnica se recomienda con el volante ante una maniobra evasiva brusca?",
+    opciones: [
+      "Mantener ambas manos sujetando el volante en una posición que permita girarlo con rapidez y control en cualquier dirección, evitando cruzar los brazos o soltar una mano en el momento crítico",
+      "Conducir con una sola mano en todo momento, para tener la otra libre para otras tareas",
+      "Girar el volante lo más bruscamente posible, sin ninguna otra consideración",
+      "Soltar el volante por completo y frenar únicamente con el pedal de freno",
+    ],
+    correcta: 0,
+    explicacion:
+      "Ante una maniobra evasiva brusca, la técnica recomendada es mantener ambas manos sujetando firmemente el volante en una posición que permita girarlo con rapidez y control hacia cualquier dirección, evitando cruzar los brazos al girar o soltar una mano en el momento crítico, lo que reduce la capacidad de reacción y de corrección posterior de la trayectoria.",
+  },
+  {
+    id: "scvp-12",
+    enunciado: "¿Qué se recomienda hacer con el pedal de freno en un vehículo equipado con sistema antibloqueo de frenos (ABS) ante una frenada de emergencia?",
+    opciones: [
+      "Pisar el freno de forma firme y sostenida, dejando que el propio sistema ABS module la presión sobre las ruedas, sin dar golpes intermitentes al pedal",
+      "Dar golpes cortos e intermitentes al pedal de freno, como se hacía en vehículos sin ABS",
+      "No frenar en ningún caso y confiar únicamente en el volante para evitar el obstáculo",
+      "Frenar solo con el freno de mano, evitando el pedal de freno de servicio",
+    ],
+    correcta: 0,
+    explicacion:
+      "En un vehículo equipado con sistema antibloqueo de frenos (ABS), la técnica correcta ante una frenada de emergencia consiste en pisar el pedal de freno de forma firme y sostenida, dejando que sea el propio sistema el que module automáticamente la presión sobre cada rueda para evitar su bloqueo, a diferencia de la técnica de frenado intermitente que se recomendaba en vehículos sin ABS.",
+  },
+  {
+    id: "scvp-13",
+    enunciado: "¿Qué recomienda la técnica de conducción segura sobre la dirección de la mirada al afrontar una curva o evitar un obstáculo?",
+    opciones: [
+      "Dirigir la mirada hacia el punto de destino o la trayectoria deseada, y no hacia el obstáculo que se quiere evitar, ya que el vehículo tiende a dirigirse hacia donde se fija la vista",
+      "Mantener la mirada fija exclusivamente en el obstáculo que se quiere evitar",
+      "Cerrar los ojos brevemente para reducir la tensión visual durante la maniobra",
+      "Mirar únicamente al retrovisor durante toda la maniobra evasiva",
+    ],
+    correcta: 0,
+    explicacion:
+      "La técnica de conducción segura recomienda dirigir la mirada hacia el punto de destino o la trayectoria que se desea seguir, y no hacia el obstáculo que se pretende evitar, dado que existe una tendencia natural del conductor a dirigir el vehículo hacia el punto en el que fija la vista, fenómeno especialmente relevante en maniobras evasivas y en la conducción en curva.",
+  },
+  {
+    id: "scvp-14",
+    enunciado: "¿Qué riesgo específico plantean los turnos largos o nocturnos en la conducción de vehículos prioritarios?",
+    opciones: [
+      "El aumento de la fatiga y el riesgo de microsueños, que reducen el estado de alerta y el tiempo de reacción del conductor, incluso sin que este sea consciente de dicho deterioro",
+      "Ningún riesgo adicional distinto de la conducción en turnos diurnos y de corta duración",
+      "Únicamente afecta a la comodidad del conductor, sin relación con la seguridad",
+      "Solo constituye un riesgo si el conductor circula sin compañía de un copiloto",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los turnos largos o nocturnos incrementan la fatiga acumulada y el riesgo de microsueños —breves episodios de pérdida de consciencia de apenas segundos—, que reducen sensiblemente el estado de alerta y el tiempo de reacción del conductor, con el agravante de que la persona afectada no siempre es consciente de este deterioro progresivo de su capacidad de conducción.",
+  },
+  {
+    id: "scvp-15",
+    enunciado: "¿Qué recomienda la buena praxis preventiva respecto de la velocidad al aproximarse a un cruce con visibilidad reducida, aun gozando de prioridad de paso?",
+    opciones: [
+      "Reducir la velocidad de forma anticipada para disponer de mayor margen de reacción, ya que la prioridad normativa no elimina el riesgo real derivado de la falta de visibilidad sobre otros vehículos que se aproximen",
+      "Mantener o incluso aumentar la velocidad, puesto que la prioridad de paso garantiza la ausencia de riesgo",
+      "Detenerse siempre por completo antes de cualquier cruce, exista o no visibilidad suficiente",
+      "Cerrar los ojos brevemente al cruzar para evitar distracciones visuales",
+    ],
+    correcta: 0,
+    explicacion:
+      "Aun gozando de prioridad de paso, la buena praxis preventiva recomienda reducir la velocidad de forma anticipada al aproximarse a un cruce con visibilidad reducida, ya que dicha prioridad normativa no elimina el riesgo real derivado de la posible presencia de otros vehículos que no adviertan a tiempo la señal del vehículo prioritario, siendo preferible disponer de un mayor margen de reacción ante lo imprevisto.",
+  },
 ];

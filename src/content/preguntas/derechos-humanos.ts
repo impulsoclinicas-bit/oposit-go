@@ -131,4 +131,69 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "La Ley Orgánica 2/1986, de Fuerzas y Cuerpos de Seguridad, establece entre sus principios básicos de actuación el pleno sometimiento a la Constitución y al resto del ordenamiento jurídico, así como el deber de actuar con la decisión necesaria y sin demora, evitando en su actuación toda práctica abusiva, arbitraria o discriminatoria, en clara conexión con el respeto a los derechos humanos en el ejercicio de la función policial.",
   },
+  {
+    id: "dh-11",
+    enunciado: "¿Qué es la Corte Penal Internacional, creada por el Estatuto de Roma de 1998?",
+    opciones: [
+      "Un tribunal internacional permanente, con sede en La Haya, competente para juzgar a personas físicas por los delitos de genocidio, crímenes de lesa humanidad, crímenes de guerra y el crimen de agresión",
+      "Un órgano de Naciones Unidas competente para juzgar a Estados, nunca a personas individuales",
+      "Un sinónimo exacto del Tribunal Europeo de Derechos Humanos",
+      "Un tribunal cuya competencia es reconocida automáticamente por todos los Estados del mundo",
+    ],
+    correcta: 0,
+    explicacion:
+      "La Corte Penal Internacional, creada por el Estatuto de Roma de 1998 y con sede en La Haya, es un tribunal internacional permanente competente para juzgar a personas físicas (no a Estados) por los delitos más graves de trascendencia internacional: el genocidio, los crímenes de lesa humanidad, los crímenes de guerra y el crimen de agresión, actuando con carácter complementario respecto de las jurisdicciones penales nacionales.",
+  },
+  {
+    id: "dh-12",
+    enunciado: "¿Qué es el sistema interamericano de protección de los derechos humanos?",
+    opciones: [
+      "Un sistema regional de protección, integrado principalmente por la Comisión Interamericana de Derechos Humanos y la Corte Interamericana de Derechos Humanos, en el marco de la Organización de Estados Americanos (OEA)",
+      "Un organismo dependiente exclusivamente de la Unión Europea",
+      "Un tratado limitado únicamente a cuestiones comerciales entre países americanos",
+      "Un sinónimo del sistema europeo de protección de derechos humanos",
+    ],
+    correcta: 0,
+    explicacion:
+      "El sistema interamericano de protección de los derechos humanos, desarrollado en el marco de la Organización de Estados Americanos (OEA), se articula principalmente a través de la Comisión Interamericana de Derechos Humanos, que examina peticiones individuales y elabora informes, y de la Corte Interamericana de Derechos Humanos, con sede en San José de Costa Rica, competente para dictar sentencias vinculantes frente a los Estados que han aceptado su jurisdicción.",
+  },
+  {
+    id: "dh-13",
+    enunciado: "¿Qué es la Carta de los Derechos Fundamentales de la Unión Europea?",
+    opciones: [
+      "Un texto que recoge el catálogo de derechos fundamentales reconocidos en el ámbito de la Unión Europea, con el mismo valor jurídico que los Tratados desde la entrada en vigor del Tratado de Lisboa en 2009",
+      "Un documento sin ningún valor jurídico vinculante, de carácter meramente orientativo",
+      "Un sinónimo exacto del Convenio Europeo de Derechos Humanos del Consejo de Europa",
+      "Un texto aplicable únicamente a los ciudadanos de nacionalidad de un Estado miembro, nunca a residentes extracomunitarios",
+    ],
+    correcta: 0,
+    explicacion:
+      "La Carta de los Derechos Fundamentales de la Unión Europea, proclamada solemnemente en el año 2000, recoge el catálogo de derechos civiles, políticos, económicos y sociales reconocidos en el ámbito de la Unión Europea, y adquirió el mismo valor jurídico que los Tratados constitutivos a partir de la entrada en vigor del Tratado de Lisboa en 2009, siendo un instrumento jurídicamente distinto y complementario del Convenio Europeo de Derechos Humanos, propio del Consejo de Europa.",
+  },
+  {
+    id: "dh-14",
+    enunciado: "¿Qué es la Convención sobre los Derechos del Niño de 1989?",
+    opciones: [
+      "Un tratado internacional de Naciones Unidas, de carácter vinculante para los Estados que lo ratifican, que reconoce un amplio catálogo de derechos civiles, sociales, económicos y culturales específicos de la infancia",
+      "Una simple recomendación no vinculante de la UNESCO",
+      "Un tratado limitado exclusivamente a los derechos económicos de los menores",
+      "Un instrumento jurídico exclusivo del ámbito europeo, sin alcance universal",
+    ],
+    correcta: 0,
+    explicacion:
+      "La Convención sobre los Derechos del Niño, adoptada por la Asamblea General de las Naciones Unidas en 1989, es un tratado internacional vinculante para los Estados que lo ratifican —entre ellos España— que reconoce un amplio catálogo de derechos civiles, sociales, económicos y culturales específicos de la infancia, entre ellos el derecho a la no discriminación, al interés superior del menor como consideración primordial, y a la protección frente a toda forma de explotación o violencia.",
+  },
+  {
+    id: "dh-15",
+    enunciado: "¿Qué función desempeña el Alto Comisionado de las Naciones Unidas para los Derechos Humanos?",
+    opciones: [
+      "Es el principal responsable de las actividades de Naciones Unidas en materia de derechos humanos, promoviendo su protección universal y coordinando la acción de la Organización en este ámbito",
+      "Es un tribunal internacional con capacidad para dictar sentencias vinculantes contra los Estados",
+      "Un órgano exclusivamente consultivo sin ninguna función operativa",
+      "Un cargo cuya existencia se limita al ámbito europeo",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Alto Comisionado de las Naciones Unidas para los Derechos Humanos, cargo creado en 1993, es el principal responsable de las actividades de la Organización en materia de derechos humanos, encargado de promover su protección universal, coordinar la acción de Naciones Unidas en este ámbito y prestar apoyo a los distintos mecanismos y órganos de derechos humanos, como el Consejo de Derechos Humanos.",
+  },
 ];
