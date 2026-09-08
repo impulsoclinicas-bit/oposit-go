@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 34 RGPD exige que, cuando la violación de la seguridad de los datos personales entrañe un alto riesgo para los derechos y libertades de las personas físicas, el responsable del tratamiento comunique dicha violación al propio interesado afectado sin dilación indebida, además de notificarla a la autoridad de control conforme al art. 33.",
   },
+  {
+    id: "lopd-16",
+    enunciado: "Según el artículo 17 del RGPD, ¿en qué consiste el derecho de supresión (\"derecho al olvido\")?",
+    opciones: [
+      "El derecho del interesado a obtener del responsable la supresión de sus datos personales cuando concurra alguna de las causas previstas (entre otras, que ya no sean necesarios para los fines para los que fueron recogidos, o que se retire el consentimiento en que se basaba el tratamiento)",
+      "El derecho a que se elimine cualquier noticia de prensa desagradable, sin ninguna otra condición",
+      "Un derecho absoluto sin excepciones, aplicable siempre y en todo caso",
+      "El derecho a que la Administración destruya físicamente todos los archivos en papel de un ciudadano",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 17 RGPD reconoce el derecho de supresión (\"derecho al olvido\"): el interesado tiene derecho a obtener del responsable del tratamiento la supresión de sus datos personales cuando concurra alguna de las causas previstas (los datos ya no son necesarios, se retira el consentimiento, el tratamiento es ilícito, entre otras), si bien este derecho cede ante determinadas excepciones, como el ejercicio del derecho a la libertad de expresión o el cumplimiento de una obligación legal.",
+  },
+  {
+    id: "lopd-17",
+    enunciado: "Según el artículo 20 del RGPD, ¿en qué consiste el derecho a la portabilidad de los datos?",
+    opciones: [
+      "El derecho del interesado a recibir los datos personales que haya facilitado a un responsable, en un formato estructurado, de uso común y lectura mecánica, y a transmitirlos a otro responsable sin impedimentos",
+      "El derecho a llevarse físicamente los servidores de una empresa",
+      "Un derecho que solo se aplica a los datos de salud",
+      "El derecho a que el responsable elimine automáticamente los datos tras cada consulta",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 20 RGPD reconoce el derecho a la portabilidad: el interesado tiene derecho a recibir los datos personales que haya facilitado a un responsable del tratamiento, en un formato estructurado, de uso común y lectura mecánica, y a transmitirlos a otro responsable sin que lo impida el responsable al que se los hubiera facilitado inicialmente, cuando el tratamiento se base en el consentimiento o en un contrato y se efectúe por medios automatizados.",
+  },
+  {
+    id: "lopd-18",
+    enunciado: "Según el artículo 21 del RGPD, ¿en qué consiste el derecho de oposición?",
+    opciones: [
+      "El derecho del interesado a oponerse en cualquier momento, por motivos relacionados con su situación particular, al tratamiento de sus datos personales basado en el interés público o el interés legítimo del responsable, incluida la elaboración de perfiles",
+      "El derecho a impedir cualquier tratamiento de datos, sin necesidad de justificar motivo alguno",
+      "Un derecho que solo puede ejercerse ante notario",
+      "El derecho a solicitar la anulación de un contrato ya firmado",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 21 RGPD reconoce el derecho de oposición: el interesado puede oponerse en cualquier momento, por motivos relacionados con su situación particular, al tratamiento de datos personales que se base en el interés público o en el interés legítimo del responsable, incluida la elaboración de perfiles; frente a la oposición al tratamiento con fines de mercadotecnia directa, el derecho es incondicional.",
+  },
+  {
+    id: "lopd-19",
+    enunciado: "Según el artículo 22 del RGPD, ¿qué derecho tiene el interesado frente a las decisiones individuales automatizadas?",
+    opciones: [
+      "A no ser objeto de una decisión basada únicamente en el tratamiento automatizado, incluida la elaboración de perfiles, que produzca efectos jurídicos en él o le afecte significativamente de modo similar, salvo determinadas excepciones",
+      "Ninguno, toda decisión automatizada es siempre válida sin posibilidad de impugnación",
+      "Solo se aplica a las decisiones adoptadas por entidades bancarias",
+      "Solo se aplica cuando la decisión automatizada beneficia al interesado",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 22 RGPD reconoce el derecho del interesado a no ser objeto de una decisión basada únicamente en el tratamiento automatizado, incluida la elaboración de perfiles, que produzca efectos jurídicos en él o le afecte significativamente de modo similar, salvo que sea necesaria para la celebración o ejecución de un contrato, esté autorizada por una norma o se base en el consentimiento explícito del interesado, debiendo en esos casos adoptarse medidas para salvaguardar sus derechos.",
+  },
+  {
+    id: "lopd-20",
+    enunciado: "Según el artículo 25 del RGPD, ¿qué exige el principio de protección de datos desde el diseño y por defecto?",
+    opciones: [
+      "Que el responsable del tratamiento aplique medidas técnicas y organizativas apropiadas, tanto en el momento de determinar los medios del tratamiento como en el momento del propio tratamiento, para cumplir los principios de protección de datos, y que por defecto solo se traten los datos necesarios para cada finalidad específica",
+      "Que el diseño de una aplicación informática sea estéticamente atractivo",
+      "Que todos los datos se traten siempre de forma pública y accesible por defecto",
+      "Que solo se apliquen medidas de protección de datos tras detectarse una brecha de seguridad",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 25 RGPD exige al responsable del tratamiento aplicar medidas técnicas y organizativas apropiadas, tanto al determinar los medios de tratamiento como durante el propio tratamiento, para cumplir eficazmente los principios de protección de datos («privacy by design»); y garantizar que, por defecto, solo se traten los datos personales necesarios para cada finalidad específica del tratamiento («privacy by default»).",
+  },
+  {
+    id: "lopd-21",
+    enunciado: "Según el artículo 30 del RGPD, ¿qué es el registro de actividades de tratamiento?",
+    opciones: [
+      "Un documento, en formato escrito o electrónico, que cada responsable y encargado del tratamiento debe llevar, describiendo entre otros aspectos las finalidades, las categorías de interesados y de datos, y las medidas de seguridad aplicadas",
+      "Un registro público accesible a cualquier ciudadano sin restricción",
+      "Un trámite exclusivo de las Administraciones Públicas, no aplicable a empresas privadas",
+      "Un documento que solo deben llevar las entidades bancarias",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 30 RGPD obliga a cada responsable y, en su caso, a su representante, a llevar un registro de las actividades de tratamiento efectuadas bajo su responsabilidad, que debe incluir, entre otros datos, las finalidades del tratamiento, la descripción de las categorías de interesados y de datos personales, los destinatarios, las transferencias internacionales y, cuando sea posible, los plazos de supresión y una descripción de las medidas de seguridad.",
+  },
+  {
+    id: "lopd-22",
+    enunciado: "Según el artículo 35 del RGPD, ¿cuándo es obligatorio realizar una evaluación de impacto relativa a la protección de datos?",
+    opciones: [
+      "Nunca es obligatoria, es siempre una decisión voluntaria del responsable",
+      "Cuando sea probable que un tipo de tratamiento, en particular si utiliza nuevas tecnologías, entrañe un alto riesgo para los derechos y libertades de las personas físicas",
+      "Únicamente cuando lo solicite expresamente el interesado afectado",
+      "Solo quiere decir la instalación de un antivirus en los sistemas del responsable",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 35 RGPD exige realizar una evaluación de impacto relativa a la protección de datos (EIPD) cuando sea probable que un tipo de tratamiento, en particular si utiliza nuevas tecnologías, por su naturaleza, alcance, contexto o fines, entrañe un alto riesgo para los derechos y libertades de las personas físicas, debiendo consultarse a la autoridad de control cuando la evaluación revele un alto riesgo que el responsable no pueda mitigar.",
+  },
+  {
+    id: "lopd-23",
+    enunciado: "¿En qué consisten, con carácter general, las transferencias internacionales de datos reguladas en el Capítulo V del RGPD?",
+    opciones: [
+      "El envío de datos personales a un tercer país u organización internacional fuera del Espacio Económico Europeo, sujeto a garantías reforzadas (decisión de adecuación de la Comisión Europea, cláusulas contractuales tipo, normas corporativas vinculantes, entre otras), para asegurar un nivel de protección equivalente al europeo",
+      "Cualquier envío de datos entre dos Estados miembros de la Unión Europea",
+      "Un trámite que ya no existe tras la entrada en vigor del RGPD",
+      "Solo se aplica a las transferencias realizadas por vía postal, no electrónica",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Capítulo V del RGPD regula las transferencias internacionales de datos personales, es decir, su envío a un tercer país u organización internacional fuera del Espacio Económico Europeo, exigiendo que se realicen con garantías que aseguren un nivel de protección equivalente al europeo: mediante una decisión de adecuación de la Comisión Europea, cláusulas contractuales tipo, normas corporativas vinculantes u otras garantías apropiadas.",
+  },
+  {
+    id: "lopd-24",
+    enunciado: "Según el artículo 3 del RGPD, ¿se aplica el Reglamento a responsables o encargados no establecidos en la Unión Europea?",
+    opciones: [
+      "No, el RGPD solo se aplica a entidades establecidas físicamente en territorio de la Unión Europea",
+      "Sí, en determinados supuestos, como cuando ofrecen bienes o servicios a interesados que se encuentren en la Unión, o cuando controlan su comportamiento en la medida en que este tenga lugar en la Unión, aplicándose así con un alcance extraterritorial",
+      "Solo se aplica a empresas con sede en Estados con los que exista un tratado bilateral específico",
+      "El RGPD nunca tiene efectos fuera de la Unión Europea, ni siquiera en estos casos",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 3 RGPD extiende su ámbito de aplicación territorial más allá de las entidades establecidas en la Unión, alcanzando también a responsables o encargados no establecidos en ella cuando las actividades de tratamiento estén relacionadas con la oferta de bienes o servicios a interesados en la Unión, o con el control de su comportamiento en la medida en que este tenga lugar dentro de la Unión Europea (aplicación extraterritorial del RGPD).",
+  },
+  {
+    id: "lopd-25",
+    enunciado: "Según el artículo 5.1.c) del RGPD, ¿qué exige el principio de minimización de datos?",
+    opciones: [
+      "Que los datos personales sean adecuados, pertinentes y limitados a lo necesario en relación con los fines para los que son tratados",
+      "Que se recopile la mayor cantidad posible de datos, por si resultan útiles en el futuro",
+      "Que los datos se conserven indefinidamente, sin ningún límite temporal",
+      "Que los datos personales se publiquen siempre de forma abierta en internet",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 5.1.c) RGPD recoge el principio de minimización de datos: los datos personales deben ser adecuados, pertinentes y limitados a lo necesario en relación con los fines para los que son tratados, evitando la recogida o conservación de datos innecesarios o excesivos.",
+  },
+  {
+    id: "lopd-26",
+    enunciado: "Según el artículo 5.2 del RGPD, ¿en qué consiste el principio de responsabilidad proactiva (\"accountability\")?",
+    opciones: [
+      "En que el responsable del tratamiento debe ser capaz de demostrar el cumplimiento de los principios relativos al tratamiento de datos personales, y no solo cumplirlos formalmente",
+      "En que la responsabilidad por cualquier incumplimiento recae siempre exclusivamente en el interesado",
+      "En que solo las Administraciones Públicas están sujetas a este principio",
+      "En que basta con redactar una política de privacidad, sin necesidad de aplicarla realmente",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 5.2 RGPD consagra el principio de responsabilidad proactiva («accountability»): el responsable del tratamiento será responsable del cumplimiento de los principios relativos al tratamiento de datos personales (art. 5.1) y, además, debe ser capaz de demostrar dicho cumplimiento ante la autoridad de control, no bastando con su mero respeto formal.",
+  },
+  {
+    id: "lopd-27",
+    enunciado: "¿Qué son los «derechos digitales» reconocidos en el Título X de la LOPDGDD (Ley Orgánica 3/2018)?",
+    opciones: [
+      "Un catálogo de derechos vinculados al entorno digital, como el derecho a la neutralidad de internet, el derecho al olvido en búsquedas de internet, el derecho a la desconexión digital en el ámbito laboral, o el derecho al testamento digital",
+      "Un sinónimo exacto de los derechos ARSULIPO (acceso, rectificación, supresión...)",
+      "Derechos que solo pueden ejercer las personas jurídicas",
+      "Un catálogo cerrado que sustituye por completo a los derechos del RGPD",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Título X de la LOPDGDD (Ley Orgánica 3/2018) reconoce un catálogo de «derechos digitales», complementario a los derechos generales de protección de datos, entre ellos el derecho a la neutralidad de internet, el derecho al olvido en búsquedas de internet y en redes sociales, el derecho a la desconexión digital en el ámbito laboral, y el derecho al testamento digital (instrucciones sobre el destino de los contenidos digitales tras el fallecimiento).",
+  },
+  {
+    id: "lopd-28",
+    enunciado: "Según la Ley Orgánica 7/2021, ¿durante qué plazo pueden conservarse, con carácter general, los datos personales tratados por las Fuerzas y Cuerpos de Seguridad con fines de prevención, investigación o enjuiciamiento de delitos?",
+    opciones: [
+      "De forma permanente e ilimitada, sin ninguna revisión",
+      "Durante el tiempo necesario para la finalidad del tratamiento, debiendo establecerse plazos para su supresión o para una revisión periódica de la necesidad de su conservación",
+      "Un plazo fijo e igual para todos los casos de veinticuatro horas",
+      "Solo pueden conservarse mientras dure la instrucción judicial, borrándose automáticamente después",
+    ],
+    correcta: 1,
+    explicacion:
+      "La LO 7/2021 exige que los datos personales tratados por las Fuerzas y Cuerpos de Seguridad con fines de prevención, detección, investigación o enjuiciamiento de infracciones penales se conserven únicamente durante el tiempo que sea necesario para los fines del tratamiento, debiendo establecerse plazos apropiados para su supresión o para la revisión periódica de la necesidad de conservarlos.",
+  },
+  {
+    id: "lopd-29",
+    enunciado: "Según el artículo 57 del RGPD, ¿cuál es una de las funciones de la Agencia Española de Protección de Datos como autoridad de control?",
+    opciones: [
+      "Supervisar y hacer cumplir la aplicación del RGPD, promover la sensibilización del público sobre los riesgos del tratamiento de datos, y tramitar las reclamaciones presentadas por los interesados",
+      "Aprobar las leyes orgánicas relativas a la protección de datos",
+      "Sustituir a los tribunales de justicia en los litigios civiles sobre protección de datos",
+      "Fijar los precios de los servicios de almacenamiento en la nube",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 57 RGPD atribuye a cada autoridad de control (en España, la Agencia Española de Protección de Datos) funciones como supervisar y hacer cumplir la aplicación del Reglamento, promover la sensibilización del público y de los responsables y encargados sobre los riesgos del tratamiento, tramitar las reclamaciones presentadas por los interesados, y realizar investigaciones sobre la aplicación de la normativa.",
+  },
+  {
+    id: "lopd-30",
+    enunciado: "¿Cómo clasifica la LOPDGDD las infracciones en materia de protección de datos a efectos de su régimen sancionador y de prescripción?",
+    opciones: [
+      "En muy graves, graves y leves, con distintos plazos de prescripción según su calificación",
+      "Únicamente en graves, sin distinción de niveles",
+      "No existe clasificación alguna, todas las infracciones tienen el mismo régimen",
+      "Solo se clasifican como delitos penales, nunca como infracciones administrativas",
+    ],
+    correcta: 0,
+    explicacion:
+      "La LOPDGDD clasifica las infracciones en materia de protección de datos en muy graves, graves y leves, en función de la naturaleza del derecho o principio afectado, estableciendo distintos plazos de prescripción para cada categoría, en coherencia con el régimen sancionador previsto en el RGPD (cuantías de hasta 20 millones de euros o el 4% del volumen de negocio anual global, en las infracciones más graves).",
+  },
 ];

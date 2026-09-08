@@ -191,4 +191,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 9 bis.2 establece expresamente que el recurso a la asistencia social en España de un ciudadano de un Estado miembro de la Unión Europea o de un Estado parte en el Espacio Económico Europeo, o de un miembro de su familia, no tendrá por consecuencia automática una medida de expulsión, debiendo valorarse las circunstancias del caso concreto.",
   },
+  {
+    id: "cue-16",
+    enunciado: "Según el artículo 3.1 del Real Decreto 240/2007, ¿qué derechos tienen las personas incluidas en su ámbito de aplicación?",
+    opciones: [
+      "Derecho a entrar, salir, circular y residir libremente en territorio español, previo cumplimiento de las formalidades previstas y sin perjuicio de las limitaciones establecidas en la norma",
+      "Únicamente el derecho a residir, sin derecho a circular libremente",
+      "Solo el derecho a trabajar, no el de residir",
+      "Ningún derecho reconocido específicamente por esta norma",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 3.1 del RD 240/2007 reconoce a las personas incluidas en su ámbito de aplicación el derecho a entrar, salir, circular y residir libremente en territorio español, previo cumplimiento de las formalidades previstas en la norma y sin perjuicio de las limitaciones que la misma establece.",
+  },
+  {
+    id: "cue-17",
+    enunciado: "Según el artículo 3.2 del Real Decreto 240/2007, ¿en qué condiciones pueden acceder los ciudadanos de la Unión a una actividad por cuenta ajena o propia en España?",
+    opciones: [
+      "En las mismas condiciones que los españoles, sin perjuicio de determinadas limitaciones específicas previstas por el Derecho de la Unión",
+      "Solo pueden trabajar por cuenta ajena, nunca por cuenta propia",
+      "Necesitan siempre una autorización de trabajo específica, igual que los extranjeros no comunitarios",
+      "Solo pueden acceder al empleo público, no al sector privado",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 3.2 del RD 240/2007 reconoce a los ciudadanos de la Unión (con determinadas excepciones para ciertos familiares) el derecho a acceder a cualquier actividad, tanto por cuenta ajena como por cuenta propia, prestación de servicios o estudios, en las mismas condiciones que los españoles.",
+  },
+  {
+    id: "cue-18",
+    enunciado: "Según el artículo 5 del Real Decreto 240/2007, ¿tienen los ciudadanos de la Unión derecho a salir de España?",
+    opciones: [
+      "Sí, tienen derecho a salir de España para trasladarse a otro Estado miembro, con independencia de la presentación del pasaporte o documento de identidad en un puesto habilitado, y sin perjuicio de las prohibiciones legales de salida por razones de seguridad nacional o salud pública",
+      "No, la salida de España requiere siempre autorización administrativa previa",
+      "Solo pueden salir si han solicitado previamente el certificado de registro",
+      "Solo pueden salir por vía aérea",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 5 del RD 240/2007 reconoce a los ciudadanos de un Estado miembro de la Unión Europea o del Espacio Económico Europeo, y a sus familiares con independencia de su nacionalidad, el derecho a salir de España para trasladarse a otro Estado miembro, sin perjuicio de los supuestos legales de prohibición de salida por razones de seguridad nacional, salud pública o los previstos en el Código Penal.",
+  },
+  {
+    id: "cue-19",
+    enunciado: "Según el artículo 12 del Real Decreto 240/2007, ¿cómo se tramitan las solicitudes de certificados de registro y tarjetas de residencia?",
+    opciones: [
+      "Se presentan personalmente en el modelo oficial establecido, se tramitan con carácter preferente, y su tramitación no supone obstáculo a la permanencia provisional del interesado en España ni al desarrollo de sus actividades",
+      "Se tramitan con carácter ordinario, sin ninguna preferencia especial",
+      "Solo pueden presentarse a través de representante legal, nunca personalmente",
+      "La tramitación exige que el interesado abandone España hasta su resolución",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 12 del RD 240/2007 exige que las solicitudes de certificados de registro y tarjetas de residencia se presenten personalmente en el modelo oficial, tramitándose con carácter preferente, sin que dicha tramitación suponga obstáculo alguno a la permanencia provisional del interesado en España ni al desarrollo de sus actividades.",
+  },
+  {
+    id: "cue-20",
+    enunciado: "Según el artículo 12.3 del Real Decreto 240/2007, ¿pueden las autoridades competentes recabar información sobre antecedentes penales del solicitante?",
+    opciones: [
+      "No, esta posibilidad está expresamente prohibida por la norma",
+      "Sí, excepcionalmente, pueden recabar información sobre posibles antecedentes penales del interesado a las autoridades del Estado de origen o de otros Estados",
+      "Solo pueden hacerlo si el solicitante lo autoriza expresamente por escrito",
+      "Solo se permite respecto de antecedentes penales cometidos en territorio español",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 12.3 del RD 240/2007 permite, excepcionalmente, que las autoridades competentes para tramitar y resolver las solicitudes recaben información sobre posibles antecedentes penales del interesado a las autoridades del Estado de origen o a las de otros Estados.",
+  },
+  {
+    id: "cue-21",
+    enunciado: "Según el artículo 13 del Real Decreto 240/2007, ¿se exige a ascendientes y descendientes aportar de nuevo la documentación del vínculo familiar al renovar la tarjeta de residencia?",
+    opciones: [
+      "Sí, siempre, en cada renovación",
+      "No; en el caso de ascendientes y descendientes no se exigirá la aportación de la documentación acreditativa de la existencia del vínculo familiar que da derecho a la expedición de la tarjeta",
+      "Solo se exime de este requisito a los ascendientes, no a los descendientes",
+      "Solo se exime si han residido más de veinte años en España",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 13 del RD 240/2007 exime a los ascendientes y descendientes de aportar de nuevo, en la renovación de la tarjeta de residencia previa a la adquisición del derecho de residencia permanente, la documentación acreditativa de la existencia del vínculo familiar que dio derecho a su expedición inicial.",
+  },
+  {
+    id: "cue-22",
+    enunciado: "Según el artículo 14.3 del Real Decreto 240/2007, ¿cuándo caduca la vigencia de la tarjeta de residencia de familiar de ciudadano de la Unión por ausencia del territorio español?",
+    opciones: [
+      "Por ausencias superiores a seis meses en un año, salvo determinadas excepciones (obligaciones militares, gestación, parto, enfermedad grave, estudios, formación profesional o traslado profesional a otro Estado, entre otras)",
+      "Nunca caduca por ausencia, sea cual sea su duración",
+      "Por cualquier ausencia superior a un mes, sin excepciones",
+      "Solo caduca si la ausencia se produce fuera de la Unión Europea",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 14.3 del RD 240/2007 establece que la vigencia de la tarjeta de residencia de familiar de ciudadano de la Unión caducará por las ausencias superiores a seis meses en un año, si bien no se ve afectada por ausencias de mayor duración debidas a obligaciones militares o, hasta doce meses consecutivos, a motivos de gestación, parto, posparto, enfermedad grave, estudios, formación profesional o traslados profesionales a otro Estado miembro o a un tercer país.",
+  },
+  {
+    id: "cue-23",
+    enunciado: "Según el artículo 14.2 del Real Decreto 240/2007, ¿qué obligación tienen los interesados respecto de los cambios de circunstancias personales?",
+    opciones: [
+      "Ninguna, no existe obligación de comunicación de cambios",
+      "Deben comunicar los eventuales cambios de circunstancias referidos a su nacionalidad, estado civil o domicilio a la Oficina de Extranjeros de la provincia donde residan, o en su defecto, a la Comisaría de Policía correspondiente",
+      "Solo deben comunicar los cambios de domicilio, no los de estado civil",
+      "Deben comunicar los cambios directamente al consulado de su país de origen",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 14.2 del RD 240/2007 obliga a los interesados a comunicar los eventuales cambios de circunstancias referidos a su nacionalidad, estado civil o domicilio a la Oficina de Extranjeros de la provincia donde residan o, en su defecto, a la Comisaría de Policía correspondiente.",
+  },
+  {
+    id: "cue-24",
+    enunciado: "Según el artículo 16.1 del Real Decreto 240/2007, ¿qué trámite se exige antes de dictar una resolución administrativa de expulsión de un titular de tarjeta o certificado?",
+    opciones: [
+      "Ninguno, la resolución puede dictarse sin ningún informe previo",
+      "El informe previo de la Abogacía del Estado en la provincia, salvo en casos de urgencia debidamente motivada",
+      "Únicamente la audiencia previa del Defensor del Pueblo",
+      "Un referéndum vecinal en el municipio de residencia",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 16.1 del RD 240/2007 exige, con carácter previo a dictar la resolución administrativa de expulsión de un titular de tarjeta o certificado, el informe previo de la Abogacía del Estado en la provincia, salvo en aquellos casos en que concurran razones de urgencia debidamente motivadas.",
+  },
+  {
+    id: "cue-25",
+    enunciado: "Según el artículo 17.1 del Real Decreto 240/2007, ¿qué garantía procesal existe frente a la ejecución de una resolución de expulsión cuando se ha solicitado una medida cautelar de suspensión?",
+    opciones: [
+      "No podrá producirse la expulsión hasta que se haya adoptado la decisión sobre la medida cautelar, salvo determinadas excepciones (decisión judicial anterior, revisión judicial previa, o motivos imperiosos de seguridad pública)",
+      "La expulsión se ejecuta siempre de forma inmediata, sin esperar la decisión cautelar",
+      "La medida cautelar nunca puede solicitarse en este procedimiento",
+      "Solo se suspende la expulsión si el interesado deposita una fianza económica",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 17.1 del RD 240/2007 establece que, cuando el recurso contra la resolución de expulsión vaya acompañado de solicitud de suspensión cautelar, no podrá producirse la expulsión hasta que se resuelva sobre dicha medida, salvo que la resolución se base en una decisión judicial anterior, las personas afectadas hayan tenido acceso previo a revisión judicial, o concurran motivos imperiosos de seguridad pública.",
+  },
+  {
+    id: "cue-26",
+    enunciado: "Según el artículo 18.1 del Real Decreto 240/2007, ¿quién dicta las resoluciones de expulsión de ciudadanos de la Unión?",
+    opciones: [
+      "Los Subdelegados del Gobierno o los Delegados del Gobierno en las comunidades autónomas uniprovinciales",
+      "Directamente el Ministro del Interior en todos los casos",
+      "El Director General de la Policía",
+      "Los Ayuntamientos del municipio de residencia",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 18.1 del RD 240/2007 atribuye la competencia para dictar las resoluciones de expulsión a los Subdelegados del Gobierno o, en su caso, a los Delegados del Gobierno en las comunidades autónomas uniprovinciales.",
+  },
+  {
+    id: "cue-27",
+    enunciado: "Según el artículo 18.2 del Real Decreto 240/2007, ¿qué plazo mínimo se concede, con carácter general, para abandonar el territorio español tras una resolución de expulsión?",
+    opciones: [
+      "Cuarenta y ocho horas, sin excepción",
+      "No podrá ser inferior a un mes a partir de la fecha de notificación, salvo en casos urgentes debidamente justificados",
+      "No existe plazo, la expulsión es siempre inmediata",
+      "Seis meses, en todo caso",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 18.2 del RD 240/2007 establece que las resoluciones de expulsión deben fijar un plazo para abandonar el territorio español que, excepto en casos urgentes debidamente justificados, no podrá ser inferior a un mes a partir de la fecha de notificación.",
+  },
+  {
+    id: "cue-28",
+    enunciado: "¿Qué diferencia existe entre el «certificado de registro» y la «tarjeta de residencia de familiar de ciudadano de la Unión»?",
+    opciones: [
+      "Son términos sinónimos, sin ninguna diferencia",
+      "El certificado de registro se expide al propio ciudadano de la Unión que va a residir más de tres meses en España; la tarjeta de residencia de familiar se expide a los familiares que no tengan la nacionalidad de un Estado miembro de la Unión o del Espacio Económico Europeo",
+      "El certificado de registro solo se expide a menores de edad",
+      "La tarjeta de residencia de familiar solo se expide a cónyuges, nunca a otros familiares",
+    ],
+    correcta: 1,
+    explicacion:
+      "El Real Decreto 240/2007 distingue el certificado de registro, que se expide al propio ciudadano de un Estado miembro de la Unión Europea o del Espacio Económico Europeo que va a residir en España por más de tres meses, de la tarjeta de residencia de familiar de ciudadano de la Unión, que se expide a los miembros de su familia que no tengan la nacionalidad de un Estado miembro (nacionales de terceros países).",
+  },
+  {
+    id: "cue-29",
+    enunciado: "¿Qué documento acredita, con carácter general, el derecho de residencia permanente de un ciudadano de la Unión que ha adquirido este derecho conforme al artículo 10 del Real Decreto 240/2007?",
+    opciones: [
+      "Un certificado de registro o documento acreditativo de residencia permanente que sustituye al certificado de registro ordinario, expedido tan pronto como se acredite la duración de la residencia",
+      "No existe ningún documento específico para acreditar la residencia permanente",
+      "Únicamente el pasaporte del país de origen, sin ningún otro trámite",
+      "Un documento nacional de identidad español, idéntico al de los ciudadanos españoles",
+    ],
+    correcta: 0,
+    explicacion:
+      "El RD 240/2007 prevé que, adquirido el derecho a residir con carácter permanente conforme a su art. 10, se expida al ciudadano de la Unión un documento acreditativo de la residencia permanente que sustituye al certificado de registro ordinario, y a los familiares no comunitarios una tarjeta de residencia permanente conforme al art. 11.",
+  },
+  {
+    id: "cue-30",
+    enunciado: "¿Qué régimen sancionador se aplica al ciudadano de la Unión o a su familiar que incumpla la obligación de solicitar el certificado de registro o la tarjeta de residencia?",
+    opciones: [
+      "El incumplimiento constituye una infracción tipificada, sancionable conforme al régimen previsto en la normativa de extranjería y de régimen sancionador aplicable, sin perjuicio de que el interesado pueda acreditar su situación por cualquier medio de prueba admitido en Derecho",
+      "No existe ninguna consecuencia por el incumplimiento de esta obligación",
+      "Se sanciona automáticamente con la expulsión inmediata, sin excepción",
+      "Solo se sanciona si el incumplimiento se prolonga más de diez años",
+    ],
+    correcta: 0,
+    explicacion:
+      "El incumplimiento de la obligación de solicitar el certificado de registro o la tarjeta de residencia constituye una infracción tipificada en la normativa de extranjería, sin perjuicio de que, conforme al art. 14.4 del RD 240/2007, los interesados puedan acreditar su condición de beneficiarios del régimen comunitario por cualquier medio de prueba admitido en Derecho.",
+  },
 ];

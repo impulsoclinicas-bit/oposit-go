@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 31 dispone que se considerarán agresiones y desobediencias a agentes de la autoridad las que se cometan contra el personal de seguridad privada, debidamente identificado, cuando desarrolle actividades de seguridad privada en cooperación y bajo el mando de las Fuerzas y Cuerpos de Seguridad, en conexión con la extensión de la protección penal del atentado ya vista en el art. 554 del Código Penal.",
   },
+  {
+    id: "sp-16",
+    enunciado: "Según el artículo 4 de la Ley 5/2014, ¿cuál es uno de los fines de la seguridad privada?",
+    opciones: [
+      "Sustituir por completo a las Fuerzas y Cuerpos de Seguridad en el mantenimiento del orden público",
+      "Complementar el monopolio de la seguridad que corresponde al Estado, integrando funcionalmente sus medios y capacidades como un recurso externo de la seguridad pública",
+      "Ejercer funciones exclusivamente recaudatorias para el Estado",
+      "Sustituir a la Administración de Justicia en la investigación de delitos públicos",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 4 de la Ley 5/2014 enumera entre los fines de la seguridad privada satisfacer las necesidades legítimas de seguridad de los usuarios, contribuir a garantizar la seguridad pública y complementar el monopolio de la seguridad que corresponde al Estado, integrando funcionalmente sus medios y capacidades como un recurso externo de la seguridad pública, nunca sustitutivo de las Fuerzas y Cuerpos de Seguridad.",
+  },
+  {
+    id: "sp-17",
+    enunciado: "Según el artículo 5.1 de la Ley 5/2014, ¿cuál de las siguientes es una actividad de seguridad privada?",
+    opciones: [
+      "La vigilancia y protección de bienes, establecimientos, lugares y eventos, tanto públicos como privados, así como de las personas que pudieran encontrarse en ellos",
+      "La instrucción de diligencias penales",
+      "La expedición de pasaportes",
+      "La dirección del tráfico en vías interurbanas",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 5.1.a) de la Ley 5/2014 incluye entre las actividades de seguridad privada la vigilancia y protección de bienes, establecimientos, lugares y eventos, tanto públicos como privados, así como de las personas que pudieran encontrarse en ellos, junto con otras actividades como el acompañamiento y protección de personas, el depósito y transporte de objetos valiosos, o la investigación privada.",
+  },
+  {
+    id: "sp-18",
+    enunciado: "Según el artículo 8.4.b) de la Ley 5/2014, ¿qué prohibición afecta a las empresas, despachos y personal de seguridad privada respecto de determinados datos?",
+    opciones: [
+      "No podrán ejercer ningún tipo de control sobre opiniones políticas, sindicales o religiosas, ni proceder al tratamiento de datos relacionados con la ideología, afiliación sindical, religión o creencias",
+      "Deben elaborar informes periódicos sobre la ideología política de sus clientes",
+      "Pueden libremente comunicar a terceros cualquier información sobre sus clientes",
+      "No existe ninguna limitación en el tratamiento de datos personales",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 8.4.b) de la Ley 5/2014 prohíbe a las empresas, despachos y personal de seguridad privada ejercer cualquier tipo de control sobre opiniones políticas, sindicales o religiosas, o sobre su expresión, así como proceder al tratamiento, automatizado o no, de datos relacionados con la ideología, afiliación sindical, religión o creencias.",
+  },
+  {
+    id: "sp-19",
+    enunciado: "Según el artículo 9 de la Ley 5/2014, ¿qué requisito debe cumplirse antes de prestar cualquier servicio de seguridad privada?",
+    opciones: [
+      "Ninguno, los servicios pueden prestarse libremente sin contrato previo",
+      "Debe haber sido previamente contratado y, en su caso, autorizado, formalizándose el contrato por escrito y comunicándose su celebración al Ministerio del Interior o al órgano autonómico competente antes de su inicio",
+      "Solo se exige autorización verbal del cliente",
+      "Basta con una comunicación posterior a la finalización del servicio",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 9 de la Ley 5/2014 exige que no pueda prestarse ningún servicio de seguridad privada que no haya sido previamente contratado y, en su caso, autorizado, debiendo los contratos formalizarse por escrito y comunicarse su celebración al Ministerio del Interior o al órgano autonómico competente con antelación a su inicio.",
+  },
+  {
+    id: "sp-20",
+    enunciado: "Según el artículo 10.2 de la Ley 5/2014, ¿pueden los despachos de detectives investigar delitos perseguibles de oficio?",
+    opciones: [
+      "Sí, sin ninguna limitación",
+      "No; tienen prohibido celebrar contratos que tengan por objeto la investigación de estos delitos, debiendo denunciar inmediatamente ante la autoridad competente cualquier hecho de esta naturaleza que llegue a su conocimiento",
+      "Solo pueden investigarlos si el cliente es una entidad bancaria",
+      "Solo con autorización previa del Ministerio Fiscal para cada caso concreto",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 10.2 de la Ley 5/2014 prohíbe a los despachos de detectives y a los detectives privados celebrar contratos que tengan por objeto la investigación de delitos perseguibles de oficio, o investigar delitos de esta naturaleza en general, debiendo denunciar inmediatamente ante la autoridad competente cualquier hecho de esta naturaleza que llegara a su conocimiento.",
+  },
+  {
+    id: "sp-21",
+    enunciado: "Según el artículo 10.3 de la Ley 5/2014, ¿pueden las empresas de seguridad privada prestar servicios de investigación privada propios de los despachos de detectives?",
+    opciones: [
+      "Sí, sin ninguna limitación",
+      "No; las empresas de seguridad no podrán realizar los servicios de investigación privada propios de los despachos de detectives, y estos tampoco podrán prestar servicios propios de las empresas de seguridad",
+      "Solo con autorización expresa del Ministerio del Interior en cada caso concreto",
+      "Solo las empresas con más de cien trabajadores pueden hacerlo",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 10.3 de la Ley 5/2014 establece una separación funcional clara: las empresas de seguridad no podrán realizar los servicios de investigación privada propios de los despachos de detectives privados, y estos, recíprocamente, no podrán prestar los servicios propios de las empresas de seguridad privada.",
+  },
+  {
+    id: "sp-22",
+    enunciado: "Según el artículo 15.1 de la Ley 5/2014, ¿pueden las Fuerzas y Cuerpos de Seguridad acceder a los sistemas instalados por las empresas de seguridad privada?",
+    opciones: [
+      "No, en ningún caso, por tratarse de sistemas privados",
+      "Sí, para la comprobación de las informaciones en tiempo real cuando ello sea necesario para la prevención de un peligro real para la seguridad pública o para la represión de infracciones penales",
+      "Solo tras la obtención de una orden judicial específica en cada supuesto, sin excepción",
+      "Solo si la empresa de seguridad privada lo solicita expresamente",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 15.1 de la Ley 5/2014 autoriza el acceso por parte de las Fuerzas y Cuerpos de Seguridad a los sistemas instalados por las empresas de seguridad privada que permitan la comprobación de las informaciones en tiempo real, cuando sea necesario para la prevención de un peligro real para la seguridad pública o para la represión de infracciones penales.",
+  },
+  {
+    id: "sp-23",
+    enunciado: "Según el artículo 40.1 de la Ley 5/2014, ¿cuál de los siguientes servicios se presta, entre otros, con armas de fuego?",
+    opciones: [
+      "La vigilancia y protección del almacenamiento, recuento, clasificación y transporte de dinero, valores y objetos valiosos",
+      "El servicio de recepción en un edificio de oficinas sin riesgo especial",
+      "La instalación de cámaras de videovigilancia en un domicilio particular",
+      "Cualquier servicio de seguridad, sin distinción alguna",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 40.1 de la Ley 5/2014 enumera los servicios que se prestarán con armas de fuego en los términos reglamentariamente establecidos, entre ellos la vigilancia y protección del almacenamiento, recuento, clasificación y transporte de dinero, valores y objetos valiosos, y la vigilancia y protección de fábricas, depósitos o transporte de armas, cartuchería metálica y explosivos.",
+  },
+  {
+    id: "sp-24",
+    enunciado: "Según el artículo 40.3 de la Ley 5/2014, ¿cuándo puede el personal de seguridad privada portar el arma de fuego?",
+    opciones: [
+      "En cualquier momento, esté o no de servicio",
+      "Solo cuando esté de servicio, pudiendo acceder con ella al lugar donde este se desarrolle, salvo que legalmente se establezca lo contrario",
+      "Solo durante su tiempo libre, fuera del horario laboral",
+      "Nunca, el personal de seguridad privada tiene prohibido el uso de armas de fuego",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 40.3 de la Ley 5/2014 limita la portación del arma de fuego por el personal de seguridad privada a cuando esté efectivamente de servicio, permitiéndole acceder con ella al lugar donde este se desarrolle, salvo que legalmente se establezca lo contrario.",
+  },
+  {
+    id: "sp-25",
+    enunciado: "Según el artículo 42.1 de la Ley 5/2014, ¿quién debe prestar los servicios de videovigilancia cuando su finalidad sea prevenir infracciones o evitar daños a personas o bienes?",
+    opciones: [
+      "Cualquier empleado de la empresa, sin ninguna cualificación específica",
+      "Necesariamente vigilantes de seguridad o, en su caso, guardas rurales",
+      "Exclusivamente miembros de las Fuerzas y Cuerpos de Seguridad",
+      "Solo personal de mantenimiento informático",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 42.1 de la Ley 5/2014 exige que, cuando la finalidad de los servicios de videovigilancia sea prevenir infracciones, evitar daños a personas o bienes o impedir accesos no autorizados, estos sean prestados necesariamente por vigilantes de seguridad o, en su caso, por guardas rurales, sin perjuicio de que otras funciones de simple comprobación de instalaciones puedan realizarlas personal distinto.",
+  },
+  {
+    id: "sp-26",
+    enunciado: "Según el artículo 42.2 de la Ley 5/2014, ¿pueden utilizarse cámaras de seguridad privada para captar imágenes de vías o espacios públicos?",
+    opciones: [
+      "Sí, libremente y sin ninguna autorización",
+      "No, salvo en los supuestos y con los términos y condiciones previstos en su normativa específica, previa autorización administrativa del órgano competente",
+      "Solo si el establecimiento vigilado es de titularidad pública",
+      "Solo durante el horario nocturno",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 42.2 de la Ley 5/2014 prohíbe, con carácter general, utilizar cámaras o videocámaras con fines de seguridad privada para tomar imágenes y sonidos de vías y espacios públicos o de acceso público, salvo en los supuestos y condiciones previstos en su normativa específica y previa autorización administrativa del órgano competente en cada caso.",
+  },
+  {
+    id: "sp-27",
+    enunciado: "Según el artículo 50.1 de la Ley 5/2014, ¿a quién pueden facilitar los detectives privados información sobre sus investigaciones?",
+    opciones: [
+      "A cualquier persona que se la solicite",
+      "Únicamente a las personas que se las encomendaron y a los órganos judiciales y policiales competentes para el ejercicio de sus funciones",
+      "A la prensa, cuando exista interés público en la información",
+      "A cualquier familiar del investigado",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 50.1 de la Ley 5/2014 obliga a los detectives privados a guardar reserva sobre las investigaciones que realicen, no pudiendo facilitar datos o informaciones sobre ellas más que a las personas que se las encomendaron y a los órganos judiciales y policiales competentes para el ejercicio de sus funciones.",
+  },
+  {
+    id: "sp-28",
+    enunciado: "Según el artículo 50.2 de la Ley 5/2014, ¿en qué supuestos puede accederse al contenido de las investigaciones de un detective privado?",
+    opciones: [
+      "En cualquier momento, sin ninguna condición",
+      "Solo mediante requerimiento judicial o solicitud policial relacionada con el ejercicio de sus funciones en el curso de una investigación criminal o de un procedimiento sancionador",
+      "Solo si el propio detective lo autoriza voluntariamente",
+      "Nunca, ni siquiera con orden judicial",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 50.2 de la Ley 5/2014 limita el acceso al contenido de las investigaciones realizadas por los detectives privados a los supuestos de requerimiento judicial o de solicitud policial relacionada con el ejercicio de sus funciones en el curso de una investigación criminal o de un procedimiento sancionador.",
+  },
+  {
+    id: "sp-29",
+    enunciado: "Según el artículo 11 de la Ley 5/2014, ¿qué naturaleza tiene el Registro Nacional de Seguridad Privada?",
+    opciones: [
+      "Un registro de carácter público, general y no vinculante, sin efectos administrativos",
+      "El registro en el que deben inscribirse las empresas de seguridad privada, los despachos de detectives y el personal de seguridad privada, entre otros sujetos, como requisito para el ejercicio de la actividad, sin perjuicio de los registros autonómicos correspondientes",
+      "Un registro exclusivo para las armas de fuego utilizadas en servicios de seguridad privada",
+      "Un registro voluntario, cuya inscripción no es obligatoria en ningún caso",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 11 de la Ley 5/2014 configura el Registro Nacional de Seguridad Privada (y, en su caso, los registros autonómicos correspondientes) como el registro en el que deben inscribirse las empresas de seguridad privada, los despachos de detectives, el personal de seguridad privada y otros sujetos obligados, constituyendo dicha inscripción un requisito para el ejercicio de la actividad.",
+  },
+  {
+    id: "sp-30",
+    enunciado: "Según el artículo 72 de la Ley 5/2014, ¿pueden imponerse multas coercitivas en el ámbito de la seguridad privada?",
+    opciones: [
+      "No, la ley no prevé esta figura",
+      "Sí, cuando así se determine reglamentariamente, para constreñir al cumplimiento de las obligaciones establecidas en la ley y en sus disposiciones de desarrollo, con independencia de las sanciones que puedan corresponder",
+      "Solo pueden imponerse a las Fuerzas y Cuerpos de Seguridad",
+      "Solo se aplican a los usuarios de servicios de seguridad, nunca a las empresas",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 72 de la Ley 5/2014 prevé la posibilidad de imponer multas coercitivas, en los términos que reglamentariamente se determinen, como medio de ejecución forzosa para constreñir al cumplimiento de las obligaciones establecidas en la ley y en su normativa de desarrollo, con independencia de las sanciones administrativas que, en su caso, procedan.",
+  },
 ];

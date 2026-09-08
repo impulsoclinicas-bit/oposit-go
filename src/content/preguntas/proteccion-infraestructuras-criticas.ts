@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 17.1 exige que los operadores con infraestructuras consideradas Críticas o Críticas Europeas comuniquen a las Delegaciones del Gobierno o, en su caso, al órgano competente de la Comunidad Autónoma con competencias estatutarias en protección de personas y bienes y mantenimiento del orden público donde se ubique la infraestructura, la existencia de un Delegado de Seguridad para dicha infraestructura.",
   },
+  {
+    id: "pic-16",
+    enunciado: "Según el artículo 6 de la Ley 8/2011, ¿qué órgano es responsable del Sistema de Protección de las Infraestructuras Críticas nacionales?",
+    opciones: [
+      "La Secretaría de Estado de Seguridad, como órgano superior del Ministerio del Interior",
+      "El Consejo de Ministros en pleno",
+      "Cada Comunidad Autónoma de forma independiente",
+      "El Centro Nacional de Inteligencia en exclusiva",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 6 de la Ley 8/2011 designa a la Secretaría de Estado de Seguridad, órgano superior del Ministerio del Interior, como responsable del Sistema de Protección de las Infraestructuras Críticas nacionales, ejerciendo sus competencias con la asistencia de los demás integrantes del Sistema, principalmente el CNPIC.",
+  },
+  {
+    id: "pic-17",
+    enunciado: "Según el artículo 7.1 de la Ley 8/2011, ¿qué es el CNPIC?",
+    opciones: [
+      "El Centro Nacional para la Protección de las Infraestructuras Críticas, órgano ministerial encargado del impulso, la coordinación y supervisión de las actividades encomendadas a la Secretaría de Estado de Seguridad en esta materia",
+      "Un organismo internacional dependiente de la Unión Europea",
+      "Una empresa privada de seguridad contratada por el Estado",
+      "Un cuerpo especial de la Guardia Civil",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 7.1 de la Ley 8/2011 crea el Centro Nacional para la Protección de las Infraestructuras Críticas (CNPIC) como órgano ministerial encargado del impulso, la coordinación y supervisión de todas las actividades que la Secretaría de Estado de Seguridad tiene encomendadas en relación con la protección de las infraestructuras críticas en el territorio nacional.",
+  },
+  {
+    id: "pic-18",
+    enunciado: "Según el artículo 7.3 de la Ley 8/2011, ¿qué corresponde al CNPIC respecto del Catálogo Nacional de Infraestructuras Estratégicas?",
+    opciones: [
+      "La realización de altas, bajas y modificaciones de infraestructuras en el Catálogo, así como la determinación de la criticidad de las infraestructuras estratégicas incluidas en él",
+      "Ninguna competencia, el Catálogo lo gestiona directamente el Consejo de Ministros",
+      "Solo la custodia física del documento en papel",
+      "La publicación íntegra y pública del Catálogo en el Boletín Oficial del Estado",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 7.3 de la Ley 8/2011 atribuye al CNPIC la realización de altas, bajas y modificaciones de infraestructuras en el Catálogo Nacional de Infraestructuras Estratégicas, así como la determinación de la criticidad de las infraestructuras estratégicas incluidas en el mismo.",
+  },
+  {
+    id: "pic-19",
+    enunciado: "Según el artículo 8 de la Ley 8/2011, ¿qué papel desempeñan los ministerios y organismos integrados en el Sistema de Protección de Infraestructuras Críticas?",
+    opciones: [
+      "Impulsar, en el ámbito de sus competencias, las políticas de seguridad del Gobierno sobre los distintos sectores estratégicos, velar por su aplicación y actuar como puntos de contacto especializados, colaborando con el Ministerio del Interior a través de la Secretaría de Estado de Seguridad",
+      "Sustituir por completo a la Secretaría de Estado de Seguridad en la dirección del Sistema",
+      "No tienen ninguna función específica dentro del Sistema",
+      "Actuar exclusivamente como órganos consultivos sin ninguna responsabilidad ejecutiva",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 8 de la Ley 8/2011 encomienda a los ministerios y organismos designados para cada sector estratégico impulsar, en el ámbito de sus competencias, las políticas de seguridad del Gobierno sobre los distintos sectores estratégicos nacionales, velar por su aplicación y actuar como puntos de contacto especializados, colaborando con el Ministerio del Interior a través de la Secretaría de Estado de Seguridad.",
+  },
+  {
+    id: "pic-20",
+    enunciado: "Según el artículo 9 de la Ley 8/2011, ¿qué facultades tienen los Delegados del Gobierno en las Comunidades Autónomas respecto de las infraestructuras críticas de su demarcación?",
+    opciones: [
+      "Ninguna, esta materia es competencia exclusiva del Ministerio del Interior en Madrid",
+      "Bajo la autoridad del Secretario de Estado de Seguridad, intervenir a través de las Fuerzas y Cuerpos de Seguridad en la implantación de los Planes de Protección Específico y de Apoyo Operativo, y proponer la declaración de una zona como crítica",
+      "Solo pueden emitir informes no vinculantes, sin capacidad de intervención",
+      "Aprobar directamente el Catálogo Nacional de Infraestructuras Estratégicas",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 9 de la Ley 8/2011 atribuye a los Delegados del Gobierno, bajo la autoridad del Secretario de Estado de Seguridad, facultades respecto de las infraestructuras críticas de su demarcación, incluyendo la intervención, a través de las Fuerzas y Cuerpos de Seguridad, en la implantación de los Planes de Protección Específico y de Apoyo Operativo, así como la propuesta de declaración de una zona como crítica.",
+  },
+  {
+    id: "pic-21",
+    enunciado: "Según el artículo 10 de la Ley 8/2011, ¿participan las Comunidades Autónomas con competencias en protección de personas y bienes en el Sistema de Protección de Infraestructuras Críticas?",
+    opciones: [
+      "No, el Sistema es de competencia exclusiva estatal, sin ninguna participación autonómica",
+      "Sí, participan en el proceso de declaración de una zona como crítica, en la aprobación del Plan de Apoyo Operativo correspondiente, en el Grupo de Trabajo Interdepartamental, y son miembros de la Comisión Nacional para la Protección de las Infraestructuras Críticas",
+      "Solo pueden participar como observadoras, sin derecho a voto en ningún órgano",
+      "Solo participan las Comunidades Autónomas insulares",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 10 de la Ley 8/2011 reconoce a las Comunidades Autónomas con competencias estatutariamente reconocidas en protección de personas y bienes y mantenimiento del orden público el derecho a participar en el proceso de declaración de zona crítica, en la aprobación del Plan de Apoyo Operativo, en las reuniones del Grupo de Trabajo Interdepartamental, y su condición de miembros de la Comisión Nacional para la Protección de las Infraestructuras Críticas.",
+  },
+  {
+    id: "pic-22",
+    enunciado: "Según el artículo 11 de la Ley 8/2011, ¿qué es la Comisión Nacional para la Protección de las Infraestructuras Críticas?",
+    opciones: [
+      "Un órgano colegiado adscrito a la Secretaría de Estado de Seguridad, competente para aprobar los Planes Estratégicos Sectoriales y designar a los operadores críticos, a propuesta del Grupo de Trabajo Interdepartamental",
+      "Un tribunal administrativo con funciones exclusivamente sancionadoras",
+      "Un órgano dependiente directamente de la Unión Europea",
+      "Una comisión parlamentaria de investigación",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 11 de la Ley 8/2011 crea la Comisión Nacional para la Protección de las Infraestructuras Críticas como órgano colegiado adscrito a la Secretaría de Estado de Seguridad, competente para aprobar los Planes Estratégicos Sectoriales y para designar a los operadores críticos, a propuesta del Grupo de Trabajo Interdepartamental.",
+  },
+  {
+    id: "pic-23",
+    enunciado: "Según el artículo 12 de la Ley 8/2011, ¿cuál es una de las funciones del Grupo de Trabajo Interdepartamental para la Protección de las Infraestructuras Críticas?",
+    opciones: [
+      "La elaboración de los diferentes Planes Estratégicos Sectoriales y la propuesta a la Comisión de la designación de los operadores críticos por cada sector estratégico",
+      "Sustituir a la Comisión Nacional en la aprobación definitiva de los planes",
+      "Ejercer funciones jurisdiccionales sobre los operadores críticos",
+      "Representar a España en organismos internacionales de defensa",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 12 de la Ley 8/2011 atribuye al Grupo de Trabajo Interdepartamental, en todo caso, la elaboración de los diferentes Planes Estratégicos Sectoriales y la propuesta a la Comisión Nacional de la designación de los operadores críticos por cada uno de los sectores estratégicos definidos.",
+  },
+  {
+    id: "pic-24",
+    enunciado: "Según el artículo 15 de la Ley 8/2011, ¿qué garantías deben cumplir los sistemas, comunicaciones e información relativos a la protección de infraestructuras críticas?",
+    opciones: [
+      "Ninguna garantía especial, se tratan como información pública ordinaria",
+      "Deben contar con las medidas de seguridad necesarias que garanticen su confidencialidad, integridad y disponibilidad, según el nivel de clasificación que les sea asignado",
+      "Solo deben garantizar su disponibilidad, sin exigencias de confidencialidad",
+      "Deben publicarse íntegramente en el Boletín Oficial del Estado",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 15 de la Ley 8/2011 exige que los sistemas, las comunicaciones y la información referida a la protección de las infraestructuras críticas cuenten con las medidas de seguridad necesarias que garanticen su confidencialidad, integridad y disponibilidad, según el nivel de clasificación que les sea asignado.",
+  },
+  {
+    id: "pic-25",
+    enunciado: "Según el artículo 18 de la Ley 8/2011, ¿quién debe garantizar la seguridad de los datos clasificados relativos a las propias infraestructuras?",
+    opciones: [
+      "El operador crítico, mediante los medios de protección y los sistemas de información adecuados que reglamentariamente se determinen",
+      "Exclusivamente el CNPIC, sin ninguna implicación del operador",
+      "El Centro Nacional de Inteligencia, con exclusión de cualquier otro órgano",
+      "Ningún sujeto está obligado específicamente a esta garantía",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 18 de la Ley 8/2011 obliga al operador crítico a garantizar la seguridad de los datos clasificados relativos a sus propias infraestructuras, mediante los medios de protección y los sistemas de información adecuados que reglamentariamente se determinen.",
+  },
+  {
+    id: "pic-26",
+    enunciado: "¿Qué es un Plan de Seguridad del Operador (PSO) dentro del Sistema de Protección de Infraestructuras Críticas?",
+    opciones: [
+      "El documento estratégico definidor de las políticas generales del operador crítico para garantizar la seguridad del conjunto de instalaciones o sistemas de su propiedad o gestión, elaborado en aplicación de la Ley 8/2011 y su Reglamento",
+      "Un sinónimo exacto del Plan Nacional de Protección de las Infraestructuras Críticas",
+      "Un plan que solo pueden elaborar las Administraciones Públicas, nunca los operadores privados",
+      "Un documento sin ningún valor normativo, de carácter meramente orientativo",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Plan de Seguridad del Operador (PSO), previsto en el desarrollo reglamentario de la Ley 8/2011, es el documento estratégico definidor de las políticas generales del operador crítico para garantizar la seguridad del conjunto de instalaciones o sistemas de su propiedad o gestión, constituyendo uno de los instrumentos de planificación del Sistema junto al Plan Nacional de Protección de las Infraestructuras Críticas, los Planes Estratégicos Sectoriales, los Planes de Protección Específicos y los Planes de Apoyo Operativo.",
+  },
+  {
+    id: "pic-27",
+    enunciado: "¿Qué es un Plan de Protección Específico (PPE) dentro del Sistema de Protección de Infraestructuras Críticas?",
+    opciones: [
+      "El documento operativo donde se definen las medidas concretas ya adoptadas y las previstas por adoptar por los operadores críticos, para garantizar la seguridad integral de una infraestructura crítica concreta",
+      "Un plan de evacuación exclusivo para emergencias de tipo incendio",
+      "Un sinónimo exacto del Plan de Apoyo Operativo",
+      "Un documento que solo redacta el Ministerio del Interior, sin intervención del operador",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Plan de Protección Específico (PPE) es el documento operativo, elaborado por el operador crítico para cada una de sus infraestructuras consideradas críticas, donde se definen las medidas concretas ya adoptadas y las previstas para garantizar la seguridad integral (física y lógica) de dicha infraestructura, siendo distinto del Plan de Apoyo Operativo (PAO), que recoge las medidas policiales de protección a adoptar por las Fuerzas y Cuerpos de Seguridad.",
+  },
+  {
+    id: "pic-28",
+    enunciado: "¿Qué diferencia hay entre una infraestructura «crítica» y una infraestructura «crítica europea», conforme a la Ley 8/2011?",
+    opciones: [
+      "Son sinónimos exactos, sin ninguna diferencia jurídica",
+      "La infraestructura crítica europea es aquella infraestructura crítica situada en un Estado miembro cuya perturbación o destrucción tendría un impacto significativo en, al menos, dos Estados miembros de la Unión Europea, exigiendo procedimientos de consulta transfronteriza adicionales",
+      "Solo existen infraestructuras críticas europeas, no infraestructuras críticas puramente nacionales",
+      "La infraestructura crítica europea es de menor relevancia que la infraestructura crítica nacional",
+    ],
+    correcta: 1,
+    explicacion:
+      "La Ley 8/2011 distingue las infraestructuras críticas de ámbito nacional de las infraestructuras críticas europeas, que son aquellas cuya perturbación o destrucción tendría un impacto significativo en, al menos, dos Estados miembros de la Unión Europea, en aplicación de la Directiva 2008/114/CE, exigiendo su designación un procedimiento de consulta bilateral entre los Estados miembros afectados.",
+  },
+  {
+    id: "pic-29",
+    enunciado: "¿Cuáles son, con carácter general, los sectores estratégicos considerados en el Catálogo Nacional de Infraestructuras Estratégicas?",
+    opciones: [
+      "Únicamente el sector energético, sin ninguna otra materia",
+      "Diversos sectores, entre ellos la Administración, el espacio, la industria nuclear, la industria química, las instalaciones de investigación, el agua, la energía, la salud, las tecnologías de la información y las comunicaciones, el transporte, la alimentación, y el sistema financiero y tributario",
+      "Solo los sectores relacionados directamente con la defensa nacional",
+      "Únicamente los sectores gestionados por empresas públicas",
+    ],
+    correcta: 1,
+    explicacion:
+      "El Catálogo Nacional de Infraestructuras Estratégicas, previsto en el art. 4 de la Ley 8/2011 y desarrollado reglamentariamente, comprende diversos sectores estratégicos: Administración, espacio, industria nuclear, industria química, instalaciones de investigación, agua, energía, salud, tecnologías de la información y las comunicaciones, transporte, alimentación, y sistema financiero y tributario, entre otros.",
+  },
+  {
+    id: "pic-30",
+    enunciado: "¿Qué papel desempeñan las Fuerzas y Cuerpos de Seguridad en la protección de las infraestructuras críticas?",
+    opciones: [
+      "Ninguno, esta materia es competencia exclusiva de las empresas de seguridad privada contratadas por los operadores",
+      "Intervienen en la implantación de los Planes de Protección Específico y de Apoyo Operativo, coordinándose con los operadores críticos y sus Responsables de Seguridad y Enlace, bajo la dirección de la Secretaría de Estado de Seguridad a través de los Delegados del Gobierno",
+      "Solo intervienen tras haberse producido un ataque terrorista efectivo",
+      "Actúan exclusivamente como asesores técnicos, sin ninguna capacidad operativa",
+    ],
+    correcta: 1,
+    explicacion:
+      "Las Fuerzas y Cuerpos de Seguridad desempeñan un papel esencial en la implantación de los Planes de Protección Específico y de Apoyo Operativo, coordinándose con los operadores críticos y sus Responsables de Seguridad y Enlace, bajo la dirección de la Secretaría de Estado de Seguridad, ejercida en el territorio a través de los Delegados del Gobierno conforme al art. 9 de la Ley 8/2011.",
+  },
 ];
