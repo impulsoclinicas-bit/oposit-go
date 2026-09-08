@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 556.2 castiga con multa de uno a tres meses a quienes falten al respeto y consideración debida a la autoridad en el ejercicio de sus funciones, un tipo de menor gravedad frente a la resistencia o desobediencia grave del art. 556.1 y frente al atentado del art. 550.",
   },
+  {
+    id: "dop-16",
+    enunciado: "¿Qué contenido tiene actualmente el artículo 552 del Código Penal, que anteriormente regulaba los tipos agravados de atentado?",
+    opciones: [
+      "Sigue castigando el atentado con instrumentos peligrosos con pena superior en grado",
+      "Está suprimido, tras la reforma que integró sus antiguas agravantes en la nueva redacción del artículo 551",
+      "Regula en la actualidad el delito de sedición",
+      "Regula el depósito de armas de guerra",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 552 CP está actualmente suprimido: las agravantes que antes contenía (uso de armas u objetos peligrosos, causar lesiones, actuar con encubrimiento del rostro, entre otras) fueron reordenadas y refundidas en la vigente redacción del art. 551 CP, que agrava la pena del atentado cuando concurren esas circunstancias.",
+  },
+  {
+    id: "dop-17",
+    enunciado: "¿Qué contenido tiene actualmente el artículo 559 del Código Penal?",
+    opciones: [
+      "Castiga la distribución de mensajes que inciten a la comisión de desórdenes públicos",
+      "Está suprimido en la vigente redacción del Código Penal",
+      "Regula la tenencia de armas prohibidas",
+      "Regula el depósito de armas de fuego reglamentadas",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 559 CP, que en una redacción anterior castigaba la distribución o difusión pública de mensajes que inciten a la comisión de desórdenes públicos, se encuentra actualmente suprimido tras la reforma operada por la LO 1/2015.",
+  },
+  {
+    id: "dop-18",
+    enunciado: "Según el artículo 560.1 del Código Penal, ¿qué castiga en relación con las telecomunicaciones?",
+    opciones: [
+      "Causar daños que interrumpan, obstaculicen o destruyan líneas o instalaciones de telecomunicaciones o la correspondencia postal, con prisión de uno a cinco años",
+      "El simple impago de la factura de un servicio de telecomunicaciones",
+      "La instalación no autorizada de una antena de telefonía",
+      "El uso de un teléfono móvil en un examen",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 560.1 CP castiga con prisión de uno a cinco años a quienes causen daños que interrumpan, obstaculicen o destruyan líneas o instalaciones de telecomunicaciones o la correspondencia postal, protegiendo así la continuidad de estos servicios esenciales.",
+  },
+  {
+    id: "dop-19",
+    enunciado: "Según el artículo 560.2 del Código Penal, ¿qué otra conducta se castiga con la misma pena que los daños a las telecomunicaciones?",
+    opciones: [
+      "Causar daños en vías férreas u originar un grave daño para la circulación ferroviaria",
+      "Circular sin billete en un tren de cercanías",
+      "Fumar en un vagón de tren",
+      "Retrasar deliberadamente la salida de un tren por error del maquinista",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 560.2 CP castiga con la misma pena de prisión de uno a cinco años a quienes causen daños en vías férreas u originen un grave daño para la circulación ferroviaria, equiparando la gravedad de esta conducta a la de los daños en telecomunicaciones y correspondencia postal.",
+  },
+  {
+    id: "dop-20",
+    enunciado: "Según el artículo 563 del Código Penal, ¿cómo se castiga la tenencia de armas prohibidas?",
+    opciones: [
+      "Con pena de prisión de uno a tres años, incluyendo la tenencia de armas resultantes de la modificación sustancial de las características de fabricación de armas reglamentadas",
+      "Únicamente con una sanción administrativa, nunca penal",
+      "Con la misma pena que el homicidio",
+      "Solo se castiga si el arma ha sido efectivamente disparada",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 563 CP castiga con pena de prisión de uno a tres años la tenencia de armas prohibidas, así como la de aquellas armas que sean resultado de la modificación sustancial de las características de fabricación de armas reglamentadas.",
+  },
+  {
+    id: "dop-21",
+    enunciado: "Según el artículo 564.1 del Código Penal, ¿cómo se castiga la tenencia de armas de fuego reglamentadas careciendo de las licencias o permisos necesarios?",
+    opciones: [
+      "Con prisión de uno a dos años si son armas cortas, y de seis meses a un año si son armas largas",
+      "Siempre con la misma pena, sin distinguir entre armas cortas y largas",
+      "Únicamente con multa administrativa",
+      "Con pena de prisión permanente revisable",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 564.1 CP castiga la tenencia de armas de fuego reglamentadas sin las licencias o permisos necesarios con prisión de uno a dos años si se trata de armas cortas, y de seis meses a un año si se trata de armas largas.",
+  },
+  {
+    id: "dop-22",
+    enunciado: "Según el artículo 564.2 del Código Penal, ¿qué circunstancia agrava la pena de tenencia ilícita de armas de fuego?",
+    opciones: [
+      "Que el arma sea de reciente fabricación",
+      "Que las armas carezcan de marcas de fábrica o de número, o los tengan alterados o borrados, que hayan sido introducidas ilegalmente en España, o que hayan sido transformadas modificando sus características originales",
+      "Que el titular tenga antecedentes penales por delitos de tráfico",
+      "Que el arma se guarde en una caja fuerte homologada",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 564.2 CP agrava las penas de tenencia ilícita de armas de fuego cuando concurra alguna de las circunstancias que enumera: que las armas carezcan de marcas de fábrica o de número (o los tengan alterados o borrados), que hayan sido introducidas ilegalmente en territorio español, o que hayan sido transformadas modificando sus características originales.",
+  },
+  {
+    id: "dop-23",
+    enunciado: "Según el artículo 566.1.1º del Código Penal, ¿cómo se castiga a los promotores y organizadores de un depósito no autorizado de armas de guerra, químicas, biológicas, nucleares o radiológicas?",
+    opciones: [
+      "Con prisión de cinco a diez años a los promotores y organizadores, y de tres a cinco años a quienes hayan cooperado a su formación",
+      "Únicamente con una multa administrativa",
+      "Con la misma pena que la tenencia individual de un arma reglamentada",
+      "Este supuesto no está tipificado como delito",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 566.1.1º CP castiga con prisión de cinco a diez años a los promotores y organizadores del depósito no autorizado de armas o municiones de guerra, armas químicas, biológicas, nucleares o radiológicas, minas antipersonas o municiones en racimo, y con prisión de tres a cinco años a quienes hayan cooperado a su formación.",
+  },
+  {
+    id: "dop-24",
+    enunciado: "Según el artículo 566.1.2º del Código Penal, ¿cómo se castiga el depósito no autorizado de armas de fuego reglamentadas o municiones para las mismas?",
+    opciones: [
+      "Con prisión de dos a cuatro años a los promotores y organizadores, y de seis meses a dos años a quienes hayan cooperado a su formación",
+      "Con la misma pena que el depósito de armas químicas o nucleares",
+      "Con una sanción exclusivamente administrativa",
+      "Solo se castiga si el depósito supera las cien unidades de armas",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 566.1.2º CP castiga el depósito no autorizado de armas de fuego reglamentadas o de municiones para estas con pena de prisión de dos a cuatro años a los promotores y organizadores, y de seis meses a dos años a quienes hayan cooperado a su formación, pena inferior a la prevista para el depósito de armas de guerra o de destrucción masiva.",
+  },
+  {
+    id: "dop-25",
+    enunciado: "Según el artículo 567.1 del Código Penal, ¿qué se considera «depósito de armas de guerra»?",
+    opciones: [
+      "La fabricación, la comercialización o la tenencia de dichas armas, con independencia de su modelo o clase, aun cuando se hallen en piezas desmontadas",
+      "Solo la tenencia de un arma de guerra completamente montada y operativa",
+      "Únicamente la fabricación industrial a gran escala",
+      "Solo se considera depósito cuando las armas están registradas oficialmente",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 567.1 CP define el depósito de armas de guerra como la fabricación, la comercialización o la tenencia de dichas armas, con independencia de su modelo o clase, aun cuando se hallen en piezas desmontadas, extendiendo la misma definición al depósito de armas químicas, biológicas, nucleares, radiológicas, minas antipersonas o municiones en racimo.",
+  },
+  {
+    id: "dop-26",
+    enunciado: "¿Qué diferencia esencial existe entre la tenencia ilícita de armas (arts. 563 y 564 CP) y el depósito de armas (art. 566 CP)?",
+    opciones: [
+      "Son exactamente el mismo delito con distinto nombre",
+      "La tenencia ilícita castiga la posesión individual de un arma prohibida o sin licencia; el depósito de armas castiga conductas de mayor entidad y organización (fabricación, comercialización o acumulación de armas o municiones no autorizadas, especialmente de guerra o de destrucción masiva), con penas considerablemente más graves",
+      "El depósito de armas se aplica únicamente a las Fuerzas Armadas",
+      "La tenencia ilícita solo puede cometerse por menores de edad",
+    ],
+    correcta: 1,
+    explicacion:
+      "La tenencia ilícita de armas (arts. 563 y 564 CP) sanciona la posesión individual de armas prohibidas o de armas reglamentadas sin la licencia exigida; el depósito de armas (art. 566 CP) castiga con penas considerablemente más graves conductas de mayor entidad y organización, como la fabricación, comercialización o acumulación no autorizada de armas o municiones, especialmente cuando se trata de armamento de guerra o de destrucción masiva.",
+  },
+  {
+    id: "dop-27",
+    enunciado: "¿Qué se entiende, conforme al Código Penal, por «organización criminal»?",
+    opciones: [
+      "La agrupación formada por más de dos personas con carácter estable o por tiempo indefinido, que de manera concertada y coordinada se repartan tareas o funciones con el fin de cometer delitos",
+      "Cualquier reunión ocasional de dos personas para cometer un único delito aislado",
+      "Un sinónimo exacto de banda armada terrorista",
+      "Solo se aplica a organizaciones con actividad exclusivamente internacional",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Código Penal (art. 570 bis) define la organización criminal como la agrupación formada por más de dos personas con carácter estable o por tiempo indefinido, que de manera concertada y coordinada se repartan diversas tareas o funciones con el fin de cometer delitos, así como de perpetrar la reiterada comisión de faltas en determinados casos.",
+  },
+  {
+    id: "dop-28",
+    enunciado: "¿Qué diferencia al «grupo criminal» de la «organización criminal» en el Código Penal?",
+    opciones: [
+      "Son sinónimos exactos, sancionados con idéntica pena en todo caso",
+      "El grupo criminal es la unión de más de dos personas que, sin reunir alguna o algunas de las características de la organización criminal (estabilidad, reparto de tareas), tiene por finalidad o por objeto la perpetración concertada de delitos",
+      "El grupo criminal exige siempre una estructura jerárquica más compleja que la organización",
+      "El grupo criminal solo puede existir en el ámbito del terrorismo",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 570 ter CP define el grupo criminal como la unión de más de dos personas que, sin reunir alguna o algunas de las características de la organización criminal definida en el art. 570 bis (estabilidad, reparto de tareas o funciones), tiene por finalidad o por objeto la perpetración concertada de delitos, castigándose con penas inferiores a las de la organización criminal, al implicar un menor grado de estructuración.",
+  },
+  {
+    id: "dop-29",
+    enunciado: "¿Cuál es el bien jurídico protegido, con carácter general, por los delitos contra el orden público del Título XXII del Código Penal?",
+    opciones: [
+      "La paz social y el normal desenvolvimiento de la convivencia ciudadana, así como el correcto funcionamiento de las instituciones del Estado frente a agresiones a la autoridad, sus agentes y funcionarios, y frente a conductas que alteren gravemente la seguridad colectiva",
+      "Únicamente el patrimonio individual de los ciudadanos",
+      "Exclusivamente la libertad sexual de las personas",
+      "El honor y la propia imagen de las personas",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los delitos contra el orden público (Título XXII CP) protegen, con carácter general, la paz social y el normal desenvolvimiento de la convivencia ciudadana, así como el correcto funcionamiento de las instituciones del Estado, castigando conductas como el atentado, la resistencia y desobediencia, los desórdenes públicos, la tenencia y el depósito ilícito de armas, y las organizaciones y grupos criminales.",
+  },
+  {
+    id: "dop-30",
+    enunciado: "¿Qué diferencia esencial existe entre el delito de atentado (art. 550 CP) y el delito de desórdenes públicos (art. 557 CP)?",
+    opciones: [
+      "Son idénticos, sin ninguna diferencia relevante",
+      "El atentado exige una agresión, resistencia grave o intimidación dirigida específicamente contra una autoridad, agente o funcionario público en el ejercicio de sus funciones; los desórdenes públicos castigan conductas colectivas de alteración grave de la paz pública (actuando en grupo, con violencia sobre personas o cosas) sin necesidad de que se dirijan contra una autoridad concreta",
+      "El delito de desórdenes públicos solo puede cometerse por una sola persona actuando en solitario",
+      "El atentado nunca puede cometerse en el marco de una manifestación",
+    ],
+    correcta: 1,
+    explicacion:
+      "El atentado (art. 550 CP) exige que la agresión, resistencia grave o intimidación se dirija específicamente contra una autoridad, sus agentes o funcionarios públicos en el ejercicio de sus funciones o con ocasión de ellas; los desórdenes públicos (art. 557 CP) castigan conductas colectivas (actuando en grupo, o individualmente pero de forma concertada con otros) que, mediante violencia sobre personas o cosas, alteren gravemente la paz pública, sin exigir que se dirijan necesariamente contra una autoridad concreta.",
+  },
 ];

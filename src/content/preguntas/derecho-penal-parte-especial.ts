@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 149.1 castiga con prisión de seis a doce años a quien causare a otro, por cualquier medio, la pérdida o inutilidad de un órgano o miembro principal, de un sentido, la impotencia, la esterilidad, una grave deformidad o una grave enfermedad somática o psíquica, constituyendo el tipo más grave de lesiones dentro del Título III del Código Penal.",
   },
+  {
+    id: "dpe-16",
+    enunciado: "Según el artículo 178.1 del Código Penal, ¿en qué consiste el delito de agresión sexual?",
+    opciones: [
+      "Realizar cualquier acto que atente contra la libertad sexual de otra persona sin su consentimiento, entendiéndose que solo hay consentimiento cuando se manifieste libremente mediante actos que expresen de manera clara la voluntad de la persona",
+      "Únicamente el acceso carnal por vía vaginal, anal o bucal",
+      "Solo se castiga cuando media violencia física acreditada por parte médico",
+      "Cualquier comentario de contenido sexual no deseado, sin necesidad de contacto físico",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 178.1 CP, tras la reforma de la LO 10/2022 (\"solo sí es sí\"), castiga como agresión sexual cualquier acto que atente contra la libertad sexual de otra persona sin su consentimiento, precisando que solo existe consentimiento cuando se haya manifestado libremente mediante actos que, en atención a las circunstancias del caso, expresen de manera clara la voluntad de la persona.",
+  },
+  {
+    id: "dpe-17",
+    enunciado: "Según el artículo 179.1 del Código Penal, ¿cuándo se considera al responsable de una agresión sexual «reo de violación»?",
+    opciones: [
+      "Cuando la agresión sexual consista en acceso carnal por vía vaginal, anal o bucal, o introducción de miembros corporales u objetos por alguna de las dos primeras vías",
+      "Siempre que exista cualquier contacto físico de naturaleza sexual",
+      "Solo cuando la víctima sea menor de edad",
+      "Únicamente cuando concurra parentesco entre agresor y víctima",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 179.1 CP reserva la calificación de violación, castigada con pena de prisión de cuatro a doce años, a los supuestos en que la agresión sexual consista en acceso carnal por vía vaginal, anal o bucal, o introducción de miembros corporales u objetos por alguna de las dos primeras vías.",
+  },
+  {
+    id: "dpe-18",
+    enunciado: "Según el artículo 180.1 del Código Penal, ¿cuál de las siguientes circunstancias agrava la pena de una agresión sexual?",
+    opciones: [
+      "Que los hechos se cometan por la actuación conjunta de dos o más personas",
+      "Que el hecho se cometa en horario nocturno",
+      "Que la víctima sea mayor de edad",
+      "Que el autor confiese los hechos voluntariamente",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 180.1.1.ª CP agrava la pena de las agresiones sexuales, entre otras circunstancias, cuando los hechos se cometan por la actuación conjunta de dos o más personas, así como cuando concurra especial vulnerabilidad de la víctima, relación de parentesco o convivencia, o uso de armas.",
+  },
+  {
+    id: "dpe-19",
+    enunciado: "Según el artículo 173.2 del Código Penal, ¿qué castiga el delito de violencia doméstica habitual?",
+    opciones: [
+      "Un único episodio aislado de discusión familiar",
+      "El ejercicio habitual de violencia física o psíquica sobre el cónyuge, expareja, descendientes, ascendientes u otras personas del núcleo de convivencia familiar, valorándose la habitualidad por el número de actos acreditados y su proximidad temporal, con independencia de que hayan sido enjuiciados antes",
+      "Solo la violencia física con resultado de lesión permanente",
+      "Únicamente los hechos denunciados formalmente por la víctima ante notario",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 173.2 CP castiga a quien habitualmente ejerza violencia física o psíquica sobre su cónyuge o expareja, descendientes, ascendientes u otras personas integradas en el núcleo de convivencia familiar; conforme al apartado 3, la habitualidad se aprecia por el número de actos de violencia acreditados y su proximidad temporal, con independencia de que hayan sido objeto de enjuiciamiento en procesos anteriores.",
+  },
+  {
+    id: "dpe-20",
+    enunciado: "Según el artículo 173.1 del Código Penal, ¿qué castiga el delito contra la integridad moral?",
+    opciones: [
+      "Infligir a otra persona un trato degradante, menoscabando gravemente su integridad moral",
+      "Cualquier discusión subida de tono entre particulares",
+      "Solo las agresiones físicas con resultado de lesión",
+      "Exclusivamente los actos cometidos por autoridad o funcionario público",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 173.1 CP castiga con prisión de seis meses a dos años a quien infligiera a otra persona un trato degradante, menoscabando gravemente su integridad moral, incluyendo también supuestos de acoso laboral y acoso inmobiliario reiterado.",
+  },
+  {
+    id: "dpe-21",
+    enunciado: "Según el artículo 177 bis del Código Penal, ¿qué es la trata de seres humanos?",
+    opciones: [
+      "Un sinónimo del tráfico ilegal de personas a través de fronteras, sancionado en la legislación de extranjería",
+      "Captar, transportar, trasladar, acoger o recibir a una persona empleando violencia, intimidación, engaño o abuso de una situación de vulnerabilidad, con fines de explotación laboral, sexual, para actividades delictivas, extracción de órganos o matrimonio forzado",
+      "Solo la explotación sexual de menores de edad",
+      "Un delito que únicamente puede cometerse fuera del territorio español",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 177 bis CP castiga la trata de seres humanos como delito autónomo, distinto del tráfico ilegal de personas: consiste en captar, transportar, trasladar, acoger o recibir a una persona, empleando violencia, intimidación, engaño o abuso de vulnerabilidad, con finalidades de explotación laboral, sexual, para actividades delictivas, extracción de órganos o matrimonio forzado, con penas de cinco a ocho años de prisión.",
+  },
+  {
+    id: "dpe-22",
+    enunciado: "Según el artículo 177 bis.3 del Código Penal, ¿qué relevancia tiene el consentimiento de la víctima de trata de seres humanos cuando se ha empleado violencia, intimidación o engaño?",
+    opciones: [
+      "Excluye completamente la responsabilidad penal del autor",
+      "Es irrelevante: el consentimiento de la víctima de trata será irrelevante cuando se haya recurrido a alguno de los medios comisivos previstos en el apartado primero del artículo",
+      "Solo excluye la responsabilidad si la víctima es mayor de edad",
+      "Convierte el delito en una falta administrativa",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 177 bis.3 CP establece que el consentimiento de una víctima de trata de seres humanos será irrelevante cuando se haya recurrido a alguno de los medios comisivos (violencia, intimidación, engaño, abuso de vulnerabilidad) indicados en el apartado primero del precepto.",
+  },
+  {
+    id: "dpe-23",
+    enunciado: "Según el artículo 197.1 del Código Penal, ¿qué castiga el delito de descubrimiento y revelación de secretos?",
+    opciones: [
+      "Apoderarse, para descubrir los secretos o vulnerar la intimidad de otro sin su consentimiento, de sus papeles, cartas, mensajes de correo electrónico u otros documentos o efectos personales, o interceptar sus telecomunicaciones",
+      "Únicamente la difusión pública de fotografías tomadas en la vía pública",
+      "Solo el acceso a cuentas bancarias ajenas",
+      "Exclusivamente las escuchas telefónicas realizadas por la Policía sin autorización judicial",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 197.1 CP castiga con prisión de uno a cuatro años y multa de doce a veinticuatro meses a quien, para descubrir los secretos o vulnerar la intimidad de otro, sin su consentimiento, se apodere de sus papeles, cartas, mensajes de correo electrónico u otros documentos o efectos personales, intercepte sus telecomunicaciones o utilice artificios técnicos de escucha, transmisión, grabación o reproducción del sonido o la imagen.",
+  },
+  {
+    id: "dpe-24",
+    enunciado: "Según el artículo 197.2 del Código Penal, ¿qué castiga respecto de los datos reservados de carácter personal?",
+    opciones: [
+      "Apoderarse, utilizar o modificar, sin autorización y en perjuicio de tercero, datos reservados de carácter personal o familiar registrados en ficheros o soportes informáticos, así como acceder a ellos sin autorización",
+      "Únicamente la publicación de datos personales ya públicos",
+      "Solo el uso de datos con fines estadísticos oficiales",
+      "Exclusivamente los datos bancarios, con exclusión de otros datos personales",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 197.2 CP castiga a quien, sin estar autorizado, se apodere, utilice o modifique, en perjuicio de tercero, datos reservados de carácter personal o familiar de otro registrados en ficheros o soportes informáticos, electrónicos o telemáticos, así como a quien acceda a ellos sin autorización o los altere o utilice en perjuicio del titular o de un tercero.",
+  },
+  {
+    id: "dpe-25",
+    enunciado: "Según el artículo 197.7 del Código Penal, ¿qué castiga en relación con la difusión de imágenes íntimas sin consentimiento (conocida coloquialmente como \"sexting\" no consentido)?",
+    opciones: [
+      "Difundir, revelar o ceder a terceros, sin autorización de la persona afectada, imágenes o grabaciones audiovisuales de ella obtenidas con su anuencia en un domicilio o lugar fuera del alcance de terceros, cuando la divulgación menoscabe gravemente su intimidad personal",
+      "Únicamente la captación de imágenes sin consentimiento, con independencia de su posterior difusión",
+      "Solo se castiga si la víctima es menor de edad",
+      "Este supuesto no está tipificado como delito en España",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 197.7 CP castiga con prisión de tres meses a un año o multa de seis a doce meses a quien, sin autorización de la persona afectada, difunda, revele o ceda a terceros imágenes o grabaciones audiovisuales de ella obtenidas con su anuencia en un domicilio o lugar fuera del alcance de la mirada de terceros, cuando la divulgación menoscabe gravemente su intimidad personal.",
+  },
+  {
+    id: "dpe-26",
+    enunciado: "Según el artículo 197.3 del Código Penal, ¿cómo se agrava la pena de los delitos de descubrimiento de secretos cuando los datos descubiertos se difunden a terceros?",
+    opciones: [
+      "Se impone la pena de prisión de dos a cinco años a quien difunda, revele o ceda a terceros los datos o hechos descubiertos o las imágenes captadas",
+      "No existe agravación específica por la difusión posterior",
+      "Se reduce la pena si la difusión es a un solo destinatario",
+      "La difusión solo se sanciona con una multa administrativa",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 197.3 CP impone la pena de prisión de dos a cinco años cuando se difunden, revelan o ceden a terceros los datos o hechos descubiertos o las imágenes captadas conforme a los apartados 1 y 2 del mismo artículo, agravando así la conducta de mero descubrimiento.",
+  },
+  {
+    id: "dpe-27",
+    enunciado: "Según el artículo 197.4.a) del Código Penal, ¿cómo se agrava el delito de descubrimiento de secretos cuando lo comete la persona encargada de los ficheros o soportes informáticos?",
+    opciones: [
+      "Se impone la pena de prisión de tres a cinco años cuando los hechos se cometan por las personas encargadas o responsables de los ficheros, soportes informáticos, electrónicos o telemáticos, archivos o registros",
+      "No existe agravación específica en función del sujeto activo",
+      "Se atenúa la pena por concurrir una relación de confianza",
+      "Solo se agrava si el responsable es una autoridad extranjera",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 197.4.a) CP agrava la pena a prisión de tres a cinco años cuando los hechos descritos en los apartados 1 y 2 se cometan por las personas encargadas o responsables de los ficheros, soportes informáticos, electrónicos o telemáticos, archivos o registros, dada la especial posición de confianza que ocupan.",
+  },
+  {
+    id: "dpe-28",
+    enunciado: "¿En qué consiste el delito de omisión del deber de socorro, regulado en el Código Penal?",
+    opciones: [
+      "No socorrer a una persona que se halle desamparada y en peligro manifiesto y grave, cuando se pudiere hacer sin riesgo propio ni de terceros",
+      "No prestar auxilio económico a una persona necesitada",
+      "No informar a la Policía de cualquier delito del que se tenga conocimiento",
+      "Un delito que solo pueden cometer los profesionales sanitarios",
+    ],
+    correcta: 0,
+    explicacion:
+      "El delito de omisión del deber de socorro castiga a quien no socorra a una persona que se halle desamparada y en peligro manifiesto y grave, cuando pudiere hacerlo sin riesgo propio ni de terceros, así como a quien, impedido de prestar socorro, no demande con urgencia auxilio ajeno o no acuda a la autoridad más próxima.",
+  },
+  {
+    id: "dpe-29",
+    enunciado: "¿En qué consiste el delito de allanamiento de morada, regulado en el Código Penal?",
+    opciones: [
+      "Entrar en morada ajena o mantenerse en ella contra la voluntad de su morador, sin habitar previamente en dicho domicilio",
+      "Realizar obras no autorizadas en un edificio de propiedad ajena",
+      "El impago del alquiler de una vivienda",
+      "Solo se comete si media violencia física sobre el morador",
+    ],
+    correcta: 0,
+    explicacion:
+      "El delito de allanamiento de morada castiga a quien, sin habitar en ella, entre en morada ajena o se mantenga en la misma contra la voluntad de su morador, agravándose la pena si se ejecuta con violencia o intimidación; existe una figura equivalente para el domicilio de personas jurídicas y establecimientos abiertos al público (allanamiento de establecimiento).",
+  },
+  {
+    id: "dpe-30",
+    enunciado: "¿Qué diferencia existe entre los delitos de calumnia e injuria, ambos delitos contra el honor?",
+    opciones: [
+      "Son términos sinónimos con idéntica pena",
+      "La calumnia consiste en imputar a otro un delito, a sabiendas de su falsedad o con temerario desprecio hacia la verdad; la injuria es la acción o expresión que lesiona la dignidad de otra persona, menoscabando su fama o atentando contra su propia estimación",
+      "La injuria solo puede cometerse por escrito, y la calumnia solo de forma verbal",
+      "Ambas exigen necesariamente la imputación de un delito concreto",
+    ],
+    correcta: 1,
+    explicacion:
+      "El Código Penal distingue la calumnia (imputación de un delito a sabiendas de su falsedad o con temerario desprecio hacia la verdad) de la injuria (acción o expresión que lesiona la dignidad de otra persona, menoscabando su fama o atentando contra su propia estimación), previendo ambas mayor pena cuando se propagan con publicidad.",
+  },
 ];
