@@ -186,4 +186,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 63.1 dispone que, en los supuestos que enumera (entre ellos el incumplimiento de medidas de seguridad, las actividades contrarias a la seguridad nacional o la inmigración clandestina con ánimo de lucro), la tramitación del expediente de expulsión tendrá carácter preferente, y en estos supuestos no cabrá la concesión del período de salida voluntaria.",
   },
+  {
+    id: "ext-16",
+    enunciado: "Según el artículo 50 de la Ley Orgánica 4/2000, ¿a qué normativa se ajusta el ejercicio de la potestad sancionadora en materia de extranjería?",
+    opciones: [
+      "A lo dispuesto en la propia Ley Orgánica y sus disposiciones de desarrollo, y a la normativa general del procedimiento administrativo común",
+      "Exclusivamente al Código Penal",
+      "A la normativa de la Unión Europea, con exclusión de la ley española",
+      "No existe ninguna norma que regule esta potestad",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 50 de la LO 4/2000 establece que el ejercicio de la potestad sancionadora por las infracciones administrativas previstas en la Ley se ajustará a lo dispuesto en la misma y en sus disposiciones de desarrollo, y a la normativa general reguladora del procedimiento administrativo común.",
+  },
+  {
+    id: "ext-17",
+    enunciado: "Según el artículo 52 de la Ley Orgánica 4/2000, ¿cuál de las siguientes es una infracción leve?",
+    opciones: [
+      "El retraso, hasta tres meses, en la solicitud de renovación de las autorizaciones una vez hayan caducado",
+      "La entrada ilegal en territorio español",
+      "El favorecimiento con ánimo de lucro de la inmigración clandestina",
+      "La reincidencia en una infracción muy grave",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 52 de la LO 4/2000 tipifica como infracción leve, entre otras, el retraso hasta tres meses en la solicitud de renovación de las autorizaciones una vez hayan caducado, la omisión o retraso en la comunicación de cambios de nacionalidad, estado civil o domicilio, o encontrarse trabajando en una ocupación o ámbito geográfico distinto del autorizado.",
+  },
+  {
+    id: "ext-18",
+    enunciado: "Según el artículo 60.1 de la Ley Orgánica 4/2000, ¿qué ocurre con el extranjero al que se le deniega la entrada en frontera?",
+    opciones: [
+      "Queda obligado a regresar a su punto de origen, adoptándose las medidas necesarias para que el regreso se produzca en el plazo más breve posible",
+      "Se le concede automáticamente un permiso de residencia temporal",
+      "Puede permanecer indefinidamente en la zona de tránsito del aeropuerto sin ninguna limitación",
+      "Se le expulsa inmediatamente sin posibilidad de comunicación con su embajada o consulado",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 60.1 de la LO 4/2000 obliga a los extranjeros a los que se deniegue la entrada en frontera a regresar a su punto de origen, adoptándose de forma inmediata las medidas necesarias para que el regreso se produzca en el plazo más breve posible; si el regreso se retrasara más de setenta y dos horas, la autoridad se dirigirá al Juez de Instrucción para que determine el lugar de internamiento.",
+  },
+  {
+    id: "ext-19",
+    enunciado: "Según el artículo 60.2 de la Ley Orgánica 4/2000, ¿qué carácter tienen los lugares de internamiento para extranjeros a los que se ha denegado la entrada?",
+    opciones: [
+      "Carácter penitenciario, con el mismo régimen que un centro penitenciario ordinario",
+      "No tendrán carácter penitenciario, estando dotados de servicios sociales, jurídicos, culturales y sanitarios, y los internados estarán privados únicamente del derecho ambulatorio",
+      "Carácter militar, bajo la dirección del Ministerio de Defensa",
+      "Carácter hotelero, sin ninguna supervisión pública",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 60.2 de la LO 4/2000 exige que los lugares de internamiento para extranjeros no tengan carácter penitenciario, estando dotados de servicios sociales, jurídicos, culturales y sanitarios, y que los extranjeros internados estén privados únicamente del derecho ambulatorio.",
+  },
+  {
+    id: "ext-20",
+    enunciado: "Según el artículo 64.1 de la Ley Orgánica 4/2000, ¿qué ocurre si expira el plazo de cumplimiento voluntario de la expulsión sin que el extranjero haya abandonado el territorio nacional?",
+    opciones: [
+      "Se procederá a su detención y conducción hasta el puesto de salida por el que deba hacerse efectiva la expulsión",
+      "El expediente de expulsión queda automáticamente sin efecto",
+      "Se le concede un nuevo plazo indefinido de forma automática",
+      "Solo se le impone una multa adicional, sin ninguna otra consecuencia",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 64.1 de la LO 4/2000 dispone que, expirado el plazo de cumplimiento voluntario sin que el extranjero haya abandonado el territorio nacional, se procederá a su detención y conducción hasta el puesto de salida por el que se deba hacer efectiva la expulsión, pudiendo solicitarse el internamiento si no pudiera ejecutarse en setenta y dos horas.",
+  },
+  {
+    id: "ext-21",
+    enunciado: "Según el artículo 64.3 de la Ley Orgánica 4/2000, ¿a costa de quién se ejecuta, en su caso, la resolución de expulsión?",
+    opciones: [
+      "Del empleador sancionado por determinadas infracciones relacionadas con la contratación ilegal, o del propio extranjero si dispone de medios económicos; en su defecto, se comunica al representante diplomático o consular de su país",
+      "Siempre y en todo caso del Estado español, sin ninguna excepción",
+      "De la Unión Europea, con cargo a sus fondos de cohesión",
+      "De la empresa de transporte que lo trasladó a España, en cualquier circunstancia",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 64.3 de la LO 4/2000 establece que la ejecución de la resolución de expulsión se efectuará, en su caso, a costa del empleador que hubiera sido sancionado por determinadas infracciones de contratación ilegal, o a costa del extranjero si dispusiera de medios económicos; de no darse ninguna de estas condiciones, se comunicará al representante diplomático o consular de su país.",
+  },
+  {
+    id: "ext-22",
+    enunciado: "Según el artículo 64.5 de la Ley Orgánica 4/2000, ¿qué ocurre con la ejecución de una resolución de expulsión cuando se formaliza una petición de protección internacional?",
+    opciones: [
+      "Se suspende hasta que dicha petición se haya inadmitido a trámite o resuelto conforme a la normativa de protección internacional",
+      "No tiene ningún efecto sobre la ejecución de la expulsión, que continúa sin alteración",
+      "Se archiva automáticamente el expediente de expulsión sin posibilidad de reanudarlo",
+      "Se acelera la ejecución de la expulsión para evitar dilaciones",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 64.5 de la LO 4/2000 dispone que se suspenderá la ejecución de la resolución de expulsión cuando se formalice una petición de protección internacional, hasta que esta se haya inadmitido a trámite o resuelto, conforme a lo dispuesto en la normativa de protección internacional (Ley 12/2009).",
+  },
+  {
+    id: "ext-23",
+    enunciado: "Según el artículo 65.1 de la Ley Orgánica 4/2000, ¿son recurribles las resoluciones administrativas sancionadoras en materia de extranjería?",
+    opciones: [
+      "No, son firmes e inatacables desde su notificación",
+      "Sí, son recurribles con arreglo a lo dispuesto en las leyes, con el régimen de ejecutividad previsto con carácter general",
+      "Solo pueden recurrirse ante el Tribunal Constitucional directamente",
+      "Solo son recurribles si el extranjero se encuentra en territorio español en el momento de la notificación",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 65.1 de la LO 4/2000 establece que las resoluciones administrativas sancionadoras en materia de extranjería son recurribles con arreglo a lo dispuesto en las leyes, siendo su régimen de ejecutividad el previsto con carácter general en la normativa de procedimiento administrativo.",
+  },
+  {
+    id: "ext-24",
+    enunciado: "Según el artículo 65.2 de la Ley Orgánica 4/2000, ¿cómo puede recurrir un extranjero que no se encuentra en España las resoluciones que le afecten?",
+    opciones: [
+      "No puede recurrir en ningún caso mientras no regrese a territorio español",
+      "Puede cursar los recursos procedentes, tanto en vía administrativa como jurisdiccional, a través de las representaciones diplomáticas o consulares correspondientes",
+      "Solo mediante un abogado con despacho abierto en España",
+      "Solo si previamente ha obtenido un visado de reingreso",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 65.2 de la LO 4/2000 permite que, cuando el extranjero no se encuentre en España, pueda cursar los recursos procedentes, tanto en vía administrativa como jurisdiccional, a través de las representaciones diplomáticas o consulares correspondientes, que los remitirán al organismo competente.",
+  },
+  {
+    id: "ext-25",
+    enunciado: "Según el artículo 66.1 de la Ley Orgánica 4/2000, ¿qué obligación puede imponerse a las compañías de transporte respecto de la información de los pasajeros?",
+    opciones: [
+      "Ninguna, las compañías de transporte no tienen ninguna obligación en materia de extranjería",
+      "Remitir a las autoridades españolas encargadas del control de entrada información relativa a los pasajeros transportados desde fuera del Espacio Schengen, cuando así lo determinen las autoridades para combatir la inmigración ilegal",
+      "Solo deben informar sobre los pasajeros de nacionalidad española",
+      "Solo se exige esta obligación a las compañías aéreas, nunca a las marítimas o terrestres",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 66.1 de la LO 4/2000 permite exigir a las compañías, empresas de transporte o transportistas, respecto de rutas procedentes de fuera del Espacio Schengen, la remisión a las autoridades españolas de la información relativa a los pasajeros transportados, cuando la intensidad de los flujos migratorios lo haga necesario para combatir la inmigración ilegal y garantizar la seguridad pública.",
+  },
+  {
+    id: "ext-26",
+    enunciado: "Según el artículo 66.3.b) de la Ley Orgánica 4/2000, ¿qué obligación tiene el transportista respecto del extranjero al que se deniega la entrada por deficiencias documentales?",
+    opciones: [
+      "Ninguna, la responsabilidad recae exclusivamente en las autoridades españolas",
+      "Hacerse cargo inmediatamente del extranjero que hubiese trasladado hasta la frontera correspondiente, si a este se le hubiera denegado la entrada por deficiencias en su documentación",
+      "Pagar una indemnización directa al extranjero afectado",
+      "Facilitarle un visado de entrada de emergencia",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 66.3.b) de la LO 4/2000 obliga al transportista a hacerse cargo inmediatamente del extranjero que hubiese trasladado hasta la frontera aérea, marítima o terrestre correspondiente, si a este se le hubiera denegado la entrada por deficiencias en la documentación necesaria para el cruce de fronteras.",
+  },
+  {
+    id: "ext-27",
+    enunciado: "¿Qué diferencia existe entre la «expulsión» y el «retorno» en el régimen de extranjería español?",
+    opciones: [
+      "Son sinónimos exactos, sin ninguna diferencia jurídica",
+      "La expulsión es la sanción administrativa impuesta tras un expediente sancionador a un extranjero que ya se encuentra en territorio español; el retorno se aplica a quien pretende entrar ilegalmente y es interceptado en el momento de la entrada o inmediaciones, o a quien ha sido expulsado judicialmente y contraviene la prohibición de entrada",
+      "El retorno solo puede ejecutarse mediante autorización del Parlamento",
+      "La expulsión solo se aplica a menores de edad, y el retorno a los mayores de edad",
+    ],
+    correcta: 1,
+    explicacion:
+      "La expulsión es la sanción administrativa que pone fin al expediente sancionador incoado a un extranjero que se encuentra en España en situación irregular o que ha incurrido en determinadas infracciones; el retorno es la medida que se aplica a los extranjeros que pretenden entrar ilegalmente en España y son interceptados en frontera o sus inmediaciones, o que habiendo sido expulsados contravienen la prohibición de entrada, sin necesidad de tramitar un nuevo expediente de expulsión.",
+  },
+  {
+    id: "ext-28",
+    enunciado: "¿Qué diferencia existe entre la infracción muy grave del artículo 54.1.b) (favorecimiento de la inmigración clandestina con ánimo de lucro) y el delito de tráfico ilegal de personas del Código Penal?",
+    opciones: [
+      "Son idénticos, sancionándose siempre por ambas vías simultáneamente",
+      "La infracción administrativa del art. 54.1.b) se aplica «siempre que el hecho no constituya delito»; cuando la conducta reviste mayor gravedad (organización, ánimo de lucro cualificado, puesta en peligro de la vida de las personas, entre otros elementos), se tipifica como delito en el Código Penal, con preferencia de la vía penal sobre la administrativa",
+      "El delito solo se aplica a ciudadanos españoles que ayuden a extranjeros",
+      "La infracción administrativa siempre conlleva mayor pena que el delito",
+    ],
+    correcta: 1,
+    explicacion:
+      "El propio art. 54.1.b) de la LO 4/2000 aclara que la infracción administrativa se aplica «siempre que el hecho no constituya delito»; cuando la conducta de favorecimiento de la inmigración clandestina reviste mayor gravedad, se tipifica como delito en el Código Penal, rigiendo el principio de preferencia de la jurisdicción penal sobre la vía administrativa sancionadora.",
+  },
+  {
+    id: "ext-29",
+    enunciado: "¿Qué papel desempeña la Policía Nacional en la ejecución material de las resoluciones de expulsión?",
+    opciones: [
+      "Ninguno, la ejecución corresponde en exclusiva a la autoridad judicial",
+      "Practica la detención y conducción del extranjero hasta el puesto de salida, tramita los expedientes sancionadores y de expulsión, y custodia a los internos en los Centros de Internamiento de Extranjeros, bajo la dirección de la autoridad gubernativa competente",
+      "Solo interviene si el extranjero se resiste violentamente",
+      "Solo puede intervenir con autorización previa de la Unión Europea",
+    ],
+    correcta: 1,
+    explicacion:
+      "La Policía Nacional, a través de sus unidades de extranjería y fronteras, desempeña un papel esencial en la ejecución material del régimen de extranjería: tramita los expedientes sancionadores y de expulsión, practica la detención y conducción del extranjero hasta el puesto de salida, y presta servicio en los Centros de Internamiento de Extranjeros, bajo la dirección de la autoridad gubernativa competente y el control judicial correspondiente.",
+  },
+  {
+    id: "ext-30",
+    enunciado: "¿Cuál es la estructura general del régimen sancionador de la Ley Orgánica 4/2000?",
+    opciones: [
+      "Clasifica las infracciones en leves, graves y muy graves (art. 51 y siguientes), prevé sanciones de multa y, en su caso, de expulsión (art. 55 y 57), regula medidas cautelares y el internamiento (arts. 61 y 62), y establece un procedimiento sancionador ordinario y otro preferente (art. 63)",
+      "Se limita a establecer un único tipo de infracción, sancionada siempre con la misma multa fija",
+      "No prevé ninguna posibilidad de recurso frente a las sanciones impuestas",
+      "Remite en su totalidad al Código Penal, sin regulación administrativa propia",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Título III de la LO 4/2000 («De las infracciones en materia de extranjería y su régimen sancionador») clasifica las infracciones en leves, graves y muy graves, prevé como sanciones la multa y, en determinados supuestos, la expulsión, regula las medidas cautelares y el internamiento, y distingue un procedimiento sancionador ordinario de un procedimiento preferente para los supuestos de mayor gravedad o urgencia.",
+  },
 ];

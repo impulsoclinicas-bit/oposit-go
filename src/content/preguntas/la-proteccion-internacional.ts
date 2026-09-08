@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 41 permite a las personas refugiadas y beneficiarias de protección subsidiaria optar por reagrupar a sus familiares en lugar de solicitar la extensión del estatuto, siendo esta vía siempre aplicable cuando los beneficiarios tengan una nacionalidad distinta a la de la persona reagrupante, si bien la reagrupación familiar solo podrá ejercitarse una sola vez, sin posibilidad de reagrupaciones sucesivas.",
   },
+  {
+    id: "pin-16",
+    enunciado: "Según el artículo 6.1 de la Ley 12/2009, ¿qué requisitos deben cumplir los actos de persecución para fundamentar el temor a ser perseguido?",
+    opciones: [
+      "Ser suficientemente graves por su naturaleza o carácter reiterado como para constituir una violación grave de los derechos fundamentales, o ser una acumulación de medidas lo suficientemente grave como para afectar de manera similar a la persona",
+      "Cualquier molestia o inconveniente menor sufrido en el país de origen",
+      "Solo se consideran actos de persecución los cometidos directamente por el propio Estado, nunca por terceros",
+      "Deben haberse producido necesariamente durante un conflicto armado declarado",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 6.1 de la Ley 12/2009 exige que los actos de persecución sean suficientemente graves por su naturaleza o carácter reiterado como para constituir una violación grave de los derechos fundamentales, o bien constituyan una acumulación de medidas lo suficientemente grave como para afectar a la persona de manera similar.",
+  },
+  {
+    id: "pin-17",
+    enunciado: "Según el artículo 6.2 de la Ley 12/2009, ¿cuál de las siguientes puede constituir un acto de persecución?",
+    opciones: [
+      "Los actos de violencia física o psíquica, incluidos los actos de violencia sexual",
+      "Únicamente las restricciones administrativas de tipo fiscal",
+      "El simple hecho de pertenecer a la mayoría demográfica del país",
+      "Cualquier crítica política recibida en un debate público",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 6.2 de la Ley 12/2009 enumera, entre las formas que pueden revestir los actos de persecución, los actos de violencia física o psíquica (incluida la violencia sexual), las medidas discriminatorias legislativas, administrativas, policiales o judiciales, los procesamientos o penas desproporcionados o discriminatorios, y los actos de naturaleza sexual que afecten a adultos o menores.",
+  },
+  {
+    id: "pin-18",
+    enunciado: "Según el artículo 7.1 de la Ley 12/2009, ¿qué se entiende, entre otros elementos, por «grupo social determinado» a efectos de los motivos de persecución?",
+    opciones: [
+      "Un grupo cuyos integrantes comparten una característica innata o antecedentes comunes que no pueden cambiarse, o una característica tan fundamental para su identidad que no se les puede exigir que renuncien a ella, y que posee una identidad diferenciada en el país de que se trate",
+      "Únicamente los grupos reconocidos oficialmente por el gobierno del país de origen",
+      "Solo los grupos de carácter religioso",
+      "Cualquier asociación con más de cien miembros",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 7.1.e) de la Ley 12/2009 define el «grupo social determinado» como aquel cuyos integrantes comparten una característica innata o antecedentes comunes que no pueden cambiarse, o una característica o creencia tan fundamental para su identidad que no se les puede exigir que renuncien a ella, y que posee una identidad diferenciada por ser percibido como diferente por la sociedad o por el agente perseguidor, incluyendo en determinadas circunstancias los grupos basados en la orientación sexual o identidad de género.",
+  },
+  {
+    id: "pin-19",
+    enunciado: "Según el artículo 13 de la Ley 12/2009, ¿quiénes pueden ser agentes de persecución o causantes de daños graves?",
+    opciones: [
+      "Únicamente el propio Estado",
+      "El Estado, los partidos u organizaciones que controlen el Estado o una parte considerable de su territorio, y agentes no estatales cuando el Estado o dichas organizaciones no puedan o no quieran proporcionar protección efectiva",
+      "Exclusivamente organizaciones internacionales reconocidas por Naciones Unidas",
+      "Solo pueden serlo personas físicas identificadas individualmente",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 13 de la Ley 12/2009 enumera como posibles agentes de persecución o causantes de daños graves al Estado, a los partidos u organizaciones que controlen el Estado o una parte considerable de su territorio, y a agentes no estatales, cuando los anteriores no puedan o no quieran proporcionar protección efectiva contra la persecución o los daños graves.",
+  },
+  {
+    id: "pin-20",
+    enunciado: "Según el artículo 14 de la Ley 12/2009, ¿cuándo se entiende que existe protección frente a la persecución o los daños graves?",
+    opciones: [
+      "Cuando el Estado o las organizaciones que controlen su territorio adopten medidas razonables y efectivas para impedir la persecución o el padecimiento de daños graves, y el solicitante tenga acceso efectivo a dicha protección",
+      "Nunca puede considerarse que existe protección efectiva en el país de origen",
+      "Basta con que exista legislación formal en el país, aunque no se aplique en la práctica",
+      "Solo se considera que existe protección si la proporciona directamente un organismo internacional",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 14 de la Ley 12/2009 entiende que existe protección cuando el Estado, u organizaciones que controlen el Estado o una parte considerable de su territorio, adopten medidas razonables y efectivas para impedir la persecución o el padecimiento de daños graves, como el establecimiento de un sistema jurídico eficaz para investigar, procesar y sancionar estas conductas, y siempre que el solicitante tenga acceso efectivo a dicha protección.",
+  },
+  {
+    id: "pin-21",
+    enunciado: "Según el artículo 22 de la Ley 12/2009, ¿dónde permanece el solicitante de asilo durante la tramitación de determinados recursos frente a la no admisión o denegación de su solicitud?",
+    opciones: [
+      "En su domicilio particular, sin ninguna limitación",
+      "En las dependencias habilitadas a tal efecto",
+      "Necesariamente en un Centro de Internamiento de Extranjeros",
+      "En un centro penitenciario ordinario",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 22 de la Ley 12/2009 dispone que, durante la tramitación de la petición de reexamen y del recurso de reposición, así como en los supuestos en que se solicite la adopción de determinadas medidas cautelares, la persona solicitante de asilo permanecerá en las dependencias habilitadas a tal efecto.",
+  },
+  {
+    id: "pin-22",
+    enunciado: "Según el artículo 23 de la Ley 12/2009, ¿qué órgano es competente para la tramitación de las solicitudes de protección internacional?",
+    opciones: [
+      "La Oficina de Asilo y Refugio, dependiente del Ministerio del Interior",
+      "El Tribunal Constitucional",
+      "El Alto Comisionado de las Naciones Unidas para los Refugiados, en exclusiva",
+      "Cualquier Comisaría de Policía, sin necesidad de un órgano específico",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 23.1 de la Ley 12/2009 atribuye a la Oficina de Asilo y Refugio, dependiente del Ministerio del Interior, la competencia para la tramitación de las solicitudes de protección internacional, sin perjuicio de las demás funciones que reglamentariamente se le atribuyan.",
+  },
+  {
+    id: "pin-23",
+    enunciado: "Según el artículo 23.2 de la Ley 12/2009, ¿qué es la Comisión Interministerial de Asilo y Refugio?",
+    opciones: [
+      "Un órgano colegiado adscrito al Ministerio del Interior, compuesto por representantes de los departamentos con competencia en política exterior e interior, justicia, inmigración, acogida de solicitantes de asilo e igualdad",
+      "Un tribunal encargado de juzgar delitos cometidos por refugiados",
+      "Un organismo dependiente exclusivamente de la Unión Europea",
+      "Una ONG que colabora de forma voluntaria con el Gobierno",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 23.2 de la Ley 12/2009 define la Comisión Interministerial de Asilo y Refugio como un órgano colegiado adscrito al Ministerio del Interior, compuesto por un representante de cada uno de los departamentos con competencia en política exterior e interior, justicia, inmigración, acogida de los solicitantes de asilo e igualdad.",
+  },
+  {
+    id: "pin-24",
+    enunciado: "Según el artículo 32 de la Ley 12/2009, ¿tienen derecho a trabajar en España los solicitantes de protección internacional?",
+    opciones: [
+      "No, tienen prohibido trabajar mientras se tramita su solicitud",
+      "Sí, serán autorizados para trabajar en España en los términos que reglamentariamente se establezcan",
+      "Solo pueden trabajar si han obtenido ya la condición de refugiados",
+      "Solo pueden trabajar por cuenta propia, nunca por cuenta ajena",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 32 de la Ley 12/2009 reconoce a las personas solicitantes de protección internacional el derecho a ser autorizadas para trabajar en España, en los términos que reglamentariamente se establezcan.",
+  },
+  {
+    id: "pin-25",
+    enunciado: "Según el artículo 33 de la Ley 12/2009, ¿en qué supuesto puede reducirse o retirarse alguno de los servicios de acogida a un solicitante de protección internacional?",
+    opciones: [
+      "Cuando la persona solicitante abandone el lugar de residencia asignado sin informar a la autoridad competente o, en caso de haberlo solicitado, sin permiso",
+      "Nunca puede reducirse o retirarse la acogida, sea cual sea la circunstancia",
+      "Solo si la persona solicitante comete un delito grave",
+      "Solo por decisión directa del Ministerio Fiscal",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 33 de la Ley 12/2009 permite reducir o retirar los servicios de acogida, entre otros supuestos, cuando la persona solicitante abandone el lugar de residencia asignado sin informar a la autoridad competente o sin el permiso solicitado, cuando oculte recursos económicos de los que dispone, o una vez notificada la resolución de su solicitud.",
+  },
+  {
+    id: "pin-26",
+    enunciado: "Según el artículo 38 de la Ley 12/2009, ¿pueden solicitarse la protección internacional en Embajadas y Consulados españoles?",
+    opciones: [
+      "No, la solicitud solo puede presentarse en territorio español o en un puesto fronterizo",
+      "Sí, los Embajadores de España podrán promover el traslado del solicitante a España, siempre que este no sea nacional del país donde se ubica la Representación diplomática y corra peligro su integridad física",
+      "Sí, pero únicamente si el solicitante es nacional del país donde se encuentra la embajada",
+      "Solo en las embajadas de países miembros de la Unión Europea",
+    ],
+    correcta: 1,
+    explicacion:
+      "El art. 38 de la Ley 12/2009 permite que, para atender casos fuera del territorio nacional, los Embajadores de España promuevan el traslado del solicitante de asilo a España para hacer posible la presentación de la solicitud, siempre que este no sea nacional del país en que se encuentra la Representación diplomática y corra peligro su integridad física.",
+  },
+  {
+    id: "pin-27",
+    enunciado: "Según el artículo 39.2 de la Ley 12/2009, ¿qué ocurre con los familiares del solicitante de protección internacional que se encuentren también en España sin haber presentado solicitud independiente?",
+    opciones: [
+      "Se les autorizará la residencia en España con carácter provisional, condicionada a la resolución de la solicitud del interesado",
+      "Deben abandonar inmediatamente el territorio español",
+      "Son expulsados automáticamente junto con el solicitante si la solicitud es denegada",
+      "No tienen ningún derecho ni relación jurídica con el procedimiento del solicitante",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 39.2 de la Ley 12/2009 dispone que, si durante la tramitación de la solicitud los miembros de la familia del solicitante se encuentran también en España sin haber presentado una solicitud independiente, se les autorizará la residencia en España con carácter provisional, condicionada a la resolución de la solicitud de protección internacional del interesado.",
+  },
+  {
+    id: "pin-28",
+    enunciado: "Según el artículo 48.1 de la Ley 12/2009, ¿qué ocurre con los menores no acompañados solicitantes de protección internacional?",
+    opciones: [
+      "Son remitidos a los servicios competentes en materia de protección de menores, poniéndose el hecho en conocimiento del Ministerio Fiscal",
+      "Se tramita su solicitud exactamente igual que la de un adulto, sin ninguna especialidad",
+      "Quedan automáticamente excluidos de cualquier protección internacional",
+      "Son internados directamente en un Centro de Internamiento de Extranjeros",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 48.1 de la Ley 12/2009 dispone que los menores no acompañados solicitantes de protección internacional serán remitidos a los servicios competentes en materia de protección de menores, poniéndose el hecho en conocimiento del Ministerio Fiscal.",
+  },
+  {
+    id: "pin-29",
+    enunciado: "Según el artículo 48.2 de la Ley 12/2009, ¿qué ocurre cuando la minoría de edad de un solicitante no puede establecerse con seguridad?",
+    opciones: [
+      "Se pone el hecho en conocimiento inmediato del Ministerio Fiscal, que dispondrá lo necesario para la determinación de la edad mediante pruebas científicas realizadas con carácter prioritario y urgente",
+      "Se le considera automáticamente mayor de edad sin ninguna comprobación adicional",
+      "El procedimiento queda suspendido indefinidamente hasta que el interesado aporte documentación",
+      "Se resuelve siempre en contra del solicitante, denegando la protección solicitada",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 48.2 de la Ley 12/2009 establece que, cuando la minoría de edad no pueda ser establecida con seguridad, se pondrá el hecho en conocimiento inmediato del Ministerio Fiscal, que dispondrá lo necesario para la determinación de la edad del presunto menor mediante pruebas científicas realizadas con carácter prioritario y urgente, sin que la negativa a someterse al reconocimiento médico impida dictar resolución sobre la solicitud.",
+  },
+  {
+    id: "pin-30",
+    enunciado: "¿Qué es el «reasentamiento» previsto en la Disposición Adicional Primera de la Ley 12/2009?",
+    opciones: [
+      "El marco de protección aplicable a las personas acogidas en España en virtud de programas elaborados por el Gobierno en colaboración con el Alto Comisionado de las Naciones Unidas para los Refugiados y otras organizaciones internacionales, acordándose anualmente el número de personas a reasentar",
+      "Un sinónimo exacto de la reagrupación familiar",
+      "Un procedimiento exclusivamente aplicable a los solicitantes que ya se encuentran en territorio español",
+      "Un mecanismo que sustituye por completo al procedimiento ordinario de solicitud de asilo",
+    ],
+    correcta: 0,
+    explicacion:
+      "La Disposición Adicional Primera de la Ley 12/2009 extiende el marco de protección de la Ley a las personas acogidas en España en virtud de programas de reasentamiento elaborados por el Gobierno de la Nación, en colaboración con el Alto Comisionado de las Naciones Unidas para los Refugiados, acordando el Consejo de Ministros anualmente el número de personas a reasentar, que tendrán el mismo estatuto que los refugiados reconocidos conforme a la Ley.",
+  },
 ];

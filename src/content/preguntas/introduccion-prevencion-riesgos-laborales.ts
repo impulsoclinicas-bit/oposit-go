@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 9.1 atribuye a la Inspección de Trabajo y Seguridad Social la función de vigilancia y control del cumplimiento de la normativa sobre prevención de riesgos laborales, así como de las normas jurídico-técnicas que incidan en las condiciones de trabajo en materia de prevención, pudiendo proponer a la autoridad laboral competente la sanción correspondiente cuando compruebe una infracción.",
   },
+  {
+    id: "iprl-16",
+    enunciado: "Según el artículo 6.1 de la Ley 31/1995, ¿cómo regula el Gobierno los requisitos mínimos de prevención de riesgos laborales?",
+    opciones: [
+      "A través de las correspondientes normas reglamentarias, previa consulta a las organizaciones sindicales y empresariales más representativas",
+      "Sin necesidad de consulta previa a ninguna organización",
+      "Únicamente mediante Ley Orgánica aprobada por las Cortes Generales",
+      "Solo puede regular estas materias el Parlamento Europeo",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 6.1 de la Ley 31/1995 encomienda al Gobierno regular, a través de las correspondientes normas reglamentarias y previa consulta a las organizaciones sindicales y empresariales más representativas, los requisitos mínimos de las condiciones de trabajo, las limitaciones a las operaciones y procesos con riesgo, los procedimientos de evaluación de riesgos, y las modalidades de organización de los servicios de prevención, entre otras materias.",
+  },
+  {
+    id: "iprl-17",
+    enunciado: "Según el artículo 7.1 de la Ley 31/1995, ¿qué funciones desarrollan las Administraciones públicas competentes en materia laboral?",
+    opciones: [
+      "Promoción de la prevención, asesoramiento técnico, vigilancia y control del cumplimiento de la normativa, y sanción de las infracciones a dicha normativa",
+      "Únicamente la recaudación de las cotizaciones a la Seguridad Social",
+      "Exclusivamente la formación de los Delegados de Prevención",
+      "Solo pueden actuar a petición expresa de la empresa afectada",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 7.1 de la Ley 31/1995 atribuye a las Administraciones públicas competentes en materia laboral las funciones de promoción de la prevención, asesoramiento técnico, vigilancia y control del cumplimiento de la normativa de prevención de riesgos laborales, y la sanción de las infracciones a dicha normativa.",
+  },
+  {
+    id: "iprl-18",
+    enunciado: "Según el artículo 11 de la Ley 31/1995, ¿por qué es necesaria la coordinación administrativa en materia de prevención de riesgos laborales?",
+    opciones: [
+      "Porque la elaboración de normas preventivas, el control de su cumplimiento, la promoción de la prevención y la vigilancia epidemiológica exigen coordinar las actuaciones de las Administraciones competentes en materia laboral, sanitaria y de industria",
+      "Porque cada Comunidad Autónoma debe actuar de forma completamente independiente, sin ninguna coordinación",
+      "Porque la ley exige que un único Ministerio asuma todas las competencias en la materia",
+      "No existe ninguna previsión legal específica sobre coordinación administrativa",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 11 de la Ley 31/1995 justifica la coordinación de las Administraciones competentes en materia laboral, sanitaria y de industria por la necesidad de una protección más eficaz de la seguridad y salud de los trabajadores, dado que la elaboración de normas preventivas, el control de su cumplimiento, la promoción de la prevención y la vigilancia epidemiológica sobre riesgos laborales exigen dicha coordinación.",
+  },
+  {
+    id: "iprl-19",
+    enunciado: "Según el artículo 12 de la Ley 31/1995, ¿qué papel tiene la participación de empresarios y trabajadores en la política de prevención?",
+    opciones: [
+      "Es un principio básico de la política de prevención de riesgos laborales, a desarrollar por las Administraciones públicas competentes en los distintos niveles territoriales, a través de las organizaciones empresariales y sindicales más representativas",
+      "No tiene ninguna relevancia jurídica, es una simple recomendación sin efectos prácticos",
+      "Solo se reconoce la participación de los empresarios, no la de los trabajadores",
+      "Solo es aplicable en el ámbito de la Unión Europea, no en España",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 12 de la Ley 31/1995 configura la participación de empresarios y trabajadores, a través de las organizaciones empresariales y sindicales más representativas, como principio básico de la política de prevención de riesgos laborales, a desarrollar por las Administraciones públicas competentes en los distintos niveles territoriales.",
+  },
+  {
+    id: "iprl-20",
+    enunciado: "Según el artículo 13 de la Ley 31/1995, ¿qué es la Comisión Nacional de Seguridad y Salud en el Trabajo?",
+    opciones: [
+      "Un órgano colegiado asesor de las Administraciones públicas en la formulación de las políticas de prevención y órgano de participación institucional, integrado por representantes de las Comunidades Autónomas, la Administración General del Estado y las organizaciones empresariales y sindicales más representativas",
+      "Un tribunal especializado en accidentes de trabajo",
+      "Un órgano exclusivamente empresarial, sin participación de la Administración",
+      "Un organismo internacional dependiente de la Organización Internacional del Trabajo",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 13 de la Ley 31/1995 crea la Comisión Nacional de Seguridad y Salud en el Trabajo como órgano colegiado asesor de las Administraciones públicas en la formulación de las políticas de prevención y órgano de participación institucional, integrado paritariamente por representantes de las Comunidades Autónomas, la Administración General del Estado y las organizaciones empresariales y sindicales más representativas.",
+  },
+  {
+    id: "iprl-21",
+    enunciado: "Según el artículo 17.2 de la Ley 31/1995, ¿cuándo deben utilizarse los equipos de protección individual?",
+    opciones: [
+      "Cuando los riesgos no se puedan evitar o no puedan limitarse suficientemente por medios técnicos de protección colectiva o mediante medidas, métodos o procedimientos de organización del trabajo",
+      "En todo momento, sea cual sea la naturaleza del riesgo existente",
+      "Únicamente si el trabajador lo solicita expresamente",
+      "Solo en los trabajos que se desarrollen en el exterior",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 17.2 de la Ley 31/1995 exige que los equipos de protección individual se utilicen cuando los riesgos no se puedan evitar o no puedan limitarse suficientemente por medios técnicos de protección colectiva o mediante medidas, métodos o procedimientos de organización del trabajo, debiendo el empresario proporcionarlos y velar por su uso efectivo.",
+  },
+  {
+    id: "iprl-22",
+    enunciado: "Según el artículo 18.1 de la Ley 31/1995, ¿qué información debe recibir el trabajador en materia de prevención?",
+    opciones: [
+      "Los riesgos para su seguridad y salud en el trabajo, tanto los que afecten a la empresa en su conjunto como a su puesto de trabajo o función, y las medidas de protección y prevención aplicables",
+      "Únicamente información genérica sobre la empresa, sin detalle de los riesgos específicos",
+      "Solo se informa a los representantes de los trabajadores, nunca directamente al trabajador afectado",
+      "La información solo se facilita si el trabajador la solicita expresamente por escrito",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 18.1 de la Ley 31/1995 obliga al empresario a que los trabajadores reciban información sobre los riesgos para su seguridad y salud, tanto los que afecten a la empresa en su conjunto como a su puesto de trabajo o función, y sobre las medidas de protección y prevención aplicables, debiendo informarse directamente a cada trabajador de los riesgos específicos de su puesto, incluso cuando existan representantes de los trabajadores.",
+  },
+  {
+    id: "iprl-23",
+    enunciado: "Según el artículo 19.2 de la Ley 31/1995, ¿quién asume el coste de la formación de los trabajadores en materia preventiva?",
+    opciones: [
+      "El coste no recaerá en ningún caso sobre los trabajadores, debiendo impartirse siempre que sea posible dentro de la jornada de trabajo",
+      "Recae siempre sobre el propio trabajador",
+      "Se reparte a partes iguales entre empresa y trabajador",
+      "Lo asume siempre el Servicio Público de Empleo Estatal",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 19.2 de la Ley 31/1995 establece que la formación en materia preventiva deberá impartirse, siempre que sea posible, dentro de la jornada de trabajo (o con descuento del tiempo invertido si no fuera posible), y que su coste no recaerá en ningún caso sobre los trabajadores.",
+  },
+  {
+    id: "iprl-24",
+    enunciado: "Según el artículo 20 de la Ley 31/1995, ¿qué debe hacer el empresario respecto de las situaciones de emergencia?",
+    opciones: [
+      "Analizar las posibles situaciones de emergencia y adoptar las medidas necesarias en materia de primeros auxilios, lucha contra incendios y evacuación de los trabajadores, designando personal encargado y formado para ello",
+      "Ninguna obligación específica, basta con contratar un seguro de responsabilidad civil",
+      "Solo debe actuar tras haberse producido efectivamente una emergencia",
+      "Delegar toda la responsabilidad en los servicios públicos de emergencia, sin ninguna obligación propia",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 20 de la Ley 31/1995 exige al empresario analizar las posibles situaciones de emergencia (según el tamaño y actividad de la empresa) y adoptar las medidas necesarias en materia de primeros auxilios, lucha contra incendios y evacuación, designando personal encargado, con la formación necesaria, suficiente en número y con el material adecuado.",
+  },
+  {
+    id: "iprl-25",
+    enunciado: "Según el artículo 21.2 de la Ley 31/1995, ¿qué derecho tiene el trabajador ante un riesgo grave e inminente?",
+    opciones: [
+      "Derecho a interrumpir su actividad y abandonar el lugar de trabajo, en caso necesario, cuando considere que dicha actividad entraña un riesgo grave e inminente para su vida o su salud",
+      "Ningún derecho específico, debe continuar trabajando hasta recibir instrucciones expresas",
+      "Solo puede abandonar el puesto si cuenta con autorización previa por escrito del empresario",
+      "Solo puede ejercer este derecho si es Delegado de Prevención",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 21.2 de la Ley 31/1995 reconoce al trabajador el derecho a interrumpir su actividad y abandonar el lugar de trabajo, en caso necesario, cuando considere que dicha actividad entraña un riesgo grave e inminente para su vida o su salud, sin que ello pueda acarrearle consecuencias perjudiciales, salvo mala fe o negligencia grave.",
+  },
+  {
+    id: "iprl-26",
+    enunciado: "Según el artículo 22.1 de la Ley 31/1995, ¿es siempre obligatoria la vigilancia periódica del estado de salud de los trabajadores?",
+    opciones: [
+      "No, solo podrá llevarse a cabo cuando el trabajador preste su consentimiento, salvo determinadas excepciones (reconocimientos imprescindibles para evaluar riesgos, verificar peligro para terceros, o cuando lo establezca una disposición legal en actividades de especial peligrosidad)",
+      "Sí, siempre es obligatoria y el trabajador no puede negarse en ningún caso",
+      "Solo es obligatoria para los trabajadores mayores de cincuenta años",
+      "Nunca puede realizarse, por vulnerar el derecho a la intimidad del trabajador",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 22.1 de la Ley 31/1995 configura la vigilancia de la salud como voluntaria, exigiendo el consentimiento del trabajador, salvo en los supuestos excepcionales que la propia ley prevé: cuando los reconocimientos sean imprescindibles para evaluar los efectos de las condiciones de trabajo, para verificar si el estado de salud del trabajador supone un peligro para él mismo o para terceros, o cuando así lo establezca una disposición legal en relación con riesgos específicos y actividades de especial peligrosidad.",
+  },
+  {
+    id: "iprl-27",
+    enunciado: "Según el artículo 23.1 de la Ley 31/1995, ¿qué documentación debe elaborar y conservar el empresario a disposición de la autoridad laboral?",
+    opciones: [
+      "Entre otra, el plan de prevención de riesgos laborales, la evaluación de riesgos, la planificación de la actividad preventiva, los controles del estado de salud de los trabajadores, y la relación de accidentes de trabajo y enfermedades profesionales con incapacidad superior a un día",
+      "Únicamente las nóminas de los trabajadores",
+      "Solo la documentación relativa a la Seguridad Social, sin ninguna otra exigencia",
+      "No existe obligación documental alguna en materia de prevención",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 23.1 de la Ley 31/1995 obliga al empresario a elaborar y conservar a disposición de la autoridad laboral el plan de prevención, la evaluación de riesgos, la planificación de la actividad preventiva, los resultados de los controles del estado de salud de los trabajadores, y la relación de accidentes de trabajo y enfermedades profesionales que hayan causado una incapacidad laboral superior a un día.",
+  },
+  {
+    id: "iprl-28",
+    enunciado: "Según el artículo 24.1 de la Ley 31/1995, ¿qué obligación tienen las empresas cuando en un mismo centro de trabajo desarrollan actividades trabajadores de dos o más de ellas?",
+    opciones: [
+      "Deben cooperar en la aplicación de la normativa sobre prevención de riesgos laborales, estableciendo los medios de coordinación necesarios y la información a sus respectivos trabajadores",
+      "Ninguna obligación específica de coordinación entre ellas",
+      "Solo debe coordinarse la empresa de mayor tamaño, sin implicar a las demás",
+      "La coordinación solo es exigible si así lo solicita expresamente la Inspección de Trabajo",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 24.1 de la Ley 31/1995 obliga a las empresas que desarrollen actividades en un mismo centro de trabajo a cooperar en la aplicación de la normativa de prevención de riesgos laborales, estableciendo los medios de coordinación necesarios en cuanto a la protección y prevención de riesgos y la información a sus respectivos trabajadores.",
+  },
+  {
+    id: "iprl-29",
+    enunciado: "Según el artículo 25.1 de la Ley 31/1995, ¿qué protección específica garantiza el empresario a los trabajadores especialmente sensibles a determinados riesgos?",
+    opciones: [
+      "Garantizará de manera específica su protección, teniendo en cuenta sus características personales o estado biológico conocido (incluida la discapacidad) en las evaluaciones de riesgos, sin emplearlos en puestos donde puedan ponerse en situación de peligro ellos mismos u otras personas",
+      "Ninguna protección adicional respecto del resto de trabajadores",
+      "Solo se protege a los trabajadores con contrato indefinido",
+      "Solo se aplica a los trabajadores que hayan sufrido ya un accidente laboral previo",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 25.1 de la Ley 31/1995 obliga al empresario a garantizar de manera específica la protección de los trabajadores especialmente sensibles a determinados riesgos (por sus características personales, estado biológico conocido o discapacidad), teniendo en cuenta estos aspectos en la evaluación de riesgos y absteniéndose de emplearlos en puestos donde puedan ponerse en peligro ellos mismos u otras personas.",
+  },
+  {
+    id: "iprl-30",
+    enunciado: "Según el artículo 26 de la Ley 31/1995, ¿qué medidas debe adoptar el empresario cuando la evaluación de riesgos revele un peligro para una trabajadora embarazada?",
+    opciones: [
+      "Adaptar las condiciones o el tiempo de trabajo para evitar la exposición al riesgo; si no fuera posible, la trabajadora deberá desempeñar un puesto compatible con su estado; y si tampoco esto fuera posible, podrá declararse la suspensión del contrato por riesgo durante el embarazo",
+      "Ninguna medida específica, la trabajadora debe continuar en su puesto habitual",
+      "Únicamente concederle una reducción de jornada sin adaptación del puesto",
+      "El despido automático de la trabajadora hasta que finalice el embarazo",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 26 de la Ley 31/1995 exige, cuando la evaluación de riesgos revele un peligro para la salud de la trabajadora embarazada o el feto, adaptar las condiciones o el tiempo de trabajo; si no fuera posible, la trabajadora deberá desempeñar un puesto compatible con su estado; y si tampoco esto resultara posible, podrá declararse el paso de la trabajadora a la situación de suspensión del contrato por riesgo durante el embarazo, conforme al art. 45.1.d) del Estatuto de los Trabajadores.",
+  },
 ];
