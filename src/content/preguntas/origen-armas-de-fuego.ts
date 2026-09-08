@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 107.e) exige que las armas antiguas, históricas o artísticas se guarden en un lugar seguro bajo llave en el propio domicilio de su titular, y que, si se exponen en el interior del domicilio, cuenten con un sistema de anclaje adecuado al medio de exposición o una vitrina dotada de cerradura y cristal, autorizados por la Dirección General de la Guardia Civil.",
   },
+  {
+    id: "oaf-16",
+    enunciado: "Según el artículo 3 del Reglamento de Armas, ¿qué comprende la 2.ª categoría de armas reglamentadas?",
+    opciones: [
+      "Las armas de fuego largas para vigilancia y guardería, y las armas de fuego largas rayadas utilizables para caza mayor",
+      "Únicamente las pistolas y revólveres",
+      "Solo las armas blancas no prohibidas",
+      "Exclusivamente las armas de fuego antiguas o históricas",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 3 del Reglamento de Armas incluye en la 2.ª categoría las armas de fuego largas para vigilancia y guardería, y las armas de fuego largas rayadas utilizables para caza mayor, siempre que no estén clasificadas como armas de guerra.",
+  },
+  {
+    id: "oaf-17",
+    enunciado: "Según el artículo 3 del Reglamento de Armas, ¿qué comprende la 5.ª categoría de armas reglamentadas?",
+    opciones: [
+      "Las armas blancas y en general las de hoja cortante o punzante no prohibidas, y los cuchillos o machetes usados por unidades militares o imitación de los mismos",
+      "Las escopetas de caza y demás armas de ánima lisa",
+      "Las armas accionadas por aire u otro gas comprimido",
+      "Las armas de fuego antiguas conservadas en museos autorizados",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 3 del Reglamento de Armas incluye en la 5.ª categoría, entre otras, las armas blancas y en general las de hoja cortante o punzante no prohibidas, y los cuchillos o machetes usados por unidades militares o que sean imitación de los mismos.",
+  },
+  {
+    id: "oaf-18",
+    enunciado: "Según el artículo 3 del Reglamento de Armas, ¿qué comprende la 6.ª categoría de armas reglamentadas?",
+    opciones: [
+      "Las armas de fuego antiguas o históricas, sus reproducciones y asimiladas, y las armas de fuego cuyo modelo o año de fabricación sean anteriores al 1 de enero de 1890",
+      "Las armas de fuego cortas: pistolas y revólveres",
+      "Las armas de inyección anestésica y las ballestas",
+      "Las armas acústicas y de salvas",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 3 del Reglamento de Armas incluye en la 6.ª categoría, entre otras, las armas de fuego antiguas o históricas, sus reproducciones y asimiladas conservadas en museos autorizados, y las armas de fuego cuyo modelo o año de fabricación sean anteriores al 1 de enero de 1890, así como sus reproducciones y réplicas.",
+  },
+  {
+    id: "oaf-19",
+    enunciado: "Según el artículo 3 del Reglamento de Armas, ¿qué comprende la 7.ª categoría de armas reglamentadas?",
+    opciones: [
+      "Las armas de inyección anestésica, las ballestas, las armas para lanzar cabos, las armas de sistema «Flobert», los arcos y los fusiles de pesca submarina, entre otras",
+      "Las armas de fuego largas rayadas para caza mayor",
+      "Las armas de fuego cortas semiautomáticas de percusión central",
+      "Las armas de fuego inutilizadas",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 3 del Reglamento de Armas incluye en la 7.ª categoría, entre otras, las armas de inyección anestésica, las ballestas, las armas para lanzar cabos, las armas de sistema «Flobert», los arcos y las armas para lanzar líneas de pesca y los fusiles de pesca submarina.",
+  },
+  {
+    id: "oaf-20",
+    enunciado: "Según el artículo 3 del Reglamento de Armas, ¿qué comprenden la 8.ª y la 9.ª categoría de armas reglamentadas?",
+    opciones: [
+      "La 8.ª categoría comprende las armas acústicas y de salvas; la 9.ª comprende las armas inutilizadas",
+      "Ambas categorías se refieren exclusivamente a las armas de guerra",
+      "La 8.ª comprende las armas blancas, y la 9.ª las armas de caza mayor",
+      "Estas categorías no existen en el Reglamento de Armas vigente",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 3 del Reglamento de Armas dedica la 8.ª categoría a las armas acústicas y de salvas, y la 9.ª categoría a las armas inutilizadas conforme al procedimiento previsto en el propio Reglamento.",
+  },
+  {
+    id: "oaf-21",
+    enunciado: "Según el artículo 4.1.f) del Reglamento de Armas, ¿qué armas se prohíben además de los bastones-estoque?",
+    opciones: [
+      "Los puñales de cualquier clase (armas blancas de hoja menor de 11 centímetros, de dos filos y puntiaguda) y las navajas llamadas automáticas",
+      "Las escopetas de caza reglamentadas",
+      "Las armas de fuego cortas con licencia B",
+      "Las armas de aire comprimido de la 4.ª categoría",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 4.1.f) del Reglamento de Armas prohíbe, junto con los bastones-estoque, los puñales de cualquier clase (considerándose puñales las armas blancas de hoja menor de 11 centímetros, de dos filos y puntiaguda) y las navajas llamadas automáticas.",
+  },
+  {
+    id: "oaf-22",
+    enunciado: "Según el artículo 4.1.h) del Reglamento de Armas, ¿cuál de los siguientes objetos está expresamente prohibido?",
+    opciones: [
+      "Las llaves de pugilato, con o sin púas, y los tiragomas y cerbatanas perfeccionados, entre otros instrumentos especialmente peligrosos",
+      "Los cuchillos de cocina de uso doméstico habitual",
+      "Las herramientas de bricolaje con filo",
+      "Las tijeras de uso escolar",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 4.1.h) del Reglamento de Armas prohíbe las defensas de alambre o plomo, los rompecabezas, las llaves de pugilato con o sin púas, los tiragomas y cerbatanas perfeccionados, los munchacos y xiriquetes, así como cualesquiera otros instrumentos especialmente peligrosos para la integridad física de las personas.",
+  },
+  {
+    id: "oaf-23",
+    enunciado: "Según el artículo 5.1 del Reglamento de Armas, ¿cuál de los siguientes objetos tiene prohibida su publicidad, compraventa, tenencia y uso, salvo funcionarios especialmente habilitados?",
+    opciones: [
+      "Los «sprays» de defensa personal y todas aquellas armas que despidan gases o aerosoles, salvo los autorizados por el Ministerio de Sanidad",
+      "Las escopetas de caza reglamentadas de la 3.ª categoría",
+      "Los cuchillos de cocina",
+      "Las armas de aire comprimido con energía cinética inferior a 24,2 julios",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 5.1.i) del Reglamento de Armas prohíbe, salvo funcionarios especialmente habilitados, los «sprays» de defensa personal y todas aquellas armas que despidan gases o aerosoles, exceptuando los sprays autorizados por el Ministerio de Sanidad, previo informe de la Comisión Interministerial Permanente de Armas y Explosivos, que podrán venderse en armerías acreditando la mayoría de edad.",
+  },
+  {
+    id: "oaf-24",
+    enunciado: "Según el artículo 5.1.k) del Reglamento de Armas, ¿está prohibida la tenencia de silenciadores adaptables a armas de fuego?",
+    opciones: [
+      "Sí, salvo funcionarios especialmente habilitados, conforme a las normas reglamentarias correspondientes",
+      "No, cualquier titular de licencia de armas puede adquirirlos libremente",
+      "Solo están prohibidos para las armas de la 1.ª categoría",
+      "Solo están prohibidos si se adquieren fuera de España",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 5.1.k) del Reglamento de Armas incluye entre los objetos cuya publicidad, compraventa, tenencia y uso están prohibidos, salvo funcionarios especialmente habilitados, los silenciadores adaptables a armas de fuego.",
+  },
+  {
+    id: "oaf-25",
+    enunciado: "Según el artículo 108 del Reglamento de Armas, ¿qué requisito general exige la inutilización de un arma de fuego?",
+    opciones: [
+      "La aprobación previa de la Intervención de Armas y Explosivos (salvo armas de guerra o de dotación de las Fuerzas Armadas, Policía Nacional y Guardia Civil, que siguen un régimen específico), realizándose por un banco oficial de pruebas o armero autorizado conforme a la ITC 2",
+      "Ninguna, cualquier persona puede inutilizar un arma sin ningún control administrativo",
+      "Solo puede inutilizarse un arma mediante sentencia judicial firme",
+      "Solo pueden inutilizarse las armas de la 1.ª categoría",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 108 del Reglamento de Armas exige, con carácter general, la aprobación previa de la Intervención de Armas y Explosivos para inutilizar un arma de fuego (con régimen específico para armas de guerra o de dotación de las Fuerzas Armadas, Policía Nacional y Guardia Civil), realizándose la inutilización por un banco oficial de pruebas o un armero autorizado, conforme a las técnicas de la ITC 2, y expidiéndose el correspondiente certificado de inutilización.",
+  },
+  {
+    id: "oaf-26",
+    enunciado: "Según el artículo 109 del Reglamento de Armas, ¿pueden los menores de edad utilizar armas de fuego para caza o tiro deportivo?",
+    opciones: [
+      "Sí, los mayores de dieciséis y menores de dieciocho años pueden utilizar determinadas armas para caza o tiro deportivo «junior», con autorización especial de uso de armas para menores y bajo la supervisión de un adulto titular de licencia de armas",
+      "No, en ningún caso puede autorizarse el uso de armas de fuego a menores de edad",
+      "Sí, sin ninguna limitación ni supervisión, a partir de los doce años",
+      "Solo pueden utilizarlas si son hijos de un miembro de las Fuerzas Armadas",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 109 del Reglamento de Armas permite a los mayores de dieciséis y menores de dieciocho años utilizar, exclusivamente para caza o tiro deportivo «junior», determinadas armas largas, siempre que posean una autorización especial de uso de armas para menores y estén bajo la supervisión de un adulto titular de licencia de armas D, E o F que asuma la responsabilidad de acompañarlos y vigilarlos.",
+  },
+  {
+    id: "oaf-27",
+    enunciado: "Según el artículo 112 del Reglamento de Armas, ¿qué documento habilita a un residente de otro Estado miembro de la Unión Europea para portar un arma de fuego reglamentada durante un viaje por España?",
+    opciones: [
+      "La Tarjeta Europea de Armas de Fuego",
+      "El pasaporte de su país de origen, sin ningún otro requisito",
+      "Una simple declaración jurada ante notario",
+      "No se permite en ningún caso portar armas durante un viaje por España",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 112 del Reglamento de Armas exige, salvo determinados procedimientos específicos, que la tenencia de un arma de fuego reglamentada durante un viaje por España por parte de un residente de otro Estado miembro de la Unión Europea esté autorizada mediante la Tarjeta Europea de Armas de Fuego.",
+  },
+  {
+    id: "oaf-28",
+    enunciado: "Según el artículo 113 del Reglamento de Armas, ¿quién expide la Tarjeta Europea de Armas de Fuego a los residentes en España, y cuál es su validez máxima?",
+    opciones: [
+      "La expide la Dirección General de la Guardia Civil, previa solicitud, con una validez máxima de cinco años, prorrogable mientras se mantenga la titularidad de las armas amparadas",
+      "La expide cualquier armería autorizada, con validez indefinida",
+      "La expide el Ministerio de Asuntos Exteriores, con validez de un mes",
+      "No existe ningún órgano competente para expedirla en España",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 113 del Reglamento de Armas atribuye a la Dirección General de la Guardia Civil la expedición, previa solicitud, de la Tarjeta Europea de Armas de Fuego a los residentes en España debidamente documentados, con una validez máxima de cinco años, prorrogable mientras se mantenga la titularidad de las armas que ampare.",
+  },
+  {
+    id: "oaf-29",
+    enunciado: "Según el artículo 149.1 del Reglamento de Armas, ¿cómo deben transportarse las armas reglamentadas por las vías y lugares públicos urbanos?",
+    opciones: [
+      "Desmontadas o dentro de sus cajas o fundas, durante el trayecto desde los lugares en que habitualmente están guardadas hasta los lugares donde se realicen las actividades de utilización debidamente autorizadas",
+      "Cargadas y listas para su uso inmediato",
+      "Sin ninguna limitación ni condición especial",
+      "Solo pueden transportarse en vehículo blindado autorizado",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 149.1 del Reglamento de Armas exige que las armas reglamentadas solo puedan llevarse por vías y lugares públicos urbanos desmontadas o dentro de sus cajas o fundas, durante el trayecto desde los lugares en que habitualmente están guardadas hasta los lugares donde se realicen las actividades de utilización debidamente autorizadas.",
+  },
+  {
+    id: "oaf-30",
+    enunciado: "Según el artículo 149.3 del Reglamento de Armas, ¿qué autorización se exige para la celebración de concursos o actividades con armas de fuego fuera de campos, polígonos o galerías de tiro autorizados?",
+    opciones: [
+      "La autorización previa del Delegado o Subdelegado del Gobierno de la provincia donde se celebren, solicitada por los organizadores con al menos quince días de antelación",
+      "Ninguna autorización, basta con la comunicación posterior al Ayuntamiento",
+      "Solo se requiere el visto bueno verbal de la Guardia Civil local",
+      "Estas actividades están absolutamente prohibidas en todo caso",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 149.3 del Reglamento de Armas exige, para la celebración de concursos o actividades con armas de fuego fuera de campos, polígonos o galerías de tiro autorizados (salvo las actuaciones propias de las Fuerzas Armadas, Fuerzas y Cuerpos de Seguridad y las actividades cinegéticas), la autorización previa del Delegado o Subdelegado del Gobierno de la provincia donde tengan lugar, solicitada por los organizadores con al menos quince días de antelación.",
+  },
 ];

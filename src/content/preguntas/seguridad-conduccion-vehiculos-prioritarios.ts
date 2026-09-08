@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "Aun gozando de prioridad de paso, la buena praxis preventiva recomienda reducir la velocidad de forma anticipada al aproximarse a un cruce con visibilidad reducida, ya que dicha prioridad normativa no elimina el riesgo real derivado de la posible presencia de otros vehículos que no adviertan a tiempo la señal del vehículo prioritario, siendo preferible disponer de un mayor margen de reacción ante lo imprevisto.",
   },
+  {
+    id: "scvp-16",
+    enunciado: "¿Qué es el fenómeno de \"hidroplaneo\" o \"aquaplaning\" y por qué es especialmente relevante en la conducción de emergencia?",
+    opciones: [
+      "La pérdida de contacto entre el neumático y el firme por la formación de una lámina de agua a velocidades elevadas sobre pavimento mojado, que puede provocar la pérdida total de control de la dirección y el frenado",
+      "Un sistema electrónico que ayuda a frenar sobre el agua, presente en todos los vehículos prioritarios",
+      "Un fenómeno que solo afecta a los neumáticos completamente lisos, nunca a los que están en buen estado",
+      "Una técnica recomendada para cruzar charcos a alta velocidad de forma segura",
+    ],
+    correcta: 0,
+    explicacion:
+      "El hidroplaneo o aquaplaning es la pérdida de contacto entre el neumático y el firme, provocada por una lámina de agua que se interpone entre ambos a velocidades elevadas sobre pavimento mojado; dado que la conducción de emergencia a menudo exige mayor velocidad, cobra especial relevancia moderar la marcha en condiciones de lluvia intensa para reducir este riesgo, que puede suponer la pérdida total de control de la dirección y el frenado.",
+  },
+  {
+    id: "scvp-17",
+    enunciado: "¿Debe utilizarse el cinturón de seguridad durante la conducción de un vehículo prioritario en servicio urgente?",
+    opciones: [
+      "Sí; la urgencia del servicio no elimina el riesgo de colisión, sino que lo incrementa, por lo que el uso del cinturón de seguridad resulta aún más necesario para proteger al conductor y a los ocupantes ante una eventual maniobra brusca o impacto",
+      "No, el cinturón entorpece los movimientos y debe prescindirse de él siempre que se circule en emergencia",
+      "Solo es necesario para el copiloto, nunca para el conductor",
+      "Solo debe usarse si el vehículo supera los 120 km/h",
+    ],
+    correcta: 0,
+    explicacion:
+      "Precisamente porque la conducción en servicio urgente implica mayor velocidad y mayor probabilidad de maniobras bruscas, el uso del cinturón de seguridad por parte del conductor y de todos los ocupantes resulta aún más necesario, no menos, para minimizar las consecuencias de una eventual colisión o frenada de emergencia.",
+  },
+  {
+    id: "scvp-18",
+    enunciado: "¿Qué papel desempeña la visión periférica en la conducción de un vehículo prioritario a velocidades elevadas?",
+    opciones: [
+      "Permite detectar movimientos y posibles peligros en los laterales de la vía (peatones, vehículos que se incorporan) sin necesidad de desviar completamente la mirada del frente, complementando la visión central de la trayectoria",
+      "No tiene ninguna utilidad práctica en la conducción de emergencia",
+      "Debe anularse deliberadamente para concentrarse solo en la señal central de la vía",
+      "Solo es relevante durante la conducción nocturna",
+    ],
+    correcta: 0,
+    explicacion:
+      "La visión periférica permite al conductor detectar movimientos y posibles peligros en los laterales de la vía (peatones que se aproximan, vehículos que pudieran incorporarse) sin necesidad de desviar por completo la mirada del frente, complementando así la visión central de la trayectoria, especialmente relevante cuando se circula a velocidades elevadas con menor margen de reacción.",
+  },
+  {
+    id: "scvp-19",
+    enunciado: "¿Qué recomienda la buena praxis para gestionar la tensión emocional durante un servicio urgente prolongado?",
+    opciones: [
+      "Mantener la respiración controlada y la concentración en la tarea de conducir, evitando que la urgencia de la situación o la presión del servicio se traduzcan en decisiones de conducción precipitadas o en un exceso de velocidad no justificado por las circunstancias reales de la vía",
+      "Aumentar la velocidad progresivamente cuanto mayor sea la tensión percibida",
+      "Ignorar por completo cualquier señal de tensión, ya que no afecta a la capacidad de conducción",
+      "Delegar siempre la conducción en el compañero de menor experiencia ante cualquier tensión",
+    ],
+    correcta: 0,
+    explicacion:
+      "La buena praxis recomienda mantener la respiración controlada y la concentración en la tarea de conducir, de forma que la tensión emocional propia de un servicio urgente no se traduzca en decisiones de conducción precipitadas ni en un exceso de velocidad que no esté justificado por las circunstancias reales de la vía en cada momento.",
+  },
+  {
+    id: "scvp-20",
+    enunciado: "¿Qué riesgo específico plantea el deslumbramiento por las luces de otros vehículos durante la conducción nocturna en servicio urgente?",
+    opciones: [
+      "Una reducción temporal, pero significativa, de la capacidad visual del conductor, que aconseja moderar la velocidad y evitar mirar directamente a los faros del vehículo que se aproxima, dirigiendo la vista hacia el borde derecho de la calzada",
+      "Ningún riesgo relevante, ya que la señal luminosa V-1 anula cualquier deslumbramiento",
+      "Solo afecta a los conductores que no llevan gafas graduadas",
+      "Un riesgo que únicamente se produce en carreteras de montaña",
+    ],
+    correcta: 0,
+    explicacion:
+      "El deslumbramiento por las luces de otros vehículos produce una reducción temporal, pero significativa, de la capacidad visual del conductor; ante esta situación se aconseja moderar la velocidad y evitar mirar directamente a los faros del vehículo que se aproxima, dirigiendo la vista hacia el borde derecho de la calzada como referencia para mantener la trayectoria.",
+  },
+  {
+    id: "scvp-21",
+    enunciado: "¿Por qué es importante la revisión preventiva del estado de frenos y neumáticos antes de iniciar un turno de conducción de vehículos prioritarios?",
+    opciones: [
+      "Porque estos elementos son determinantes para la capacidad real de frenado y de adherencia del vehículo, especialmente relevante cuando previsiblemente deberán realizarse frenadas de emergencia o maniobras evasivas a velocidades elevadas",
+      "Porque la normativa de tráfico exige revisarlos únicamente una vez al año, con independencia del servicio",
+      "No tiene ninguna relevancia para la seguridad de la conducción de emergencia",
+      "Solo es relevante en vehículos con más de veinte años de antigüedad",
+    ],
+    correcta: 0,
+    explicacion:
+      "El estado de los frenos y los neumáticos es determinante para la capacidad real de frenado y de adherencia del vehículo; su revisión preventiva antes de iniciar un turno cobra especial relevancia en la conducción de vehículos prioritarios, donde previsiblemente pueden requerirse frenadas de emergencia o maniobras evasivas a velocidades elevadas.",
+  },
+  {
+    id: "scvp-22",
+    enunciado: "¿Qué riesgo de distracción plantea el uso de la emisora o radio durante la conducción de un vehículo prioritario, y cómo debe gestionarse?",
+    opciones: [
+      "Puede desviar la atención de la tarea principal de conducir; se recomienda limitar su uso a lo estrictamente necesario, priorizando siempre la atención a la vía, y recurriendo cuando sea posible al copiloto para gestionar las comunicaciones",
+      "No plantea ningún riesgo de distracción, al tratarse de una herramienta de trabajo habitual",
+      "Debe utilizarse constantemente durante todo el servicio para mantener la concentración",
+      "El riesgo desaparece por completo si el vehículo circula por autovía",
+    ],
+    correcta: 0,
+    explicacion:
+      "El uso de la emisora o radio, como cualquier otra tarea secundaria, puede desviar la atención del conductor de la tarea principal de conducir; la buena praxis recomienda limitar su uso a lo estrictamente necesario durante la marcha, priorizando la atención a la vía, y recurrir, siempre que sea posible, al copiloto para gestionar las comunicaciones.",
+  },
+  {
+    id: "scvp-23",
+    enunciado: "¿Qué son el sobreviraje y el subviraje en una curva, y por qué es útil conocerlos en la conducción de emergencia?",
+    opciones: [
+      "El sobreviraje es la tendencia del vehículo a girar más de lo que el conductor desea (el eje trasero pierde agarre antes que el delantero); el subviraje es la tendencia contraria (el eje delantero pierde agarre antes, y el vehículo tiende a seguir recto pese al giro del volante); conocer ambos ayuda a corregir la trayectoria de forma adecuada ante la pérdida de adherencia en una curva",
+      "Son sinónimos exactos sin ninguna diferencia práctica",
+      "Se refieren exclusivamente a fallos del sistema de frenos, no a la dinámica de la curva",
+      "Solo pueden producirse en vehículos con tracción total",
+    ],
+    correcta: 0,
+    explicacion:
+      "El sobreviraje es la tendencia del vehículo a girar más de lo deseado por el conductor (el eje trasero pierde agarre antes que el delantero), mientras que el subviraje es la tendencia contraria (el eje delantero pierde agarre antes, tendiendo el vehículo a seguir recto pese al giro del volante); conocer ambos fenómenos ayuda a corregir adecuadamente la trayectoria ante una pérdida de adherencia en curva, situación con mayor probabilidad de producirse a las velocidades propias de un servicio de emergencia.",
+  },
+  {
+    id: "scvp-24",
+    enunciado: "¿Cómo debe abordarse una rotonda durante un desplazamiento de emergencia, pese a disfrutar de prioridad de paso como vehículo prioritario?",
+    opciones: [
+      "Reduciendo la velocidad al aproximarse y comprobando visualmente que el resto de vehículos en la rotonda ha advertido la presencia del vehículo prioritario y va a cederle el paso, antes de completar la incorporación o el cruce",
+      "Manteniendo la velocidad de aproximación sin ninguna reducción, dado que la prioridad legal exime de cualquier comprobación adicional",
+      "Deteniéndose siempre por completo antes de entrar en cualquier rotonda",
+      "Circulando siempre en sentido contrario al habitual para ganar tiempo",
+    ],
+    correcta: 0,
+    explicacion:
+      "Aun gozando de prioridad de paso, la buena praxis recomienda reducir la velocidad al aproximarse a una rotonda y comprobar visualmente que el resto de vehículos ha advertido la presencia del vehículo prioritario y va a cederle el paso, antes de completar la incorporación o el cruce, dado que la prioridad normativa no garantiza por sí sola que los demás conductores reaccionen a tiempo.",
+  },
+  {
+    id: "scvp-25",
+    enunciado: "¿Qué riesgo añadido presenta el adelantamiento en una vía de doble sentido durante un servicio urgente?",
+    opciones: [
+      "La necesidad de invadir el carril contrario reduce el margen de reacción disponible ante un vehículo que circule en sentido opuesto y no haya advertido a tiempo la señal del vehículo prioritario, por lo que debe valorarse con especial prudencia la distancia y visibilidad disponibles antes de iniciar la maniobra",
+      "Ningún riesgo adicional, dado que la señal V-1 obliga a despejar el carril contrario de forma inmediata",
+      "El riesgo solo existe en carreteras de más de dos carriles por sentido",
+      "El adelantamiento en doble sentido está siempre prohibido para los vehículos prioritarios",
+    ],
+    correcta: 0,
+    explicacion:
+      "Adelantar en una vía de doble sentido exige invadir el carril contrario, lo que reduce el margen de reacción disponible ante un vehículo que circule en sentido opuesto y no haya advertido a tiempo la señal del vehículo prioritario; por ello, debe valorarse con especial prudencia la distancia y visibilidad disponibles antes de iniciar la maniobra, sin dar nunca por hecho que el carril contrario quedará despejado de forma automática.",
+  },
+  {
+    id: "scvp-26",
+    enunciado: "¿Cómo debe adaptarse la conducción de un vehículo prioritario ante condiciones meteorológicas adversas como niebla intensa o hielo en la calzada?",
+    opciones: [
+      "Reduciendo significativamente la velocidad, aumentando la distancia de seguridad y extremando la anticipación, incluso a costa de demorar la llegada al lugar del servicio, dado que el riesgo de accidente en estas condiciones puede superar el beneficio de la rapidez",
+      "Manteniendo la velocidad habitual, ya que la prioridad de paso compensa cualquier reducción de adherencia o visibilidad",
+      "Suspendiendo siempre el servicio urgente ante cualquier condición meteorológica adversa",
+      "Aumentando la velocidad para reducir el tiempo de exposición al riesgo meteorológico",
+    ],
+    correcta: 0,
+    explicacion:
+      "Ante condiciones meteorológicas adversas como niebla intensa o hielo en la calzada, la buena praxis exige reducir significativamente la velocidad, aumentar la distancia de seguridad y extremar la anticipación, incluso a costa de demorar la llegada al lugar del servicio, dado que en estas condiciones el riesgo real de sufrir un accidente puede llegar a superar el beneficio de ganar unos segundos de rapidez.",
+  },
+  {
+    id: "scvp-27",
+    enunciado: "¿Qué precaución adicional debe adoptarse al realizar una frenada de emergencia en una pendiente pronunciada?",
+    opciones: [
+      "Tener en cuenta que la pendiente incrementa la distancia de frenado necesaria por el efecto añadido de la inercia y la gravedad, por lo que debe anticiparse la frenada con mayor margen del que se emplearía en llano",
+      "Frenar exactamente igual que en llano, sin ninguna consideración adicional",
+      "Soltar completamente el freno al iniciar la bajada para ganar velocidad",
+      "La pendiente reduce la distancia de frenado necesaria, permitiendo frenar más tarde",
+    ],
+    correcta: 0,
+    explicacion:
+      "En una pendiente descendente pronunciada, el efecto añadido de la inercia y la gravedad incrementa la distancia de frenado necesaria respecto de una vía llana, por lo que la buena praxis recomienda anticipar la frenada con mayor margen del que se emplearía en condiciones de llano.",
+  },
+  {
+    id: "scvp-28",
+    enunciado: "¿Cómo afecta el transporte de un herido o un detenido a la conducción de un vehículo prioritario?",
+    opciones: [
+      "Puede alterar el reparto de peso y la estabilidad del vehículo, y además exige moderar las maniobras bruscas (frenadas y giros) en la medida de lo posible, para no agravar el estado del herido ni generar un riesgo añadido para los ocupantes",
+      "No tiene ninguna incidencia en la conducción, siendo indiferente el número o estado de los ocupantes",
+      "Permite circular a mayor velocidad al reducirse el riesgo percibido",
+      "Obliga siempre a detener por completo el vehículo cada cierto tiempo, sea cual sea la urgencia del servicio",
+    ],
+    correcta: 0,
+    explicacion:
+      "El transporte de un herido o un detenido puede alterar el reparto de peso y la estabilidad del vehículo, y exige además moderar en la medida de lo posible las maniobras bruscas (frenadas y giros), tanto para no agravar el estado de una persona herida como para reducir el riesgo añadido que dichas maniobras suponen para el conjunto de los ocupantes.",
+  },
+  {
+    id: "scvp-29",
+    enunciado: "¿Qué es un «microsueño» y por qué constituye un riesgo grave en los turnos largos o nocturnos de conducción de vehículos prioritarios?",
+    opciones: [
+      "Un episodio breve e involuntario de pérdida de consciencia o de atención, de apenas unos segundos, que puede producirse por fatiga acumulada y que, a la velocidad propia de un servicio de emergencia, basta para provocar la salida de la vía o una colisión",
+      "Una técnica de descanso programado recomendada durante el propio servicio urgente",
+      "Un fenómeno que solo afecta a los pasajeros, nunca al conductor",
+      "Un mecanismo de seguridad del vehículo que detiene automáticamente la marcha",
+    ],
+    correcta: 0,
+    explicacion:
+      "El microsueño es un episodio breve e involuntario de pérdida de consciencia o de atención, de apenas unos segundos, provocado por la fatiga acumulada; a la velocidad propia de un servicio de emergencia, ese breve lapso de desatención basta para que el vehículo recorra una distancia considerable sin control efectivo, pudiendo provocar la salida de la vía o una colisión, lo que convierte a los turnos largos o nocturnos en un factor de riesgo especialmente relevante.",
+  },
+  {
+    id: "scvp-30",
+    enunciado: "¿Qué utilidad tiene el análisis o «debriefing» posterior a un incidente de conducción durante un servicio urgente?",
+    opciones: [
+      "Permite identificar qué decisiones o circunstancias contribuyeron al incidente, extrayendo lecciones aplicables a futuros servicios y reforzando así la mejora continua de la seguridad en la conducción de vehículos prioritarios",
+      "No tiene ninguna utilidad práctica una vez finalizado el servicio",
+      "Sirve únicamente para determinar sanciones disciplinarias, sin ninguna finalidad preventiva",
+      "Solo se realiza cuando el incidente ha causado daños materiales de gran cuantía",
+    ],
+    correcta: 0,
+    explicacion:
+      "El análisis o «debriefing» posterior a un incidente de conducción permite identificar qué decisiones, circunstancias o factores contribuyeron a que se produjera, extrayendo lecciones aplicables a futuros servicios y reforzando así, de manera constructiva, la mejora continua de la seguridad en la conducción de vehículos prioritarios, más allá de cualquier consideración disciplinaria puntual.",
+  },
 ];
