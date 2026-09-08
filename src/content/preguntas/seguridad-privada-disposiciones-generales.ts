@@ -183,4 +183,17 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 62.1 prevé para las infracciones muy graves del personal una multa de 6.001 a 30.000 euros y la extinción de la habilitación, que impide obtenerla de nuevo por un plazo de entre uno y dos años.",
   },
+  {
+    id: "sp-15",
+    enunciado: "Según el artículo 31 de la Ley 5/2014, ¿qué protección jurídica especial recibe el personal de seguridad privada cuando actúa en cooperación y bajo el mando de las Fuerzas y Cuerpos de Seguridad?",
+    opciones: [
+      "Las agresiones y desobediencias cometidas contra dicho personal, debidamente identificado, se consideran agresiones y desobediencias a agentes de la autoridad",
+      "Ninguna protección especial, se equipara a cualquier ciudadano particular",
+      "Únicamente protección frente a agresiones, pero no frente a la desobediencia",
+      "Solo reciben esta protección los directores de seguridad, no los vigilantes",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 31 dispone que se considerarán agresiones y desobediencias a agentes de la autoridad las que se cometan contra el personal de seguridad privada, debidamente identificado, cuando desarrolle actividades de seguridad privada en cooperación y bajo el mando de las Fuerzas y Cuerpos de Seguridad, en conexión con la extensión de la protección penal del atentado ya vista en el art. 554 del Código Penal.",
+  },
 ];

@@ -147,4 +147,43 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 59.1 permite eximir de responsabilidad administrativa y no expulsar al extranjero irregular que sea víctima, perjudicado o testigo de tráfico ilícito de personas u otras conductas similares, si denuncia a los responsables o coopera con las autoridades.",
   },
+  {
+    id: "ext-13",
+    enunciado: "Según el artículo 53.1.d), ¿qué conducta se califica como infracción grave en relación con las medidas ya impuestas al extranjero?",
+    opciones: [
+      "El incumplimiento de las medidas impuestas por razón de seguridad pública, de presentación periódica o de alejamiento de fronteras o núcleos de población concretados singularmente",
+      "La simple solicitud de renovación de la autorización de residencia fuera de plazo",
+      "El cambio voluntario de domicilio dentro de la misma provincia",
+      "La solicitud de asilo presentada de buena fe",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 53.1.d) califica como infracción grave el incumplimiento de las medidas impuestas por razón de seguridad pública, de presentación periódica o de alejamiento de fronteras o núcleos de población concretados singularmente, de acuerdo con lo dispuesto en la Ley Orgánica 4/2000.",
+  },
+  {
+    id: "ext-14",
+    enunciado: "Según el artículo 54.1.b), ¿qué infracción muy grave castiga a quien favorece la inmigración clandestina de personas con destino a España?",
+    opciones: [
+      "Inducir, promover, favorecer o facilitar con ánimo de lucro, individualmente o en organización, la inmigración clandestina de personas en tránsito o con destino al territorio español, o su permanencia en él, siempre que el hecho no constituya delito",
+      "Ayudar de forma altruista y sin ánimo de lucro a un familiar a regularizar su situación",
+      "Contratar a un trabajador extranjero que sí dispone de autorización de trabajo en vigor",
+      "Denunciar ante las autoridades una situación de trata de seres humanos",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 54.1.b) califica como infracción muy grave inducir, promover, favorecer o facilitar con ánimo de lucro, individualmente o formando parte de una organización, la inmigración clandestina de personas en tránsito o con destino al territorio español o su permanencia en el mismo, siempre que el hecho no constituya delito.",
+  },
+  {
+    id: "ext-15",
+    enunciado: "Según el artículo 63.1, ¿qué carácter tiene la tramitación del expediente de expulsión cuando concurren los supuestos allí previstos, y qué consecuencia tiene respecto de la salida voluntaria?",
+    opciones: [
+      "Tiene carácter preferente, y en estos supuestos no cabrá la concesión del período de salida voluntaria",
+      "Tiene carácter ordinario, concediéndose en todo caso un plazo de salida voluntaria de treinta días",
+      "El expediente queda automáticamente archivado sin más trámite",
+      "Se suspende indefinidamente hasta que el interesado lo solicite expresamente",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 63.1 dispone que, en los supuestos que enumera (entre ellos el incumplimiento de medidas de seguridad, las actividades contrarias a la seguridad nacional o la inmigración clandestina con ánimo de lucro), la tramitación del expediente de expulsión tendrá carácter preferente, y en estos supuestos no cabrá la concesión del período de salida voluntaria.",
+  },
 ];

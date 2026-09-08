@@ -120,4 +120,43 @@ export const preguntas: Pregunta[] = [
     correcta: 2,
     explicacion: "El art. 29 establece que el Defensor del Pueblo está legitimado para interponer los recursos de inconstitucionalidad y de amparo.",
   },
+  {
+    id: "dp-13",
+    enunciado: "Según el artículo 1 de la LO 3/1981, ¿cuál es la naturaleza institucional del Defensor del Pueblo?",
+    opciones: [
+      "Es el alto comisionado de las Cortes Generales, designado por estas para la defensa de los derechos comprendidos en el Título I de la Constitución, pudiendo a tal efecto supervisar la actividad de la Administración",
+      "Es un órgano dependiente jerárquicamente del Gobierno",
+      "Es un Magistrado más del Tribunal Constitucional",
+      "Es un cargo de libre designación del Presidente del Gobierno",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 1 de la LO 3/1981 define al Defensor del Pueblo como el alto comisionado de las Cortes Generales, designado por estas para la defensa de los derechos comprendidos en el Título I de la Constitución, a cuyo efecto podrá supervisar la actividad de la Administración, dando cuenta a las Cortes Generales.",
+  },
+  {
+    id: "dp-14",
+    enunciado: "Según el artículo 6 de la LO 3/1981, ¿de qué independencia goza el Defensor del Pueblo en el ejercicio de sus funciones?",
+    opciones: [
+      "No está sujeto a mandato imperativo alguno, no recibe instrucciones de ninguna autoridad y desempeña sus funciones con autonomía y según su criterio",
+      "Debe seguir en todo caso las instrucciones del Gobierno",
+      "Está sujeto a las instrucciones del partido político que propuso su candidatura",
+      "Depende jerárquicamente del Presidente del Congreso de los Diputados",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 6.1 y 6.2 de la LO 3/1981 dispone que el Defensor del Pueblo no estará sujeto a mandato imperativo alguno, no recibirá instrucciones de ninguna autoridad, y desempeñará sus funciones con autonomía y según su criterio, en garantía de su independencia institucional.",
+  },
+  {
+    id: "dp-15",
+    enunciado: "Según el artículo 19 de la LO 3/1981, ¿con qué carácter deben auxiliar los organismos y autoridades al Defensor del Pueblo en sus investigaciones?",
+    opciones: [
+      "Con carácter preferente y urgente, estando todos los poderes públicos obligados a auxiliarle en sus investigaciones e inspecciones",
+      "Sin ninguna obligación especial, pudiendo demorar la respuesta indefinidamente",
+      "Solo si media una orden judicial previa que lo autorice expresamente",
+      "Únicamente los organismos autonómicos, quedando excluida la Administración General del Estado",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 19 de la LO 3/1981 obliga a todos los poderes públicos a auxiliar, con carácter preferente y urgente, al Defensor del Pueblo en sus investigaciones e inspecciones, en coherencia con su función de supervisión de la actividad de la Administración.",
+  },
 ];

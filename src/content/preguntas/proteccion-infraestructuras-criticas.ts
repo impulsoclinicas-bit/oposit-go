@@ -157,4 +157,43 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El Objetivo II de la Estrategia distingue tres ámbitos de la lucha contra la cibercriminalidad: el ciberespacio como objetivo directo de los hechos delictivos o de la amenaza, como medio clave para su comisión, y como medio u objeto directo de investigación de cualquier hecho ilícito.",
   },
+  {
+    id: "pic-13",
+    enunciado: "Según el artículo 14.1 de la Ley 8/2011, ¿qué instrumentos de planificación se establecen para la protección de las infraestructuras críticas?",
+    opciones: [
+      "El Plan Nacional de Protección de las Infraestructuras Críticas, los Planes Estratégicos Sectoriales, los Planes de Seguridad del Operador, los Planes de Protección Específicos y los Planes de Apoyo Operativo",
+      "Únicamente un plan único de ámbito nacional, sin ninguna distinción sectorial",
+      "Solo los planes elaborados directamente por cada Comunidad Autónoma",
+      "Exclusivamente los planes de emergencia municipal",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 14.1 establece cinco instrumentos de planificación: el Plan Nacional de Protección de las Infraestructuras Críticas, los Planes Estratégicos Sectoriales, los Planes de Seguridad del Operador, los Planes de Protección Específicos (elaborados por los propios operadores críticos) y los Planes de Apoyo Operativo (elaborados por el Cuerpo Policial competente en la demarcación).",
+  },
+  {
+    id: "pic-14",
+    enunciado: "Según el artículo 16, ¿qué habilitación debe tener el Responsable de Seguridad y Enlace designado por un operador crítico?",
+    opciones: [
+      "La habilitación de Director de Seguridad expedida por el Ministerio del Interior conforme a la normativa de seguridad privada, o una habilitación equivalente según su normativa específica",
+      "Ninguna habilitación específica, basta con ser empleado del operador crítico",
+      "El título de Policía Nacional en activo",
+      "Una licenciatura en Derecho, sin ninguna otra habilitación",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 16.2 exige que el Responsable de Seguridad y Enlace, que cada operador crítico debe nombrar y comunicar al Ministerio del Interior, cuente con la habilitación de Director de Seguridad expedida por el Ministerio del Interior según la normativa de seguridad privada, o con una habilitación equivalente conforme a su normativa específica.",
+  },
+  {
+    id: "pic-15",
+    enunciado: "Según el artículo 17, ¿a quién deben comunicar los operadores críticos la existencia de un Delegado de Seguridad de la Infraestructura Crítica?",
+    opciones: [
+      "A las Delegaciones del Gobierno o, en su caso, al órgano competente de la Comunidad Autónoma con competencias para la protección de personas y bienes y el mantenimiento del orden público donde se ubique la infraestructura",
+      "Únicamente al Centro Nacional de Inteligencia",
+      "A cualquier Ayuntamiento del territorio nacional, sin necesidad de que la infraestructura se ubique en su término",
+      "No existe obligación de comunicación alguna sobre esta figura",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 17.1 exige que los operadores con infraestructuras consideradas Críticas o Críticas Europeas comuniquen a las Delegaciones del Gobierno o, en su caso, al órgano competente de la Comunidad Autónoma con competencias estatutarias en protección de personas y bienes y mantenimiento del orden público donde se ubique la infraestructura, la existencia de un Delegado de Seguridad para dicha infraestructura.",
+  },
 ];

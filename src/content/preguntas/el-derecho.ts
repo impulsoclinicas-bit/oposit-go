@@ -157,4 +157,43 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 3.1 CC recoge los criterios de interpretación: sentido propio de las palabras, contexto, antecedentes históricos y legislativos, realidad social del tiempo, y espíritu y finalidad de la norma.",
   },
+  {
+    id: "der1-13",
+    enunciado: "Según el artículo 1.6 del Código Civil, ¿qué papel desempeña la jurisprudencia en el ordenamiento jurídico español?",
+    opciones: [
+      "Complementa el ordenamiento jurídico con la doctrina que, de modo reiterado, establezca el Tribunal Supremo al interpretar y aplicar la ley, la costumbre y los principios generales del derecho",
+      "Es una fuente del Derecho de igual rango que la ley, pudiendo derogarla",
+      "Carece de cualquier valor jurídico en España",
+      "Solo la producen los Tribunales Superiores de Justicia de las Comunidades Autónomas",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 1.6 CC establece que la jurisprudencia complementará el ordenamiento jurídico con la doctrina que, de modo reiterado, establezca el Tribunal Supremo al interpretar y aplicar la ley, la costumbre y los principios generales del derecho, sin constituir por sí misma una fuente autónoma del Derecho.",
+  },
+  {
+    id: "der1-14",
+    enunciado: "¿Qué exige el artículo 7 del Código Civil respecto del ejercicio de los derechos?",
+    opciones: [
+      "Que los derechos se ejerciten conforme a las exigencias de la buena fe, y que la ley no ampare el abuso del derecho o su ejercicio antisocial",
+      "Que todo derecho pueda ejercitarse sin ningún límite",
+      "Que los derechos solo puedan ejercitarse mediante representación legal",
+      "Que el ejercicio de un derecho exija siempre autorización judicial previa",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 7 CC exige que los derechos se ejerciten conforme a las exigencias de la buena fe, y dispone que la ley no ampara el abuso del derecho o el ejercicio antisocial del mismo, es decir, todo acto u omisión que por la intención de su autor, por su objeto o por las circunstancias en que se realice sobrepase manifiestamente los límites normales del ejercicio de un derecho.",
+  },
+  {
+    id: "der1-15",
+    enunciado: "¿Qué distingue, con carácter general, al Derecho público del Derecho privado?",
+    opciones: [
+      "El Derecho público regula las relaciones en las que interviene el Estado u otro poder público en ejercicio de sus potestades (con una posición de supremacía); el Derecho privado regula las relaciones entre particulares en situación de igualdad",
+      "Son términos completamente sinónimos, sin ninguna diferencia relevante",
+      "El Derecho privado regula exclusivamente las relaciones internacionales entre Estados",
+      "El Derecho público solo se aplica a los delitos, y el privado a las faltas administrativas",
+    ],
+    correcta: 0,
+    explicacion:
+      "La distinción clásica entre Derecho público y Derecho privado atiende a la naturaleza de la relación jurídica regulada: el Derecho público regula las relaciones en las que interviene el Estado u otro poder público en el ejercicio de sus potestades, ocupando una posición de supremacía (Derecho constitucional, administrativo, penal, procesal), mientras que el Derecho privado regula las relaciones entre particulares situados en un plano de igualdad (Derecho civil, mercantil).",
+  },
 ];

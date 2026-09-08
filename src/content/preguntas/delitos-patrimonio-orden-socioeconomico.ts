@@ -157,4 +157,43 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 251.3 castiga con prisión de uno a cuatro años a quien otorgare en perjuicio de otro un contrato simulado, dentro del capítulo de las defraudaciones distintas de la estafa propiamente dicha.",
   },
+  {
+    id: "dpat-13",
+    enunciado: "Según el artículo 239, ¿qué se consideran «llaves falsas» a efectos del robo con fuerza en las cosas?",
+    opciones: [
+      "Las ganzúas u otros instrumentos análogos, las llaves legítimas perdidas u obtenidas por medio de una infracción penal, y cualesquiera otras que no sean las destinadas por el propietario para abrir la cerradura violentada",
+      "Únicamente las llaves fabricadas de forma artesanal por el propio autor del delito",
+      "Solo las llaves electrónicas o tarjetas magnéticas, nunca las llaves mecánicas tradicionales",
+      "Las llaves entregadas voluntariamente por el propietario al autor del hecho",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 239 considera llaves falsas las ganzúas u otros instrumentos análogos, las llaves legítimas perdidas por el propietario u obtenidas por un medio que constituya infracción penal, y cualesquiera otras que no sean las destinadas por el propietario para abrir la cerradura violentada; a estos efectos, también se consideran llaves las tarjetas magnéticas o perforadas, los mandos de apertura a distancia y cualquier instrumento tecnológico de eficacia similar.",
+  },
+  {
+    id: "dpat-14",
+    enunciado: "¿Qué castiga el artículo 236.1 (hurto de cosa propia)?",
+    opciones: [
+      "Que el dueño de una cosa mueble, o quien actúe con su consentimiento, la sustraiga de quien la tenga legítimamente en su poder, con perjuicio del mismo o de un tercero",
+      "El hurto cometido por un tercero completamente ajeno al propietario de la cosa",
+      "El robo con violencia sobre las personas, con independencia de la titularidad del bien",
+      "La sustracción de bienes de titularidad exclusivamente pública",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 236.1 castiga con multa de tres a doce meses a quien, siendo dueño de una cosa mueble o actuando con el consentimiento de este, la sustrajere de quien la tenga legítimamente en su poder, con perjuicio del propio dueño o de un tercero, una figura que protege la posesión legítima frente a su propio titular dominical.",
+  },
+  {
+    id: "dpat-15",
+    enunciado: "¿Qué castiga el artículo 257.1 (alzamiento de bienes)?",
+    opciones: [
+      "Que una persona se alce con sus bienes en perjuicio de sus acreedores, o realice actos de disposición patrimonial que dilaten, dificulten o impidan la eficacia de un embargo o procedimiento ejecutivo",
+      "El simple impago puntual de una deuda por falta de liquidez temporal",
+      "La declaración voluntaria de concurso de acreedores",
+      "La donación de bienes a título gratuito, sin ninguna finalidad defraudatoria",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 257.1 castiga con prisión de uno a cuatro años y multa de doce a veinticuatro meses a quien se alce con sus bienes en perjuicio de sus acreedores, o realice cualquier acto de disposición patrimonial o generador de obligaciones que dilate, dificulte o impida la eficacia de un embargo o de un procedimiento ejecutivo o de apremio, ya sea judicial, extrajudicial o administrativo.",
+  },
 ];

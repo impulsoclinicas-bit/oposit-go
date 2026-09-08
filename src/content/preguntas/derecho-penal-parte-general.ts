@@ -152,4 +152,43 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El dolo implica conocimiento y voluntad de realizar el tipo penal (o, en el dolo eventual, aceptación de su probable producción); la imprudencia (art. 12 CP) supone la causación del resultado por infracción del deber objetivo de cuidado, sin intención de producirlo. Las conductas imprudentes solo se castigan cuando la ley expresamente lo prevé.",
   },
+  {
+    id: "dpg-13",
+    enunciado: "¿Qué diferencia existe entre el delito «consumado» y la «tentativa» de delito, según los artículos 15 y 16 del Código Penal?",
+    opciones: [
+      "El delito consumado realiza todos los elementos del tipo penal; en la tentativa, el sujeto da principio a la ejecución del delito directamente por hechos exteriores, practicando todos o parte de los actos que objetivamente deberían producir el resultado, y este no se produce por causas independientes de la voluntad del autor",
+      "No existe ninguna diferencia jurídica entre ambas figuras",
+      "La tentativa se castiga siempre con la misma pena que el delito consumado",
+      "La tentativa solo puede darse en los delitos imprudentes",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 15 CP castiga tanto el delito consumado como la tentativa; el art. 16.1 CP define la tentativa como dar principio a la ejecución del delito directamente por hechos exteriores, practicando todos o parte de los actos que objetivamente deberían producir el resultado, sin que este se produzca por causas independientes de la voluntad del autor, castigándose con la pena inferior en uno o dos grados a la del delito consumado (art. 62 CP).",
+  },
+  {
+    id: "dpg-14",
+    enunciado: "Según el artículo 28.b) del Código Penal, ¿quién es considerado «inductor» a efectos de responsabilidad como autor?",
+    opciones: [
+      "Quien induce directamente a otro u otros a ejecutar el hecho delictivo",
+      "Quien simplemente conoce que se va a cometer un delito, sin intervenir en él",
+      "Quien presta ayuda posterior a la comisión del delito, ocultando al autor",
+      "Quien únicamente presencia la comisión del delito sin intervenir",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 28, párrafo segundo, letra a) del Código Penal considera autores, entre otros, a quienes inducen directamente a otro u otros a ejecutar el hecho delictivo, equiparando su responsabilidad penal a la del autor material, pese a no ejecutar personalmente la conducta típica.",
+  },
+  {
+    id: "dpg-15",
+    enunciado: "¿Qué es la agravante de reincidencia, prevista en el artículo 22.8 del Código Penal?",
+    opciones: [
+      "Circunstancia que concurre cuando, al delinquir, el culpable haya sido condenado ejecutoriamente por un delito comprendido en el mismo título del Código Penal, siempre que sea de la misma naturaleza",
+      "Un sinónimo exacto de habitualidad delictiva sin ninguna condena previa",
+      "Una circunstancia que exime completamente de responsabilidad penal",
+      "Una circunstancia que solo se aplica a los delitos contra el patrimonio",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 22.8 CP define la reincidencia como la circunstancia agravante que concurre cuando, al delinquir, el culpable haya sido condenado ejecutoriamente por un delito comprendido en el mismo título del Código Penal, siempre que sea de la misma naturaleza, no computándose los antecedentes penales cancelados o que debieran serlo.",
+  },
 ];

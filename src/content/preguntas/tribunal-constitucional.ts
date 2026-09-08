@@ -133,4 +133,43 @@ export const preguntas: Pregunta[] = [
     correcta: 1,
     explicacion: "El art. 9 LOTC establece que el Presidente es elegido por el Pleno entre sus miembros, se propone al Rey para su nombramiento, y su mandato dura tres años, pudiendo ser reelegido una sola vez.",
   },
+  {
+    id: "tc-13",
+    enunciado: "Según el artículo 1 LOTC, ¿qué naturaleza tiene el Tribunal Constitucional?",
+    opciones: [
+      "Es el intérprete supremo de la Constitución, independiente de los demás órganos constitucionales y sometido solo a la Constitución y a su propia Ley Orgánica",
+      "Es una sala especial integrada dentro del Tribunal Supremo",
+      "Es un órgano consultivo del Gobierno sin capacidad de dictar resoluciones vinculantes",
+      "Es un órgano subordinado jerárquicamente al Congreso de los Diputados",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 1.1 LOTC define al Tribunal Constitucional como intérprete supremo de la Constitución, independiente de los demás órganos constitucionales y sometido solo a la Constitución y a la propia Ley Orgánica del Tribunal Constitucional.",
+  },
+  {
+    id: "tc-14",
+    enunciado: "Según el artículo 18 LOTC, ¿qué requisito de experiencia profesional se exige a quienes van a ser nombrados Magistrados del Tribunal Constitucional?",
+    opciones: [
+      "Ser juristas de reconocida competencia con más de quince años de ejercicio profesional o en activo en la respectiva función",
+      "Haber sido previamente Diputado o Senador durante al menos dos legislaturas",
+      "No se exige ningún requisito de experiencia profesional previa",
+      "Ser exclusivamente Magistrado en activo del Tribunal Supremo en el momento del nombramiento",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 18 LOTC exige que los Magistrados del Tribunal Constitucional sean nombrados entre Magistrados y Fiscales, Profesores de Universidad, funcionarios públicos y Abogados, todos ellos juristas de reconocida competencia con más de quince años de ejercicio profesional o en activo en la respectiva función.",
+  },
+  {
+    id: "tc-15",
+    enunciado: "¿Qué es la «cuestión de inconstitucionalidad», regulada en el artículo 35 LOTC, y en qué se diferencia del recurso de inconstitucionalidad?",
+    opciones: [
+      "Es el mecanismo por el que un Juez o Tribunal ordinario, al considerar que una norma con rango de ley aplicable al caso y de cuya validez dependa el fallo pueda ser contraria a la Constitución, la plantea ante el Tribunal Constitucional, a diferencia del recurso, que interponen directamente los sujetos legitimados del art. 32 LOTC",
+      "Es un sinónimo exacto del recurso de amparo",
+      "Es un mecanismo que solo puede plantear el Defensor del Pueblo",
+      "Es la vía por la que cualquier ciudadano impugna directamente una ley ante el Tribunal Constitucional",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 35 LOTC regula la cuestión de inconstitucionalidad como el mecanismo por el cual un órgano judicial, cuando considera que una norma con rango de ley aplicable al caso y de cuya validez dependa el fallo pueda ser contraria a la Constitución, la plantea ante el Tribunal Constitucional, a diferencia del recurso de inconstitucionalidad, que interponen directamente los sujetos legitimados por el art. 32 LOTC sin necesidad de que exista un proceso judicial previo.",
+  },
 ];

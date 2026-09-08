@@ -157,4 +157,43 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 172 ter castiga a quien acose a una persona llevando a cabo de forma insistente y reiterada, sin estar legítimamente autorizado, conductas como vigilarla, perseguirla o buscar su cercanía, o intentar contactar con ella, alterando el normal desarrollo de su vida cotidiana.",
   },
+  {
+    id: "dpe-13",
+    enunciado: "Según el artículo 143.1 y 143.2, ¿qué diferencia hay entre inducir al suicidio de otro y cooperar con actos necesarios a dicho suicidio?",
+    opciones: [
+      "La inducción se castiga con prisión de cuatro a ocho años; la cooperación con actos necesarios, con prisión de dos a cinco años, una pena inferior por tratarse de una forma de participación distinta",
+      "Ambas conductas tienen exactamente la misma pena, sin ninguna distinción",
+      "La cooperación con actos necesarios se castiga más gravemente que la inducción",
+      "Ninguna de las dos conductas está tipificada como delito en el Código Penal",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 143.1 castiga con prisión de cuatro a ocho años a quien induzca al suicidio de otro, mientras que el art. 143.2 castiga con una pena inferior, de dos a cinco años de prisión, a quien coopere con actos necesarios al suicidio de una persona, sin llegar a ejecutar la muerte, supuesto que el art. 143.3 castiga con prisión de seis a diez años.",
+  },
+  {
+    id: "dpe-14",
+    enunciado: "¿Qué circunstancias agravan las lesiones del artículo 147.1 a la pena de prisión de dos a cinco años, según el artículo 148?",
+    opciones: [
+      "El uso de armas o medios peligrosos para la vida o salud, el ensañamiento o alevosía, que la víctima sea menor de catorce años, o que sea o haya sido pareja del agresor",
+      "Que la lesión se produzca por negligencia leve, sin ninguna intención",
+      "Que el autor se arrepienta inmediatamente después de los hechos",
+      "Que la lesión se cure en menos de una semana",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 148 agrava las lesiones del art. 147.1 a prisión de dos a cinco años cuando se hayan utilizado armas u otros medios peligrosos para la vida o salud, cuando haya mediado ensañamiento o alevosía, cuando la víctima sea menor de catorce años o persona con discapacidad necesitada de especial protección, o cuando sea o haya sido pareja del autor, entre otras circunstancias.",
+  },
+  {
+    id: "dpe-15",
+    enunciado: "¿Qué castiga el artículo 149.1 respecto de las lesiones más graves?",
+    opciones: [
+      "Causar a otro la pérdida o inutilidad de un órgano o miembro principal, de un sentido, la impotencia, la esterilidad, una grave deformidad o una grave enfermedad somática o psíquica, con prisión de seis a doce años",
+      "Cualquier lesión que requiera más de una semana de curación",
+      "Únicamente las lesiones causadas por imprudencia grave",
+      "Las lesiones que no dejen ninguna secuela permanente",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 149.1 castiga con prisión de seis a doce años a quien causare a otro, por cualquier medio, la pérdida o inutilidad de un órgano o miembro principal, de un sentido, la impotencia, la esterilidad, una grave deformidad o una grave enfermedad somática o psíquica, constituyendo el tipo más grave de lesiones dentro del Título III del Código Penal.",
+  },
 ];

@@ -157,4 +157,43 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 17.2 dispone que la entrada ilegal en territorio español no podrá ser sancionada cuando haya sido realizada por una persona que reúna los requisitos para ser beneficiaria de la protección internacional prevista en la ley.",
   },
+  {
+    id: "pin-13",
+    enunciado: "Según el artículo 5, ¿en qué consiste esencialmente la protección concedida con el derecho de asilo y la protección subsidiaria?",
+    opciones: [
+      "En la no devolución ni expulsión de las personas a quienes se les haya reconocido, junto con la adopción de las demás medidas previstas en la ley y en la normativa de la Unión Europea y los convenios internacionales",
+      "Únicamente en la concesión automática de la nacionalidad española",
+      "Solo en el derecho a percibir una ayuda económica mensual, sin ninguna otra medida",
+      "Exclusivamente en el acceso gratuito a la vivienda pública",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 5 establece que la protección concedida con el derecho de asilo y la protección subsidiaria consiste en la no devolución ni expulsión de las personas a quienes se les haya reconocido, así como en la adopción de las demás medidas contempladas en la Ley, en la normativa de la Unión Europea y en los Convenios internacionales ratificados por España.",
+  },
+  {
+    id: "pin-14",
+    enunciado: "Según el artículo 40.1.b), ¿puede extenderse el derecho de asilo por vía familiar al cónyuge o pareja de la persona refugiada?",
+    opciones: [
+      "Sí, salvo en los supuestos de divorcio, separación legal o de hecho, distinta nacionalidad, o cuando el estatuto se hubiera concedido por razón de violencia de género sufrida precisamente por parte de ese cónyuge o conviviente",
+      "No, la extensión familiar solo alcanza a los descendientes menores de edad, nunca al cónyuge",
+      "Sí, sin ninguna excepción ni límite temporal",
+      "Solo si el cónyuge tiene la misma nacionalidad que la persona refugiada",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 40.1.b) permite la extensión familiar del asilo o la protección subsidiaria al cónyuge o persona ligada por análoga relación de afectividad y convivencia, salvo en los supuestos de divorcio, separación legal o de hecho, distinta nacionalidad, o cuando el estatuto de refugiado se hubiera concedido por razón de género, si se acredita que la persona sufrió persecución por violencia de género precisamente por parte de ese cónyuge o conviviente.",
+  },
+  {
+    id: "pin-15",
+    enunciado: "Según el artículo 41, ¿pueden las personas refugiadas optar por reagrupar a sus familiares en lugar de solicitar la extensión del estatuto?",
+    opciones: [
+      "Sí, mediante la reagrupación familiar, que además será siempre aplicable cuando los beneficiarios tengan una nacionalidad distinta a la de la persona refugiada, si bien solo podrá ejercitarse una sola vez",
+      "No, la única vía posible para reunir a la familia es la extensión familiar del estatuto de refugiado",
+      "Sí, pudiendo ejercitarse un número ilimitado de veces sucesivas",
+      "Solo si los familiares ya residen legalmente en España por otra vía distinta",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 41 permite a las personas refugiadas y beneficiarias de protección subsidiaria optar por reagrupar a sus familiares en lugar de solicitar la extensión del estatuto, siendo esta vía siempre aplicable cuando los beneficiarios tengan una nacionalidad distinta a la de la persona reagrupante, si bien la reagrupación familiar solo podrá ejercitarse una sola vez, sin posibilidad de reagrupaciones sucesivas.",
+  },
 ];

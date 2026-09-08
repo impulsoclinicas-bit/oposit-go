@@ -183,4 +183,17 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 44.3 establece que el ejercicio del derecho a la rectificación registral de la mención relativa al sexo en ningún caso podrá estar condicionado a la previa exhibición de informe médico o psicológico, ni a la previa modificación de la apariencia o función corporal mediante procedimientos médicos, quirúrgicos o de otra índole.",
   },
+  {
+    id: "pivg-15",
+    enunciado: "Según el artículo 8 de la LO 3/2007, ¿qué se considera discriminación directa por razón de sexo en relación con el embarazo?",
+    opciones: [
+      "Todo trato desfavorable a las mujeres relacionado con el embarazo o la maternidad",
+      "Únicamente el despido expreso y motivado por escrito durante el embarazo",
+      "Solo la negativa a conceder la baja por maternidad, sin ningún otro supuesto",
+      "Exclusivamente los actos cometidos por la propia empresa contratante, nunca por terceros",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 8 de la LO 3/2007 establece que constituye discriminación directa por razón de sexo todo trato desfavorable a las mujeres relacionado con el embarazo o la maternidad, un supuesto que se suma a los ya vistos de discriminación directa e indirecta del art. 6.",
+  },
 ];

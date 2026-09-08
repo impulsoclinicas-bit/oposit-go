@@ -144,4 +144,56 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 11.7 del Reglamento General de Vehículos dispone que solo en los vehículos que tengan el carácter de prioritarios se instalarán aparatos emisores de señales acústicas especiales, siempre que estén debidamente autorizados por el órgano competente en materia de industria.",
   },
+  {
+    id: "evp-12",
+    enunciado: "Según el artículo 70.2, ¿qué deben respetar los conductores de vehículos no prioritarios que se ven forzados a un servicio de urgencia?",
+    opciones: [
+      "Las normas de circulación, sobre todo en las intersecciones, mientras que los demás usuarios de la vía deben actuar conforme a lo dispuesto en el artículo 69 para facilitarles el paso",
+      "Ninguna norma de circulación, al quedar equiparados a los vehículos prioritarios en todos los aspectos",
+      "Únicamente el límite de velocidad, sin ninguna otra norma",
+      "Solo están obligados a respetar las señales luminosas, no las semafóricas",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 70.2 exige que los conductores de vehículos no prioritarios forzados a un servicio de urgencia respeten las normas de circulación, sobre todo en las intersecciones, mientras que los demás usuarios de la vía deben actuar conforme a lo dispuesto en el art. 69 (facilitar el paso) al percibir su situación.",
+  },
+  {
+    id: "evp-13",
+    enunciado: "Según el artículo 70.3, ¿pueden los agentes de la autoridad exigir la justificación de las circunstancias alegadas por un conductor no prioritario que ha actuado como tal?",
+    opciones: [
+      "Sí, en cualquier momento",
+      "No, una vez finalizado el servicio de urgencia ya no puede exigirse ninguna justificación",
+      "Solo si se ha producido un accidente durante el trayecto",
+      "Únicamente si lo solicita expresamente el titular del vehículo",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 70.3 permite a los agentes de la autoridad exigir en cualquier momento la justificación de las circunstancias especialmente graves que hayan llevado a un conductor no prioritario a efectuar un servicio normalmente reservado a los vehículos prioritarios.",
+  },
+  {
+    id: "evp-14",
+    enunciado: "¿Qué calificación tienen las infracciones a las normas del artículo 70, según su apartado 4?",
+    opciones: [
+      "Graves, conforme al artículo 65.4.c) del texto articulado",
+      "Leves en todo caso",
+      "Muy graves siempre",
+      "No están tipificadas como infracción",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 70.4 califica como graves las infracciones a las normas de dicho precepto, remitiéndose al art. 65.4.c) del texto articulado de la Ley sobre Tráfico, Circulación de Vehículos a Motor y Seguridad Vial, la misma calificación que reciben las infracciones al art. 68.",
+  },
+  {
+    id: "evp-15",
+    enunciado: "Según el artículo 27.5 del Reglamento General de Vehículos, ¿qué particularidad de matriculación pueden tener los vehículos adscritos al Cuerpo de Policía de una Comunidad Autónoma?",
+    opciones: [
+      "Pueden utilizar, en el ámbito de la Comunidad Autónoma, placas de matrícula con una contraseña y numeración propias, sin perjuicio de su matriculación ordinaria en la Jefatura de Tráfico correspondiente",
+      "Quedan completamente exentos de matriculación",
+      "Deben matricularse obligatoriamente fuera del territorio de la propia Comunidad Autónoma",
+      "Solo pueden circular con matrícula diplomática",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 27.5 del Reglamento General de Vehículos permite que los vehículos adscritos al Cuerpo de Policía de una Comunidad Autónoma utilicen, en el ámbito de la misma, placas de matrícula con una contraseña y numeración propias, sin perjuicio de que conserven su matriculación ordinaria en la Jefatura de Tráfico correspondiente.",
+  },
 ];

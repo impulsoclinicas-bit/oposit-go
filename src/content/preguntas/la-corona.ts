@@ -138,4 +138,43 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El artículo 99 CE encomienda al Rey, previa consulta con los representantes designados por los grupos políticos con representación parlamentaria, proponer un candidato a la Presidencia del Gobierno.",
   },
+  {
+    id: "cor-13",
+    enunciado: "Según el artículo 58 CE, ¿puede el consorte del Rey o de la Reina asumir funciones constitucionales?",
+    opciones: [
+      "No, salvo lo dispuesto para la Regencia, la reina consorte o el consorte de la Reina no podrán asumir funciones constitucionales",
+      "Sí, siempre que el Rey se lo delegue expresamente",
+      "Sí, de forma automática cuando el Rey se ausente del territorio nacional",
+      "Solo si las Cortes Generales lo autorizan por mayoría absoluta",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 58 CE dispone que la reina consorte o el consorte de la Reina no podrán asumir funciones constitucionales, salvo lo previsto para la Regencia.",
+  },
+  {
+    id: "cor-14",
+    enunciado: "Según el artículo 61.1 CE, ¿qué juramento debe prestar el Rey al ser proclamado ante las Cortes Generales?",
+    opciones: [
+      "Jurar desempeñar fielmente sus funciones, guardar y hacer guardar la Constitución y las leyes, y respetar los derechos de los ciudadanos y de las Comunidades Autónomas",
+      "Jurar exclusivamente lealtad al Ejecutivo saliente",
+      "No existe ningún juramento exigido constitucionalmente al Rey",
+      "Jurar únicamente ante el Tribunal Constitucional, sin intervención de las Cortes",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 61.1 CE exige que el Rey, al ser proclamado ante las Cortes Generales, preste juramento de desempeñar fielmente sus funciones, guardar y hacer guardar la Constitución y las leyes, y respetar los derechos de los ciudadanos y de las Comunidades Autónomas.",
+  },
+  {
+    id: "cor-15",
+    enunciado: "Según el artículo 63 CE, ¿qué funciones desempeña el Rey en materia de relaciones internacionales?",
+    opciones: [
+      "Acredita a los embajadores y otros representantes diplomáticos, manifiesta el consentimiento del Estado para obligarse internacionalmente mediante tratados, y declara la guerra y hace la paz, previa autorización de las Cortes Generales",
+      "Negocia y firma personalmente todos los tratados internacionales sin intervención de las Cortes",
+      "Declara la guerra por sí mismo, sin necesidad de ninguna autorización",
+      "No tiene ninguna función en materia de relaciones internacionales, que corresponde en exclusiva al Gobierno",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 63 CE atribuye al Rey acreditar a los embajadores y otros representantes diplomáticos, manifestar el consentimiento del Estado para obligarse internacionalmente por medio de tratados (de conformidad con la Constitución y las leyes), y declarar la guerra y hacer la paz, previa autorización de las Cortes Generales.",
+  },
 ];

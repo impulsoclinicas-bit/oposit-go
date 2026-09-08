@@ -140,4 +140,40 @@ export const preguntas: Pregunta[] = [
     correcta: 2,
     explicacion: "El art. 1.1 no atribuye al Ministerio del Interior la política exterior general, que corresponde al Ministerio de Asuntos Exteriores; sí le atribuye seguridad ciudadana, protección internacional e instituciones penitenciarias.",
   },
+  {
+    id: "emi-13",
+    enunciado: "¿A qué órgano corresponde, según el artículo 2, la propuesta y ejecución de la política del Gobierno en materia de protección civil y gestión de emergencias?",
+    opciones: [
+      "A la Secretaría de Estado de Seguridad",
+      "A la Secretaría General de Protección Civil y Emergencias",
+      "A la Dirección General de la Policía",
+      "A la Subsecretaría del Interior",
+    ],
+    correcta: 1,
+    explicacion: "El art. 2 atribuye a la Secretaría General de Protección Civil y Emergencias, como órgano superior del Ministerio, la propuesta y ejecución de la política del Gobierno en materia de protección civil y gestión de emergencias.",
+  },
+  {
+    id: "emi-14",
+    enunciado: "¿Qué órgano directivo, dependiente de la Secretaría de Estado de Seguridad, ejerce las funciones de coordinación e impulso de las actuaciones del Departamento en materia de relaciones internacionales policiales?",
+    opciones: [
+      "La Comisaría General de Extranjería y Fronteras",
+      "La Dirección General de Relaciones Internacionales y Extranjería",
+      "La Dirección Adjunta Operativa",
+      "El CITCO",
+    ],
+    correcta: 1,
+    explicacion: "El art. 1.5.a) atribuye a la Dirección General de Relaciones Internacionales y Extranjería, entre otras funciones, la coordinación e impulso de las relaciones internacionales del Departamento en materia policial y de extranjería.",
+  },
+  {
+    id: "emi-15",
+    enunciado: "¿A quién corresponde, con rango de Ministro, la superior dirección del Ministerio del Interior?",
+    opciones: [
+      "Al Secretario de Estado de Seguridad",
+      "Al titular del Ministerio del Interior",
+      "Al Subsecretario del Interior",
+      "Al Director General de la Policía",
+    ],
+    correcta: 1,
+    explicacion: "Conforme a la estructura orgánica del Real Decreto 207/2024, corresponde al titular del Ministerio del Interior, como órgano superior del Departamento, su superior dirección, impulso y gestión, correspondiéndole las competencias generales previstas en la Ley 40/2015 para los Ministros.",
+  },
 ];

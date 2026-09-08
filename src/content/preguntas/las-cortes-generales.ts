@@ -154,4 +154,30 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "Con carácter general, los proyectos de ley se presentan primero en el Congreso de los Diputados (art. 88 CE), y después pasan al Senado.",
   },
+  {
+    id: "cortes-14",
+    enunciado: "Según el artículo 71 CE, ¿de qué prerrogativas gozan los Diputados y Senadores?",
+    opciones: [
+      "Inviolabilidad por las opiniones manifestadas en el ejercicio de sus funciones, e inmunidad, que impide su detención salvo en caso de flagrante delito y exige la previa autorización de la Cámara (suplicatorio) para ser inculpados o procesados",
+      "Total inmunidad frente a cualquier tipo de responsabilidad, incluso fuera del ejercicio de sus funciones",
+      "Ninguna prerrogativa especial distinta de la de cualquier ciudadano",
+      "Únicamente inviolabilidad, sin ningún tipo de inmunidad frente a la detención",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 71 CE reconoce a los Diputados y Senadores la inviolabilidad por las opiniones manifestadas en el ejercicio de sus funciones, y la inmunidad, en virtud de la cual solo podrán ser detenidos en caso de flagrante delito, no pudiendo ser inculpados ni procesados sin la previa autorización de la Cámara respectiva (el llamado suplicatorio).",
+  },
+  {
+    id: "cortes-15",
+    enunciado: "Según el artículo 78 CE, ¿qué es la Diputación Permanente?",
+    opciones: [
+      "Un órgano compuesto por un mínimo de veintiún miembros de cada Cámara, que vela por los poderes de esta cuando no está reunida (entre períodos de sesiones, tras su disolución o expiración del mandato)",
+      "Un órgano exclusivo del Congreso, sin equivalente en el Senado",
+      "El órgano encargado de tramitar en exclusiva las leyes orgánicas",
+      "Un sinónimo de la Mesa del Congreso de los Diputados",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 78 CE crea en cada Cámara una Diputación Permanente, compuesta por un mínimo de veintiún miembros representativos de los grupos parlamentarios, cuya función es velar por los poderes de la Cámara cuando esta no esté reunida (entre períodos de sesiones, tras la disolución de las Cortes o la expiración de su mandato).",
+  },
 ];

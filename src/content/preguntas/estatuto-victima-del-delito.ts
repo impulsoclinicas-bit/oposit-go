@@ -157,4 +157,43 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 26.3 dispone que, cuando existan dudas sobre la edad de la víctima y no pueda ser determinada con certeza, se presumirá que se trata de una persona menor de edad, a los efectos de lo dispuesto en la Ley.",
   },
+  {
+    id: "evd-13",
+    enunciado: "Según el artículo 14, ¿qué derecho tiene la víctima que ha participado en el proceso respecto de los gastos ocasionados por el ejercicio de sus derechos?",
+    opciones: [
+      "Derecho al reembolso de los gastos necesarios para el ejercicio de sus derechos y las costas procesales causadas, con preferencia respecto del pago de los gastos causados al Estado, en los supuestos previstos por la ley",
+      "Ningún derecho de reembolso, al ser gastos que corren siempre por cuenta de la víctima",
+      "Derecho al reembolso únicamente si la víctima ha ejercido la acusación particular con abogado propio en todos los casos",
+      "Derecho a que el Estado asuma directamente cualquier gasto, sin ninguna condición",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 14 reconoce a la víctima que haya participado en el proceso el derecho a obtener el reembolso de los gastos necesarios para el ejercicio de sus derechos y de las costas procesales que se le hubieran causado, con preferencia respecto del pago de los gastos causados al Estado, cuando se imponga dicho pago en la sentencia condenatoria en los supuestos previstos por la Ley.",
+  },
+  {
+    id: "evd-14",
+    enunciado: "Según el artículo 15.1, ¿qué requisitos deben cumplirse para que la víctima pueda acceder a servicios de justicia restaurativa?",
+    opciones: [
+      "Que el infractor haya reconocido los hechos esenciales, que tanto la víctima como el infractor hayan prestado su consentimiento informado, que no exista riesgo para la seguridad de la víctima, y que no esté prohibida por la ley para el delito cometido",
+      "Que la víctima renuncie previamente a cualquier indemnización económica",
+      "Que el infractor haya cumplido ya la totalidad de su condena",
+      "Que ambas partes acuerden hacerlo público en los medios de comunicación",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 15.1 condiciona el acceso a los servicios de justicia restaurativa a que el infractor haya reconocido los hechos esenciales de los que deriva su responsabilidad, a que tanto la víctima como el infractor hayan prestado su consentimiento tras recibir información exhaustiva e imparcial, a que el procedimiento no entrañe riesgo para la seguridad de la víctima ni pueda causarle nuevos perjuicios, y a que no esté prohibida por la ley para el delito cometido.",
+  },
+  {
+    id: "evd-15",
+    enunciado: "Según el artículo 18, ¿qué derecho tienen las víctimas respecto de los bienes de su propiedad incautados durante el proceso?",
+    opciones: [
+      "Derecho a obtener la devolución sin demora de los bienes restituibles de su propiedad que hubieran sido incautados, conforme a lo dispuesto en la Ley de Enjuiciamiento Criminal",
+      "Ningún derecho, los bienes incautados quedan siempre a disposición del Estado hasta la sentencia firme",
+      "Derecho a la devolución únicamente si el proceso concluye con sentencia condenatoria",
+      "Derecho a una indemnización económica sustitutiva, pero nunca a la devolución del bien concreto",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 18 reconoce a las víctimas el derecho a obtener, de conformidad con lo dispuesto en la Ley de Enjuiciamiento Criminal, la devolución sin demora de los bienes restituibles de su propiedad que hubieran sido incautados en el curso del proceso penal.",
+  },
 ];

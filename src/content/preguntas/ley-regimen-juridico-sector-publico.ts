@@ -147,4 +147,28 @@ export const preguntas: Pregunta[] = [
     correcta: 1,
     explicacion: "El art. 146.1 define la Conferencia de Presidentes con esta composición y presidencia.",
   },
+  {
+    id: "lrjsp-14",
+    enunciado: "Según el artículo 36, ¿en qué consiste la responsabilidad patrimonial de las autoridades y personal al servicio de las Administraciones Públicas?",
+    opciones: [
+      "Responden directamente frente a los particulares perjudicados, en lugar de la Administración",
+      "La Administración correspondiente exigirá de oficio la responsabilidad al personal a su servicio cuando hubiera concurrido dolo, culpa o negligencia graves, previa instrucción del procedimiento",
+      "Nunca pueden ser declarados responsables, la responsabilidad recae siempre en la Administración sin posibilidad de repetición",
+      "Solo responden cuando lo declare un tribunal penal",
+    ],
+    correcta: 1,
+    explicacion: "El art. 36.2 regula la exigencia de responsabilidad al personal al servicio de las Administraciones Públicas, que la Administración exigirá de oficio en caso de dolo, culpa o negligencia graves, tras instruir el procedimiento correspondiente.",
+  },
+  {
+    id: "lrjsp-15",
+    enunciado: "¿Qué establece el artículo 129 sobre los principios de buena regulación?",
+    opciones: [
+      "Que las Administraciones Públicas actuarán, en el ejercicio de la iniciativa legislativa y la potestad reglamentaria, de acuerdo con los principios de necesidad, eficacia, proporcionalidad, seguridad jurídica, transparencia y eficiencia",
+      "Que la potestad reglamentaria es completamente discrecional y no está sujeta a principio alguno",
+      "Que solo se aplican a las normas con rango de ley, no a los reglamentos",
+      "Que corresponde exclusivamente al Consejo de Estado velar por su cumplimiento",
+    ],
+    correcta: 0,
+    explicacion: "El art. 129.1 enumera los principios de buena regulación que deben presidir el ejercicio de la iniciativa legislativa y la potestad reglamentaria: necesidad, eficacia, proporcionalidad, seguridad jurídica, transparencia y eficiencia.",
+  },
 ];

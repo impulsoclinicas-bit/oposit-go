@@ -164,4 +164,16 @@ export const preguntas: Pregunta[] = [
     correcta: 1,
     explicacion: "El art. 29 recoge los distintos mecanismos de control del Gobierno: político, jurisdiccional y económico-presupuestario.",
   },
+  {
+    id: "lg-15",
+    enunciado: "Según el artículo 18, ¿cómo se produce el cese del Gobierno?",
+    opciones: [
+      "Únicamente por fallecimiento del Presidente",
+      "Tras la celebración de elecciones generales, en los casos de pérdida de la confianza parlamentaria previstos en la Constitución, o por dimisión o fallecimiento de su Presidente",
+      "Solo mediante disolución de las Cortes Generales",
+      "El Gobierno no puede cesar antes de agotar la legislatura",
+    ],
+    correcta: 1,
+    explicacion: "El art. 18 regula el cese del Gobierno, que se produce tras la celebración de elecciones generales, en los casos de pérdida de la confianza parlamentaria previstos en la Constitución (cuestión de confianza o moción de censura), o por dimisión o fallecimiento de su Presidente.",
+  },
 ];

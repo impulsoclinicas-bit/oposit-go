@@ -157,4 +157,43 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 17.3 CE garantiza a toda persona detenida ser informada de forma inmediata y comprensible de sus derechos y de las razones de su detención, no poder ser obligada a declarar, y tener asistencia de abogado en las diligencias policiales y judiciales, en los términos que la ley establezca.",
   },
+  {
+    id: "dpp-13",
+    enunciado: "¿Qué garantiza el derecho a la presunción de inocencia, reconocido en el artículo 24.2 de la Constitución?",
+    opciones: [
+      "Que toda persona acusada se considera inocente hasta que se demuestre su culpabilidad mediante una actividad probatoria de cargo suficiente, practicada con las debidas garantías procesales",
+      "Que ningún ciudadano puede ser detenido bajo ninguna circunstancia",
+      "Que el Ministerio Fiscal no puede formular acusación en ningún caso",
+      "Que la carga de la prueba corresponde siempre a la persona acusada",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 24.2 CE reconoce el derecho a la presunción de inocencia, en cuya virtud toda persona acusada se considera inocente hasta que se demuestre su culpabilidad mediante una actividad probatoria de cargo suficiente, practicada con las debidas garantías procesales, correspondiendo la carga de la prueba a la acusación y no al acusado.",
+  },
+  {
+    id: "dpp-14",
+    enunciado: "¿En qué consiste el principio acusatorio que rige el proceso penal español?",
+    opciones: [
+      "En que nadie puede ser condenado sin que exista una acusación previa formulada por una parte distinta del órgano juzgador, exigiendo además una correlación entre la acusación y la sentencia",
+      "En que el juez que instruye la causa es siempre el mismo que dicta la sentencia",
+      "En que el Ministerio Fiscal puede dictar sentencia condenatoria directamente, sin intervención judicial",
+      "En que la acusación y la defensa deben coincidir siempre en sus pretensiones",
+    ],
+    correcta: 0,
+    explicacion:
+      "El principio acusatorio exige que nadie pueda ser condenado sin que exista una acusación previa formulada por una parte distinta e independiente del órgano juzgador (el Ministerio Fiscal o la acusación particular), y que exista una necesaria correlación entre los hechos y la calificación jurídica objeto de acusación y los que finalmente recoja la sentencia, garantizando así la imparcialidad del tribunal y el derecho de defensa.",
+  },
+  {
+    id: "dpp-15",
+    enunciado: "¿Qué son las «diligencias previas» dentro del procedimiento abreviado regulado en la Ley de Enjuiciamiento Criminal?",
+    opciones: [
+      "La fase de instrucción del procedimiento abreviado, dirigida por el Juez de Instrucción, en la que se practican las actuaciones necesarias para determinar la naturaleza y circunstancias del hecho, las personas responsables y el órgano competente para el enjuiciamiento",
+      "Un sinónimo exacto del atestado policial",
+      "La fase de ejecución de la sentencia firme",
+      "Un trámite exclusivo del juicio por delitos leves",
+    ],
+    correcta: 0,
+    explicacion:
+      "Las diligencias previas constituyen la fase de instrucción del procedimiento abreviado, dirigida por el Juez de Instrucción, en la que se practican sin demora las actuaciones necesarias para determinar la naturaleza y circunstancias del hecho, las personas que en él hayan participado y el órgano competente para el enjuiciamiento, tras las cuales se dicta el auto de transformación en procedimiento abreviado si procede.",
+  },
 ];

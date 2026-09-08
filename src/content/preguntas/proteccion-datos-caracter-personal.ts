@@ -157,4 +157,43 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 4.12 RGPD define la violación de la seguridad de los datos personales como toda violación de la seguridad que ocasione la destrucción, pérdida o alteración accidental o ilícita de datos personales transmitidos, conservados o tratados de otra forma, o la comunicación o acceso no autorizados a dichos datos. El responsable debe notificarla a la autoridad de control en el plazo de 72 horas, salvo que sea improbable que constituya un riesgo para los derechos y libertades de las personas.",
   },
+  {
+    id: "lopd-13",
+    enunciado: "Según el artículo 6 del RGPD, ¿cuáles son, entre otras, las bases jurídicas que legitiman el tratamiento de datos personales?",
+    opciones: [
+      "El consentimiento del interesado, la necesidad para la ejecución de un contrato, el cumplimiento de una obligación legal, la protección de intereses vitales, el cumplimiento de una misión de interés público y la satisfacción de intereses legítimos del responsable o de un tercero",
+      "Únicamente el consentimiento del interesado, sin ninguna otra base posible",
+      "Solo la existencia de una orden judicial previa en todo caso",
+      "Exclusivamente la obligación legal, con exclusión de cualquier otra base",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 6.1 RGPD enumera seis bases jurídicas que legitiman el tratamiento de datos personales: el consentimiento del interesado, la necesidad para la ejecución de un contrato, el cumplimiento de una obligación legal aplicable al responsable, la protección de intereses vitales del interesado o de otra persona, el cumplimiento de una misión realizada en interés público o en el ejercicio de poderes públicos, y la satisfacción de intereses legítimos perseguidos por el responsable o por un tercero.",
+  },
+  {
+    id: "lopd-14",
+    enunciado: "¿Qué diferencia existe entre el «responsable del tratamiento» y el «encargado del tratamiento» conforme al RGPD?",
+    opciones: [
+      "El responsable del tratamiento es quien determina los fines y medios del tratamiento; el encargado del tratamiento es quien trata los datos personales por cuenta del responsable, conforme a sus instrucciones",
+      "Son términos completamente sinónimos, sin ninguna diferencia jurídica",
+      "El encargado del tratamiento decide siempre los fines del tratamiento, y el responsable se limita a ejecutarlo",
+      "El encargado del tratamiento nunca puede ser una persona jurídica distinta del responsable",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 4.7 RGPD define al responsable del tratamiento como la persona física o jurídica, autoridad pública, servicio u otro organismo que, solo o junto con otros, determina los fines y medios del tratamiento; el art. 4.8 define al encargado del tratamiento como la persona física o jurídica que trata datos personales por cuenta del responsable, conforme a sus instrucciones, típicamente mediante un contrato o acto jurídico que vincule a ambas partes.",
+  },
+  {
+    id: "lopd-15",
+    enunciado: "¿A quién debe comunicarse la violación de la seguridad de los datos personales, además de a la autoridad de control, cuando dicha violación entrañe un alto riesgo para los derechos y libertades de las personas?",
+    opciones: [
+      "Al propio interesado afectado, sin dilación indebida, conforme al artículo 34 RGPD",
+      "Únicamente a la Fiscalía General del Estado",
+      "Solo a la empresa aseguradora del responsable del tratamiento",
+      "A ningún otro sujeto distinto de la autoridad de control",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 34 RGPD exige que, cuando la violación de la seguridad de los datos personales entrañe un alto riesgo para los derechos y libertades de las personas físicas, el responsable del tratamiento comunique dicha violación al propio interesado afectado sin dilación indebida, además de notificarla a la autoridad de control conforme al art. 33.",
+  },
 ];

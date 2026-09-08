@@ -144,4 +144,56 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El art. 99.7 exige que el arma amparada por la licencia B se guarde en el propio domicilio del titular, en lugar seguro bajo llave, separada de su munición, de forma que ambas no sean fácilmente accesibles de manera conjunta.",
   },
+  {
+    id: "oaf-12",
+    enunciado: "Según el artículo 6.1, ¿qué armas se consideran «armas de guerra», quedando prohibida su adquisición, tenencia y uso por particulares?",
+    opciones: [
+      "Entre otras, las de calibre igual o superior a 20 milímetros, las armas de fuego automáticas, y las municiones y componentes esenciales de dichas armas",
+      "Cualquier arma de fuego corta, sin excepción",
+      "Únicamente las armas blancas de hoja superior a 20 centímetros",
+      "Las escopetas de caza mayor autorizadas mediante licencia D",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 6.1 considera armas de guerra, entre otras, las armas de fuego de calibre igual o superior a 20 milímetros, las de calibre inferior consideradas de guerra por el Ministerio de Defensa, las armas de fuego automáticas, y las municiones y componentes esenciales de estas armas, prohibiendo su adquisición, tenencia y uso por particulares.",
+  },
+  {
+    id: "oaf-13",
+    enunciado: "Según el artículo 105, ¿qué documento ampara la tenencia y uso de las armas de categoría 4.ª fuera del domicilio, y qué autoridad lo concede?",
+    opciones: [
+      "La tarjeta de armas, concedida y retirada por los Alcaldes de los municipios donde resida el solicitante, con validez limitada al término municipal correspondiente",
+      "La licencia de armas B, concedida por la Dirección General de la Guardia Civil",
+      "Ningún documento es necesario para las armas de categoría 4.ª",
+      "El pasaporte del titular, sin ningún trámite adicional",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 105.1 exige que las armas de categoría 4.ª, para poder llevarse y usarse fuera del domicilio, estén documentadas mediante tarjetas de armas, que serán concedidas y retiradas por los Alcaldes de los municipios en que residan los solicitantes, con validez limitada al respectivo término municipal.",
+  },
+  {
+    id: "oaf-14",
+    enunciado: "Según el artículo 106, ¿es libre la adquisición y tenencia de las armas blancas de la categoría 5.ª, 1, para personas mayores de edad?",
+    opciones: [
+      "Sí, es libre para las personas mayores de edad, sin perjuicio de la intervención de la Guardia Civil sobre su fabricación, importación y comercialización para impedir la circulación de las prohibidas",
+      "No, requiere en todo caso una licencia de armas específica",
+      "Solo es libre para menores de edad con autorización de sus padres",
+      "Está prohibida en cualquier caso, sea cual sea la edad del interesado",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 106 establece que la adquisición y tenencia de armas de la categoría 5.ª, 1 (armas blancas y de hoja cortante o punzante no prohibidas) es libre para las personas mayores de edad, si bien la fabricación, importación y comercialización de estas armas está intervenida por la Guardia Civil para impedir la circulación de las prohibidas.",
+  },
+  {
+    id: "oaf-15",
+    enunciado: "Según el artículo 107.e), ¿cómo deben guardarse las armas antiguas, históricas o artísticas en el domicilio de su titular?",
+    opciones: [
+      "En un lugar seguro bajo llave; si se exponen en el interior del domicilio, deben contar con un sistema de anclaje adecuado o una vitrina con cerradura y cristal, autorizados por la Dirección General de la Guardia Civil",
+      "No existe ninguna obligación de custodia para este tipo de armas por su carácter histórico",
+      "Deben depositarse siempre en un museo público, sin posibilidad de conservarlas en el domicilio",
+      "Basta con guardarlas en cualquier lugar de la vivienda, sin ninguna medida de seguridad adicional",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 107.e) exige que las armas antiguas, históricas o artísticas se guarden en un lugar seguro bajo llave en el propio domicilio de su titular, y que, si se exponen en el interior del domicilio, cuenten con un sistema de anclaje adecuado al medio de exposición o una vitrina dotada de cerradura y cristal, autorizados por la Dirección General de la Guardia Civil.",
+  },
 ];

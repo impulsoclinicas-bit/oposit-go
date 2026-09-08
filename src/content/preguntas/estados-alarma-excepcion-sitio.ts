@@ -130,4 +130,43 @@ export const preguntas: Pregunta[] = [
     correcta: 1,
     explicacion: "El art. 3.1 establece que los actos y disposiciones de la Administración Pública adoptados durante la vigencia de estos estados serán impugnables en vía jurisdiccional.",
   },
+  {
+    id: "eae-13",
+    enunciado: "Según el artículo 116.5 CE, ¿puede disolverse el Congreso de los Diputados mientras esté declarado alguno de estos tres estados?",
+    opciones: [
+      "No, mientras estén declarados alguno de estos estados no podrá procederse a la disolución del Congreso, quedando automáticamente convocadas las Cámaras si no estuvieran en período de sesiones",
+      "Sí, el Gobierno puede disolver el Congreso libremente en cualquiera de los tres estados",
+      "Solo puede disolverse durante el estado de alarma, pero no durante la excepción o el sitio",
+      "La disolución es siempre automática al declararse el estado de sitio",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 116.5 CE dispone que, mientras estén declarados alguno de estos tres estados, no podrá procederse a la disolución del Congreso, quedando automáticamente convocadas las Cámaras si no estuvieran en período de sesiones, y su funcionamiento, así como el de los demás poderes constitucionales del Estado, no podrá interrumpirse durante la vigencia de estos estados.",
+  },
+  {
+    id: "eae-14",
+    enunciado: "Según el artículo 55.1 CE, ¿qué derechos pueden ser objeto de suspensión, con carácter general, durante la vigencia de los estados de excepción o de sitio?",
+    opciones: [
+      "Entre otros, los derechos a la libertad y seguridad (art. 17), la inviolabilidad del domicilio y el secreto de las comunicaciones (art. 18.2-3), la libertad de circulación y residencia (art. 19), la libertad de expresión y el derecho de reunión",
+      "Todos los derechos fundamentales reconocidos en la Constitución, sin excepción",
+      "Ningún derecho puede ser suspendido bajo ninguna circunstancia constitucional",
+      "Únicamente el derecho de propiedad privada",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 55.1 CE permite suspender, cuando se acuerde la declaración del estado de excepción o de sitio, en los términos previstos en la Constitución, derechos como el de libertad y seguridad del art. 17, la inviolabilidad del domicilio y el secreto de las comunicaciones del art. 18.2 y 18.3, la libertad de circulación y residencia del art. 19, la libertad de expresión y de información y el derecho de reunión, entre otros.",
+  },
+  {
+    id: "eae-15",
+    enunciado: "Según el artículo 1.2 de la LO 4/1981, ¿a qué ámbito debe limitarse la declaración de estos estados?",
+    opciones: [
+      "A las circunstancias, medios y duración estrictamente indispensables para asegurar el restablecimiento de la normalidad, aplicándose de forma proporcionada a las circunstancias",
+      "Siempre a todo el territorio nacional, sin posibilidad de circunscribirla a un ámbito territorial más reducido",
+      "A un mínimo de sesenta días en todo caso, sin excepción",
+      "A la duración total de la legislatura en curso",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 1.2 de la LO 4/1981 exige que las medidas a adoptar en los estados de alarma, excepción y sitio, así como la duración de estos, se limiten a lo estrictamente indispensable para asegurar el restablecimiento de la normalidad, aplicándose de forma proporcionada a las circunstancias.",
+  },
 ];

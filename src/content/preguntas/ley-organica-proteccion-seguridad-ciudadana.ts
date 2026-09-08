@@ -152,4 +152,43 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "La LO 4/2015 atribuye, con carácter general, la competencia sancionadora a los Delegados y Subdelegados del Gobierno según el ámbito territorial, sin perjuicio de las competencias autonómicas o locales que puedan existir en determinadas materias.",
   },
+  {
+    id: "lopsc-13",
+    enunciado: "Según el artículo 1 de la LO 4/2015, ¿cuál es el objeto de esta ley?",
+    opciones: [
+      "Regular un conjunto plural y diverso de actuaciones de distinta naturaleza en orden a la consecución y mantenimiento de la seguridad ciudadana, con pleno sometimiento al ordenamiento jurídico",
+      "Regular exclusivamente el régimen retributivo de las Fuerzas y Cuerpos de Seguridad",
+      "Sustituir íntegramente al Código Penal en materia de orden público",
+      "Regular únicamente el procedimiento de asilo y refugio",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 1 de la LO 4/2015 tiene por objeto regular un conjunto plural y diverso de actuaciones de distinta naturaleza en orden a la consecución y el mantenimiento de la seguridad ciudadana, con pleno sometimiento a la Constitución, a las leyes, a la Unión Europea y a los tratados internacionales suscritos por España en materia de derechos humanos.",
+  },
+  {
+    id: "lopsc-14",
+    enunciado: "¿Qué establece la LO 4/2015 respecto de la falta de respeto y consideración debida a los agentes de la autoridad en el ejercicio de sus funciones?",
+    opciones: [
+      "La tipifica como infracción, sancionable conforme al régimen sancionador administrativo previsto en la propia Ley, sin perjuicio de la responsabilidad penal cuando los hechos revistan mayor gravedad",
+      "No existe ninguna previsión al respecto en la LO 4/2015",
+      "Se sanciona exclusivamente con pena de prisión, nunca por vía administrativa",
+      "Solo se sanciona si se produce dentro de una comisaría de policía",
+    ],
+    correcta: 0,
+    explicacion:
+      "La LO 4/2015 tipifica la falta de respeto y consideración debida a los agentes de la autoridad en el ejercicio de sus funciones como infracción administrativa, sancionable conforme al régimen previsto en la propia Ley, sin perjuicio de que, cuando los hechos revistan mayor gravedad, puedan ser constitutivos del delito de resistencia o desobediencia del art. 556 del Código Penal, ya estudiado en otro tema.",
+  },
+  {
+    id: "lopsc-15",
+    enunciado: "¿Qué principio exige a los miembros de las Fuerzas y Cuerpos de Seguridad limitar sus intervenciones a lo estrictamente necesario, conforme a los principios básicos de actuación de la LO 2/1986 aplicables también en el marco de la LO 4/2015?",
+    opciones: [
+      "El principio de congruencia, oportunidad y proporcionalidad en la utilización de los medios a su alcance",
+      "El principio de máxima intervención, sin ninguna limitación",
+      "El principio de gratuidad de la actuación policial",
+      "El principio de irrecurribilidad de las decisiones policiales",
+    ],
+    correcta: 0,
+    explicacion:
+      "Conforme a los principios básicos de actuación recogidos en la LO 2/1986, aplicables también al ejercicio de las potestades de la LO 4/2015, los miembros de las Fuerzas y Cuerpos de Seguridad deben actuar con congruencia, oportunidad y proporcionalidad en la utilización de los medios a su alcance, limitando sus intervenciones a lo estrictamente necesario para el cumplimiento de la misión que la ley les encomienda.",
+  },
 ];

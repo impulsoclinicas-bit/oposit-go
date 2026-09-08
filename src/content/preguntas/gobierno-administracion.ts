@@ -142,4 +142,43 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El Gobierno responde solidariamente de su gestión política ante el Congreso de los Diputados (art. 108 CE), que puede exigir responsabilidad mediante moción de censura o cuestión de confianza.",
   },
+  {
+    id: "gob-13",
+    enunciado: "Según el artículo 113 CE, ¿qué características tiene la moción de censura contra el Gobierno?",
+    opciones: [
+      "Es una moción de censura constructiva: debe ser propuesta por al menos la décima parte de los Diputados e incluir un candidato alternativo a la Presidencia del Gobierno, aprobándose por mayoría absoluta del Congreso",
+      "Puede proponerla cualquier Diputado individualmente, sin necesidad de incluir un candidato alternativo",
+      "Se aprueba por mayoría simple, sin exigir ningún candidato alternativo",
+      "Corresponde proponerla en exclusiva al Senado",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 113 CE configura la moción de censura como constructiva: debe ser propuesta por al menos la décima parte de los Diputados e incluir un candidato a la Presidencia del Gobierno, no pudiendo ser votada hasta que transcurran cinco días desde su presentación, y requiere para su aprobación el voto favorable de la mayoría absoluta del Congreso de los Diputados.",
+  },
+  {
+    id: "gob-14",
+    enunciado: "Según el artículo 112 CE, ¿quién puede plantear la cuestión de confianza ante el Congreso y con qué mayoría se aprueba?",
+    opciones: [
+      "El Presidente del Gobierno, previa deliberación del Consejo de Ministros, sobre su programa o una declaración de política general, entendiéndose otorgada la confianza por el voto favorable de la mayoría simple de los Diputados",
+      "Cualquier grupo parlamentario de la oposición, con mayoría absoluta",
+      "El Rey, por su propia iniciativa",
+      "El Senado, con el voto favorable de dos tercios",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 112 CE atribuye al Presidente del Gobierno, previa deliberación del Consejo de Ministros, la facultad de plantear ante el Congreso de los Diputados la cuestión de confianza sobre su programa o sobre una declaración de política general, entendiéndose otorgada la confianza cuando vote a favor de ella la mayoría simple de los Diputados.",
+  },
+  {
+    id: "gob-15",
+    enunciado: "Según el artículo 115 CE, ¿quién tiene la facultad de disolver las Cortes Generales de forma anticipada?",
+    opciones: [
+      "El Presidente del Gobierno, previa deliberación del Consejo de Ministros y bajo su exclusiva responsabilidad, mediante propuesta al Rey, salvo cuando esté en trámite una moción de censura",
+      "El propio Congreso de los Diputados, por mayoría absoluta",
+      "El Rey, por su propia y exclusiva decisión, sin propuesta previa",
+      "El Tribunal Constitucional, a petición del Gobierno",
+    ],
+    correcta: 0,
+    explicacion:
+      "El art. 115 CE atribuye al Presidente del Gobierno, previa deliberación del Consejo de Ministros y bajo su exclusiva responsabilidad, la facultad de proponer la disolución del Congreso, del Senado o de las Cortes Generales, que será decretada por el Rey, no procediendo esta facultad cuando esté en trámite una moción de censura.",
+  },
 ];
