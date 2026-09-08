@@ -1,6 +1,7 @@
 import { temas, Tema, TEMAS_POR_SIMULACRO } from "@/lib/temario";
 import { getPreguntasByTema } from "@/content/preguntas";
 import { Pregunta } from "@/lib/preguntas";
+import { sample } from "@/lib/shuffle";
 
 export type Simulacro = {
   slug: string;
@@ -37,7 +38,7 @@ export function getSimulacroBySlug(slug: string): Simulacro | undefined {
 
 export function getPreguntasSimulacro(simulacro: Simulacro): Pregunta[] {
   return simulacro.temas.flatMap((tema) =>
-    getPreguntasByTema(tema.slug).slice(0, PREGUNTAS_POR_TEMA_EN_SIMULACRO)
+    sample(getPreguntasByTema(tema.slug), PREGUNTAS_POR_TEMA_EN_SIMULACRO)
   );
 }
 
