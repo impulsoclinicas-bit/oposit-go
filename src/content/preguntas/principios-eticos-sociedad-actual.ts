@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "La llamada cultura de la integridad busca que los principios éticos se interioricen como parte de los valores compartidos de una organización, de modo que la conducta ética de sus miembros no dependa exclusivamente de la existencia de sanciones externas o de controles disciplinarios, sino también de un compromiso interno asumido y reforzado a través de la formación, el ejemplo de los superiores y el reconocimiento de las buenas prácticas dentro de la propia organización.",
   },
+  {
+    id: "pesa-16",
+    enunciado: "¿En qué consiste la ética de las virtudes, formulada originalmente por Aristóteles?",
+    opciones: [
+      "En una corriente ética que sitúa el foco en el carácter y las virtudes del agente moral (como la prudencia, la justicia o la templanza), concebidas como un término medio entre dos vicios extremos, más que en las reglas o en las consecuencias de las acciones",
+      "En una corriente que niega la existencia de cualquier virtud humana",
+      "En un sinónimo exacto del utilitarismo",
+      "En una teoría que sitúa el origen de la ética exclusivamente en la ley positiva",
+    ],
+    correcta: 0,
+    explicacion:
+      "La ética de las virtudes, formulada originalmente por Aristóteles en la «Ética a Nicómaco», sitúa el foco en el carácter y las virtudes del agente moral (prudencia, justicia, templanza, fortaleza, entre otras), concebidas cada una como un término medio entre dos vicios extremos (por exceso y por defecto), a diferencia de otras corrientes centradas en las reglas (deontologismo) o en las consecuencias (utilitarismo).",
+  },
+  {
+    id: "pesa-17",
+    enunciado: "¿Qué es el contractualismo como corriente de fundamentación ético-política del Estado?",
+    opciones: [
+      "La corriente de pensamiento, representada por autores como Hobbes, Locke o Rousseau, que explica la legitimidad del poder político y de las normas sociales como resultado de un pacto o contrato, hipotético o real, entre los individuos",
+      "Un sinónimo exacto del derecho de contratos en el ámbito civil",
+      "Una corriente que niega cualquier legitimidad al poder político",
+      "Una teoría exclusivamente aplicable a las relaciones laborales",
+    ],
+    correcta: 0,
+    explicacion:
+      "El contractualismo es la corriente de pensamiento político y ético, representada por autores como Thomas Hobbes, John Locke o Jean-Jacques Rousseau, que explica la legitimidad del poder político y de las normas sociales como resultado de un pacto o contrato, hipotético o real, mediante el cual los individuos ceden parte de su libertad natural a cambio de la protección y el orden que proporciona la vida en sociedad organizada.",
+  },
+  {
+    id: "pesa-18",
+    enunciado: "¿Qué propone la «ética del cuidado», formulada por la psicóloga Carol Gilligan, frente a la ética de la justicia?",
+    opciones: [
+      "Una perspectiva ética que pone el énfasis en las relaciones interpersonales, la empatía y la atención a las necesidades concretas de las personas, como complemento a los enfoques centrados en principios abstractos de justicia e imparcialidad",
+      "El rechazo absoluto de cualquier principio de justicia o imparcialidad",
+      "Una teoría exclusivamente aplicable al ámbito sanitario",
+      "Un sinónimo exacto de la ética de la responsabilidad de Max Weber",
+    ],
+    correcta: 0,
+    explicacion:
+      "Carol Gilligan formuló la «ética del cuidado» como una perspectiva ética que pone el énfasis en las relaciones interpersonales, la empatía y la atención a las necesidades concretas de las personas en su contexto particular, proponiéndola como complemento (y en cierto sentido como contrapunto) a los enfoques éticos centrados en principios abstractos de justicia, imparcialidad y derechos individuales.",
+  },
+  {
+    id: "pesa-19",
+    enunciado: "¿Qué diferencia existe entre el relativismo moral y el universalismo ético?",
+    opciones: [
+      "El relativismo moral sostiene que los valores y normas morales dependen de cada cultura o contexto, sin que exista un criterio válido para todas las sociedades; el universalismo ético sostiene que existen determinados valores o derechos morales válidos para todos los seres humanos, con independencia de su cultura de origen",
+      "Son términos exactamente sinónimos, sin ninguna diferencia relevante",
+      "El universalismo ético niega la existencia de cualquier diversidad cultural",
+      "El relativismo moral es la postura oficialmente adoptada por el derecho internacional de los derechos humanos",
+    ],
+    correcta: 0,
+    explicacion:
+      "El relativismo moral sostiene que los valores y normas morales dependen de cada cultura, época o contexto social, sin que exista un criterio universalmente válido para juzgarlos; el universalismo ético, en cambio, sostiene que existen determinados valores o derechos morales válidos para todos los seres humanos con independencia de su cultura de origen, postura que subyace, por ejemplo, al propio concepto de derechos humanos universales.",
+  },
+  {
+    id: "pesa-20",
+    enunciado: "¿Qué es el Código de Conducta para Funcionarios Encargados de Hacer Cumplir la Ley, adoptado por la Asamblea General de Naciones Unidas en 1979?",
+    opciones: [
+      "Un instrumento internacional de carácter orientativo que establece estándares éticos de actuación para los funcionarios policiales de todo el mundo, incluyendo el respeto a la dignidad humana, la proporcionalidad en el uso de la fuerza y la prohibición absoluta de la tortura",
+      "Un tratado internacional vinculante que sustituye a las legislaciones nacionales de policía",
+      "Un código exclusivamente aplicable a las fuerzas policiales europeas",
+      "Un reglamento interno de Interpol sin ninguna proyección general",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Código de Conducta para Funcionarios Encargados de Hacer Cumplir la Ley, adoptado por la Asamblea General de Naciones Unidas en 1979, es un instrumento internacional de carácter orientativo (no vinculante como tratado) que establece estándares éticos de actuación para los funcionarios policiales de todo el mundo, incluyendo el respeto a la dignidad humana, la proporcionalidad en el uso de la fuerza y la prohibición absoluta de la tortura y otros tratos crueles, inhumanos o degradantes.",
+  },
+  {
+    id: "pesa-21",
+    enunciado: "¿Qué regulan los Principios Básicos sobre el Empleo de la Fuerza y de Armas de Fuego por los Funcionarios Encargados de Hacer Cumplir la Ley, adoptados por Naciones Unidas en 1990?",
+    opciones: [
+      "Los criterios éticos y operativos que deben guiar el uso de la fuerza y de las armas de fuego por parte de los funcionarios policiales, exigiendo su empleo solo cuando sea estrictamente necesario y de forma proporcional a la gravedad de la infracción y al objetivo legítimo perseguido",
+      "El régimen de fabricación y comercio internacional de armas de fuego entre Estados",
+      "Los requisitos técnicos de homologación de las armas reglamentarias",
+      "El procedimiento judicial aplicable a los delitos de tenencia ilícita de armas",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los Principios Básicos sobre el Empleo de la Fuerza y de Armas de Fuego por los Funcionarios Encargados de Hacer Cumplir la Ley, adoptados por Naciones Unidas en 1990, establecen los criterios éticos y operativos que deben guiar su uso, exigiendo que solo se empleen cuando sea estrictamente necesario y de forma proporcional a la gravedad de la infracción y al objetivo legítimo que se persiga, y reservando el uso de armas de fuego a los casos de riesgo grave para la vida.",
+  },
+  {
+    id: "pesa-22",
+    enunciado: "¿Qué es el «whistleblowing» o alerta de irregularidades, y cómo se protege en España?",
+    opciones: [
+      "La comunicación, por parte de un empleado o colaborador, de conductas irregulares o ilícitas conocidas en el ámbito de su organización, protegida en España por la Ley 2/2023, reguladora de la protección de las personas que informen sobre infracciones normativas y de lucha contra la corrupción",
+      "Un delito tipificado en el Código Penal, sancionado con pena de prisión",
+      "Un sinónimo exacto de la deontología profesional",
+      "Una práctica que carece de cualquier regulación legal en España",
+    ],
+    correcta: 0,
+    explicacion:
+      "El «whistleblowing» o alerta de irregularidades consiste en la comunicación, por parte de un empleado o colaborador, de conductas irregulares o ilícitas conocidas en el ámbito de su organización; en España se protege mediante la Ley 2/2023, reguladora de la protección de las personas que informen sobre infracciones normativas y de lucha contra la corrupción, que transpone la Directiva (UE) 2019/1937 y exige la creación de canales internos de información.",
+  },
+  {
+    id: "pesa-23",
+    enunciado: "¿Qué se entiende por «buen gobierno» como principio de actuación de las Administraciones Públicas?",
+    opciones: [
+      "El conjunto de principios y prácticas orientados a que la actividad de los poderes públicos se desarrolle con transparencia, eficacia, rendición de cuentas, participación ciudadana e integridad, más allá del mero cumplimiento formal de la legalidad",
+      "Un sinónimo exacto de la forma de gobierno monárquica",
+      "Un concepto exclusivamente aplicable a las relaciones internacionales entre Estados",
+      "La facultad discrecional de un gobierno para actuar sin ningún control externo",
+    ],
+    correcta: 0,
+    explicacion:
+      "El «buen gobierno» hace referencia al conjunto de principios y prácticas orientados a que la actividad de los poderes públicos se desarrolle con transparencia, eficacia, rendición de cuentas, participación ciudadana e integridad, yendo más allá del mero cumplimiento formal de la legalidad, siendo uno de los objetivos declarados de normas como la Ley 19/2013, de transparencia, acceso a la información pública y buen gobierno.",
+  },
+  {
+    id: "pesa-24",
+    enunciado: "¿Qué es el «sesgo de confirmación» y por qué tiene relevancia ética en la toma de decisiones policiales?",
+    opciones: [
+      "La tendencia a buscar, interpretar y recordar la información de manera que confirme las propias creencias o hipótesis previas, ignorando o minimizando la información que las contradice, lo que puede distorsionar la objetividad exigible en una investigación o actuación policial",
+      "Un mecanismo que garantiza siempre decisiones objetivas y libres de error",
+      "Un concepto exclusivamente aplicable al ámbito judicial, sin relevancia para la actuación policial",
+      "Un sinónimo exacto de la disonancia cognitiva",
+    ],
+    correcta: 0,
+    explicacion:
+      "El «sesgo de confirmación» es la tendencia cognitiva a buscar, interpretar y recordar la información de manera que confirme las propias creencias o hipótesis previas, ignorando o minimizando la información que las contradice; su relevancia ética en el ámbito policial radica en que puede distorsionar la objetividad exigible en una investigación (por ejemplo, centrándose solo en las pruebas que apuntan a un sospechoso concreto), comprometiendo así la imparcialidad y el rigor debidos.",
+  },
+  {
+    id: "pesa-25",
+    enunciado: "¿Cómo se define, con carácter general, la corrupción como fenómeno ético-jurídico?",
+    opciones: [
+      "El abuso de una posición de poder o de confianza, pública o privada, para obtener un beneficio particular indebido, en detrimento del interés general o de terceros",
+      "Cualquier error administrativo cometido de buena fe por un funcionario público",
+      "Un fenómeno que solo puede darse en el ámbito de la Administración Pública, nunca en el sector privado",
+      "Un sinónimo exacto de la negligencia profesional no intencionada",
+    ],
+    correcta: 0,
+    explicacion:
+      "La corrupción se define habitualmente como el abuso de una posición de poder o de confianza, pública o privada, para obtener un beneficio particular indebido (económico o de otro tipo), en detrimento del interés general o de terceros, abarcando conductas como el cohecho, el tráfico de influencias, la malversación o el nepotismo, entre otras.",
+  },
+  {
+    id: "pesa-26",
+    enunciado: "¿En qué consiste el «imperativo categórico» formulado por Immanuel Kant como fundamento de la ética deontológica?",
+    opciones: [
+      "En el mandato moral de actuar únicamente según aquella máxima que, al mismo tiempo, se pudiera querer que se convirtiese en ley universal, tratando a la humanidad siempre como un fin en sí misma y nunca solo como un medio",
+      "En la obligación de obedecer siempre y sin excepción cualquier orden de una autoridad superior",
+      "En un principio que solo se aplica a las relaciones comerciales",
+      "En un sinónimo exacto del principio de proporcionalidad",
+    ],
+    correcta: 0,
+    explicacion:
+      "Immanuel Kant formuló el «imperativo categórico» como el mandato moral fundamental de su ética deontológica: actuar únicamente según aquella máxima que, al mismo tiempo, se pudiera querer que se convirtiese en ley universal, exigiendo además tratar a la humanidad, tanto en la persona propia como en la de cualquier otro, siempre como un fin en sí misma y nunca solamente como un medio.",
+  },
+  {
+    id: "pesa-27",
+    enunciado: "¿Qué diferencia existe entre la justicia distributiva y la justicia retributiva?",
+    opciones: [
+      "La justicia distributiva se ocupa del reparto equitativo de los bienes, cargas y oportunidades dentro de una sociedad; la justicia retributiva se ocupa de la respuesta proporcionada que merece quien ha cometido una infracción o un daño, típicamente a través de la pena",
+      "Son términos exactamente sinónimos, sin ninguna diferencia conceptual",
+      "La justicia retributiva se ocupa exclusivamente del reparto de la riqueza entre países",
+      "La justicia distributiva solo se aplica en el ámbito penal, nunca en el fiscal o social",
+    ],
+    correcta: 0,
+    explicacion:
+      "La justicia distributiva se ocupa del reparto equitativo de los bienes, cargas, derechos y oportunidades dentro de una sociedad (por ejemplo, a través de la fiscalidad o las políticas sociales); la justicia retributiva se ocupa de la respuesta proporcionada que merece quien ha cometido una infracción o causado un daño, típicamente a través de la pena en el ámbito penal, constituyendo ambas nociones clásicas y complementarias de la filosofía del derecho.",
+  },
+  {
+    id: "pesa-28",
+    enunciado: "¿Qué se entiende por «rendición de cuentas» (accountability) como principio ético de la actuación pública?",
+    opciones: [
+      "La obligación de quienes ejercen poder o responsabilidad pública de explicar y justificar sus decisiones y actuaciones ante la ciudadanía o los órganos de control competentes, asumiendo las consecuencias que de ellas se deriven",
+      "Un sinónimo exacto de la contabilidad presupuestaria de un organismo público",
+      "La facultad de cualquier ciudadano de sancionar directamente a un funcionario público sin ningún procedimiento",
+      "Un principio aplicable exclusivamente al ámbito empresarial privado",
+    ],
+    correcta: 0,
+    explicacion:
+      "La rendición de cuentas (accountability) es la obligación de quienes ejercen poder o responsabilidad pública de explicar y justificar sus decisiones y actuaciones ante la ciudadanía o los órganos de control competentes (parlamentarios, judiciales, administrativos), asumiendo las consecuencias que de ellas se deriven, constituyendo uno de los pilares del buen gobierno y de la cultura de la integridad en las organizaciones públicas.",
+  },
+  {
+    id: "pesa-29",
+    enunciado: "¿Qué función desempeña el principio de legalidad como límite ético-jurídico a la discrecionalidad en la actuación policial?",
+    opciones: [
+      "Exige que toda actuación de las Fuerzas y Cuerpos de Seguridad que afecte a derechos y libertades encuentre cobertura en el ordenamiento jurídico, de modo que la discrecionalidad técnica u operativa se ejerza siempre dentro de los márgenes que la ley permite, y no como un poder arbitrario",
+      "Elimina por completo cualquier margen de apreciación o decisión del agente en el ejercicio de sus funciones",
+      "Solo se aplica a los mandos superiores, no a los agentes de base",
+      "Es un principio exclusivamente ético, sin ningún reflejo en el ordenamiento jurídico español",
+    ],
+    correcta: 0,
+    explicacion:
+      "El principio de legalidad exige que toda actuación de las Fuerzas y Cuerpos de Seguridad que afecte a derechos y libertades encuentre cobertura en el ordenamiento jurídico, de modo que la inevitable discrecionalidad técnica u operativa propia del ejercicio policial se desenvuelva siempre dentro de los márgenes que la ley permite, actuando así como límite ético-jurídico frente a cualquier forma de arbitrariedad en el ejercicio del poder público.",
+  },
+  {
+    id: "pesa-30",
+    enunciado: "¿Qué relación existe entre la ética profesional y la confianza social depositada en las Fuerzas y Cuerpos de Seguridad?",
+    opciones: [
+      "El cumplimiento efectivo de los principios éticos por parte de los agentes refuerza la legitimidad social de la institución policial y la confianza de la ciudadanía en ella; a la inversa, las conductas contrarias a la ética profesional erosionan gravemente dicha confianza, con efectos que trascienden al agente individual y afectan a la institución en su conjunto",
+      "No existe ninguna relación entre la ética profesional individual y la confianza social en la institución policial",
+      "La confianza social depende exclusivamente de la eficacia estadística en la resolución de delitos, sin relación alguna con la ética",
+      "La ética profesional solo es relevante para la imagen externa, sin ningún efecto en el funcionamiento interno de la institución",
+    ],
+    correcta: 0,
+    explicacion:
+      "El cumplimiento efectivo de los principios éticos por parte de los agentes policiales refuerza la legitimidad social de la institución y la confianza de la ciudadanía en ella, elemento esencial para el ejercicio eficaz de la función policial en una sociedad democrática; a la inversa, las conductas contrarias a la ética profesional erosionan gravemente dicha confianza, con efectos que trascienden al agente individual implicado y afectan a la percepción social de la institución en su conjunto.",
+  },
 ];

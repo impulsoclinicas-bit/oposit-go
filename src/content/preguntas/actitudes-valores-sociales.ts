@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "La teoría de la comparación social, formulada por Leon Festinger en 1954, sostiene que las personas tienen una tendencia innata a evaluar sus propias opiniones y capacidades, y que, en ausencia de criterios objetivos disponibles para hacerlo, recurren a la comparación con otras personas, habitualmente similares a ellas, como referencia para dicha evaluación.",
   },
+  {
+    id: "avs-16",
+    enunciado: "¿Qué predice la teoría de la acción razonada, formulada por Fishbein y Ajzen?",
+    opciones: [
+      "Que la conducta de una persona está determinada principalmente por su intención conductual, que a su vez depende de su actitud hacia dicha conducta y de la norma subjetiva (percepción de lo que otros esperan de ella)",
+      "Que la conducta humana es completamente impredecible y no depende de ninguna actitud previa",
+      "Que las actitudes nunca influyen en la conducta real de las personas",
+      "Que solo el entorno físico determina la conducta, sin ninguna influencia de las actitudes",
+    ],
+    correcta: 0,
+    explicacion:
+      "La teoría de la acción razonada, formulada por Martin Fishbein e Icek Ajzen, predice que la conducta de una persona está determinada principalmente por su intención conductual, que a su vez depende de dos factores: su actitud hacia dicha conducta y la norma subjetiva, es decir, su percepción de lo que las personas relevantes para ella esperan que haga.",
+  },
+  {
+    id: "avs-17",
+    enunciado: "¿Qué es el «efecto halo» en la percepción social?",
+    opciones: [
+      "El sesgo cognitivo por el cual una impresión general positiva (o negativa) sobre una persona, basada en un solo rasgo destacado, se extiende a la valoración de otras características no relacionadas de esa misma persona",
+      "Un fenómeno óptico sin ninguna relación con la psicología social",
+      "La tendencia a evaluar siempre negativamente a los desconocidos",
+      "Un sinónimo exacto de la disonancia cognitiva",
+    ],
+    correcta: 0,
+    explicacion:
+      "El «efecto halo» es el sesgo cognitivo por el cual una impresión general positiva (o negativa) sobre una persona, basada en un rasgo destacado (por ejemplo, el atractivo físico o la simpatía), se extiende de forma poco justificada a la valoración de otras características de esa persona no necesariamente relacionadas con el rasgo inicial (por ejemplo, su competencia profesional).",
+  },
+  {
+    id: "avs-18",
+    enunciado: "¿Qué diferencia existe entre «estereotipo», «prejuicio» y «discriminación»?",
+    opciones: [
+      "El estereotipo es el componente cognitivo (creencias generalizadas sobre un grupo); el prejuicio es el componente afectivo o actitudinal (valoración, habitualmente negativa, hacia ese grupo); la discriminación es el componente conductual (trato desigual efectivo hacia sus miembros)",
+      "Son términos exactamente sinónimos, sin ninguna diferencia conceptual",
+      "El estereotipo es siempre positivo, y el prejuicio siempre negativo, sin ninguna otra distinción",
+      "La discriminación es un sinónimo del componente cognitivo, y el estereotipo del conductual",
+    ],
+    correcta: 0,
+    explicacion:
+      "La psicología social distingue tres componentes relacionados pero distintos: el estereotipo (componente cognitivo: creencias generalizadas y simplificadas sobre un grupo), el prejuicio (componente afectivo o actitudinal: valoración, habitualmente negativa, hacia ese grupo) y la discriminación (componente conductual: trato desigual efectivo hacia los miembros de dicho grupo), pudiendo darse los tres de forma independiente, aunque frecuentemente se refuerzan mutuamente.",
+  },
+  {
+    id: "avs-19",
+    enunciado: "¿Qué mide la escala de distancia social de Bogardus?",
+    opciones: [
+      "El grado de aceptación o rechazo que una persona manifiesta hacia miembros de otros grupos sociales, étnicos o culturales, a través de su disposición a mantener con ellos distintos niveles de proximidad (desde el matrimonio hasta la exclusión del país)",
+      "La distancia física exacta, en metros, que debe mantenerse entre dos personas en una conversación",
+      "El nivel de renta de una persona en comparación con la media nacional",
+      "El grado de aislamiento geográfico de una comunidad rural",
+    ],
+    correcta: 0,
+    explicacion:
+      "La escala de distancia social, diseñada por el sociólogo Emory Bogardus, mide el grado de aceptación o rechazo que una persona manifiesta hacia miembros de otros grupos sociales, étnicos o culturales, a través de su disposición a aceptar con ellos distintos niveles de proximidad social (desde el parentesco por matrimonio hasta la exclusión del propio país), siendo un instrumento clásico para medir el prejuicio.",
+  },
+  {
+    id: "avs-20",
+    enunciado: "¿Qué distingue al «locus de control interno» del «locus de control externo», concepto desarrollado por Julian Rotter?",
+    opciones: [
+      "Una persona con locus de control interno tiende a atribuir los resultados de su vida principalmente a sus propias acciones y decisiones; una persona con locus de control externo tiende a atribuirlos principalmente a factores externos, como la suerte, el destino o la acción de otras personas",
+      "Son términos sinónimos que describen exactamente el mismo fenómeno",
+      "El locus de control interno solo existe en la infancia, desapareciendo en la edad adulta",
+      "El locus de control externo describe únicamente la ubicación geográfica de una persona",
+    ],
+    correcta: 0,
+    explicacion:
+      "Julian Rotter desarrolló el concepto de «locus de control» para describir la percepción que tiene una persona sobre el origen de los acontecimientos de su vida: quienes tienen un locus de control interno tienden a atribuir los resultados principalmente a sus propias acciones y decisiones, mientras que quienes tienen un locus de control externo tienden a atribuirlos a factores externos, como la suerte, el destino o la acción de otras personas.",
+  },
+  {
+    id: "avs-21",
+    enunciado: "¿Qué es la «anomia social», concepto desarrollado por el sociólogo Émile Durkheim?",
+    opciones: [
+      "Un estado de debilitamiento o ausencia de normas sociales claras y compartidas, que puede producirse en períodos de rápido cambio social, y que se asocia con sentimientos de desorientación, aislamiento o falta de propósito en los individuos",
+      "Un sinónimo exacto de la disonancia cognitiva",
+      "Un trastorno médico sin ninguna relación con la sociología",
+      "Un tipo de organización social basada en normas extremadamente rígidas",
+    ],
+    correcta: 0,
+    explicacion:
+      "Émile Durkheim desarrolló el concepto de «anomia» para describir un estado de debilitamiento o ausencia de normas sociales claras y compartidas, que puede producirse especialmente en períodos de rápido cambio o crisis social, asociándose con sentimientos de desorientación, aislamiento o falta de propósito en los individuos, y con un posible incremento de determinadas conductas desviadas.",
+  },
+  {
+    id: "avs-22",
+    enunciado: "¿Qué propone la teoría de los valores universales de Shalom Schwartz?",
+    opciones: [
+      "Que existe un conjunto relativamente reducido de valores humanos básicos, reconocibles en prácticamente todas las culturas (como la seguridad, el poder, el logro, la benevolencia o la universalidad), organizados en una estructura circular según su compatibilidad o conflicto entre sí",
+      "Que cada cultura tiene valores completamente distintos, sin ningún elemento común entre ellas",
+      "Que los valores humanos son innatos y no pueden modificarse por la experiencia o la socialización",
+      "Que solo existen dos valores humanos básicos: el egoísmo y el altruismo",
+    ],
+    correcta: 0,
+    explicacion:
+      "El psicólogo social Shalom Schwartz propuso una teoría según la cual existe un conjunto relativamente reducido de valores humanos básicos, reconocibles con distinta prioridad en prácticamente todas las culturas (seguridad, poder, logro, hedonismo, estimulación, autodirección, universalismo, benevolencia, tradición y conformidad, entre otros), organizados en una estructura circular en función de su compatibilidad o conflicto mutuo.",
+  },
+  {
+    id: "avs-23",
+    enunciado: "¿Qué es una «actitud ambivalente»?",
+    opciones: [
+      "Aquella en la que coexisten simultáneamente evaluaciones positivas y negativas hacia un mismo objeto, persona o situación, generando con frecuencia tensión psicológica en quien la experimenta",
+      "Una actitud completamente neutra, sin ninguna carga evaluativa",
+      "Una actitud que cambia de forma aleatoria sin ninguna causa identificable",
+      "Un sinónimo exacto del prejuicio",
+    ],
+    correcta: 0,
+    explicacion:
+      "Una actitud ambivalente es aquella en la que coexisten simultáneamente evaluaciones positivas y negativas hacia un mismo objeto, persona o situación (por ejemplo, admiración y desconfianza hacia una misma figura pública), generando con frecuencia una tensión psicológica en quien la experimenta y pudiendo dar lugar a respuestas conductuales más inestables o dependientes del contexto.",
+  },
+  {
+    id: "avs-24",
+    enunciado: "¿Qué relación existe entre el autoconcepto y la autoestima como constructos psicosociales?",
+    opciones: [
+      "El autoconcepto es el conjunto de creencias e ideas que una persona tiene sobre sí misma; la autoestima es la valoración afectiva, positiva o negativa, que la persona hace de ese autoconcepto",
+      "Son términos exactamente sinónimos, sin ninguna diferencia conceptual",
+      "El autoconcepto solo existe en la infancia, mientras que la autoestima solo aparece en la edad adulta",
+      "La autoestima determina exclusivamente el aspecto físico de una persona",
+    ],
+    correcta: 0,
+    explicacion:
+      "El autoconcepto es el conjunto de creencias, ideas y representaciones que una persona tiene sobre sí misma (sus capacidades, su papel social, sus características); la autoestima es la valoración afectiva, positiva o negativa, que la persona hace de ese autoconcepto, constituyendo ambos constructos relacionados pero distintos dentro de la psicología social del yo.",
+  },
+  {
+    id: "avs-25",
+    enunciado: "¿Qué propone la teoría de la identidad social, desarrollada por Henri Tajfel y John Turner?",
+    opciones: [
+      "Que parte de la identidad de una persona deriva de su pertenencia a determinados grupos sociales (endogrupo), lo que favorece una tendencia a valorar positivamente al propio grupo frente a otros grupos (exogrupo), incluso en ausencia de un conflicto real de intereses",
+      "Que la identidad personal es completamente independiente de cualquier pertenencia grupal",
+      "Que todos los grupos sociales son valorados de forma idéntica por sus miembros, sin ningún favoritismo",
+      "Que la identidad social solo se forma después de los cuarenta años de edad",
+    ],
+    correcta: 0,
+    explicacion:
+      "La teoría de la identidad social, desarrollada por Henri Tajfel y John Turner, propone que parte de la identidad de una persona deriva de su pertenencia a determinados grupos sociales (el llamado «endogrupo»), lo que favorece una tendencia psicológica a valorar positivamente al propio grupo frente a otros grupos (el «exogrupo»), incluso en ausencia de un conflicto real de intereses entre ellos, fenómeno relevante para entender dinámicas de prejuicio intergrupal.",
+  },
+  {
+    id: "avs-26",
+    enunciado: "¿Qué es el «efecto espectador» (bystander effect) descrito en psicología social?",
+    opciones: [
+      "El fenómeno por el cual la probabilidad de que una persona ayude a alguien en una situación de emergencia disminuye cuanto mayor es el número de testigos presentes, debido en parte a la difusión de la responsabilidad entre ellos",
+      "El aumento de la ayuda prestada a una víctima cuantos más testigos presencian el hecho",
+      "Un fenómeno que solo se produce cuando no hay ningún testigo presente",
+      "Un sinónimo exacto de la conformidad social descrita por Solomon Asch",
+    ],
+    correcta: 0,
+    explicacion:
+      "El «efecto espectador» describe el fenómeno, estudiado clásicamente por Bibb Latané y John Darley, por el cual la probabilidad de que una persona ayude a alguien en una situación de emergencia disminuye cuanto mayor es el número de testigos presentes, debido en parte a la difusión de la responsabilidad entre ellos (cada testigo asume que otro intervendrá) y a la ambigüedad sobre la gravedad real de la situación.",
+  },
+  {
+    id: "avs-27",
+    enunciado: "¿Qué se entiende por «conducta prosocial» en psicología social?",
+    opciones: [
+      "Cualquier conducta voluntaria realizada con la intención de beneficiar a otra persona o grupo, incluyendo comportamientos como ayudar, cooperar, consolar o compartir",
+      "Cualquier conducta que busca exclusivamente el beneficio económico propio",
+      "Un sinónimo exacto de la conformidad social",
+      "Una conducta que solo puede darse dentro del propio grupo de pertenencia, nunca hacia desconocidos",
+    ],
+    correcta: 0,
+    explicacion:
+      "La conducta prosocial es cualquier conducta voluntaria realizada con la intención de beneficiar a otra persona o grupo, incluyendo comportamientos como ayudar, cooperar, consolar, compartir o donar, siendo el altruismo (ayuda desinteresada, sin expectativa de recompensa) una de sus formas más estudiadas.",
+  },
+  {
+    id: "avs-28",
+    enunciado: "Según el Modelo de Probabilidad de Elaboración de Petty y Cacioppo, ¿qué diferencia existe entre la ruta «central» y la ruta «periférica» de persuasión?",
+    opciones: [
+      "La ruta central implica un procesamiento cuidadoso y reflexivo de los argumentos del mensaje, generando cambios de actitud más duraderos; la ruta periférica se basa en señales superficiales (atractivo del emisor, número de argumentos, sin analizar su contenido), generando cambios de actitud más superficiales y menos estables",
+      "Ambas rutas producen exactamente el mismo tipo de cambio de actitud, sin ninguna diferencia práctica",
+      "La ruta periférica siempre genera cambios de actitud más duraderos que la ruta central",
+      "Solo existe la ruta central; la ruta periférica es un concepto rechazado por la psicología social actual",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Modelo de Probabilidad de Elaboración, formulado por Richard Petty y John Cacioppo, distingue dos rutas de persuasión: la ruta central, que implica un procesamiento cuidadoso y reflexivo del contenido y la calidad de los argumentos, generando cambios de actitud más duraderos y resistentes; y la ruta periférica, que se basa en señales superficiales del mensaje o del emisor (atractivo, credibilidad percibida, número de argumentos sin analizar su calidad), generando cambios de actitud más superficiales y menos estables en el tiempo.",
+  },
+  {
+    id: "avs-29",
+    enunciado: "¿Qué es la «resiliencia» en el ámbito psicosocial?",
+    opciones: [
+      "La capacidad de una persona o de un grupo para adaptarse positivamente y recuperarse ante situaciones adversas, traumáticas o de alto estrés, manteniendo o recuperando un funcionamiento psicológico y social adecuado",
+      "La incapacidad total de una persona para afrontar cualquier situación de estrés",
+      "Un sinónimo exacto de la disonancia cognitiva",
+      "Una característica exclusivamente biológica, sin ninguna influencia social o psicológica",
+    ],
+    correcta: 0,
+    explicacion:
+      "La resiliencia psicosocial es la capacidad de una persona o de un grupo para adaptarse positivamente y recuperarse ante situaciones adversas, traumáticas o de alto estrés, manteniendo o recuperando un funcionamiento psicológico y social adecuado, siendo un concepto especialmente relevante en profesiones expuestas a situaciones de crisis o de riesgo, como la función policial.",
+  },
+  {
+    id: "avs-30",
+    enunciado: "¿Qué es la «profecía autocumplida» en el contexto de las actitudes y expectativas sociales?",
+    opciones: [
+      "El fenómeno por el cual las expectativas de una persona sobre otra (o sobre una situación) influyen en su propia conducta de tal manera que, indirectamente, favorecen que dicha expectativa termine cumpliéndose, aunque inicialmente careciera de fundamento objetivo",
+      "Un sinónimo exacto del efecto halo",
+      "Una predicción que nunca puede llegar a cumplirse por definición",
+      "Un fenómeno que solo se produce en el ámbito religioso, sin ninguna aplicación en psicología social",
+    ],
+    correcta: 0,
+    explicacion:
+      "La «profecía autocumplida», concepto popularizado por el sociólogo Robert K. Merton, describe el fenómeno por el cual las expectativas de una persona sobre otra o sobre una situación influyen en su propia conducta de tal manera que, indirectamente, favorecen que dicha expectativa termine cumpliéndose, aunque inicialmente careciera de fundamento objetivo, con implicaciones relevantes, por ejemplo, en el ámbito educativo o en las relaciones interpersonales marcadas por estereotipos previos.",
+  },
 ];

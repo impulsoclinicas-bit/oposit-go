@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El Alto Comisionado de las Naciones Unidas para los Derechos Humanos, cargo creado en 1993, es el principal responsable de las actividades de la Organización en materia de derechos humanos, encargado de promover su protección universal, coordinar la acción de Naciones Unidas en este ámbito y prestar apoyo a los distintos mecanismos y órganos de derechos humanos, como el Consejo de Derechos Humanos.",
   },
+  {
+    id: "dh-16",
+    enunciado: "¿A qué suele hacer referencia la denominada «cuarta generación» de derechos humanos?",
+    opciones: [
+      "A derechos vinculados al desarrollo de las nuevas tecnologías y la bioética, como el derecho a la protección de datos personales, el acceso a internet o la identidad digital, todavía en proceso de consolidación",
+      "A los derechos civiles y políticos clásicos, ya consolidados desde el siglo XVIII",
+      "Únicamente a los derechos reconocidos por primera vez en la Constitución Española de 1978",
+      "A los derechos exclusivos de los Estados, frente a los individuos",
+    ],
+    correcta: 0,
+    explicacion:
+      "Parte de la doctrina identifica una «cuarta generación» de derechos humanos vinculados al desarrollo de las nuevas tecnologías y la bioética (protección de datos personales, acceso a internet, identidad digital, entre otros), en un proceso de consolidación todavía menos asentado que el de las tres generaciones clásicas.",
+  },
+  {
+    id: "dh-17",
+    enunciado: "¿Qué principios proclamó la Conferencia Mundial de Derechos Humanos de Viena de 1993 respecto de todos los derechos humanos?",
+    opciones: [
+      "Que todos los derechos humanos son universales, indivisibles e interdependientes y están relacionados entre sí",
+      "Que los derechos civiles y políticos prevalecen siempre sobre los económicos, sociales y culturales",
+      "Que cada Estado puede decidir libremente qué derechos humanos reconoce, sin ningún estándar común",
+      "Que los derechos humanos solo son exigibles en tiempos de paz",
+    ],
+    correcta: 0,
+    explicacion:
+      "La Declaración y el Programa de Acción de Viena, adoptados en la Conferencia Mundial de Derechos Humanos de 1993, proclamaron que todos los derechos humanos son universales, indivisibles e interdependientes y están relacionados entre sí, debiendo tratarse de forma global, justa y equitativa.",
+  },
+  {
+    id: "dh-18",
+    enunciado: "¿Qué es el Tribunal Europeo de Derechos Humanos (TEDH)?",
+    opciones: [
+      "El órgano jurisdiccional, con sede en Estrasburgo, encargado de garantizar el cumplimiento del Convenio Europeo de Derechos Humanos por los Estados parte del Consejo de Europa, ante el que pueden presentar demandas tanto los Estados como los particulares",
+      "Un órgano de la Unión Europea, distinto del Consejo de Europa",
+      "Un tribunal que solo puede ser activado por los Gobiernos, nunca por particulares",
+      "Un sinónimo exacto del Tribunal de Justicia de la Unión Europea",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Tribunal Europeo de Derechos Humanos, con sede en Estrasburgo, es el órgano jurisdiccional del Consejo de Europa encargado de garantizar el cumplimiento del Convenio Europeo de Derechos Humanos de 1950 por los Estados parte, pudiendo ser activado mediante demandas tanto interestatales como individuales presentadas por particulares que se consideren víctimas de una violación de sus derechos.",
+  },
+  {
+    id: "dh-19",
+    enunciado: "¿Qué es el Consejo de Derechos Humanos de las Naciones Unidas?",
+    opciones: [
+      "El órgano intergubernamental, dependiente de la Asamblea General, encargado de fortalecer la promoción y protección de los derechos humanos en el mundo, que sustituyó en 2006 a la anterior Comisión de Derechos Humanos y aplica el mecanismo del Examen Periódico Universal",
+      "Un tribunal con capacidad para dictar sentencias vinculantes contra los Estados",
+      "Un órgano exclusivamente compuesto por juristas independientes, sin representación de los Estados",
+      "Un sinónimo exacto de la Corte Penal Internacional",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Consejo de Derechos Humanos, creado en 2006 en sustitución de la anterior Comisión de Derechos Humanos, es el órgano intergubernamental de Naciones Unidas encargado de fortalecer la promoción y protección de los derechos humanos, aplicando el mecanismo del Examen Periódico Universal, mediante el cual se revisa periódicamente la situación de los derechos humanos en todos los Estados miembros.",
+  },
+  {
+    id: "dh-20",
+    enunciado: "¿Qué prohíbe la Convención contra la Tortura y Otros Tratos o Penas Crueles, Inhumanos o Degradantes, de 1984?",
+    opciones: [
+      "Todo acto por el cual se inflija intencionadamente a una persona dolores o sufrimientos graves, físicos o mentales, con determinados fines (obtener información, castigar, intimidar), cuando sean infligidos por un funcionario público u otra persona en el ejercicio de funciones públicas",
+      "Únicamente la pena de muerte, sin referencia a ninguna otra conducta",
+      "Solo la tortura cometida en el ámbito militar durante un conflicto armado",
+      "Solo los malos tratos cometidos por particulares, excluyendo a los funcionarios públicos",
+    ],
+    correcta: 0,
+    explicacion:
+      "La Convención contra la Tortura de 1984, ratificada por España, prohíbe todo acto por el cual se inflija intencionadamente a una persona dolores o sufrimientos graves, físicos o mentales, con fines como obtener información o una confesión, castigarla, intimidarla o coaccionarla, cuando dichos actos sean infligidos por un funcionario público u otra persona en el ejercicio de funciones públicas, o con su consentimiento o aquiescencia.",
+  },
+  {
+    id: "dh-21",
+    enunciado: "¿Qué es la CEDAW (Convención sobre la eliminación de todas las formas de discriminación contra la mujer, 1979)?",
+    opciones: [
+      "Un tratado internacional de derechos humanos que obliga a los Estados parte a adoptar medidas para eliminar la discriminación contra la mujer en todos los ámbitos (político, económico, social, cultural y civil) y a garantizar la igualdad de facto entre hombres y mujeres",
+      "Un tratado exclusivamente centrado en el derecho de sufragio femenino",
+      "Un organismo internacional con sede en Ginebra, distinto de un tratado",
+      "Una norma que solo vincula a los Estados miembros de la Unión Europea",
+    ],
+    correcta: 0,
+    explicacion:
+      "La CEDAW, adoptada por la Asamblea General de Naciones Unidas en 1979, es uno de los principales tratados internacionales de derechos humanos en materia de igualdad de género, que obliga a los Estados parte a adoptar todas las medidas apropiadas para eliminar la discriminación contra la mujer en la vida política, económica, social, cultural y civil, garantizando la igualdad de facto y no solo formal.",
+  },
+  {
+    id: "dh-22",
+    enunciado: "¿Qué reconoce la Convención de Naciones Unidas sobre los Derechos de las Personas con Discapacidad, de 2006?",
+    opciones: [
+      "Los derechos de las personas con discapacidad en condiciones de igualdad con las demás, promoviendo un modelo social de la discapacidad frente al modelo puramente médico o asistencial",
+      "Únicamente el derecho a una pensión no contributiva",
+      "Solo derechos aplicables en el ámbito laboral, sin ninguna otra dimensión",
+      "Un catálogo de derechos exclusivo para menores de edad con discapacidad",
+    ],
+    correcta: 0,
+    explicacion:
+      "La Convención sobre los Derechos de las Personas con Discapacidad, adoptada por Naciones Unidas en 2006 y ratificada por España, reconoce los derechos de las personas con discapacidad en condiciones de igualdad con las demás, promoviendo un modelo social de la discapacidad que pone el foco en la eliminación de barreras y en la plena inclusión, frente a un modelo puramente médico o asistencial.",
+  },
+  {
+    id: "dh-23",
+    enunciado: "¿Qué implica el principio de no discriminación como derecho humano transversal?",
+    opciones: [
+      "Que el disfrute de todos los derechos humanos debe garantizarse sin distinción alguna por motivos de raza, color, sexo, idioma, religión, opinión política, origen nacional o social, u otra condición, atravesando así todo el catálogo de derechos reconocidos",
+      "Que solo se aplica a los derechos civiles y políticos, no a los económicos, sociales y culturales",
+      "Que permite a los Estados discriminar libremente en el ámbito de la seguridad nacional",
+      "Que solo protege a las minorías étnicas, excluyendo otros motivos de discriminación",
+    ],
+    correcta: 0,
+    explicacion:
+      "El principio de no discriminación, recogido en la práctica totalidad de los instrumentos internacionales de derechos humanos, exige garantizar el disfrute de todos los derechos humanos sin distinción alguna por motivos de raza, color, sexo, idioma, religión, opinión política, origen nacional o social, u otra condición, constituyendo un principio transversal que atraviesa todo el catálogo de derechos, y no un derecho autónomo limitado a un ámbito concreto.",
+  },
+  {
+    id: "dh-24",
+    enunciado: "¿Qué diferencia esencial existe entre los derechos civiles y políticos y los derechos económicos, sociales y culturales, según la clasificación clásica de los Pactos de 1966?",
+    opciones: [
+      "Los derechos civiles y políticos (libertad, vida, participación política) suelen concebirse como de aplicación inmediata y exigen fundamentalmente una abstención del Estado; los económicos, sociales y culturales (trabajo, educación, salud) suelen concebirse como de realización progresiva, exigiendo prestaciones activas y recursos del Estado",
+      "Los derechos económicos, sociales y culturales son siempre superiores jerárquicamente a los civiles y políticos",
+      "Solo los derechos civiles y políticos están recogidos en tratados internacionales",
+      "No existe ninguna diferencia relevante entre ambas categorías",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los dos Pactos Internacionales de 1966 reflejan la distinción clásica entre derechos civiles y políticos (vida, libertad, participación política), tradicionalmente concebidos como de aplicación inmediata y que exigen sobre todo una abstención del Estado, y derechos económicos, sociales y culturales (trabajo, educación, salud), tradicionalmente concebidos como de realización progresiva y que exigen prestaciones activas y recursos por parte del Estado, si bien esta distinción se ha matizado con el tiempo en favor de la indivisibilidad de todos los derechos.",
+  },
+  {
+    id: "dh-25",
+    enunciado: "¿Qué papel desempeñan las organizaciones no gubernamentales (ONG) como Amnistía Internacional o Human Rights Watch en la protección de los derechos humanos?",
+    opciones: [
+      "Documentan e investigan violaciones de derechos humanos en todo el mundo, realizan campañas de sensibilización y presión (\"advocacy\") ante gobiernos y organismos internacionales, y colaboran con los mecanismos internacionales de protección, sin ostentar potestades coercitivas propias de un Estado",
+      "Tienen capacidad para imponer sanciones vinculantes a los Estados infractores",
+      "Sustituyen a los tribunales internacionales de derechos humanos en sus funciones jurisdiccionales",
+      "Son organismos oficiales dependientes directamente de Naciones Unidas",
+    ],
+    correcta: 0,
+    explicacion:
+      "Organizaciones no gubernamentales como Amnistía Internacional o Human Rights Watch documentan e investigan violaciones de derechos humanos en todo el mundo, realizan campañas de sensibilización y presión ante gobiernos y organismos internacionales, y colaboran aportando información a los mecanismos internacionales de protección, sin ostentar potestades coercitivas propias de un Estado ni capacidad jurisdiccional.",
+  },
+  {
+    id: "dh-26",
+    enunciado: "¿Qué se entiende por «genocidio» y «crímenes de lesa humanidad» en el derecho internacional de los derechos humanos?",
+    opciones: [
+      "El genocidio consiste en actos cometidos con la intención de destruir, total o parcialmente, a un grupo nacional, étnico, racial o religioso; los crímenes de lesa humanidad comprenden determinados actos graves (asesinato, exterminio, esclavitud, entre otros) cometidos como parte de un ataque generalizado o sistemático contra una población civil",
+      "Son términos sinónimos, sin ninguna diferencia jurídica",
+      "Solo pueden cometerse en el marco de un conflicto armado internacional declarado",
+      "Son delitos que únicamente pueden juzgar los tribunales internos de cada Estado, nunca un tribunal internacional",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Estatuto de Roma de la Corte Penal Internacional define el genocidio como actos cometidos con la intención de destruir, total o parcialmente, a un grupo nacional, étnico, racial o religioso; y los crímenes de lesa humanidad como determinados actos graves (asesinato, exterminio, esclavitud, tortura, entre otros) cometidos como parte de un ataque generalizado o sistemático contra una población civil, constituyendo ambos los crímenes internacionales más graves junto con los crímenes de guerra y de agresión.",
+  },
+  {
+    id: "dh-27",
+    enunciado: "¿Qué diferencia existe entre la Corte Internacional de Justicia y la Corte Penal Internacional?",
+    opciones: [
+      "La Corte Internacional de Justicia, con sede en La Haya, resuelve controversias jurídicas entre Estados y emite opiniones consultivas; la Corte Penal Internacional, también con sede en La Haya, juzga la responsabilidad penal individual de personas físicas por los crímenes internacionales más graves (genocidio, lesa humanidad, crímenes de guerra y agresión)",
+      "Son exactamente el mismo tribunal con dos nombres distintos",
+      "La Corte Penal Internacional solo juzga a Estados, nunca a individuos",
+      "La Corte Internacional de Justicia solo tiene competencia sobre delitos de terrorismo",
+    ],
+    correcta: 0,
+    explicacion:
+      "La Corte Internacional de Justicia es el principal órgano judicial de Naciones Unidas y resuelve controversias jurídicas entre Estados, además de emitir opiniones consultivas; la Corte Penal Internacional, creada por el Estatuto de Roma de 1998, es un tribunal distinto que juzga la responsabilidad penal individual de personas físicas por los crímenes internacionales más graves (genocidio, crímenes de lesa humanidad, crímenes de guerra y el crimen de agresión).",
+  },
+  {
+    id: "dh-28",
+    enunciado: "¿Qué se conmemora el 10 de diciembre, Día Internacional de los Derechos Humanos?",
+    opciones: [
+      "La adopción, en 1948, de la Declaración Universal de los Derechos Humanos por la Asamblea General de las Naciones Unidas",
+      "La firma del Convenio Europeo de Derechos Humanos",
+      "La creación de la Organización de las Naciones Unidas",
+      "La entrada en vigor del Estatuto de Roma de la Corte Penal Internacional",
+    ],
+    correcta: 0,
+    explicacion:
+      "El 10 de diciembre se conmemora el Día Internacional de los Derechos Humanos, en recuerdo de la adopción por la Asamblea General de las Naciones Unidas, el 10 de diciembre de 1948, de la Declaración Universal de los Derechos Humanos.",
+  },
+  {
+    id: "dh-29",
+    enunciado: "¿Qué son las normas de «ius cogens» en el derecho internacional de los derechos humanos?",
+    opciones: [
+      "Normas imperativas de derecho internacional general, aceptadas y reconocidas por la comunidad internacional en su conjunto, que no admiten acuerdo en contrario (como la prohibición del genocidio, la esclavitud o la tortura) y prevalecen sobre cualquier tratado que las contradiga",
+      "Normas que solo obligan a los Estados que las ratifiquen expresamente",
+      "Un sinónimo de las recomendaciones no vinculantes de un organismo internacional",
+      "Normas que solo se aplican en el ámbito del derecho mercantil internacional",
+    ],
+    correcta: 0,
+    explicacion:
+      "Las normas de «ius cogens» (derecho imperativo) son normas de derecho internacional general aceptadas y reconocidas por la comunidad internacional de Estados en su conjunto como normas que no admiten acuerdo en contrario, como la prohibición del genocidio, la esclavitud, la tortura o la discriminación racial, prevaleciendo sobre cualquier tratado internacional que pretendiera contradecirlas.",
+  },
+  {
+    id: "dh-30",
+    enunciado: "¿Qué papel desempeñan las Instituciones Nacionales de Derechos Humanos (como el Defensor del Pueblo en España) conforme a los Principios de París de 1993?",
+    opciones: [
+      "Promover y proteger los derechos humanos a nivel nacional, con independencia funcional respecto del Gobierno, pudiendo emitir recomendaciones, recibir quejas de particulares e informar a los organismos internacionales sobre la situación de los derechos humanos en su país",
+      "Sustituir a los tribunales de justicia en la resolución de conflictos entre particulares",
+      "Actuar como un órgano más del Poder Ejecutivo, sin ninguna independencia funcional",
+      "Limitarse a la representación diplomática del Estado en organismos internacionales",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los Principios de París de 1993, adoptados por la Asamblea General de Naciones Unidas, establecen los estándares mínimos que deben cumplir las Instituciones Nacionales de Derechos Humanos (como el Defensor del Pueblo en España) para promover y proteger eficazmente los derechos humanos a nivel nacional, exigiendo su independencia funcional respecto del Gobierno y facultándolas para emitir recomendaciones, recibir quejas de particulares e informar a los organismos internacionales.",
+  },
 ];

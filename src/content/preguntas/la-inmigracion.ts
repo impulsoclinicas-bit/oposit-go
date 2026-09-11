@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "Frente al multiculturalismo, que se centra en el reconocimiento y la coexistencia de distintas comunidades culturales dentro de una misma sociedad, la interculturalidad enfatiza además la interacción, el diálogo y el enriquecimiento mutuo activo entre esas culturas, promoviendo espacios de encuentro y de construcción compartida en lugar de una simple yuxtaposición de comunidades separadas.",
   },
+  {
+    id: "inm-16",
+    enunciado: "¿Qué son los factores «de atracción» (pull) en el análisis sociológico de los procesos migratorios?",
+    opciones: [
+      "Las circunstancias del país de destino que resultan atractivas para la persona migrante, como mejores oportunidades laborales, mayor estabilidad política o mejores condiciones de vida, complementando a los factores «de expulsión» del país de origen",
+      "Un sinónimo exacto de los factores «de expulsión» o push",
+      "Factores que solo operan en los procesos de migración interna, nunca internacional",
+      "Circunstancias que siempre disuaden a las personas de emigrar",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los factores «de atracción» (pull) son las circunstancias del país o lugar de destino que resultan atractivas para la persona migrante (mejores oportunidades laborales, mayor estabilidad política, mejores condiciones de vida o de seguridad, reunificación con familiares ya establecidos), complementando en el clásico modelo push-pull a los factores «de expulsión» presentes en el lugar de origen.",
+  },
+  {
+    id: "inm-17",
+    enunciado: "¿Qué diferencia existe entre la migración «circular» o «temporal» y la migración de carácter permanente?",
+    opciones: [
+      "La migración circular o temporal implica desplazamientos con intención de retorno al país de origen tras un período determinado (por ejemplo, por motivos laborales estacionales), mientras que la migración permanente implica la intención de establecer la residencia de forma indefinida en el país de destino",
+      "Son términos exactamente sinónimos, sin ninguna diferencia práctica",
+      "La migración circular solo puede producirse dentro de un mismo país",
+      "La migración permanente siempre es de carácter forzoso, y la circular siempre voluntaria",
+    ],
+    correcta: 0,
+    explicacion:
+      "La migración circular o temporal implica desplazamientos con intención de retorno al país o lugar de origen tras un período determinado (frecuentemente vinculados a necesidades laborales estacionales, como las campañas agrícolas), mientras que la migración de carácter permanente implica la intención de la persona migrante de establecer su residencia de forma indefinida en el país de destino.",
+  },
+  {
+    id: "inm-18",
+    enunciado: "¿Qué explica la teoría de las «redes migratorias» (migrant networks) en el análisis de los flujos de población?",
+    opciones: [
+      "Que los vínculos sociales y familiares establecidos por migrantes previos en un país de destino reducen los costes y riesgos de la migración para nuevos migrantes de su misma comunidad de origen, favoreciendo así la continuidad y concentración de determinados flujos migratorios hacia destinos concretos",
+      "Que la migración es siempre un fenómeno aleatorio, sin ninguna relación con vínculos sociales previos",
+      "Que las redes migratorias son exclusivamente redes delictivas de tráfico de personas",
+      "Que los flujos migratorios se distribuyen siempre de manera uniforme entre todos los países de destino posibles",
+    ],
+    correcta: 0,
+    explicacion:
+      "La teoría de las redes migratorias explica que los vínculos sociales y familiares establecidos por migrantes previos en un país de destino (información sobre oportunidades, alojamiento, apoyo inicial) reducen los costes y riesgos de la migración para nuevos migrantes de su misma comunidad de origen, lo que favorece la continuidad y concentración de determinados flujos migratorios hacia destinos concretos, con independencia de la existencia de redes de tráfico ilícito.",
+  },
+  {
+    id: "inm-19",
+    enunciado: "¿Qué es la «apatridia» (statelessness) en el ámbito del derecho internacional de las migraciones?",
+    opciones: [
+      "La situación de una persona que no es considerada nacional suya por ningún Estado conforme a su legislación, quedando habitualmente privada de derechos y protecciones asociados a la nacionalidad",
+      "Un sinónimo exacto de la condición de refugiado",
+      "La situación de una persona que posee más de tres nacionalidades simultáneamente",
+      "Una condición que se adquiere automáticamente al emigrar a otro país",
+    ],
+    correcta: 0,
+    explicacion:
+      "La apatridia es la situación de una persona que no es considerada nacional suya por ningún Estado conforme a la aplicación de su legislación, lo que la deja habitualmente privada de derechos y protecciones básicas asociados a la nacionalidad (documentación, acceso a servicios, protección diplomática), constituyendo un fenómeno distinto, aunque a veces relacionado, del de la condición de refugiado.",
+  },
+  {
+    id: "inm-20",
+    enunciado: "¿Qué regula la Convención de 1954 sobre el Estatuto de los Apátridas?",
+    opciones: [
+      "El régimen jurídico internacional de protección de las personas apátridas, estableciendo un catálogo de derechos que los Estados parte deben garantizarles de forma similar a la reconocida a los extranjeros en general, o incluso a los propios nacionales en determinadas materias",
+      "El procedimiento para conceder la nacionalidad española a cualquier extranjero residente",
+      "Exclusivamente el régimen de asilo y protección subsidiaria",
+      "El régimen de extradición entre Estados",
+    ],
+    correcta: 0,
+    explicacion:
+      "La Convención de 1954 sobre el Estatuto de los Apátridas regula el régimen jurídico internacional de protección de las personas apátridas, estableciendo un catálogo de derechos que los Estados parte deben garantizarles (documentación de identidad, acceso a la justicia, empleo, educación), de forma similar a la reconocida a los extranjeros en general, complementándose con la Convención de 1961 para reducir los casos de apatridia.",
+  },
+  {
+    id: "inm-21",
+    enunciado: "¿Qué diferencia existe entre la migración interna y la migración internacional?",
+    opciones: [
+      "La migración interna implica un desplazamiento dentro de las fronteras de un mismo Estado (por ejemplo, del ámbito rural al urbano); la migración internacional implica un desplazamiento que cruza las fronteras de un Estado hacia otro distinto",
+      "Son términos exactamente sinónimos, sin ninguna diferencia relevante",
+      "La migración interna siempre es de carácter forzoso",
+      "Solo la migración internacional es objeto de estudio de la sociología de las migraciones",
+    ],
+    correcta: 0,
+    explicacion:
+      "La migración interna implica un desplazamiento de población dentro de las fronteras de un mismo Estado (por ejemplo, el histórico proceso de éxodo rural hacia las ciudades), mientras que la migración internacional implica un desplazamiento que cruza las fronteras de un Estado hacia otro distinto, siendo ambas objeto de estudio de la sociología de las migraciones, aunque con dinámicas y marcos jurídicos claramente diferenciados.",
+  },
+  {
+    id: "inm-22",
+    enunciado: "¿Qué se entiende por «diáspora» en el estudio de las migraciones?",
+    opciones: [
+      "La dispersión de una comunidad o pueblo por distintos países del mundo, manteniendo habitualmente vínculos de identidad, cultura o memoria compartida con el lugar de origen, a pesar de residir de forma dispersa fuera de él",
+      "Un sinónimo exacto de la migración circular o temporal",
+      "Un fenómeno que solo puede aplicarse a un único pueblo de la historia",
+      "El proceso administrativo de solicitud de la nacionalidad de un país de acogida",
+    ],
+    correcta: 0,
+    explicacion:
+      "El concepto de «diáspora» hace referencia a la dispersión de una comunidad o pueblo por distintos países del mundo, manteniendo habitualmente vínculos de identidad, cultura, lengua o memoria compartida con el lugar de origen, a pesar de residir de forma dispersa fuera de él, empleándose en la actualidad para describir a numerosas comunidades migrantes con fuertes lazos transnacionales.",
+  },
+  {
+    id: "inm-23",
+    enunciado: "¿Qué es la Organización Internacional para las Migraciones (OIM)?",
+    opciones: [
+      "El organismo intergubernamental de referencia en el ámbito de las migraciones, que forma parte del sistema de Naciones Unidas y trabaja con gobiernos, migrantes y otros actores para promover una migración segura, ordenada y humana",
+      "Un sinónimo exacto del ACNUR",
+      "Un tribunal internacional especializado en delitos de tráfico de personas",
+      "Un organismo exclusivamente dedicado a la gestión de fronteras de la Unión Europea",
+    ],
+    correcta: 0,
+    explicacion:
+      "La Organización Internacional para las Migraciones (OIM), integrada en el sistema de Naciones Unidas desde 2016, es el organismo intergubernamental de referencia en el ámbito de las migraciones, que trabaja con gobiernos, migrantes y otros actores para promover una migración segura, ordenada y humana, prestando asistencia en materia de retorno voluntario, ayuda humanitaria e investigación sobre fenómenos migratorios, entre otras funciones, a diferencia del ACNUR, centrado específicamente en la protección de personas refugiadas.",
+  },
+  {
+    id: "inm-24",
+    enunciado: "¿Qué es el Pacto Mundial para una Migración Segura, Ordenada y Regular, adoptado en Marrakech en 2018?",
+    opciones: [
+      "Un acuerdo internacional de carácter no vinculante, adoptado bajo los auspicios de Naciones Unidas, que establece un marco de cooperación internacional con objetivos y compromisos comunes para gestionar la migración de forma más segura, ordenada y regular",
+      "Un tratado internacional vinculante que obliga a todos los Estados a abrir sus fronteras sin ningún control",
+      "Un acuerdo exclusivamente aplicable a los países de la Unión Europea",
+      "Un sinónimo exacto de la Convención de Ginebra de 1951",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Pacto Mundial para una Migración Segura, Ordenada y Regular, adoptado en Marrakech en diciembre de 2018 bajo los auspicios de Naciones Unidas, es un acuerdo internacional de carácter no vinculante (no crea obligaciones jurídicas exigibles) que establece un marco de cooperación internacional, con veintitrés objetivos y compromisos comunes, para gestionar la migración internacional de forma más segura, ordenada y regular, respetando la soberanía de cada Estado para determinar su propia política migratoria.",
+  },
+  {
+    id: "inm-25",
+    enunciado: "¿Qué es el Sistema Europeo Común de Asilo (SECA)?",
+    opciones: [
+      "El conjunto de normas e instrumentos de la Unión Europea dirigidos a armonizar las políticas de asilo de los Estados miembros, estableciendo estándares mínimos comunes en materia de acogida, procedimiento y reconocimiento de la protección internacional",
+      "Un sinónimo exacto de la Ley 12/2009 española reguladora del derecho de asilo",
+      "Un organismo internacional independiente de la Unión Europea",
+      "Un sistema que sustituye por completo a las legislaciones nacionales de asilo de cada Estado miembro",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Sistema Europeo Común de Asilo (SECA) es el conjunto de normas e instrumentos de la Unión Europea (directivas y reglamentos) dirigidos a armonizar las políticas de asilo de los Estados miembros, estableciendo estándares mínimos comunes en materia de acogida, procedimiento y reconocimiento de la protección internacional, del que la Ley española 12/2009 constituye la principal norma de transposición e integración en el ordenamiento interno.",
+  },
+  {
+    id: "inm-26",
+    enunciado: "¿Qué determina el Reglamento «Dublín III» de la Unión Europea?",
+    opciones: [
+      "El Estado miembro responsable del examen de una solicitud de protección internacional presentada en la Unión Europea, con el fin de evitar que una misma solicitud se tramite simultáneamente en varios Estados o que ningún Estado asuma su examen",
+      "El régimen de visados Schengen aplicable a los turistas",
+      "El procedimiento de expulsión de los extranjeros en situación irregular",
+      "Los requisitos de acceso a la nacionalidad de un Estado miembro de la Unión Europea",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Reglamento (UE) 604/2013, conocido como «Dublín III», establece los criterios y mecanismos para determinar el Estado miembro responsable del examen de una solicitud de protección internacional presentada en cualquier país de la Unión Europea, con el fin de evitar que una misma solicitud se tramite simultáneamente en varios Estados (\"forum shopping\") o que ningún Estado asuma la responsabilidad de examinarla.",
+  },
+  {
+    id: "inm-27",
+    enunciado: "¿Qué diferencia existe entre la «fuga de cerebros» (brain drain) y la «ganancia de cerebros» (brain gain)?",
+    opciones: [
+      "La fuga de cerebros describe la pérdida, para el país de origen, de personas altamente cualificadas que emigran a otros países; la ganancia de cerebros describe el efecto positivo que dicha emigración puede tener para el país de destino, que se beneficia de su cualificación, o incluso para el propio país de origen si posteriormente retornan con nuevas capacidades",
+      "Son términos exactamente sinónimos, sin ninguna diferencia conceptual",
+      "Ambos conceptos se refieren exclusivamente a la migración de trabajadores no cualificados",
+      "La ganancia de cerebros solo beneficia al país de origen, nunca al de destino",
+    ],
+    correcta: 0,
+    explicacion:
+      "La «fuga de cerebros» (brain drain) describe la pérdida, para el país de origen, de personas altamente cualificadas (científicos, profesionales, técnicos) que emigran a otros países en busca de mejores oportunidades; la «ganancia de cerebros» (brain gain) describe el efecto positivo que dicha migración puede tener para el país de destino, que se beneficia de su cualificación, o incluso para el propio país de origen a través de las remesas, el retorno de capacidades o la transferencia de conocimiento.",
+  },
+  {
+    id: "inm-28",
+    enunciado: "¿Qué relación se establece habitualmente entre el envejecimiento poblacional de los países desarrollados y la inmigración laboral?",
+    opciones: [
+      "El envejecimiento poblacional y la baja natalidad de muchos países desarrollados generan una demanda de mano de obra que, en numerosos análisis demográficos y económicos, se presenta como uno de los factores que explican la necesidad de flujos de inmigración laboral para sostener el mercado de trabajo y los sistemas de protección social",
+      "No existe ninguna relación entre ambos fenómenos demográficos",
+      "El envejecimiento poblacional siempre reduce la necesidad de mano de obra inmigrante",
+      "La inmigración laboral es la única causa posible del envejecimiento poblacional",
+    ],
+    correcta: 0,
+    explicacion:
+      "El envejecimiento poblacional y la baja natalidad que caracterizan a numerosos países desarrollados generan una creciente demanda de mano de obra que, en buena parte de los análisis demográficos y económicos, se presenta como uno de los factores que explican la necesidad de flujos de inmigración laboral para sostener el mercado de trabajo, la actividad económica y la sostenibilidad de los sistemas de protección social y pensiones.",
+  },
+  {
+    id: "inm-29",
+    enunciado: "¿Qué es la «islamofobia» como forma específica de discriminación?",
+    opciones: [
+      "El rechazo, prejuicio u hostilidad hacia el islam, hacia las personas musulmanas o hacia quienes son percibidas como tales, manifestado a través de actitudes, discursos o conductas discriminatorias",
+      "Un sinónimo exacto de la xenofobia general, sin ninguna especificidad religiosa",
+      "Una corriente de pensamiento favorable al diálogo interreligioso",
+      "Un concepto jurídico sin ninguna base en la psicología social o la sociología",
+    ],
+    correcta: 0,
+    explicacion:
+      "La islamofobia es el rechazo, prejuicio u hostilidad hacia el islam como religión, hacia las personas musulmanas o hacia quienes son percibidas como tales, manifestado a través de actitudes, discursos o conductas discriminatorias, constituyendo una forma específica de discriminación por motivos religiosos que se estudia frecuentemente junto a otras formas de xenofobia en los procesos migratorios contemporáneos.",
+  },
+  {
+    id: "inm-30",
+    enunciado: "¿Qué es el «codesarrollo» como enfoque de política migratoria?",
+    opciones: [
+      "Un enfoque que vincula los procesos migratorios con el desarrollo económico y social tanto del país de destino como del país de origen, promoviendo, por ejemplo, que las remesas, el conocimiento adquirido o la inversión de la diáspora contribuyan al desarrollo de las comunidades de origen",
+      "Un sinónimo exacto de la reagrupación familiar",
+      "Una política que prohíbe cualquier forma de emigración desde países en desarrollo",
+      "Un mecanismo exclusivamente militar de control de fronteras",
+    ],
+    correcta: 0,
+    explicacion:
+      "El «codesarrollo» es un enfoque de política migratoria que vincula los procesos migratorios con el desarrollo económico y social tanto del país de destino como del país de origen, promoviendo, por ejemplo, que las remesas, el conocimiento adquirido durante la migración o la inversión de las comunidades de la diáspora contribuyan activamente al desarrollo de las comunidades de origen, en un enfoque de beneficio mutuo entre ambos países.",
+  },
 ];

@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "«No Logo», publicada por la periodista y activista canadiense Naomi Klein en 1999, es una obra de referencia del pensamiento crítico con la globalización corporativa, que analiza el poder alcanzado por las grandes marcas multinacionales, sus estrategias de márketing y sus prácticas laborales en las cadenas de producción globalizadas, convirtiéndose en un texto influyente del movimiento antiglobalización o altermundista.",
   },
+  {
+    id: "ga-16",
+    enunciado: "¿Qué papel desempeña la Organización Mundial del Comercio (OMC) en la globalización económica?",
+    opciones: [
+      "Es el organismo internacional que establece las normas que rigen el comercio entre países, supervisa los acuerdos comerciales multilaterales y resuelve las diferencias comerciales entre sus Estados miembros",
+      "Es un organismo exclusivamente encargado de conceder préstamos a países en desarrollo",
+      "Es un tribunal penal internacional para delitos económicos",
+      "Sustituye a las Naciones Unidas en materia de seguridad internacional",
+    ],
+    correcta: 0,
+    explicacion:
+      "La Organización Mundial del Comercio (OMC), creada en 1995, es el organismo internacional que establece las normas que rigen el comercio entre países, supervisa los acuerdos comerciales multilaterales y proporciona un foro para la negociación y la resolución de diferencias comerciales entre sus Estados miembros, siendo frecuentemente objeto de críticas por parte del movimiento antiglobalización.",
+  },
+  {
+    id: "ga-17",
+    enunciado: "¿Qué función desempeña el Fondo Monetario Internacional (FMI) en el marco de la globalización económica?",
+    opciones: [
+      "Vela por la estabilidad del sistema financiero internacional y concede asistencia financiera a los países miembros con dificultades de balanza de pagos, habitualmente condicionada a reformas económicas",
+      "Se dedica exclusivamente a la protección del medio ambiente",
+      "Es un organismo dependiente de la Organización Mundial del Comercio",
+      "Concede visados de trabajo a los ciudadanos de los países miembros",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Fondo Monetario Internacional (FMI) vela por la estabilidad del sistema financiero y monetario internacional, y concede asistencia financiera a los países miembros que atraviesan dificultades de balanza de pagos, condicionando frecuentemente dicha asistencia a la adopción de determinadas reformas económicas, lo que ha sido objeto de intenso debate y crítica en el contexto de la globalización.",
+  },
+  {
+    id: "ga-18",
+    enunciado: "¿Cuál es la función principal del Banco Mundial en el contexto de la globalización?",
+    opciones: [
+      "Conceder préstamos y asistencia técnica a los países en desarrollo para financiar proyectos de infraestructura, reducción de la pobreza y desarrollo económico",
+      "Fijar el tipo de cambio de todas las monedas del mundo",
+      "Emitir la moneda de curso legal en los países en desarrollo",
+      "Sustituir a los bancos centrales nacionales en la política monetaria",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Banco Mundial es el organismo internacional que concede préstamos y asistencia técnica a los países en desarrollo para financiar proyectos de infraestructura, reducción de la pobreza y desarrollo económico, actuando junto al FMI como una de las principales instituciones de la gobernanza económica global surgida de los acuerdos de Bretton Woods.",
+  },
+  {
+    id: "ga-19",
+    enunciado: "¿Qué se entiende por «Consenso de Washington» en el debate sobre la globalización económica?",
+    opciones: [
+      "Un conjunto de recomendaciones de política económica (liberalización comercial, privatizaciones, disciplina fiscal, desregulación) promovidas desde finales de los años ochenta por instituciones como el FMI y el Banco Mundial para los países en desarrollo, objeto de intenso debate y crítica",
+      "Un tratado internacional firmado en Washington que creó la Organización Mundial del Comercio",
+      "Un acuerdo militar entre Estados Unidos y la Unión Europea",
+      "Un sinónimo del Foro Social Mundial",
+    ],
+    correcta: 0,
+    explicacion:
+      "El «Consenso de Washington» hace referencia a un conjunto de recomendaciones de política económica (liberalización comercial, privatización de empresas públicas, disciplina fiscal, desregulación) promovidas desde finales de los años ochenta por instituciones con sede en Washington (FMI, Banco Mundial, Departamento del Tesoro de EE.UU.) para los países en desarrollo, convertido en objeto de intenso debate y crítica por el movimiento antiglobalización.",
+  },
+  {
+    id: "ga-20",
+    enunciado: "¿Qué es la «sociedad red», concepto desarrollado por el sociólogo Manuel Castells?",
+    opciones: [
+      "Un modelo de organización social propio de la era de la información, en el que las redes de comunicación e información, sostenidas por las nuevas tecnologías, se convierten en la estructura básica de organización de la economía, la sociedad y la cultura a escala global",
+      "Un sinónimo de las redes sociales de internet, sin ninguna connotación sociológica adicional",
+      "Una teoría exclusivamente centrada en la delincuencia organizada transnacional",
+      "Un modelo económico que rechaza cualquier forma de globalización",
+    ],
+    correcta: 0,
+    explicacion:
+      "El sociólogo Manuel Castells desarrolló el concepto de «sociedad red» para describir un nuevo modelo de organización social propio de la era de la información, en el que las redes de comunicación e información, sostenidas por las tecnologías digitales, se convierten en la estructura básica de organización de la economía, la sociedad y la cultura a escala global.",
+  },
+  {
+    id: "ga-21",
+    enunciado: "¿Qué es el «comercio justo» (fair trade) como respuesta al debate sobre la globalización económica?",
+    opciones: [
+      "Un movimiento y un conjunto de prácticas comerciales que buscan garantizar condiciones laborales y precios justos a los productores, especialmente en países en desarrollo, como alternativa a las dinámicas del comercio internacional convencional",
+      "Un organismo internacional que sustituye a la Organización Mundial del Comercio",
+      "Un impuesto internacional sobre las transacciones financieras",
+      "Un sinónimo exacto del libre comercio sin ninguna condición adicional",
+    ],
+    correcta: 0,
+    explicacion:
+      "El «comercio justo» es un movimiento y un conjunto de prácticas comerciales que buscan garantizar condiciones laborales dignas y precios justos a los productores, especialmente pequeños productores de países en desarrollo, presentándose como una alternativa a las dinámicas consideradas injustas del comercio internacional convencional, y siendo defendido por buena parte del movimiento altermundista.",
+  },
+  {
+    id: "ga-22",
+    enunciado: "¿Qué es la responsabilidad social corporativa (RSC) en el contexto de las empresas multinacionales?",
+    opciones: [
+      "El compromiso voluntario de las empresas de integrar en su gestión y en sus operaciones criterios sociales, ambientales y éticos, más allá de sus obligaciones legales estrictas",
+      "Una obligación legal idéntica en todos los países del mundo",
+      "Un impuesto especial que grava a las empresas multinacionales",
+      "Un sinónimo de la deslocalización productiva",
+    ],
+    correcta: 0,
+    explicacion:
+      "La responsabilidad social corporativa (RSC) es el compromiso, en principio voluntario, de las empresas de integrar en su gestión y en sus operaciones criterios sociales, ambientales y éticos que van más allá de sus obligaciones legales estrictas, en respuesta parcial a las críticas del movimiento antiglobalización sobre las prácticas de las empresas multinacionales.",
+  },
+  {
+    id: "ga-23",
+    enunciado: "¿Qué es la «brecha digital» en el contexto de la globalización?",
+    opciones: [
+      "La desigualdad de acceso a las tecnologías de la información y la comunicación entre distintos países, regiones o grupos sociales, que puede acentuar otras desigualdades ya existentes",
+      "La diferencia entre el software libre y el software propietario",
+      "Un sinónimo exacto de la deslocalización industrial",
+      "El desfase horario entre distintos husos horarios del planeta",
+    ],
+    correcta: 0,
+    explicacion:
+      "La «brecha digital» hace referencia a la desigualdad de acceso a las tecnologías de la información y la comunicación entre distintos países, regiones o grupos sociales, considerada por muchos analistas como un factor que puede acentuar otras desigualdades económicas y sociales ya existentes en un mundo globalizado.",
+  },
+  {
+    id: "ga-24",
+    enunciado: "¿Qué relación se suele establecer entre el proceso de globalización y el cambio climático?",
+    opciones: [
+      "La intensificación del comercio internacional, el transporte de mercancías y la deslocalización productiva se asocian frecuentemente con un aumento de las emisiones de gases de efecto invernadero, lo que ha generado demandas de una gobernanza climática global (como el Acuerdo de París) que acompañe a la globalización económica",
+      "No existe ninguna relación entre ambos fenómenos",
+      "La globalización ha reducido drásticamente las emisiones contaminantes a nivel mundial",
+      "El cambio climático es un fenómeno exclusivamente causado por el comercio local, no por el internacional",
+    ],
+    correcta: 0,
+    explicacion:
+      "La intensificación del comercio internacional, el transporte de mercancías a larga distancia y la deslocalización productiva se asocian frecuentemente en el debate público con un aumento de las emisiones de gases de efecto invernadero, lo que ha impulsado demandas de una gobernanza climática global (como el Acuerdo de París de 2015) que acompañe y corrija los efectos ambientales de la globalización económica.",
+  },
+  {
+    id: "ga-25",
+    enunciado: "¿Qué vínculo suele señalarse entre el auge de determinados movimientos populistas y el proceso de globalización?",
+    opciones: [
+      "Parte del auge de discursos populistas en distintos países se atribuye a la reacción de sectores sociales que se perciben perjudicados por la deslocalización industrial, la competencia laboral internacional o la pérdida de soberanía económica asociada a la globalización",
+      "No existe ninguna relación entre populismo y globalización, son fenómenos completamente independientes",
+      "El populismo es, por definición, un movimiento exclusivamente favorable a la globalización económica",
+      "Solo se ha producido este fenómeno en países en desarrollo, nunca en economías avanzadas",
+    ],
+    correcta: 0,
+    explicacion:
+      "Buena parte del análisis politológico atribuye el auge de determinados discursos populistas, tanto de izquierda como de derecha, en distintos países desarrollados a la reacción de sectores sociales que se perciben perjudicados por la deslocalización industrial, la competencia laboral internacional o la pérdida de soberanía económica y cultural asociada a la globalización.",
+  },
+  {
+    id: "ga-26",
+    enunciado: "¿Qué mide, de forma habitual, el coeficiente de Gini en el debate sobre la desigualdad global asociada a la globalización?",
+    opciones: [
+      "El grado de desigualdad en la distribución de la renta o la riqueza dentro de un país o entre países, siendo una de las herramientas habituales para analizar si la globalización reduce o aumenta las desigualdades",
+      "El nivel de contaminación atmosférica de un país",
+      "El número de tratados de libre comercio firmados por un Estado",
+      "El grado de digitalización de la economía de un país",
+    ],
+    correcta: 0,
+    explicacion:
+      "El coeficiente de Gini mide el grado de desigualdad en la distribución de la renta o la riqueza dentro de un país (o, en análisis más amplios, entre países), siendo una de las herramientas estadísticas habituales para analizar el impacto de la globalización sobre las desigualdades económicas a nivel mundial.",
+  },
+  {
+    id: "ga-27",
+    enunciado: "¿Qué reflexión suscitó la pandemia de COVID-19 en el debate sobre la globalización?",
+    opciones: [
+      "Reavivó el debate sobre la conveniencia de reducir la dependencia de largas cadenas globales de suministro y de relocalizar («reshoring») determinadas producciones estratégicas, ante la vulnerabilidad mostrada por dichas cadenas durante la crisis sanitaria",
+      "Puso fin de manera definitiva a cualquier forma de globalización económica",
+      "No tuvo ningún impacto en el debate sobre la organización de la economía global",
+      "Demostró que las cadenas de suministro globales son completamente inmunes a cualquier crisis",
+    ],
+    correcta: 0,
+    explicacion:
+      "La pandemia de COVID-19 reavivó el debate sobre la conveniencia de reducir la dependencia de largas cadenas globales de suministro (por ejemplo, de suministros médicos o componentes electrónicos) y de relocalizar («reshoring») determinadas producciones consideradas estratégicas, ante la vulnerabilidad que dichas cadenas mostraron durante la crisis sanitaria, sin que ello haya supuesto necesariamente el fin del proceso de globalización.",
+  },
+  {
+    id: "ga-28",
+    enunciado: "¿Qué crítica se plantea habitualmente respecto de la «homogeneización cultural» asociada a la globalización?",
+    opciones: [
+      "Que la difusión global de determinados productos culturales, marcas y patrones de consumo (frecuentemente de origen occidental) puede debilitar la diversidad cultural local y las identidades tradicionales, en un proceso a veces denominado \"macdonalización\" de la cultura",
+      "Que la globalización ha eliminado por completo cualquier forma de identidad cultural local",
+      "Que la homogeneización cultural es un fenómeno exclusivamente positivo, sin ninguna crítica asociada",
+      "Que solo afecta a los países más ricos, nunca a los países en desarrollo",
+    ],
+    correcta: 0,
+    explicacion:
+      "Una de las críticas habituales al proceso de globalización cultural señala que la difusión global de determinados productos culturales, marcas y patrones de consumo (frecuentemente de origen occidental) puede debilitar la diversidad cultural local y las identidades tradicionales, en un proceso que algunos autores han denominado, de forma crítica, \"macdonalización\" de la cultura.",
+  },
+  {
+    id: "ga-29",
+    enunciado: "¿Qué relación guarda la globalización financiera con el debate sobre el blanqueo de capitales y los flujos ilícitos de dinero?",
+    opciones: [
+      "La libre circulación de capitales a escala global y la existencia de jurisdicciones con escasa transparencia financiera facilitan, según numerosos análisis, el movimiento transfronterizo de fondos de origen ilícito, lo que ha impulsado iniciativas internacionales de cooperación contra el blanqueo de capitales",
+      "No existe ninguna relación entre la globalización financiera y el blanqueo de capitales",
+      "La globalización financiera ha eliminado por completo el blanqueo de capitales a nivel mundial",
+      "El blanqueo de capitales solo puede producirse dentro de las fronteras de un único Estado",
+    ],
+    correcta: 0,
+    explicacion:
+      "La libre circulación de capitales a escala global y la existencia de jurisdicciones con escasa transparencia financiera facilitan, según numerosos análisis, el movimiento transfronterizo de fondos de origen ilícito, lo que ha impulsado iniciativas internacionales de cooperación (como el Grupo de Acción Financiera Internacional, GAFI) contra el blanqueo de capitales y la financiación del terrorismo en un contexto de globalización financiera.",
+  },
+  {
+    id: "ga-30",
+    enunciado: "¿Qué relación guardan movimientos como el «15-M» en España o «Occupy Wall Street» en Estados Unidos con la crítica a la globalización financiera?",
+    opciones: [
+      "Surgieron, en el contexto de la crisis económica y financiera de 2008, como expresiones de protesta social frente a las consecuencias de la globalización financiera, la desigualdad económica y el poder de las grandes instituciones financieras",
+      "Fueron movimientos organizados directamente por instituciones financieras internacionales",
+      "No guardan ninguna relación con el debate sobre la globalización económica",
+      "Fueron movimientos exclusivamente favorables a la desregulación financiera total",
+    ],
+    correcta: 0,
+    explicacion:
+      "Movimientos como el «15-M» en España o «Occupy Wall Street» en Estados Unidos surgieron, en el contexto de la crisis económica y financiera iniciada en 2008, como expresiones de protesta social frente a las consecuencias de la globalización financiera, la desigualdad económica y el poder percibido de las grandes instituciones financieras, conectando con muchas de las críticas ya formuladas por el movimiento antiglobalización o altermundista desde finales de los años noventa.",
+  },
 ];
