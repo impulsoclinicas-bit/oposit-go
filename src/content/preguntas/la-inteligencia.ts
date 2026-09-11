@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "Las fuentes abiertas son aquellas de acceso público y lícito para cualquier persona (medios de comunicación, registros públicos, redes sociales), mientras que las fuentes cerradas requieren medios de obtención reservados, técnicos o encubiertos —interceptación de comunicaciones, fuentes humanas infiltradas, vigilancia técnica—, cuyo acceso está legalmente limitado a los servicios y órganos específicamente autorizados para emplearlos, con las garantías y controles correspondientes.",
   },
+  {
+    id: "int-16",
+    enunciado: "¿Qué es el HUMINT (Human Intelligence) como disciplina de obtención de inteligencia?",
+    opciones: [
+      "La inteligencia obtenida a través de fuentes humanas (informadores, agentes infiltrados, entrevistas, interrogatorios), a diferencia de otras disciplinas basadas en medios técnicos como las señales o las imágenes",
+      "Un sinónimo exacto del OSINT o inteligencia de fuentes abiertas",
+      "La inteligencia obtenida exclusivamente mediante satélites",
+      "Una disciplina que ha sido completamente sustituida por la inteligencia artificial",
+    ],
+    correcta: 0,
+    explicacion:
+      "El HUMINT (Human Intelligence) es la disciplina de obtención de inteligencia basada en fuentes humanas (informadores, agentes infiltrados, entrevistas, interrogatorios, contactos de confianza), complementando a otras disciplinas basadas en medios técnicos como el SIGINT (señales) o el IMINT (imágenes), y conservando un valor especialmente relevante para acceder a información e intenciones que difícilmente se obtienen por otros medios.",
+  },
+  {
+    id: "int-17",
+    enunciado: "¿Qué diferencia existe entre el contraterrorismo y la contrainteligencia?",
+    opciones: [
+      "El contraterrorismo agrupa el conjunto de medidas dirigidas específicamente a prevenir y combatir las actividades terroristas; la contrainteligencia, de alcance más amplio, se dirige a detectar y neutralizar las actividades de inteligencia (espionaje, sabotaje, entre otras) de servicios extranjeros u organizaciones hostiles contra los propios intereses",
+      "Son términos exactamente sinónimos, sin ninguna diferencia relevante",
+      "La contrainteligencia solo se ocupa de amenazas terroristas, nunca de otro tipo de amenazas",
+      "El contraterrorismo es una disciplina exclusivamente militar, sin ninguna vertiente policial",
+    ],
+    correcta: 0,
+    explicacion:
+      "El contraterrorismo agrupa el conjunto de medidas (de inteligencia, policiales, judiciales, preventivas) dirigidas específicamente a prevenir y combatir las actividades terroristas; la contrainteligencia, de alcance más amplio, se dirige a detectar y neutralizar las actividades de inteligencia (espionaje, sabotaje, injerencia, entre otras) desarrolladas por servicios de inteligencia extranjeros u organizaciones hostiles contra los propios intereses nacionales, pudiendo el terrorismo ser, en determinados casos, uno de los objetos de atención de la contrainteligencia.",
+  },
+  {
+    id: "int-18",
+    enunciado: "¿Qué es el análisis de vínculos o de redes sociales (link analysis) como técnica de análisis de inteligencia criminal?",
+    opciones: [
+      "Una técnica que representa gráficamente las relaciones y conexiones entre personas, organizaciones, cuentas, teléfonos u otros elementos relevantes de una investigación, con el fin de identificar patrones, jerarquías o nodos clave dentro de una estructura delictiva",
+      "Un sinónimo exacto del análisis de las publicaciones en redes sociales de internet exclusivamente",
+      "Una técnica exclusivamente aplicable a la investigación de delitos económicos",
+      "Un método para predecir con total certeza la comisión futura de un delito concreto",
+    ],
+    correcta: 0,
+    explicacion:
+      "El análisis de vínculos o de redes (link analysis) es una técnica de análisis de inteligencia criminal que representa gráficamente las relaciones y conexiones entre personas, organizaciones, cuentas, números de teléfono u otros elementos relevantes de una investigación, con el fin de identificar patrones, jerarquías dentro de una organización criminal, o los nodos o elementos más relevantes de dicha estructura sobre los que centrar los esfuerzos de investigación.",
+  },
+  {
+    id: "int-19",
+    enunciado: "¿Qué es el Centro Nacional de Coordinación Antiterrorista (CNCA) en España?",
+    opciones: [
+      "El órgano, integrado en la Secretaría de Estado de Seguridad, encargado de analizar y valorar de forma conjunta la información e inteligencia disponible sobre terrorismo, elaborando evaluaciones de la amenaza y fijando el nivel de alerta antiterrorista vigente en España",
+      "Un tribunal especializado en el enjuiciamiento de delitos de terrorismo",
+      "Un organismo internacional dependiente de la Unión Europea",
+      "Un sinónimo exacto del CITCO",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Centro Nacional de Coordinación Antiterrorista (CNCA), integrado en la Secretaría de Estado de Seguridad, es el órgano encargado de analizar y valorar de forma conjunta la información e inteligencia disponible sobre terrorismo procedente de los distintos organismos con responsabilidades en la materia, elaborando evaluaciones de la amenaza terrorista y fijando el nivel de alerta antiterrorista vigente en España en cada momento.",
+  },
+  {
+    id: "int-20",
+    enunciado: "¿Qué es la Comisión que ejerce el control parlamentario de los créditos destinados a gastos reservados de los servicios de inteligencia en España?",
+    opciones: [
+      "Una comisión específica del Congreso de los Diputados que conoce, con las garantías de reserva y confidencialidad propias de la materia, de los objetivos generales, la actividad y el presupuesto en gastos reservados del Centro Nacional de Inteligencia",
+      "Un órgano exclusivamente judicial, sin ninguna intervención parlamentaria",
+      "Un órgano internacional dependiente de la Unión Europea",
+      "Un sinónimo exacto de la Comisión Interministerial de Asilo y Refugio",
+    ],
+    correcta: 0,
+    explicacion:
+      "El control parlamentario de la actividad del Centro Nacional de Inteligencia se articula, entre otros mecanismos, a través de una comisión específica del Congreso de los Diputados (la Comisión que controla los créditos destinados a gastos reservados), que conoce, con las garantías de reserva y confidencialidad propias de la materia, de los objetivos generales, la actividad y el presupuesto en gastos reservados del CNI, complementando el control judicial previo ya analizado.",
+  },
+  {
+    id: "int-21",
+    enunciado: "¿Qué características debe reunir, con carácter general, un buen producto o informe de inteligencia?",
+    opciones: [
+      "Debe ser oportuno (entregado a tiempo para su utilidad), relevante para quien debe tomar decisiones, objetivo y basado en fuentes contrastadas, y claro en su exposición, distinguiendo con precisión los hechos constatados de las valoraciones o hipótesis del analista",
+      "Debe limitarse a reproducir literalmente toda la información en bruto recopilada, sin ningún análisis ni valoración añadida",
+      "Debe ser siempre de una extensión mínima de cien páginas, sin excepción",
+      "Su única finalidad es archivar información, sin ninguna utilidad para la toma de decisiones",
+    ],
+    correcta: 0,
+    explicacion:
+      "Un buen producto o informe de inteligencia debe ser oportuno (entregado a tiempo para resultar útil a quien debe decidir), relevante para las necesidades concretas del destinatario, objetivo y basado en fuentes debidamente contrastadas y valoradas, y claro en su exposición, distinguiendo con precisión los hechos constatados de las valoraciones, hipótesis o juicios del propio analista, para evitar confusiones en la toma de decisiones.",
+  },
+  {
+    id: "int-22",
+    enunciado: "¿Qué diferencia existe entre la inteligencia policial y la inteligencia de Estado?",
+    opciones: [
+      "La inteligencia policial se orienta principalmente a la prevención e investigación de delitos concretos, apoyando la actividad operativa de las Fuerzas y Cuerpos de Seguridad; la inteligencia de Estado, propia de servicios como el CNI, tiene un alcance más amplio, orientado a la protección de los intereses generales de seguridad y defensa nacional frente a amenazas de muy diversa naturaleza",
+      "Son términos exactamente sinónimos, sin ninguna diferencia relevante",
+      "La inteligencia de Estado solo puede referirse a información pública, nunca reservada",
+      "La inteligencia policial nunca puede compartirse con los servicios de inteligencia de Estado",
+    ],
+    correcta: 0,
+    explicacion:
+      "La inteligencia policial se orienta principalmente a la prevención e investigación de delitos concretos, apoyando la actividad operativa de las Fuerzas y Cuerpos de Seguridad (por ejemplo, en la lucha contra el crimen organizado); la inteligencia de Estado, propia de servicios como el Centro Nacional de Inteligencia, tiene un alcance más amplio, orientado a la protección de los intereses generales de seguridad y defensa nacional frente a amenazas de muy diversa naturaleza (militares, terroristas, de injerencia extranjera, entre otras), existiendo mecanismos de coordinación y colaboración entre ambos ámbitos.",
+  },
+  {
+    id: "int-23",
+    enunciado: "¿Qué son los «requerimientos de información» (RI) dentro del ciclo de inteligencia?",
+    opciones: [
+      "Las necesidades concretas de información que se identifican en la fase de dirección o planificación del ciclo de inteligencia, y que orientan las actividades posteriores de obtención de datos para satisfacerlas",
+      "Un sinónimo exacto del producto final de inteligencia ya elaborado",
+      "Las solicitudes de acceso a la información pública que puede presentar cualquier ciudadano",
+      "Un trámite exclusivamente judicial, sin relación con el ciclo de inteligencia",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los «requerimientos de información» (RI) son las necesidades concretas de información que se identifican en la fase de dirección o planificación del ciclo de inteligencia, formuladas habitualmente a partir de las prioridades marcadas por quienes deben tomar decisiones, y que orientan las actividades posteriores de obtención de datos (mediante las distintas disciplinas: HUMINT, SIGINT, OSINT, entre otras) para satisfacer dichas necesidades.",
+  },
+  {
+    id: "int-24",
+    enunciado: "¿Qué es la «contravigilancia» en el contexto de las técnicas de inteligencia y seguridad?",
+    opciones: [
+      "El conjunto de técnicas empleadas para detectar si una persona, un vehículo o unas instalaciones están siendo objeto de vigilancia por parte de un tercero, con el fin de identificarla y, en su caso, neutralizarla o evitarla",
+      "Un sinónimo exacto de la videovigilancia instalada en la vía pública",
+      "Una técnica exclusivamente empleada por delincuentes, nunca por servicios de seguridad legítimos",
+      "Un procedimiento judicial para autorizar una intervención telefónica",
+    ],
+    correcta: 0,
+    explicacion:
+      "La «contravigilancia» es el conjunto de técnicas empleadas para detectar si una persona, un vehículo o unas instalaciones están siendo objeto de vigilancia por parte de un tercero, con el fin de identificar dicha vigilancia y, en su caso, evitarla o neutralizarla, siendo una habilidad relevante tanto para agentes que realizan labores encubiertas como, en sentido inverso, para quienes deben proteger a personas o instalaciones sensibles frente a posibles observadores hostiles.",
+  },
+  {
+    id: "int-25",
+    enunciado: "¿Qué es el SEPBLAC en el ámbito de la inteligencia financiera?",
+    opciones: [
+      "El Servicio Ejecutivo de la Comisión de Prevención del Blanqueo de Capitales e Infracciones Monetarias, órgano español encargado de la prevención y el análisis del blanqueo de capitales y la financiación del terrorismo, que recibe y analiza las comunicaciones de operaciones sospechosas remitidas por los sujetos obligados",
+      "Un organismo internacional dependiente de Naciones Unidas",
+      "Un banco público encargado de conceder préstamos a pequeñas y medianas empresas",
+      "Un sinónimo exacto del CNI",
+    ],
+    correcta: 0,
+    explicacion:
+      "El SEPBLAC (Servicio Ejecutivo de la Comisión de Prevención del Blanqueo de Capitales e Infracciones Monetarias) es el órgano español encargado de la prevención y el análisis del blanqueo de capitales y la financiación del terrorismo, recibiendo y analizando las comunicaciones de operaciones sospechosas remitidas por los sujetos obligados (entidades financieras y otros profesionales), constituyendo la Unidad de Inteligencia Financiera española dentro del marco internacional de cooperación en esta materia.",
+  },
+  {
+    id: "int-26",
+    enunciado: "¿Qué es el GEOINT (Geospatial Intelligence) como disciplina de obtención de inteligencia?",
+    opciones: [
+      "La inteligencia obtenida mediante el análisis de imágenes y datos con referencia geográfica (satelitales, aéreas, cartográficas), integrando información visual y geoespacial para el análisis de un territorio, unas instalaciones o unos movimientos concretos",
+      "Un sinónimo exacto del HUMINT",
+      "Una disciplina exclusivamente centrada en la interceptación de comunicaciones telefónicas",
+      "Un tipo de software de ofimática empleado por los analistas de inteligencia",
+    ],
+    correcta: 0,
+    explicacion:
+      "El GEOINT (Geospatial Intelligence) es la disciplina de obtención de inteligencia basada en el análisis de imágenes y datos con referencia geográfica (satelitales, aéreas, cartográficas, entre otras), integrando información visual y geoespacial para el análisis de un territorio, unas instalaciones o unos movimientos concretos, relacionada con el IMINT pero de alcance más amplio al incorporar el componente específicamente geográfico del análisis.",
+  },
+  {
+    id: "int-27",
+    enunciado: "¿Qué son los «centros de fusión» de inteligencia (fusion centers)?",
+    opciones: [
+      "Estructuras de coordinación que integran y comparten información e inteligencia procedente de distintos organismos (policiales, de inteligencia, de otras Administraciones), con el fin de obtener una visión conjunta y más completa de una amenaza o fenómeno concreto",
+      "Centros exclusivamente dedicados a la fusión de datos meteorológicos",
+      "Un sinónimo exacto de las Oficinas de Asistencia a las Víctimas",
+      "Un tipo de central nuclear de generación de energía",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los «centros de fusión» de inteligencia (fusion centers) son estructuras de coordinación que integran y comparten información e inteligencia procedente de distintos organismos (policiales, de inteligencia, de otras Administraciones e, incluso, del sector privado en determinados casos), con el fin de obtener una visión conjunta, más completa y actualizada de una amenaza o fenómeno concreto (como el terrorismo o el crimen organizado), superando los problemas derivados de la fragmentación de la información entre organismos que no se comunican entre sí.",
+  },
+  {
+    id: "int-28",
+    enunciado: "¿Qué finalidad tienen los sistemas de calificación de fuentes e informaciones empleados en el análisis de inteligencia (como la escala de fiabilidad de la fuente y credibilidad de la información)?",
+    opciones: [
+      "Evaluar de forma sistemática y separada la fiabilidad de la fuente que proporciona una información y la credibilidad o verosimilitud de la propia información en sí misma, para que el analista pueda ponderar adecuadamente su valor dentro del conjunto del análisis",
+      "Determinar exclusivamente el precio que debe pagarse a un informador por su colaboración",
+      "Clasificar el nivel de seguridad físico de las instalaciones de un servicio de inteligencia",
+      "Un trámite meramente administrativo sin ninguna utilidad para el análisis",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los sistemas de calificación de fuentes e informaciones (como el habitual empleo de una escala alfabética para la fiabilidad de la fuente, de A a F, combinada con una escala numérica para la credibilidad de la información, del 1 al 6) tienen por finalidad evaluar de forma sistemática y separada ambos aspectos, para que el analista pueda ponderar adecuadamente el valor de cada dato dentro del conjunto del análisis, evitando tratar por igual informaciones de muy distinta solidez.",
+  },
+  {
+    id: "int-29",
+    enunciado: "¿Qué es el principio de «necesidad de conocer» (need to know) en la gestión de la información clasificada?",
+    opciones: [
+      "El principio según el cual el acceso a una información clasificada debe limitarse a las personas que, además de contar con la habilitación de seguridad correspondiente, necesiten efectivamente conocerla para el desempeño de sus funciones concretas, evitando su difusión más allá de lo estrictamente necesario",
+      "El principio según el cual toda la información clasificada debe ser accesible a cualquier funcionario público, sin ninguna restricción",
+      "Un sinónimo exacto del derecho de acceso a la información pública regulado en la Ley 19/2013",
+      "Un principio que exige la publicación íntegra de toda la información clasificada tras un plazo de cinco años",
+    ],
+    correcta: 0,
+    explicacion:
+      "El principio de «necesidad de conocer» (need to know) exige que el acceso a una información clasificada se limite a las personas que, además de contar con la habilitación de seguridad correspondiente a su nivel de clasificación, necesiten efectivamente conocerla para el desempeño de sus funciones concretas, evitando su difusión más allá de lo estrictamente necesario y reduciendo así el riesgo de filtración o compromiso de la información.",
+  },
+  {
+    id: "int-30",
+    enunciado: "¿Qué diferencia existe entre el espionaje como delito y las actividades legítimas de un servicio de inteligencia de un Estado democrático?",
+    opciones: [
+      "Las actividades legítimas de inteligencia se desarrollan dentro de un marco jurídico que las habilita y las somete a control (parlamentario, judicial), al servicio de los intereses generales de seguridad del propio Estado; el espionaje como delito consiste en la obtención o revelación no autorizada de información reservada en beneficio de una potencia extranjera o en perjuicio de la seguridad nacional propia, al margen de dicho marco de control y legalidad",
+      "Son términos exactamente sinónimos, sin ninguna diferencia jurídica relevante",
+      "El espionaje solo puede cometerse por ciudadanos extranjeros, nunca por nacionales del propio país",
+      "Las actividades de inteligencia de un servicio estatal nunca están sujetas a ningún control externo",
+    ],
+    correcta: 0,
+    explicacion:
+      "Las actividades legítimas de un servicio de inteligencia de un Estado democrático (como el CNI en España) se desarrollan dentro de un marco jurídico que las habilita expresamente y las somete a mecanismos de control parlamentario y judicial, al servicio de los intereses generales de seguridad y defensa del propio Estado; el espionaje como delito, tipificado en el Código Penal, consiste en la obtención o revelación no autorizada de información reservada en beneficio de una potencia extranjera o en grave perjuicio de la seguridad nacional propia, actuando al margen de ese marco legal y de control.",
+  },
 ];

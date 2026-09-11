@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "Un sistema de detección de intrusiones (IDS, Intrusion Detection System) monitoriza el tráfico de una red o de un sistema para detectar patrones de actividad sospechosa o maliciosa, generando alertas cuando los identifica; un sistema de prevención de intrusiones (IPS, Intrusion Prevention System) añade además la capacidad de bloquear automáticamente dicho tráfico antes de que alcance su objetivo, complementando la labor del cortafuegos dentro de la arquitectura de seguridad de una red.",
   },
+  {
+    id: "ri-16",
+    enunciado: "¿Qué es el modelo OSI (Open Systems Interconnection) y en qué se diferencia del modelo TCP/IP?",
+    opciones: [
+      "Un modelo teórico de referencia que describe la comunicación en redes a través de siete capas (física, enlace de datos, red, transporte, sesión, presentación y aplicación), frente al modelo TCP/IP, de carácter más práctico, que agrupa estas funciones en cuatro capas y es el efectivamente implementado en internet",
+      "Son términos exactamente sinónimos, sin ninguna diferencia relevante",
+      "El modelo OSI es el que efectivamente se utiliza en internet, y el TCP/IP es un modelo puramente teórico sin aplicación real",
+      "El modelo OSI solo tiene dos capas, y el TCP/IP siete",
+    ],
+    correcta: 0,
+    explicacion:
+      "El modelo OSI (Open Systems Interconnection) es un modelo teórico de referencia, desarrollado por la ISO, que describe la comunicación en redes a través de siete capas (física, enlace de datos, red, transporte, sesión, presentación y aplicación); el modelo TCP/IP, de carácter más práctico, agrupa estas funciones en un número menor de capas (habitualmente cuatro) y es el modelo efectivamente implementado en el funcionamiento real de internet.",
+  },
+  {
+    id: "ri-17",
+    enunciado: "¿Qué diferencia existe entre las direcciones IPv4 e IPv6?",
+    opciones: [
+      "IPv4 utiliza direcciones de 32 bits, con un número limitado de combinaciones posibles ya prácticamente agotado; IPv6 utiliza direcciones de 128 bits, ofreciendo un número de direcciones disponibles muchísimo mayor, para hacer frente al crecimiento del número de dispositivos conectados a internet",
+      "Son términos exactamente sinónimos, sin ninguna diferencia técnica",
+      "IPv6 es una versión más antigua y ya en desuso frente a IPv4",
+      "IPv4 permite un número mayor de direcciones que IPv6",
+    ],
+    correcta: 0,
+    explicacion:
+      "El protocolo IPv4 utiliza direcciones de 32 bits, lo que limita el número total de direcciones posibles (unos 4.300 millones), cifra que resulta ya insuficiente ante el enorme crecimiento del número de dispositivos conectados a internet; el protocolo IPv6, de implantación progresiva, utiliza direcciones de 128 bits, ofreciendo un número de direcciones disponibles extraordinariamente mayor, además de otras mejoras técnicas respecto de su predecesor.",
+  },
+  {
+    id: "ri-18",
+    enunciado: "¿Qué diferencia existe entre los protocolos de transporte TCP y UDP?",
+    opciones: [
+      "TCP (Transmission Control Protocol) es un protocolo orientado a la conexión, que garantiza la entrega ordenada y fiable de los datos mediante confirmaciones y retransmisiones; UDP (User Datagram Protocol) es un protocolo no orientado a la conexión, más rápido pero sin garantías de entrega ni de orden, adecuado para aplicaciones que priorizan la velocidad (como el streaming o los videojuegos en línea)",
+      "Son términos exactamente sinónimos, sin ninguna diferencia técnica",
+      "UDP siempre garantiza una entrega más fiable que TCP",
+      "TCP solo puede usarse en redes inalámbricas, nunca en redes cableadas",
+    ],
+    correcta: 0,
+    explicacion:
+      "TCP (Transmission Control Protocol) es un protocolo de transporte orientado a la conexión, que garantiza la entrega ordenada y fiable de los datos mediante mecanismos de confirmación y retransmisión de paquetes perdidos; UDP (User Datagram Protocol) es un protocolo no orientado a la conexión, más rápido y con menor sobrecarga, pero sin garantías de entrega ni de orden de los paquetes, resultando adecuado para aplicaciones que priorizan la velocidad sobre la fiabilidad absoluta, como el streaming de vídeo o los videojuegos en línea.",
+  },
+  {
+    id: "ri-19",
+    enunciado: "¿Qué es una dirección MAC (Media Access Control) de un dispositivo de red?",
+    opciones: [
+      "Un identificador físico único, asignado por el fabricante a la tarjeta de red de un dispositivo, que lo distingue de forma unívoca dentro de una red local, a diferencia de la dirección IP, que puede cambiar según la red a la que se conecte",
+      "Un sinónimo exacto de la dirección IP pública del dispositivo",
+      "Una contraseña que el usuario debe introducir para conectarse a una red Wi-Fi",
+      "Un tipo de virus informático que ataca a las tarjetas de red",
+    ],
+    correcta: 0,
+    explicacion:
+      "Una dirección MAC (Media Access Control) es un identificador físico único, asignado por el fabricante a la tarjeta de red de un dispositivo, que lo distingue de forma unívoca dentro de una red local (capa de enlace de datos), a diferencia de la dirección IP, que es un identificador de carácter lógico que puede variar según la red a la que el dispositivo se conecte en cada momento.",
+  },
+  {
+    id: "ri-20",
+    enunciado: "¿Qué función cumple un servidor «proxy» en una red informática?",
+    opciones: [
+      "Actuar como intermediario entre los dispositivos de una red y los servidores de internet a los que acceden, pudiendo emplearse para filtrar contenido, mejorar el rendimiento mediante el almacenamiento en caché, o incrementar la privacidad ocultando la dirección IP real del usuario",
+      "Sustituir por completo al router de la red",
+      "Un sinónimo exacto de un cortafuegos",
+      "Un dispositivo exclusivo para la impresión de documentos en red",
+    ],
+    correcta: 0,
+    explicacion:
+      "Un servidor «proxy» actúa como intermediario entre los dispositivos de una red y los servidores de internet a los que acceden, pudiendo emplearse para diversas finalidades: filtrar determinados contenidos, mejorar el rendimiento mediante el almacenamiento en caché de contenidos frecuentemente solicitados, o incrementar la privacidad del usuario al ocultar su dirección IP real frente al servidor de destino.",
+  },
+  {
+    id: "ri-21",
+    enunciado: "¿En qué consiste un ataque de «hombre en el medio» (man-in-the-middle)?",
+    opciones: [
+      "Un ataque en el que el atacante se sitúa de forma encubierta entre dos partes que se comunican, interceptando, y en ocasiones alterando, la comunicación entre ellas sin que ninguna de las dos lo advierta",
+      "Un ataque que solo puede realizarse físicamente cortando un cable de red",
+      "Un sinónimo exacto de un ataque de denegación de servicio",
+      "Un ataque que únicamente afecta a las comunicaciones por correo postal, no a las redes informáticas",
+    ],
+    correcta: 0,
+    explicacion:
+      "Un ataque de «hombre en el medio» (man-in-the-middle) consiste en que el atacante se sitúa de forma encubierta entre dos partes que se comunican (por ejemplo, un usuario y un servidor web), interceptando, y en ocasiones alterando, la comunicación entre ambas sin que ninguna de las dos lo advierta, lo que puede permitirle capturar credenciales, datos personales u otra información sensible transmitida.",
+  },
+  {
+    id: "ri-22",
+    enunciado: "¿Qué función cumplen los protocolos SSL/TLS en las comunicaciones de red?",
+    opciones: [
+      "Cifrar y autenticar las comunicaciones entre un cliente y un servidor, garantizando la confidencialidad e integridad de los datos transmitidos, siendo la base técnica del protocolo HTTPS",
+      "Aumentar la velocidad de conexión de una red, sin ninguna relación con la seguridad",
+      "Asignar direcciones IP a los dispositivos de una red, igual que el protocolo DHCP",
+      "Traducir nombres de dominio en direcciones IP, igual que el protocolo DNS",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los protocolos SSL (Secure Sockets Layer) y su evolución TLS (Transport Layer Security) cifran y autentican las comunicaciones entre un cliente y un servidor, garantizando la confidencialidad y la integridad de los datos transmitidos frente a posibles interceptaciones, constituyendo la base técnica del protocolo HTTPS ya analizado, y siendo ampliamente utilizados también en otros servicios que requieren comunicaciones seguras.",
+  },
+  {
+    id: "ri-23",
+    enunciado: "¿Para qué se utiliza tradicionalmente el protocolo FTP (File Transfer Protocol)?",
+    opciones: [
+      "Para la transferencia de archivos entre un cliente y un servidor a través de una red, permitiendo subir y descargar ficheros, si bien su versión original carece de cifrado, por lo que se recomiendan variantes seguras como SFTP o FTPS",
+      "Exclusivamente para el envío de correo electrónico",
+      "Para la resolución de nombres de dominio en direcciones IP",
+      "Para la asignación automática de direcciones IP a los dispositivos de una red",
+    ],
+    correcta: 0,
+    explicacion:
+      "El protocolo FTP (File Transfer Protocol) se utiliza tradicionalmente para la transferencia de archivos entre un cliente y un servidor a través de una red, permitiendo subir y descargar ficheros; su versión original transmite los datos, incluidas las credenciales de acceso, sin cifrar, por lo que en contextos que exigen mayor seguridad se recomiendan variantes cifradas como SFTP (sobre SSH) o FTPS (sobre TLS).",
+  },
+  {
+    id: "ri-24",
+    enunciado: "¿Qué protocolos se emplean habitualmente en el envío y la recepción de correo electrónico?",
+    opciones: [
+      "SMTP (Simple Mail Transfer Protocol) para el envío de mensajes, y POP o IMAP para su recepción y consulta desde el servidor por parte del cliente de correo",
+      "Únicamente el protocolo HTTP, sin ningún protocolo específico para el correo electrónico",
+      "Únicamente el protocolo DNS, sin ningún otro protocolo implicado",
+      "El protocolo DHCP, utilizado exclusivamente para el correo electrónico",
+    ],
+    correcta: 0,
+    explicacion:
+      "El envío de mensajes de correo electrónico se realiza habitualmente mediante el protocolo SMTP (Simple Mail Transfer Protocol), mientras que su recepción y consulta desde el servidor por parte del cliente de correo se realiza mediante los protocolos POP (que habitualmente descarga y elimina los mensajes del servidor) o IMAP (que mantiene los mensajes sincronizados en el servidor, permitiendo su consulta desde varios dispositivos).",
+  },
+  {
+    id: "ri-25",
+    enunciado: "¿Qué es la red Tor y qué finalidad persigue?",
+    opciones: [
+      "Una red de anonimización que encamina el tráfico de internet a través de múltiples nodos intermedios cifrados sucesivamente, dificultando el rastreo del origen de las comunicaciones, empleada tanto con fines legítimos de privacidad como, en ocasiones, para actividades ilícitas en la llamada «internet oscura» o «dark web»",
+      "Un sinónimo exacto de una red privada virtual (VPN) convencional",
+      "Un protocolo exclusivo para la transferencia de archivos de gran tamaño",
+      "Un buscador de internet convencional, sin ninguna característica de anonimización",
+    ],
+    correcta: 0,
+    explicacion:
+      "La red Tor (The Onion Router) es una red de anonimización que encamina el tráfico de internet a través de múltiples nodos intermedios, cifrando la información en capas sucesivas (de ahí su nombre, «enrutamiento cebolla»), dificultando el rastreo del origen de las comunicaciones; se emplea tanto con fines legítimos de protección de la privacidad y la libertad de expresión, como, en ocasiones, para el acceso a la llamada «internet oscura» o «dark web», donde pueden desarrollarse también actividades ilícitas objeto de investigación policial.",
+  },
+  {
+    id: "ri-26",
+    enunciado: "¿Qué es el «subneteo» (subnetting) en la configuración de una red?",
+    opciones: [
+      "La técnica de dividir una red IP en subredes más pequeñas, mediante el uso de una máscara de subred, con el fin de organizar mejor los dispositivos, mejorar la seguridad y optimizar el uso del espacio de direcciones disponible",
+      "Un sinónimo exacto de la asignación dinámica de direcciones IP mediante DHCP",
+      "El proceso de cifrado de las comunicaciones de una red Wi-Fi",
+      "Un tipo de ataque informático que satura una red con tráfico malicioso",
+    ],
+    correcta: 0,
+    explicacion:
+      "El «subneteo» (subnetting) es la técnica de dividir una red IP en subredes más pequeñas, mediante el uso de una máscara de subred que determina qué parte de la dirección IP identifica a la red y cuál al dispositivo concreto dentro de ella, con el fin de organizar mejor los dispositivos conectados, mejorar la seguridad al segmentar el tráfico, y optimizar el uso del espacio de direcciones disponible.",
+  },
+  {
+    id: "ri-27",
+    enunciado: "¿Qué es la «puerta de enlace» (gateway) de una red local?",
+    opciones: [
+      "El dispositivo, habitualmente el router, que conecta una red local con otras redes externas (como internet), encaminando el tráfico que debe salir o entrar de la red local hacia su destino correspondiente",
+      "Un sinónimo exacto de un servidor DNS",
+      "Un dispositivo exclusivamente destinado a la impresión de documentos en red",
+      "Un programa antivirus instalado en cada equipo de la red",
+    ],
+    correcta: 0,
+    explicacion:
+      "La «puerta de enlace» (gateway) de una red local es el dispositivo, habitualmente el propio router, que conecta dicha red local con otras redes externas (como internet), encaminando el tráfico que debe salir de la red local hacia su destino correspondiente, o el que entra desde el exterior hacia el dispositivo de la red local al que va dirigido.",
+  },
+  {
+    id: "ri-28",
+    enunciado: "¿Qué representan los estándares de la familia IEEE 802.11 en las redes inalámbricas?",
+    opciones: [
+      "Los estándares técnicos que regulan el funcionamiento de las redes Wi-Fi, definiendo aspectos como la frecuencia de transmisión, la velocidad máxima teórica y el alcance de cada generación tecnológica (por ejemplo, 802.11n, 802.11ac o 802.11ax, esta última conocida comercialmente como Wi-Fi 6)",
+      "Un sinónimo exacto de los protocolos de seguridad WPA2 y WPA3",
+      "Un estándar exclusivo para redes cableadas de fibra óptica",
+      "Un conjunto de normas jurídicas sobre protección de datos en redes inalámbricas",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los estándares de la familia IEEE 802.11 son los estándares técnicos que regulan el funcionamiento de las redes inalámbricas Wi-Fi, definiendo aspectos como la banda de frecuencia utilizada, la velocidad máxima teórica y el alcance de cada generación tecnológica (por ejemplo, 802.11n, 802.11ac o el más reciente 802.11ax, conocido comercialmente como Wi-Fi 6), siendo un aspecto distinto, aunque relacionado, de los protocolos de seguridad y cifrado empleados en dichas redes, como WPA2 o WPA3.",
+  },
+  {
+    id: "ri-29",
+    enunciado: "¿Qué mejora de seguridad aporta el protocolo WPA3 frente a su predecesor WPA2 en las redes Wi-Fi?",
+    opciones: [
+      "Incorpora mecanismos de cifrado y de intercambio de claves más robustos, dificultando determinados ataques (como los de fuerza bruta o de diccionario contra la contraseña de la red) que resultaban posibles, en determinadas condiciones, contra WPA2",
+      "WPA3 elimina por completo la necesidad de utilizar cualquier contraseña para conectarse a una red Wi-Fi",
+      "WPA3 es un protocolo exclusivamente aplicable a las redes cableadas, no a las inalámbricas",
+      "WPA3 es una versión anterior y menos segura que WPA2",
+    ],
+    correcta: 0,
+    explicacion:
+      "El protocolo de seguridad WPA3, sucesor de WPA2 en las redes Wi-Fi, incorpora mecanismos de cifrado y de intercambio de claves más robustos (como el protocolo SAE, Simultaneous Authentication of Equals), dificultando determinados ataques, como los de fuerza bruta o de diccionario contra la contraseña de la red, que resultaban posibles, bajo ciertas condiciones, contra su predecesor WPA2.",
+  },
+  {
+    id: "ri-30",
+    enunciado: "¿Qué diferencia existe entre el ancho de banda contratado y el rendimiento o «throughput» real de una conexión de red?",
+    opciones: [
+      "El ancho de banda contratado es la capacidad máxima teórica de transmisión de datos que ofrece el proveedor de servicios; el throughput real es la velocidad efectivamente alcanzada en la práctica, que puede ser inferior a la teórica por factores como la congestión de la red, la distancia, las interferencias o las limitaciones del propio dispositivo",
+      "Son términos exactamente sinónimos, sin ninguna diferencia práctica",
+      "El throughput real siempre es superior al ancho de banda contratado",
+      "El ancho de banda contratado se mide exclusivamente en unidades de almacenamiento, como los gigabytes",
+    ],
+    correcta: 0,
+    explicacion:
+      "El ancho de banda contratado es la capacidad máxima teórica de transmisión de datos que ofrece el proveedor de servicios de internet; el rendimiento o «throughput» real es la velocidad efectivamente alcanzada en la práctica al transmitir datos, que puede resultar inferior a la teórica por factores como la congestión de la red, la distancia a los equipos de acceso, las interferencias en el caso de redes inalámbricas, o las limitaciones del propio dispositivo utilizado.",
+  },
 ];

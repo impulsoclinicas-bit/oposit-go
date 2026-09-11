@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El insider o amenaza interna es una persona con acceso legítimo a los sistemas o a la información de una organización —un empleado, un colaborador o un proveedor— que, de forma deliberada (por motivos económicos, de venganza o ideológicos) o por simple negligencia, compromete la seguridad de dicha información, constituyendo un riesgo distinto de las amenazas externas y frecuentemente más difícil de detectar.",
   },
+  {
+    id: "cda-16",
+    enunciado: "¿Qué es el «adware» como tipo de software potencialmente no deseado?",
+    opciones: [
+      "Un software que muestra publicidad de forma automática y no solicitada al usuario, en ocasiones instalado sin su pleno consentimiento informado, pudiendo además recopilar datos sobre sus hábitos de navegación",
+      "Un sinónimo exacto del ransomware",
+      "Un programa antivirus gratuito sin ninguna función publicitaria",
+      "Un tipo de hardware específico para la reproducción de anuncios",
+    ],
+    correcta: 0,
+    explicacion:
+      "El «adware» es un tipo de software que muestra publicidad de forma automática y no solicitada al usuario, en ocasiones instalado junto con otro programa sin que el usuario preste un consentimiento plenamente informado, pudiendo además, en sus variantes más intrusivas, recopilar datos sobre los hábitos de navegación del usuario con fines publicitarios.",
+  },
+  {
+    id: "cda-17",
+    enunciado: "¿Qué es un «keylogger» en ciberseguridad?",
+    opciones: [
+      "Un tipo de software o dispositivo malicioso que registra de forma encubierta las pulsaciones del teclado de un usuario, con el fin de capturar información sensible como contraseñas o datos personales",
+      "Un programa que mejora la velocidad de escritura del usuario",
+      "Un sinónimo exacto de un cortafuegos",
+      "Un dispositivo exclusivamente utilizado para la impresión de documentos",
+    ],
+    correcta: 0,
+    explicacion:
+      "Un «keylogger» es un tipo de software o, en ocasiones, un pequeño dispositivo físico, que registra de forma encubierta las pulsaciones del teclado de un usuario, con el fin de capturar información sensible como contraseñas, números de tarjetas de crédito u otros datos personales, sin que el usuario afectado sea consciente de ello.",
+  },
+  {
+    id: "cda-18",
+    enunciado: "¿Qué caracteriza a un «rootkit» como tipo de malware?",
+    opciones: [
+      "Un conjunto de herramientas diseñadas para ocultar la presencia de un atacante o de otro programa malicioso en un sistema, dificultando su detección por parte del usuario o de las herramientas de seguridad, y facilitando el mantenimiento de un acceso persistente y encubierto",
+      "Un programa cuya única función es acelerar el arranque del sistema operativo",
+      "Un sinónimo exacto de un antivirus de última generación",
+      "Un tipo de red inalámbrica especialmente segura",
+    ],
+    correcta: 0,
+    explicacion:
+      "Un «rootkit» es un conjunto de herramientas de software diseñadas para ocultar la presencia de un atacante o de otro programa malicioso en un sistema comprometido, dificultando su detección por parte del usuario o de las herramientas de seguridad habituales, y facilitando así el mantenimiento de un acceso persistente y encubierto al sistema afectado durante un período prolongado.",
+  },
+  {
+    id: "cda-19",
+    enunciado: "¿En qué consiste el «criptojacking»?",
+    opciones: [
+      "El uso no autorizado de los recursos de procesamiento de un dispositivo ajeno (ordenador, servidor, teléfono móvil), sin conocimiento de su propietario, para minar criptomonedas en beneficio del atacante",
+      "Un delito consistente en robar físicamente monederos de criptomonedas almacenados en papel",
+      "Un sinónimo exacto del ransomware que exige el rescate en criptomonedas",
+      "Una técnica legítima y autorizada de inversión en criptoactivos",
+    ],
+    correcta: 0,
+    explicacion:
+      "El «criptojacking» consiste en el uso no autorizado de los recursos de procesamiento de un dispositivo ajeno (ordenador, servidor, teléfono móvil), sin conocimiento ni consentimiento de su propietario, para minar criptomonedas en beneficio del atacante, provocando habitualmente una ralentización notable del dispositivo afectado y un mayor consumo energético, sin que necesariamente se sustraigan datos ni se exija ningún rescate, a diferencia del ransomware.",
+  },
+  {
+    id: "cda-20",
+    enunciado: "¿En qué consisten los ataques de «fuerza bruta» y de «diccionario» contra contraseñas?",
+    opciones: [
+      "El ataque de fuerza bruta prueba de forma sistemática todas las combinaciones posibles de caracteres hasta dar con la contraseña correcta; el ataque de diccionario prueba, en lugar de todas las combinaciones posibles, una lista predefinida de palabras y contraseñas de uso común, resultando generalmente más rápido cuando la contraseña es débil o previsible",
+      "Son términos exactamente sinónimos, sin ninguna diferencia técnica",
+      "Ambos ataques solo pueden ejecutarse con acceso físico directo al dispositivo",
+      "Ninguno de los dos ataques tiene relación con la seguridad de las contraseñas",
+    ],
+    correcta: 0,
+    explicacion:
+      "El ataque de «fuerza bruta» prueba de forma sistemática todas las combinaciones posibles de caracteres hasta dar con la contraseña correcta, siendo su eficacia (y el tiempo requerido) muy dependiente de la longitud y complejidad de la contraseña; el ataque de «diccionario» prueba, en lugar de todas las combinaciones posibles, una lista predefinida de palabras, frases y contraseñas de uso habitual (incluidas filtraciones previas de otras contraseñas), resultando generalmente mucho más rápido cuando la contraseña objetivo es débil o previsible.",
+  },
+  {
+    id: "cda-21",
+    enunciado: "¿Qué es el «defacement» o desfiguración de un sitio web?",
+    opciones: [
+      "La modificación no autorizada del contenido visible de una página web por parte de un atacante, sustituyéndolo habitualmente por un mensaje propio, reivindicativo o burlesco, como forma de demostrar públicamente que ha logrado comprometer el sitio",
+      "Un tipo de ataque de denegación de servicio exclusivamente",
+      "Un procedimiento legítimo de actualización del diseño de una página web por parte de su propietario",
+      "Un sinónimo exacto del phishing",
+    ],
+    correcta: 0,
+    explicacion:
+      "El «defacement» o desfiguración de un sitio web consiste en la modificación no autorizada del contenido visible de una página web por parte de un atacante, sustituyéndolo habitualmente por un mensaje propio, de carácter reivindicativo, político o simplemente burlesco, siendo una técnica frecuentemente empleada por hacktivistas como forma de demostrar públicamente que han logrado comprometer el sitio, más que con una finalidad de lucro económico directo.",
+  },
+  {
+    id: "cda-22",
+    enunciado: "¿Qué es el «malware sin archivo» (fileless malware)?",
+    opciones: [
+      "Un tipo de software malicioso que opera principalmente en la memoria RAM del sistema, aprovechando herramientas y procesos legítimos ya presentes en él, en lugar de instalar un archivo ejecutable independiente en el disco, lo que dificulta su detección por parte de los antivirus tradicionales basados en el análisis de archivos",
+      "Un tipo de malware que no puede infectar ningún dispositivo, por carecer de un archivo asociado",
+      "Un sinónimo exacto del adware",
+      "Un programa legítimo de gestión de archivos incluido en los sistemas operativos",
+    ],
+    correcta: 0,
+    explicacion:
+      "El «malware sin archivo» (fileless malware) es un tipo de software malicioso que opera principalmente en la memoria RAM del sistema, aprovechando herramientas y procesos legítimos ya presentes en él (como intérpretes de comandos del propio sistema operativo), en lugar de instalar un archivo ejecutable independiente en el disco, lo que dificulta notablemente su detección por parte de los antivirus tradicionales basados en el análisis de archivos almacenados.",
+  },
+  {
+    id: "cda-23",
+    enunciado: "¿Qué es un «kit de explotación» (exploit kit) en el ámbito de la ciberdelincuencia?",
+    opciones: [
+      "Un conjunto de herramientas preconfiguradas que automatizan la identificación de vulnerabilidades en el sistema de la víctima y el despliegue del código malicioso correspondiente para explotarlas, facilitando así la comisión de ataques incluso a personas con conocimientos técnicos limitados",
+      "Un conjunto de herramientas exclusivamente empleadas por investigadores de seguridad para proteger sistemas, nunca por atacantes",
+      "Un sinónimo exacto de un programa antivirus",
+      "Un dispositivo físico necesario para realizar cualquier ataque informático",
+    ],
+    correcta: 0,
+    explicacion:
+      "Un «kit de explotación» (exploit kit) es un conjunto de herramientas preconfiguradas, disponibles en ocasiones en foros clandestinos o mercados de la «dark web», que automatizan la identificación de vulnerabilidades en el sistema de una potencial víctima y el despliegue del código malicioso correspondiente para explotarlas, facilitando así la comisión de ataques incluso a personas con conocimientos técnicos limitados, fenómeno relacionado con el modelo de «cibercrimen como servicio».",
+  },
+  {
+    id: "cda-24",
+    enunciado: "¿Qué es el «doxing»?",
+    opciones: [
+      "La práctica de recopilar y difundir públicamente, sin consentimiento y con frecuencia con intención maliciosa, información privada o identificativa de una persona (domicilio, teléfono, lugar de trabajo, entre otros datos), exponiéndola a un riesgo de acoso o de daño",
+      "Un sinónimo exacto del phishing dirigido a empresas",
+      "Un procedimiento legítimo de verificación de identidad empleado por las entidades bancarias",
+      "Un tipo de ataque que solo afecta a servidores corporativos, nunca a particulares",
+    ],
+    correcta: 0,
+    explicacion:
+      "El «doxing» es la práctica de recopilar y difundir públicamente, sin el consentimiento de la persona afectada y con frecuencia con una intención maliciosa, información privada o identificativa suya (domicilio, número de teléfono, lugar de trabajo, entre otros datos), exponiéndola a un riesgo real de acoso, intimidación o incluso de agresión física, pudiendo constituir, según las circunstancias, un ilícito penal o administrativo en materia de protección de datos.",
+  },
+  {
+    id: "cda-25",
+    enunciado: "¿Qué es la suplantación de identidad digital, más allá de la técnica concreta del phishing?",
+    opciones: [
+      "El conjunto de conductas por las que una persona se hace pasar por otra en el entorno digital (creando perfiles falsos en redes sociales, accediendo a sus cuentas, o utilizando indebidamente sus datos), con finalidades que pueden ir desde el engaño económico hasta el acoso o el daño reputacional",
+      "Un sinónimo exacto y exclusivo del delito de estafa informática",
+      "Una práctica siempre legítima cuando se realiza con fines de entretenimiento",
+      "Un fenómeno que solo puede afectar a personas famosas o públicas",
+    ],
+    correcta: 0,
+    explicacion:
+      "La suplantación de identidad digital es el conjunto de conductas por las que una persona se hace pasar por otra en el entorno digital (creando perfiles falsos en redes sociales con su nombre e imagen, accediendo sin autorización a sus cuentas, o utilizando indebidamente sus datos personales), con finalidades que pueden ir desde el engaño económico (como en el phishing) hasta el acoso, la difamación o el daño reputacional de la persona suplantada.",
+  },
+  {
+    id: "cda-26",
+    enunciado: "¿Qué caracteriza a un «script kiddie» como tipo de agente de amenaza en ciberseguridad?",
+    opciones: [
+      "Una persona con conocimientos técnicos limitados que utiliza herramientas y programas de ataque ya desarrollados por otros, sin comprender necesariamente su funcionamiento interno, motivada frecuentemente por la simple curiosidad, el desafío personal o el reconocimiento social, más que por objetivos económicos o políticos sofisticados",
+      "Un experto en ciberseguridad de máximo nivel técnico, empleado por un servicio de inteligencia estatal",
+      "Un sinónimo exacto de una amenaza persistente avanzada (APT)",
+      "Un tipo de software antivirus de código abierto",
+    ],
+    correcta: 0,
+    explicacion:
+      "Un «script kiddie» es un agente de amenaza con conocimientos técnicos limitados que utiliza herramientas y programas de ataque ya desarrollados por otros (disponibles en ocasiones públicamente), sin comprender necesariamente su funcionamiento interno, motivado frecuentemente por la simple curiosidad, el desafío personal o la búsqueda de reconocimiento social, a diferencia de actores más sofisticados como las APT o los grupos de delincuencia organizada especializados.",
+  },
+  {
+    id: "cda-27",
+    enunciado: "¿Qué caracteriza a un agente de amenaza «patrocinado por un Estado» (state-sponsored actor) en el ámbito de la ciberseguridad?",
+    opciones: [
+      "Un grupo o individuo que actúa con el respaldo, la financiación o la dirección, directa o indirecta, de un Estado, con objetivos de espionaje, sabotaje o influencia estratégica, disponiendo habitualmente de recursos técnicos y financieros muy superiores a los de otros agentes de amenaza",
+      "Un empleado público que comete un delito informático por iniciativa exclusivamente personal, sin ninguna relación con su Estado",
+      "Un sinónimo exacto de un hacktivista",
+      "Un tipo de malware desarrollado exclusivamente con fines educativos",
+    ],
+    correcta: 0,
+    explicacion:
+      "Un agente de amenaza «patrocinado por un Estado» (state-sponsored actor) es un grupo o individuo que actúa con el respaldo, la financiación o la dirección, directa o indirecta, de un Estado, con objetivos de espionaje, sabotaje de infraestructuras o influencia estratégica sobre otros países, disponiendo habitualmente de recursos técnicos y financieros muy superiores a los de otros agentes de amenaza, lo que les permite desarrollar ataques especialmente sofisticados y persistentes, como las denominadas APT.",
+  },
+  {
+    id: "cda-28",
+    enunciado: "¿Qué se entiende por «cibercrimen como servicio» (Cybercrime-as-a-Service)?",
+    opciones: [
+      "Un modelo de negocio delictivo en el que determinados actores ofrecen, a cambio de un pago, herramientas, infraestructuras o servicios (malware, botnets, kits de explotación, campañas de phishing) a otros delincuentes, reduciendo la barrera técnica necesaria para cometer ciberdelitos",
+      "Un servicio legal de asesoramiento en ciberseguridad prestado por empresas especializadas",
+      "Un sinónimo exacto del hacking ético o autorizado",
+      "Un programa gubernamental de formación en ciberseguridad para la ciudadanía",
+    ],
+    correcta: 0,
+    explicacion:
+      "El «cibercrimen como servicio» (Cybercrime-as-a-Service) es un modelo de negocio delictivo, propio del ecosistema del cibercrimen organizado, en el que determinados actores ofrecen, a cambio de un pago, herramientas, infraestructuras o servicios ya preparados (malware a medida, alquiler de botnets, kits de explotación, campañas de phishing completas) a otros delincuentes, reduciendo notablemente la barrera técnica necesaria para cometer ciberdelitos sofisticados.",
+  },
+  {
+    id: "cda-29",
+    enunciado: "¿En qué consiste un ataque de «abrevadero» o «watering hole»?",
+    opciones: [
+      "Un ataque en el que el atacante compromete previamente un sitio web legítimo que sabe frecuentado por las víctimas que pretende alcanzar, infectándolo con malware, de modo que las propias víctimas se infecten al visitar dicho sitio de su confianza en el curso de su actividad habitual",
+      "Un ataque exclusivamente dirigido contra instalaciones de suministro de agua potable",
+      "Un sinónimo exacto de un ataque de denegación de servicio distribuido",
+      "Una técnica legítima de marketing digital sin ninguna finalidad maliciosa",
+    ],
+    correcta: 0,
+    explicacion:
+      "Un ataque de «abrevadero» o «watering hole» consiste en que el atacante compromete previamente un sitio web legítimo que sabe frecuentado habitualmente por las víctimas que pretende alcanzar (por analogía con un depredador que espera a sus presas junto a un abrevadero), infectándolo con malware, de modo que las propias víctimas resulten infectadas simplemente al visitar dicho sitio de su confianza en el curso de su actividad habitual, sin necesidad de dirigirse a ellas de forma individualizada.",
+  },
+  {
+    id: "cda-30",
+    enunciado: "¿En qué consiste la estrategia de «seguridad por capas» o «defensa en profundidad» (defense in depth) frente a los agentes de amenaza?",
+    opciones: [
+      "Una estrategia que combina múltiples medidas de seguridad complementarias y superpuestas (cortafuegos, antivirus, cifrado, autenticación, formación del personal, entre otras), de modo que si un atacante logra superar una de ellas, existan otras capas adicionales que sigan ofreciendo protección",
+      "Una estrategia que confía la seguridad exclusivamente en una única medida, considerada infalible",
+      "Un sinónimo exacto del hacking ético",
+      "Una estrategia exclusivamente aplicable a la seguridad física de un edificio, sin relación con la ciberseguridad",
+    ],
+    correcta: 0,
+    explicacion:
+      "La estrategia de «seguridad por capas» o «defensa en profundidad» (defense in depth) combina múltiples medidas de seguridad complementarias y superpuestas (cortafuegos, antivirus, cifrado, autenticación robusta, segmentación de redes, formación y concienciación del personal, entre otras), partiendo de la premisa de que ninguna medida individual es infalible, de modo que si un atacante logra superar una de las capas de protección, existan otras capas adicionales que sigan ofreciendo resistencia y permitan detectar y contener el ataque.",
+  },
 ];
