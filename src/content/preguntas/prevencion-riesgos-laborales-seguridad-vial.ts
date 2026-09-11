@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "Los accidentes que implican el transporte de mercancías peligrosas exigen protocolos de actuación específicos, que establecen pautas concretas sobre el acordonamiento del área, la distancia de seguridad que debe mantenerse y la coordinación con los servicios especializados (bomberos, protección civil), dado el riesgo adicional que estas sustancias —inflamables, tóxicas, corrosivas— suponen para la seguridad y la salud de quienes intervienen en el lugar del accidente.",
   },
+  {
+    id: "prlsv-16",
+    enunciado: "¿Por qué se recomienda el uso de guantes de protección adecuados al manipular restos de un accidente de tráfico?",
+    opciones: [
+      "Porque protegen frente a cortes con cristales rotos o metal deformado, y frente al contacto directo con fluidos biológicos o sustancias potencialmente peligrosas presentes en el lugar del siniestro",
+      "Porque mejoran exclusivamente la estética de la actuación policial ante los medios de comunicación",
+      "Porque son obligatorios únicamente en los meses de invierno",
+      "Porque sustituyen a cualquier otra medida de protección individual, haciéndolas innecesarias",
+    ],
+    correcta: 0,
+    explicacion:
+      "El uso de guantes de protección adecuados al manipular restos de un accidente de tráfico (cristales rotos, chapa deformada, u otros elementos) protege frente a cortes y heridas, y frente al contacto directo con fluidos biológicos o sustancias potencialmente peligrosas que puedan estar presentes en el lugar del siniestro, reduciendo el riesgo de lesión o de contagio para el agente interviniente.",
+  },
+  {
+    id: "prlsv-17",
+    enunciado: "¿Qué riesgo específico plantea el derrame de combustible u otros líquidos en el lugar de un accidente de tráfico?",
+    opciones: [
+      "Riesgo de incendio o explosión, además de un mayor riesgo de resbalones y caídas en la zona afectada, lo que exige extremar la precaución, evitar fuentes de ignición próximas y, en su caso, delimitar y señalizar adecuadamente la zona",
+      "Ningún riesgo relevante, los líquidos derramados se evaporan de forma inmediata y segura",
+      "Un riesgo que solo afecta a los ocupantes del vehículo, nunca a los agentes intervinientes",
+      "Un riesgo que únicamente debe valorarse en accidentes ocurridos en zonas urbanas",
+    ],
+    correcta: 0,
+    explicacion:
+      "El derrame de combustible u otros líquidos en el lugar de un accidente de tráfico plantea un riesgo de incendio o explosión, además de incrementar el riesgo de resbalones y caídas en la zona afectada, lo que exige extremar la precaución, evitar fuentes de ignición próximas (como fumar o generar chispas) y, en su caso, delimitar y señalizar adecuadamente la zona hasta la intervención de los servicios especializados.",
+  },
+  {
+    id: "prlsv-18",
+    enunciado: "¿Qué recomienda la ergonomía preventiva respecto de la postura del agente durante un control de tráfico prolongado de pie?",
+    opciones: [
+      "Variar periódicamente la postura y el apoyo del peso corporal, evitando permanecer largos períodos completamente estático, para reducir la fatiga muscular y las molestias posturales derivadas de la bipedestación prolongada",
+      "Permanecer siempre completamente inmóvil, sin variar en ningún momento la postura",
+      "La postura corporal del agente carece de cualquier relevancia preventiva durante un control de tráfico",
+      "Sentarse en el suelo cada pocos minutos durante el control",
+    ],
+    correcta: 0,
+    explicacion:
+      "La ergonomía preventiva recomienda variar periódicamente la postura y el apoyo del peso corporal durante un control de tráfico prolongado de pie, evitando permanecer largos períodos completamente estático en la misma posición, con el fin de reducir la fatiga muscular y las molestias posturales asociadas a la bipedestación prolongada, propias de este tipo de actuaciones.",
+  },
+  {
+    id: "prlsv-19",
+    enunciado: "¿Qué riesgos para la salud plantean las actuaciones prolongadas a la intemperie en condiciones climáticas extremas?",
+    opciones: [
+      "Riesgo de golpe de calor y deshidratación en condiciones de calor extremo, y riesgo de hipotermia en condiciones de frío intenso, exigiendo ambos casos medidas preventivas específicas (hidratación, vestimenta adecuada, rotación de agentes, entre otras)",
+      "Ningún riesgo relevante para la salud, al tratarse de una actuación profesional habitual",
+      "Solo existe riesgo en condiciones de calor, nunca en condiciones de frío",
+      "Estos riesgos solo afectan a los agentes de mayor edad, no al resto de la plantilla",
+    ],
+    correcta: 0,
+    explicacion:
+      "Las actuaciones prolongadas a la intemperie en condiciones climáticas extremas plantean riesgo de golpe de calor y deshidratación cuando las temperaturas son muy elevadas, y riesgo de hipotermia cuando el frío es intenso, exigiendo en ambos casos medidas preventivas específicas, como una hidratación adecuada, una vestimenta apropiada a las condiciones climáticas, y la rotación de los agentes para limitar el tiempo de exposición individual.",
+  },
+  {
+    id: "prlsv-20",
+    enunciado: "¿Qué criterio general orienta la distancia a la que deben colocarse los conos o balizas de preseñalización antes de un punto de control o de un accidente en carretera?",
+    opciones: [
+      "Una distancia proporcional a la velocidad habitual de la vía, de modo que los conductores dispongan de tiempo suficiente para percibir la señalización, reducir la velocidad y reaccionar de forma segura antes de llegar al punto señalizado",
+      "Una distancia fija de un metro, idéntica en cualquier tipo de vía",
+      "La distancia de preseñalización carece de cualquier relevancia para la seguridad de la actuación",
+      "Debe colocarse siempre justo en el mismo punto donde se encuentra el agente, sin ninguna distancia previa",
+    ],
+    correcta: 0,
+    explicacion:
+      "El criterio general para la distancia de preseñalización con conos o balizas es que resulte proporcional a la velocidad habitual de la vía, de modo que los conductores que se aproximan dispongan de tiempo suficiente para percibir la señalización, reducir la velocidad progresivamente y reaccionar de forma segura antes de llegar al punto señalizado, siendo dicha distancia mayor cuanto mayor sea la velocidad de circulación habitual.",
+  },
+  {
+    id: "prlsv-21",
+    enunciado: "¿Por qué se recomienda comunicar por radio la posición y el inicio de una actuación en la vía pública antes de comenzarla?",
+    opciones: [
+      "Para que la sala de mando y otros compañeros conozcan la ubicación exacta del agente y puedan prestarle apoyo con la mayor rapidez posible en caso de incidencia, y para dejar constancia del inicio del servicio a efectos de seguimiento y coordinación",
+      "Únicamente por motivos de carácter administrativo, sin ninguna relación con la seguridad del agente",
+      "Porque la normativa lo exige solo en horario nocturno",
+      "Porque de ese modo se evita por completo cualquier riesgo durante la actuación",
+    ],
+    correcta: 0,
+    explicacion:
+      "Comunicar por radio la posición y el inicio de una actuación en la vía pública permite que la sala de mando y otros compañeros conozcan la ubicación exacta del agente, pudiendo prestarle apoyo con la mayor rapidez posible en caso de incidencia o de no recibir noticias en un tiempo razonable, además de dejar constancia del inicio del servicio a efectos de seguimiento y coordinación operativa.",
+  },
+  {
+    id: "prlsv-22",
+    enunciado: "¿Qué riesgo psicosocial puede derivarse de la exposición reiterada de un agente a accidentes de tráfico graves o con víctimas mortales?",
+    opciones: [
+      "El desarrollo de estrés postraumático u otras alteraciones psicológicas asociadas al impacto emocional acumulado de estas experiencias, lo que hace recomendable disponer de apoyo psicológico profesional y de protocolos de intervención tras incidentes especialmente traumáticos",
+      "Ningún riesgo relevante, dado que se trata de una función profesional habitual para la que no se requiere ningún tipo de apoyo adicional",
+      "Un riesgo que únicamente puede prevenirse mediante el cambio permanente de destino del agente",
+      "Un riesgo que solo afecta a los agentes recién incorporados al servicio, nunca a los más veteranos",
+    ],
+    correcta: 0,
+    explicacion:
+      "La exposición reiterada de un agente a accidentes de tráfico graves o con víctimas mortales puede favorecer el desarrollo de estrés postraumático u otras alteraciones psicológicas asociadas al impacto emocional acumulado de estas experiencias, lo que hace recomendable, dentro de la prevención de riesgos laborales, disponer de apoyo psicológico profesional accesible y de protocolos específicos de intervención tras incidentes especialmente traumáticos.",
+  },
+  {
+    id: "prlsv-23",
+    enunciado: "¿Qué utilidad tiene la formación básica en extinción de incendios para un agente que puede intervenir en un accidente de tráfico con inicio de fuego?",
+    opciones: [
+      "Permite realizar una primera intervención segura con los medios disponibles (como un extintor portátil) mientras llegan los servicios de bomberos, sin asumir riesgos que excedan de su formación y capacidad de actuación",
+      "Sustituye por completo a la intervención especializada de los servicios de bomberos en cualquier circunstancia",
+      "No tiene ninguna utilidad práctica para un agente policial",
+      "Solo resulta útil para incendios forestales, nunca para incendios de vehículos",
+    ],
+    correcta: 0,
+    explicacion:
+      "La formación básica en extinción de incendios permite a un agente realizar, si las circunstancias lo permiten con seguridad, una primera intervención con los medios disponibles (como un extintor portátil del propio vehículo policial) mientras llegan los servicios de bomberos especializados, debiendo en todo caso valorar los riesgos y no asumir actuaciones que excedan de su formación y de su capacidad real de respuesta segura.",
+  },
+  {
+    id: "prlsv-24",
+    enunciado: "¿Qué recomienda la buena praxis sobre el uso de linternas o luces de señalización manual para dirigir el tráfico durante la noche?",
+    opciones: [
+      "Utilizar dispositivos homologados, bien visibles y con movimientos claros y anticipados, para que los conductores puedan interpretar sin ambigüedad las indicaciones del agente con la antelación suficiente para reaccionar con seguridad",
+      "Evitar cualquier tipo de señalización luminosa durante la noche, confiando únicamente en la voz",
+      "Realizar movimientos rápidos y erráticos para llamar más la atención de los conductores",
+      "El uso de estos dispositivos carece de cualquier recomendación específica en materia de prevención",
+    ],
+    correcta: 0,
+    explicacion:
+      "La buena praxis recomienda utilizar dispositivos de señalización luminosa homologados, bien visibles, realizando movimientos claros y anticipados, para que los conductores puedan interpretar sin ambigüedad las indicaciones del agente con la antelación suficiente para reaccionar con seguridad, extremando estas precauciones durante la noche o en condiciones de escasa visibilidad, en que el riesgo de no ser percibido a tiempo aumenta considerablemente.",
+  },
+  {
+    id: "prlsv-25",
+    enunciado: "¿Qué precaución debe adoptarse ante un vehículo accidentado cuyos sistemas de seguridad (airbags) no se hayan desplegado?",
+    opciones: [
+      "Considerar que el sistema puede activarse de forma inesperada durante las labores de rescate o excarcelación, por lo que deben seguirse los protocolos específicos de seguridad al respecto y, en su caso, coordinarse con los servicios especializados en este tipo de intervenciones",
+      "Ninguna precaución especial, los airbags no desplegados no suponen ningún riesgo adicional",
+      "Desactivar personalmente el sistema eléctrico del vehículo sin ninguna formación específica al respecto",
+      "Golpear directamente la zona del airbag para forzar su activación inmediata y segura",
+    ],
+    correcta: 0,
+    explicacion:
+      "Ante un vehículo accidentado cuyos sistemas de seguridad (airbags) no se hayan desplegado, debe tenerse en cuenta que el sistema puede activarse de forma inesperada durante las labores de rescate o excarcelación, lo que exige seguir los protocolos específicos de seguridad previstos para estas situaciones y, en las labores más técnicas, coordinarse con los servicios especializados (bomberos) formados específicamente en este tipo de intervenciones.",
+  },
+  {
+    id: "prlsv-26",
+    enunciado: "¿Qué finalidad preventiva tiene la rotación de agentes en controles de tráfico de larga duración?",
+    opciones: [
+      "Reducir la fatiga física y mental acumulada, así como el tiempo total de exposición individual de cada agente al riesgo derivado de la proximidad al tráfico rodado, manteniendo así un nivel de atención y de seguridad más adecuado durante todo el servicio",
+      "Cumplir exclusivamente con criterios de reparto equitativo del trabajo, sin ninguna finalidad preventiva",
+      "Aumentar deliberadamente el riesgo para hacer la actuación más eficaz",
+      "La rotación de agentes no tiene ninguna relación con la prevención de riesgos laborales",
+    ],
+    correcta: 0,
+    explicacion:
+      "La rotación de agentes en controles de tráfico de larga duración tiene como finalidad preventiva reducir la fatiga física y mental acumulada, así como el tiempo total de exposición individual de cada agente al riesgo derivado de la proximidad al tráfico rodado, contribuyendo a mantener un nivel de atención y de seguridad más adecuado a lo largo de todo el servicio.",
+  },
+  {
+    id: "prlsv-27",
+    enunciado: "¿Qué riesgos específicos deben valorarse en la evaluación preventiva de los controles de alcoholemia o de detección de drogas en carretera?",
+    opciones: [
+      "Entre otros, el riesgo de atropello por parte de terceros vehículos, el riesgo derivado de la posible reacción violenta o de fuga de un conductor identificado, y el riesgo de exposición biológica en la manipulación de boquillas u otros elementos de las pruebas",
+      "Ningún riesgo relevante distinto del habitual en cualquier otra actuación policial en vía pública",
+      "Únicamente el riesgo de sufrir una sanción disciplinaria por parte del agente",
+      "Estos controles se consideran, por su propia naturaleza, actuaciones completamente exentas de cualquier riesgo",
+    ],
+    correcta: 0,
+    explicacion:
+      "La evaluación preventiva de los controles de alcoholemia o de detección de drogas en carretera debe valorar, entre otros, el riesgo de atropello por parte de terceros vehículos que se aproximan al punto de control, el riesgo derivado de la posible reacción violenta o de fuga de un conductor identificado, y el riesgo de exposición biológica en la manipulación de boquillas u otros elementos empleados en las pruebas, adoptando en cada caso las medidas preventivas correspondientes.",
+  },
+  {
+    id: "prlsv-28",
+    enunciado: "¿Por qué se recomienda posicionar el vehículo policial formando un ángulo respecto a la vía, y no en línea completamente recta, al protegerse del tráfico?",
+    opciones: [
+      "Porque, en caso de ser embestido por otro vehículo, un posicionamiento en ángulo tiende a desviar el impacto, reduciendo el riesgo de que la fuerza se transmita directamente hacia la zona donde se encuentra el agente protegido",
+      "Porque de ese modo se ocupa un mayor número de carriles, sin ninguna finalidad preventiva",
+      "El ángulo de colocación del vehículo policial carece de cualquier relevancia para la seguridad del agente",
+      "Porque así resulta más fácil para el agente conducir el vehículo posteriormente",
+    ],
+    correcta: 0,
+    explicacion:
+      "Posicionar el vehículo policial formando un ángulo respecto a la vía, en lugar de en línea completamente recta, se recomienda porque, en caso de ser embestido por otro vehículo, dicho ángulo tiende a desviar la trayectoria del impacto, reduciendo el riesgo de que la fuerza se transmita directamente hacia la zona donde se encuentra el agente protegido detrás del vehículo.",
+  },
+  {
+    id: "prlsv-29",
+    enunciado: "¿Por qué se recomienda mantener despejada una vía de escape o repliegue durante una actuación policial junto al tráfico?",
+    opciones: [
+      "Para que el agente pueda retirarse con rapidez y seguridad hacia una zona protegida si percibe un riesgo inminente (por ejemplo, un vehículo que no reduce la velocidad o pierde el control), evitando quedar atrapado sin posibilidad de reacción",
+      "Para facilitar exclusivamente la huida de un posible infractor detenido en el control",
+      "Esta recomendación carece de cualquier fundamento preventivo reconocido",
+      "Únicamente para permitir el acceso de vehículos de repostaje de combustible",
+    ],
+    correcta: 0,
+    explicacion:
+      "Mantener despejada una vía de escape o repliegue durante una actuación policial junto al tráfico permite al agente retirarse con rapidez y seguridad hacia una zona protegida si percibe un riesgo inminente (por ejemplo, un vehículo que no reduce la velocidad o pierde el control en su aproximación), evitando quedar atrapado en una posición sin posibilidad de reacción ante dicho riesgo.",
+  },
+  {
+    id: "prlsv-30",
+    enunciado: "¿Qué finalidad tienen los simulacros y planes de emergencia específicos para actuaciones policiales en autopistas o autovías?",
+    opciones: [
+      "Entrenar de forma periódica los procedimientos de actuación, coordinación con otros servicios de emergencia y medidas de autoprotección propias de este entorno de alta velocidad y elevado riesgo, de modo que la respuesta real ante un incidente resulte más rápida, ordenada y segura",
+      "Cumplir un mero requisito administrativo sin ninguna utilidad práctica real",
+      "Sustituir a la formación inicial en seguridad vial recibida por los agentes en su incorporación al Cuerpo",
+      "Los simulacros solo tienen sentido para los servicios de bomberos, nunca para la actuación policial",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los simulacros y planes de emergencia específicos para actuaciones policiales en autopistas o autovías tienen como finalidad entrenar de forma periódica los procedimientos de actuación, la coordinación con otros servicios de emergencia (bomberos, servicios sanitarios, mantenimiento de la vía) y las medidas de autoprotección propias de este entorno de alta velocidad y elevado riesgo, de modo que la respuesta ante un incidente real resulte más rápida, ordenada y segura para todos los intervinientes.",
+  },
 ];
