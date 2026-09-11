@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "El tabaco, pese a ser una sustancia psicoactiva legal, constituye una de las principales causas de mortalidad evitable a nivel mundial según los organismos de salud pública, al estar asociado al desarrollo de enfermedades respiratorias, cardiovasculares y distintos tipos de cáncer, motivo por el cual las políticas públicas han ido restringiendo progresivamente su publicidad y los espacios en los que puede consumirse.",
   },
+  {
+    id: "drg-16",
+    enunciado: "¿Qué diferencia existe entre la dependencia física y la dependencia psicológica de una sustancia?",
+    opciones: [
+      "La dependencia física implica una adaptación del organismo que provoca un síndrome de abstinencia con síntomas físicos al interrumpir el consumo; la dependencia psicológica implica un deseo intenso (\"craving\") y una necesidad subjetiva de consumir la sustancia para obtener bienestar o evitar malestar emocional, sin que necesariamente existan síntomas físicos de abstinencia",
+      "Son términos exactamente sinónimos, sin ninguna diferencia relevante",
+      "La dependencia psicológica solo puede darse en menores de edad",
+      "La dependencia física es siempre reversible en menos de veinticuatro horas, a diferencia de la psicológica",
+    ],
+    correcta: 0,
+    explicacion:
+      "La dependencia física implica una adaptación fisiológica del organismo a la presencia continuada de la sustancia, que provoca un síndrome de abstinencia con síntomas físicos al interrumpir bruscamente su consumo; la dependencia psicológica implica un deseo intenso o «craving» y una necesidad subjetiva de consumir la sustancia para experimentar sus efectos placenteros o para evitar un malestar emocional, pudiendo existir dependencia psicológica sin una dependencia física marcada, y viceversa.",
+  },
+  {
+    id: "drg-17",
+    enunciado: "¿Cómo se clasifica el cannabis según su efecto sobre el sistema nervioso central?",
+    opciones: [
+      "Como sustancia perturbadora del sistema nervioso central, capaz de alterar la percepción y el estado de conciencia, con posibles efectos tanto sedantes como, en determinadas dosis o personas, ansiógenos o psicóticos",
+      "Como sustancia estimulante pura, sin ningún efecto sedante",
+      "Como sustancia depresora pura, idéntica en sus efectos al alcohol",
+      "El cannabis no se clasifica dentro de ninguna categoría de sustancias psicoactivas",
+    ],
+    correcta: 0,
+    explicacion:
+      "El cannabis se clasifica habitualmente como sustancia perturbadora del sistema nervioso central, capaz de alterar la percepción, el estado de conciencia y el procesamiento cognitivo, con efectos que pueden combinar componentes sedantes con, en determinadas dosis, frecuencias de consumo o personas especialmente vulnerables, efectos ansiógenos o incluso psicóticos.",
+  },
+  {
+    id: "drg-18",
+    enunciado: "¿Cómo se clasifica la cocaína según su efecto sobre el sistema nervioso central?",
+    opciones: [
+      "Como sustancia estimulante del sistema nervioso central, que provoca euforia, aumento de la actividad psicomotriz y sensación de energía, con un elevado potencial de generar dependencia",
+      "Como sustancia depresora del sistema nervioso central",
+      "Como sustancia perturbadora, idéntica en sus efectos al cannabis",
+      "La cocaína no genera ningún tipo de dependencia según la evidencia científica actual",
+    ],
+    correcta: 0,
+    explicacion:
+      "La cocaína se clasifica como sustancia estimulante del sistema nervioso central, que provoca euforia, aumento de la actividad psicomotriz, sensación de energía y disminución de la percepción de fatiga, presentando un elevado potencial de generar dependencia, tanto psicológica como, en determinados patrones de consumo, también física.",
+  },
+  {
+    id: "drg-19",
+    enunciado: "¿Cómo se clasifican los opioides (como la heroína) según su efecto sobre el sistema nervioso central, y qué riesgo específico presentan?",
+    opciones: [
+      "Se clasifican como sustancias depresoras del sistema nervioso central, con un elevado riesgo de depresión respiratoria grave y de sobredosis mortal, especialmente cuando se combinan con otras sustancias depresoras como el alcohol",
+      "Se clasifican como sustancias estimulantes, sin ningún riesgo relevante para la función respiratoria",
+      "Se clasifican como sustancias perturbadoras, idénticas en sus efectos al cannabis",
+      "Los opioides no generan ningún tipo de tolerancia con el consumo continuado",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los opioides, entre ellos la heroína, se clasifican como sustancias depresoras del sistema nervioso central, presentando un elevado riesgo de depresión respiratoria grave y de sobredosis potencialmente mortal, riesgo que se incrementa notablemente cuando se combinan con otras sustancias depresoras, como el alcohol o determinados fármacos ansiolíticos.",
+  },
+  {
+    id: "drg-20",
+    enunciado: "¿Qué es la Estrategia Nacional sobre Adicciones, marco actual de la política española en materia de drogodependencias?",
+    opciones: [
+      "El documento marco que define los objetivos, principios y líneas de actuación de las políticas públicas españolas en materia de prevención, reducción de riesgos y daños, asistencia e inserción social en relación con las drogodependencias y otras adicciones, incluidas las comportamentales",
+      "Un tratado internacional firmado exclusivamente entre España y Portugal",
+      "Un plan operativo exclusivo de las Fuerzas y Cuerpos de Seguridad",
+      "Un programa dirigido únicamente a la persecución penal del narcotráfico, sin ninguna dimensión sanitaria o social",
+    ],
+    correcta: 0,
+    explicacion:
+      "La Estrategia Nacional sobre Adicciones es el documento marco que define los objetivos, principios y líneas de actuación de las políticas públicas españolas en materia de prevención, reducción de riesgos y daños, asistencia e inserción social en relación con las drogodependencias y otras adicciones, incluidas las adicciones comportamentales o sin sustancia, ampliando así el enfoque del anterior Plan Nacional sobre Drogas.",
+  },
+  {
+    id: "drg-21",
+    enunciado: "¿Qué es el Observatorio Español de las Drogas y las Adicciones (OEDA)?",
+    opciones: [
+      "El órgano técnico encargado de recopilar, analizar y difundir información sobre el consumo de drogas y otras adicciones en España, sirviendo de base para el diseño de políticas públicas basadas en la evidencia",
+      "Un tribunal especializado en delitos de narcotráfico",
+      "Una organización no gubernamental independiente del Gobierno de España",
+      "Un centro de tratamiento de desintoxicación de ámbito estatal",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Observatorio Español de las Drogas y las Adicciones (OEDA), integrado en la Delegación del Gobierno para el Plan Nacional sobre Drogas, es el órgano técnico encargado de recopilar, analizar y difundir información epidemiológica sobre el consumo de drogas y otras adicciones en España, sirviendo de base técnica para el diseño y la evaluación de las políticas públicas en esta materia.",
+  },
+  {
+    id: "drg-22",
+    enunciado: "¿Qué papel desempeñan los programas de prevención en el ámbito escolar frente a las drogodependencias?",
+    opciones: [
+      "Buscan retrasar la edad de inicio en el consumo de sustancias, informar sobre sus riesgos reales, y desarrollar habilidades personales y sociales (autoestima, toma de decisiones, resistencia a la presión de grupo) que reduzcan la probabilidad de un consumo problemático futuro",
+      "Se limitan exclusivamente a sancionar disciplinariamente al alumnado que consuma sustancias",
+      "Están dirigidos únicamente al profesorado, sin ninguna intervención directa con el alumnado",
+      "No han demostrado ninguna eficacia según la evidencia disponible",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los programas de prevención en el ámbito escolar buscan retrasar la edad de inicio en el consumo de sustancias, informar de forma realista sobre sus riesgos, y desarrollar habilidades personales y sociales (autoestima, toma de decisiones, resistencia a la presión de grupo) que reduzcan la probabilidad de un consumo problemático futuro, siendo considerados por la evidencia científica disponible como una de las intervenciones preventivas más coste-efectivas en esta materia.",
+  },
+  {
+    id: "drg-23",
+    enunciado: "¿Qué son los servicios de análisis de sustancias (\"pill testing\" o \"drug checking\") como estrategia de reducción de daños?",
+    opciones: [
+      "Servicios que permiten a los consumidores analizar la composición real de una sustancia antes de consumirla, informándoles de su contenido real (incluidas posibles adulteraciones peligrosas), con el objetivo de reducir riesgos graves para la salud, sin que ello suponga una autorización o fomento del consumo",
+      "Un sinónimo exacto de los controles de drogotest realizados por la Policía a los conductores",
+      "Un servicio exclusivamente dirigido a farmacéuticos, sin acceso para el público general",
+      "Un programa que sustituye por completo a los controles legales sobre sustancias estupefacientes",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los servicios de análisis de sustancias («pill testing» o «drug checking») permiten a los consumidores analizar la composición real de una sustancia antes de consumirla, informándoles de su contenido real (incluidas posibles adulteraciones peligrosas, como la presencia de fentanilo u otras sustancias de alto riesgo), con el objetivo de reducir daños graves para la salud, en el marco de las estrategias de reducción de daños, sin que ello suponga una autorización legal del consumo de sustancias ilícitas.",
+  },
+  {
+    id: "drg-24",
+    enunciado: "¿Qué finalidad tienen los programas de intercambio de jeringuillas dentro de las estrategias de reducción de daños?",
+    opciones: [
+      "Proporcionar material de inyección estéril a las personas consumidoras de drogas por vía parenteral, con el fin de reducir la transmisión de enfermedades infecciosas como el VIH o la hepatitis C asociadas al uso compartido de jeringuillas",
+      "Fomentar el consumo de drogas por vía intravenosa entre la población general",
+      "Sustituir a los tratamientos de desintoxicación, eliminando la necesidad de cualquier otro abordaje terapéutico",
+      "Un programa exclusivo para personas menores de edad",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los programas de intercambio de jeringuillas, integrados en las estrategias de reducción de daños, proporcionan material de inyección estéril a las personas consumidoras de drogas por vía parenteral, con el fin de reducir la transmisión de enfermedades infecciosas graves como el VIH o la hepatitis C, asociadas al uso compartido de jeringuillas contaminadas, constituyendo además, en muchos casos, una puerta de entrada a otros servicios sanitarios y sociales.",
+  },
+  {
+    id: "drg-25",
+    enunciado: "¿Qué son los grupos de autoayuda como Narcóticos Anónimos o Alcohólicos Anónimos en el proceso de recuperación de las adicciones?",
+    opciones: [
+      "Grupos formados por personas con problemas de adicción que se apoyan mutuamente en su proceso de recuperación, compartiendo experiencias y siguiendo habitualmente un programa estructurado de pasos, sin sustituir necesariamente al tratamiento profesional especializado",
+      "Un sinónimo exacto de los servicios de urgencias hospitalarias",
+      "Programas exclusivamente dirigidos por profesionales sanitarios, sin participación de personas afectadas",
+      "Un tipo de sanción administrativa impuesta por consumo en la vía pública",
+    ],
+    correcta: 0,
+    explicacion:
+      "Grupos de autoayuda como Narcóticos Anónimos o Alcohólicos Anónimos están formados por personas con problemas de adicción que se apoyan mutuamente en su proceso de recuperación, compartiendo experiencias en un entorno de confidencialidad y siguiendo habitualmente un programa estructurado de pasos, constituyendo un recurso complementario, y no necesariamente sustitutivo, del tratamiento profesional especializado en drogodependencias.",
+  },
+  {
+    id: "drg-26",
+    enunciado: "¿Qué es la Convención Única de 1961 sobre Estupefacientes, de Naciones Unidas?",
+    opciones: [
+      "Uno de los principales tratados internacionales de control de drogas, que establece un sistema de fiscalización internacional de estupefacientes y clasifica las sustancias en distintas listas según su potencial de abuso y utilidad terapéutica",
+      "Un tratado exclusivamente dedicado a la regulación del alcohol",
+      "Un acuerdo bilateral firmado únicamente entre España y Estados Unidos",
+      "Un tratado que despenalizó el consumo de drogas en todo el mundo",
+    ],
+    correcta: 0,
+    explicacion:
+      "La Convención Única de 1961 sobre Estupefacientes, enmendada por el Protocolo de 1972, es uno de los principales tratados internacionales de control de drogas de Naciones Unidas, que establece un sistema de fiscalización internacional de estupefacientes, clasificando las sustancias en distintas listas según su potencial de abuso y su utilidad terapéutica, y sentando las bases de buena parte de la legislación internacional posterior en esta materia.",
+  },
+  {
+    id: "drg-27",
+    enunciado: "¿Qué son los «precursores químicos» en relación con las drogas de síntesis?",
+    opciones: [
+      "Sustancias químicas que, sin ser en sí mismas drogas, se emplean en los procesos de fabricación ilícita de sustancias psicoactivas, por lo que su comercio y desvío están sometidos a un control específico por parte de las autoridades",
+      "Un sinónimo exacto de las drogas de síntesis ya fabricadas",
+      "Sustancias que solo se emplean en la fabricación de medicamentos, sin ninguna relación con las drogas ilícitas",
+      "Un término exclusivamente aplicable al cultivo de plantas de cannabis",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los precursores químicos son sustancias que, sin ser en sí mismas drogas, se emplean en los procesos de fabricación ilícita de sustancias psicoactivas (por ejemplo, en la producción de drogas de síntesis), por lo que su comercio, importación y exportación están sometidos a un régimen específico de control y trazabilidad por parte de las autoridades, con el fin de dificultar su desvío hacia la fabricación ilegal de drogas.",
+  },
+  {
+    id: "drg-28",
+    enunciado: "¿Qué relación existe entre el narcotráfico y la delincuencia organizada transnacional?",
+    opciones: [
+      "El narcotráfico constituye una de las principales fuentes de financiación de organizaciones de delincuencia organizada transnacional, que a menudo diversifican su actividad hacia otros delitos conexos, como el blanqueo de capitales, la corrupción o el tráfico de armas",
+      "No existe ninguna relación entre el narcotráfico y otras formas de delincuencia organizada",
+      "El narcotráfico solo puede ser cometido por delincuentes que actúan en solitario, sin ninguna estructura organizativa",
+      "El narcotráfico ha dejado de ser una preocupación relevante para la cooperación policial internacional",
+    ],
+    correcta: 0,
+    explicacion:
+      "El narcotráfico constituye una de las principales fuentes de financiación de organizaciones de delincuencia organizada transnacional, que con frecuencia diversifican su actividad hacia otros delitos conexos, como el blanqueo de capitales, la corrupción de autoridades y funcionarios, o el tráfico de armas, lo que exige una cooperación policial y judicial internacional reforzada para combatirlo de forma eficaz.",
+  },
+  {
+    id: "drg-29",
+    enunciado: "¿Qué son las «nuevas sustancias psicoactivas» (NSP)?",
+    opciones: [
+      "Sustancias de reciente aparición en el mercado, diseñadas frecuentemente para imitar los efectos de drogas ya fiscalizadas mientras eludían inicialmente el control legal, lo que ha exigido una actualización constante de los mecanismos de detección y fiscalización por parte de las autoridades sanitarias y de seguridad",
+      "Un sinónimo exacto de los medicamentos de venta con receta médica",
+      "Sustancias que nunca han estado disponibles para su venta en ningún formato",
+      "Un término exclusivamente aplicable al alcohol y al tabaco",
+    ],
+    correcta: 0,
+    explicacion:
+      "Las «nuevas sustancias psicoactivas» (NSP) son sustancias de reciente aparición en el mercado, diseñadas frecuentemente para imitar los efectos de drogas ya fiscalizadas (a veces comercializadas bajo apariencia de \"sales de baño\" u otros productos legales), lo que les permitía inicialmente eludir el control legal existente, exigiendo una actualización constante de los mecanismos de detección, alerta temprana y fiscalización por parte de las autoridades sanitarias y de seguridad, tanto a nivel nacional como europeo.",
+  },
+  {
+    id: "drg-30",
+    enunciado: "¿Cómo se detecta habitualmente el consumo de drogas en los conductores durante los controles de las Fuerzas y Cuerpos de Seguridad?",
+    opciones: [
+      "Mediante pruebas de detección en saliva (drogotest), que permiten una primera identificación rápida de determinadas sustancias, cuyo resultado positivo puede confirmarse posteriormente mediante análisis de laboratorio con valor probatorio pleno",
+      "Únicamente mediante la observación visual del comportamiento del conductor, sin ninguna prueba técnica",
+      "Mediante los mismos dispositivos de etilometría empleados para la detección del alcohol, sin ninguna diferencia técnica",
+      "No existe en España ningún procedimiento legal para detectar el consumo de drogas en conductores",
+    ],
+    correcta: 0,
+    explicacion:
+      "El consumo de drogas en los conductores se detecta habitualmente mediante pruebas de detección en saliva (drogotest), que permiten una primera identificación rápida de la presencia de determinadas sustancias psicoactivas, distintas de los etilómetros empleados para el alcohol; un resultado positivo en esta prueba inicial puede confirmarse posteriormente mediante un análisis de laboratorio con valor probatorio pleno a efectos del correspondiente procedimiento sancionador o penal.",
+  },
 ];

@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "Los pronombres personales tónicos (yo, tú, él, ella, nosotros, vosotros, ellos...) llevan acento prosódico propio y pueden desempeñar por sí mismos funciones sintácticas como la de sujeto; los pronombres átonos (me, te, lo, la, le, nos, os, los, las, les, se) carecen de acento propio, se apoyan siempre en el verbo (antepuestos o pospuestos, formando una sola palabra en este último caso) y desempeñan funciones como la de complemento directo o indirecto.",
   },
+  {
+    id: "gle-16",
+    enunciado: "¿Qué es el complemento indirecto (CI) de una oración?",
+    opciones: [
+      "El complemento que expresa el destinatario o beneficiario de la acción verbal, y que puede sustituirse por los pronombres átonos «le» o «les», o conmutarse por «a él», «a ella», «a ellos»",
+      "El complemento que recibe directamente la acción del verbo, sustituible por «lo», «la», «los», «las»",
+      "Un sinónimo exacto del sujeto de la oración",
+      "El complemento que expresa exclusivamente el lugar donde ocurre la acción",
+    ],
+    correcta: 0,
+    explicacion:
+      "El complemento indirecto (CI) expresa el destinatario o beneficiario de la acción verbal (por ejemplo, en «Entregué el paquete a mi vecina», «a mi vecina» es CI), y puede sustituirse por los pronombres átonos «le» o «les», o conmutarse por construcciones como «a él», «a ella» o «a ellos», a diferencia del complemento directo, que se sustituye por «lo», «la», «los» o «las».",
+  },
+  {
+    id: "gle-17",
+    enunciado: "¿Qué tipos de complemento circunstancial (CC) son habituales en la oración española?",
+    opciones: [
+      "Entre otros, de lugar, de tiempo, de modo, de cantidad, de causa, de finalidad e instrumento, expresando todos ellos las circunstancias en que se desarrolla la acción verbal",
+      "Únicamente el complemento circunstancial de lugar, sin ninguna otra variedad",
+      "Solo existen complementos circunstanciales de tiempo en español",
+      "Los complementos circunstanciales siempre son obligatorios y no pueden suprimirse de la oración",
+    ],
+    correcta: 0,
+    explicacion:
+      "El complemento circunstancial (CC) expresa las circunstancias en que se desarrolla la acción verbal, distinguiéndose habitualmente varios tipos según su significado: de lugar («vive en Madrid»), de tiempo («llegó ayer»), de modo («habla despacio»), de cantidad («come mucho»), de causa, de finalidad o de instrumento, entre otros, siendo en general complementos de carácter optativo o adjunto, a diferencia del complemento directo o indirecto.",
+  },
+  {
+    id: "gle-18",
+    enunciado: "¿Qué diferencia existe entre el atributo y el complemento predicativo de una oración?",
+    opciones: [
+      "El atributo acompaña a un verbo copulativo (ser, estar, parecer) y concuerda en género y número con el sujeto; el complemento predicativo acompaña a un verbo predicativo (no copulativo) y también aporta una cualidad, pero referida al sujeto o al complemento directo dentro de una oración de predicado verbal",
+      "Son términos exactamente sinónimos, sin ninguna diferencia sintáctica",
+      "El atributo solo puede aparecer con verbos de movimiento",
+      "El complemento predicativo nunca concuerda en género y número con ningún elemento de la oración",
+    ],
+    correcta: 0,
+    explicacion:
+      "El atributo acompaña a un verbo copulativo (ser, estar, parecer) y concuerda en género y número con el sujeto, formando parte del predicado nominal (por ejemplo, «María está cansada»); el complemento predicativo acompaña a un verbo predicativo (no copulativo) y aporta igualmente una cualidad, pero referida al sujeto o al complemento directo dentro de una oración de predicado verbal (por ejemplo, «María llegó cansada», o «Consideraron injusta la decisión»).",
+  },
+  {
+    id: "gle-19",
+    enunciado: "¿Qué son el «laísmo» y el «loísmo» como fenómenos gramaticales, distintos del leísmo?",
+    opciones: [
+      "El laísmo consiste en usar «la»/«las» en función de complemento indirecto en lugar de «le»/«les» (\"la dije la verdad\" en vez de \"le dije la verdad\"); el loísmo consiste en usar «lo»/«los» en función de complemento indirecto en lugar de «le»/«les» (\"lo dije la verdad\" en vez de \"le dije la verdad\"), siendo ambos usos generalmente censurados por la norma culta",
+      "Son exactamente el mismo fenómeno que el leísmo, sin ninguna diferencia",
+      "El laísmo consiste en omitir siempre el sujeto de la oración",
+      "El loísmo es un fenómeno exclusivo de la lengua escrita formal, nunca de la lengua oral",
+    ],
+    correcta: 0,
+    explicacion:
+      "El laísmo consiste en emplear las formas «la» o «las» (propias del complemento directo femenino) en función de complemento indirecto, en lugar de «le» o «les» («la dije la verdad» en vez de «le dije la verdad»); el loísmo consiste en emplear «lo» o «los» (propias del complemento directo masculino) en función de complemento indirecto («lo dije la verdad» en vez de «le dije la verdad»), constituyendo ambos usos, junto al leísmo, fenómenos generalmente censurados por la norma culta del español estándar, aunque con distinta extensión dialectal.",
+  },
+  {
+    id: "gle-20",
+    enunciado: "¿Cómo se clasifican las oraciones subordinadas según la función que desempeñan respecto de la oración principal?",
+    opciones: [
+      "En subordinadas sustantivas (desempeñan funciones propias de un sustantivo, como sujeto o CD), subordinadas adjetivas o de relativo (desempeñan funciones propias de un adjetivo, complementando a un sustantivo) y subordinadas adverbiales (desempeñan funciones propias de un adverbio, como complemento circunstancial)",
+      "Únicamente en subordinadas causales y subordinadas finales",
+      "En subordinadas de primer grado y subordinadas de segundo grado exclusivamente",
+      "No existe ninguna clasificación de las oraciones subordinadas en la gramática española",
+    ],
+    correcta: 0,
+    explicacion:
+      "La gramática española clasifica las oraciones subordinadas, según la función que desempeñan respecto de la oración principal, en subordinadas sustantivas (equivalen a un sustantivo, pudiendo funcionar como sujeto, CD, entre otras: «Quiero que vengas»), subordinadas adjetivas o de relativo (equivalen a un adjetivo, complementando a un sustantivo: «El libro que me prestaste»), y subordinadas adverbiales (equivalen a un adverbio, expresando circunstancias como tiempo, causa, condición o finalidad: «Cuando llegues, avísame»).",
+  },
+  {
+    id: "gle-21",
+    enunciado: "¿Cómo se clasifican las conjunciones coordinantes según el tipo de relación que establecen entre los elementos que unen?",
+    opciones: [
+      "En copulativas (y, e, ni), que suman elementos; disyuntivas (o, u), que presentan una alternativa; y adversativas (pero, mas, sino), que expresan oposición o contraste, entre otros tipos como las distributivas o las explicativas",
+      "Únicamente en conjunciones causales y conjunciones finales",
+      "Solo existe un tipo de conjunción coordinante en español",
+      "Las conjunciones coordinantes nunca pueden unir oraciones completas, solo palabras sueltas",
+    ],
+    correcta: 0,
+    explicacion:
+      "Las conjunciones coordinantes se clasifican habitualmente en copulativas (y, e, ni), que suman o añaden elementos; disyuntivas (o, u), que presentan una alternativa entre elementos; adversativas (pero, mas, sino), que expresan oposición o contraste; además de otros tipos como las distributivas (ya... ya, bien... bien) o las explicativas (esto es, es decir).",
+  },
+  {
+    id: "gle-22",
+    enunciado: "¿Qué es la derivación como proceso de formación de palabras en español?",
+    opciones: [
+      "El proceso mediante el cual se crean nuevas palabras añadiendo prefijos o sufijos a una raíz o lexema (por ejemplo, «des-» + «hacer» = «deshacer»; «feliz» + «-mente» = «felizmente»)",
+      "El proceso de unir dos palabras ya existentes para formar una nueva (como «sacacorchos»)",
+      "Un sinónimo exacto de la flexión verbal",
+      "El proceso de tomar prestada una palabra de otro idioma sin ninguna modificación",
+    ],
+    correcta: 0,
+    explicacion:
+      "La derivación es el proceso de formación de palabras mediante el cual se crean nuevas palabras añadiendo afijos (prefijos o sufijos) a una raíz o lexema ya existente, por ejemplo «des-» + «hacer» = «deshacer» (prefijación), o «feliz» + «-mente» = «felizmente» (sufijación), a diferencia de la composición, que une dos palabras ya existentes por sí mismas para formar una nueva.",
+  },
+  {
+    id: "gle-23",
+    enunciado: "¿Qué es la composición como proceso de formación de palabras, a diferencia de la derivación?",
+    opciones: [
+      "El proceso mediante el cual se forma una nueva palabra combinando dos o más palabras ya existentes por sí mismas (como «sacacorchos», de «sacar» + «corchos», o «altavoz», de «alto» + «voz»), a diferencia de la derivación, que emplea afijos que no son palabras independientes",
+      "Un sinónimo exacto de la derivación por sufijación",
+      "El proceso de conjugar un verbo en sus distintos tiempos y modos",
+      "El proceso de tomar prestada una palabra directamente de otra lengua",
+    ],
+    correcta: 0,
+    explicacion:
+      "La composición es el proceso de formación de palabras mediante el cual se crea una nueva palabra combinando dos o más palabras que existen por sí mismas de forma independiente en la lengua (por ejemplo, «sacacorchos», de «sacar» + «corchos», o «altavoz», de «alto» + «voz»), a diferencia de la derivación, que emplea afijos (prefijos o sufijos) que no constituyen palabras independientes por sí mismos.",
+  },
+  {
+    id: "gle-24",
+    enunciado: "¿Qué diferencia existe entre un hiato y un diptongo en fonética española?",
+    opciones: [
+      "El diptongo es la unión de dos vocales que se pronuncian en una misma sílaba (una vocal abierta y una cerrada átona, o dos cerradas distintas, como en «ai-re» o «ciu-dad»); el hiato es la unión de dos vocales que se pronuncian en sílabas distintas (dos vocales abiertas, como en «ca-os», o una abierta y una cerrada tónica, como en «pa-ís»)",
+      "Son términos exactamente sinónimos, sin ninguna diferencia fonética",
+      "El hiato solo puede darse entre consonantes, nunca entre vocales",
+      "El diptongo siempre requiere tres vocales consecutivas como mínimo",
+    ],
+    correcta: 0,
+    explicacion:
+      "El diptongo es la unión de dos vocales que se pronuncian dentro de una misma sílaba: una vocal abierta (a, e, o) y una cerrada átona (i, u), o dos vocales cerradas distintas (como en «ai-re» o «ciu-dad»); el hiato es la unión de dos vocales que, pese a ir seguidas, se pronuncian en sílabas distintas: bien dos vocales abiertas (como en «ca-os»), bien una vocal abierta y una cerrada tónica, que rompe el diptongo y exige tilde para marcarlo (como en «pa-ís» o «ma-íz»).",
+  },
+  {
+    id: "gle-25",
+    enunciado: "¿Cómo se clasifican las palabras españolas según la posición de su sílaba tónica, a efectos de las reglas de acentuación?",
+    opciones: [
+      "En agudas (sílaba tónica en la última sílaba), llanas o graves (sílaba tónica en la penúltima), esdrújulas (sílaba tónica en la antepenúltima) y sobresdrújulas (sílaba tónica anterior a la antepenúltima), cada una con sus propias reglas de acentuación gráfica",
+      "Únicamente en palabras agudas y palabras llanas, sin ninguna otra categoría",
+      "En palabras cortas y palabras largas, según su número total de letras",
+      "Esta clasificación no existe en la gramática normativa del español",
+    ],
+    correcta: 0,
+    explicacion:
+      "Las palabras españolas se clasifican, según la posición de su sílaba tónica, en agudas u oxítonas (tónica en la última sílaba, como «ca-mión»), llanas o graves (tónica en la penúltima, como «me-sa»), esdrújulas (tónica en la antepenúltima, como «rá-pi-do») y sobresdrújulas (tónica en la sílaba anterior a la antepenúltima, como «dí-ga-se-lo»), rigiendo para cada grupo reglas de acentuación gráfica distintas conforme a la ortografía académica.",
+  },
+  {
+    id: "gle-26",
+    enunciado: "¿Qué es la «tilde diacrítica» en la ortografía española?",
+    opciones: [
+      "La tilde que se emplea para distinguir gráficamente dos palabras que se escriben igual pero tienen distinta categoría gramatical o significado, como «él» (pronombre) frente a «el» (artículo), o «sé» (del verbo saber o ser) frente a «se» (pronombre)",
+      "Una tilde que solo se utiliza en las palabras esdrújulas",
+      "Un sinónimo exacto de la tilde que marca un hiato",
+      "Una tilde que se ha eliminado por completo de la ortografía académica actual",
+    ],
+    correcta: 0,
+    explicacion:
+      "La tilde diacrítica es la tilde que se emplea para distinguir gráficamente dos palabras que se escriben de forma idéntica (son homógrafas) pero tienen distinta categoría gramatical o significado, como «él» (pronombre personal) frente a «el» (artículo), «sé» (de los verbos saber o ser) frente a «se» (pronombre), o «té» (la infusión) frente a «te» (pronombre), entre otros pares similares recogidos por la ortografía académica.",
+  },
+  {
+    id: "gle-27",
+    enunciado: "¿Cómo se distingue correctamente entre «haber» (verbo) y «a ver» (preposición + infinitivo)?",
+    opciones: [
+      "«Haber» es el infinitivo del verbo auxiliar («debe haber una solución», «va a haber cambios»); «a ver» es la secuencia formada por la preposición «a» y el verbo «ver» en infinitivo, empleada para expresar curiosidad, comprobación o expectación («vamos a ver qué pasa», «a ver si llueve»)",
+      "Son formas completamente intercambiables en cualquier contexto",
+      "«A ver» es siempre incorrecto y debe sustituirse en todo caso por «haber»",
+      "«Haber» solo puede usarse como sustantivo, nunca como verbo",
+    ],
+    correcta: 0,
+    explicacion:
+      "«Haber» es el infinitivo del verbo auxiliar (empleado, por ejemplo, en perífrasis como «debe haber una solución» o «va a haber cambios»), mientras que «a ver» es la secuencia formada por la preposición «a» y el infinitivo del verbo «ver», empleada habitualmente para expresar curiosidad, comprobación o expectación ante algo («vamos a ver qué pasa», «a ver si llueve»), tratándose de un error ortográfico frecuente confundir ambas formas por su idéntica pronunciación.",
+  },
+  {
+    id: "gle-28",
+    enunciado: "¿Con qué número gramatical concuerda habitualmente el verbo cuando el sujeto es una expresión partitiva como «la mayoría de los vecinos» o «un grupo de estudiantes»?",
+    opciones: [
+      "La norma culta admite tanto la concordancia en singular (con el núcleo del sujeto: «la mayoría llegó») como, especialmente en el uso oral y cuando el complemento va en plural, la concordancia en plural (concordancia «ad sensum» o por el sentido: «la mayoría de los vecinos llegaron»), aunque la concordancia estrictamente gramatical en singular se considera la más rigurosa",
+      "El verbo debe ir siempre y en todo caso en plural con este tipo de sujetos",
+      "El verbo debe ir siempre y en todo caso en singular, sin ninguna excepción admitida",
+      "Este tipo de construcciones nunca puede funcionar como sujeto de una oración",
+    ],
+    correcta: 0,
+    explicacion:
+      "Con sujetos de estructura partitiva o colectiva como «la mayoría de los vecinos» o «un grupo de estudiantes», la norma culta admite tanto la concordancia estrictamente gramatical en singular con el núcleo del sujeto («la mayoría llegó») como la concordancia «ad sensum» o por el sentido en plural, especialmente frecuente en el uso oral cuando el complemento que sigue va en plural («la mayoría de los vecinos llegaron»), sin que esta última se considere por ello incorrecta.",
+  },
+  {
+    id: "gle-29",
+    enunciado: "¿Qué clases de determinantes acompañan habitualmente al sustantivo en español, precisando o concretando su referencia?",
+    opciones: [
+      "Entre otros, los artículos (el, la, los, las, un, una), los demostrativos (este, ese, aquel), los posesivos (mi, tu, su) y los numerales o cuantificadores (dos, varios, algunos), todos ellos caracterizados por actualizar o concretar la referencia del sustantivo al que acompañan",
+      "Únicamente los artículos, sin ninguna otra categoría de determinantes",
+      "Los determinantes son siempre invariables en género y número",
+      "Los adjetivos calificativos son la única clase de determinante que existe en español",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los determinantes son una clase de palabras que acompañan y actualizan al sustantivo, precisando o concretando su referencia, distinguiéndose entre otros los artículos (el, la, los, las, un, una), los demostrativos (este, ese, aquel), los posesivos (mi, tu, su, nuestro) y los numerales o cuantificadores (dos, varios, algunos, muchos), cada uno con sus propias reglas de concordancia en género y número con el sustantivo al que determinan.",
+  },
+  {
+    id: "gle-30",
+    enunciado: "¿Qué es el «régimen preposicional» de un verbo?",
+    opciones: [
+      "La exigencia, por parte de determinados verbos, de una preposición concreta para introducir alguno de sus complementos (por ejemplo, «consistir en», «confiar en», «insistir en», «carecer de»), cuya alteración o supresión incorrecta constituye un error conocido como «queísmo» o «dequeísmo» cuando afecta a la conjunción «que»",
+      "Un sinónimo exacto del complemento directo",
+      "La conjugación completa de un verbo en todos sus tiempos",
+      "Un fenómeno que solo afecta a los verbos irregulares",
+    ],
+    correcta: 0,
+    explicacion:
+      "El régimen preposicional de un verbo es la exigencia, por parte de determinados verbos, de una preposición concreta y fija para introducir alguno de sus complementos (por ejemplo, «consistir en», «confiar en», «insistir en», «carecer de», «depender de»), de modo que su alteración, omisión indebida (queísmo: «me alegro que vengas» en vez de «me alegro de que vengas») o adición indebida ante la conjunción «que» (dequeísmo) constituyen errores gramaticales censurados por la norma culta.",
+  },
 ];

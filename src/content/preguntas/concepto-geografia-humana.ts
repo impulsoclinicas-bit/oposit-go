@@ -196,4 +196,199 @@ export const preguntas: Pregunta[] = [
     explicacion:
       "España presenta, en conjunto, una densidad de población inferior a la media de la Unión Europea, pero con fuertes contrastes internos: el litoral mediterráneo y atlántico y las grandes áreas metropolitanas, como Madrid o Barcelona, concentran densidades muy elevadas, mientras que amplias zonas del interior peninsular presentan densidades muy bajas, fenómeno vinculado al éxodo rural y a la llamada «España vaciada».",
   },
+  {
+    id: "cgh-16",
+    enunciado: "¿Qué mide la «tasa de fecundidad» en demografía, y en qué se diferencia de la tasa de natalidad?",
+    opciones: [
+      "El número medio de hijos que tendría una mujer a lo largo de su vida fértil según las tasas de fecundidad observadas en un momento dado, a diferencia de la tasa de natalidad, que mide el número de nacimientos por cada mil habitantes",
+      "Son términos exactamente sinónimos, sin ninguna diferencia conceptual",
+      "La tasa de fecundidad mide únicamente la mortalidad infantil",
+      "La tasa de fecundidad se calcula sobre el total de la población, incluidos hombres y niños",
+    ],
+    correcta: 0,
+    explicacion:
+      "La tasa de fecundidad (o índice sintético de fecundidad) mide el número medio de hijos que tendría una mujer a lo largo de su vida fértil, según se mantuvieran las tasas de fecundidad por edad observadas en un momento dado, a diferencia de la tasa de natalidad, que mide simplemente el número de nacimientos por cada mil habitantes en un período determinado, sin poner el dato en relación con la población femenina en edad fértil.",
+  },
+  {
+    id: "cgh-17",
+    enunciado: "¿Qué mide el índice de dependencia demográfica?",
+    opciones: [
+      "La relación entre la población dependiente (menores y personas mayores) y la población en edad de trabajar, indicando la carga que la población potencialmente activa debe sostener",
+      "El grado de dependencia económica de un país respecto del comercio internacional",
+      "La proporción de población que depende de prestaciones por desempleo",
+      "La distancia media entre el domicilio y el lugar de trabajo de la población activa",
+    ],
+    correcta: 0,
+    explicacion:
+      "El índice de dependencia demográfica mide la relación entre la población dependiente (menores de dieciséis años y personas mayores de sesenta y cuatro, aproximadamente) y la población en edad de trabajar, indicando la carga teórica que la población potencialmente activa debe sostener, siendo un indicador especialmente relevante en sociedades con procesos avanzados de envejecimiento demográfico.",
+  },
+  {
+    id: "cgh-18",
+    enunciado: "¿Qué es la «jerarquía urbana» o «red de ciudades» en geografía humana?",
+    opciones: [
+      "La organización de los núcleos urbanos de un territorio según su tamaño, funciones y capacidad de influencia, desde grandes metrópolis con funciones de alcance nacional o internacional hasta pequeñas ciudades con funciones más limitadas",
+      "Un sinónimo exacto de la pirámide de población",
+      "La clasificación de las ciudades según su antigüedad histórica exclusivamente",
+      "Un concepto que solo se aplica a las capitales de provincia",
+    ],
+    correcta: 0,
+    explicacion:
+      "La jerarquía urbana o red de ciudades describe la organización de los núcleos urbanos de un territorio según su tamaño demográfico, sus funciones económicas y administrativas, y su capacidad de influencia sobre el territorio circundante, distinguiendo desde grandes metrópolis con funciones de alcance nacional o internacional hasta pequeñas ciudades o cabeceras comarcales con funciones más limitadas.",
+  },
+  {
+    id: "cgh-19",
+    enunciado: "¿Qué es una «conurbación» en geografía urbana?",
+    opciones: [
+      "La unión física, por crecimiento urbano continuo, de dos o más núcleos de población originalmente independientes, que llegan a formar una trama urbana prácticamente continua",
+      "Un sinónimo exacto de área rural despoblada",
+      "El proceso de traslado de la capitalidad de un país a otra ciudad",
+      "Un tipo de vivienda unifamiliar aislada",
+    ],
+    correcta: 0,
+    explicacion:
+      "Una conurbación es la unión física, por crecimiento urbano continuo, de dos o más núcleos de población originalmente independientes, que llegan a formar una trama urbana prácticamente continua, aunque conserven en muchos casos su independencia administrativa como municipios diferenciados.",
+  },
+  {
+    id: "cgh-20",
+    enunciado: "¿Qué es la «periurbanización» o «suburbanización»?",
+    opciones: [
+      "El proceso de expansión de la población y de las actividades urbanas hacia las áreas periféricas de una ciudad, generando espacios de transición entre lo estrictamente urbano y lo rural",
+      "Un sinónimo exacto del éxodo rural hacia las grandes ciudades",
+      "El proceso de despoblación completa de una ciudad",
+      "Un fenómeno que solo afecta a las capitales de provincia, nunca a otras ciudades",
+    ],
+    correcta: 0,
+    explicacion:
+      "La periurbanización o suburbanización es el proceso de expansión de la población y de determinadas actividades urbanas hacia las áreas periféricas de una ciudad, generando espacios de transición entre lo estrictamente urbano y lo rural, frecuentemente asociado al encarecimiento de la vivienda en el centro urbano y a la búsqueda de una mejor calidad de vida en el entorno.",
+  },
+  {
+    id: "cgh-21",
+    enunciado: "¿Qué diferencia existe entre «ecúmene» y «anecúmene» en geografía de la población?",
+    opciones: [
+      "El ecúmene es la parte habitada de la superficie terrestre; el anecúmene es la parte deshabitada o con una presencia humana prácticamente nula, por condiciones climáticas, orográficas u otras limitaciones extremas",
+      "Son términos exactamente sinónimos, sin ninguna diferencia relevante",
+      "El anecúmene se refiere exclusivamente a las zonas urbanas",
+      "El ecúmene se refiere exclusivamente a los océanos",
+    ],
+    correcta: 0,
+    explicacion:
+      "El ecúmene es la parte habitada de la superficie terrestre, mientras que el anecúmene es la parte deshabitada o con una presencia humana prácticamente nula, debido a condiciones climáticas, orográficas u otras limitaciones extremas (desiertos absolutos, casquetes polares, alta montaña), reflejando ambos conceptos la distribución desigual de la población sobre el planeta.",
+  },
+  {
+    id: "cgh-22",
+    enunciado: "¿Qué es la «litoralización» de la población, fenómeno especialmente destacado en el caso español?",
+    opciones: [
+      "La concentración progresiva de la población en las zonas costeras, en detrimento de las áreas de interior, impulsada por factores económicos (turismo, industria, servicios) y de calidad de vida",
+      "Un sinónimo exacto del éxodo rural hacia la meseta central",
+      "El proceso de urbanización de las zonas de montaña",
+      "Un fenómeno demográfico exclusivo de los países insulares",
+    ],
+    correcta: 0,
+    explicacion:
+      "La litoralización es la concentración progresiva de la población en las zonas costeras, en detrimento de las áreas de interior, un fenómeno especialmente destacado en el caso español, donde buena parte del crecimiento demográfico de las últimas décadas se ha concentrado en el litoral mediterráneo, el arco atlántico y los archipiélagos, impulsado por factores económicos como el turismo, la industria y los servicios.",
+  },
+  {
+    id: "cgh-23",
+    enunciado: "¿Qué mide el Índice de Desarrollo Humano (IDH), elaborado por el Programa de las Naciones Unidas para el Desarrollo?",
+    opciones: [
+      "El nivel de desarrollo de un país combinando indicadores de esperanza de vida, nivel educativo y renta per cápita, ofreciendo una medida más amplia del bienestar que el mero producto interior bruto",
+      "Únicamente el producto interior bruto per cápita de un país",
+      "Exclusivamente el nivel de digitalización de la economía de un país",
+      "El grado de urbanización de la población de un país",
+    ],
+    correcta: 0,
+    explicacion:
+      "El Índice de Desarrollo Humano (IDH), elaborado anualmente por el Programa de las Naciones Unidas para el Desarrollo (PNUD), mide el nivel de desarrollo de un país combinando indicadores de esperanza de vida, nivel educativo (años de escolarización) y renta per cápita, ofreciendo así una medida del bienestar más amplia que el mero producto interior bruto, al incorporar dimensiones sociales y no solo estrictamente económicas.",
+  },
+  {
+    id: "cgh-24",
+    enunciado: "¿Qué son los «movimientos pendulares» (commuting) en geografía de la población?",
+    opciones: [
+      "Los desplazamientos diarios de la población entre su lugar de residencia y su lugar de trabajo o estudio, habitualmente entre un municipio periférico y la ciudad central de un área metropolitana",
+      "Los desplazamientos migratorios de carácter internacional y permanente",
+      "Un sinónimo exacto del éxodo rural",
+      "Los desplazamientos turísticos de carácter estacional",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los movimientos pendulares (commuting) son los desplazamientos diarios de la población entre su lugar de residencia y su lugar de trabajo o estudio, habitualmente entre un municipio periférico o dormitorio y la ciudad central de un área metropolitana, siendo un fenómeno estrechamente relacionado con los procesos de periurbanización y con la planificación de las infraestructuras de transporte.",
+  },
+  {
+    id: "cgh-25",
+    enunciado: "¿Qué son los llamados «desiertos demográficos» en el contexto de la «España vaciada»?",
+    opciones: [
+      "Territorios con densidades de población extremadamente bajas (por debajo de los diez habitantes por kilómetro cuadrado, umbral empleado por la Unión Europea para considerar un territorio en riesgo de despoblación grave), concentrados especialmente en amplias zonas del interior peninsular español",
+      "Un sinónimo exacto de los desiertos climáticos, como el desierto de Tabernas",
+      "Territorios completamente despoblados desde la Edad Media, sin ninguna población actual",
+      "Un fenómeno exclusivo de las zonas costeras españolas",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los «desiertos demográficos» son territorios con densidades de población extremadamente bajas, por debajo del umbral de diez habitantes por kilómetro cuadrado empleado por la Unión Europea para considerar un territorio en riesgo de despoblación grave, un fenómeno especialmente presente en amplias zonas del interior peninsular español (Soria, Teruel, Cuenca, entre otras provincias), en el marco del debate sobre la «España vaciada».",
+  },
+  {
+    id: "cgh-26",
+    enunciado: "¿En qué consiste el modelo clásico de «transición demográfica»?",
+    opciones: [
+      "Un modelo que describe la evolución histórica de una población a través de varias fases, desde un régimen demográfico antiguo de natalidad y mortalidad elevadas, pasando por fases intermedias de descenso de la mortalidad y posteriormente de la natalidad, hasta un régimen demográfico moderno de natalidad y mortalidad bajas",
+      "Un modelo que describe exclusivamente los movimientos migratorios entre países",
+      "Un modelo que predice con certeza absoluta la población futura de cualquier país",
+      "Un concepto exclusivamente aplicable a los países en vías de desarrollo",
+    ],
+    correcta: 0,
+    explicacion:
+      "El modelo clásico de transición demográfica describe la evolución histórica de una población a través de varias fases: un régimen demográfico antiguo, con natalidad y mortalidad elevadas y crecimiento vegetativo escaso; fases intermedias, con un descenso inicial de la mortalidad (por mejoras sanitarias y alimentarias) seguido de un descenso posterior de la natalidad; y un régimen demográfico moderno, con natalidad y mortalidad bajas y crecimiento vegetativo reducido o incluso negativo, fase en la que se encuentran actualmente la mayoría de los países desarrollados, incluida España.",
+  },
+  {
+    id: "cgh-27",
+    enunciado: "¿Cómo se clasifica tradicionalmente la población activa según los sectores económicos?",
+    opciones: [
+      "En sector primario (agricultura, ganadería, pesca, minería), sector secundario (industria y construcción) y sector terciario (servicios), añadiéndose en ocasiones un sector cuaternario referido a actividades de investigación, innovación y gestión de la información",
+      "Únicamente en sector público y sector privado",
+      "En sector urbano y sector rural, sin ninguna otra distinción",
+      "En sector formal e informal exclusivamente",
+    ],
+    correcta: 0,
+    explicacion:
+      "La clasificación tradicional de la población activa distingue el sector primario (agricultura, ganadería, pesca, minería), el sector secundario (industria y construcción) y el sector terciario (comercio, transporte, turismo, administración y demás servicios), añadiéndose en ocasiones un sector cuaternario referido a actividades intensivas en conocimiento, investigación, innovación y gestión de la información, especialmente relevante en las economías más avanzadas.",
+  },
+  {
+    id: "cgh-28",
+    enunciado: "¿Qué es una «megalópolis» en geografía urbana?",
+    opciones: [
+      "Una extensa región urbana formada por la unión funcional de varias áreas metropolitanas o conurbaciones próximas entre sí, que comparten infraestructuras, flujos económicos y de población, sin llegar necesariamente a formar una trama urbana completamente continua",
+      "Un sinónimo exacto de área metropolitana",
+      "Una ciudad de menos de diez mil habitantes",
+      "Un concepto exclusivamente aplicable a las ciudades de la Antigüedad clásica",
+    ],
+    correcta: 0,
+    explicacion:
+      "Una megalópolis es una extensa región urbana formada por la unión funcional de varias áreas metropolitanas o conurbaciones próximas entre sí, que comparten infraestructuras de transporte, flujos económicos y de población, sin llegar necesariamente a formar una trama urbana completamente continua como en una simple conurbación, siendo ejemplos clásicos la región que se extiende entre Boston y Washington en Estados Unidos, o la región del Randstad en los Países Bajos.",
+  },
+  {
+    id: "cgh-29",
+    enunciado: "¿Qué mide la renta per cápita como indicador geográfico-económico de un territorio?",
+    opciones: [
+      "El resultado de dividir la renta o riqueza total generada en un territorio entre el número de habitantes, empleándose como indicador aproximado (aunque limitado) del nivel de vida medio de su población",
+      "El salario mínimo interprofesional vigente en un país",
+      "El número total de empresas registradas en un territorio",
+      "La superficie total cultivada de un territorio",
+    ],
+    correcta: 0,
+    explicacion:
+      "La renta per cápita se obtiene dividiendo la renta o riqueza total generada en un territorio (habitualmente el producto interior bruto) entre el número de sus habitantes, empleándose como indicador aproximado del nivel de vida medio de su población, si bien presenta limitaciones conocidas al no reflejar la distribución real de la riqueza entre los distintos grupos sociales.",
+  },
+  {
+    id: "cgh-30",
+    enunciado: "¿Qué relación existe entre la distribución territorial de la población española y las políticas de ordenación del territorio frente a la despoblación?",
+    opciones: [
+      "Los fuertes contrastes de densidad entre el litoral y las grandes áreas metropolitanas, muy pobladas, y el interior peninsular, con densidades muy bajas, han impulsado en las últimas décadas políticas públicas específicas (como la Estrategia Nacional frente al Reto Demográfico) orientadas a fijar población, mejorar servicios y dinamizar la economía de los territorios más despoblados",
+      "No existe ninguna política pública española relacionada con la distribución territorial de la población",
+      "Las políticas de ordenación del territorio en España se dirigen exclusivamente a limitar el crecimiento de las grandes ciudades",
+      "El reto demográfico solo afecta a las Comunidades Autónomas insulares",
+    ],
+    correcta: 0,
+    explicacion:
+      "Los fuertes contrastes de densidad entre el litoral y las grandes áreas metropolitanas, muy pobladas, y amplias zonas del interior peninsular, con densidades muy bajas, han impulsado en España, especialmente en la última década, políticas públicas específicas orientadas a afrontar el llamado «reto demográfico» (como la Estrategia Nacional frente al Reto Demográfico), dirigidas a fijar población, mejorar los servicios públicos y dinamizar la economía de los territorios más afectados por la despoblación.",
+  },
 ];
