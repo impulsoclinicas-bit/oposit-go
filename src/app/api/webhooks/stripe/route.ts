@@ -59,6 +59,16 @@ export async function POST(request: NextRequest) {
     case "checkout.session.completed": {
       const session = event.data.object as Stripe.Checkout.Session;
 
+      if (session.mode === "payment" && session.metadata?.producto === "ponerse-al-dia") {
+        const userId = session.metadata?.userId;
+        if (!userId) break;
+        await prisma.user.update({
+          where: { id: userId },
+          data: { catchUpTemarioEn: new Date() },
+        });
+        break;
+      }
+
       if (session.mode === "payment" && session.metadata?.producto === "pase-simulacros") {
         const email = session.customer_details?.email ?? session.customer_email;
         const customerId = session.customer as string | null;
@@ -93,6 +103,10 @@ export async function POST(request: NextRequest) {
       const subscription = await stripe.subscriptions.retrieve(subscriptionId);
       const currentPeriodEnd = new Date(subscription.items.data[0].current_period_end * 1000);
 
+      // subscriptionStartedAt se fija en CADA alta, incluidas las
+      // reactivaciones tras cancelar: el calendario compartido del
+      // temario (ver `src/lib/curso.ts`) trata a quien vuelve como a un
+      // alumno nuevo, sin conservar el lote de entrada que tuviera antes.
       const user = await prisma.user.upsert({
         where: { email: email.toLowerCase() },
         update: {
@@ -100,6 +114,7 @@ export async function POST(request: NextRequest) {
           stripeSubscriptionId: subscriptionId,
           subscriptionStatus: SubscriptionStatus.active,
           currentPeriodEnd,
+          subscriptionStartedAt: new Date(),
         },
         create: {
           email: email.toLowerCase(),

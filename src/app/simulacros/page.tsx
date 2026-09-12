@@ -8,7 +8,7 @@ import { getActiveUser } from "@/lib/auth-helpers";
 import {
   isSimulacroBloqueDesbloqueado,
   getFechaDesbloqueoSimulacroBloque,
-  getNumeroTemasDesbloqueados,
+  getRangoTemasAccesibles,
 } from "@/lib/desbloqueo";
 import { isRectaFinal } from "@/lib/convocatoria";
 import { RectaFinalBanner } from "@/components/RectaFinalBanner";
@@ -23,9 +23,7 @@ export const metadata: Metadata = {
 export default async function SimulacrosPage() {
   const simulacros = getSimulacros();
   const user = await getActiveUser();
-  const numeroTemasDesbloqueados = user
-    ? getNumeroTemasDesbloqueados(user.subscriptionStartedAt)
-    : undefined;
+  const rango = user ? getRangoTemasAccesibles(user) : undefined;
 
   return (
     <>
@@ -62,14 +60,12 @@ export default async function SimulacrosPage() {
             {simulacros.map((simulacro) => {
               const temasBloque = getTemasByBloque(simulacro.bloque);
               const desbloqueado = user
-                ? isSimulacroBloqueDesbloqueado(simulacro.bloque, user.subscriptionStartedAt)
+                ? isSimulacroBloqueDesbloqueado(simulacro.bloque, user)
                 : true;
               const fecha =
-                user && !desbloqueado && user.subscriptionStartedAt
-                  ? getFechaDesbloqueoSimulacroBloque(simulacro.bloque, user.subscriptionStartedAt)
-                  : null;
-              const temasDesbloqueadosBloque = numeroTemasDesbloqueados
-                ? temasBloque.filter((t) => t.numero <= numeroTemasDesbloqueados).length
+                user && !desbloqueado ? getFechaDesbloqueoSimulacroBloque(simulacro.bloque) : null;
+              const temasAccesiblesBloque = rango
+                ? temasBloque.filter((t) => t.numero >= rango.desde && t.numero <= rango.hasta).length
                 : temasBloque.length;
               return (
                 <li key={simulacro.slug}>
@@ -79,8 +75,8 @@ export default async function SimulacrosPage() {
                   >
                     <h2 className="font-bold text-brand-900">{simulacro.titulo}</h2>
                     <p className="mt-2 text-sm text-brand-700">
-                      {temasDesbloqueadosBloque} de {temasBloque.length} temas del bloque
-                      desbloqueados · se regenera cada vez
+                      {temasAccesiblesBloque} de {temasBloque.length} temas del bloque
+                      accesibles · se regenera cada vez
                     </p>
                     {user && !desbloqueado && (
                       <p className="mt-1 text-xs font-semibold text-accent-600">

@@ -95,7 +95,11 @@ const faqItems = [
   {
     question: "¿Por qué el temario se abre poco a poco y no entero desde el primer día?",
     answer:
-      `Para favorecer un ritmo de estudio ordenado, en lugar de presentarte los ${temas.length} temas todos a la vez. Al suscribirte tienes ya disponibles los 5 primeros temas; cada mes se abren 5 temas más, mientras los simulacros por bloque y el simulacro completo van creciendo automáticamente con todo lo que ya tienes desbloqueado.`,
+      `Para favorecer un ritmo de estudio ordenado, en lugar de presentarte los ${temas.length} temas todos a la vez. El calendario es único para todos los alumnos: se abren 5 temas nuevos cada mes, y quien se suscribe empieza en el lote que esté vigente ese mes (no siempre en el tema 1). Los simulacros por bloque y el simulacro completo van creciendo automáticamente con todo lo que ya tienes desbloqueado.`,
+  },
+  {
+    question: "Me he apuntado tarde: ¿puedo acceder a los temas que ya se han publicado?",
+    answer: `Sí, con el pase de ponerse al día: un pago único de ${siteConfig.precioPorTemaAtrasadoEur.toFixed(2)} € por cada tema atrasado, que da acceso permanente a esos temas. Se compra desde "Mi cuenta" en cualquier momento.`,
   },
 ];
 

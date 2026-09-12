@@ -6,6 +6,8 @@ export type ActiveUser = {
   id: string;
   email: string;
   subscriptionStartedAt: Date | null;
+  /** true si ha comprado el pase de ponerse al día (temas anteriores a su lote de entrada). */
+  catchUpTemarioComprado: boolean;
 };
 
 /**
@@ -24,6 +26,7 @@ export async function getActiveUser(): Promise<ActiveUser | null> {
       email: true,
       subscriptionStatus: true,
       subscriptionStartedAt: true,
+      catchUpTemarioEn: true,
     },
   });
   if (!user || user.subscriptionStatus !== "active") return null;
@@ -32,6 +35,7 @@ export async function getActiveUser(): Promise<ActiveUser | null> {
     id: user.id,
     email: user.email,
     subscriptionStartedAt: user.subscriptionStartedAt,
+    catchUpTemarioComprado: Boolean(user.catchUpTemarioEn),
   };
 }
 
@@ -47,6 +51,7 @@ export type AccesoSimulacros = {
   id: string;
   email: string;
   subscriptionStartedAt: Date | null;
+  catchUpTemarioComprado: boolean;
   /** true si el acceso viene de la suscripción mensual (desbloqueo progresivo); false si viene solo del pase de simulacros (todo el temario mezclado, sin progresión). */
   viaSuscripcion: boolean;
 };
@@ -72,6 +77,7 @@ export async function requireAccesoSimulacros(redirectTo: string): Promise<Acces
       subscriptionStatus: true,
       subscriptionStartedAt: true,
       paseSimulacrosExpiraEn: true,
+      catchUpTemarioEn: true,
     },
   });
 
@@ -86,6 +92,7 @@ export async function requireAccesoSimulacros(redirectTo: string): Promise<Acces
     id: user.id,
     email: user.email,
     subscriptionStartedAt: user.subscriptionStartedAt,
+    catchUpTemarioComprado: Boolean(user.catchUpTemarioEn),
     viaSuscripcion,
   };
 }

@@ -4,7 +4,11 @@ import { Container } from "@/components/Container";
 import { PageHero } from "@/components/PageHero";
 import { bloques, getTemasByBloque } from "@/lib/temario";
 import { getActiveUser } from "@/lib/auth-helpers";
-import { isTemaDesbloqueado, getFechaDesbloqueoTema } from "@/lib/desbloqueo";
+import {
+  isTemaDesbloqueado,
+  requierePaseParaPonerseAlDia,
+  getFechaDesbloqueoTema,
+} from "@/lib/desbloqueo";
 
 export const metadata: Metadata = {
   title: "Temario",
@@ -38,12 +42,12 @@ export default async function TemarioPage() {
                 <p className="mt-1 max-w-2xl text-sm text-brand-700">{bloque.descripcion}</p>
                 <ul className="mt-6 grid gap-3 sm:grid-cols-2">
                   {temasBloque.map((tema) => {
-                    const desbloqueado = user
-                      ? isTemaDesbloqueado(tema.numero, user.subscriptionStartedAt)
-                      : true;
+                    const desbloqueado = user ? isTemaDesbloqueado(tema.numero, user) : true;
+                    const necesitaPase =
+                      user && !desbloqueado ? requierePaseParaPonerseAlDia(tema.numero, user) : false;
                     const fecha =
-                      user && !desbloqueado && user.subscriptionStartedAt
-                        ? getFechaDesbloqueoTema(tema.numero, user.subscriptionStartedAt)
+                      user && !desbloqueado && !necesitaPase
+                        ? getFechaDesbloqueoTema(tema.numero)
                         : null;
                     return (
                       <li key={tema.slug}>
@@ -61,9 +65,14 @@ export default async function TemarioPage() {
                             <span className="mt-1 block text-xs text-brand-600">
                               {tema.descripcion}
                             </span>
-                            {user && !desbloqueado && (
+                            {user && !desbloqueado && necesitaPase && (
                               <span className="mt-1 block text-xs font-semibold text-accent-600">
-                                🔒 Se desbloquea{" "}
+                                🔒 Disponible con el pase de ponerse al día
+                              </span>
+                            )}
+                            {user && !desbloqueado && !necesitaPase && (
+                              <span className="mt-1 block text-xs font-semibold text-accent-600">
+                                🔒 Se abre{" "}
                                 {fecha
                                   ? `el ${new Intl.DateTimeFormat("es-ES", { dateStyle: "long" }).format(fecha)}`
                                   : "próximamente"}

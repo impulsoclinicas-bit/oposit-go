@@ -69,7 +69,11 @@ const faqItems = [
   {
     question: "¿Tengo acceso a todo el temario desde el primer día con el plan mensual?",
     answer:
-      "Dispones de los 5 primeros temas desde el momento de la suscripción, con el simulacro de su bloque ya disponible. El resto se desbloquea a razón de 5 temas más cada mes; los simulacros por bloque van creciendo automáticamente según se abren más temas de ese bloque, mientras las pruebas psicotécnicas y el simulacro completo están disponibles en todo momento. El objetivo es asimilar el contenido bloque a bloque, no restringir el acceso.",
+      "El temario se abre con un calendario único, igual para todos los alumnos: 5 temas nuevos cada mes. Si te apuntas cuando el calendario ya lleva tiempo en marcha, empiezas directamente en el lote que esté vigente ese mes (no en el tema 1), y sigues avanzando con normalidad a partir de ahí. Las pruebas psicotécnicas y el simulacro completo están disponibles desde el primer día. Si además quieres los temas anteriores a tu alta, puedes comprarlos con el pase de ponerse al día.",
+  },
+  {
+    question: "¿Qué es el pase de ponerse al día?",
+    answer: `Un pago único para quien se apunta cuando el calendario ya ha abierto temas anteriores a su alta: cuesta ${siteConfig.precioPorTemaAtrasadoEur.toFixed(2)} € por cada tema atrasado (por ejemplo, apuntarte con 10 temas ya publicados costaría ${(10 * siteConfig.precioPorTemaAtrasadoEur).toFixed(2)} €) y da acceso permanente a esos temas, sus tests, esquemas y resúmenes. Se compra desde "Mi cuenta" en cualquier momento.`,
   },
 ];
 
@@ -173,13 +177,17 @@ export default function PreciosPage() {
             </li>
             <li>
               <span className="font-semibold">4. Empieza a estudiar.</span>{" "}
-              Dispones de inmediato de los 5 primeros temas, sus tests,
-              esquemas y resúmenes, y el simulacro de su bloque.
+              Dispones de inmediato de los temas que el calendario del
+              curso tenga abiertos ese mes, con sus tests, esquemas y
+              resúmenes, y el simulacro de su bloque. Si te apuntas
+              tarde, puedes comprar los temas anteriores con el pase de
+              ponerse al día.
             </li>
             <li>
               <span className="font-semibold">5. Cada mes, 5 temas más.</span>{" "}
-              El resto del temario se desbloquea automáticamente, sin
-              ninguna acción por tu parte.
+              El resto del temario se va abriendo automáticamente para
+              todos los alumnos por igual, sin ninguna acción por tu
+              parte.
             </li>
           </ol>
         </Container>

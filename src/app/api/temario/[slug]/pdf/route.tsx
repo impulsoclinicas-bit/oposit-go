@@ -19,7 +19,7 @@ export async function GET(
 
   const user = await requireActiveUser(`/temario/${slug}`);
 
-  if (!isTemaDesbloqueado(tema.numero, user.subscriptionStartedAt)) {
+  if (!isTemaDesbloqueado(tema.numero, user)) {
     return NextResponse.json({ error: "Este tema todavía no está disponible" }, { status: 403 });
   }
 

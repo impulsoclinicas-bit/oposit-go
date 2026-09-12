@@ -9,11 +9,16 @@ export type Simulacro = {
   titulo: string;
 };
 
-// Un simulacro por bloque, siempre disponible desde que se desbloquea el
-// primer tema de ese bloque (ver `isSimulacroBloqueDesbloqueado` en
-// `desbloqueo.ts`). No son huecos fijos: cada vez que se hace, se genera
-// una selección nueva al azar entre TODOS los temas ya desbloqueados de
-// ese bloque, así que crece según avanza el desbloqueo y nunca se agota.
+/** Rango [desde, hasta] (nº de tema) del que puede tirar un simulacro. */
+export type RangoTemas = { desde: number; hasta: number };
+
+// Un simulacro por bloque, siempre disponible desde que el alumno tiene
+// algún tema accesible de ese bloque (ver `isSimulacroBloqueDesbloqueado`
+// en `desbloqueo.ts`). No son huecos fijos: cada vez que se hace, se
+// genera una selección nueva al azar entre TODOS los temas accesibles de
+// ese bloque (respetando tanto el techo del calendario compartido como el
+// lote de entrada del alumno), así que crece con el tiempo y nunca se
+// agota.
 //
 // El tamaño de cada uno reparte, en la misma proporción que el simulacro
 // completo (100 preguntas repartidas entre los 45 temas), el peso real de
@@ -38,25 +43,22 @@ export function getSimulacroBySlug(slug: string): Simulacro | undefined {
   return getSimulacros().find((s) => s.slug === slug);
 }
 
-export function getPreguntasSimulacro(
-  simulacro: Simulacro,
-  numeroTemasDesbloqueados: number
-): Pregunta[] {
+export function getPreguntasSimulacro(simulacro: Simulacro, rango: RangoTemas): Pregunta[] {
   const temasDisponibles = temas
-    .filter((t) => t.bloque === simulacro.bloque && t.numero <= numeroTemasDesbloqueados)
+    .filter((t) => t.bloque === simulacro.bloque && t.numero >= rango.desde && t.numero <= rango.hasta)
     .sort((a, b) => a.numero - b.numero);
   return temasDisponibles.flatMap((tema) => getPreguntasByTema(tema.slug));
 }
 
 // Simulacro completo: como el examen real, hasta 100 preguntas repartidas
-// entre todos los temas ya desbloqueados (no hace falta esperar a tener
-// el temario entero para poder hacer un examen completo; simplemente
-// crece según se van abriendo más temas).
+// entre todos los temas accesibles (no hace falta esperar a tener el
+// temario entero para poder hacer un examen completo; simplemente crece
+// según se van abriendo más temas).
 export const PREGUNTAS_SIMULACRO_COMPLETO = 100;
 
-export function getPreguntasSimulacroCompleto(numeroTemasDesbloqueados: number): Pregunta[] {
+export function getPreguntasSimulacroCompleto(rango: RangoTemas): Pregunta[] {
   const temasDisponibles = [...temas]
-    .filter((t) => t.numero <= numeroTemasDesbloqueados)
+    .filter((t) => t.numero >= rango.desde && t.numero <= rango.hasta)
     .sort((a, b) => a.numero - b.numero);
   return temasDisponibles.flatMap((tema) => getPreguntasByTema(tema.slug));
 }

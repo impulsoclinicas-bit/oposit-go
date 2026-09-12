@@ -9,7 +9,13 @@ import { getPreguntasByTema } from "@/content/preguntas";
 import { getEsquemaByTema } from "@/content/esquemas";
 import { getResumenByTema } from "@/content/resumenes";
 import { requireActiveUser } from "@/lib/auth-helpers";
-import { isTemaDesbloqueado, getFechaDesbloqueoTema } from "@/lib/desbloqueo";
+import {
+  isTemaDesbloqueado,
+  requierePaseParaPonerseAlDia,
+  getFechaDesbloqueoTema,
+} from "@/lib/desbloqueo";
+import { BuyButton } from "@/components/BuyButton";
+import { siteConfig } from "@/lib/site";
 
 export function generateStaticParams() {
   return temas.map((tema) => ({ slug: tema.slug }));
@@ -46,12 +52,11 @@ export default async function TemaPage({
   const esquema = getEsquemaByTema(tema.slug);
   const resumen = getResumenByTema(tema.slug);
 
-  const desbloqueado = isTemaDesbloqueado(tema.numero, user.subscriptionStartedAt);
+  const desbloqueado = isTemaDesbloqueado(tema.numero, user);
 
   if (!desbloqueado) {
-    const fecha = user.subscriptionStartedAt
-      ? getFechaDesbloqueoTema(tema.numero, user.subscriptionStartedAt)
-      : null;
+    const necesitaPase = requierePaseParaPonerseAlDia(tema.numero, user);
+    const fecha = necesitaPase ? null : getFechaDesbloqueoTema(tema.numero);
     return (
       <>
         <PageHero
@@ -71,20 +76,37 @@ export default async function TemaPage({
               <p className="mt-2 font-semibold text-brand-900">
                 Este tema todavía no está disponible
               </p>
-              <p className="mt-1 text-sm text-brand-700">
-                El contenido se desbloquea por bloques de 5 temas al mes,
-                para consolidar cada bloque antes de avanzar al
-                siguiente.
-                {fecha && (
-                  <>
-                    {" "}Este tema se desbloquea el{" "}
-                    <span className="font-semibold">
-                      {new Intl.DateTimeFormat("es-ES", { dateStyle: "long" }).format(fecha)}
-                    </span>
-                    .
-                  </>
-                )}
-              </p>
+              {necesitaPase ? (
+                <>
+                  <p className="mt-1 text-sm text-brand-700">
+                    Este tema ya está abierto en el calendario del curso,
+                    pero es anterior a tu fecha de alta. Puedes acceder a
+                    él (y a todos los que te falten) con el pase de
+                    ponerse al día, sin esperar.
+                  </p>
+                  <div className="mt-4">
+                    <BuyButton
+                      endpoint="/api/checkout-ponerse-al-dia"
+                      label={`Ponerme al día (${siteConfig.precioPorTemaAtrasadoEur.toFixed(2)} €/tema atrasado)`}
+                      className="rounded-md bg-accent-500 px-4 py-2 text-sm font-semibold text-brand-950 hover:bg-accent-400"
+                    />
+                  </div>
+                </>
+              ) : (
+                <p className="mt-1 text-sm text-brand-700">
+                  El temario se abre por lotes de 5 temas al mes, para
+                  consolidar cada bloque antes de avanzar al siguiente.
+                  {fecha && (
+                    <>
+                      {" "}Este tema se abre el{" "}
+                      <span className="font-semibold">
+                        {new Intl.DateTimeFormat("es-ES", { dateStyle: "long" }).format(fecha)}
+                      </span>
+                      .
+                    </>
+                  )}
+                </p>
+              )}
               <Link
                 href="/temario"
                 className="mt-4 inline-block text-sm font-semibold text-brand-800 hover:text-brand-900"

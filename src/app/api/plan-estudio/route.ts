@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@/auth";
 import { prisma, isDbConfigured } from "@/lib/db";
 import { generarPlanEstudio, ObjetivoPlan } from "@/lib/plan-estudio";
+import { getRangoTemasAccesibles } from "@/lib/desbloqueo";
 
 export async function POST(request: NextRequest) {
   const session = await auth();
@@ -16,7 +17,16 @@ export async function POST(request: NextRequest) {
     ? Math.min(60, Math.max(1, Number(body.hoursPerWeek)))
     : 6;
 
-  const plan = generarPlanEstudio({ objetivo, hoursPerWeek });
+  const user = await prisma.user.findUnique({
+    where: { id: session.user.id },
+    select: { subscriptionStartedAt: true, catchUpTemarioEn: true },
+  });
+  const temaEntrada = getRangoTemasAccesibles({
+    subscriptionStartedAt: user?.subscriptionStartedAt ?? null,
+    catchUpTemarioComprado: Boolean(user?.catchUpTemarioEn),
+  }).desde;
+
+  const plan = generarPlanEstudio({ objetivo, hoursPerWeek, temaEntrada });
 
   await prisma.studyPlan.upsert({
     where: { userId: session.user.id },

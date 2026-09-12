@@ -36,13 +36,18 @@ function semanasHastaFecha(fecha: Date): number {
 export function generarPlanEstudio(input: {
   objetivo: ObjetivoPlan;
   hoursPerWeek: number;
+  /** Primer tema a partir del cual planificar (su lote de entrada en el calendario compartido; ver `desbloqueo.ts`). Por defecto 1 (acceso completo). */
+  temaEntrada?: number;
 }): PlanEstudio {
   const usaConvocatoriaActual = input.objetivo === "convocatoria-actual";
   const weeksAvailable = usaConvocatoriaActual
     ? semanasHastaFecha(FECHA_EXAMEN_OFICIAL)
     : SEMANAS_CON_CALMA;
 
-  const temasOrdenados = [...temas].sort((a, b) => a.numero - b.numero);
+  const temaEntrada = input.temaEntrada ?? 1;
+  const temasOrdenados = temas
+    .filter((t) => t.numero >= temaEntrada)
+    .sort((a, b) => a.numero - b.numero);
   const simulacros = getSimulacros();
 
   // Las últimas semanas se dedican solo a repaso general y simulacros
@@ -65,7 +70,7 @@ export function generarPlanEstudio(input: {
     // correspondiente esa misma semana como autoevaluación.
     const ultimoTema = temasSemana[temasSemana.length - 1];
     const cierraLote =
-      ultimoTema.numero % TEMAS_POR_SIMULACRO === 0 || ultimoTema.numero === temasOrdenados.length;
+      ultimoTema.numero % TEMAS_POR_SIMULACRO === 0 || ultimoTema.numero === temas.length;
     const simulacroDisponible = cierraLote
       ? simulacros.find((s) => s.bloque === ultimoTema.bloque)
       : undefined;

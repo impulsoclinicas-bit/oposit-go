@@ -1,86 +1,88 @@
-import { temas, TEMAS_POR_SIMULACRO, Tema, getPrimerTemaDeBloque } from "@/lib/temario";
-import { FECHA_EXAMEN_OFICIAL } from "@/lib/convocatoria";
+import { Tema, getPrimerTemaDeBloque, getTemasByBloque } from "@/lib/temario";
+import {
+  getNumeroTemasCalendario,
+  getPrimerTemaDeEntrada,
+  getFechaAperturaTema,
+} from "@/lib/curso";
 
-// El contenido no se abre entero al suscribirse: se desbloquea por lotes de
-// TEMAS_POR_SIMULACRO temas. El primer lote está disponible desde el día de
-// alta. El ritmo "normal" es un lote al mes, pero si alguien se suscribe
-// cuando ya queda poco para la convocatoria vigente, el ritmo se acelera
-// automáticamente para que todo el temario esté abierto con margen de
-// repaso antes del examen — nunca al revés.
-//
-// Los simulacros por bloque (ver `simulacros.ts`) no tienen un desbloqueo
-// propio ligado a estos lotes: están disponibles en cuanto se desbloquea el
-// primer tema de su bloque, y crecen solos según se van abriendo más temas
-// de ese mismo bloque.
+// El temario se reparte con un calendario compartido (ver `curso.ts`): 5
+// temas nuevos al mes, iguales para todo el mundo, que nunca se cierran
+// una vez abiertos. Pero cada alumno solo tiene acceso, por su
+// suscripción, a partir del lote que estuviera vigente cuando se dio de
+// alta (o se reactivó tras cancelar) — no hay retroactividad automática.
+// Quien se apunta tarde puede comprar el pase de "ponerse al día" para
+// acceder también a los temas anteriores a su lote de entrada.
 
-const DIAS_MES = 30;
-const MARGEN_REPASO_DIAS = 21;
-const NUMERO_LOTES = Math.ceil(temas.length / TEMAS_POR_SIMULACRO);
+export type AccesoTemario = {
+  /** Fecha de alta o de la última reactivación: fija el lote de entrada. */
+  subscriptionStartedAt: Date | null;
+  /** true si ha comprado el pase de ponerse al día (accede a todo lo anterior a su lote de entrada). */
+  catchUpTemarioComprado: boolean;
+};
 
-const MS_POR_DIA = 24 * 60 * 60 * 1000;
-
-/** Días entre el desbloqueo de un lote y el siguiente, para un alta concreta. */
-function intervaloDiasEntreLotes(subscriptionStartedAt: Date): number {
-  if (NUMERO_LOTES <= 1) return DIAS_MES;
-  const diasHastaExamen =
-    (FECHA_EXAMEN_OFICIAL.getTime() - subscriptionStartedAt.getTime()) / MS_POR_DIA;
-  const diasDisponibles = diasHastaExamen - MARGEN_REPASO_DIAS;
-  if (diasDisponibles <= 0) return 0;
-  const intervaloNecesario = diasDisponibles / (NUMERO_LOTES - 1);
-  return Math.min(DIAS_MES, Math.max(1, intervaloNecesario));
+function getTemaEntrada(acceso: AccesoTemario): number {
+  if (acceso.catchUpTemarioComprado) return 1;
+  if (!acceso.subscriptionStartedAt) return 1;
+  return getPrimerTemaDeEntrada(acceso.subscriptionStartedAt);
 }
 
-/**
- * Nº de temas desbloqueados a día de hoy. Si no hay fecha de alta
- * registrada (cuentas creadas antes de tener esta función, o entorno sin
- * BD), no se bloquea nada: se prefiere pecar de generoso a romper el
- * acceso de alguien que ya pagaba.
- */
-export function getNumeroTemasDesbloqueados(
-  subscriptionStartedAt: Date | null,
-  ahora: Date = new Date()
-): number {
-  if (!subscriptionStartedAt) return temas.length;
-  const intervalo = intervaloDiasEntreLotes(subscriptionStartedAt);
-  if (intervalo <= 0) return temas.length;
-  const diasTranscurridos = (ahora.getTime() - subscriptionStartedAt.getTime()) / MS_POR_DIA;
-  const lotesDesbloqueados = Math.floor(diasTranscurridos / intervalo) + 1;
-  return Math.min(temas.length, lotesDesbloqueados * TEMAS_POR_SIMULACRO);
+/** Nº de temas que el calendario compartido tiene abiertos hoy (igual para todo el mundo). */
+export function getNumeroTemasDesbloqueados(ahora: Date = new Date()): number {
+  return getNumeroTemasCalendario(ahora);
 }
 
 export function isTemaDesbloqueado(
   numero: number,
-  subscriptionStartedAt: Date | null,
+  acceso: AccesoTemario,
   ahora: Date = new Date()
 ): boolean {
-  return numero <= getNumeroTemasDesbloqueados(subscriptionStartedAt, ahora);
+  return numero >= getTemaEntrada(acceso) && numero <= getNumeroTemasDesbloqueados(ahora);
 }
 
-/** Primer día en que un tema concreto pasa a estar disponible. */
-export function getFechaDesbloqueoTema(numero: number, subscriptionStartedAt: Date): Date {
-  const lote = Math.ceil(numero / TEMAS_POR_SIMULACRO) - 1;
-  const intervalo = intervaloDiasEntreLotes(subscriptionStartedAt);
-  const fecha = new Date(subscriptionStartedAt);
-  fecha.setDate(fecha.getDate() + Math.round(lote * intervalo));
-  return fecha;
+/**
+ * true si el tema ya lo ha abierto el calendario compartido (otros
+ * alumnos ya lo tienen), pero este alumno no lo tiene por haberse dado de
+ * alta después: se soluciona comprando el pase de ponerse al día, no
+ * esperando una fecha.
+ */
+export function requierePaseParaPonerseAlDia(
+  numero: number,
+  acceso: AccesoTemario,
+  ahora: Date = new Date()
+): boolean {
+  if (acceso.catchUpTemarioComprado) return false;
+  return numero < getTemaEntrada(acceso) && numero <= getNumeroTemasDesbloqueados(ahora);
 }
 
-/** Un simulacro de bloque está disponible en cuanto lo está el primer tema del bloque. */
+/** Primer día en que un tema concreto pasa a estar disponible en el calendario. */
+export function getFechaDesbloqueoTema(numero: number): Date {
+  return getFechaAperturaTema(numero);
+}
+
+/** Rango de temas [desde, hasta] al que tiene acceso un alumno: para simulacros y plan de estudio. */
+export function getRangoTemasAccesibles(
+  acceso: AccesoTemario,
+  ahora: Date = new Date()
+): { desde: number; hasta: number } {
+  return { desde: getTemaEntrada(acceso), hasta: getNumeroTemasDesbloqueados(ahora) };
+}
+
+/** Nº de temas ya abiertos por el calendario que quedan por delante del lote de entrada del alumno (candidatos al pase de ponerse al día). */
+export function getTemasAtrasados(acceso: AccesoTemario, ahora: Date = new Date()): number {
+  if (acceso.catchUpTemarioComprado) return 0;
+  const entrada = getTemaEntrada({ ...acceso, catchUpTemarioComprado: false });
+  return Math.max(0, entrada - 1);
+}
+
+/** Un simulacro de bloque está disponible en cuanto el alumno tiene algún tema accesible de ese bloque. */
 export function isSimulacroBloqueDesbloqueado(
   bloque: Tema["bloque"],
-  subscriptionStartedAt: Date | null,
+  acceso: AccesoTemario,
   ahora: Date = new Date()
 ): boolean {
-  return isTemaDesbloqueado(
-    getPrimerTemaDeBloque(bloque).numero,
-    subscriptionStartedAt,
-    ahora
-  );
+  return getTemasByBloque(bloque).some((t) => isTemaDesbloqueado(t.numero, acceso, ahora));
 }
 
-export function getFechaDesbloqueoSimulacroBloque(
-  bloque: Tema["bloque"],
-  subscriptionStartedAt: Date
-): Date {
-  return getFechaDesbloqueoTema(getPrimerTemaDeBloque(bloque).numero, subscriptionStartedAt);
+export function getFechaDesbloqueoSimulacroBloque(bloque: Tema["bloque"]): Date {
+  return getFechaAperturaTema(getPrimerTemaDeBloque(bloque).numero);
 }

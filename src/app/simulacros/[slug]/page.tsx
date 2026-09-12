@@ -14,7 +14,7 @@ import { requireActiveUser } from "@/lib/auth-helpers";
 import {
   isSimulacroBloqueDesbloqueado,
   getFechaDesbloqueoSimulacroBloque,
-  getNumeroTemasDesbloqueados,
+  getRangoTemasAccesibles,
 } from "@/lib/desbloqueo";
 
 export function generateStaticParams() {
@@ -46,12 +46,10 @@ export default async function SimulacroPage({
 
   const user = await requireActiveUser(`/simulacros/${slug}`);
 
-  const desbloqueado = isSimulacroBloqueDesbloqueado(simulacro.bloque, user.subscriptionStartedAt);
+  const desbloqueado = isSimulacroBloqueDesbloqueado(simulacro.bloque, user);
 
   if (!desbloqueado) {
-    const fecha = user.subscriptionStartedAt
-      ? getFechaDesbloqueoSimulacroBloque(simulacro.bloque, user.subscriptionStartedAt)
-      : null;
+    const fecha = getFechaDesbloqueoSimulacroBloque(simulacro.bloque);
     return (
       <>
         <PageHero
@@ -95,8 +93,8 @@ export default async function SimulacroPage({
     );
   }
 
-  const numeroTemasDesbloqueados = getNumeroTemasDesbloqueados(user.subscriptionStartedAt);
-  const preguntas = getPreguntasSimulacro(simulacro, numeroTemasDesbloqueados);
+  const rango = getRangoTemasAccesibles(user);
+  const preguntas = getPreguntasSimulacro(simulacro, rango);
 
   return (
     <>

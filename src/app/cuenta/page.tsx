@@ -5,10 +5,16 @@ import { Container } from "@/components/Container";
 import { PageHero } from "@/components/PageHero";
 import { PortalButton } from "@/components/PortalButton";
 import { PlanEstudioForm } from "@/components/PlanEstudioForm";
+import { BuyButton } from "@/components/BuyButton";
 import { auth } from "@/auth";
 import { prisma } from "@/lib/db";
 import type { SemanaPlan } from "@/lib/plan-estudio";
-import { getNumeroTemasDesbloqueados, getFechaDesbloqueoTema } from "@/lib/desbloqueo";
+import {
+  getNumeroTemasDesbloqueados,
+  getRangoTemasAccesibles,
+  getTemasAtrasados,
+  getFechaDesbloqueoTema,
+} from "@/lib/desbloqueo";
 import { temas } from "@/lib/temario";
 import { siteConfig } from "@/lib/site";
 
@@ -40,6 +46,7 @@ export default async function CuentaPage() {
       stripeCustomerId: true,
       subscriptionStartedAt: true,
       paseSimulacrosExpiraEn: true,
+      catchUpTemarioEn: true,
     },
   });
 
@@ -47,12 +54,16 @@ export default async function CuentaPage() {
     user?.paseSimulacrosExpiraEn && user.paseSimulacrosExpiraEn > new Date()
   );
 
-  const temasDesbloqueados = getNumeroTemasDesbloqueados(user?.subscriptionStartedAt ?? null);
-  const siguienteTema = temas.find((t) => t.numero === temasDesbloqueados + 1);
-  const fechaSiguienteLote =
-    siguienteTema && user?.subscriptionStartedAt
-      ? getFechaDesbloqueoTema(siguienteTema.numero, user.subscriptionStartedAt)
-      : null;
+  const accesoTemario = {
+    subscriptionStartedAt: user?.subscriptionStartedAt ?? null,
+    catchUpTemarioComprado: Boolean(user?.catchUpTemarioEn),
+  };
+  const temasDesbloqueadosCalendario = getNumeroTemasDesbloqueados();
+  const rango = getRangoTemasAccesibles(accesoTemario);
+  const temasAccesibles = Math.max(0, rango.hasta - rango.desde + 1);
+  const temasAtrasados = getTemasAtrasados(accesoTemario);
+  const siguienteTema = temas.find((t) => t.numero === temasDesbloqueadosCalendario + 1);
+  const fechaSiguienteLote = siguienteTema ? getFechaDesbloqueoTema(siguienteTema.numero) : null;
 
   const intentos = await prisma.quizAttempt.findMany({
     where: { userId: session.user.id },
@@ -126,9 +137,9 @@ export default async function CuentaPage() {
             {user?.subscriptionStatus === "active" && (
               <div className="mt-4 rounded-md bg-brand-50 p-3 text-sm text-brand-800">
                 <p>
-                  Temario desbloqueado:{" "}
+                  Temario accesible para ti:{" "}
                   <span className="font-semibold">
-                    {temasDesbloqueados} de {temas.length} temas
+                    {temasAccesibles} de {temas.length} temas
                   </span>
                 </p>
                 {siguienteTema && fechaSiguienteLote && (
@@ -141,6 +152,23 @@ export default async function CuentaPage() {
                     )}
                     .
                   </p>
+                )}
+                {temasAtrasados > 0 && (
+                  <div className="mt-3 rounded-md border border-accent-300 bg-white p-3">
+                    <p className="text-xs text-brand-700">
+                      El calendario del curso ya ha abierto{" "}
+                      <span className="font-semibold">{temasAtrasados} temas</span>{" "}
+                      anteriores a tu fecha de alta, a los que no tienes
+                      acceso todavía.
+                    </p>
+                    <div className="mt-2">
+                      <BuyButton
+                        endpoint="/api/checkout-ponerse-al-dia"
+                        label={`Ponerme al día · ${(temasAtrasados * siteConfig.precioPorTemaAtrasadoEur).toFixed(2)} €`}
+                        className="rounded-md bg-accent-500 px-3 py-2 text-xs font-semibold text-brand-950 hover:bg-accent-400"
+                      />
+                    </div>
+                  </div>
                 )}
               </div>
             )}

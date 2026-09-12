@@ -16,6 +16,11 @@ export const siteConfig = {
   // Pago único del pase de simulacros ilimitados (sin suscripción), válido
   // hasta la fecha de la convocatoria vigente (ver FECHA_EXAMEN_OFICIAL).
   precioPaseSimulacrosEur: 79.99,
+  // Precio por cada tema atrasado del pase de "ponerse al día" (ver
+  // `getTemasAtrasados` en `desbloqueo.ts`): quien se apunta tarde puede
+  // pagar esto por cada tema que el calendario compartido ya haya abierto
+  // antes de su alta, para acceder también a esos temas.
+  precioPorTemaAtrasadoEur: 1.5,
 };
 
 export const mainNav = [
