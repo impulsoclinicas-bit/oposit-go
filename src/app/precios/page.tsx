@@ -109,7 +109,7 @@ export default function PreciosPage() {
               ))}
             </ul>
             <div className="mt-8">
-              <BuyButton className="w-full rounded-md bg-accent-500 px-6 py-3 text-center text-sm font-semibold text-brand-950 shadow-sm transition-colors hover:bg-accent-400" />
+              <BuyButton className="w-full rounded-md bg-accent-500 px-6 py-3 text-center text-sm font-semibold text-brand-950 shadow-sm transition-colors hover:bg-accent-400 disabled:cursor-not-allowed disabled:opacity-50" />
             </div>
             <p className="mt-3 text-center text-xs text-brand-500">
               Pago seguro con Stripe. Sin permanencia.
@@ -147,7 +147,7 @@ export default function PreciosPage() {
               <BuyButton
                 endpoint="/api/checkout-pase-simulacros"
                 label="Comprar el pase"
-                className="w-full rounded-md border-2 border-brand-900 px-6 py-3 text-center text-sm font-semibold text-brand-900 transition-colors hover:bg-brand-50"
+                className="w-full rounded-md border-2 border-brand-900 px-6 py-3 text-center text-sm font-semibold text-brand-900 transition-colors hover:bg-brand-50 disabled:cursor-not-allowed disabled:opacity-50"
               />
             </div>
             <p className="mt-3 text-center text-xs text-brand-500">

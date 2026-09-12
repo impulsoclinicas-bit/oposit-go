@@ -4,7 +4,7 @@ import { temas, TEMAS_POR_SIMULACRO } from "@/lib/temario";
 // mismo lote de temas en una fecha dada, independientemente de cuándo se
 // hayan apuntado. Se actualiza a mano cuando arranca un ciclo nuevo (tras
 // cada convocatoria), igual que FECHA_EXAMEN_OFICIAL en `convocatoria.ts`.
-export const CURSO_INICIO = new Date("2025-11-01T00:00:00");
+export const CURSO_INICIO = new Date("2026-10-15T00:00:00");
 
 const DIAS_MES = 30;
 const MS_POR_DIA = 24 * 60 * 60 * 1000;

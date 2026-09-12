@@ -12,6 +12,14 @@ export const siteConfig = {
   country: "España",
   areaServed: "España",
   sameAs: [] as string[],
+  // Datos del titular real (persona física / autónomo), obligatorios en el
+  // aviso legal (art. 10 LSSICE) antes de operar comercialmente. Como
+  // autónomo no hace falta CIF (eso es solo para sociedades): el NIF que
+  // exige la ley es tu DNI. Rellena estos tres campos con tus datos reales
+  // antes de lanzar — mientras estén vacíos, el aviso legal lo señala.
+  titularNombre: "", // Nombre y apellidos completos, tal como figuran en el DNI
+  titularNif: "", // Tu DNI (con letra), como NIF de persona física
+  titularDomicilio: "", // Domicilio fiscal completo (calle, número, CP, localidad, provincia)
   precioMensualEur: 9.99,
   // Pago único del pase de simulacros ilimitados (sin suscripción), válido
   // hasta la fecha de la convocatoria vigente (ver FECHA_EXAMEN_OFICIAL).

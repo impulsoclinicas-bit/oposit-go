@@ -88,7 +88,7 @@ export default async function TemaPage({
                     <BuyButton
                       endpoint="/api/checkout-ponerse-al-dia"
                       label={`Ponerme al día (${siteConfig.precioPorTemaAtrasadoEur.toFixed(2)} €/tema atrasado)`}
-                      className="rounded-md bg-accent-500 px-4 py-2 text-sm font-semibold text-brand-950 hover:bg-accent-400"
+                      className="rounded-md bg-accent-500 px-4 py-2 text-sm font-semibold text-brand-950 hover:bg-accent-400 disabled:cursor-not-allowed disabled:opacity-50"
                     />
                   </div>
                 </>

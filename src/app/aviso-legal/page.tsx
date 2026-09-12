@@ -21,11 +21,18 @@ export default function AvisoLegalPage() {
       <section className="py-16 sm:py-20">
         <Container className="prose max-w-3xl text-brand-800">
           <p>
-            <strong>Titular:</strong> {siteConfig.legalName}. Datos de
-            contacto:{" "}
-            <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>.
-            [Pendiente de completar con NIF/CIF y domicilio fiscal antes de
-            operar comercialmente].
+            <strong>Titular:</strong>{" "}
+            {siteConfig.titularNombre || "[Pendiente: nombre y apellidos del titular]"},
+            actuando como persona física (autónomo/a).
+            <br />
+            <strong>NIF:</strong>{" "}
+            {siteConfig.titularNif || "[Pendiente: tu DNI, como NIF de persona física]"}
+            <br />
+            <strong>Domicilio fiscal:</strong>{" "}
+            {siteConfig.titularDomicilio || "[Pendiente: domicilio fiscal completo]"}
+            <br />
+            <strong>Contacto:</strong>{" "}
+            <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
           </p>
           <p>
             {siteConfig.name} es una plataforma privada de preparación de

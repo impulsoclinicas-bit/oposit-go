@@ -165,7 +165,7 @@ export default async function CuentaPage() {
                       <BuyButton
                         endpoint="/api/checkout-ponerse-al-dia"
                         label={`Ponerme al día · ${(temasAtrasados * siteConfig.precioPorTemaAtrasadoEur).toFixed(2)} €`}
-                        className="rounded-md bg-accent-500 px-3 py-2 text-xs font-semibold text-brand-950 hover:bg-accent-400"
+                        className="rounded-md bg-accent-500 px-3 py-2 text-xs font-semibold text-brand-950 hover:bg-accent-400 disabled:cursor-not-allowed disabled:opacity-50"
                       />
                     </div>
                   </div>
