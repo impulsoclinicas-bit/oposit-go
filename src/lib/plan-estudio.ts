@@ -1,4 +1,4 @@
-import { temas, Tema } from "@/lib/temario";
+import { temas, Tema, TEMAS_POR_SIMULACRO } from "@/lib/temario";
 import { getSimulacros } from "@/lib/simulacros";
 import { FECHA_EXAMEN_OFICIAL } from "@/lib/convocatoria";
 
@@ -60,12 +60,15 @@ export function generarPlanEstudio(input: {
     if (temasSemana.length === 0) break;
     cursor += temasPorSemana;
 
-    // Si esta tanda de temas completa (o cruza) un grupo de simulacro,
-    // sugerimos hacerlo esa misma semana como autoevaluación.
-    const ultimoNumero = temasSemana[temasSemana.length - 1].numero;
-    const simulacroDisponible = simulacros.find(
-      (s) => s.temas[s.temas.length - 1].numero === ultimoNumero
-    );
+    // Si esta tanda de temas completa un lote de desbloqueo (o el
+    // temario entero), sugerimos hacer el simulacro del bloque
+    // correspondiente esa misma semana como autoevaluación.
+    const ultimoTema = temasSemana[temasSemana.length - 1];
+    const cierraLote =
+      ultimoTema.numero % TEMAS_POR_SIMULACRO === 0 || ultimoTema.numero === temasOrdenados.length;
+    const simulacroDisponible = cierraLote
+      ? simulacros.find((s) => s.bloque === ultimoTema.bloque)
+      : undefined;
 
     semanas.push({
       numero: semanas.length + 1,

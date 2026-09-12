@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const incluyeMensual = [
   "Tests ilimitados: esquema, resumen y batería de preguntas de cada tema",
   "Pruebas psicotécnicas: series numéricas, series de letras, sinónimos y antónimos, y analogías verbales",
-  "Un simulacro cada 5 temas y un simulacro completo, ambos con cronómetro",
+  "Un simulacro por bloque (que crece con lo que ya tienes desbloqueado) y un simulacro completo, ambos con cronómetro",
   "Plan de estudio personalizado a partir de un breve cuestionario inicial",
   "Corrección y explicación al instante en cada pregunta",
   "Acceso desde el móvil, la tableta o el ordenador",
@@ -32,7 +32,7 @@ const incluyePase = [
 const noIncluyePase = [
   "Batería de preguntas, esquema o resumen de cada tema",
   "Descarga en PDF de esquemas y resúmenes",
-  "Simulacros por bloques de 5 temas ni categorías psicotécnicas individuales",
+  "Simulacros por bloque de temario ni categorías psicotécnicas individuales",
 ];
 
 const faqItems = [
@@ -69,7 +69,7 @@ const faqItems = [
   {
     question: "¿Tengo acceso a todo el temario desde el primer día con el plan mensual?",
     answer:
-      "Dispones de los 5 primeros temas y su simulacro desde el momento de la suscripción. El resto se desbloquea a razón de 5 temas (con su simulacro correspondiente) cada mes, mientras las pruebas psicotécnicas y el simulacro completo están disponibles en todo momento. El objetivo es asimilar el contenido bloque a bloque, no restringir el acceso.",
+      "Dispones de los 5 primeros temas desde el momento de la suscripción, con el simulacro de su bloque ya disponible. El resto se desbloquea a razón de 5 temas más cada mes; los simulacros por bloque van creciendo automáticamente según se abren más temas de ese bloque, mientras las pruebas psicotécnicas y el simulacro completo están disponibles en todo momento. El objetivo es asimilar el contenido bloque a bloque, no restringir el acceso.",
   },
 ];
 
@@ -174,7 +174,7 @@ export default function PreciosPage() {
             <li>
               <span className="font-semibold">4. Empieza a estudiar.</span>{" "}
               Dispones de inmediato de los 5 primeros temas, sus tests,
-              esquemas y resúmenes, y su simulacro correspondiente.
+              esquemas y resúmenes, y el simulacro de su bloque.
             </li>
             <li>
               <span className="font-semibold">5. Cada mes, 5 temas más.</span>{" "}

@@ -8,7 +8,6 @@ import { PoliceBadge } from "@/components/icons/PoliceBadge";
 import { PatrolCar } from "@/components/icons/PatrolCar";
 import { siteConfig } from "@/lib/site";
 import { bloques, temas } from "@/lib/temario";
-import { getSimulacros } from "@/lib/simulacros";
 import { noticias } from "@/lib/noticias";
 
 export const metadata: Metadata = {
@@ -36,7 +35,7 @@ const beneficios = [
   {
     titulo: "Simulacros con cronómetro",
     descripcion:
-      "Un simulacro cada 5 temas y un simulacro completo (hasta 100 preguntas), con el mismo cronómetro que el examen oficial.",
+      "Un simulacro por bloque, que se regenera con preguntas nuevas cada vez que lo haces, y un simulacro completo (hasta 100 preguntas), ambos con el mismo cronómetro que el examen oficial.",
   },
   {
     titulo: "Plan de estudio personalizado",
@@ -46,7 +45,7 @@ const beneficios = [
   {
     titulo: "Temario que se abre por bloques",
     descripcion:
-      "5 temas nuevos cada mes, con su simulacro correspondiente, para asimilar el contenido de forma progresiva en lugar de afrontarlo todo de una vez.",
+      "5 temas nuevos cada mes, mientras el simulacro de cada bloque crece con lo que ya vas desbloqueando, para asimilar el contenido de forma progresiva en lugar de afrontarlo todo de una vez.",
   },
 ];
 
@@ -76,7 +75,7 @@ const faqItems = [
   {
     question: "¿Qué incluye la suscripción mensual?",
     answer:
-      "Tests ilimitados de cada tema, esquemas y resúmenes, pruebas psicotécnicas, simulacros con cronómetro (por bloques y completo) y un plan de estudio personalizado a partir del cuestionario que respondes al darte de alta. El temario se abre por bloques de 5 temas al mes, con su simulacro correspondiente, en lugar de estar disponible entero desde el primer día.",
+      "Tests ilimitados de cada tema, esquemas y resúmenes, pruebas psicotécnicas, simulacros con cronómetro (por bloques y completo) y un plan de estudio personalizado a partir del cuestionario que respondes al darte de alta. El temario se abre por lotes de 5 temas al mes, en lugar de estar disponible entero desde el primer día.",
   },
   {
     question: "¿Puedo cancelar cuándo quiera?",
@@ -96,13 +95,11 @@ const faqItems = [
   {
     question: "¿Por qué el temario se abre poco a poco y no entero desde el primer día?",
     answer:
-      `Para favorecer un ritmo de estudio ordenado, en lugar de presentarte los ${temas.length} temas todos a la vez. Al suscribirte tienes ya disponibles los 5 primeros temas y su simulacro; cada mes se abren 5 temas más con su simulacro correspondiente, mientras el simulacro completo va creciendo con todo lo que ya tienes desbloqueado.`,
+      `Para favorecer un ritmo de estudio ordenado, en lugar de presentarte los ${temas.length} temas todos a la vez. Al suscribirte tienes ya disponibles los 5 primeros temas; cada mes se abren 5 temas más, mientras los simulacros por bloque y el simulacro completo van creciendo automáticamente con todo lo que ya tienes desbloqueado.`,
   },
 ];
 
 export default function HomePage() {
-  const simulacros = getSimulacros();
-
   return (
     <>
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-950 via-brand-900 to-brand-800 py-20 text-white sm:py-28">
@@ -145,7 +142,7 @@ export default function HomePage() {
             <ul className="mt-4 space-y-3 text-sm text-brand-100">
               <li>✓ Tests ilimitados: cada intento genera una combinación nueva</li>
               <li>✓ {temas.length} temas organizados en {bloques.length} bloques</li>
-              <li>✓ {simulacros.length} simulacros tipo test</li>
+              <li>✓ Simulacros por bloque y completo, siempre con preguntas nuevas</li>
               <li>✓ Corrección y explicación al instante</li>
               <li>✓ Sin permanencia: cancela cuando quieras</li>
             </ul>

@@ -1,45 +1,51 @@
-import { temas, Tema, TEMAS_POR_SIMULACRO } from "@/lib/temario";
+import { temas, bloques, Tema } from "@/lib/temario";
 import { getPreguntasByTema } from "@/content/preguntas";
 import { Pregunta } from "@/lib/preguntas";
-import { sample } from "@/lib/shuffle";
 
 export type Simulacro = {
   slug: string;
-  numero: number;
+  bloque: Tema["bloque"];
+  nombreBloque: string;
   titulo: string;
-  temas: Tema[];
 };
 
-// Preguntas por tema que entran en el simulacro combinado (el resto de la
-// batería de cada tema queda solo para practicar tema a tema).
-const PREGUNTAS_POR_TEMA_EN_SIMULACRO = 6;
+// Un simulacro por bloque, siempre disponible desde que se desbloquea el
+// primer tema de ese bloque (ver `isSimulacroBloqueDesbloqueado` en
+// `desbloqueo.ts`). No son huecos fijos: cada vez que se hace, se genera
+// una selección nueva al azar entre TODOS los temas ya desbloqueados de
+// ese bloque, así que crece según avanza el desbloqueo y nunca se agota.
+//
+// El tamaño de cada uno reparte, en la misma proporción que el simulacro
+// completo (100 preguntas repartidas entre los 45 temas), el peso real de
+// cada bloque en el temario: 26 jurídico + 11 social + 8 técnico → 58 + 24
+// + 18 = 100.
+export const PREGUNTAS_SIMULACRO_BLOQUE: Record<Tema["bloque"], number> = {
+  juridico: 58,
+  social: 24,
+  "tecnico-cientifico": 18,
+};
 
 export function getSimulacros(): Simulacro[] {
-  const ordenados = [...temas].sort((a, b) => a.numero - b.numero);
-  const grupos: Simulacro[] = [];
-
-  for (let i = 0; i < ordenados.length; i += TEMAS_POR_SIMULACRO) {
-    const grupo = ordenados.slice(i, i + TEMAS_POR_SIMULACRO);
-    const numero = grupos.length + 1;
-    grupos.push({
-      slug: `simulacro-${numero}`,
-      numero,
-      titulo: `Simulacro ${numero} · temas ${grupo[0].numero}-${grupo[grupo.length - 1].numero}`,
-      temas: grupo,
-    });
-  }
-
-  return grupos;
+  return bloques.map((bloque) => ({
+    slug: `simulacro-${bloque.slug}`,
+    bloque: bloque.slug,
+    nombreBloque: bloque.nombre,
+    titulo: `Simulacro · ${bloque.nombre}`,
+  }));
 }
 
 export function getSimulacroBySlug(slug: string): Simulacro | undefined {
   return getSimulacros().find((s) => s.slug === slug);
 }
 
-export function getPreguntasSimulacro(simulacro: Simulacro): Pregunta[] {
-  return simulacro.temas.flatMap((tema) =>
-    sample(getPreguntasByTema(tema.slug), PREGUNTAS_POR_TEMA_EN_SIMULACRO)
-  );
+export function getPreguntasSimulacro(
+  simulacro: Simulacro,
+  numeroTemasDesbloqueados: number
+): Pregunta[] {
+  const temasDisponibles = temas
+    .filter((t) => t.bloque === simulacro.bloque && t.numero <= numeroTemasDesbloqueados)
+    .sort((a, b) => a.numero - b.numero);
+  return temasDisponibles.flatMap((tema) => getPreguntasByTema(tema.slug));
 }
 
 // Simulacro completo: como el examen real, hasta 100 preguntas repartidas

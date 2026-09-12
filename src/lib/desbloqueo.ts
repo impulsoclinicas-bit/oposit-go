@@ -1,12 +1,17 @@
-import { temas, TEMAS_POR_SIMULACRO } from "@/lib/temario";
+import { temas, TEMAS_POR_SIMULACRO, Tema, getPrimerTemaDeBloque } from "@/lib/temario";
 import { FECHA_EXAMEN_OFICIAL } from "@/lib/convocatoria";
 
 // El contenido no se abre entero al suscribirse: se desbloquea por lotes de
-// TEMAS_POR_SIMULACRO temas (y su simulacro correspondiente). El primer lote
-// está disponible desde el día de alta. El ritmo "normal" es un lote al mes,
-// pero si alguien se suscribe cuando ya queda poco para la convocatoria
-// vigente, el ritmo se acelera automáticamente para que todo el temario
-// esté abierto con margen de repaso antes del examen — nunca al revés.
+// TEMAS_POR_SIMULACRO temas. El primer lote está disponible desde el día de
+// alta. El ritmo "normal" es un lote al mes, pero si alguien se suscribe
+// cuando ya queda poco para la convocatoria vigente, el ritmo se acelera
+// automáticamente para que todo el temario esté abierto con margen de
+// repaso antes del examen — nunca al revés.
+//
+// Los simulacros por bloque (ver `simulacros.ts`) no tienen un desbloqueo
+// propio ligado a estos lotes: están disponibles en cuanto se desbloquea el
+// primer tema de su bloque, y crecen solos según se van abriendo más temas
+// de ese mismo bloque.
 
 const DIAS_MES = 30;
 const MARGEN_REPASO_DIAS = 21;
@@ -60,29 +65,22 @@ export function getFechaDesbloqueoTema(numero: number, subscriptionStartedAt: Da
   return fecha;
 }
 
-export function getNumeroSimulacrosDesbloqueados(
-  subscriptionStartedAt: Date | null,
-  ahora: Date = new Date()
-): number {
-  return Math.ceil(
-    getNumeroTemasDesbloqueados(subscriptionStartedAt, ahora) / TEMAS_POR_SIMULACRO
-  );
-}
-
-export function isSimulacroDesbloqueado(
-  numeroSimulacro: number,
+/** Un simulacro de bloque está disponible en cuanto lo está el primer tema del bloque. */
+export function isSimulacroBloqueDesbloqueado(
+  bloque: Tema["bloque"],
   subscriptionStartedAt: Date | null,
   ahora: Date = new Date()
 ): boolean {
-  return numeroSimulacro <= getNumeroSimulacrosDesbloqueados(subscriptionStartedAt, ahora);
+  return isTemaDesbloqueado(
+    getPrimerTemaDeBloque(bloque).numero,
+    subscriptionStartedAt,
+    ahora
+  );
 }
 
-export function getFechaDesbloqueoSimulacro(
-  numeroSimulacro: number,
+export function getFechaDesbloqueoSimulacroBloque(
+  bloque: Tema["bloque"],
   subscriptionStartedAt: Date
 ): Date {
-  const intervalo = intervaloDiasEntreLotes(subscriptionStartedAt);
-  const fecha = new Date(subscriptionStartedAt);
-  fecha.setDate(fecha.getDate() + Math.round((numeroSimulacro - 1) * intervalo));
-  return fecha;
+  return getFechaDesbloqueoTema(getPrimerTemaDeBloque(bloque).numero, subscriptionStartedAt);
 }

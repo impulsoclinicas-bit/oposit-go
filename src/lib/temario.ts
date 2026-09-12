@@ -56,9 +56,11 @@ export const bloques: Bloque[] = [
   },
 ];
 
-// Cada 5 temas se genera un simulacro tipo test que combina preguntas de
-// ese tramo (ver `simulacros.ts`). Con 45 temas salen 9 simulacros por
-// bloques (el último de solo 5) más el simulacro completo.
+// El temario se desbloquea por lotes de TEMAS_POR_SIMULACRO temas (ver
+// `desbloqueo.ts`). Los simulacros ya no siguen esos lotes: hay un
+// simulacro por bloque (ver `simulacros.ts`) que se regenera con preguntas
+// nuevas cada vez, a partir de todo lo que el alumno ya tiene desbloqueado
+// de ese bloque, más un simulacro completo de todo el temario.
 export const TEMAS_POR_SIMULACRO = 5;
 
 export const temas: Tema[] = [
@@ -399,6 +401,10 @@ export function getTemaBySlug(slug: string): Tema | undefined {
 
 export function getTemasByBloque(bloque: Tema["bloque"]): Tema[] {
   return temas.filter((t) => t.bloque === bloque).sort((a, b) => a.numero - b.numero);
+}
+
+export function getPrimerTemaDeBloque(bloque: Tema["bloque"]): Tema {
+  return getTemasByBloque(bloque)[0];
 }
 
 export function getBloque(slug: Tema["bloque"]): Bloque | undefined {

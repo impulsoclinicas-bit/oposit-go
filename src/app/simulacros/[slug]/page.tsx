@@ -4,9 +4,18 @@ import { notFound } from "next/navigation";
 import { PageHero } from "@/components/PageHero";
 import { Container } from "@/components/Container";
 import { QuizRunner } from "@/components/QuizRunner";
-import { getSimulacroBySlug, getPreguntasSimulacro, getSimulacros } from "@/lib/simulacros";
+import {
+  getSimulacroBySlug,
+  getPreguntasSimulacro,
+  getSimulacros,
+  PREGUNTAS_SIMULACRO_BLOQUE,
+} from "@/lib/simulacros";
 import { requireActiveUser } from "@/lib/auth-helpers";
-import { isSimulacroDesbloqueado, getFechaDesbloqueoSimulacro } from "@/lib/desbloqueo";
+import {
+  isSimulacroBloqueDesbloqueado,
+  getFechaDesbloqueoSimulacroBloque,
+  getNumeroTemasDesbloqueados,
+} from "@/lib/desbloqueo";
 
 export function generateStaticParams() {
   return getSimulacros().map((simulacro) => ({ slug: simulacro.slug }));
@@ -37,11 +46,11 @@ export default async function SimulacroPage({
 
   const user = await requireActiveUser(`/simulacros/${slug}`);
 
-  const desbloqueado = isSimulacroDesbloqueado(simulacro.numero, user.subscriptionStartedAt);
+  const desbloqueado = isSimulacroBloqueDesbloqueado(simulacro.bloque, user.subscriptionStartedAt);
 
   if (!desbloqueado) {
     const fecha = user.subscriptionStartedAt
-      ? getFechaDesbloqueoSimulacro(simulacro.numero, user.subscriptionStartedAt)
+      ? getFechaDesbloqueoSimulacroBloque(simulacro.bloque, user.subscriptionStartedAt)
       : null;
     return (
       <>
@@ -62,7 +71,7 @@ export default async function SimulacroPage({
                 Este simulacro todavía no está disponible
               </p>
               <p className="mt-1 text-sm text-brand-700">
-                Se desbloquea junto con sus temas correspondientes.
+                Se desbloquea junto con el primer tema de este bloque.
                 {fecha && (
                   <>
                     {" "}Disponible el{" "}
@@ -86,14 +95,15 @@ export default async function SimulacroPage({
     );
   }
 
-  const preguntas = getPreguntasSimulacro(simulacro);
+  const numeroTemasDesbloqueados = getNumeroTemasDesbloqueados(user.subscriptionStartedAt);
+  const preguntas = getPreguntasSimulacro(simulacro, numeroTemasDesbloqueados);
 
   return (
     <>
       <PageHero
         eyebrow="Simulacro"
         title={simulacro.titulo}
-        description={`Combina preguntas de los temas ${simulacro.temas[0].numero} a ${simulacro.temas[simulacro.temas.length - 1].numero}.`}
+        description={`Combina preguntas de todos los temas ya desbloqueados de ${simulacro.nombreBloque}. Cada vez que lo haces se genera una selección nueva.`}
         breadcrumbs={[
           { label: "Inicio", href: "/" },
           { label: "Simulacros", href: "/simulacros" },
@@ -111,6 +121,7 @@ export default async function SimulacroPage({
           <QuizRunner
             temaSlug={simulacro.slug}
             preguntas={preguntas}
+            tamanoTest={PREGUNTAS_SIMULACRO_BLOQUE[simulacro.bloque]}
             segundosPorPregunta={30}
             volverHref="/simulacros"
             volverLabel="Volver a simulacros"
