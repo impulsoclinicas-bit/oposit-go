@@ -293,7 +293,11 @@ export default async function CuentaPage() {
                     </div>
 
                     {semana.temas.length > 0 && (
-                      <ul className="mt-3 space-y-1.5 text-sm">
+                      <>
+                        <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-brand-500">
+                          {semana.tipo === "repaso" ? "Repasa estos temas" : "Temas nuevos"}
+                        </p>
+                        <ul className="mt-1.5 space-y-1.5 text-sm">
                         {semana.temas.map((tema) => {
                           const hecho = temasCompletados.has(tema.slug);
                           return (
@@ -317,7 +321,22 @@ export default async function CuentaPage() {
                             </li>
                           );
                         })}
-                      </ul>
+                        </ul>
+                      </>
+                    )}
+
+                    {semana.simulacrosCompletosSemana && (
+                      <p className="mt-3 text-sm text-brand-800">
+                        Haz el{" "}
+                        <Link
+                          href="/simulacros/completo"
+                          className="font-semibold text-brand-900 underline"
+                        >
+                          simulacro completo
+                        </Link>{" "}
+                        al menos {semana.simulacrosCompletosSemana} veces esta
+                        semana, para coger el ritmo del examen real.
+                      </p>
                     )}
 
                     {semana.simulacroSlug && (

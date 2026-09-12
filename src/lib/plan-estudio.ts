@@ -8,7 +8,14 @@ export type SemanaPlan = {
   temas: Tema[];
   simulacroSlug?: string;
   simulacroTitulo?: string;
+  /** En semanas de repaso: nº de simulacros completos (examen oficial) recomendados esa semana. */
+  simulacrosCompletosSemana?: number;
 };
+
+// En la recta final (últimas semanas de repaso), en vez de una sola
+// autoevaluación por bloque se recomienda entrenar el ritmo del examen
+// real: repetir el simulacro completo varias veces por semana.
+const SIMULACROS_COMPLETOS_POR_SEMANA_REPASO = 2;
 
 export type ObjetivoPlan = "convocatoria-actual" | "con-calma";
 
@@ -84,17 +91,41 @@ export function generarPlanEstudio(input: {
     });
   }
 
+  // Fase de repaso: se vuelve a recorrer todo el temario accesible desde
+  // el principio (no hay temas nuevos que dar), pero cada semana repasa
+  // más temas que la anterior — recalculado según las semanas que
+  // quedan hasta el examen — para intensificar el repaso cuanto más
+  // cerca esté la convocatoria. En paralelo, cada semana de repaso
+  // recomienda hacer el simulacro completo (examen oficial) varias veces,
+  // en vez de un único simulacro por bloque. Si se acaba generando un
+  // plan nuevo tras pasar la convocatoria (para la siguiente), esta fase
+  // no aparece: se vuelve a partir de cero con el ritmo normal de estudio.
+  let repasoCursor = 0;
   for (let i = 0; i < semanasRepaso; i++) {
+    const semanasRepasoRestantes = semanasRepaso - i;
+    const temasRepasoSemana: Tema[] = [];
+    if (temasOrdenados.length > 0) {
+      const temasEstaSemana = Math.max(
+        1,
+        Math.ceil(temasOrdenados.length / semanasRepasoRestantes)
+      );
+      for (let k = 0; k < temasEstaSemana; k++) {
+        temasRepasoSemana.push(temasOrdenados[repasoCursor % temasOrdenados.length]);
+        repasoCursor++;
+      }
+    }
+
     const simulacro = simulacros[i % simulacros.length];
     const esUltima = i === semanasRepaso - 1;
     semanas.push({
       numero: semanas.length + 1,
       tipo: "repaso",
-      temas: [],
+      temas: temasRepasoSemana,
       simulacroSlug: esUltima ? undefined : simulacro?.slug,
       simulacroTitulo: esUltima
         ? "Repaso final de todos los bloques + simulacros que peor te hayan salido"
         : simulacro?.titulo,
+      simulacrosCompletosSemana: SIMULACROS_COMPLETOS_POR_SEMANA_REPASO,
     });
   }
 
