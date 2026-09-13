@@ -9,10 +9,16 @@ export type Noticia = {
 // prensa especializada).
 export const noticias: Noticia[] = [
   {
+    fecha: "27 ago. 2026",
+    titulo: "Cierre del plazo de subsanación",
+    resumen:
+      "Terminó el plazo de 10 días hábiles (14 a 27 de agosto) para subsanar defectos en la lista de admitidos o reclamar contra la de excluidos. La lista definitiva, con la fecha, sede y aula concretas del examen, se confirma en el Portal del Aspirante.",
+  },
+  {
     fecha: "13 ago. 2026",
     titulo: "Publicada la lista provisional de admitidos y excluidos",
     resumen:
-      "La Dirección General de la Policía publicó en el BOE la relación de personas admitidas y excluidas a la Escala Básica. Quien figure como excluido tiene 10 días hábiles desde la publicación para subsanar su instancia.",
+      "La Dirección General de la Policía publicó en el BOE (BOE-A-2026-17632, Resolución de 6 de agosto de 2026) la relación de personas admitidas y excluidas a la Escala Básica. Quien figure como excluido tenía 10 días hábiles desde la publicación para subsanar su instancia.",
   },
   {
     fecha: "12 ago. 2026",

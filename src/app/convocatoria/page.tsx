@@ -215,10 +215,14 @@ export default function ConvocatoriaPage() {
         <Container>
           <p className="text-xs text-brand-500">
             Fuentes consultadas: BOE-A-2026-15055 (Resolución de 7 de julio de
-            2026, Dirección General de la Policía) y varios medios
-            especializados en oposiciones que reportan el mismo desglose de
-            plazas y fechas. Los datos de plazas, plazos y fechas
-            corresponden a la convocatoria publicada en julio de 2026;{" "}
+            2026, convocatoria) y BOE-A-2026-17632 (Resolución de 6 de agosto
+            de 2026, lista provisional de admitidos y excluidos), ambas de la
+            Dirección General de la Policía, y varios medios especializados
+            en oposiciones que reportan el mismo desglose de plazas y fechas.
+            La lista definitiva de admitidos y la confirmación de sede y aula
+            del examen se consultan en el Portal del Aspirante. Los datos de
+            plazas, plazos y fechas corresponden a la convocatoria publicada
+            en julio de 2026;{" "}
             <Link href="/contacto" className="underline">
               avísanos
             </Link>{" "}

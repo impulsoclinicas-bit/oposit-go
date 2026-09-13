@@ -52,6 +52,8 @@ const beneficios = [
 const fechas = [
   { hito: "Publicación en el BOE", fecha: "10 de julio de 2026" },
   { hito: "Plazo de solicitudes", fecha: "13 a 31 de julio de 2026" },
+  { hito: "Lista provisional de admitidos", fecha: "13 de agosto de 2026" },
+  { hito: "Cierre del plazo de subsanación", fecha: "27 de agosto de 2026" },
   { hito: "Primer ejercicio (conocimientos y psicotécnicos)", fecha: "26 de septiembre de 2026" },
   { hito: "Pruebas físicas", fecha: "Segunda quincena de octubre de 2026" },
 ];
