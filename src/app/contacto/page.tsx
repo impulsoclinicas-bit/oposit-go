@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { Container } from "@/components/Container";
 import { PageHero } from "@/components/PageHero";
 import { ContactForm } from "@/components/ContactForm";
+import { FaqSection } from "@/components/FaqSection";
 import { JsonLd } from "@/components/JsonLd";
 import { siteConfig } from "@/lib/site";
 
@@ -21,13 +22,36 @@ const contactPageJsonLd = {
   about: { "@id": `${siteConfig.url}/#organization` },
 };
 
+const faqSoporte = [
+  {
+    question: "¿Cómo cancelo mi suscripción?",
+    answer:
+      "Desde \"Mi cuenta\" → \"Gestionar suscripción\" (portal seguro de Stripe): puedes cancelarla en el momento, sin escribirnos. Mantendrás el acceso hasta el final del periodo ya pagado.",
+  },
+  {
+    question: "No recibo el correo para activar mi cuenta o restablecer la contraseña",
+    answer:
+      "Revisa la carpeta de spam o promociones. Si tras 15 minutos sigue sin llegar, escríbenos indicando el email con el que pagaste y te lo reenviamos a mano.",
+  },
+  {
+    question: "He pagado pero no tengo acceso",
+    answer:
+      "Puede tardar unos minutos en activarse. Si pasado un rato sigues sin acceso, escríbenos con el email de la compra y el justificante de Stripe (recibo o últimos 4 dígitos de la tarjeta): lo revisamos y te damos acceso a mano si hace falta.",
+  },
+  {
+    question: "Me apunté tarde: ¿cómo pido el pase de ponerse al día?",
+    answer:
+      "Se compra tú misma/o desde \"Mi cuenta\", en la tarjeta de Suscripción: si tienes temas atrasados, ahí aparece el precio exacto y el botón de compra. No hace falta pedirlo por contacto.",
+  },
+];
+
 export default function ContactoPage() {
   return (
     <>
       <PageHero
         eyebrow="Contacto"
         title="¿Tienes alguna duda?"
-        description="Escríbenos y te respondemos lo antes posible."
+        description="Muchas dudas se resuelven al instante más abajo, sin esperar respuesta. Si la tuya no está, escríbenos."
         breadcrumbs={[
           { label: "Inicio", href: "/" },
           { label: "Contacto", href: "/contacto" },
@@ -60,6 +84,8 @@ export default function ContactoPage() {
           </aside>
         </Container>
       </section>
+
+      <FaqSection title="Antes de escribirnos" items={faqSoporte} />
 
       <JsonLd data={contactPageJsonLd} />
     </>
