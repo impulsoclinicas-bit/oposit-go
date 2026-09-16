@@ -21,12 +21,6 @@ export const noticias: Noticia[] = [
       "La Dirección General de la Policía publicó en el BOE (BOE-A-2026-17632, Resolución de 6 de agosto de 2026) la relación de personas admitidas y excluidas a la Escala Básica. Quien figure como excluido tenía 10 días hábiles desde la publicación para subsanar su instancia.",
   },
   {
-    fecha: "12 ago. 2026",
-    titulo: "Consulta anticipada en el Portal del Aspirante",
-    resumen:
-      "Un día antes de la publicación oficial, ya se podía consultar de forma individualizada el estado de cada instancia en el Portal del Aspirante de la Policía Nacional.",
-  },
-  {
     fecha: "31 jul. 2026",
     titulo: "Cierre del plazo de solicitudes",
     resumen:
