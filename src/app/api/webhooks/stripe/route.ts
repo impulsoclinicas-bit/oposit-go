@@ -4,7 +4,7 @@ import { SubscriptionStatus } from "@prisma/client";
 import { getStripe } from "@/lib/stripe";
 import { prisma } from "@/lib/db";
 import { isDbConfigured } from "@/lib/db";
-import { isEmailConfigured, sendActivationEmail } from "@/lib/email";
+import { isEmailConfigured, sendActivationEmail, sendAdminAlertEmail } from "@/lib/email";
 import { generateToken } from "@/lib/tokens";
 import { siteConfig } from "@/lib/site";
 import { FECHA_EXAMEN_OFICIAL } from "@/lib/convocatoria";
@@ -55,6 +55,28 @@ export async function POST(request: NextRequest) {
 
   const origin = request.headers.get("origin") ?? siteConfig.url;
 
+  try {
+    await procesarEvento(event, stripe, origin);
+  } catch (error) {
+    // Un fallo aquí a media operación es grave: alguien puede haber pagado
+    // sin obtener acceso, y hoy no lo detectaría nadie salvo por queja del
+    // alumno. Avisamos al titular por email y devolvemos error para que
+    // Stripe reintente la entrega del webhook.
+    const mensaje = error instanceof Error ? error.message : String(error);
+    console.error(`[webhook stripe] error procesando ${event.type} (${event.id}):`, error);
+    if (isEmailConfigured()) {
+      await sendAdminAlertEmail(
+        "fallo procesando un pago",
+        `Evento: ${event.type}\nID del evento: ${event.id}\nError: ${mensaje}\n\nRevisa el pago en Stripe y, si corresponde, da acceso a mano.`
+      ).catch((e) => console.error("[webhook stripe] no se pudo enviar la alerta:", e));
+    }
+    return NextResponse.json({ error: "Error interno" }, { status: 500 });
+  }
+
+  return NextResponse.json({ received: true });
+}
+
+async function procesarEvento(event: Stripe.Event, stripe: Stripe, origin: string) {
   switch (event.type) {
     case "checkout.session.completed": {
       const session = event.data.object as Stripe.Checkout.Session;
@@ -157,6 +179,4 @@ export async function POST(request: NextRequest) {
     default:
       break;
   }
-
-  return NextResponse.json({ received: true });
 }

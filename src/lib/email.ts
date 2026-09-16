@@ -40,3 +40,21 @@ export async function sendActivationEmail(to: string, activationUrl: string) {
     `,
   });
 }
+
+// Aviso interno (no para alumnos) cuando algo falla procesando un pago:
+// si el webhook de Stripe revienta a media operación, hoy nadie se
+// entera hasta que el alumno se queja de no tener acceso. Con esto, el
+// titular recibe un correo en cuanto ocurre.
+export async function sendAdminAlertEmail(subject: string, detalle: string) {
+  const from = process.env.RESEND_FROM_EMAIL!;
+  await getResend().emails.send({
+    from,
+    to: siteConfig.email,
+    subject: `⚠️ ${siteConfig.name}: ${subject}`,
+    html: `
+      <div style="font-family: monospace; max-width: 640px; margin: 0 auto; white-space: pre-wrap;">
+        <p>${detalle}</p>
+      </div>
+    `,
+  });
+}
