@@ -44,19 +44,31 @@ export function QuizRunner({
   volverHref?: string;
   volverLabel?: string;
 }) {
-  const [tanda, setTanda] = useState(() => generarTanda(preguntas, tamanoTest));
+  const [tanda, setTanda] = useState<Pregunta[] | null>(null);
   const [respuestas, setRespuestas] = useState<Record<string, number>>({});
   const [corregido, setCorregido] = useState(false);
   const [guardando, setGuardando] = useState(false);
-  const tiempoTotal = segundosPorPregunta ? tanda.length * segundosPorPregunta : null;
-  const [segundosRestantes, setSegundosRestantes] = useState(tiempoTotal);
+  const [segundosRestantes, setSegundosRestantes] = useState<number | null>(null);
+
+  // La primera tanda se genera solo en el cliente, nunca durante el
+  // renderizado en el servidor: al mezclar con Math.random(), generarla
+  // también en el servidor produce un orden distinto al del cliente y
+  // provoca un error de hidratación en cada carga de página.
+  useEffect(() => {
+    const nuevaTanda = generarTanda(preguntas, tamanoTest);
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- aleatoriza solo en el cliente, tras montar, precisamente para evitar el mismatch de hidratación con el servidor.
+    setTanda(nuevaTanda);
+    setSegundosRestantes(segundosPorPregunta ? nuevaTanda.length * segundosPorPregunta : null);
+    // Solo al montar: este componente sirve un único test por carga de página.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const totalRespondidas = Object.keys(respuestas).length;
-  const todasRespondidas = totalRespondidas === tanda.length;
+  const todasRespondidas = tanda !== null && totalRespondidas === tanda.length;
   const hayMasPreguntasQueElTest = Boolean(tamanoTest && preguntas.length > tamanoTest);
 
   const score = useMemo(() => {
-    if (!corregido) return 0;
+    if (!corregido || !tanda) return 0;
     return tanda.reduce(
       (acc, p) => acc + (respuestas[p.id] === p.correcta ? 1 : 0),
       0
@@ -64,6 +76,7 @@ export function QuizRunner({
   }, [corregido, tanda, respuestas]);
 
   async function handleCorregir() {
+    if (!tanda) return;
     setCorregido(true);
     const finalScore = tanda.reduce(
       (acc, p) => acc + (respuestas[p.id] === p.correcta ? 1 : 0),
@@ -123,6 +136,19 @@ export function QuizRunner({
         <p className="mt-1 text-sm text-brand-700">
           Estamos ampliando el banco de preguntas tema a tema. Vuelve pronto.
         </p>
+      </div>
+    );
+  }
+
+  if (!tanda) {
+    return (
+      <div className="space-y-5" aria-busy="true" aria-label="Preparando el test">
+        {[0, 1, 2].map((i) => (
+          <div
+            key={i}
+            className="h-28 animate-pulse rounded-xl border border-brand-200 bg-brand-50"
+          />
+        ))}
       </div>
     );
   }
