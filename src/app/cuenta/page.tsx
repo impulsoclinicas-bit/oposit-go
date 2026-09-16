@@ -6,6 +6,7 @@ import { PageHero } from "@/components/PageHero";
 import { PortalButton } from "@/components/PortalButton";
 import { PlanEstudioForm } from "@/components/PlanEstudioForm";
 import { BuyButton } from "@/components/BuyButton";
+import { OnboardingBanner } from "@/components/OnboardingBanner";
 import { auth } from "@/auth";
 import { prisma } from "@/lib/db";
 import type { SemanaPlan } from "@/lib/plan-estudio";
@@ -117,6 +118,12 @@ export default async function CuentaPage() {
           { label: "Mi cuenta", href: "/cuenta" },
         ]}
       />
+
+      <section className="pt-10">
+        <Container>
+          <OnboardingBanner />
+        </Container>
+      </section>
 
       {semanas.length === 0 && (
         <section className="py-16 sm:py-20">

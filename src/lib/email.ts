@@ -34,6 +34,8 @@ export async function sendActivationEmail(to: string, activationUrl: string) {
         </p>
         <p style="font-size: 12px; color: #666;">Si el botón no funciona, copia y pega este enlace en tu navegador:<br />${activationUrl}</p>
         <p style="font-size: 12px; color: #666;">Este enlace caduca en 7 días.</p>
+        <hr style="border:none;border-top:1px solid #e5e5e5;margin:24px 0;" />
+        <p style="font-size: 13px; color: #444;"><strong>Cómo funciona el temario:</strong> se abre por un calendario único, igual para todos los alumnos (5 temas nuevos cada mes). Si te has apuntado cuando el calendario ya llevaba tiempo abierto, empezarás en el lote vigente ese mes, no en el tema 1. Si quieres los temas anteriores a tu alta, puedes comprarlos desde "Mi cuenta" con el pase de ponerse al día.</p>
       </div>
     `,
   });
