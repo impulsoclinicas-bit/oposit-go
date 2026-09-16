@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const incluyeMensual = [
   "Tests ilimitados: esquema, resumen y batería de preguntas de cada tema",
-  "Pruebas psicotécnicas: series numéricas, series de letras, sinónimos y antónimos, y analogías verbales",
+  "Pruebas psicotécnicas: series numéricas, series de letras, sinónimos y antónimos, analogías verbales, y figuras y matrices",
   "Un simulacro por bloque (que crece con lo que ya tienes desbloqueado) y un simulacro completo, ambos con cronómetro",
   "Plan de estudio personalizado a partir de un breve cuestionario inicial",
   "Corrección y explicación al instante en cada pregunta",
@@ -23,7 +23,7 @@ const incluyeMensual = [
 
 const incluyePase = [
   "Simulacro de temario completo, con cronómetro, combinando los 45 temas desde el primer día",
-  "Simulacro psicotécnico completo, con cronómetro, combinando las cuatro categorías",
+  "Simulacro psicotécnico completo, con cronómetro, combinando las cinco categorías",
   "Corrección y explicación de cada pregunta al finalizar cada simulacro",
   "Cada simulacro se genera con una combinación distinta de preguntas: práctica sin límite",
   "Válido desde la contratación hasta la fecha de la convocatoria vigente",

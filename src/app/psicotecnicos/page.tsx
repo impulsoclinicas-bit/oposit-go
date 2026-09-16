@@ -10,7 +10,7 @@ import { RectaFinalBanner } from "@/components/RectaFinalBanner";
 export const metadata: Metadata = {
   title: "Psicotécnicos",
   description:
-    "Practica las pruebas psicotécnicas del examen: series numéricas, series de letras, sinónimos y antónimos, y analogías verbales.",
+    "Practica las pruebas psicotécnicas del examen: series numéricas, series de letras, sinónimos y antónimos, analogías verbales, y figuras y matrices.",
   alternates: { canonical: "/psicotecnicos" },
 };
 
@@ -21,8 +21,8 @@ export default async function PsicotecnicosPage() {
     <>
       <PageHero
         eyebrow="Psicotécnicos"
-        title="Series, sinónimos y analogías"
-        description="El primer ejercicio no se limita al temario: incluye también pruebas psicotécnicas. Practica aquí la parte verbal y numérica."
+        title="Series, sinónimos, analogías y figuras"
+        description="El primer ejercicio no se limita al temario: incluye también pruebas psicotécnicas. Practica aquí la parte verbal, numérica y de razonamiento espacial."
         breadcrumbs={[
           { label: "Inicio", href: "/" },
           { label: "Psicotécnicos", href: "/psicotecnicos" },
@@ -33,13 +33,6 @@ export default async function PsicotecnicosPage() {
         <Container className="space-y-6">
           {isRectaFinal() && <RectaFinalBanner />}
 
-          <div className="rounded-xl border border-brand-200 bg-brand-50/60 p-5 text-sm text-brand-800">
-            El examen psicotécnico real también incluye ejercicios de
-            figuras y matrices (razonamiento espacial). Aquí encontrarás la
-            parte verbal y numérica, que es la que más se entrena con
-            práctica repetida.
-          </div>
-
           <Link
             href="/psicotecnicos/completo"
             className="block rounded-xl border-2 border-accent-400 bg-brand-950 p-6 text-white shadow-sm transition-colors hover:border-accent-300"
@@ -49,7 +42,7 @@ export default async function PsicotecnicosPage() {
             </p>
             <h2 className="mt-1 text-xl font-bold">Simulacro psicotécnico completo</h2>
             <p className="mt-2 text-sm text-brand-100">
-              Combina las cuatro categorías en una única prueba
+              Combina las cinco categorías en una única prueba
               cronometrada, en las condiciones del día del examen.
             </p>
           </Link>

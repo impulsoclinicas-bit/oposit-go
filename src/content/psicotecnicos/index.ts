@@ -3,12 +3,14 @@ import { preguntas as seriesNumericas } from "./series-numericas";
 import { preguntas as seriesAlfabeticas } from "./series-alfabeticas";
 import { preguntas as sinonimosAntonimos } from "./sinonimos-antonimos";
 import { preguntas as analogiasVerbales } from "./analogias-verbales";
+import { preguntas as figurasMatrices } from "./figuras-matrices";
 
 const bancoPsicotecnicos: Record<string, Pregunta[]> = {
   "series-numericas": seriesNumericas,
   "series-alfabeticas": seriesAlfabeticas,
   "sinonimos-antonimos": sinonimosAntonimos,
   "analogias-verbales": analogiasVerbales,
+  "figuras-matrices": figurasMatrices,
 };
 
 export function getPreguntasByCategoriaPsicotecnica(slug: string): Pregunta[] {
@@ -19,7 +21,7 @@ export function getTotalPreguntasPsicotecnicos(): number {
   return Object.values(bancoPsicotecnicos).reduce((acc, p) => acc + p.length, 0);
 }
 
-/** Simulacro psicotécnico completo: mezcla las cuatro categorías, como el examen real. */
+/** Simulacro psicotécnico completo: mezcla las cinco categorías, como el examen real. */
 export function getPreguntasSimulacroPsicotecnico(): Pregunta[] {
   return Object.values(bancoPsicotecnicos).flat();
 }

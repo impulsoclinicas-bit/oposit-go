@@ -4,10 +4,10 @@ export type CategoriaPsicotecnica = {
   descripcion: string;
 };
 
-// Las pruebas psicotécnicas del examen real también incluyen ejercicios de
-// figuras y matrices (razonamiento espacial), que por su naturaleza gráfica
-// no se recogen aquí. Estas categorías cubren la parte verbal y numérica,
-// que es la que más peso suele tener y la más entrenable con práctica.
+// Las cinco categorías del primer ejercicio que se entrenan con texto:
+// series numéricas y de letras, sinónimos/antónimos, analogías verbales, y
+// figuras y matrices (razonamiento espacial), representadas con símbolos
+// en vez de imágenes.
 export const categoriasPsicotecnicas: CategoriaPsicotecnica[] = [
   {
     slug: "series-numericas",
@@ -33,6 +33,12 @@ export const categoriasPsicotecnicas: CategoriaPsicotecnica[] = [
     descripcion:
       "Completa la relación \"A es a B como C es a...\": el tipo de pregunta más habitual en razonamiento verbal.",
   },
+  {
+    slug: "figuras-matrices",
+    titulo: "Figuras y matrices",
+    descripcion:
+      "Razonamiento espacial: continúa la serie de figuras que rotan o crecen, o encuentra la figura que completa la matriz 3x3.",
+  },
 ];
 
 export function getCategoriaPsicotecnica(
@@ -42,6 +48,6 @@ export function getCategoriaPsicotecnica(
 }
 
 // Tamaño y cronómetro del simulacro psicotécnico completo (mezcla las
-// cuatro categorías, con contrarreloj, como el examen real).
+// cinco categorías, con contrarreloj, como el examen real).
 export const PREGUNTAS_SIMULACRO_PSICOTECNICO = 20;
 export const SEGUNDOS_POR_PREGUNTA_PSICOTECNICO = 40;

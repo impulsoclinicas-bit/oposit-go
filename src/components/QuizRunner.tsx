@@ -165,7 +165,7 @@ export function QuizRunner({
               key={pregunta.id}
               className="rounded-xl border border-brand-200 bg-white p-5 shadow-sm"
             >
-              <p className="font-semibold text-brand-900">
+              <p className="whitespace-pre-line font-semibold text-brand-900">
                 {index + 1}. {pregunta.enunciado}
               </p>
               <div className="mt-3 space-y-2">

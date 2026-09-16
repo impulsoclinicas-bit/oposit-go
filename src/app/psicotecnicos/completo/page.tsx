@@ -12,7 +12,7 @@ import { requireAccesoSimulacros } from "@/lib/auth-helpers";
 export const metadata: Metadata = {
   title: "Simulacro psicotécnico completo",
   description:
-    "Examen psicotécnico completo, contrarreloj, mezclando series numéricas, series de letras, sinónimos y antónimos, y analogías verbales.",
+    "Examen psicotécnico completo, contrarreloj, mezclando series numéricas, series de letras, sinónimos y antónimos, analogías verbales, y figuras y matrices.",
   alternates: { canonical: "/psicotecnicos/completo" },
 };
 
@@ -25,7 +25,7 @@ export default async function SimulacroPsicotecnicoCompletoPage() {
       <PageHero
         eyebrow="Simulacro psicotécnico completo"
         title="Simulacro psicotécnico completo, contrarreloj"
-        description="Combina las cuatro categorías (series numéricas, series de letras, sinónimos y antónimos, y analogías verbales) en una única prueba cronometrada, para entrenar el ritmo del examen real."
+        description="Combina las cinco categorías (series numéricas, series de letras, sinónimos y antónimos, analogías verbales, y figuras y matrices) en una única prueba cronometrada, para entrenar el ritmo del examen real."
         breadcrumbs={[
           { label: "Inicio", href: "/" },
           { label: "Psicotécnicos", href: "/psicotecnicos" },

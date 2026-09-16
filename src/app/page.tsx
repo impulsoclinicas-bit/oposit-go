@@ -30,7 +30,7 @@ const beneficios = [
   {
     titulo: "Pruebas psicotécnicas",
     descripcion:
-      "Series numéricas, series de letras, sinónimos y antónimos, y analogías verbales: la otra parte del primer ejercicio.",
+      "Series numéricas, series de letras, sinónimos y antónimos, analogías verbales, y figuras y matrices: la otra parte del primer ejercicio.",
   },
   {
     titulo: "Simulacros con cronómetro",
