@@ -47,6 +47,7 @@ model User {
 
   activationTokens     ActivationToken[]
   quizAttempts         QuizAttempt[]
+  preguntasFalladas    PreguntaFallada[]
   studyPlan            StudyPlan?
 }
 
@@ -88,4 +89,23 @@ model StudyPlan {
   semanas      Json
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
+}
+
+// Preguntas concretas que el alumno ha fallado alguna vez, para el modo
+// "repasar solo lo que has fallado". Se incrementa vecesFallada cada vez
+// que se vuelve a fallar la misma pregunta, y se borra el registro en
+// cuanto se responde bien (así la lista refleja lo que sigue flojo, no
+// un historial completo de errores).
+model PreguntaFallada {
+  id           String   @id @default(cuid())
+  userId       String
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  temaSlug     String
+  preguntaId   String
+  vecesFallada Int      @default(1)
+  ultimaVez    DateTime @default(now())
+  createdAt    DateTime @default(now())
+
+  @@unique([userId, preguntaId])
+  @@index([userId, temaSlug])
 }

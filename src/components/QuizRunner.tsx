@@ -69,6 +69,12 @@ export function QuizRunner({
       (acc, p) => acc + (respuestas[p.id] === p.correcta ? 1 : 0),
       0
     );
+    const preguntasFalladas = tanda
+      .filter((p) => respuestas[p.id] !== p.correcta)
+      .map((p) => p.id);
+    const preguntasAcertadas = tanda
+      .filter((p) => respuestas[p.id] === p.correcta)
+      .map((p) => p.id);
     setGuardando(true);
     try {
       await fetch("/api/quiz/intento", {
@@ -78,6 +84,8 @@ export function QuizRunner({
           temaSlug,
           score: finalScore,
           total: tanda.length,
+          preguntasFalladas,
+          preguntasAcertadas,
         }),
       });
     } catch {

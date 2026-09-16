@@ -15,7 +15,7 @@ import {
   getTemasAtrasados,
   getFechaDesbloqueoTema,
 } from "@/lib/desbloqueo";
-import { temas } from "@/lib/temario";
+import { temas, getTemaBySlug } from "@/lib/temario";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -84,6 +84,26 @@ export default async function CuentaPage() {
       })
     ).map((i) => i.temaSlug)
   );
+
+  const totalFalladas = await prisma.preguntaFallada.count({
+    where: { userId: session.user.id },
+  });
+
+  const intentosPorTema = await prisma.quizAttempt.groupBy({
+    by: ["temaSlug"],
+    where: { userId: session.user.id },
+    _sum: { score: true, total: true },
+  });
+  const temaSlugsValidos = new Set(temas.map((t) => t.slug));
+  const puntosDebiles = intentosPorTema
+    .filter((i) => temaSlugsValidos.has(i.temaSlug) && (i._sum.total ?? 0) > 0)
+    .map((i) => ({
+      temaSlug: i.temaSlug,
+      titulo: getTemaBySlug(i.temaSlug)?.titulo ?? i.temaSlug,
+      porcentaje: Math.round(((i._sum.score ?? 0) / (i._sum.total || 1)) * 100),
+    }))
+    .sort((a, b) => a.porcentaje - b.porcentaje)
+    .slice(0, 5);
 
   const semanas = (studyPlan?.semanas as unknown as SemanaPlan[] | undefined) ?? [];
 
@@ -256,6 +276,57 @@ export default async function CuentaPage() {
                 ))}
               </ul>
             )}
+          </div>
+
+          <div className="rounded-xl border border-brand-200 bg-white p-6 shadow-sm">
+            <h2 className="font-bold text-brand-900">Puntos débiles</h2>
+            {puntosDebiles.length === 0 ? (
+              <p className="mt-2 text-sm text-brand-700">
+                Haz algún test para que identifiquemos en qué temas conviene
+                que insistas más.
+              </p>
+            ) : (
+              <ul className="mt-3 space-y-2 text-sm">
+                {puntosDebiles.map((p) => (
+                  <li
+                    key={p.temaSlug}
+                    className="flex items-center justify-between gap-3 rounded-md bg-brand-50 px-3 py-2"
+                  >
+                    <Link
+                      href={`/temario/${p.temaSlug}`}
+                      className="text-brand-800 hover:underline"
+                    >
+                      {p.titulo}
+                    </Link>
+                    <span
+                      className={`font-semibold ${p.porcentaje < 50 ? "text-danger-600" : "text-brand-900"}`}
+                    >
+                      {p.porcentaje}%
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+            <div className="mt-4 border-t border-brand-100 pt-4">
+              <p className="text-sm text-brand-700">
+                {totalFalladas > 0 ? (
+                  <>
+                    Tienes <span className="font-semibold text-brand-900">{totalFalladas}</span>{" "}
+                    preguntas pendientes de repasar (las que has fallado, hasta que las aciertes).
+                  </>
+                ) : (
+                  "No tienes preguntas falladas pendientes de repasar."
+                )}
+              </p>
+              {totalFalladas > 0 && (
+                <Link
+                  href="/repaso-fallos"
+                  className="mt-2 inline-block rounded-md bg-brand-900 px-3 py-2 text-xs font-semibold text-white hover:bg-brand-800"
+                >
+                  Repasar solo lo que he fallado
+                </Link>
+              )}
+            </div>
           </div>
         </Container>
       </section>

@@ -127,3 +127,16 @@ export function getPreguntasByTema(temaSlug: string): Pregunta[] {
 export function getTotalPreguntasTemario(): number {
   return Object.values(bancoPreguntas).reduce((acc, p) => acc + p.length, 0);
 }
+
+let indicePorId: Map<string, Pregunta> | null = null;
+
+/** Busca una pregunta del temario por id, en cualquier tema (para "repasar lo que has fallado"). */
+export function getPreguntaPorId(id: string): Pregunta | undefined {
+  if (!indicePorId) {
+    indicePorId = new Map();
+    for (const preguntas of Object.values(bancoPreguntas)) {
+      for (const p of preguntas) indicePorId.set(p.id, p);
+    }
+  }
+  return indicePorId.get(id);
+}
