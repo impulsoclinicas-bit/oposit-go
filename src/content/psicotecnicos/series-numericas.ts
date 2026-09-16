@@ -121,4 +121,107 @@ export const preguntas: Pregunta[] = [
     correcta: 2,
     explicacion: "Cada término se multiplica por 2: 48 × 2 = 96.",
   },
+  {
+    id: "psn-17",
+    enunciado: "5, 8, 12, 17, 23, ¿?",
+    opciones: ["28", "29", "30", "31"],
+    correcta: 2,
+    explicacion:
+      "La diferencia entre términos aumenta de 1 en 1 (3, 4, 5, 6, 7): 23 + 7 = 30.",
+  },
+  {
+    id: "psn-18",
+    enunciado: "2, 5, 11, 23, 47, ¿?",
+    opciones: ["94", "95", "96", "97"],
+    correcta: 1,
+    explicacion: "Cada término se multiplica por 2 y se suma 1: 47 × 2 + 1 = 95.",
+  },
+  {
+    id: "psn-19",
+    enunciado: "64, 32, 16, 8, ¿?",
+    opciones: ["2", "3", "4", "6"],
+    correcta: 2,
+    explicacion: "Cada término se divide entre 2: 8 ÷ 2 = 4.",
+  },
+  {
+    id: "psn-20",
+    enunciado: "1, 2, 4, 7, 11, ¿?",
+    opciones: ["15", "16", "17", "18"],
+    correcta: 1,
+    explicacion:
+      "La diferencia entre términos aumenta de 1 en 1 (1, 2, 3, 4, 5): 11 + 5 = 16.",
+  },
+  {
+    id: "psn-21",
+    enunciado: "3, 7, 15, 31, ¿?",
+    opciones: ["61", "62", "63", "64"],
+    correcta: 2,
+    explicacion: "Cada término se multiplica por 2 y se suma 1: 31 × 2 + 1 = 63.",
+  },
+  {
+    id: "psn-22",
+    enunciado: "10, 20, 19, 29, 28, ¿?",
+    opciones: ["27", "37", "38", "39"],
+    correcta: 2,
+    explicacion: "Se alternan dos operaciones: +10 y −1. 28 + 10 = 38.",
+  },
+  {
+    id: "psn-23",
+    enunciado: "2, 6, 18, 54, ¿?",
+    opciones: ["108", "150", "162", "180"],
+    correcta: 2,
+    explicacion: "Cada término se multiplica por 3: 54 × 3 = 162.",
+  },
+  {
+    id: "psn-24",
+    enunciado: "50, 47, 44, 41, ¿?",
+    opciones: ["37", "38", "39", "40"],
+    correcta: 1,
+    explicacion: "La serie resta 3 en cada paso: 41 − 3 = 38.",
+  },
+  {
+    id: "psn-25",
+    enunciado: "1, 2, 6, 24, 120, ¿?",
+    opciones: ["620", "700", "720", "740"],
+    correcta: 2,
+    explicacion:
+      "Cada término se multiplica por un número que crece de uno en uno (×2, ×3, ×4, ×5, ×6): 120 × 6 = 720.",
+  },
+  {
+    id: "psn-26",
+    enunciado: "9, 16, 25, 36, ¿?",
+    opciones: ["42", "45", "47", "49"],
+    correcta: 3,
+    explicacion: "Son los cuadrados de 3, 4, 5, 6, 7: 7² = 49.",
+  },
+  {
+    id: "psn-27",
+    enunciado: "8, 12, 17, 23, 30, ¿?",
+    opciones: ["36", "37", "38", "39"],
+    correcta: 2,
+    explicacion:
+      "La diferencia entre términos aumenta de 1 en 1 (4, 5, 6, 7, 8): 30 + 8 = 38.",
+  },
+  {
+    id: "psn-28",
+    enunciado: "96, 48, 24, 12, ¿?",
+    opciones: ["4", "5", "6", "8"],
+    correcta: 2,
+    explicacion: "Cada término se divide entre 2: 12 ÷ 2 = 6.",
+  },
+  {
+    id: "psn-29",
+    enunciado: "1, 8, 27, 64, ¿?",
+    opciones: ["100", "110", "120", "125"],
+    correcta: 3,
+    explicacion: "Son los cubos de 1, 2, 3, 4, 5: 5³ = 125.",
+  },
+  {
+    id: "psn-30",
+    enunciado: "7, 9, 13, 19, 27, ¿?",
+    opciones: ["35", "36", "37", "39"],
+    correcta: 2,
+    explicacion:
+      "La diferencia entre términos aumenta de 2 en 2 (2, 4, 6, 8, 10): 27 + 10 = 37.",
+  },
 ];

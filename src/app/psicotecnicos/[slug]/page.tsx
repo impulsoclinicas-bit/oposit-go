@@ -7,6 +7,12 @@ import { categoriasPsicotecnicas, getCategoriaPsicotecnica } from "@/lib/psicote
 import { getPreguntasByCategoriaPsicotecnica } from "@/content/psicotecnicos";
 import { requireActiveUser } from "@/lib/auth-helpers";
 
+// Tamaño de cada test individual: con un banco de 30 preguntas por
+// categoría, cada intento muestrea 16 al azar en vez de mostrarlas
+// siempre todas, igual que hace el temario con sus tests de tamaño fijo
+// sobre un banco más grande (así el test no se repite igual cada vez).
+const TAMANO_TEST_CATEGORIA = 16;
+
 export function generateStaticParams() {
   return categoriasPsicotecnicas.map((categoria) => ({ slug: categoria.slug }));
 }
@@ -64,6 +70,7 @@ export default async function CategoriaPsicotecnicaPage({
             <QuizRunner
               temaSlug={`psicotecnico-${categoria.slug}`}
               preguntas={preguntas}
+              tamanoTest={TAMANO_TEST_CATEGORIA}
               volverHref="/psicotecnicos"
               volverLabel="Volver a psicotécnicos"
             />

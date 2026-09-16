@@ -119,4 +119,110 @@ export const preguntas: Pregunta[] = [
     correcta: 1,
     explicacion: "La serie retrocede 2 letras cada vez: tras la N va la L.",
   },
+  {
+    id: "psa-17",
+    enunciado: "F, I, L, O, ¿?",
+    opciones: ["Q", "R", "S", "P"],
+    correcta: 1,
+    explicacion: "Se avanza 3 letras cada vez: tras la O va la R.",
+  },
+  {
+    id: "psa-18",
+    enunciado: "A, C, F, J, ¿?",
+    opciones: ["N", "O", "P", "M"],
+    correcta: 1,
+    explicacion:
+      "El salto aumenta cada vez (+2, +3, +4, +5): desde la J, avanzando 5 posiciones, se llega a la O.",
+  },
+  {
+    id: "psa-19",
+    enunciado: "Z, V, R, N, ¿?",
+    opciones: ["I", "J", "K", "H"],
+    correcta: 1,
+    explicacion: "La serie retrocede 4 letras cada vez: tras la N va la J.",
+  },
+  {
+    id: "psa-20",
+    enunciado: "B, C, E, H, L, ¿?",
+    opciones: ["P", "Q", "R", "O"],
+    correcta: 1,
+    explicacion:
+      "El salto aumenta cada vez (+1, +2, +3, +4, +5): desde la L, avanzando 5 posiciones, se llega a la Q.",
+  },
+  {
+    id: "psa-21",
+    enunciado: "K, J, H, E, ¿?",
+    opciones: ["A", "B", "C", "D"],
+    correcta: 0,
+    explicacion:
+      "El salto retrocede cada vez más (−1, −2, −3, −4): desde la E, retrocediendo 4 posiciones, se llega a la A.",
+  },
+  {
+    id: "psa-22",
+    enunciado: "D, G, K, P, ¿?",
+    opciones: ["U", "V", "W", "T"],
+    correcta: 1,
+    explicacion:
+      "El salto aumenta cada vez (+3, +4, +5, +6): desde la P, avanzando 6 posiciones, se llega a la V.",
+  },
+  {
+    id: "psa-23",
+    enunciado: "Y, V, S, P, ¿?",
+    opciones: ["L", "M", "N", "K"],
+    correcta: 1,
+    explicacion: "La serie retrocede 3 letras cada vez: tras la P va la M.",
+  },
+  {
+    id: "psa-24",
+    enunciado: "A, D, I, P, ¿?",
+    opciones: ["X", "Y", "Z", "W"],
+    correcta: 1,
+    explicacion:
+      "El salto aumenta de 2 en 2 (+3, +5, +7, +9): desde la P, avanzando 9 posiciones, se llega a la Y.",
+  },
+  {
+    id: "psa-25",
+    enunciado: "L, J, H, F, ¿?",
+    opciones: ["C", "D", "E", "B"],
+    correcta: 1,
+    explicacion: "La serie retrocede 2 letras cada vez: tras la F va la D.",
+  },
+  {
+    id: "psa-26",
+    enunciado: "C, E, H, L, Q, ¿?",
+    opciones: ["V", "W", "X", "U"],
+    correcta: 1,
+    explicacion:
+      "El salto aumenta cada vez (+2, +3, +4, +5, +6): desde la Q, avanzando 6 posiciones, se llega a la W.",
+  },
+  {
+    id: "psa-27",
+    enunciado: "T, Q, N, K, ¿?",
+    opciones: ["G", "H", "I", "F"],
+    correcta: 1,
+    explicacion: "La serie retrocede 3 letras cada vez: tras la K va la H.",
+  },
+  {
+    id: "psa-28",
+    enunciado: "Z, X, U, Q, ¿?",
+    opciones: ["K", "L", "M", "J"],
+    correcta: 1,
+    explicacion:
+      "El salto retrocede cada vez más (−2, −3, −4, −5): desde la Q, retrocediendo 5 posiciones, se llega a la L.",
+  },
+  {
+    id: "psa-29",
+    enunciado: "E, H, L, Q, ¿?",
+    opciones: ["V", "W", "X", "U"],
+    correcta: 1,
+    explicacion:
+      "El salto aumenta cada vez (+3, +4, +5, +6): desde la Q, avanzando 6 posiciones, se llega a la W.",
+  },
+  {
+    id: "psa-30",
+    enunciado: "R, O, L, I, ¿?",
+    opciones: ["E", "F", "G", "D"],
+    correcta: 1,
+    explicacion: "La serie retrocede 3 letras cada vez: tras la I va la F.",
+  },
 ];
